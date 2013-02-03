@@ -11,7 +11,7 @@
 ;; 设置颜色主题
 (require 'color-theme)
 (color-theme-initialize)
-(color-theme-charcoal-black)
+(color-theme-arjen)
 
 ;; 设置Org-mode
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
@@ -24,3 +24,9 @@
 (tool-bar-mode 0)  ; 隐藏工具栏
 (menu-bar-mode 0)  ; 隐藏菜单栏
 (scroll-bar-mode 0) ; 隐藏滚动条
+
+;; 默认使用Bash Shell执行命令
+(setq shell-file-name "/bin/bash")
+
+;; 对.m文件默认使用octave-mode
+(add-to-list 'auto-mode-alist '("\\.m\\'" . octave-mode))
