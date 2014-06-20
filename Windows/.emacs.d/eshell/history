@@ -1,0 +1,128 @@
+python data-science-london.py 
+python data-science-london.py 
+python data-science-london.py 
+NameError: name 'row' is not defined
+python data-science-london.py 
+python data-science-london.py 
+python data-science-london.py 
+python data-science-london.py 
+python data-science-london.py 
+python data-science-london.py 
+python data-science-london.py 
+python data-science-london.py 
+python data-science-london.py 
+python data-science-london.py 
+python data-science-london.py 
+python data-science-london.py 
+python data-science-london.py 
+python data-science-london.py 
+python data-science-london.py 
+python data-science-london.py 
+python data-science-london.py 
+python data-science-london.py 
+python data-science-london.py 
+python data-science-london.py 
+python data-science-london.py 
+python data-science-london.py 
+python data-science-london.py 
+python data-science-london.py 
+python data-science-london.py
+python data-science-london.py
+python data-science-london.py
+python data-science-london.py
+python data-science-london.py
+python data-science-london.py
+python data-science-london.py
+python data-science-london.py
+python data-science-london.py
+python data-science-london.py
+ls
+rm tutorial.py 
+ls
+cd ..
+python data-science-london.py
+cd src/
+python data-science-london.py
+python data-science-london.py
+python data-science-london.py
+python data-science-london.py
+python data-science-london.py
+python data-science-london.py
+python data-science-london.py
+python data-science-london.py
+python data-science-london.py
+cd ../kaggle/
+ls
+mkdir data-science-london
+rm -rf data-science-london/
+cd ..
+ls
+cd kaggle/
+ls
+mkdir data-science-london/
+ls
+mv src data-science-london/
+mv test data-science-london/
+mv train data-science-london/
+ls
+cd data-science-london/
+ls
+cd src/
+ls
+cd ..
+ls
+cd ..
+ls
+mkdir titanic
+ls
+cd titanic/
+ls
+ls
+ls
+cd src/
+ls
+python gendermodel.py
+python gendermodel.py
+python gendermodel.py
+cd ../result/
+ls
+R commands.R 
+cd ../data/
+ls
+rm test.txt
+ls
+cd ..
+ls
+cd bin/
+cd ../backup/
+ls
+cd ../data/
+ls
+cd ..
+ls
+ls
+cd result/
+ls
+cd ..
+ls
+cd result/
+ls
+cd ../
+ls
+cd result/
+ls
+cd ../bin/
+ls
+ls
+cd ../data/
+ls
+ls
+cd ..
+ls
+cd bin/
+ls
+ls
+ls
+ls
+exit
+ls

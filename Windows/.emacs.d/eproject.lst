@@ -1,0 +1,15 @@
+;; -*- mode: Lisp; -*-
+
+(setq prj-version nil)
+
+(setq prj-list
+      '(("eproject" "d:/Program Files (x86)/emacs/site-lisp/gabrielelanaro/extensions/eproject")))
+
+(setq prj-last-open nil)
+
+(setq prj-frame-pos
+      '((top . 169)
+	(left . 583)
+	(width . 80)
+	(height . 38)))
+
