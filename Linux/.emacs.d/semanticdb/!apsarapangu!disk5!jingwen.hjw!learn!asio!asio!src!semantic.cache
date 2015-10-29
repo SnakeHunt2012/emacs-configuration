@@ -1,0 +1,17 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "asio.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("asio/impl/src.hpp" include nil nil [270 298]))          
+      :file "asio.cpp"
+      :pointmax 299
+      :fsize 298
+      :lastmodtime '(21945 55675 39036 130000)
+      :unmatched-syntax nil))
+  :file "!apsarapangu!disk5!jingwen.hjw!learn!asio!asio!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

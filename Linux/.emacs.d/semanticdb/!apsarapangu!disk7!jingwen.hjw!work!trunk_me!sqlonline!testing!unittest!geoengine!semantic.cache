@@ -1,0 +1,1031 @@
+;; Object geoengine/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "geoengine/"
+  :tables
+  (list
+    (semanticdb-table "geolog_unittest.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("coreimpl/replication/geoengine/sqlonline_geolog_internal.h" include nil nil [3 72])
+            ("common/time_tools.h" include nil nil [73 103])
+            ("apsara/common/base.h" include nil nil [104 135])
+            ("apsara/common/unittest.h" include nil nil [136 171])
+            ("apsara/common/time_stamp.h" include nil nil [172 209])
+            ("string" include (:system-flag t) nil [211 228])
+            ("common/sqlonline_semaphore.h" include nil nil [229 268])
+            ("apsara" using (:type ("apsara" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [271 294])
+            ("apsara::common" using (:type ("apsara::common" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [295 326])
+            ("apsara::common::timing" using (:type ("apsara::common::timing" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [327 366])
+            ("apsara::pangu" using (:type ("apsara::pangu" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [367 397])
+            ("apsara::logging" using (:type ("apsara::logging" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [398 430])
+            ("apsara::sqlonline" using (:type ("apsara::sqlonline" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [431 465])
+            ("apsara::sqlonline::geoengine" using (:type ("apsara::sqlonline::geoengine" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [466 511])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [512 532])
+            ("sLogger" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "logging::GetLogger(\"/apsara/sqlonline/geoengine/geolog_unittest\")"
+                :type ("logging::Logger" type (:type "class") nil nil))
+                nil [534 634])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_FailInjectionProbability" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [696 731]))                  
+                :type "int")
+                nil [677 732])
+            ("DECLARE_FLAG_BOOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_LogFileReadFailInjection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [751 786]))                  
+                :type "int")
+                nil [733 787])
+            ("DECLARE_FLAG_BOOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_LogFileGetNextLogEntrySizeFailInjection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [806 856]))                  
+                :type "int")
+                nil [788 857])
+            ("DECLARE_FLAG_BOOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_LogFileWriteFailInjection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [876 912]))                  
+                :type "int")
+                nil [858 913])
+            ("DECLARE_FLAG_BOOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_PanguFileSystemFailInjection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [932 971]))                  
+                :type "int")
+                nil [914 972])
+            ("TestGeoLog" type
+               (:superclasses 
+                  ( ("apsara::UnitTestFixtureBase" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1042 1049])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestBasicReadWrite" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1105 1124]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1083 1128])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestReadWithoutWrite" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1155 1176]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1133 1180])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestWriteThenRead" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1207 1225]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1185 1229])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestReadAtSpecificPoint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1256 1280]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1234 1284])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestStartWithData" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1311 1329]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1289 1333])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestStartWithDataWithFailureInjection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1360 1398]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1338 1402])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestLazyCreateFile" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1429 1448]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1407 1452])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestEmptyFile" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1479 1493]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1457 1497])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestEmptyFileWithFailureInjection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1524 1558]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1502 1562])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestRoll" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1607 1616]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1585 1620])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestGC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1663 1670]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1641 1674])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestGCWithFailureInjection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1701 1728]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1679 1732])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestMultiThreadWrite" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1808 1829]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1786 1833])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestMultiThreadWriteAndSingleRead" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1860 1894]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1838 1898])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestMultiThreadWriteAndSingleReadWithFailureInjection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1925 1979]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1903 1983])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestMultiThreadWriteMultiReader" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2010 2042]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1988 2046])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestMultiThreadRollAndSingleThreadGC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2073 2110]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2051 2114])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestMultiThreadRollGCWithFailureInjection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2141 2183]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2119 2187])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestInvalidConfig" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2236 2254]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2214 2258])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestInvalidRecord" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2285 2303]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2263 2307])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestInvalidConsumePoint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2334 2358]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2312 2362])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestPanguFailureFileOp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2389 2412]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2367 2416])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestPanguFailureDirOp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2443 2465]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2421 2469])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestPanguFailureRead" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2496 2517]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2474 2521])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestPanguFailureWrite" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2548 2570]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2526 2574])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestAllFailureInjection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2601 2625]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2579 2629])
+                    ("public" label nil (reparse-symbol classsubparts) [2651 2658])
+                    ("Setup" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2700 2713])
+                    ("CleanUp" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2718 2733])
+                    ("SetupCase" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2773 2790])
+                    ("CleanUpCase" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2795 2814])
+                    ("public" label nil (reparse-symbol classsubparts) [2834 2841])
+                    ("TestBasicReadWrite" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2873 2899])
+                    ("TestReadWithoutWrite" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2904 2932])
+                    ("TestWriteThenRead" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2937 2962])
+                    ("TestReadAtSpecificPoint" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2967 2998])
+                    ("TestStartWithData" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3003 3028])
+                    ("TestStartWithDataWithFailureInjection" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3033 3078])
+                    ("TestLazyCreateFile" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3083 3109])
+                    ("TestEmptyFile" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3114 3135])
+                    ("TestEmptyFileWithFailureInjection" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3140 3181])
+                    ("TestRoll" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3204 3220])
+                    ("TestGC" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3241 3255])
+                    ("TestGCWithFailureInjection" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3260 3294])
+                    ("TestMultiThreadWrite" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3345 3373])
+                    ("TestMultiThreadWriteAndSingleRead" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3378 3419])
+                    ("TestMultiThreadWriteAndSingleReadWithFailureInjection" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3424 3485])
+                    ("TestMultiThreadWriteMultiReader" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3506 3545])
+                    ("TestMultiThreadRollAndSingleThreadGC" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3550 3594])
+                    ("TestMultiThreadRollGCWithFailureInjection" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3599 3648])
+                    ("TestInvalidConfig" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3671 3696])
+                    ("TestInvalidRecord" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3701 3726])
+                    ("TestInvalidConsumePoint" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3731 3762])
+                    ("TestPanguFailureFileOp" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3767 3797])
+                    ("TestPanguFailureDirOp" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3802 3831])
+                    ("TestPanguFailureRead" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3836 3864])
+                    ("TestPanguFailureWrite" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3869 3898])
+                    ("TestAllFailureInjection" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3903 3934])
+                    ("public" label nil (reparse-symbol classsubparts) [3936 3943])
+                    ("ThreadWriteGeoLog" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("id" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3999 4010])
+                            ("writer" variable
+                               (:pointer 1
+                                :type ("IGeoLogOutputStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4011 4039])
+                            ("numberOfRecords2Write" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4040 4070])
+                            ("data" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4102 4119]))                          
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3972 4120])
+                    ("ThreadWriteGeoLogWithRetry" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("id" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4161 4172])
+                            ("writer" variable
+                               (:pointer 1
+                                :type ("IGeoLogOutputStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4173 4201])
+                            ("numberOfRecords2Write" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4211 4241])
+                            ("data" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4242 4259]))                          
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4125 4260])
+                    ("ThreadReadGeoLog" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("id" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4291 4302])
+                            ("reader" variable
+                               (:pointer 1
+                                :type ("IGeoLogInputStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4303 4330])
+                            ("minNumberOfGeoRecords" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4331 4361]))                          
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4265 4362])
+                    ("ThreadReadGeoLogWithRetry" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("id" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4402 4413])
+                            ("reader" variable
+                               (:pointer 1
+                                :type ("IGeoLogInputStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4414 4441])
+                            ("minNumberOfGeoRecords" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4442 4472]))                          
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4367 4473])
+                    ("ThreadReadGeoLogAndConsume" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("id" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4514 4525])
+                            ("reader" variable
+                               (:pointer 1
+                                :type ("IGeoLogInputStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4526 4553])
+                            ("minNumberOfGeoRecords" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4554 4584]))                          
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4478 4585])
+                    ("private" label nil (reparse-symbol classsubparts) [4587 4595])
+                    ("DoTestStartWithData" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4600 4627])
+                    ("DoTestEmptyFile" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4632 4655])
+                    ("private" label nil (reparse-symbol classsubparts) [4657 4665])
+                    ("ClearTestData" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4670 4691])
+                    ("CreateGeoLog" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4696 4716])
+                    ("CreateGeoLog" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("config" variable
+                               (:reference 1
+                                :type ("GeoLogConfiguration" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4739 4767]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4721 4768])
+                    ("CreateGeoLogWithRetry" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("maxRetry" variable
+                               (:default-value "100"
+                                :type ("int32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4800 4822]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4773 4824])
+                    ("CreateGeoLogWithRetry" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("config" variable
+                               (:reference 1
+                                :type ("GeoLogConfiguration" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4856 4884])
+                            ("maxRetry" variable
+                               (:default-value "100"
+                                :type ("int32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4885 4907]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4829 4909])
+                    ("DeleteGeoLog" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4914 4934])
+                    ("CreateGeoLogReaderWithRetry" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("startPoint" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("LogPoint" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4988 5015])
+                            ("maxRetry" variable
+                               (:default-value "100"
+                                :type ("int32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5016 5038]))                          
+                        :type ("IGeoLogInputStream" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4940 5040])
+                    ("CreateGeoLogWriterWithRetry" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("maxRetry" variable
+                               (:default-value "100"
+                                :type ("int32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5094 5116]))                          
+                        :type ("IGeoLogOutputStream" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5045 5118])
+                    ("WriteWithRetry" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("writer" variable
+                               (:pointer 1
+                                :type ("IGeoLogOutputStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5156 5184])
+                            ("data" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [5185 5202])
+                            ("maxRetry" variable
+                               (:default-value "100"
+                                :type ("int32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5203 5225]))                          
+                        :type ("GeoLogRecordInfo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5124 5227])
+                    ("ReadWithRetry" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :constant-flag t
+                        :arguments 
+                          ( ("reader" variable
+                               (:pointer 1
+                                :type ("IGeoLogInputStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5267 5294])
+                            ("maxRetry" variable
+                               (:default-value "100"
+                                :type ("int32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5295 5317]))                          
+                        :type ("PBGeoLogEntry" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5232 5319])
+                    ("PrintGeoRecord" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("info" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("GeoLogRecordInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5345 5374])
+                            ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Slice" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5375 5393])
+                            ("title" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5418 5438])
+                            ("printData" variable
+                               (:default-value "true"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [5439 5460]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5325 5462])
+                    ("PrintGeoRecord" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("entry" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("PBGeoLogEntry" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5487 5514])
+                            ("record" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("PBGeoLogRecord" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5515 5544])
+                            ("title" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5569 5589])
+                            ("printData" variable
+                               (:default-value "true"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [5590 5611]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5467 5613])
+                    ("EnablePanguFailInjection" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5619 5651])
+                    ("DisablePanguFailInjection" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5656 5689])
+                    ("PrintCaseStart" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5772 5791]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5752 5792])
+                    ("PrintCaseEnd" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5815 5834]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5797 5835])
+                    ("private" label nil (reparse-symbol classsubparts) [5838 5846])
+                    ("mConfig" variable (:type ("GeoLogConfiguration" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5851 5879])
+                    ("mGeoLog" variable
+                       (:pointer 1
+                        :type ("IGeoLog" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5884 5901]))                  
+                :type "class")
+                nil [974 5904])
+            ("Setup" function
+               (:parent "TestGeoLog"
+                :type "void")
+                nil [5928 5998])
+            ("CleanUp" function
+               (:parent "TestGeoLog"
+                :type "void")
+                nil [6000 6069])
+            ("SetupCase" function
+               (:parent "TestGeoLog"
+                :type "void")
+                nil [6169 6255])
+            ("CleanUpCase" function
+               (:parent "TestGeoLog"
+                :type "void")
+                nil [6257 6324])
+            ("VERIFY_RECORD_SEQ_DATA" variable (:constant-flag t) nil [6430 6452])
+            ("VERIFY_RECORD_SEQ_DATA_EX" variable (:constant-flag t) nil [6777 6802])
+            ("VERIFY_RECORD_DATA" variable (:constant-flag t) nil [7342 7360])
+            ("LOG_POINT" variable (:constant-flag t) nil [7614 7623])
+            ("TestBasicReadWrite" function
+               (:parent "TestGeoLog"
+                :type "void")
+                nil [7986 9112])
+            ("TestReadWithoutWrite" function
+               (:parent "TestGeoLog"
+                :type "void")
+                nil [9254 10158])
+            ("TestWriteThenRead" function
+               (:parent "TestGeoLog"
+                :type "void")
+                nil [10243 11236])
+            ("TestReadAtSpecificPoint" function
+               (:parent "TestGeoLog"
+                :type "void")
+                nil [11381 12679])
+            ("DoTestStartWithData" function
+               (:parent "TestGeoLog"
+                :type "void")
+                nil [12933 14803])
+            ("TestStartWithData" function
+               (:parent "TestGeoLog"
+                :type "void")
+                nil [14805 14938])
+            ("TestStartWithDataWithFailureInjection" function
+               (:parent "TestGeoLog"
+                :type "void")
+                nil [14940 15216])
+            ("TestLazyCreateFile" function
+               (:parent "TestGeoLog"
+                :type "void")
+                nil [15218 19276])
+            ("DoTestEmptyFile" function
+               (:parent "TestGeoLog"
+                :type "void")
+                nil [19278 21099])
+            ("TestEmptyFile" function
+               (:parent "TestGeoLog"
+                :type "void")
+                nil [21101 21226])
+            ("TestEmptyFileWithFailureInjection" function
+               (:parent "TestGeoLog"
+                :type "void")
+                nil [21228 21464])
+            ("TestRoll" function
+               (:parent "TestGeoLog"
+                :type "void")
+                nil [21711 22378])
+            ("TestGC" function
+               (:parent "TestGeoLog"
+                :type "void")
+                nil [22712 24514])
+            ("TestGCWithFailureInjection" function
+               (:parent "TestGeoLog"
+                :type "void")
+                nil [24516 26018])
+            ("TestMultiThreadWrite" function
+               (:parent "TestGeoLog"
+                :type "void")
+                nil [26320 27874])
+            ("TestMultiThreadWriteAndSingleRead" function
+               (:parent "TestGeoLog"
+                :type "void")
+                nil [27939 29157])
+            ("TestMultiThreadWriteAndSingleReadWithFailureInjection" function
+               (:parent "TestGeoLog"
+                :type "void")
+                nil [29222 30691])
+            ("TestMultiThreadWriteMultiReader" function
+               (:parent "TestGeoLog"
+                :type "void")
+                nil [30767 32058])
+            ("TestMultiThreadRollAndSingleThreadGC" function
+               (:parent "TestGeoLog"
+                :type "void")
+                nil [32060 33975])
+            ("TestMultiThreadRollGCWithFailureInjection" function
+               (:parent "TestGeoLog"
+                :type "void")
+                nil [33977 35454])
+            ("CREATE_GEOLOG_WITH_EXCEPTION" variable (:constant-flag t) nil [35646 35674])
+            ("TestInvalidConfig" function
+               (:parent "TestGeoLog"
+                :type "void")
+                nil [35915 36800])
+            ("TestInvalidRecord" function
+               (:parent "TestGeoLog"
+                :type "void")
+                nil [36802 37911])
+            ("TestInvalidConsumePoint" function
+               (:parent "TestGeoLog"
+                :type "void")
+                nil [37913 40013])
+            ("TestPanguFailureFileOp" function
+               (:parent "TestGeoLog"
+                :type "void")
+                nil [40015 41625])
+            ("TestPanguFailureDirOp" function
+               (:parent "TestGeoLog"
+                :type "void")
+                nil [41627 42369])
+            ("TestPanguFailureRead" function
+               (:parent "TestGeoLog"
+                :type "void")
+                nil [42371 43886])
+            ("TestPanguFailureWrite" function
+               (:parent "TestGeoLog"
+                :type "void")
+                nil [43888 44883])
+            ("TestAllFailureInjection" function
+               (:parent "TestGeoLog"
+                :type "void")
+                nil [45105 47890])
+            ("ThreadWriteGeoLog" function
+               (:parent "TestGeoLog"
+                :arguments 
+                  ( ("id" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48115 48126])
+                    ("writer" variable
+                       (:pointer 1
+                        :type ("IGeoLogOutputStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48127 48155])
+                    ("numberOfRecords2Write" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48156 48186])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [48226 48243]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [48076 48688])
+            ("ThreadWriteGeoLogWithRetry" function
+               (:parent "TestGeoLog"
+                :arguments 
+                  ( ("id" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48737 48748])
+                    ("writer" variable
+                       (:pointer 1
+                        :type ("IGeoLogOutputStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48749 48777])
+                    ("numberOfRecords2Write" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48815 48845])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [48846 48863]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [48689 49314])
+            ("ThreadReadGeoLog" function
+               (:parent "TestGeoLog"
+                :arguments 
+                  ( ("id" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49354 49365])
+                    ("reader" variable
+                       (:pointer 1
+                        :type ("IGeoLogInputStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49366 49393])
+                    ("minNumberOfGeoRecords" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49394 49424]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [49316 50356])
+            ("ThreadReadGeoLogWithRetry" function
+               (:parent "TestGeoLog"
+                :arguments 
+                  ( ("id" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50405 50416])
+                    ("reader" variable
+                       (:pointer 1
+                        :type ("IGeoLogInputStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50417 50444])
+                    ("minNumberOfGeoRecords" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50445 50475]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [50358 51937])
+            ("ThreadReadGeoLogAndConsume" function
+               (:parent "TestGeoLog"
+                :arguments 
+                  ( ("id" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51987 51998])
+                    ("reader" variable
+                       (:pointer 1
+                        :type ("IGeoLogInputStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51999 52026])
+                    ("minNumberOfGeoRecords" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [52027 52057]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [51939 53652])
+            ("ClearTestData" function
+               (:parent "TestGeoLog"
+                :type "void")
+                nil [53824 54031])
+            ("CreateGeoLog" function
+               (:parent "TestGeoLog"
+                :type "void")
+                nil [54033 54228])
+            ("CreateGeoLog" function
+               (:parent "TestGeoLog"
+                :arguments 
+                  ( ("config" variable
+                       (:reference 1
+                        :type ("GeoLogConfiguration" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [54260 54288]))                  
+                :type "void")
+                nil [54230 54413])
+            ("CreateGeoLogWithRetry" function
+               (:parent "TestGeoLog"
+                :arguments 
+                  ( ("maxRetry" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54454 54471]))                  
+                :type "void")
+                nil [54415 54813])
+            ("CreateGeoLogWithRetry" function
+               (:parent "TestGeoLog"
+                :arguments 
+                  ( ("config" variable
+                       (:reference 1
+                        :type ("GeoLogConfiguration" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [54854 54882])
+                    ("maxRetry" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54883 54900]))                  
+                :type "void")
+                nil [54815 55248])
+            ("DeleteGeoLog" function
+               (:parent "TestGeoLog"
+                :type "void")
+                nil [55250 55305])
+            ("CreateGeoLogReaderWithRetry" function
+               (:pointer 1
+                :parent "TestGeoLog"
+                :arguments 
+                  ( ("startPoint" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("LogPoint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [55368 55395])
+                    ("maxRetry" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55396 55413]))                  
+                :type ("IGeoLogInputStream" type (:type "class") nil nil))
+                nil [55308 55857])
+            ("CreateGeoLogWriterWithRetry" function
+               (:pointer 1
+                :parent "TestGeoLog"
+                :arguments 
+                  ( ("maxRetry" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55920 55937]))                  
+                :type ("IGeoLogOutputStream" type (:type "class") nil nil))
+                nil [55859 56373])
+            ("WriteWithRetry" function
+               (:parent "TestGeoLog"
+                :arguments 
+                  ( ("writer" variable
+                       (:pointer 1
+                        :type ("IGeoLogOutputStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [56419 56447])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [56448 56465])
+                    ("maxRetry" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [56466 56483]))                  
+                :type ("GeoLogRecordInfo" type (:type "class") nil nil))
+                nil [56375 56926])
+            ("ReadWithRetry" function
+               (:pointer 1
+                :parent "TestGeoLog"
+                :constant-flag t
+                :arguments 
+                  ( ("reader" variable
+                       (:pointer 1
+                        :type ("IGeoLogInputStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [56975 57002])
+                    ("maxRetry" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [57003 57020]))                  
+                :type ("PBGeoLogEntry" type (:type "class") nil nil))
+                nil [56928 57440])
+            ("PrintGeoRecord" function
+               (:parent "TestGeoLog"
+                :arguments 
+                  ( ("info" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("GeoLogRecordInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [57511 57540])
+                    ("data" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Slice" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [57541 57559])
+                    ("title" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [57560 57580])
+                    ("printData" variable (:type "bool") (reparse-symbol arg-sub-list) [57581 57596]))                  
+                :type "void")
+                nil [57479 58004])
+            ("PrintGeoRecord" function
+               (:parent "TestGeoLog"
+                :arguments 
+                  ( ("entry" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("PBGeoLogEntry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [58075 58102])
+                    ("record" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("PBGeoLogRecord" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [58103 58132])
+                    ("title" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [58133 58153])
+                    ("printData" variable (:type "bool") (reparse-symbol arg-sub-list) [58154 58169]))                  
+                :type "void")
+                nil [58043 58599])
+            ("PrintCaseStart" function
+               (:parent "TestGeoLog"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [58633 58652]))                  
+                :type "void")
+                nil [58601 58729])
+            ("PrintCaseEnd" function
+               (:parent "TestGeoLog"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [58761 58780]))                  
+                :type "void")
+                nil [58731 58855])
+            ("EnablePanguFailInjection" function
+               (:parent "TestGeoLog"
+                :type "void")
+                nil [58857 59540])
+            ("DisablePanguFailInjection" function
+               (:parent "TestGeoLog"
+                :type "void")
+                nil [59542 59848])
+            ("APSARA_UNIT_TEST_FIXTURE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("TestGeoLog" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59876 59887]))                  
+                :type "int")
+                nil [59851 59888]))          
+      :file "geolog_unittest.cpp"
+      :pointmax 59889
+      :fsize 59904
+      :lastmodtime '(21973 28727 546048 424000)
+      :unmatched-syntax '((number 2626 . 2627) (number 2571 . 2572) (number 2518 . 2519) (number 2466 . 2467) (number 2413 . 2414) (number 2359 . 2360) (number 2304 . 2305) (number 2255 . 2256) (number 2184 . 2185) (number 2111 . 2112) (number 2043 . 2044) (number 1980 . 1981) (number 1895 . 1896) (number 1830 . 1831) (number 1729 . 1730) (number 1671 . 1672) (number 1617 . 1618) (number 1559 . 1560) (number 1494 . 1495) (number 1449 . 1450) (number 1399 . 1400) (number 1330 . 1331) (number 1281 . 1282) (number 1226 . 1227) (number 1177 . 1178) (number 1125 . 1126) (number 2626 . 2627) (number 2571 . 2572) (number 2518 . 2519) (number 2466 . 2467) (number 2413 . 2414) (number 2359 . 2360) (number 2304 . 2305) (number 2255 . 2256) (number 2184 . 2185) (number 2111 . 2112) (number 2043 . 2044) (number 1980 . 1981) (number 1895 . 1896) (number 1830 . 1831) (number 1729 . 1730) (number 1671 . 1672) (number 1617 . 1618) (number 1559 . 1560) (number 1494 . 1495) (number 1449 . 1450) (number 1399 . 1400) (number 1330 . 1331) (number 1281 . 1282) (number 1226 . 1227) (number 1177 . 1178) (number 1125 . 1126))
+      :lexical-table 
+        '(("VERIFY_RECORD_SEQ_DATA_EX" (spp-arg-list ("_entry" "_expected_seq_start" "_expected_data" "_print_title") 6802 . 6861) . 
+              ((DO "do" 6864 . 6866) (semantic-list "{ \\
+    uint64_t startSeq = _expected_seq_start; \\
+    for (int32_t i = 0; i < entry->records_size(); i++) { \\
+        const PBGeoLogRecord& _r = _entry->records(i); \\
+        APSARA_TEST_EQUAL(_r.seq(), startSeq++); \\
+        APSARA_TEST_EQUAL(strcmp(_r.data().c_str(), (_expected_data)), 0); \\
+        PrintGeoRecord(*_entry, _r, (_print_title)); \\
+    } \\
+}" 6867 . 7227) (WHILE "while" 7228 . 7233) (semantic-list "(0)" 7233 . 7236)))
+          ("CREATE_GEOLOG_WITH_EXCEPTION" (spp-arg-list ("_config") 35674 . 35683) . 
+              ((DO "do" 35686 . 35688) (semantic-list "{ \\
+    try { \\
+        CreateGeoLog(_config); \\
+        APSARA_TEST_TRUE(false); \\
+    } catch (const ParameterInvalidException& e) { \\
+        SQL_LOG(DEBUG, sLogger, (\"Excepted exception\", e.what())); \\
+    } \\
+}" 35689 . 35904) (WHILE "while" 35905 . 35910) (semantic-list "(0)" 35910 . 35913)))
+          ("VERIFY_RECORD_SEQ_DATA" (spp-arg-list ("_entry" "_index" "_expected_seq" "_expected_data" "_print_title") 6452 . 6513) . 
+              ((DO "do" 6516 . 6518) (semantic-list "{ \\
+    const PBGeoLogRecord& _r = _entry->records((_index)); \\
+    APSARA_TEST_EQUAL(_r.seq(), _expected_seq); \\
+    APSARA_TEST_EQUAL(strcmp(_r.data().c_str(), (_expected_data)), 0); \\
+    PrintGeoRecord(*_entry, _r, (_print_title)); \\
+}" 6519 . 6758) (WHILE "while" 6759 . 6764) (semantic-list "(0)" 6764 . 6767)))
+          ("LOG_POINT" (spp-arg-list ("_pb_log_point") 7623 . 7638) . ((symbol "LogPoint" 7639 . 7647) (semantic-list "(_pb_log_point.file_number(), _pb_log_point.offset())" 7647 . 7700)))
+          ("VERIFY_RECORD_DATA" (spp-arg-list ("_entry" "_index" "_expected_data" "_print_title") 7360 . 7406) . 
+              ((DO "do" 7409 . 7411) (semantic-list "{ \\
+    const PBGeoLogRecord& _r = _entry->records(_index); \\
+    APSARA_TEST_EQUAL(strcmp(_r.data().c_str(), _expected_data), 0); \\
+    PrintGeoRecord(*_entry, _r, _print_title); \\
+}" 7412 . 7595) (WHILE "while" 7596 . 7601) (semantic-list "(0)" 7601 . 7604)))
+          )
+))
+  :file "!apsarapangu!disk7!jingwen.hjw!work!trunk_me!sqlonline!testing!unittest!geoengine!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,16 @@
+;; Object time/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "time/"
+  :tables
+  (list
+    (semanticdb-table "time.h"
+      :major-mode 'c-mode
+      :tags nil
+      :file "time.h"
+      :pointmax 752
+      :fsize 751
+      :lastmodtime '(21978 59164 617036 730000)
+      :unmatched-syntax nil))
+  :file "!apsarapangu!disk7!jingwen.hjw!work!apsara!stone!system!time!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

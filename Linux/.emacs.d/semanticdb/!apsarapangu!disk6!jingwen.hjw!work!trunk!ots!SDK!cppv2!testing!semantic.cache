@@ -1,0 +1,889 @@
+;; Object testing/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "testing/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("srcdir" variable (:default-value (".")) nil [664 675])
+            ("top_srcdir" variable (:default-value ("..")) nil [675 691])
+            ("pkgdatadir" variable (:default-value ("$(datadir)/ots_cppsdk")) nil [692 727])
+            ("pkglibdir" variable (:default-value ("$(libdir)/ots_cppsdk")) nil [727 760])
+            ("pkgincludedir" variable (:default-value ("$(includedir)/ots_cppsdk")) nil [760 801])
+            ("top_builddir" variable (:default-value ("..")) nil [801 819])
+            ("am__cd" variable (:default-value ("CDPATH=\"$${ZSH_VERSION+.}$(PATH_SEPARATOR)\"" "&&" "cd")) nil [819 878])
+            ("INSTALL" variable (:default-value ("/usr/bin/install" "-c")) nil [878 908])
+            ("install_sh_DATA" variable (:default-value ("$(install_sh)" "-c" "-m" "644")) nil [908 950])
+            ("install_sh_PROGRAM" variable (:default-value ("$(install_sh)" "-c")) nil [950 988])
+            ("install_sh_SCRIPT" variable (:default-value ("$(install_sh)" "-c")) nil [988 1025])
+            ("INSTALL_HEADER" variable (:default-value ("$(INSTALL_DATA)")) nil [1025 1058])
+            ("transform" variable (:default-value ("$(program_transform_name)")) nil [1058 1096])
+            ("NORMAL_INSTALL" variable (:default-value (":")) nil [1096 1115])
+            ("PRE_INSTALL" variable (:default-value (":")) nil [1115 1131])
+            ("POST_INSTALL" variable (:default-value (":")) nil [1131 1148])
+            ("NORMAL_UNINSTALL" variable (:default-value (":")) nil [1148 1169])
+            ("PRE_UNINSTALL" variable (:default-value (":")) nil [1169 1187])
+            ("POST_UNINSTALL" variable (:default-value (":")) nil [1187 1206])
+            ("noinst_PROGRAMS" variable (:default-value ("common_util_unittest$(EXEEXT)" "ots_types_unittest$(EXEEXT)" "ots_client_functiontest$(EXEEXT)" "ots_client_noinst_functiontest$(EXEEXT)" "ots_internal_functiontest$(EXEEXT)" "ots_internal_noinst_functiontest$(EXEEXT)" "ots_client_sample$(EXEEXT)" "ots_client_mocktest$(EXEEXT)")) nil [1206 1503])
+            ("subdir" variable (:default-value ("testing")) nil [1503 1520])
+            ("DIST_COMMON" variable (:default-value ("$(srcdir)/Makefile.am" "$(srcdir)/Makefile.in")) nil [1520 1578])
+            ("ACLOCAL_M4" variable (:default-value ("$(top_srcdir)/aclocal.m4")) nil [1578 1616])
+            ("am__aclocal_m4_deps" variable (:default-value ("$(top_srcdir)/configure.in")) nil [1616 1665])
+            ("am__configure_deps" variable (:default-value ("$(am__aclocal_m4_deps)" "$(CONFIGURE_DEPENDENCIES)" "$(ACLOCAL_M4)")) nil [1665 1752])
+            ("mkinstalldirs" variable (:default-value ("$(install_sh)" "-d")) nil [1752 1785])
+            ("CONFIG_CLEAN_FILES" variable nil nil [1785 1806])
+            ("PROGRAMS" variable (:default-value ("$(noinst_PROGRAMS)")) nil [1806 1836])
+            ("am_common_util_unittest_OBJECTS" variable (:default-value ("common_util_unittest.$(OBJEXT)")) nil [1836 1901])
+            ("common_util_unittest_OBJECTS" variable (:default-value ("$(am_common_util_unittest_OBJECTS)")) nil [1901 1967])
+            ("common_util_unittest_DEPENDENCIES" variable (:default-value ("$(top_srcdir)/lib/libotsclient.a")) nil [1967 2036])
+            ("am_ots_client_functiontest_OBJECTS" variable (:default-value ("ots_client_functiontest.$(OBJEXT)")) nil [2036 2111])
+            ("ots_client_functiontest_OBJECTS" variable (:default-value ("$(am_ots_client_functiontest_OBJECTS)")) nil [2111 2187])
+            ("ots_client_functiontest_DEPENDENCIES" variable (:default-value ("$(top_srcdir)/lib/libotsclient.a")) nil [2187 2263])
+            ("am_ots_client_mocktest_OBJECTS" variable (:default-value ("ots_client_mocktest.$(OBJEXT)")) nil [2263 2326])
+            ("ots_client_mocktest_OBJECTS" variable (:default-value ("$(am_ots_client_mocktest_OBJECTS)")) nil [2326 2390])
+            ("ots_client_mocktest_DEPENDENCIES" variable (:default-value ("$(top_srcdir)/lib/libotsclient_mock.a")) nil [2390 2467])
+            ("am_ots_client_noinst_functiontest_OBJECTS" variable (:default-value ("ots_client_noinst_functiontest.$(OBJEXT)")) nil [2467 2556])
+            ("ots_client_noinst_functiontest_OBJECTS" variable (:default-value ("$(am_ots_client_noinst_functiontest_OBJECTS)")) nil [2556 2646])
+            ("ots_client_noinst_functiontest_DEPENDENCIES" variable (:default-value ("$(top_srcdir)/lib/libotsclient.a")) nil [2646 2729])
+            ("am_ots_client_sample_OBJECTS" variable (:default-value ("ots_client_sample.$(OBJEXT)")) nil [2729 2788])
+            ("ots_client_sample_OBJECTS" variable (:default-value ("$(am_ots_client_sample_OBJECTS)")) nil [2788 2848])
+            ("ots_client_sample_DEPENDENCIES" variable (:default-value ("$(top_srcdir)/lib/libotsclient.a")) nil [2848 2914])
+            ("am_ots_internal_functiontest_OBJECTS" variable (:default-value ("ots_internal_functiontest.$(OBJEXT)")) nil [2914 2993])
+            ("ots_internal_functiontest_OBJECTS" variable (:default-value ("$(am_ots_internal_functiontest_OBJECTS)")) nil [2993 3073])
+            ("ots_internal_functiontest_DEPENDENCIES" variable (:default-value ("$(top_srcdir)/lib/libotsclient.a")) nil [3073 3151])
+            ("am_ots_internal_noinst_functiontest_OBJECTS" variable (:default-value ("ots_internal_noinst_functiontest.$(OBJEXT)")) nil [3151 3244])
+            ("ots_internal_noinst_functiontest_OBJECTS" variable (:default-value ("$(am_ots_internal_noinst_functiontest_OBJECTS)")) nil [3244 3338])
+            ("ots_internal_noinst_functiontest_DEPENDENCIES" variable (:default-value ("$(top_srcdir)/lib/libotsclient.a")) nil [3338 3423])
+            ("am_ots_types_unittest_OBJECTS" variable (:default-value ("ots_types_unittest.$(OBJEXT)")) nil [3423 3484])
+            ("ots_types_unittest_OBJECTS" variable (:default-value ("$(am_ots_types_unittest_OBJECTS)")) nil [3484 3546])
+            ("ots_types_unittest_DEPENDENCIES" variable (:default-value ("$(top_srcdir)/lib/libotsclient.a")) nil [3546 3613])
+            ("DEFAULT_INCLUDES" variable (:default-value ("-I." "-I$(srcdir)")) nil [3613 3648])
+            ("depcomp" variable (:default-value ("$(SHELL)" "$(top_srcdir)/depcomp")) nil [3648 3689])
+            ("am__depfiles_maybe" variable (:default-value ("depfiles")) nil [3689 3719])
+            ("CXXCOMPILE" variable (:default-value ("$(CXX)" "$(DEFS)" "$(DEFAULT_INCLUDES)" "$(INCLUDES)" "$(AM_CPPFLAGS)" "$(CPPFLAGS)" "$(AM_CXXFLAGS)" "$(CXXFLAGS)")) nil [3719 3836])
+            ("CXXLD" variable (:default-value ("$(CXX)")) nil [3836 3851])
+            ("CXXLINK" variable (:default-value ("$(CXXLD)" "$(AM_CXXFLAGS)" "$(CXXFLAGS)" "$(AM_LDFLAGS)" "$(LDFLAGS)" "-o" "$@")) nil [3851 3931])
+            ("SOURCES" variable (:default-value ("$(common_util_unittest_SOURCES)" "$(ots_client_functiontest_SOURCES)" "$(ots_client_mocktest_SOURCES)" "$(ots_client_noinst_functiontest_SOURCES)" "$(ots_client_sample_SOURCES)" "$(ots_internal_functiontest_SOURCES)" "$(ots_internal_noinst_functiontest_SOURCES)" "$(ots_types_unittest_SOURCES)")) nil [3931 4242])
+            ("DIST_SOURCES" variable (:default-value ("$(common_util_unittest_SOURCES)" "$(ots_client_functiontest_SOURCES)" "$(ots_client_mocktest_SOURCES)" "$(ots_client_noinst_functiontest_SOURCES)" "$(ots_client_sample_SOURCES)" "$(ots_internal_functiontest_SOURCES)" "$(ots_internal_noinst_functiontest_SOURCES)" "$(ots_types_unittest_SOURCES)")) nil [4242 4558])
+            ("ETAGS" variable (:default-value ("etags")) nil [4558 4572])
+            ("CTAGS" variable (:default-value ("ctags")) nil [4572 4586])
+            ("DISTFILES" variable (:default-value ("$(DIST_COMMON)" "$(DIST_SOURCES)" "$(TEXINFOS)" "$(EXTRA_DIST)")) nil [4586 4655])
+            ("ACLOCAL" variable (:default-value ("${SHELL}" "/apsarapangu/disk6/jingwen.hjw/work/trunk/ots/SDK/cppv2/missing" "--run" "aclocal-1.9")) nil [4655 4756])
+            ("AMDEP_FALSE" variable nil nil [4756 4772])
+            ("AMDEP_TRUE" variable nil nil [4772 4786])
+            ("AMTAR" variable (:default-value ("${SHELL}" "/apsarapangu/disk6/jingwen.hjw/work/trunk/ots/SDK/cppv2/missing" "--run" "tar")) nil [4786 4877])
+            ("AUTOCONF" variable (:default-value ("${SHELL}" "/apsarapangu/disk6/jingwen.hjw/work/trunk/ots/SDK/cppv2/missing" "--run" "autoconf")) nil [4877 4976])
+            ("AUTOHEADER" variable (:default-value ("${SHELL}" "/apsarapangu/disk6/jingwen.hjw/work/trunk/ots/SDK/cppv2/missing" "--run" "autoheader")) nil [4976 5079])
+            ("AUTOMAKE" variable (:default-value ("${SHELL}" "/apsarapangu/disk6/jingwen.hjw/work/trunk/ots/SDK/cppv2/missing" "--run" "automake-1.9")) nil [5079 5182])
+            ("AWK" variable (:default-value ("gawk")) nil [5182 5193])
+            ("CC" variable (:default-value ("gcc")) nil [5193 5202])
+            ("CCDEPMODE" variable (:default-value ("depmode=gcc3")) nil [5202 5227])
+            ("CFLAGS" variable (:default-value ("-g" "-O2")) nil [5227 5243])
+            ("CPP" variable (:default-value ("gcc" "-E")) nil [5243 5256])
+            ("CPPFLAGS" variable (:default-value ("-O2" "-fPIC")) nil [5256 5278])
+            ("CXX" variable (:default-value ("g++")) nil [5278 5288])
+            ("CXXDEPMODE" variable (:default-value ("depmode=gcc3")) nil [5288 5314])
+            ("CXXFLAGS" variable (:default-value ("-g" "-O2")) nil [5314 5332])
+            ("CYGPATH_W" variable (:default-value ("echo")) nil [5332 5349])
+            ("DEFS" variable (:default-value ("-DPACKAGE_NAME=\\\"ots_cppsdk\\\"" "-DPACKAGE_TARNAME=\\\"ots_cppsdk\\\"" "-DPACKAGE_VERSION=\\\"1.0\\\"" "-DPACKAGE_STRING=\\\"ots_cppsdk\\ 1.0\\\"" "-DPACKAGE_BUGREPORT=\\\"kunpeng.hkp@aliyun-inc.com\\\"" "-DPACKAGE=\\\"ots_cppsdk\\\"" "-DVERSION=\\\"1.0\\\"" "-DHAVE_LIBCURL=1" "-DHAVE_LIBCRYPTO=1" "-DHAVE_LIBPROTOBUF=1" "-DHAVE_LIBZ=1" "-DSTDC_HEADERS=1" "-DHAVE_SYS_TYPES_H=1" "-DHAVE_SYS_STAT_H=1" "-DHAVE_STDLIB_H=1" "-DHAVE_STRING_H=1" "-DHAVE_MEMORY_H=1" "-DHAVE_STRINGS_H=1" "-DHAVE_INTTYPES_H=1" "-DHAVE_STDINT_H=1" "-DHAVE_UNISTD_H=1" "-DHAVE_STDINT_H=1" "-DHAVE_STDLIB_H=1" "-DHAVE_STRING_H=1" "-DHAVE_SYS_TIME_H=1" "-DHAVE_UNISTD_H=1" "-DHAVE_ZLIB_H=1" "-DHAVE_CURL_CURL_H=1" "-DHAVE_OPENSSL_BIO_H=1" "-DHAVE__BOOL=1" "-DHAVE_STDBOOL_H=1" "-DTIME_WITH_SYS_TIME=1" "-DHAVE_STRFTIME=1" "-DHAVE_GETTIMEOFDAY=1" "-DHAVE_MEMSET=1")) nil [5349 6100])
+            ("DEPDIR" variable (:default-value (".deps")) nil [6100 6115])
+            ("ECHO_C" variable nil nil [6115 6125])
+            ("ECHO_N" variable (:default-value ("-n")) nil [6125 6137])
+            ("ECHO_T" variable nil nil [6137 6147])
+            ("EGREP" variable (:default-value ("grep" "-E")) nil [6147 6163])
+            ("EXEEXT" variable nil nil [6163 6173])
+            ("INSTALL_DATA" variable (:default-value ("${INSTALL}" "-m" "644")) nil [6173 6206])
+            ("INSTALL_PROGRAM" variable (:default-value ("${INSTALL}")) nil [6206 6235])
+            ("INSTALL_SCRIPT" variable (:default-value ("${INSTALL}")) nil [6235 6263])
+            ("INSTALL_STRIP_PROGRAM" variable (:default-value ("${SHELL}" "$(install_sh)" "-c" "-s")) nil [6263 6316])
+            ("LDFLAGS" variable (:default-value ("-L.")) nil [6316 6330])
+            ("LIBOBJS" variable nil nil [6330 6341])
+            ("LIBS" variable (:default-value ("-lcrypto" "-lcurl" "-lz" "-lpthread" "-lprotobuf")) nil [6341 6389])
+            ("LTLIBOBJS" variable nil nil [6389 6402])
+            ("MAKEINFO" variable (:default-value ("${SHELL}" "/apsarapangu/disk6/jingwen.hjw/work/trunk/ots/SDK/cppv2/missing" "--run" "makeinfo")) nil [6402 6501])
+            ("OBJEXT" variable (:default-value ("o")) nil [6501 6512])
+            ("PACKAGE" variable (:default-value ("ots_cppsdk")) nil [6512 6533])
+            ("PACKAGE_BUGREPORT" variable (:default-value ("kunpeng.hkp@aliyun-inc.com")) nil [6533 6580])
+            ("PACKAGE_NAME" variable (:default-value ("ots_cppsdk")) nil [6580 6606])
+            ("PACKAGE_STRING" variable (:default-value ("ots_cppsdk" "1.0")) nil [6606 6638])
+            ("PACKAGE_TARNAME" variable (:default-value ("ots_cppsdk")) nil [6638 6667])
+            ("PACKAGE_VERSION" variable (:default-value ("1.0")) nil [6667 6689])
+            ("PATH_SEPARATOR" variable (:default-value (":")) nil [6689 6708])
+            ("RANLIB" variable (:default-value ("ranlib")) nil [6708 6724])
+            ("SET_MAKE" variable nil nil [6724 6736])
+            ("SHELL" variable (:default-value ("/bin/sh")) nil [6736 6752])
+            ("STRIP" variable nil nil [6752 6761])
+            ("VERSION" variable (:default-value ("1.0")) nil [6761 6775])
+            ("ac_ct_CC" variable (:default-value ("gcc")) nil [6775 6790])
+            ("ac_ct_CXX" variable (:default-value ("g++")) nil [6790 6806])
+            ("ac_ct_RANLIB" variable (:default-value ("ranlib")) nil [6806 6828])
+            ("ac_ct_STRIP" variable nil nil [6828 6843])
+            ("am__fastdepCC_FALSE" variable nil nil [6843 6867])
+            ("am__fastdepCC_TRUE" variable nil nil [6867 6889])
+            ("am__fastdepCXX_FALSE" variable nil nil [6889 6914])
+            ("am__fastdepCXX_TRUE" variable nil nil [6914 6937])
+            ("am__leading_dot" variable (:default-value (".")) nil [6959 6979])
+            ("am__quote" variable nil nil [6979 6992])
+            ("am__tar" variable (:default-value ("${AMTAR}" "chof" "-" "\"$$tardir\"")) nil [6992 7029])
+            ("am__untar" variable (:default-value ("${AMTAR}" "xf" "-")) nil [7029 7055])
+            ("bindir" variable (:default-value ("${exec_prefix}/bin")) nil [7055 7083])
+            ("build_alias" variable nil nil [7083 7098])
+            ("datadir" variable (:default-value ("${prefix}/share")) nil [7098 7124])
+            ("exec_prefix" variable (:default-value ("${prefix}")) nil [7124 7148])
+            ("host_alias" variable nil nil [7148 7162])
+            ("includedir" variable (:default-value ("${prefix}/include")) nil [7162 7193])
+            ("infodir" variable (:default-value ("${prefix}/info")) nil [7193 7218])
+            ("install_sh" variable (:default-value ("/apsarapangu/disk6/jingwen.hjw/work/trunk/ots/SDK/cppv2/install-sh")) nil [7218 7298])
+            ("libdir" variable (:default-value ("${exec_prefix}/lib")) nil [7298 7326])
+            ("libexecdir" variable (:default-value ("${exec_prefix}/libexec")) nil [7326 7362])
+            ("localstatedir" variable (:default-value ("${prefix}/var")) nil [7362 7392])
+            ("mandir" variable (:default-value ("${prefix}/man")) nil [7392 7415])
+            ("mkdir_p" variable (:default-value ("mkdir" "-p" "--")) nil [7415 7437])
+            ("oldincludedir" variable (:default-value ("/usr/include")) nil [7437 7466])
+            ("prefix" variable (:default-value ("/usr/local")) nil [7466 7486])
+            ("program_transform_name" variable (:default-value ("s,x,x,")) nil [7486 7518])
+            ("sbindir" variable (:default-value ("${exec_prefix}/sbin")) nil [7518 7548])
+            ("sharedstatedir" variable (:default-value ("${prefix}/com")) nil [7548 7579])
+            ("sysconfdir" variable (:default-value ("${prefix}/etc")) nil [7579 7606])
+            ("target_alias" variable nil nil [7606 7622])
+            ("AUTOMAKE_OPTIONS" variable (:default-value ("foreign")) nil [7622 7649])
+            ("common_util_unittest_SOURCES" variable (:default-value ("common_util_unittest.cpp")) nil [7649 7705])
+            ("common_util_unittest_LDADD" variable (:default-value ("$(top_srcdir)/lib/libotsclient.a")) nil [7705 7767])
+            ("ots_types_unittest_SOURCES" variable (:default-value ("ots_types_unittest.cpp")) nil [7767 7819])
+            ("ots_types_unittest_LDADD" variable (:default-value ("$(top_srcdir)/lib/libotsclient.a")) nil [7819 7879])
+            ("ots_client_functiontest_SOURCES" variable (:default-value ("ots_client_functiontest.cpp")) nil [7879 7941])
+            ("ots_client_functiontest_LDADD" variable (:default-value ("$(top_srcdir)/lib/libotsclient.a")) nil [7941 8006])
+            ("ots_client_noinst_functiontest_SOURCES" variable (:default-value ("ots_client_noinst_functiontest.cpp")) nil [8006 8082])
+            ("ots_client_noinst_functiontest_LDADD" variable (:default-value ("$(top_srcdir)/lib/libotsclient.a")) nil [8082 8154])
+            ("ots_internal_functiontest_SOURCES" variable (:default-value ("ots_internal_functiontest.cpp")) nil [8154 8220])
+            ("ots_internal_functiontest_LDADD" variable (:default-value ("$(top_srcdir)/lib/libotsclient.a")) nil [8220 8287])
+            ("ots_internal_noinst_functiontest_SOURCES" variable (:default-value ("ots_internal_noinst_functiontest.cpp")) nil [8287 8367])
+            ("ots_internal_noinst_functiontest_LDADD" variable (:default-value ("$(top_srcdir)/lib/libotsclient.a")) nil [8367 8441])
+            ("ots_client_sample_SOURCES" variable (:default-value ("ots_client_sample.cpp")) nil [8441 8491])
+            ("ots_client_sample_LDADD" variable (:default-value ("$(top_srcdir)/lib/libotsclient.a")) nil [8491 8550])
+            ("ots_client_mocktest_SOURCES" variable (:default-value ("ots_client_mocktest.cpp")) nil [8550 8604])
+            ("ots_client_mocktest_LDADD" variable (:default-value ("$(top_srcdir)/lib/libotsclient_mock.a")) nil [8604 8670])
+            ("INCLUDES" variable (:default-value ("-I$(top_srcdir)/external/protobuf/src" "-I$(top_srcdir)/include" "-I$(top_srcdir)/common" "-I$(top_srcdir)/coreimpl" "-I$(top_srcdir)/proto")) nil [8670 8813])
+            ("all" function (:arguments ("all-am")) nil [8813 8825])
+            (".SUFFIXES" function nil nil [8826 8837])
+            (".SUFFIXES" function (:arguments (".cpp" ".o" ".obj")) nil [8837 8861])
+            ("$(srcdir)" function (:arguments ("$(srcdir)/Makefile.am" "$(am__configure_deps)")) nil [8861 9263])
+            (".PRECIOUS" function (:arguments ("Makefile")) nil [9263 9283])
+            ("Makefile" function (:arguments ("$(srcdir)/Makefile.in" "$(top_builddir)/config.status")) nil [9283 9655])
+            ("$(top_builddir)" function (:arguments ("$(top_srcdir)/configure" "$(CONFIG_STATUS_DEPENDENCIES)")) nil [9656 9800])
+            ("$(top_srcdir)" function (:arguments ("$(am__configure_deps)")) nil [9801 9908])
+            ("$(ACLOCAL_M4)" function (:arguments ("$(am__aclocal_m4_deps)")) nil [9908 10006])
+            ("clean-noinstPROGRAMS" function nil nil [10007 10088])
+            ("common_util_unittest" function (:arguments ("$(common_util_unittest_OBJECTS)" "$(common_util_unittest_DEPENDENCIES)")) nil [10088 10341])
+            ("ots_client_functiontest" function (:arguments ("$(ots_client_functiontest_OBJECTS)" "$(ots_client_functiontest_DEPENDENCIES)")) nil [10341 10615])
+            ("ots_client_mocktest" function (:arguments ("$(ots_client_mocktest_OBJECTS)" "$(ots_client_mocktest_DEPENDENCIES)")) nil [10615 10861])
+            ("ots_client_noinst_functiontest" function (:arguments ("$(ots_client_noinst_functiontest_OBJECTS)" "$(ots_client_noinst_functiontest_DEPENDENCIES)")) nil [10861 11184])
+            ("ots_client_sample" function (:arguments ("$(ots_client_sample_OBJECTS)" "$(ots_client_sample_DEPENDENCIES)")) nil [11184 11416])
+            ("ots_internal_functiontest" function (:arguments ("$(ots_internal_functiontest_OBJECTS)" "$(ots_internal_functiontest_DEPENDENCIES)")) nil [11416 11704])
+            ("ots_internal_noinst_functiontest" function (:arguments ("$(ots_internal_noinst_functiontest_OBJECTS)" "$(ots_internal_noinst_functiontest_DEPENDENCIES)")) nil [11704 12041])
+            ("ots_types_unittest" function (:arguments ("$(ots_types_unittest_OBJECTS)" "$(ots_types_unittest_DEPENDENCIES)")) nil [12041 12280])
+            ("mostlyclean-compile" function nil nil [12281 12322])
+            ("distclean-compile" function nil nil [12323 12358])
+            ("./$(DEPDIR)/common_util_unittest.Po" include nil nil [12359 12403])
+            ("./$(DEPDIR)/ots_client_functiontest.Po" include nil nil [12403 12450])
+            ("./$(DEPDIR)/ots_client_mocktest.Po" include nil nil [12450 12493])
+            ("./$(DEPDIR)/ots_client_noinst_functiontest.Po" include nil nil [12493 12547])
+            ("./$(DEPDIR)/ots_client_sample.Po" include nil nil [12547 12588])
+            ("./$(DEPDIR)/ots_internal_functiontest.Po" include nil nil [12588 12637])
+            ("./$(DEPDIR)/ots_internal_noinst_functiontest.Po" include nil nil [12637 12693])
+            ("./$(DEPDIR)/ots_types_unittest.Po" include nil nil [12693 12735])
+            (".cpp.o" function nil nil [12736 12907])
+            (".cpp.obj" function nil nil [13021 13211])
+            ("uninstall-info-am" function nil nil [13341 13360])
+            ("ID" function (:arguments ("$(HEADERS)" "$(SOURCES)" "$(LISP)" "$(TAGS_FILES)")) nil [13361 13680])
+            ("tags" function (:arguments ("TAGS")) nil [13680 13691])
+            ("TAGS" function (:arguments ("$(HEADERS)" "$(SOURCES)" "$(TAGS_DEPENDENCIES)" "$(TAGS_FILES)" "$(LISP)")) nil [13692 14238])
+            ("ctags" function (:arguments ("CTAGS")) nil [14238 14251])
+            ("CTAGS" function (:arguments ("$(HEADERS)" "$(SOURCES)" "$(TAGS_DEPENDENCIES)" "$(TAGS_FILES)" "$(LISP)")) nil [14251 14731])
+            ("GTAGS" function nil nil [14732 14843])
+            ("distclean-tags" function nil nil [14844 14906])
+            ("distdir" function (:arguments ("$(DISTFILES)")) nil [14907 15903])
+            ("check-am" function (:arguments ("all-am")) nil [15903 15920])
+            ("check" function (:arguments ("check-am")) nil [15920 15936])
+            ("all-am" function (:arguments ("Makefile" "$(PROGRAMS)")) nil [15936 15965])
+            ("installdirs" function nil nil [15965 15978])
+            ("install" function (:arguments ("install-am")) nil [15978 15998])
+            ("install-exec" function (:arguments ("install-exec-am")) nil [15998 16028])
+            ("install-data" function (:arguments ("install-data-am")) nil [16028 16058])
+            ("uninstall" function (:arguments ("uninstall-am")) nil [16058 16082])
+            ("install-am" function (:arguments ("all-am")) nil [16083 16160])
+            ("installcheck" function (:arguments ("installcheck-am")) nil [16161 16191])
+            ("install-strip" function nil nil [16191 16439])
+            ("mostlyclean-generic" function nil nil [16439 16460])
+            ("clean-generic" function nil nil [16461 16476])
+            ("distclean-generic" function nil nil [16477 16561])
+            ("maintainer-clean-generic" function nil nil [16562 16714])
+            ("clean" function (:arguments ("clean-am")) nil [16714 16730])
+            ("clean-am" function (:arguments ("clean-generic" "clean-noinstPROGRAMS" "mostlyclean-am")) nil [16731 16791])
+            ("distclean" function (:arguments ("distclean-am")) nil [16792 16854])
+            ("distclean-am" function (:arguments ("clean-am" "distclean-compile" "distclean-generic" "distclean-tags")) nil [16854 16931])
+            ("dvi" function (:arguments ("dvi-am")) nil [16932 16944])
+            ("dvi-am" function nil nil [16945 16953])
+            ("html" function (:arguments ("html-am")) nil [16954 16968])
+            ("info" function (:arguments ("info-am")) nil [16969 16983])
+            ("info-am" function nil nil [16984 16993])
+            ("install-data-am" function nil nil [16994 17011])
+            ("install-exec-am" function nil nil [17012 17029])
+            ("install-info" function (:arguments ("install-info-am")) nil [17030 17060])
+            ("install-man" function nil nil [17061 17074])
+            ("installcheck-am" function nil nil [17075 17092])
+            ("maintainer-clean" function (:arguments ("maintainer-clean-am")) nil [17093 17169])
+            ("maintainer-clean-am" function (:arguments ("distclean-am" "maintainer-clean-generic")) nil [17169 17228])
+            ("mostlyclean" function (:arguments ("mostlyclean-am")) nil [17229 17257])
+            ("mostlyclean-am" function (:arguments ("mostlyclean-compile" "mostlyclean-generic")) nil [17258 17314])
+            ("pdf" function (:arguments ("pdf-am")) nil [17315 17327])
+            ("pdf-am" function nil nil [17328 17336])
+            ("ps" function (:arguments ("ps-am")) nil [17337 17347])
+            ("ps-am" function nil nil [17348 17355])
+            ("uninstall-am" function (:arguments ("uninstall-info-am")) nil [17356 17388])
+            (".PHONY" function (:arguments ("CTAGS" "GTAGS" "all" "all-am" "check" "check-am" "clean" "clean-generic" "clean-noinstPROGRAMS" "ctags" "distclean" "distclean-compile" "distclean-generic" "distclean-tags" "distdir" "dvi" "dvi-am" "html" "html-am" "info" "info-am" "install" "install-am" "install-data" "install-data-am" "install-exec" "install-exec-am" "install-info" "install-info-am" "install-man" "install-strip" "installcheck" "installcheck-am" "installdirs" "maintainer-clean" "maintainer-clean-generic" "mostlyclean" "mostlyclean-compile" "mostlyclean-generic" "pdf" "pdf-am" "ps" "ps-am" "tags" "uninstall" "uninstall-am" "uninstall-info-am")) nil [17389 17948]))          
+      :file "Makefile"
+      :pointmax 18093
+      :fsize 18092
+      :lastmodtime '(22044 48940 739064 975000)
+      :unmatched-syntax '((punctuation 18091 . 18092) (symbol 18082 . 18091) (bol 18082 . 18082) (INCLUDE 6951 . 6958) (punctuation 6949 . 6950) (symbol 6937 . 6948) (bol 6937 . 6937)))
+    (semanticdb-table "ots_types_unittest.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ots_exception.h" include nil nil [1 27])
+            ("ots_types.h" include nil nil [28 50])
+            ("ots_types_impl.h" include nil nil [51 78])
+            ("ots_protocol.pb.h" include nil nil [79 107])
+            ("test_util.h" include nil nil [108 130])
+            ("iostream" include (:system-flag t) nil [132 151])
+            ("ctime" include (:system-flag t) nil [152 168])
+            ("google/protobuf/text_format.h" include (:system-flag t) nil [169 209])
+            ("unistd.h" include (:system-flag t) nil [211 230])
+            ("signal.h" include (:system-flag t) nil [231 250])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [252 272])
+            ("com::aliyun" using (:type ("com::aliyun" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [273 301])
+            ("aliyun::openservices::ots" using (:type ("aliyun::openservices::ots" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [302 344])
+            ("google::protobuf" using (:type ("google::protobuf" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [345 378])
+            ("GET_IMPLEMENT" variable (:constant-flag t) nil [388 401])
+            ("FillColumnValue" function
+               (:arguments 
+                  ( ("valueBuilder" variable
+                       (:reference 1
+                        :type ("ColumnValueBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [473 506])
+                    ("pbValue" variable
+                       (:pointer 1
+                        :type ("cloudservice::ots::ColumnValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [507 547]))                  
+                :type "void")
+                nil [452 1772])
+            ("FillRowValue" function
+               (:arguments 
+                  ( ("queryBuilder" variable
+                       (:reference 1
+                        :type ("SingleQueryBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1792 1825])
+                    ("pbParameter" variable
+                       (:pointer 1
+                        :type ("cloudservice::ots::GetRowParameter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1826 1874]))                  
+                :type "void")
+                nil [1774 2997])
+            ("PrintPbMessage" function
+               (:arguments 
+                  ( ("pb" variable
+                       (:pointer 1
+                        :type ("Message" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3019 3031]))                  
+                :type "void")
+                nil [2999 3173])
+            ("ValidateEqual" function
+               (:arguments 
+                  ( ("pb1" variable
+                       (:pointer 1
+                        :type ("Message" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3194 3207])
+                    ("pb2" variable
+                       (:pointer 1
+                        :type ("Message" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3208 3221]))                  
+                :type "bool")
+                nil [3175 3470])
+            ("TestSingleQueryBuilder" function (:type "void") nil [3472 4121])
+            ("TestMultiGetBuilder" function (:type "void") nil [4124 4830])
+            ("TestEmptyValue" function (:type "void") nil [4832 5565])
+            ("SetColumnSchemaType" function
+               (:arguments 
+                  ( ("schemaBuilder" variable
+                       (:reference 1
+                        :type ("ColumnSchemaBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5592 5627])
+                    ("pbSchema" variable
+                       (:pointer 1
+                        :type ("cloudservice::ots::ColumnSchema" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5628 5670])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [5671 5681]))                  
+                :type "void")
+                nil [5567 6241])
+            ("CheckColumnType" function
+               (:arguments 
+                  ( ("type" variable (:type ("ColumnType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6264 6280])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [6281 6291]))                  
+                :type "bool")
+                nil [6243 6730])
+            ("FillGetTableMeta" function
+               (:arguments 
+                  ( ("tmBuilder" variable
+                       (:reference 1
+                        :type ("TableMetaBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6754 6782])
+                    ("pbRequest" variable
+                       (:pointer 1
+                        :type ("cloudservice::ots::CreateTableRequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6783 6832]))                  
+                :type "bool")
+                nil [6732 11896])
+            ("TestTableMeta" function (:type "void") nil [11898 12466])
+            ("FillColumn" function
+               (:arguments 
+                  ( ("builder" variable
+                       (:reference 1
+                        :type ("ColumnBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12484 12507])
+                    ("pbColumn" variable
+                       (:pointer 1
+                        :type ("cloudservice::ots::Column" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12508 12544]))                  
+                :type "void")
+                nil [12468 12957])
+            ("FillCheckType" function
+               (:arguments 
+                  ( ("changeBuilder" variable
+                       (:reference 1
+                        :type ("PutChangeBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12978 13010])
+                    ("pbChange" variable
+                       (:pointer 1
+                        :type ("cloudservice::ots::RowPutChange" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13011 13053]))                  
+                :type "void")
+                nil [12959 13579])
+            ("FillPutChange" function
+               (:arguments 
+                  ( ("changeBuilder" variable
+                       (:reference 1
+                        :type ("PutChangeBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13600 13632])
+                    ("pbChange" variable
+                       (:pointer 1
+                        :type ("cloudservice::ots::RowPutChange" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13633 13675]))                  
+                :type "void")
+                nil [13581 14322])
+            ("FillPutRow" function
+               (:arguments 
+                  ( ("builder" variable
+                       (:reference 1
+                        :type ("PutRowBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14340 14363])
+                    ("pbParameter" variable
+                       (:pointer 1
+                        :type ("cloudservice::ots::PutRowParameter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14364 14412]))                  
+                :type "void")
+                nil [14324 14751])
+            ("TestPutRowBuilder" function (:type "void") nil [14753 15366])
+            ("FillDeleteChange" function
+               (:arguments 
+                  ( ("changeBuilder" variable
+                       (:reference 1
+                        :type ("DeleteChangeBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15390 15425])
+                    ("pbChange" variable
+                       (:pointer 1
+                        :type ("cloudservice::ots::RowDeleteChange" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15426 15471]))                  
+                :type "void")
+                nil [15368 16028])
+            ("FillDeleteRow" function
+               (:arguments 
+                  ( ("deleteBuilder" variable
+                       (:reference 1
+                        :type ("DeleteRowBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16049 16081])
+                    ("pbParameter" variable
+                       (:pointer 1
+                        :type ("cloudservice::ots::DeleteRowParameter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16082 16133]))                  
+                :type "void")
+                nil [16030 16496])
+            ("TestDeleteRowBuilder" function (:type "void") nil [16498 17155])
+            ("FillBatchModify" function
+               (:arguments 
+                  ( ("batchBuilder" variable
+                       (:reference 1
+                        :type ("BatchModifyBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17178 17211])
+                    ("pbRequest" variable
+                       (:pointer 1
+                        :type ("cloudservice::ots::BatchModifyRowRequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17212 17264]))                  
+                :type "void")
+                nil [17157 18209])
+            ("TestBatchModifyBuilder" function (:type "void") nil [18211 18895])
+            ("FillMultiPut" function
+               (:arguments 
+                  ( ("multiBuilder" variable
+                       (:reference 1
+                        :type ("MultiPutBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18915 18945])
+                    ("pbRequest" variable
+                       (:pointer 1
+                        :type ("cloudservice::ots::MultiPutRowRequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18946 18995]))                  
+                :type "void")
+                nil [18897 19276])
+            ("TestMultiPutBuilder" function (:type "void") nil [19278 19772])
+            ("FillMultiDelete" function
+               (:arguments 
+                  ( ("multiBuilder" variable
+                       (:reference 1
+                        :type ("MultiDeleteBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19795 19828])
+                    ("pbRequest" variable
+                       (:pointer 1
+                        :type ("cloudservice::ots::MultiDeleteRowRequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19829 19881]))                  
+                :type "void")
+                nil [19774 20180])
+            ("TestMultiDeleteBuilder" function (:type "void") nil [20182 20697])
+            ("FillRangeQuery" function
+               (:arguments 
+                  ( ("rangeBuilder" variable
+                       (:reference 1
+                        :type ("RangeQueryBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20719 20751])
+                    ("pbRequest" variable
+                       (:pointer 1
+                        :type ("cloudservice::ots::GetRowsByRangeRequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20752 20804]))                  
+                :type "void")
+                nil [20699 22402])
+            ("TestRangeQueryBuilder" function (:type "void") nil [22404 22964])
+            ("FillProtobufColumn" function
+               (:arguments 
+                  ( ("pbColumn" variable
+                       (:pointer 1
+                        :type ("cloudservice::ots::Column" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22990 23026]))                  
+                :type "void")
+                nil [22966 23715])
+            ("FillProtobufRow" function
+               (:arguments 
+                  ( ("pbRow" variable
+                       (:pointer 1
+                        :type ("cloudservice::ots::Row" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23738 23768])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [23769 23779]))                  
+                :type "void")
+                nil [23717 24162])
+            ("FillMultiGetResponse" function
+               (:arguments 
+                  ( ("pbResponse" variable
+                       (:pointer 1
+                        :type ("cloudservice::ots::MultiGetRowResponse" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24190 24241])
+                    ("itemSize" variable (:type "int") (reparse-symbol arg-sub-list) [24242 24255]))                  
+                :type "void")
+                nil [24164 24825])
+            ("FillRangeQueryResponse" function
+               (:arguments 
+                  ( ("pbResponse" variable
+                       (:pointer 1
+                        :type ("cloudservice::ots::GetRowsByRangeResponse" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24855 24909])
+                    ("value" variable (:type "int") (reparse-symbol arg-sub-list) [24910 24920]))                  
+                :type "void")
+                nil [24827 25071])
+            ("PrintColumnValue" function
+               (:arguments 
+                  ( ("value" variable
+                       (:reference 1
+                        :type ("ColumnValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25095 25114]))                  
+                :type "void")
+                nil [25073 25517])
+            ("PrintRowMessage" function
+               (:arguments 
+                  ( ("row" variable
+                       (:reference 1
+                        :type ("Row" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25540 25549]))                  
+                :type "void")
+                nil [25519 26149])
+            ("TestRowIterator" function (:type "void") nil [26151 26869])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [26880 26889])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [26890 26902]))                  
+                :type "int")
+                nil [26871 27213]))          
+      :file "ots_types_unittest.cpp"
+      :pointmax 27215
+      :fsize 27214
+      :lastmodtime '(22045 51703 901067 400000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GET_IMPLEMENT" (spp-arg-list ("ptr") 401 . 406) . ((semantic-list "((void*)(*(u_int64_t*)((void*)ptr)))" 414 . 450)))
+          )
+)
+    (semanticdb-table "test_util.h"
+      :file "test_util.h"
+      :fsize 1850
+      :lastmodtime '(21987 54858 744036 896000))
+    (semanticdb-table "Makefile.in"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("srcdir" variable (:default-value ("@srcdir@")) nil [632 650])
+            ("top_srcdir" variable (:default-value ("@top_srcdir@")) nil [650 676])
+            ("VPATH" variable (:default-value ("@srcdir@")) nil [676 693])
+            ("pkgdatadir" variable (:default-value ("$(datadir)/@PACKAGE@")) nil [693 727])
+            ("pkglibdir" variable (:default-value ("$(libdir)/@PACKAGE@")) nil [727 759])
+            ("pkgincludedir" variable (:default-value ("$(includedir)/@PACKAGE@")) nil [759 799])
+            ("top_builddir" variable (:default-value ("..")) nil [799 817])
+            ("am__cd" variable (:default-value ("CDPATH=\"$${ZSH_VERSION+.}$(PATH_SEPARATOR)\"" "&&" "cd")) nil [817 876])
+            ("INSTALL" variable (:default-value ("@INSTALL@")) nil [876 896])
+            ("install_sh_DATA" variable (:default-value ("$(install_sh)" "-c" "-m" "644")) nil [896 938])
+            ("install_sh_PROGRAM" variable (:default-value ("$(install_sh)" "-c")) nil [938 976])
+            ("install_sh_SCRIPT" variable (:default-value ("$(install_sh)" "-c")) nil [976 1013])
+            ("INSTALL_HEADER" variable (:default-value ("$(INSTALL_DATA)")) nil [1013 1046])
+            ("transform" variable (:default-value ("$(program_transform_name)")) nil [1046 1084])
+            ("NORMAL_INSTALL" variable (:default-value (":")) nil [1084 1103])
+            ("PRE_INSTALL" variable (:default-value (":")) nil [1103 1119])
+            ("POST_INSTALL" variable (:default-value (":")) nil [1119 1136])
+            ("NORMAL_UNINSTALL" variable (:default-value (":")) nil [1136 1157])
+            ("PRE_UNINSTALL" variable (:default-value (":")) nil [1157 1175])
+            ("POST_UNINSTALL" variable (:default-value (":")) nil [1175 1194])
+            ("noinst_PROGRAMS" variable (:default-value ("common_util_unittest$(EXEEXT)" "ots_types_unittest$(EXEEXT)" "ots_client_functiontest$(EXEEXT)" "ots_client_noinst_functiontest$(EXEEXT)" "ots_internal_functiontest$(EXEEXT)" "ots_internal_noinst_functiontest$(EXEEXT)" "ots_client_sample$(EXEEXT)" "ots_client_mocktest$(EXEEXT)")) nil [1194 1491])
+            ("subdir" variable (:default-value ("testing")) nil [1491 1508])
+            ("DIST_COMMON" variable (:default-value ("$(srcdir)/Makefile.am" "$(srcdir)/Makefile.in")) nil [1508 1566])
+            ("ACLOCAL_M4" variable (:default-value ("$(top_srcdir)/aclocal.m4")) nil [1566 1604])
+            ("am__aclocal_m4_deps" variable (:default-value ("$(top_srcdir)/configure.in")) nil [1604 1653])
+            ("am__configure_deps" variable (:default-value ("$(am__aclocal_m4_deps)" "$(CONFIGURE_DEPENDENCIES)" "$(ACLOCAL_M4)")) nil [1653 1740])
+            ("mkinstalldirs" variable (:default-value ("$(install_sh)" "-d")) nil [1740 1773])
+            ("CONFIG_CLEAN_FILES" variable nil nil [1773 1794])
+            ("PROGRAMS" variable (:default-value ("$(noinst_PROGRAMS)")) nil [1794 1824])
+            ("am_common_util_unittest_OBJECTS" variable (:default-value ("common_util_unittest.$(OBJEXT)")) nil [1824 1889])
+            ("common_util_unittest_OBJECTS" variable (:default-value ("$(am_common_util_unittest_OBJECTS)")) nil [1889 1955])
+            ("common_util_unittest_DEPENDENCIES" variable (:default-value ("$(top_srcdir)/lib/libotsclient.a")) nil [1955 2024])
+            ("am_ots_client_functiontest_OBJECTS" variable (:default-value ("ots_client_functiontest.$(OBJEXT)")) nil [2024 2099])
+            ("ots_client_functiontest_OBJECTS" variable (:default-value ("$(am_ots_client_functiontest_OBJECTS)")) nil [2099 2175])
+            ("ots_client_functiontest_DEPENDENCIES" variable (:default-value ("$(top_srcdir)/lib/libotsclient.a")) nil [2175 2251])
+            ("am_ots_client_mocktest_OBJECTS" variable (:default-value ("ots_client_mocktest.$(OBJEXT)")) nil [2251 2314])
+            ("ots_client_mocktest_OBJECTS" variable (:default-value ("$(am_ots_client_mocktest_OBJECTS)")) nil [2314 2378])
+            ("ots_client_mocktest_DEPENDENCIES" variable (:default-value ("$(top_srcdir)/lib/libotsclient_mock.a")) nil [2378 2455])
+            ("am_ots_client_noinst_functiontest_OBJECTS" variable (:default-value ("ots_client_noinst_functiontest.$(OBJEXT)")) nil [2455 2544])
+            ("ots_client_noinst_functiontest_OBJECTS" variable (:default-value ("$(am_ots_client_noinst_functiontest_OBJECTS)")) nil [2544 2634])
+            ("ots_client_noinst_functiontest_DEPENDENCIES" variable (:default-value ("$(top_srcdir)/lib/libotsclient.a")) nil [2634 2717])
+            ("am_ots_client_sample_OBJECTS" variable (:default-value ("ots_client_sample.$(OBJEXT)")) nil [2717 2776])
+            ("ots_client_sample_OBJECTS" variable (:default-value ("$(am_ots_client_sample_OBJECTS)")) nil [2776 2836])
+            ("ots_client_sample_DEPENDENCIES" variable (:default-value ("$(top_srcdir)/lib/libotsclient.a")) nil [2836 2902])
+            ("am_ots_internal_functiontest_OBJECTS" variable (:default-value ("ots_internal_functiontest.$(OBJEXT)")) nil [2902 2981])
+            ("ots_internal_functiontest_OBJECTS" variable (:default-value ("$(am_ots_internal_functiontest_OBJECTS)")) nil [2981 3061])
+            ("ots_internal_functiontest_DEPENDENCIES" variable (:default-value ("$(top_srcdir)/lib/libotsclient.a")) nil [3061 3139])
+            ("am_ots_internal_noinst_functiontest_OBJECTS" variable (:default-value ("ots_internal_noinst_functiontest.$(OBJEXT)")) nil [3139 3232])
+            ("ots_internal_noinst_functiontest_OBJECTS" variable (:default-value ("$(am_ots_internal_noinst_functiontest_OBJECTS)")) nil [3232 3326])
+            ("ots_internal_noinst_functiontest_DEPENDENCIES" variable (:default-value ("$(top_srcdir)/lib/libotsclient.a")) nil [3326 3411])
+            ("am_ots_types_unittest_OBJECTS" variable (:default-value ("ots_types_unittest.$(OBJEXT)")) nil [3411 3472])
+            ("ots_types_unittest_OBJECTS" variable (:default-value ("$(am_ots_types_unittest_OBJECTS)")) nil [3472 3534])
+            ("ots_types_unittest_DEPENDENCIES" variable (:default-value ("$(top_srcdir)/lib/libotsclient.a")) nil [3534 3601])
+            ("DEFAULT_INCLUDES" variable (:default-value ("-I." "-I$(srcdir)")) nil [3601 3636])
+            ("depcomp" variable (:default-value ("$(SHELL)" "$(top_srcdir)/depcomp")) nil [3636 3677])
+            ("am__depfiles_maybe" variable (:default-value ("depfiles")) nil [3677 3707])
+            ("CXXCOMPILE" variable (:default-value ("$(CXX)" "$(DEFS)" "$(DEFAULT_INCLUDES)" "$(INCLUDES)" "$(AM_CPPFLAGS)" "$(CPPFLAGS)" "$(AM_CXXFLAGS)" "$(CXXFLAGS)")) nil [3707 3824])
+            ("CXXLD" variable (:default-value ("$(CXX)")) nil [3824 3839])
+            ("CXXLINK" variable (:default-value ("$(CXXLD)" "$(AM_CXXFLAGS)" "$(CXXFLAGS)" "$(AM_LDFLAGS)" "$(LDFLAGS)" "-o" "$@")) nil [3839 3919])
+            ("SOURCES" variable (:default-value ("$(common_util_unittest_SOURCES)" "$(ots_client_functiontest_SOURCES)" "$(ots_client_mocktest_SOURCES)" "$(ots_client_noinst_functiontest_SOURCES)" "$(ots_client_sample_SOURCES)" "$(ots_internal_functiontest_SOURCES)" "$(ots_internal_noinst_functiontest_SOURCES)" "$(ots_types_unittest_SOURCES)")) nil [3919 4230])
+            ("DIST_SOURCES" variable (:default-value ("$(common_util_unittest_SOURCES)" "$(ots_client_functiontest_SOURCES)" "$(ots_client_mocktest_SOURCES)" "$(ots_client_noinst_functiontest_SOURCES)" "$(ots_client_sample_SOURCES)" "$(ots_internal_functiontest_SOURCES)" "$(ots_internal_noinst_functiontest_SOURCES)" "$(ots_types_unittest_SOURCES)")) nil [4230 4546])
+            ("ETAGS" variable (:default-value ("etags")) nil [4546 4560])
+            ("CTAGS" variable (:default-value ("ctags")) nil [4560 4574])
+            ("DISTFILES" variable (:default-value ("$(DIST_COMMON)" "$(DIST_SOURCES)" "$(TEXINFOS)" "$(EXTRA_DIST)")) nil [4574 4643])
+            ("ACLOCAL" variable (:default-value ("@ACLOCAL@")) nil [4643 4663])
+            ("AMDEP_FALSE" variable (:default-value ("@AMDEP_FALSE@")) nil [4663 4691])
+            ("AMDEP_TRUE" variable (:default-value ("@AMDEP_TRUE@")) nil [4691 4717])
+            ("AMTAR" variable (:default-value ("@AMTAR@")) nil [4717 4733])
+            ("AUTOCONF" variable (:default-value ("@AUTOCONF@")) nil [4733 4755])
+            ("AUTOHEADER" variable (:default-value ("@AUTOHEADER@")) nil [4755 4781])
+            ("AUTOMAKE" variable (:default-value ("@AUTOMAKE@")) nil [4781 4803])
+            ("AWK" variable (:default-value ("@AWK@")) nil [4803 4815])
+            ("CC" variable (:default-value ("@CC@")) nil [4815 4825])
+            ("CCDEPMODE" variable (:default-value ("@CCDEPMODE@")) nil [4825 4849])
+            ("CFLAGS" variable (:default-value ("@CFLAGS@")) nil [4849 4867])
+            ("CPP" variable (:default-value ("@CPP@")) nil [4867 4879])
+            ("CPPFLAGS" variable (:default-value ("@CPPFLAGS@")) nil [4879 4901])
+            ("CXX" variable (:default-value ("@CXX@")) nil [4901 4913])
+            ("CXXDEPMODE" variable (:default-value ("@CXXDEPMODE@")) nil [4913 4939])
+            ("CXXFLAGS" variable (:default-value ("@CXXFLAGS@")) nil [4939 4961])
+            ("CYGPATH_W" variable (:default-value ("@CYGPATH_W@")) nil [4961 4985])
+            ("DEFS" variable (:default-value ("@DEFS@")) nil [4985 4999])
+            ("DEPDIR" variable (:default-value ("@DEPDIR@")) nil [4999 5017])
+            ("ECHO_C" variable (:default-value ("@ECHO_C@")) nil [5017 5035])
+            ("ECHO_N" variable (:default-value ("@ECHO_N@")) nil [5035 5053])
+            ("ECHO_T" variable (:default-value ("@ECHO_T@")) nil [5053 5071])
+            ("EGREP" variable (:default-value ("@EGREP@")) nil [5071 5087])
+            ("EXEEXT" variable (:default-value ("@EXEEXT@")) nil [5087 5105])
+            ("INSTALL_DATA" variable (:default-value ("@INSTALL_DATA@")) nil [5105 5135])
+            ("INSTALL_PROGRAM" variable (:default-value ("@INSTALL_PROGRAM@")) nil [5135 5171])
+            ("INSTALL_SCRIPT" variable (:default-value ("@INSTALL_SCRIPT@")) nil [5171 5205])
+            ("INSTALL_STRIP_PROGRAM" variable (:default-value ("@INSTALL_STRIP_PROGRAM@")) nil [5205 5253])
+            ("LDFLAGS" variable (:default-value ("@LDFLAGS@")) nil [5253 5273])
+            ("LIBOBJS" variable (:default-value ("@LIBOBJS@")) nil [5273 5293])
+            ("LIBS" variable (:default-value ("-lcrypto" "-lcurl" "-lz" "-lpthread" "-lprotobuf")) nil [5293 5341])
+            ("LTLIBOBJS" variable (:default-value ("@LTLIBOBJS@")) nil [5341 5365])
+            ("MAKEINFO" variable (:default-value ("@MAKEINFO@")) nil [5365 5387])
+            ("OBJEXT" variable (:default-value ("@OBJEXT@")) nil [5387 5405])
+            ("PACKAGE" variable (:default-value ("@PACKAGE@")) nil [5405 5425])
+            ("PACKAGE_BUGREPORT" variable (:default-value ("@PACKAGE_BUGREPORT@")) nil [5425 5465])
+            ("PACKAGE_NAME" variable (:default-value ("@PACKAGE_NAME@")) nil [5465 5495])
+            ("PACKAGE_STRING" variable (:default-value ("@PACKAGE_STRING@")) nil [5495 5529])
+            ("PACKAGE_TARNAME" variable (:default-value ("@PACKAGE_TARNAME@")) nil [5529 5565])
+            ("PACKAGE_VERSION" variable (:default-value ("@PACKAGE_VERSION@")) nil [5565 5601])
+            ("PATH_SEPARATOR" variable (:default-value ("@PATH_SEPARATOR@")) nil [5601 5635])
+            ("RANLIB" variable (:default-value ("@RANLIB@")) nil [5635 5653])
+            ("SET_MAKE" variable (:default-value ("@SET_MAKE@")) nil [5653 5675])
+            ("SHELL" variable (:default-value ("@SHELL@")) nil [5675 5691])
+            ("STRIP" variable (:default-value ("@STRIP@")) nil [5691 5707])
+            ("VERSION" variable (:default-value ("@VERSION@")) nil [5707 5727])
+            ("ac_ct_CC" variable (:default-value ("@ac_ct_CC@")) nil [5727 5749])
+            ("ac_ct_CXX" variable (:default-value ("@ac_ct_CXX@")) nil [5749 5773])
+            ("ac_ct_RANLIB" variable (:default-value ("@ac_ct_RANLIB@")) nil [5773 5803])
+            ("ac_ct_STRIP" variable (:default-value ("@ac_ct_STRIP@")) nil [5803 5831])
+            ("am__fastdepCC_FALSE" variable (:default-value ("@am__fastdepCC_FALSE@")) nil [5831 5875])
+            ("am__fastdepCC_TRUE" variable (:default-value ("@am__fastdepCC_TRUE@")) nil [5875 5917])
+            ("am__fastdepCXX_FALSE" variable (:default-value ("@am__fastdepCXX_FALSE@")) nil [5917 5963])
+            ("am__fastdepCXX_TRUE" variable (:default-value ("@am__fastdepCXX_TRUE@")) nil [5963 6007])
+            ("am__include" variable (:default-value ("@am__include@")) nil [6007 6035])
+            ("am__leading_dot" variable (:default-value ("@am__leading_dot@")) nil [6035 6071])
+            ("am__quote" variable (:default-value ("@am__quote@")) nil [6071 6095])
+            ("am__tar" variable (:default-value ("@am__tar@")) nil [6095 6115])
+            ("am__untar" variable (:default-value ("@am__untar@")) nil [6115 6139])
+            ("bindir" variable (:default-value ("@bindir@")) nil [6139 6157])
+            ("build_alias" variable (:default-value ("@build_alias@")) nil [6157 6185])
+            ("datadir" variable (:default-value ("@datadir@")) nil [6185 6205])
+            ("exec_prefix" variable (:default-value ("@exec_prefix@")) nil [6205 6233])
+            ("host_alias" variable (:default-value ("@host_alias@")) nil [6233 6259])
+            ("includedir" variable (:default-value ("@includedir@")) nil [6259 6285])
+            ("infodir" variable (:default-value ("@infodir@")) nil [6285 6305])
+            ("install_sh" variable (:default-value ("@install_sh@")) nil [6305 6331])
+            ("libdir" variable (:default-value ("@libdir@")) nil [6331 6349])
+            ("libexecdir" variable (:default-value ("@libexecdir@")) nil [6349 6375])
+            ("localstatedir" variable (:default-value ("@localstatedir@")) nil [6375 6407])
+            ("mandir" variable (:default-value ("@mandir@")) nil [6407 6425])
+            ("mkdir_p" variable (:default-value ("@mkdir_p@")) nil [6425 6445])
+            ("oldincludedir" variable (:default-value ("@oldincludedir@")) nil [6445 6477])
+            ("prefix" variable (:default-value ("@prefix@")) nil [6477 6495])
+            ("program_transform_name" variable (:default-value ("@program_transform_name@")) nil [6495 6545])
+            ("sbindir" variable (:default-value ("@sbindir@")) nil [6545 6565])
+            ("sharedstatedir" variable (:default-value ("@sharedstatedir@")) nil [6565 6599])
+            ("sysconfdir" variable (:default-value ("@sysconfdir@")) nil [6599 6625])
+            ("target_alias" variable (:default-value ("@target_alias@")) nil [6625 6655])
+            ("AUTOMAKE_OPTIONS" variable (:default-value ("foreign")) nil [6655 6682])
+            ("common_util_unittest_SOURCES" variable (:default-value ("common_util_unittest.cpp")) nil [6682 6738])
+            ("common_util_unittest_LDADD" variable (:default-value ("$(top_srcdir)/lib/libotsclient.a")) nil [6738 6800])
+            ("ots_types_unittest_SOURCES" variable (:default-value ("ots_types_unittest.cpp")) nil [6800 6852])
+            ("ots_types_unittest_LDADD" variable (:default-value ("$(top_srcdir)/lib/libotsclient.a")) nil [6852 6912])
+            ("ots_client_functiontest_SOURCES" variable (:default-value ("ots_client_functiontest.cpp")) nil [6912 6974])
+            ("ots_client_functiontest_LDADD" variable (:default-value ("$(top_srcdir)/lib/libotsclient.a")) nil [6974 7039])
+            ("ots_client_noinst_functiontest_SOURCES" variable (:default-value ("ots_client_noinst_functiontest.cpp")) nil [7039 7115])
+            ("ots_client_noinst_functiontest_LDADD" variable (:default-value ("$(top_srcdir)/lib/libotsclient.a")) nil [7115 7187])
+            ("ots_internal_functiontest_SOURCES" variable (:default-value ("ots_internal_functiontest.cpp")) nil [7187 7253])
+            ("ots_internal_functiontest_LDADD" variable (:default-value ("$(top_srcdir)/lib/libotsclient.a")) nil [7253 7320])
+            ("ots_internal_noinst_functiontest_SOURCES" variable (:default-value ("ots_internal_noinst_functiontest.cpp")) nil [7320 7400])
+            ("ots_internal_noinst_functiontest_LDADD" variable (:default-value ("$(top_srcdir)/lib/libotsclient.a")) nil [7400 7474])
+            ("ots_client_sample_SOURCES" variable (:default-value ("ots_client_sample.cpp")) nil [7474 7524])
+            ("ots_client_sample_LDADD" variable (:default-value ("$(top_srcdir)/lib/libotsclient.a")) nil [7524 7583])
+            ("ots_client_mocktest_SOURCES" variable (:default-value ("ots_client_mocktest.cpp")) nil [7583 7637])
+            ("ots_client_mocktest_LDADD" variable (:default-value ("$(top_srcdir)/lib/libotsclient_mock.a")) nil [7637 7703])
+            ("INCLUDES" variable (:default-value ("-I$(top_srcdir)/external/protobuf/src" "-I$(top_srcdir)/include" "-I$(top_srcdir)/common" "-I$(top_srcdir)/coreimpl" "-I$(top_srcdir)/proto")) nil [7703 7846])
+            ("all" function (:arguments ("all-am")) nil [7846 7858])
+            (".SUFFIXES" function nil nil [7859 7870])
+            (".SUFFIXES" function (:arguments (".cpp" ".o" ".obj")) nil [7870 7894])
+            ("$(srcdir)" function (:arguments ("$(srcdir)/Makefile.am" "$(am__configure_deps)")) nil [7894 8296])
+            (".PRECIOUS" function (:arguments ("Makefile")) nil [8296 8316])
+            ("Makefile" function (:arguments ("$(srcdir)/Makefile.in" "$(top_builddir)/config.status")) nil [8316 8688])
+            ("$(top_builddir)" function (:arguments ("$(top_srcdir)/configure" "$(CONFIG_STATUS_DEPENDENCIES)")) nil [8689 8833])
+            ("$(top_srcdir)" function (:arguments ("$(am__configure_deps)")) nil [8834 8941])
+            ("$(ACLOCAL_M4)" function (:arguments ("$(am__aclocal_m4_deps)")) nil [8941 9039])
+            ("clean-noinstPROGRAMS" function nil nil [9040 9121])
+            ("common_util_unittest" function (:arguments ("$(common_util_unittest_OBJECTS)" "$(common_util_unittest_DEPENDENCIES)")) nil [9121 9374])
+            ("ots_client_functiontest" function (:arguments ("$(ots_client_functiontest_OBJECTS)" "$(ots_client_functiontest_DEPENDENCIES)")) nil [9374 9648])
+            ("ots_client_mocktest" function (:arguments ("$(ots_client_mocktest_OBJECTS)" "$(ots_client_mocktest_DEPENDENCIES)")) nil [9648 9894])
+            ("ots_client_noinst_functiontest" function (:arguments ("$(ots_client_noinst_functiontest_OBJECTS)" "$(ots_client_noinst_functiontest_DEPENDENCIES)")) nil [9894 10217])
+            ("ots_client_sample" function (:arguments ("$(ots_client_sample_OBJECTS)" "$(ots_client_sample_DEPENDENCIES)")) nil [10217 10449])
+            ("ots_internal_functiontest" function (:arguments ("$(ots_internal_functiontest_OBJECTS)" "$(ots_internal_functiontest_DEPENDENCIES)")) nil [10449 10737])
+            ("ots_internal_noinst_functiontest" function (:arguments ("$(ots_internal_noinst_functiontest_OBJECTS)" "$(ots_internal_noinst_functiontest_DEPENDENCIES)")) nil [10737 11074])
+            ("ots_types_unittest" function (:arguments ("$(ots_types_unittest_OBJECTS)" "$(ots_types_unittest_DEPENDENCIES)")) nil [11074 11313])
+            ("mostlyclean-compile" function nil nil [11314 11355])
+            ("distclean-compile" function nil nil [11356 11391])
+            (".cpp.o" function nil nil [12089 12097])
+            (".cpp.obj" function nil nil [12533 12543])
+            ("uninstall-info-am" function nil nil [13012 13031])
+            ("ID" function (:arguments ("$(HEADERS)" "$(SOURCES)" "$(LISP)" "$(TAGS_FILES)")) nil [13032 13351])
+            ("tags" function (:arguments ("TAGS")) nil [13351 13362])
+            ("TAGS" function (:arguments ("$(HEADERS)" "$(SOURCES)" "$(TAGS_DEPENDENCIES)" "$(TAGS_FILES)" "$(LISP)")) nil [13363 13909])
+            ("ctags" function (:arguments ("CTAGS")) nil [13909 13922])
+            ("CTAGS" function (:arguments ("$(HEADERS)" "$(SOURCES)" "$(TAGS_DEPENDENCIES)" "$(TAGS_FILES)" "$(LISP)")) nil [13922 14402])
+            ("GTAGS" function nil nil [14403 14514])
+            ("distclean-tags" function nil nil [14515 14577])
+            ("distdir" function (:arguments ("$(DISTFILES)")) nil [14578 15574])
+            ("check-am" function (:arguments ("all-am")) nil [15574 15591])
+            ("check" function (:arguments ("check-am")) nil [15591 15607])
+            ("all-am" function (:arguments ("Makefile" "$(PROGRAMS)")) nil [15607 15636])
+            ("installdirs" function nil nil [15636 15649])
+            ("install" function (:arguments ("install-am")) nil [15649 15669])
+            ("install-exec" function (:arguments ("install-exec-am")) nil [15669 15699])
+            ("install-data" function (:arguments ("install-data-am")) nil [15699 15729])
+            ("uninstall" function (:arguments ("uninstall-am")) nil [15729 15753])
+            ("install-am" function (:arguments ("all-am")) nil [15754 15831])
+            ("installcheck" function (:arguments ("installcheck-am")) nil [15832 15862])
+            ("install-strip" function nil nil [15862 16110])
+            ("mostlyclean-generic" function nil nil [16110 16131])
+            ("clean-generic" function nil nil [16132 16147])
+            ("distclean-generic" function nil nil [16148 16232])
+            ("maintainer-clean-generic" function nil nil [16233 16385])
+            ("clean" function (:arguments ("clean-am")) nil [16385 16401])
+            ("clean-am" function (:arguments ("clean-generic" "clean-noinstPROGRAMS" "mostlyclean-am")) nil [16402 16462])
+            ("distclean" function (:arguments ("distclean-am")) nil [16463 16525])
+            ("distclean-am" function (:arguments ("clean-am" "distclean-compile" "distclean-generic" "distclean-tags")) nil [16525 16602])
+            ("dvi" function (:arguments ("dvi-am")) nil [16603 16615])
+            ("dvi-am" function nil nil [16616 16624])
+            ("html" function (:arguments ("html-am")) nil [16625 16639])
+            ("info" function (:arguments ("info-am")) nil [16640 16654])
+            ("info-am" function nil nil [16655 16664])
+            ("install-data-am" function nil nil [16665 16682])
+            ("install-exec-am" function nil nil [16683 16700])
+            ("install-info" function (:arguments ("install-info-am")) nil [16701 16731])
+            ("install-man" function nil nil [16732 16745])
+            ("installcheck-am" function nil nil [16746 16763])
+            ("maintainer-clean" function (:arguments ("maintainer-clean-am")) nil [16764 16840])
+            ("maintainer-clean-am" function (:arguments ("distclean-am" "maintainer-clean-generic")) nil [16840 16899])
+            ("mostlyclean" function (:arguments ("mostlyclean-am")) nil [16900 16928])
+            ("mostlyclean-am" function (:arguments ("mostlyclean-compile" "mostlyclean-generic")) nil [16929 16985])
+            ("pdf" function (:arguments ("pdf-am")) nil [16986 16998])
+            ("pdf-am" function nil nil [16999 17007])
+            ("ps" function (:arguments ("ps-am")) nil [17008 17018])
+            ("ps-am" function nil nil [17019 17026])
+            ("uninstall-am" function (:arguments ("uninstall-info-am")) nil [17027 17059])
+            (".PHONY" function (:arguments ("CTAGS" "GTAGS" "all" "all-am" "check" "check-am" "clean" "clean-generic" "clean-noinstPROGRAMS" "ctags" "distclean" "distclean-compile" "distclean-generic" "distclean-tags" "distdir" "dvi" "dvi-am" "html" "html-am" "info" "info-am" "install" "install-am" "install-data" "install-data-am" "install-exec" "install-exec-am" "install-info" "install-info-am" "install-man" "install-strip" "installcheck" "installcheck-am" "installdirs" "maintainer-clean" "maintainer-clean-generic" "mostlyclean" "mostlyclean-compile" "mostlyclean-generic" "pdf" "pdf-am" "ps" "ps-am" "tags" "uninstall" "uninstall-am" "uninstall-info-am")) nil [17060 17619]))          
+      :file "Makefile.in"
+      :pointmax 17764
+      :fsize 17763
+      :lastmodtime '(22043 18175 547036 292000)
+      :unmatched-syntax '((punctuation 17762 . 17763) (symbol 17753 . 17762) (bol 17753 . 17753) (string 12992 . 13011) (punctuation 12990 . 12991) (punctuation 12989 . 12990) (symbol 12986 . 12988) (symbol 12983 . 12985) (semantic-list 12970 . 12982) (punctuation 12969 . 12970) (bol 12946 . 12946) (punctuation 12944 . 12945) (symbol 12930 . 12944) (punctuation 12929 . 12930) (semantic-list 12919 . 12928) (punctuation 12918 . 12919) (semantic-list 12905 . 12917) (punctuation 12904 . 12905) (semantic-list 12895 . 12903) (punctuation 12894 . 12895) (punctuation 12893 . 12894) (symbol 12887 . 12893) (punctuation 12885 . 12886) (symbol 12865 . 12885) (punctuation 12864 . 12865) (bol 12852 . 12852) (punctuation 12850 . 12851) (symbol 12836 . 12850) (punctuation 12835 . 12836) (symbol 12832 . 12834) (punctuation 12831 . 12832) (symbol 12824 . 12831) (string 12819 . 12823) (punctuation 12818 . 12819) (symbol 12812 . 12818) (string 12807 . 12811) (punctuation 12806 . 12807) (symbol 12800 . 12806) (punctuation 12798 . 12799) (symbol 12778 . 12798) (punctuation 12777 . 12778) (bol 12765 . 12765) (symbol 12762 . 12764) (punctuation 12760 . 12761) (symbol 12759 . 12760) (symbol 12754 . 12758) (punctuation 12752 . 12753) (string 12734 . 12752) (symbol 12731 . 12733) (symbol 12728 . 12730) (ELSE 12723 . 12727) (punctuation 12721 . 12722) (string 12704 . 12721) (string 12685 . 12703) (symbol 12682 . 12684) (symbol 12679 . 12681) (symbol 12674 . 12678) (punctuation 12672 . 12673) (symbol 12653 . 12672) (punctuation 12652 . 12653) (punctuation 12648 . 12649) (string 12629 . 12648) (punctuation 12627 . 12628) (punctuation 12626 . 12627) (symbol 12623 . 12625) (symbol 12620 . 12622) (string 12601 . 12619) (symbol 12597 . 12600) (symbol 12593 . 12596) (symbol 12589 . 12592) (punctuation 12587 . 12588) (punctuation 12586 . 12587) (symbol 12582 . 12585) (semantic-list 12569 . 12581) (punctuation 12568 . 12569) (IF 12565 . 12567) (bol 12543 . 12543) (symbol 12530 . 12531) (punctuation 12529 . 12530) (punctuation 12527 . 12528) (punctuation 12526 . 12527) (symbol 12523 . 12525) (symbol 12520 . 12522) (semantic-list 12507 . 12519) (punctuation 12506 . 12507) (bol 12483 . 12483) (punctuation 12481 . 12482) (symbol 12467 . 12481) (punctuation 12466 . 12467) (semantic-list 12456 . 12465) (punctuation 12455 . 12456) (semantic-list 12442 . 12454) (punctuation 12441 . 12442) (semantic-list 12432 . 12440) (punctuation 12431 . 12432) (punctuation 12430 . 12431) (symbol 12424 . 12430) (punctuation 12422 . 12423) (symbol 12402 . 12422) (punctuation 12401 . 12402) (bol 12389 . 12389) (punctuation 12387 . 12388) (symbol 12373 . 12387) (punctuation 12372 . 12373) (symbol 12369 . 12371) (punctuation 12368 . 12369) (symbol 12361 . 12368) (string 12356 . 12360) (punctuation 12355 . 12356) (symbol 12349 . 12355) (string 12344 . 12348) (punctuation 12343 . 12344) (symbol 12337 . 12343) (punctuation 12335 . 12336) (symbol 12315 . 12335) (punctuation 12314 . 12315) (bol 12302 . 12302) (symbol 12299 . 12301) (punctuation 12297 . 12298) (symbol 12296 . 12297) (symbol 12291 . 12295) (punctuation 12289 . 12290) (string 12271 . 12289) (symbol 12268 . 12270) (symbol 12265 . 12267) (ELSE 12260 . 12264) (punctuation 12258 . 12259) (string 12241 . 12258) (string 12222 . 12240) (symbol 12219 . 12221) (symbol 12216 . 12218) (symbol 12211 . 12215) (punctuation 12209 . 12210) (symbol 12190 . 12209) (punctuation 12189 . 12190) (punctuation 12185 . 12186) (symbol 12184 . 12185) (punctuation 12183 . 12184) (punctuation 12181 . 12182) (punctuation 12180 . 12181) (symbol 12177 . 12179) (symbol 12174 . 12176) (string 12155 . 12173) (symbol 12151 . 12154) (symbol 12147 . 12150) (symbol 12143 . 12146) (punctuation 12141 . 12142) (punctuation 12140 . 12141) (symbol 12136 . 12139) (semantic-list 12123 . 12135) (punctuation 12122 . 12123) (IF 12119 . 12121) (bol 12097 . 12097) (punctuation 12086 . 12087) (symbol 12077 . 12086) (punctuation 12076 . 12077) (symbol 12054 . 12076) (semantic-list 12046 . 12054) (punctuation 12045 . 12046) (symbol 12043 . 12045) (punctuation 12042 . 12043) (symbol 12033 . 12042) (punctuation 12032 . 12033) (punctuation 12030 . 12031) (symbol 12019 . 12030) (punctuation 12018 . 12019) (bol 12006 . 12006) (punctuation 12004 . 12005) (symbol 11995 . 12004) (punctuation 11994 . 11995) (symbol 11958 . 11994) (semantic-list 11950 . 11958) (punctuation 11949 . 11950) (symbol 11947 . 11949) (punctuation 11946 . 11947) (symbol 11937 . 11946) (punctuation 11936 . 11937) (punctuation 11934 . 11935) (symbol 11923 . 11934) (punctuation 11922 . 11923) (bol 11910 . 11910) (punctuation 11908 . 11909) (symbol 11899 . 11908) (punctuation 11898 . 11899) (symbol 11869 . 11898) (semantic-list 11861 . 11869) (punctuation 11860 . 11861) (symbol 11858 . 11860) (punctuation 11857 . 11858) (symbol 11848 . 11857) (punctuation 11847 . 11848) (punctuation 11845 . 11846) (symbol 11834 . 11845) (punctuation 11833 . 11834) (bol 11821 . 11821) (punctuation 11819 . 11820) (symbol 11810 . 11819) (punctuation 11809 . 11810) (symbol 11788 . 11809) (semantic-list 11780 . 11788) (punctuation 11779 . 11780) (symbol 11777 . 11779) (punctuation 11776 . 11777) (symbol 11767 . 11776) (punctuation 11766 . 11767) (punctuation 11764 . 11765) (symbol 11753 . 11764) (punctuation 11752 . 11753) (bol 11740 . 11740) (punctuation 11738 . 11739) (symbol 11729 . 11738) (punctuation 11728 . 11729) (symbol 11694 . 11728) (semantic-list 11686 . 11694) (punctuation 11685 . 11686) (symbol 11683 . 11685) (punctuation 11682 . 11683) (symbol 11673 . 11682) (punctuation 11672 . 11673) (punctuation 11670 . 11671) (symbol 11659 . 11670) (punctuation 11658 . 11659) (bol 11646 . 11646) (punctuation 11644 . 11645) (symbol 11635 . 11644) (punctuation 11634 . 11635) (symbol 11611 . 11634) (semantic-list 11603 . 11611) (punctuation 11602 . 11603) (symbol 11600 . 11602) (punctuation 11599 . 11600) (symbol 11590 . 11599) (punctuation 11589 . 11590) (punctuation 11587 . 11588) (symbol 11576 . 11587) (punctuation 11575 . 11576) (bol 11563 . 11563) (punctuation 11561 . 11562) (symbol 11552 . 11561) (punctuation 11551 . 11552) (symbol 11524 . 11551) (semantic-list 11516 . 11524) (punctuation 11515 . 11516) (symbol 11513 . 11515) (punctuation 11512 . 11513) (symbol 11503 . 11512) (punctuation 11502 . 11503) (punctuation 11500 . 11501) (symbol 11489 . 11500) (punctuation 11488 . 11489) (bol 11476 . 11476) (punctuation 11474 . 11475) (symbol 11465 . 11474) (punctuation 11464 . 11465) (symbol 11440 . 11464) (semantic-list 11432 . 11440) (punctuation 11431 . 11432) (symbol 11429 . 11431) (punctuation 11428 . 11429) (symbol 11419 . 11428) (punctuation 11418 . 11419) (punctuation 11416 . 11417) (symbol 11405 . 11416) (punctuation 11404 . 11405) (bol 11392 . 11392)))
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("AUTOMAKE_OPTIONS" variable (:default-value ("foreign")) nil [1 26])
+            ("noinst_PROGRAMS" variable (:default-value ("common_util_unittest" "ots_types_unittest" "ots_client_functiontest" "ots_client_noinst_functiontest" "ots_internal_functiontest" "ots_internal_noinst_functiontest" "ots_client_sample" "ots_client_mocktest")) nil [26 234])
+            ("common_util_unittest_SOURCES" variable (:default-value ("common_util_unittest.cpp")) nil [234 288])
+            ("common_util_unittest_LDADD" variable (:default-value ("$(top_srcdir)/lib/libotsclient.a")) nil [288 348])
+            ("ots_types_unittest_SOURCES" variable (:default-value ("ots_types_unittest.cpp")) nil [348 398])
+            ("ots_types_unittest_LDADD" variable (:default-value ("$(top_srcdir)/lib/libotsclient.a")) nil [398 456])
+            ("ots_client_functiontest_SOURCES" variable (:default-value ("ots_client_functiontest.cpp")) nil [456 516])
+            ("ots_client_functiontest_LDADD" variable (:default-value ("$(top_srcdir)/lib/libotsclient.a")) nil [516 579])
+            ("ots_client_noinst_functiontest_SOURCES" variable (:default-value ("ots_client_noinst_functiontest.cpp")) nil [579 653])
+            ("ots_client_noinst_functiontest_LDADD" variable (:default-value ("$(top_srcdir)/lib/libotsclient.a")) nil [653 723])
+            ("ots_internal_functiontest_SOURCES" variable (:default-value ("ots_internal_functiontest.cpp")) nil [723 787])
+            ("ots_internal_functiontest_LDADD" variable (:default-value ("$(top_srcdir)/lib/libotsclient.a")) nil [787 852])
+            ("ots_internal_noinst_functiontest_SOURCES" variable (:default-value ("ots_internal_noinst_functiontest.cpp")) nil [852 930])
+            ("ots_internal_noinst_functiontest_LDADD" variable (:default-value ("$(top_srcdir)/lib/libotsclient.a")) nil [930 1002])
+            ("ots_client_sample_SOURCES" variable (:default-value ("ots_client_sample.cpp")) nil [1002 1050])
+            ("ots_client_sample_LDADD" variable (:default-value ("$(top_srcdir)/lib/libotsclient.a")) nil [1050 1107])
+            ("ots_client_mocktest_SOURCES" variable (:default-value ("ots_client_mocktest.cpp")) nil [1107 1159])
+            ("ots_client_mocktest_LDADD" variable (:default-value ("$(top_srcdir)/lib/libotsclient_mock.a")) nil [1159 1223])
+            ("INCLUDES" variable (:default-value ("-I$(top_srcdir)/external/protobuf/src" "-I$(top_srcdir)/include" "-I$(top_srcdir)/common" "-I$(top_srcdir)/coreimpl" "-I$(top_srcdir)/proto")) nil [1223 1364])
+            ("LIBS" variable (:default-value ("-lcrypto" "-lcurl" "-lz" "-lpthread" "-lprotobuf")) nil [1364 1410]))          
+      :file "Makefile.am"
+      :pointmax 1410
+      :fsize 1409
+      :lastmodtime '(21987 54858 745040 476000)
+      :unmatched-syntax nil)
+    (semanticdb-table "run_unit_test.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("re" include nil nil [53 62])
+            ("time" include nil nil [63 74])
+            ("json" include nil nil [75 86])
+            ("commands" include nil nil [87 102])
+            ("datetime" include nil nil [103 118])
+            ("main" function nil nil [120 2311])
+            ("if" code nil nil [2317 2356]))          
+      :file "run_unit_test.py"
+      :pointmax 2356
+      :fsize 2355
+      :lastmodtime '(22044 63153 385038 663000)
+      :unmatched-syntax nil)
+    (semanticdb-table "common_util_unittest.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("common_util.h" include nil nil [1 25])
+            ("iostream" include (:system-flag t) nil [27 46])
+            ("string" include (:system-flag t) nil [47 64])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [66 86])
+            ("aliyun::openservices::ots" using (:type ("aliyun::openservices::ots" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [87 129])
+            ("TestMD5String" function (:type "void") nil [131 1159])
+            ("TestBase64Encode" function (:type "void") nil [1161 2105])
+            ("TestBase64Decode" function (:type "void") nil [2107 3049])
+            ("TestHmacSha1" function (:type "void") nil [3051 4340])
+            ("TestUTCTime" function (:type "void") nil [4342 5310])
+            ("TestStringTrim" function (:type "void") nil [5312 5676])
+            ("TestStringToLower" function (:type "void") nil [5678 6108])
+            ("TestDeflate" function (:type "void") nil [6110 8322])
+            ("TestInflate" function (:type "void") nil [8324 10543])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [10554 10563])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10564 10576]))                  
+                :type "int")
+                nil [10545 10750]))          
+      :file "common_util_unittest.cpp"
+      :pointmax 10751
+      :fsize 10750
+      :lastmodtime '(22044 48927 787036 916000)
+      :unmatched-syntax nil)
+    (semanticdb-table "run_unit_test.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "run_unit_test.json"
+      :pointmax 6388
+      :fsize 6387
+      :lastmodtime '(22044 62792 217036 22000)
+      :unmatched-syntax nil))
+  :file "!apsarapangu!disk6!jingwen.hjw!work!trunk!ots!SDK!cppv2!testing!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

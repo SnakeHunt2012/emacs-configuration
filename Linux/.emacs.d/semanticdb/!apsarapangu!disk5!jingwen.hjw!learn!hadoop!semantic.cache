@@ -1,0 +1,43 @@
+;; Object hadoop/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "hadoop/"
+  :tables
+  (list
+    (semanticdb-table "WordCount.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("java.io.IOException" include nil nil [1 28])
+            ("java.util.StringTokenizer" include nil nil [29 62])
+            ("org.apache.hadoop.conf.Configuration" include nil nil [64 108])
+            ("org.apache.hadoop.fs.Path" include nil nil [109 142])
+            ("org.apache.hadoop.io.IntWritable" include nil nil [143 183])
+            ("org.apache.hadoop.io.Text" include nil nil [184 217])
+            ("org.apache.hadoop.mapreduce.Job" include nil nil [218 257])
+            ("org.apache.hadoop.mapreduce.Mapper" include nil nil [258 300])
+            ("org.apache.hadoop.mapreduce.Reducer" include nil nil [301 344])
+            ("org.apache.hadoop.mapreduce.lib.input.FileInputFormat" include nil nil [345 406])
+            ("org.apache.hadoop.mapreduce.lib.output.FileOutputFormat" include nil nil [407 470])
+            ("WordCount" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("main" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [1715 1728]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1691 2334]))                  
+                :type "class")
+                nil [472 2336]))          
+      :file "WordCount.java"
+      :pointmax 2337
+      :fsize 2336
+      :lastmodtime '(22006 46683 343068 187000)
+      :unmatched-syntax nil)
+)
+  :file "!apsarapangu!disk5!jingwen.hjw!learn!hadoop!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

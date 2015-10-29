@@ -1,0 +1,684 @@
+;; Object unittest/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "unittest/"
+  :tables
+  (list
+    (semanticdb-table "client_test_util.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("client_test_util.h" include nil nil [1 30])
+            ("sqlonline/client/client_common.h" include nil nil [31 74])
+            ("sqlonline/common/common.h" include nil nil [75 111])
+            ("apsara/common/jsonizable.h" include nil nil [112 149])
+            ("tools/sqlonline_console_lib.h" include nil nil [150 190])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [192 212])
+            ("apsara::logging" using (:type ("apsara::logging" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [213 245])
+            ("apsara::sqlonline" using (:type ("apsara::sqlonline" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [246 280])
+            ("DECLARE_FLAG_STRING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlstorage_DefaultDBName" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [302 327]))                  
+                :type "int")
+                nil [282 328])
+            ("DECLARE_FLAG_STRING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlstorage_MasterAddr_UT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [349 374]))                  
+                :type "int")
+                nil [329 375])
+            ("apsara" type
+               (:members 
+                  ( ("sqlonline" type
+                       (:members 
+                          ( ("gsLogger" variable
+                               (:pointer 1
+                                :typemodifiers ("static")
+                                :default-value "GetLogger(\"/apsara/sqlonline/client_test\")"
+                                :type ("Logger" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [418 487])
+                            ("ColumnDescriptorJson" type
+                               (:superclasses 
+                                  ( ("ColumnDescriptor" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil)
+                                    ("Jsonizable" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [668 675])
+                                    ("ColumnDescriptorJson" function
+                                       (:constructor-flag t
+                                        :type ("ColumnDescriptorJson" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [680 714])
+                                    ("ColumnDescriptorJson" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("cd" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ColumnDescriptor" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [741 768]))                                          
+                                        :type ("ColumnDescriptorJson" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [720 866])
+                                    ("Jsonize" function
+                                       (:typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("jw" variable
+                                               (:reference 1
+                                                :type ("JsonWrapper" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [908 924]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [887 1142])
+                                    ("Transform" function (:type ("ColumnDescriptor" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1148 1230]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [594 1233])
+                            ("LocalityGroupDescriptorJson" type
+                               (:superclasses 
+                                  ( ("LocalityGroupDescriptor" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil)
+                                    ("Jsonizable" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1323 1330])
+                                    ("LocalityGroupDescriptorJson" function
+                                       (:constructor-flag t
+                                        :type ("LocalityGroupDescriptorJson" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1335 1376])
+                                    ("LocalityGroupDescriptorJson" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("lgd" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("LocalityGroupDescriptor" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1410 1445]))                                          
+                                        :type ("LocalityGroupDescriptorJson" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1382 1621])
+                                    ("Jsonize" function
+                                       (:typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("jw" variable
+                                               (:reference 1
+                                                :type ("JsonWrapper" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1663 1679]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1642 2029])
+                                    ("Transform" function (:type ("LocalityGroupDescriptor" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2035 2131]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1235 2134])
+                            ("TableDescriptorJson" type
+                               (:superclasses 
+                                  ( ("Jsonizable" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [2184 2191])
+                                    ("TableDescriptorJson" function
+                                       (:constructor-flag t
+                                        :type ("TableDescriptorJson" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2196 2229])
+                                    ("TableDescriptorJson" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("td" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("TableDescriptor" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2255 2281]))                                          
+                                        :type ("TableDescriptorJson" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2235 3254])
+                                    ("Jsonize" function
+                                       (:typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("jw" variable
+                                               (:reference 1
+                                                :type ("JsonWrapper" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3296 3312]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3275 3579])
+                                    ("Transform" function (:type ("TableDescriptor" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3585 4994])
+                                    ("private" label nil (reparse-symbol classsubparts) [4996 5004])
+                                    ("mName" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5009 5022])
+                                    ("mPrimaryKeyJson" variable (:type ("vector" type
+                                         (:template-specifier 
+                                            ( ("ColumnDescriptorJson" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [5027 5072])
+                                    ("mPagingKeyJson" variable (:type ("vector" type
+                                         (:template-specifier 
+                                            ( ("ColumnDescriptorJson" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [5077 5121])
+                                    ("mExplicitColumnsJson" variable (:type ("vector" type
+                                         (:template-specifier 
+                                            ( ("std::pair" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [5126 5201])
+                                    ("mLocalityGroupsJson" variable (:type ("vector" type
+                                         (:template-specifier 
+                                            ( ("LocalityGroupDescriptorJson" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [5206 5262]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [2136 5265])
+                            ("ViewDescriptorJson" type
+                               (:superclasses 
+                                  ( ("Jsonizable" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [5314 5321])
+                                    ("ViewDescriptorJson" function
+                                       (:constructor-flag t
+                                        :type ("ViewDescriptorJson" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5326 5358])
+                                    ("ViewDescriptorJson" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("vd" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ViewDescriptor" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5383 5408]))                                          
+                                        :type ("ViewDescriptorJson" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5364 6171])
+                                    ("Jsonize" function
+                                       (:typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("jw" variable
+                                               (:reference 1
+                                                :type ("JsonWrapper" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6213 6229]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [6192 6490])
+                                    ("Transform" function (:type ("ViewDescriptor" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6496 7498])
+                                    ("private" label nil (reparse-symbol classsubparts) [7500 7508])
+                                    ("mName" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7513 7526])
+                                    ("mSourceTableName" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7531 7555])
+                                    ("mPrimaryKeyJson" variable (:type ("vector" type
+                                         (:template-specifier 
+                                            ( ("ColumnDescriptorJson" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [7560 7605])
+                                    ("mPagingKeyJson" variable (:type ("vector" type
+                                         (:template-specifier 
+                                            ( ("ColumnDescriptorJson" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [7610 7654])
+                                    ("mAttributesJson" variable (:type ("vector" type
+                                         (:template-specifier 
+                                            ( ("ColumnDescriptorJson" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [7659 7704]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [5267 7707])
+                            ("PartitionSchemeJson" type
+                               (:superclasses 
+                                  ( ("Jsonizable" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [7757 7764])
+                                    ("PartitionSchemeJson" function
+                                       (:constructor-flag t
+                                        :type ("PartitionSchemeJson" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7769 7802])
+                                    ("PartitionSchemeJson" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("ps" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("PartitionScheme" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7828 7854]))                                          
+                                        :type ("PartitionSchemeJson" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7808 7900])
+                                    ("Jsonize" function
+                                       (:typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("jw" variable
+                                               (:reference 1
+                                                :type ("JsonWrapper" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7942 7958]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [7921 8009])
+                                    ("Transform" function (:type ("PartitionScheme" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8015 8095])
+                                    ("private" label nil (reparse-symbol classsubparts) [8097 8105])
+                                    ("mRanges" variable (:type ("vector" type
+                                         (:template-specifier 
+                                            ( ("Range" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [8110 8132]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [7709 8135])
+                            ("ToJsonString" function
+                               (:arguments 
+                                  ( ("cd" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ColumnDescriptor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8164 8191]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [8139 8259])
+                            ("ToJsonString" function
+                               (:arguments 
+                                  ( ("lgd" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LocalityGroupDescriptor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8286 8321]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [8261 8399])
+                            ("ToJsonString" function
+                               (:arguments 
+                                  ( ("td" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TableDescriptor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8426 8452]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [8401 8519])
+                            ("ToJsonString" function
+                               (:arguments 
+                                  ( ("vd" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ViewDescriptor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8546 8571]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [8521 8637])
+                            ("ToJsonString" function
+                               (:arguments 
+                                  ( ("ps" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("PartitionScheme" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8664 8690]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [8639 8757])
+                            ("FromJsonString" function
+                               (:arguments 
+                                  ( ("cd" variable
+                                       (:reference 1
+                                        :type ("ColumnDescriptor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8779 8800])
+                                    ("s" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8801 8815]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [8759 8903])
+                            ("FromJsonString" function
+                               (:arguments 
+                                  ( ("lgd" variable
+                                       (:reference 1
+                                        :type ("LocalityGroupDescriptor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8925 8954])
+                                    ("s" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8955 8969]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [8905 9068])
+                            ("FromJsonString" function
+                               (:arguments 
+                                  ( ("td" variable
+                                       (:reference 1
+                                        :type ("TableDescriptor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9090 9110])
+                                    ("s" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9111 9125]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [9070 9212])
+                            ("FromJsonString" function
+                               (:arguments 
+                                  ( ("vd" variable
+                                       (:reference 1
+                                        :type ("ViewDescriptor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9234 9253])
+                                    ("s" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9254 9268]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [9214 9354])
+                            ("FromJsonString" function
+                               (:arguments 
+                                  ( ("ps" variable
+                                       (:reference 1
+                                        :type ("PartitionScheme" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9376 9396])
+                                    ("s" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9397 9411]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [9356 9498])
+                            ("==" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("pk0" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("SQLVariant" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [9517 9547])
+                                    ("pk1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("SQLVariant" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [9548 9578]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [9500 9786])
+                            ("==" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("cc0" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ColumnCollection" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9805 9833])
+                                    ("cc1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ColumnCollection" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9834 9862]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [9788 10317])
+                            ("==" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("row0" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("RowIterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10336 10360])
+                                    ("row1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("RowIterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10361 10385]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [10319 10832])
+                            ("==" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("row0" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("RowIteratorPtr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10851 10878])
+                                    ("row1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("RowIteratorPtr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10879 10906]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [10834 11487])
+                            ("Print" function
+                               (:arguments 
+                                  ( ("vars" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("SQLVariant" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [11502 11533]))                                  
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [11489 11708])
+                            ("Print" function
+                               (:arguments 
+                                  ( ("rcs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("RowChangeSet" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11723 11747]))                                  
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [11710 12310])
+                            ("Print" function
+                               (:arguments 
+                                  ( ("row" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("RowIteratorPtr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12330 12356]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [12312 12633])
+                            ("MockRowIterator" type
+                               (:superclasses 
+                                  ( ("RowIterator" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [12829 12836])
+                                    ("MockRowIterator" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("begin" variable
+                                               (:constant-flag t
+                                                :type ("MockTable::Iter" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [12857 12885])
+                                            ("end" variable
+                                               (:constant-flag t
+                                                :type ("MockTable::Iter" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [12886 12912]))                                          
+                                        :type ("MockRowIterator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [12841 12968])
+                                    ("MockRowIterator" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("pkColNames" variable
+                                               (:constant-flag t
+                                                :type ("vector" type
+                                                     (:template-specifier 
+                                                        ( ("string" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [12990 13022])
+                                            ("begin" variable
+                                               (:constant-flag t
+                                                :type ("MockTable::Iter" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [13023 13051])
+                                            ("end" variable
+                                               (:constant-flag t
+                                                :type ("MockTable::Iter" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [13052 13078]))                                          
+                                        :type ("MockRowIterator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [12974 13169])
+                                    ("GetPrimaryKey" function
+                                       (:typemodifiers ("virtual")
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("SQLVariant" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [13189 13281])
+                                    ("MoveNext" function
+                                       (:typemodifiers ("virtual")
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [13302 13964])
+                                    ("private" label nil (reparse-symbol classsubparts) [13966 13974])
+                                    ("mPKColNames" variable
+                                       (:constant-flag t
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [13979 14012])
+                                    ("mIter" variable (:type ("MockTable::Iter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14017 14039])
+                                    ("mEnd" variable (:type ("MockTable::Iter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14044 14065])
+                                    ("mPK" variable (:type ("MockTable::PK" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14070 14088]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [12784 14091])
+                            ("ComparePK" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("pk0" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("MockTable::PK" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14261 14286])
+                                    ("pk1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("MockTable::PK" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14287 14312]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [14239 14539])
+                            ("MockTable" function
+                               (:constructor-flag t
+                                :parent "MockTable"
+                                :arguments 
+                                  ( ("td" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TableDescriptor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14562 14588]))                                  
+                                :type ("MockTable" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [14541 14838])
+                            ("Jsonize" function
+                               (:parent "MockTable"
+                                :arguments 
+                                  ( ("jw" variable
+                                       (:reference 1
+                                        :type ("JsonWrapper" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14864 14880]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [14840 14992])
+                            ("Query" function
+                               (:parent "MockTable"
+                                :arguments 
+                                  ( ("param" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("KeyQueryParameter" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15031 15062]))                                  
+                                :type ("ColumnCollectionPtr" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [14994 15690])
+                            ("Query" function
+                               (:parent "MockTable"
+                                :arguments 
+                                  ( ("param" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("RangeQueryParameter" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15724 15757]))                                  
+                                :type ("RowIteratorPtr" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [15692 16178])
+                            ("Modify" function
+                               (:parent "MockTable"
+                                :arguments 
+                                  ( ("row" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("RowChangeSet" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16202 16226]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [16180 17985])
+                            ("BatchModify" function
+                               (:parent "MockTable"
+                                :arguments 
+                                  ( ("rows" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("RowChangeSet" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [18014 18052]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [17987 18350])
+                            ("GetString" function
+                               (:parent "Random"
+                                :arguments 
+                                  ( ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18528 18542]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [18498 18892])
+                            ("GetSQLVariant" function
+                               (:parent "Random"
+                                :type ("SQLVariant" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [18894 19654])
+                            ("GetTableID" function
+                               (:constant-flag t
+                                :arguments 
+                                  ( ("remoteMaster" variable (:type ("RemoteMaster" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19686 19712])
+                                    ("dbName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19713 19739])
+                                    ("tableName" variable
+                                       (:constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19740 19768]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [19657 19912])
+                            ("GetRootTableID" function
+                               (:constant-flag t
+                                :arguments 
+                                  ( ("remoteMaster" variable (:type ("RemoteMaster" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19947 19973])
+                                    ("partID" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19974 20000]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [19914 20110])
+                            ("GetPartIDs" function
+                               (:arguments 
+                                  ( ("remoteMaster" variable (:type ("RemoteMaster" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20129 20155])
+                                    ("dbName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [20171 20197])
+                                    ("tableName" variable
+                                       (:constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [20213 20241])
+                                    ("lgs" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [20257 20287]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [20113 20643])
+                            ("WaitPartitionLoadOK" function (:type "void") (reparse-symbol namespacesubparts) [20645 21440])
+                            ("WaitPartitionReloadOK" function (:type "void") (reparse-symbol namespacesubparts) [21442 22150]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [395 22153]))                  
+                :type "namespace")
+                nil [376 22186]))          
+      :file "client_test_util.cpp"
+      :pointmax 22215
+      :fsize 22632
+      :lastmodtime '(21973 28403 361039 393000)
+      :unmatched-syntax nil)
+    (semanticdb-table "client_test_util.h"
+      :file "client_test_util.h"
+      :fsize 14587
+      :lastmodtime '(21973 28403 353121 23000)))
+  :file "!apsarapangu!disk7!jingwen.hjw!work!trunk_me!sqlonline!client!unittest!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,1596 @@
+;; Object testing/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "testing/"
+  :tables
+  (list
+    (semanticdb-table "run_unit_test.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "run_unit_test.json"
+      :pointmax 6388
+      :fsize 6387
+      :lastmodtime '(22046 1145 605077 791000)
+      :unmatched-syntax nil)
+    (semanticdb-table "run_unit_test.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("re" include nil nil [53 62])
+            ("time" include nil nil [63 74])
+            ("json" include nil nil [75 86])
+            ("commands" include nil nil [87 102])
+            ("datetime" include nil nil [103 118])
+            ("pyut_wrapper" include nil nil [140 174])
+            ("CommonUtilTestCase" type
+               (:superclasses ("apsara_ut.ApsaraTestCase")
+                :members 
+                  ( ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [247 251]))                          )
+                        (reparse-symbol indented_block_body) [237 268])
+                    ("testCommonUtil" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [292 296]))                          )
+                        (reparse-symbol indented_block_body) [273 1804]))                  
+                :type "class")
+                nil [176 1804])
+            ("OtsTypesTestCase" type
+               (:superclasses ("apsara_ut.ApsaraTestCase")
+                :members 
+                  ( ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1878 1882]))                          )
+                        (reparse-symbol indented_block_body) [1868 1899])
+                    ("testOtsTypes" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1921 1925]))                          )
+                        (reparse-symbol indented_block_body) [1904 3431]))                  
+                :type "class")
+                nil [1809 3431])
+            ("if" code nil nil [3432 3480]))          
+      :file "run_unit_test.py"
+      :pointmax 3480
+      :fsize 3479
+      :lastmodtime '(22047 28026 697036 100000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ots_client_functiontest.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ots_client.h" include nil nil [1 24])
+            ("test_util.h" include nil nil [25 47])
+            ("algorithm" include (:system-flag t) nil [49 69])
+            ("iostream" include (:system-flag t) nil [70 89])
+            ("vector" include (:system-flag t) nil [90 107])
+            ("string" include (:system-flag t) nil [108 125])
+            ("google/protobuf/text_format.h" include (:system-flag t) nil [126 166])
+            ("stdlib.h" include (:system-flag t) nil [168 187])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [189 209])
+            ("aliyun::openservices::ots" using (:type ("aliyun::openservices::ots" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [210 252])
+            ("google::protobuf" using (:type ("google::protobuf" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [253 286])
+            ("kTestCharTest" variable
+               (:constant-flag t
+                :default-value "\"_0123456789abcedefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\""
+                :type ("string" type (:type "class") nil nil))
+                nil [288 384])
+            ("kDefaultEndpoint" variable
+               (:constant-flag t
+                :default-value "\"http://10.101.172.139:9999/\""
+                :type ("string" type (:type "class") nil nil))
+                nil [385 447])
+            ("kDefaultAccessId" variable
+               (:constant-flag t
+                :default-value "\"OTSMultiUser100_accessid\""
+                :type ("string" type (:type "class") nil nil))
+                nil [448 507])
+            ("kDefaultAccessKey" variable
+               (:constant-flag t
+                :default-value "\"OTSMultiUser100_accesskey\""
+                :type ("string" type (:type "class") nil nil))
+                nil [508 569])
+            ("kDefaultInstanceName" variable
+               (:constant-flag t
+                :default-value "\"RegressionLegacy\""
+                :type ("string" type (:type "class") nil nil))
+                nil [570 625])
+            ("PrintPbMessage" function
+               (:arguments 
+                  ( ("pb" variable
+                       (:pointer 1
+                        :type ("Message" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [647 659]))                  
+                :type "void")
+                nil [627 803])
+            ("FillSchemaType" function
+               (:arguments 
+                  ( ("schemaBuilder" variable
+                       (:reference 1
+                        :type ("ColumnSchemaBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [825 860])
+                    ("num" variable (:type "int") (reparse-symbol arg-sub-list) [861 869]))                  
+                :type "void")
+                nil [805 1186])
+            ("FillPrimaryKeyValue" function
+               (:arguments 
+                  ( ("valueBuilder" variable
+                       (:reference 1
+                        :type ("ColumnValueBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1213 1246])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [1247 1256])
+                    ("strValue" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1257 1280]))                  
+                :type "void")
+                nil [1188 1442])
+            ("FillColumnValue" function
+               (:arguments 
+                  ( ("valueBuilder" variable
+                       (:reference 1
+                        :type ("ColumnValueBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1465 1498])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [1499 1508])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [1509 1519]))                  
+                :type "void")
+                nil [1444 2008])
+            ("PrintColumnValue" function
+               (:arguments 
+                  ( ("value" variable (:type ("ColumnValue" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2032 2050]))                  
+                :type "void")
+                nil [2010 2523])
+            ("SetViewMetaBuilder" function
+               (:arguments 
+                  ( ("vmBuilder" variable
+                       (:reference 1
+                        :type ("ViewMetaBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2549 2576])
+                    ("tableName" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2577 2594])
+                    ("pkNum" variable (:type "int") (reparse-symbol arg-sub-list) [2595 2605]))                  
+                :type "void")
+                nil [2525 3260])
+            ("SetTableMetaBuilder" function
+               (:arguments 
+                  ( ("tmBuilder" variable
+                       (:reference 1
+                        :type ("TableMetaBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3287 3315])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3316 3340])
+                    ("tableGroup" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3353 3371])
+                    ("pkNum" variable (:type "int") (reparse-symbol arg-sub-list) [3372 3382])
+                    ("viewNum" variable (:type "int") (reparse-symbol arg-sub-list) [3383 3395]))                  
+                :type "void")
+                nil [3262 4228])
+            ("SetPutChangeBuilder" function
+               (:arguments 
+                  ( ("changeBuilder" variable
+                       (:reference 1
+                        :type ("PutChangeBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4255 4287])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4288 4312])
+                    ("uniqueValue" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4326 4352])
+                    ("pkNum" variable (:type "int") (reparse-symbol arg-sub-list) [4353 4363])
+                    ("ccNum" variable (:type "int") (reparse-symbol arg-sub-list) [4364 4374])
+                    ("type" variable (:type ("CheckingType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4375 4393]))                  
+                :type "void")
+                nil [4230 5236])
+            ("SetPutRowBuilder" function
+               (:arguments 
+                  ( ("putBuilder" variable
+                       (:reference 1
+                        :type ("PutRowBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5260 5286])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5287 5311])
+                    ("uniqueValue" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5325 5351])
+                    ("pkNum" variable (:type "int") (reparse-symbol arg-sub-list) [5352 5362])
+                    ("ccNum" variable (:type "int") (reparse-symbol arg-sub-list) [5363 5373])
+                    ("type" variable (:type ("CheckingType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5374 5392]))                  
+                :type "void")
+                nil [5238 5637])
+            ("SetDeleteChangeBuilder" function
+               (:arguments 
+                  ( ("changeBuilder" variable (:type ("DeleteChangeBuilder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5667 5701])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5715 5739])
+                    ("uniqueValue" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5740 5766])
+                    ("pkNum" variable (:type "int") (reparse-symbol arg-sub-list) [5767 5777])
+                    ("ccNum" variable (:type "int") (reparse-symbol arg-sub-list) [5778 5788]))                  
+                :type "void")
+                nil [5639 6377])
+            ("SetDeleteRowBuilder" function
+               (:arguments 
+                  ( ("deleteBuilder" variable
+                       (:reference 1
+                        :type ("DeleteRowBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6404 6436])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6437 6461])
+                    ("uniqueValue" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6474 6500])
+                    ("pkNum" variable (:type "int") (reparse-symbol arg-sub-list) [6501 6511])
+                    ("ccNum" variable (:type "int") (reparse-symbol arg-sub-list) [6512 6522]))                  
+                :type "void")
+                nil [6379 6776])
+            ("SetSingleQueryBuilder" function
+               (:arguments 
+                  ( ("singleBuilder" variable
+                       (:reference 1
+                        :type ("SingleQueryBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6805 6839])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6852 6876])
+                    ("uniqueValue" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6877 6903])
+                    ("pkNum" variable (:type "int") (reparse-symbol arg-sub-list) [6904 6914])
+                    ("ccNum" variable (:type "int") (reparse-symbol arg-sub-list) [6915 6925]))                  
+                :type "void")
+                nil [6778 7727])
+            ("SetRangeQueryBuilder" function
+               (:arguments 
+                  ( ("rangeBuilder" variable
+                       (:reference 1
+                        :type ("RangeQueryBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7755 7787])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7788 7812])
+                    ("beginValue" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7826 7851])
+                    ("endValue" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7852 7875])
+                    ("pkNum" variable (:type "int") (reparse-symbol arg-sub-list) [7876 7886])
+                    ("ccNum" variable (:type "int") (reparse-symbol arg-sub-list) [7900 7910])
+                    ("limit" variable (:type "int") (reparse-symbol arg-sub-list) [7911 7921])
+                    ("is_reverse" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [7922 7945]))                  
+                :type "void")
+                nil [7729 9198])
+            ("SetStartTxnBuilder" function
+               (:arguments 
+                  ( ("txnBuilder" variable
+                       (:reference 1
+                        :type ("StartTxnBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9224 9252])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9266 9290])
+                    ("partValue" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9291 9315]))                  
+                :type "void")
+                nil [9200 9534])
+            ("PrintRowMessage" function
+               (:arguments 
+                  ( ("rowPtr" variable (:type ("RowPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9557 9571]))                  
+                :type "void")
+                nil [9536 10333])
+            ("PrintRowIterator" function
+               (:arguments 
+                  ( ("rowIterPtr" variable
+                       (:reference 1
+                        :type ("RowIteratorPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10357 10384]))                  
+                :type "void")
+                nil [10335 10507])
+            ("FindInVector" function
+               (:arguments 
+                  ( ("vec" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10527 10547])
+                    ("strValue" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10548 10571]))                  
+                :type "bool")
+                nil [10509 10783])
+            ("CheckStatus" function
+               (:arguments 
+                  ( ("vec" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Status" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10802 10822]))                  
+                :type "bool")
+                nil [10785 11142])
+            ("CheckPrimaryValue" function
+               (:arguments 
+                  ( ("colValue" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ColumnValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11167 11195])
+                    ("unique" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11196 11217])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [11218 11228]))                  
+                :type "bool")
+                nil [11144 11625])
+            ("CheckPrimaryKey" function
+               (:arguments 
+                  ( ("column" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Column" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11648 11669])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11670 11694])
+                    ("unique" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11708 11729])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [11730 11740]))                  
+                :type "bool")
+                nil [11627 12008])
+            ("CheckCommonValue" function
+               (:arguments 
+                  ( ("colValue" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ColumnValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12032 12060])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [12061 12071]))                  
+                :type "bool")
+                nil [12010 13062])
+            ("CheckCommonColumn" function
+               (:arguments 
+                  ( ("column" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Column" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13087 13108])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13109 13133])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [13134 13144]))                  
+                :type "bool")
+                nil [13064 13403])
+            ("ValidateRowQuery" function
+               (:arguments 
+                  ( ("row" variable
+                       (:reference 1
+                        :type ("Row" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13427 13436])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13437 13461])
+                    ("unique" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13475 13496])
+                    ("pkNum" variable (:type "int") (reparse-symbol arg-sub-list) [13497 13507])
+                    ("ccBegin" variable (:type "int") (reparse-symbol arg-sub-list) [13508 13520])
+                    ("ccEnd" variable (:type "int") (reparse-symbol arg-sub-list) [13521 13531]))                  
+                :type "bool")
+                nil [13405 15025])
+            ("ValidateIterRow" function
+               (:arguments 
+                  ( ("rowPtr" variable (:type ("RowPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15048 15062])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15063 15087])
+                    ("unique" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15088 15109])
+                    ("pkNum" variable (:type "int") (reparse-symbol arg-sub-list) [15110 15120])
+                    ("hasCc" variable (:type "bool") (reparse-symbol arg-sub-list) [15121 15132]))                  
+                :type "bool")
+                nil [15027 16507])
+            ("ValidateRowIterator" function
+               (:arguments 
+                  ( ("rowIterPtr" variable (:type ("RowIteratorPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16534 16560])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16561 16585])
+                    ("unique" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16598 16619])
+                    ("pkSize" variable (:type "int") (reparse-symbol arg-sub-list) [16620 16631])
+                    ("ccflag" variable (:type "bool") (reparse-symbol arg-sub-list) [16632 16644]))                  
+                :type "bool")
+                nil [16509 17253])
+            ("ValidateRowsVector" function
+               (:arguments 
+                  ( ("rowsVec" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("RowPtr" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17279 17309])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17310 17334])
+                    ("unique" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17347 17368])
+                    ("pkSize" variable (:type "int") (reparse-symbol arg-sub-list) [17369 17380])
+                    ("ccflag" variable (:type "bool") (reparse-symbol arg-sub-list) [17381 17393]))                  
+                :type "bool")
+                nil [17255 17989])
+            ("ValidateReverse" function
+               (:arguments 
+                  ( ("rowsVec" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("RowPtr" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18012 18042])
+                    ("expectReverse" variable (:type "bool") (reparse-symbol arg-sub-list) [18043 18062]))                  
+                :type "bool")
+                nil [17991 18691])
+            ("ValidateRowResults" function
+               (:arguments 
+                  ( ("rowResults" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("RowResultPtr" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18717 18756])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18757 18781])
+                    ("unique" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18794 18815])
+                    ("pkSize" variable (:type "int") (reparse-symbol arg-sub-list) [18816 18827])
+                    ("ccflag" variable (:type "bool") (reparse-symbol arg-sub-list) [18828 18840]))                  
+                :type "bool")
+                nil [18693 19593])
+            ("TryDeleteTableGroup" function
+               (:arguments 
+                  ( ("client" variable
+                       (:reference 1
+                        :type ("OTSClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19620 19638])
+                    ("tableGroup" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19639 19664]))                  
+                :type "bool")
+                nil [19595 20040])
+            ("TryDeleteTable" function
+               (:arguments 
+                  ( ("client" variable
+                       (:reference 1
+                        :type ("OTSClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20062 20080])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20081 20105]))                  
+                :type "bool")
+                nil [20042 20413])
+            ("TestInterfaceSimple" function (:type "void") nil [20415 30329])
+            ("TestDeflateCompress" function (:type "void") nil [30331 32637])
+            ("TestOTSClient" function (:type "void") nil [32639 34033])
+            ("SetPartitionCollectionBuilder" function
+               (:arguments 
+                  ( ("collectionBuilder" variable
+                       (:reference 1
+                        :type ("PartitionCollectionBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34070 34116]))                  
+                :type "void")
+                nil [34035 34607])
+            ("TestOTSClientEx" function (:type "void") nil [34609 36492])
+            ("TestGetRowsByRange" function (:type "void") nil [36494 43410])
+            ("TestOTSClientInvalid" function (:type "void") nil [43412 45820])
+            ("TestTransactionInvalid" function (:type "void") nil [45822 48834])
+            ("TestTableGroupInvalid" function (:type "void") nil [48836 50941])
+            ("TestTableInvalid" function (:type "void") nil [50943 55713])
+            ("TestPutGetRowInvalid" function (:type "void") nil [55715 61607])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [61618 61627])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [61628 61640]))                  
+                :type "int")
+                nil [61609 61895]))          
+      :file "ots_client_functiontest.cpp"
+      :pointmax 61897
+      :fsize 61896
+      :lastmodtime '(22047 23962 821035 693000)
+      :unmatched-syntax nil)
+    (semanticdb-table "test_util.h"
+      :file "test_util.h"
+      :fsize 1850
+      :lastmodtime '(22045 52949 909095 242000))
+    (semanticdb-table "ots_client_noinst_functiontest.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ots_client.h" include nil nil [1 24])
+            ("test_util.h" include nil nil [25 47])
+            ("algorithm" include (:system-flag t) nil [49 69])
+            ("iostream" include (:system-flag t) nil [70 89])
+            ("vector" include (:system-flag t) nil [90 107])
+            ("string" include (:system-flag t) nil [108 125])
+            ("google/protobuf/text_format.h" include (:system-flag t) nil [126 166])
+            ("stdlib.h" include (:system-flag t) nil [168 187])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [189 209])
+            ("aliyun::openservices::ots" using (:type ("aliyun::openservices::ots" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [210 252])
+            ("google::protobuf" using (:type ("google::protobuf" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [253 286])
+            ("kTestCharTest" variable
+               (:constant-flag t
+                :default-value "\"_0123456789abcedefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\""
+                :type ("string" type (:type "class") nil nil))
+                nil [288 384])
+            ("kDefaultEndpoint" variable
+               (:constant-flag t
+                :default-value "\"http://10.101.172.139:9999/\""
+                :type ("string" type (:type "class") nil nil))
+                nil [385 447])
+            ("kDefaultAccessId" variable
+               (:constant-flag t
+                :default-value "\"OTSMultiUser100_accessid\""
+                :type ("string" type (:type "class") nil nil))
+                nil [448 507])
+            ("kDefaultAccessKey" variable
+               (:constant-flag t
+                :default-value "\"OTSMultiUser100_accesskey\""
+                :type ("string" type (:type "class") nil nil))
+                nil [508 569])
+            ("kDefaultInstanceName" variable
+               (:constant-flag t
+                :default-value "\"RegressionLegacy\""
+                :type ("string" type (:type "class") nil nil))
+                nil [570 625])
+            ("PrintPbMessage" function
+               (:arguments 
+                  ( ("pb" variable
+                       (:pointer 1
+                        :type ("Message" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [647 659]))                  
+                :type "void")
+                nil [627 803])
+            ("FillSchemaType" function
+               (:arguments 
+                  ( ("schemaBuilder" variable
+                       (:reference 1
+                        :type ("ColumnSchemaBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [825 860])
+                    ("num" variable (:type "int") (reparse-symbol arg-sub-list) [861 869]))                  
+                :type "void")
+                nil [805 1186])
+            ("FillPrimaryKeyValue" function
+               (:arguments 
+                  ( ("valueBuilder" variable
+                       (:reference 1
+                        :type ("ColumnValueBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1213 1246])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [1247 1256])
+                    ("strValue" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1257 1280]))                  
+                :type "void")
+                nil [1188 1442])
+            ("FillColumnValue" function
+               (:arguments 
+                  ( ("valueBuilder" variable
+                       (:reference 1
+                        :type ("ColumnValueBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1465 1498])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [1499 1508])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [1509 1519]))                  
+                :type "void")
+                nil [1444 2008])
+            ("PrintColumnValue" function
+               (:arguments 
+                  ( ("value" variable (:type ("ColumnValue" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2032 2050]))                  
+                :type "void")
+                nil [2010 2524])
+            ("SetViewMetaBuilder" function
+               (:arguments 
+                  ( ("vmBuilder" variable
+                       (:reference 1
+                        :type ("ViewMetaBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2550 2577])
+                    ("tableName" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2578 2595])
+                    ("pkNum" variable (:type "int") (reparse-symbol arg-sub-list) [2596 2606]))                  
+                :type "void")
+                nil [2526 3261])
+            ("SetTableMetaBuilder" function
+               (:arguments 
+                  ( ("tmBuilder" variable
+                       (:reference 1
+                        :type ("TableMetaBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3288 3316])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3317 3341])
+                    ("tableGroup" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3354 3372])
+                    ("pkNum" variable (:type "int") (reparse-symbol arg-sub-list) [3373 3383])
+                    ("viewNum" variable (:type "int") (reparse-symbol arg-sub-list) [3384 3396]))                  
+                :type "void")
+                nil [3263 4229])
+            ("SetPutChangeBuilder" function
+               (:arguments 
+                  ( ("changeBuilder" variable
+                       (:reference 1
+                        :type ("PutChangeBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4256 4288])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4289 4313])
+                    ("uniqueValue" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4327 4353])
+                    ("pkNum" variable (:type "int") (reparse-symbol arg-sub-list) [4354 4364])
+                    ("ccNum" variable (:type "int") (reparse-symbol arg-sub-list) [4365 4375])
+                    ("type" variable (:type ("CheckingType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4376 4394]))                  
+                :type "void")
+                nil [4231 5237])
+            ("SetPutRowBuilder" function
+               (:arguments 
+                  ( ("putBuilder" variable
+                       (:reference 1
+                        :type ("PutRowBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5261 5287])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5288 5312])
+                    ("uniqueValue" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5326 5352])
+                    ("pkNum" variable (:type "int") (reparse-symbol arg-sub-list) [5353 5363])
+                    ("ccNum" variable (:type "int") (reparse-symbol arg-sub-list) [5364 5374])
+                    ("type" variable (:type ("CheckingType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5375 5393]))                  
+                :type "void")
+                nil [5239 5638])
+            ("SetDeleteChangeBuilder" function
+               (:arguments 
+                  ( ("changeBuilder" variable (:type ("DeleteChangeBuilder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5668 5702])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5716 5740])
+                    ("uniqueValue" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5741 5767])
+                    ("pkNum" variable (:type "int") (reparse-symbol arg-sub-list) [5768 5778])
+                    ("ccNum" variable (:type "int") (reparse-symbol arg-sub-list) [5779 5789]))                  
+                :type "void")
+                nil [5640 6378])
+            ("SetDeleteRowBuilder" function
+               (:arguments 
+                  ( ("deleteBuilder" variable
+                       (:reference 1
+                        :type ("DeleteRowBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6405 6437])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6438 6462])
+                    ("uniqueValue" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6475 6501])
+                    ("pkNum" variable (:type "int") (reparse-symbol arg-sub-list) [6502 6512])
+                    ("ccNum" variable (:type "int") (reparse-symbol arg-sub-list) [6513 6523]))                  
+                :type "void")
+                nil [6380 6777])
+            ("SetSingleQueryBuilder" function
+               (:arguments 
+                  ( ("singleBuilder" variable
+                       (:reference 1
+                        :type ("SingleQueryBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6806 6840])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6853 6877])
+                    ("uniqueValue" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6878 6904])
+                    ("pkNum" variable (:type "int") (reparse-symbol arg-sub-list) [6905 6915])
+                    ("ccNum" variable (:type "int") (reparse-symbol arg-sub-list) [6916 6926]))                  
+                :type "void")
+                nil [6779 7728])
+            ("SetRangeQueryBuilder" function
+               (:arguments 
+                  ( ("rangeBuilder" variable
+                       (:reference 1
+                        :type ("RangeQueryBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7756 7788])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7789 7813])
+                    ("beginValue" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7827 7852])
+                    ("endValue" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7853 7876])
+                    ("pkNum" variable (:type "int") (reparse-symbol arg-sub-list) [7877 7887])
+                    ("ccNum" variable (:type "int") (reparse-symbol arg-sub-list) [7901 7911])
+                    ("limit" variable (:type "int") (reparse-symbol arg-sub-list) [7912 7922])
+                    ("is_reverse" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [7923 7946]))                  
+                :type "void")
+                nil [7730 9199])
+            ("SetStartTxnBuilder" function
+               (:arguments 
+                  ( ("txnBuilder" variable
+                       (:reference 1
+                        :type ("StartTxnBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9225 9253])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9267 9291])
+                    ("partValue" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9292 9316]))                  
+                :type "void")
+                nil [9201 9535])
+            ("PrintRowMessage" function
+               (:arguments 
+                  ( ("rowPtr" variable (:type ("RowPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9558 9572]))                  
+                :type "void")
+                nil [9537 10334])
+            ("PrintRowIterator" function
+               (:arguments 
+                  ( ("rowIterPtr" variable
+                       (:reference 1
+                        :type ("RowIteratorPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10358 10385]))                  
+                :type "void")
+                nil [10336 10508])
+            ("FindInVector" function
+               (:arguments 
+                  ( ("vec" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10528 10548])
+                    ("strValue" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10549 10572]))                  
+                :type "bool")
+                nil [10510 10784])
+            ("CheckStatus" function
+               (:arguments 
+                  ( ("vec" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Status" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10803 10823]))                  
+                :type "bool")
+                nil [10786 11143])
+            ("CheckPrimaryValue" function
+               (:arguments 
+                  ( ("colValue" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ColumnValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11168 11196])
+                    ("unique" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11197 11218])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [11219 11229]))                  
+                :type "bool")
+                nil [11145 11626])
+            ("CheckPrimaryKey" function
+               (:arguments 
+                  ( ("column" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Column" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11649 11670])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11671 11695])
+                    ("unique" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11709 11730])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [11731 11741]))                  
+                :type "bool")
+                nil [11628 12009])
+            ("CheckCommonValue" function
+               (:arguments 
+                  ( ("colValue" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ColumnValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12033 12061])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [12062 12072]))                  
+                :type "bool")
+                nil [12011 13063])
+            ("CheckCommonColumn" function
+               (:arguments 
+                  ( ("column" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Column" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13088 13109])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13110 13134])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [13135 13145]))                  
+                :type "bool")
+                nil [13065 13404])
+            ("ValidateRowQuery" function
+               (:arguments 
+                  ( ("row" variable
+                       (:reference 1
+                        :type ("Row" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13428 13437])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13438 13462])
+                    ("unique" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13476 13497])
+                    ("pkNum" variable (:type "int") (reparse-symbol arg-sub-list) [13498 13508])
+                    ("ccBegin" variable (:type "int") (reparse-symbol arg-sub-list) [13509 13521])
+                    ("ccEnd" variable (:type "int") (reparse-symbol arg-sub-list) [13522 13532]))                  
+                :type "bool")
+                nil [13406 15026])
+            ("ValidateIterRow" function
+               (:arguments 
+                  ( ("rowPtr" variable (:type ("RowPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15049 15063])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15064 15088])
+                    ("unique" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15089 15110])
+                    ("pkNum" variable (:type "int") (reparse-symbol arg-sub-list) [15111 15121])
+                    ("hasCc" variable (:type "bool") (reparse-symbol arg-sub-list) [15122 15133]))                  
+                :type "bool")
+                nil [15028 16508])
+            ("ValidateRowIterator" function
+               (:arguments 
+                  ( ("rowIterPtr" variable (:type ("RowIteratorPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16535 16561])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16562 16586])
+                    ("unique" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16599 16620])
+                    ("pkSize" variable (:type "int") (reparse-symbol arg-sub-list) [16621 16632])
+                    ("ccflag" variable (:type "bool") (reparse-symbol arg-sub-list) [16633 16645]))                  
+                :type "bool")
+                nil [16510 17254])
+            ("ValidateRowsVector" function
+               (:arguments 
+                  ( ("rowsVec" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("RowPtr" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17280 17310])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17311 17335])
+                    ("unique" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17348 17369])
+                    ("pkSize" variable (:type "int") (reparse-symbol arg-sub-list) [17370 17381])
+                    ("ccflag" variable (:type "bool") (reparse-symbol arg-sub-list) [17382 17394]))                  
+                :type "bool")
+                nil [17256 17990])
+            ("ValidateReverse" function
+               (:arguments 
+                  ( ("rowsVec" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("RowPtr" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18013 18043])
+                    ("expectReverse" variable (:type "bool") (reparse-symbol arg-sub-list) [18044 18063]))                  
+                :type "bool")
+                nil [17992 18692])
+            ("ValidateRowResults" function
+               (:arguments 
+                  ( ("rowResults" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("RowResultPtr" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18718 18757])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18758 18782])
+                    ("unique" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18795 18816])
+                    ("pkSize" variable (:type "int") (reparse-symbol arg-sub-list) [18817 18828])
+                    ("ccflag" variable (:type "bool") (reparse-symbol arg-sub-list) [18829 18841]))                  
+                :type "bool")
+                nil [18694 19594])
+            ("TryDeleteTableGroup" function
+               (:arguments 
+                  ( ("client" variable
+                       (:reference 1
+                        :type ("OTSClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19621 19639])
+                    ("tableGroup" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19640 19665]))                  
+                :type "bool")
+                nil [19596 20085])
+            ("TryDeleteTable" function
+               (:arguments 
+                  ( ("client" variable
+                       (:reference 1
+                        :type ("OTSClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20107 20125])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20126 20150]))                  
+                :type "bool")
+                nil [20087 20458])
+            ("TestInterfaceSimple" function (:type "void") nil [20460 30352])
+            ("TestDeflateCompress" function (:type "void") nil [30354 32638])
+            ("TestOTSClient" function (:type "void") nil [32640 34012])
+            ("SetPartitionCollectionBuilder" function
+               (:arguments 
+                  ( ("collectionBuilder" variable
+                       (:reference 1
+                        :type ("PartitionCollectionBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34049 34095]))                  
+                :type "void")
+                nil [34014 34586])
+            ("TestOTSClientEx" function (:type "void") nil [34588 36449])
+            ("TestGetRowsByRange" function (:type "void") nil [36451 38874])
+            ("TestOTSClientInvalid" function (:type "void") nil [38876 40600])
+            ("TestTransactionInvalid" function (:type "void") nil [40602 43594])
+            ("TestTableGroupInvalid" function (:type "void") nil [43596 45679])
+            ("TestTableInvalid" function (:type "void") nil [45681 50429])
+            ("TestPutGetRowInvalid" function (:type "void") nil [50431 56301])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [56312 56321])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [56322 56334]))                  
+                :type "int")
+                nil [56303 56589]))          
+      :file "ots_client_noinst_functiontest.cpp"
+      :pointmax 56591
+      :fsize 56590
+      :lastmodtime '(22047 24970 859056 959000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ots_internal_functiontest.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ots_client_internal.h" include nil nil [1 33])
+            ("ots_client_helper.h" include nil nil [34 64])
+            ("ots_protocol.pb.h" include nil nil [65 93])
+            ("test_util.h" include nil nil [94 116])
+            ("algorithm" include (:system-flag t) nil [118 138])
+            ("iostream" include (:system-flag t) nil [139 158])
+            ("vector" include (:system-flag t) nil [159 176])
+            ("string" include (:system-flag t) nil [177 194])
+            ("google/protobuf/text_format.h" include (:system-flag t) nil [195 235])
+            ("stdlib.h" include (:system-flag t) nil [237 256])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [258 278])
+            ("aliyun::openservices::ots" using (:type ("aliyun::openservices::ots" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [279 321])
+            ("google::protobuf" using (:type ("google::protobuf" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [322 355])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [357 377])
+            ("com::aliyun" using (:type ("com::aliyun" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [378 406])
+            ("aliyun::openservices::ots" using (:type ("aliyun::openservices::ots" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [407 449])
+            ("google::protobuf" using (:type ("google::protobuf" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [450 483])
+            ("kTestCharTest" variable
+               (:constant-flag t
+                :default-value "\"_0123456789abcedefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\""
+                :type ("string" type (:type "class") nil nil))
+                nil [485 581])
+            ("kDefaultEndpoint" variable
+               (:constant-flag t
+                :default-value "\"http://10.101.172.139:9999/\""
+                :type ("string" type (:type "class") nil nil))
+                nil [582 644])
+            ("kDefaultAccessId" variable
+               (:constant-flag t
+                :default-value "\"OTSMultiUser100_accessid\""
+                :type ("string" type (:type "class") nil nil))
+                nil [645 704])
+            ("kDefaultAccessKey" variable
+               (:constant-flag t
+                :default-value "\"OTSMultiUser100_accesskey\""
+                :type ("string" type (:type "class") nil nil))
+                nil [705 766])
+            ("kDefaultInstanceName" variable
+               (:constant-flag t
+                :default-value "\"RegressionLegacy\""
+                :type ("string" type (:type "class") nil nil))
+                nil [767 822])
+            ("FillColumnValue" function
+               (:arguments 
+                  ( ("pbValue" variable
+                       (:pointer 1
+                        :type ("cloudservice::ots::ColumnValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [845 885])
+                    ("num" variable (:type "int") (reparse-symbol arg-sub-list) [886 894]))                  
+                :type "void")
+                nil [824 1229])
+            ("FillGetRowRequest" function
+               (:arguments 
+                  ( ("pbRequest" variable
+                       (:pointer 1
+                        :type ("cloudservice::ots::GetRowRequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1254 1298]))                  
+                :type "void")
+                nil [1231 1954])
+            ("PrintPbMessage" function
+               (:arguments 
+                  ( ("pb" variable
+                       (:pointer 1
+                        :type ("Message" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1976 1988]))                  
+                :type "void")
+                nil [1956 2132])
+            ("SetColumnSchemaType" function
+               (:arguments 
+                  ( ("pbSchema" variable
+                       (:pointer 1
+                        :type ("cloudservice::ots::ColumnSchema" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2159 2201])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [2202 2212]))                  
+                :type "void")
+                nil [2134 2441])
+            ("FillCreateTableRequest" function
+               (:arguments 
+                  ( ("pbRequest" variable
+                       (:pointer 1
+                        :type ("cloudservice::ots::CreateTableRequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2471 2520])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2534 2558])
+                    ("tableGroup" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2559 2584]))                  
+                :type "void")
+                nil [2443 3845])
+            ("FillPutRowRequest" function
+               (:arguments 
+                  ( ("pbRequest" variable
+                       (:pointer 1
+                        :type ("cloudservice::ots::PutRowRequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3870 3914]))                  
+                :type "void")
+                nil [3847 4963])
+            ("CheckColumn" function
+               (:arguments 
+                  ( ("pbColumn" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cloudservice::ots::Column" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4982 5024])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [5025 5035])
+                    ("isPK" variable (:type "bool") (reparse-symbol arg-sub-list) [5036 5046]))                  
+                :type "bool")
+                nil [4965 6156])
+            ("CheckGetRowResult" function
+               (:arguments 
+                  ( ("respData" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6181 6204]))                  
+                :type "bool")
+                nil [6158 7514])
+            ("TestSendInternal" function
+               (:arguments 
+                  ( ("client" variable
+                       (:reference 1
+                        :type ("OTSClientInternal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7538 7564])
+                    ("isReqCompressed" variable (:type "bool") (reparse-symbol arg-sub-list) [7565 7586])
+                    ("isRespCompressed" variable (:type "bool") (reparse-symbol arg-sub-list) [7587 7609]))                  
+                :type "void")
+                nil [7516 12566])
+            ("TestInvalidInternal" function
+               (:arguments 
+                  ( ("client" variable
+                       (:reference 1
+                        :type ("OTSClientInternal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12593 12619]))                  
+                :type "void")
+                nil [12568 13701])
+            ("TestSendPBRequest" function (:type "void") nil [13703 13937])
+            ("TestSendCompressedPBRequest" function (:type "void") nil [13939 14383])
+            ("TestCompressedResponse" function (:type "void") nil [14385 14817])
+            ("TestSendInvalidData" function (:type "void") nil [14819 15046])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [15057 15066])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15067 15079]))                  
+                :type "int")
+                nil [15048 15215]))          
+      :file "ots_internal_functiontest.cpp"
+      :pointmax 15216
+      :fsize 15215
+      :lastmodtime '(22047 25771 747036 948000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ots_internal_noinst_functiontest.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ots_client_internal.h" include nil nil [1 33])
+            ("ots_client_helper.h" include nil nil [34 64])
+            ("ots_protocol.pb.h" include nil nil [65 93])
+            ("test_util.h" include nil nil [94 116])
+            ("algorithm" include (:system-flag t) nil [118 138])
+            ("iostream" include (:system-flag t) nil [139 158])
+            ("vector" include (:system-flag t) nil [159 176])
+            ("string" include (:system-flag t) nil [177 194])
+            ("google/protobuf/text_format.h" include (:system-flag t) nil [195 235])
+            ("stdlib.h" include (:system-flag t) nil [237 256])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [258 278])
+            ("aliyun::openservices::ots" using (:type ("aliyun::openservices::ots" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [279 321])
+            ("google::protobuf" using (:type ("google::protobuf" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [322 355])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [357 377])
+            ("com::aliyun" using (:type ("com::aliyun" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [378 406])
+            ("aliyun::openservices::ots" using (:type ("aliyun::openservices::ots" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [407 449])
+            ("google::protobuf" using (:type ("google::protobuf" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [450 483])
+            ("kTestCharTest" variable
+               (:constant-flag t
+                :default-value "\"_0123456789abcedefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\""
+                :type ("string" type (:type "class") nil nil))
+                nil [485 581])
+            ("kDefaultEndpoint" variable
+               (:constant-flag t
+                :default-value "\"http://10.101.172.139:9999/\""
+                :type ("string" type (:type "class") nil nil))
+                nil [582 644])
+            ("kDefaultAccessId" variable
+               (:constant-flag t
+                :default-value "\"OTSMultiUser100_accessid\""
+                :type ("string" type (:type "class") nil nil))
+                nil [645 704])
+            ("kDefaultAccessKey" variable
+               (:constant-flag t
+                :default-value "\"OTSMultiUser100_accesskey\""
+                :type ("string" type (:type "class") nil nil))
+                nil [705 766])
+            ("kDefaultInstanceName" variable
+               (:constant-flag t
+                :default-value "\"RegressionLegacy\""
+                :type ("string" type (:type "class") nil nil))
+                nil [767 822])
+            ("FillColumnValue" function
+               (:arguments 
+                  ( ("pbValue" variable
+                       (:pointer 1
+                        :type ("cloudservice::ots::ColumnValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [845 885])
+                    ("num" variable (:type "int") (reparse-symbol arg-sub-list) [886 894]))                  
+                :type "void")
+                nil [824 1229])
+            ("FillGetRowRequest" function
+               (:arguments 
+                  ( ("pbRequest" variable
+                       (:pointer 1
+                        :type ("cloudservice::ots::GetRowRequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1254 1298]))                  
+                :type "void")
+                nil [1231 1954])
+            ("PrintPbMessage" function
+               (:arguments 
+                  ( ("pb" variable
+                       (:pointer 1
+                        :type ("Message" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1976 1988]))                  
+                :type "void")
+                nil [1956 2132])
+            ("SetColumnSchemaType" function
+               (:arguments 
+                  ( ("pbSchema" variable
+                       (:pointer 1
+                        :type ("cloudservice::ots::ColumnSchema" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2159 2201])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [2202 2212]))                  
+                :type "void")
+                nil [2134 2441])
+            ("FillCreateTableRequest" function
+               (:arguments 
+                  ( ("pbRequest" variable
+                       (:pointer 1
+                        :type ("cloudservice::ots::CreateTableRequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2471 2520])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2534 2558])
+                    ("tableGroup" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2559 2584]))                  
+                :type "void")
+                nil [2443 3845])
+            ("FillPutRowRequest" function
+               (:arguments 
+                  ( ("pbRequest" variable
+                       (:pointer 1
+                        :type ("cloudservice::ots::PutRowRequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3870 3914]))                  
+                :type "void")
+                nil [3847 4963])
+            ("CheckColumn" function
+               (:arguments 
+                  ( ("pbColumn" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cloudservice::ots::Column" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4982 5024])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [5025 5035])
+                    ("isPK" variable (:type "bool") (reparse-symbol arg-sub-list) [5036 5046]))                  
+                :type "bool")
+                nil [4965 6156])
+            ("CheckGetRowResult" function
+               (:arguments 
+                  ( ("respData" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6181 6204]))                  
+                :type "bool")
+                nil [6158 7514])
+            ("TestSendInternal" function
+               (:arguments 
+                  ( ("client" variable
+                       (:reference 1
+                        :type ("OTSClientInternal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7538 7564])
+                    ("isReqCompressed" variable (:type "bool") (reparse-symbol arg-sub-list) [7565 7586])
+                    ("isRespCompressed" variable (:type "bool") (reparse-symbol arg-sub-list) [7587 7609]))                  
+                :type "void")
+                nil [7516 12610])
+            ("TestInvalidInternal" function
+               (:arguments 
+                  ( ("client" variable
+                       (:reference 1
+                        :type ("OTSClientInternal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12637 12663]))                  
+                :type "void")
+                nil [12612 13745])
+            ("TestSendPBRequest" function (:type "void") nil [13747 13959])
+            ("TestSendCompressedPBRequest" function (:type "void") nil [13961 14383])
+            ("TestCompressedResponse" function (:type "void") nil [14385 14795])
+            ("TestSendInvalidData" function (:type "void") nil [14797 15002])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [15013 15022])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15023 15035]))                  
+                :type "int")
+                nil [15004 15171]))          
+      :file "ots_internal_noinst_functiontest.cpp"
+      :pointmax 15172
+      :fsize 15171
+      :lastmodtime '(22047 26478 755036 293000)
+      :unmatched-syntax nil)
+    (semanticdb-table "run_function_test.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("re" include nil nil [53 62])
+            ("time" include nil nil [63 74])
+            ("json" include nil nil [75 86])
+            ("commands" include nil nil [87 102])
+            ("datetime" include nil nil [103 118])
+            ("pyut_wrapper" include nil nil [140 174])
+            ("OtsClientTestCase" type
+               (:superclasses ("apsara_ut.ApsaraTestCase")
+                :members 
+                  ( ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [246 250]))                          )
+                        (reparse-symbol indented_block_body) [236 267])
+                    ("testOtsClient" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [290 294]))                          )
+                        (reparse-symbol indented_block_body) [272 1804]))                  
+                :type "class")
+                nil [176 1804])
+            ("OtsClientNoinstTestCase" type
+               (:superclasses ("apsara_ut.ApsaraTestCase")
+                :members 
+                  ( ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1885 1889]))                          )
+                        (reparse-symbol indented_block_body) [1875 1906])
+                    ("testClientNoinst" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1932 1936]))                          )
+                        (reparse-symbol indented_block_body) [1911 3453]))                  
+                :type "class")
+                nil [1809 3453])
+            ("OtsInternalTestCase" type
+               (:superclasses ("apsara_ut.ApsaraTestCase")
+                :members 
+                  ( ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3530 3534]))                          )
+                        (reparse-symbol indented_block_body) [3520 3551])
+                    ("testOtsInternal" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3576 3580]))                          )
+                        (reparse-symbol indented_block_body) [3556 5092]))                  
+                :type "class")
+                nil [3458 5092])
+            ("OtsInternalNoinstTestCase" type
+               (:superclasses ("apsara_ut.ApsaraTestCase")
+                :members 
+                  ( ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5175 5179]))                          )
+                        (reparse-symbol indented_block_body) [5165 5196])
+                    ("testOtsInternalNoinst" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5227 5231]))                          )
+                        (reparse-symbol indented_block_body) [5201 6750]))                  
+                :type "class")
+                nil [5097 6750])
+            ("if" code nil nil [6761 6809]))          
+      :file "run_function_test.py"
+      :pointmax 6809
+      :fsize 6808
+      :lastmodtime '(22047 28276 427035 388000)
+      :unmatched-syntax nil))
+  :file "!apsarapangu!disk6!jingwen.hjw!work!3.2!ots!SDK!cppv2!testing!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

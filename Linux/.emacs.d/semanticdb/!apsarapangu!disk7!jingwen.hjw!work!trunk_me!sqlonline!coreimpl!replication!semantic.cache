@@ -1,0 +1,738 @@
+;; Object replication/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "replication/"
+  :tables
+  (list
+    (semanticdb-table "sqlonline_replication_format.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("APSARA_SQLONLINE_REPLICATION_FORMAT_H" variable (:constant-flag t) nil [420 457])
+            ("deque" include (:system-flag t) nil [459 475])
+            ("string" include (:system-flag t) nil [476 493])
+            ("utility" include (:system-flag t) nil [494 512])
+            ("apsara/common/jsonizable.h" include nil nil [514 551])
+            ("apsara/common/time_stamp.h" include nil nil [552 589])
+            ("sqlonline/common/sqlonline_macro.h" include nil nil [590 635])
+            ("../commit_log/sqlonline_commitlog_format.h" include nil nil [636 689])
+            ("common/replication_state.h" include nil nil [690 727])
+            ("common/common.h" include nil nil [728 754])
+            ("apsara" type
+               (:members 
+                  ( ("sqlonline" type
+                       (:members 
+                          ( ("ReplicationDetailState" type
+                               (:superclasses 
+                                  ( ("Jsonizable" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [883 890])
+                                    ("kCurrentVersion" variable
+                                       (:typemodifiers ("static")
+                                        :constant-flag t
+                                        :default-value "2"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [895 937])
+                                    ("mVersion" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [943 961])
+                                    ("mReplicationPoint" variable (:type ("LogPoint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [966 993])
+                                    ("mTimeStamp" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [998 1018])
+                                    ("mBaseDataBeginPK" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1023 1052])
+                                    ("mBaseDataEndPK" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1057 1084])
+                                    ("ReplicationDetailState" function
+                                       (:constructor-flag t
+                                        :type ("ReplicationDetailState" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1090 1177])
+                                    ("Jsonize" function
+                                       (:typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("jw" variable
+                                               (:reference 1
+                                                :type ("JsonWrapper" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1217 1233]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1196 1584])
+                                    ("SetBaseDataRange" function
+                                       (:arguments 
+                                          ( ("baseDataRange" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Range" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1612 1639])
+                                            ("pkColumnNumber" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1640 1663]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1590 2092]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [832 2095])
+                            ("ReplicationMessage" type
+                               (:members 
+                                  ( ("mEntry" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2232 2251])
+                                    ("mBegin" variable (:type ("LogPoint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2256 2272])
+                                    ("mEnd" variable (:type ("LogPoint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2277 2291])
+                                    ("mTimeStamp" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2296 2316])
+                                    ("mCheckPoints" variable (:type ("std::deque" type
+                                         (:template-specifier 
+                                            ( ("LogPoint" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [2622 2656])
+                                    ("ReplicationMessage" function
+                                       (:constructor-flag t
+                                        :type ("ReplicationMessage" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [2664 2720])
+                                    ("IsSingleEntry" function (:type "bool") (reparse-symbol classsubparts) [2726 2804])
+                                    ("IncreaseBeginPoint" function
+                                       (:arguments 
+                                          ( ("lp" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("LogPoint" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2834 2853]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2810 4507]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [2200 4510]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [775 4513]))                  
+                :type "namespace")
+                nil [756 4545]))          
+      :file "sqlonline_replication_format.h"
+      :pointmax 4582
+      :fsize 4581
+      :lastmodtime '(21973 28402 403036 153000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("APSARA_SQLONLINE_REPLICATION_FORMAT_H")
+          )
+)
+    (semanticdb-table "sqlonline_replication_async_agent.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("sqlonline_replication_agent.h" include nil nil [366 406])
+            ("common/sqlonline_row_formatter.h" include nil nil [408 451])
+            ("common/sqlonline_task_scheduler.h" include nil nil [452 496])
+            ("common/sqlonline_semaphore.h" include nil nil [497 536])
+            ("protocol/replication.pb.h" include nil nil [537 573])
+            ("sqlonline/common/sqlonline_macro.h" include nil nil [574 619])
+            ("sqlonline_replication_format.h" include nil nil [620 661])
+            ("sqlonline_replication_queue.h" include nil nil [662 702])
+            ("sqlonline_replication_detail_state_store.h" include nil nil [703 756])
+            ("sqlonline_replication_session_manager.h" include nil nil [757 807])
+            ("sqlonline_replicator.h" include nil nil [808 841])
+            ("include/dumb_txn.h" include nil nil [842 871])
+            ("include/sqlstorage_helper_service.h" include nil nil [872 918])
+            ("include/sqlstorage_partition.h" include nil nil [919 960])
+            ("coreimpl/sqlonline_exception.h" include nil nil [961 1002])
+            ("apsara/common/atomic.h" include nil nil [1003 1036])
+            ("apsara/common/foreach.h" include nil nil [1037 1071])
+            ("apsara/common/lock.h" include nil nil [1072 1103])
+            ("apsara/common/lockfree_queue.h" include nil nil [1104 1145])
+            ("apsara/common/time_stamp.h" include nil nil [1146 1183])
+            ("apsara/shennong/shennong_perfcounter.h" include nil nil [1184 1233])
+            ("boost/atomic.hpp" include nil nil [1234 1261])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1263 1283])
+            ("std::tr1" using (:type ("std::tr1" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1284 1309])
+            ("apsara::common" using (:type ("apsara::common" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1310 1341])
+            ("apsara::common::timing" using (:type ("apsara::common::timing" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1342 1381])
+            ("apsara::sqlonline::plainbuffer" using (:type ("apsara::sqlonline::plainbuffer" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1382 1429])
+            ("DECLARE_FLAG_INT64" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_tracer_ReplicateMaxLatencyInUs" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1450 1491]))                  
+                :type "int")
+                nil [1431 1492])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_storage_PrefetchBlockCount4OnlineRequest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1512 1563]))                  
+                :type "int")
+                nil [1493 1564])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_storage_ReadPriority4OnlineRequest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1584 1629]))                  
+                :type "int")
+                nil [1565 1630])
+            ("DECLARE_FLAG_BOOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_storage_EnableBackupReadForNormalFile" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1649 1697]))                  
+                :type "int")
+                nil [1631 1698])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_worker_ReplicationInitScanSizeInBytes" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1718 1766]))                  
+                :type "int")
+                nil [1699 1767])
+            ("DECLARE_FLAG_STRING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_storage_DefaultLGName" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1788 1820]))                  
+                :type "int")
+                nil [1768 1821])
+            ("DECLARE_FLAG_BOOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_worker_EnableReplicationAutoInit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1840 1883]))                  
+                :type "int")
+                nil [1822 1884])
+            ("apsara" type
+               (:members 
+                  ( ("sqlonline" type
+                       (:members 
+                          ( ("unnamed" type
+                               (:members 
+                                  ( ("CheckTargetClusterID" function
+                                       (:arguments 
+                                          ( ("clusters" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Slice" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1966 1988])
+                                            ("targetCluster" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Slice" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1989 2016]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [1940 2750]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1927 2752])
+                            ("sLogger" variable
+                               (:pointer 1
+                                :typemodifiers ("static")
+                                :default-value "logging::GetLogger(\"/apsara/sqlonline/replication/async_agent\")"
+                                :type ("logging::Logger" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2754 2857])
+                            ("AsyncReplicationAgent" type
+                               (:superclasses 
+                                  ( ("IReplicationAgent" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil)
+                                    ("common::Uncopyable" type
+                                       (:protection "private"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [2944 2951])
+                                    ("AsyncReplicationAgent" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("opts" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("AsyncReplicationAgentOptions" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3000 3041]))                                          
+                                        :type ("AsyncReplicationAgent" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2965 3042])
+                                    ("AsyncReplicationAgent" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3048 3073])
+                                    ("Replay" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("lp" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("LogPoint" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3104 3123]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3092 3124])
+                                    ("Enqueue" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("logEntry" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("deque" type
+                                                     (:template-specifier 
+                                                        ( ("Slice" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [3169 3198])
+                                            ("lp" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("LogPoint" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3212 3231])
+                                            ("timeStamp" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3245 3264]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3143 3265])
+                                    ("GetReplicationPoint" function
+                                       (:prototype-flag t
+                                        :type ("LogPoint" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3284 3321])
+                                    ("GetReplicationDetailState" function
+                                       (:prototype-flag t
+                                        :type ("ReplicationDetailState" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3340 3397])
+                                    ("Split" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("newPartitionAddrs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("vector" type
+                                                     (:template-specifier 
+                                                        ( ("string" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [3427 3467]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3416 3474])
+                                    ("Merge" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("newPartitionAddr" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3504 3535]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3493 3542])
+                                    ("GetTotalMemoryUsage" function
+                                       (:prototype-flag t
+                                        :type ("int64_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3561 3597])
+                                    ("Idle" function
+                                       (:arguments 
+                                          ( ("timeout" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Interval" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3626 3650]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [3616 4999])
+                                    ("private" label nil (reparse-symbol classsubparts) [5001 5009])
+                                    ("FlushSignal" type
+                                       (:superclasses 
+                                          ( ("deprecated::WorkItem" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [5072 5079])
+                                            ("FlushSignal" function
+                                               (:constructor-flag t
+                                                :type ("FlushSignal" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [5088 5160])
+                                            ("Wait" function
+                                               (:arguments 
+                                                  ( ("timeout" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Interval" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5180 5204]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [5170 5414])
+                                            ("Notify" function (:type "void") (reparse-symbol classsubparts) [5424 5482])
+                                            ("mSuccess" variable (:type "bool") (reparse-symbol classsubparts) [5629 5643])
+                                            ("private" label nil (reparse-symbol classsubparts) [5649 5657])
+                                            ("mSem" variable (:type ("Semaphore" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5666 5681]))                                          
+                                        :type "class")
+                                        (reparse-symbol classsubparts) [5014 5688])
+                                    ("BuildRequestForTableLegPub" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [5694 5728])
+                                    ("BuildRequestForTablePublic" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [5733 5767])
+                                    ("BuildRequestForTableInternal" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [5772 5808])
+                                    ("BuildBaseDataRequestForPublic" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [5813 5850])
+                                    ("BuildBaseDataRequestForInternal" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [5855 5894])
+                                    ("Replicate" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("items" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("deque" type
+                                                     (:template-specifier 
+                                                        ( ("deprecated::WorkItemPtr" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [5965 6009]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [5950 6010])
+                                    ("StoreDetailState" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("items" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("deque" type
+                                                     (:template-specifier 
+                                                        ( ("ITask::WorkItemPtr" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [6100 6139]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [6078 6140])
+                                    ("NotifyScheduler" function (:type ("deprecated::ITaskFuturePtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6216 6591])
+                                    ("CalcuLatency" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [6597 6617])
+                                    ("HandleException" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [6623 6652])
+                                    ("IsIniting" function (:type "bool") (reparse-symbol classsubparts) [6658 6765])
+                                    ("SetMemoryBaseDataBeginPK" function
+                                       (:arguments 
+                                          ( ("newPK" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6805 6825]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [6775 6932])
+                                    ("GetMemoryBaseDataBeginPK" function (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6938 7077])
+                                    ("SetBaseDataBeginPK" function
+                                       (:arguments 
+                                          ( ("newPK" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7107 7127]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [7083 7222])
+                                    ("GetBaseDataBeginPK" function (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7228 7349])
+                                    ("private" label nil (reparse-symbol classsubparts) [7351 7359])
+                                    ("mOptions" variable
+                                       (:constant-flag t
+                                        :type ("AsyncReplicationAgentOptions" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7364 7408])
+                                    ("mSessionManager" variable (:type ("ReplicationSessionManager" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7458 7500])
+                                    ("mRequest" variable (:type ("replication::ReplicationRequest" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7505 7546])
+                                    ("mResponse" variable (:type ("replication::ReplicationResponse" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7551 7594])
+                                    ("mNeedRetry" variable (:type "bool") (reparse-symbol classsubparts) [7599 7615])
+                                    ("mReplicationQueue" variable (:type ("auto_ptr" type
+                                         (:template-specifier 
+                                            ( ("ReplicationQueue" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [7686 7731])
+                                    ("mBackgroundReplicating" variable (:type ("auto_ptr" type
+                                         (:template-specifier 
+                                            ( ("deprecated::ITask" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [7736 7787])
+                                    ("mBackgroundDetailStateStore" variable (:type ("auto_ptr" type
+                                         (:template-specifier 
+                                            ( ("ITask" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [7792 7836])
+                                    ("mMemoryReplicationPoint" variable (:type ("boost::atomic" type
+                                         (:template-specifier 
+                                            ( ("LogPoint" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [7889 7937])
+                                    ("mMemoryTimeStamp" variable (:type ("boost::atomic" type
+                                         (:template-specifier 
+                                            ( ("uint64_t" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [7982 8023])
+                                    ("mMemoryBaseDataBeginPK" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8091 8121])
+                                    ("mMemoryBaseDataBeginPKLock" variable
+                                       (:typemodifiers ("mutable")
+                                        :type ("PTMutex" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8126 8169])
+                                    ("mTimeStamp" variable (:type ("boost::atomic" type
+                                         (:template-specifier 
+                                            ( ("uint64_t" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [8175 8210])
+                                    ("mReplicationPoint" variable (:type ("boost::atomic" type
+                                         (:template-specifier 
+                                            ( ("LogPoint" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [8263 8305])
+                                    ("mBaseDataBeginPK" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8373 8397])
+                                    ("mBaseDataBeginPKLock" variable
+                                       (:typemodifiers ("mutable")
+                                        :type ("PTMutex" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8402 8439])
+                                    ("mShutdown" variable (:type ("boost::atomic" type
+                                         (:template-specifier 
+                                            ( ("bool" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [8445 8475])
+                                    ("msActiveReplicateThreads" variable
+                                       (:typemodifiers ("static")
+                                        :type ("boost::atomic" type
+                                             (:template-specifier 
+                                                ( ("int" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [8480 8531])
+                                    ("mBaseDataEndPK" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8614 8636]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [2859 8639])
+                            ("msActiveReplicateThreads" function
+                               (:prototype-flag t
+                                :parent "AsyncReplicationAgent"
+                                :type ("boost::atomic" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [8641 8711])
+                            ("AsyncReplicationAgent" function
+                               (:constructor-flag t
+                                :parent "AsyncReplicationAgent"
+                                :arguments 
+                                  ( ("opts" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("AsyncReplicationAgentOptions" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8771 8812]))                                  
+                                :type ("AsyncReplicationAgent" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [8713 11929])
+                            ("AsyncReplicationAgent" function
+                               (:destructor-flag t
+                                :parent "AsyncReplicationAgent"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [11931 12983])
+                            ("Replay" function
+                               (:parent "AsyncReplicationAgent"
+                                :arguments 
+                                  ( ("lp" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LogPoint" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13020 13039]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [12985 16573])
+                            ("Enqueue" function
+                               (:parent "AsyncReplicationAgent"
+                                :arguments 
+                                  ( ("entry" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("deque" type
+                                             (:template-specifier 
+                                                ( ("Slice" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [16620 16646])
+                                    ("lp" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LogPoint" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16656 16675])
+                                    ("timeStamp" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16684 16703]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [16575 16850])
+                            ("GetReplicationPoint" function
+                               (:parent "AsyncReplicationAgent"
+                                :type ("LogPoint" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [16852 17001])
+                            ("GetReplicationDetailState" function
+                               (:parent "AsyncReplicationAgent"
+                                :type ("ReplicationDetailState" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [17003 17252])
+                            ("Split" function
+                               (:parent "AsyncReplicationAgent"
+                                :arguments 
+                                  ( ("newPartitionAddrs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [17288 17328]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [17254 17926])
+                            ("Merge" function
+                               (:parent "AsyncReplicationAgent"
+                                :arguments 
+                                  ( ("newPartitionAddr" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17962 17993]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [17928 18549])
+                            ("GetTotalMemoryUsage" function
+                               (:parent "AsyncReplicationAgent"
+                                :type ("int64_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [18551 18665])
+                            ("AddSession" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("session" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ReplicationSession" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18699 18733])
+                                    ("partition" variable
+                                       (:pointer 1
+                                        :type ("replication::Partition" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18742 18776]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [18667 18975])
+                            ("unnamed" type
+                               (:members 
+                                  ( ("BuildKey" function
+                                       (:arguments 
+                                          ( ("sink" variable
+                                               (:pointer 1
+                                                :type ("string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [19004 19017])
+                                            ("row" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("InplaceRow" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [19018 19040])
+                                            ("cell" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("InplaceCell" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [19041 19065]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [18990 19434])
+                                    ("BuildKey" function
+                                       (:arguments 
+                                          ( ("sink" variable
+                                               (:pointer 1
+                                                :type ("string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [19450 19463])
+                                            ("tc" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("TabletColumn" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [19464 19487]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [19436 19638]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [18977 19641])
+                            ("BuildRequestForTableLegPub" function
+                               (:parent "AsyncReplicationAgent"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [19657 24406])
+                            ("BuildRequestForTablePublic" function
+                               (:parent "AsyncReplicationAgent"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [24408 28984])
+                            ("BuildRequestForTableInternal" function
+                               (:parent "AsyncReplicationAgent"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [28986 33601])
+                            ("BuildBaseDataRequestForPublic" function
+                               (:parent "AsyncReplicationAgent"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [33603 36781])
+                            ("BuildBaseDataRequestForInternal" function
+                               (:parent "AsyncReplicationAgent"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [36783 36905])
+                            ("Replicate" function
+                               (:parent "AsyncReplicationAgent"
+                                :arguments 
+                                  ( ("items" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("deque" type
+                                             (:template-specifier 
+                                                ( ("deprecated::WorkItemPtr" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [36945 36989]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [36907 44333])
+                            ("CalcuLatency" function
+                               (:parent "AsyncReplicationAgent"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [44335 44691])
+                            ("HandleException" function
+                               (:parent "AsyncReplicationAgent"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [44693 45178])
+                            ("StoreDetailState" function
+                               (:parent "AsyncReplicationAgent"
+                                :arguments 
+                                  ( ("items" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("deque" type
+                                             (:template-specifier 
+                                                ( ("ITask::WorkItemPtr" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [45225 45264]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [45180 46759])
+                            ("NewAsyncReplicationAgent" function
+                               (:pointer 1
+                                :arguments 
+                                  ( ("opts" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("AsyncReplicationAgentOptions" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [46814 46855]))                                  
+                                :type ("IReplicationAgent" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [46761 46903]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1905 46906]))                  
+                :type "namespace")
+                nil [1886 46938]))          
+      :file "sqlonline_replication_async_agent.cpp"
+      :pointmax 46966
+      :fsize 46965
+      :lastmodtime '(21973 28402 403036 153000)
+      :unmatched-syntax '((number 8708 . 8709) (EXPLICIT 2956 . 2964)))
+    (semanticdb-table "sqlonline_replication_agent.h"
+      :file "sqlonline_replication_agent.h"
+      :fsize 7687
+      :lastmodtime '(21973 28402 398056 674000))
+    (semanticdb-table "sqlonline_replication_queue.h"
+      :file "sqlonline_replication_queue.h"
+      :fsize 3758
+      :lastmodtime '(21973 28402 403036 153000))
+    (semanticdb-table "sqlonline_replication_detail_state_store.h"
+      :file "sqlonline_replication_detail_state_store.h"
+      :fsize 1706
+      :lastmodtime '(21973 28402 402104 546000))
+    (semanticdb-table "sqlonline_replication_session_manager.h"
+      :file "sqlonline_replication_session_manager.h"
+      :fsize 2961
+      :lastmodtime '(21973 28402 399036 235000))
+    (semanticdb-table "sqlonline_replicator.h"
+      :file "sqlonline_replicator.h"
+      :fsize 1612
+      :lastmodtime '(21973 28402 403036 153000)))
+  :file "!apsarapangu!disk7!jingwen.hjw!work!trunk_me!sqlonline!coreimpl!replication!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

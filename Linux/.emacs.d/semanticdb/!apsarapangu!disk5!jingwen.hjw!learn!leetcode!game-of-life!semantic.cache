@@ -1,0 +1,40 @@
+;; Object game-of-life/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "game-of-life/"
+  :tables
+  (list
+    (semanticdb-table "solution.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("copy" include nil nil [1 26])
+            ("Solution" type
+               (:superclasses ("object")
+                :members 
+                  ( ("gameOfLife" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [71 75])
+                            ("board" variable nil (reparse-symbol function_parameters) [77 82]))                          
+                        :documentation "
+        :type board: List[List[int]]
+        :rtype: void Do not return anything, modify board in-place instead.
+        ")
+                        (reparse-symbol indented_block_body) [56 592])
+                    ("compute" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [609 613])
+                            ("board" variable nil (reparse-symbol function_parameters) [615 620])
+                            ("i" variable nil (reparse-symbol function_parameters) [622 623])
+                            ("j" variable nil (reparse-symbol function_parameters) [625 626]))                          )
+                        (reparse-symbol indented_block_body) [597 1474]))                  
+                :type "class")
+                nil [28 1474]))          
+      :file "solution.py"
+      :pointmax 1474
+      :fsize 1473
+      :lastmodtime '(22064 25109 978101 214000)
+      :unmatched-syntax nil))
+  :file "!apsarapangu!disk5!jingwen.hjw!learn!leetcode!game-of-life!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

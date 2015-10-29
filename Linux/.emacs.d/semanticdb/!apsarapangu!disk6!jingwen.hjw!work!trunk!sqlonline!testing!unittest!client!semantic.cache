@@ -1,0 +1,2676 @@
+;; Object client/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "client/"
+  :tables
+  (list
+    (semanticdb-table "sqlonline_split_merge_unittest.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("sqlonline/client/multiput_executor.h" include nil nil [1 48])
+            ("sqlonline/client/client_database.h" include nil nil [49 94])
+            ("sqlonline/client/client_data_store.h" include nil nil [95 142])
+            ("sqlonline/client/unittest/client_test_util.h" include nil nil [143 198])
+            ("sqlonline/common/sqlonline_row_formatter.h" include nil nil [199 252])
+            ("sqlonline/common/sqlonline_zero_copy_stream.h" include nil nil [253 309])
+            ("sqlonline/core/range_splitter.h" include nil nil [310 352])
+            ("sqlonline/testing/common/utility.h" include nil nil [353 398])
+            ("mock_storage.h" include nil nil [399 424])
+            ("apsara/common/flag.h" include nil nil [425 456])
+            ("apsara/common/unittest.h" include nil nil [457 492])
+            ("apsara/common/time_stamp.h" include nil nil [493 530])
+            ("sqlonline/tools/sqlonline_console_lib.h" include nil nil [531 581])
+            ("tr1/functional" include (:system-flag t) nil [582 607])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [609 629])
+            ("std::tr1" using (:type ("std::tr1" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [630 655])
+            ("apsara" using (:type ("apsara" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [656 679])
+            ("apsara::sqlonline" using (:type ("apsara::sqlonline" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [680 714])
+            ("apsara::sqlonline::test" using (:type ("apsara::sqlonline::test" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [715 755])
+            ("apsara::sqlonline::plainbuffer" using (:type ("apsara::sqlonline::plainbuffer" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [756 803])
+            ("apsara::common::timing" using (:type ("apsara::common::timing" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [804 843])
+            ("apsara::kuafu3" using (:type ("apsara::kuafu3" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [844 875])
+            ("DECLARE_FLAG_BOOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("pangu_mock_StreamType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [895 917]))                  
+                :type "int")
+                nil [877 918])
+            ("DECLARE_FLAG_STRING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlstorage_DefaultDBName" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [939 964]))                  
+                :type "int")
+                nil [919 965])
+            ("DECLARE_FLAG_STRING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlstorage_MasterAddr_UT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [986 1011]))                  
+                :type "int")
+                nil [966 1012])
+            ("DECLARE_FLAG_STRING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlstorage_MasterServicePort" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1033 1062]))                  
+                :type "int")
+                nil [1013 1063])
+            ("DECLARE_FLAG_BOOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlengine_UT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1082 1095]))                  
+                :type "int")
+                nil [1064 1096])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlstorage_DataChannelThreadNum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1117 1149]))                  
+                :type "int")
+                nil [1098 1150])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlstorage_WriteRequestThreadNum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1170 1203]))                  
+                :type "int")
+                nil [1151 1204])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlstorage_ReadRequestThreadNum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1224 1256]))                  
+                :type "int")
+                nil [1205 1257])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlstorage_WorkerDefaultThreadNum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1277 1311]))                  
+                :type "int")
+                nil [1258 1312])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_CommitLogNumThread" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1332 1361]))                  
+                :type "int")
+                nil [1313 1362])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_ReplicationNumThread" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1382 1413]))                  
+                :type "int")
+                nil [1363 1414])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_storage_CompactionNumThread" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1434 1472]))                  
+                :type "int")
+                nil [1415 1473])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_storage_DumpNumThread" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1493 1525]))                  
+                :type "int")
+                nil [1474 1526])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlengine_communication_timeout" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1546 1578]))                  
+                :type "int")
+                nil [1527 1579])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_master_FailInjectionMinDelayTimeInUsec" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1599 1648]))                  
+                :type "int")
+                nil [1580 1649])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_master_FailInjectionMaxDelayTimeInUsec" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1669 1718]))                  
+                :type "int")
+                nil [1650 1719])
+            ("DECLARE_FLAG_BOOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_master_FailInjectionBeforeOperation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1738 1784]))                  
+                :type "int")
+                nil [1720 1785])
+            ("DECLARE_FLAG_BOOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_master_FailInjectionAfterOperation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1804 1849]))                  
+                :type "int")
+                nil [1786 1850])
+            ("DECLARE_FLAG_BOOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_master_EnableFailInjectionWhileLink" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1869 1915]))                  
+                :type "int")
+                nil [1851 1916])
+            ("DECLARE_FLAG_BOOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_master_EnableFailInjectionWhileRequireMerge" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2008 2062]))                  
+                :type "int")
+                nil [1990 2063])
+            ("DECLARE_FLAG_BOOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_master_EnableFailInjectionWhileCommitSplit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2082 2135]))                  
+                :type "int")
+                nil [2064 2136])
+            ("DECLARE_FLAG_BOOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_master_EnableFailInjectionWhileCommitMerge" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2155 2208]))                  
+                :type "int")
+                nil [2137 2209])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_FailInjectionProbability" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2229 2264]))                  
+                :type "int")
+                nil [2210 2265])
+            ("DECLARE_FLAG_BOOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_PanguFileSystemFailInjection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2284 2323]))                  
+                :type "int")
+                nil [2266 2324])
+            ("DECLARE_FLAG_BOOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_LogFileWriteFailInjection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2343 2379]))                  
+                :type "int")
+                nil [2325 2380])
+            ("DECLARE_FLAG_BOOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_NormalFileWriteFailInjection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2399 2438]))                  
+                :type "int")
+                nil [2381 2439])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_worker_RequireSplitTimeoutInMsec" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2459 2502]))                  
+                :type "int")
+                nil [2440 2503])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_worker_RequireMergeTimeoutInMsec" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2523 2566]))                  
+                :type "int")
+                nil [2504 2567])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_worker_CommitSplitTimeoutInMsec" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2587 2629]))                  
+                :type "int")
+                nil [2568 2630])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_worker_CommitMergeTimeoutInMsec" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2650 2692]))                  
+                :type "int")
+                nil [2631 2693])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlol_master_AdjustCapacityUnitInterval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2713 2753]))                  
+                :type "int")
+                nil [2694 2754])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlol_master_MaxCapacityUnitPerPartition" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2774 2815]))                  
+                :type "int")
+                nil [2755 2816])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_storage_MaxCompactionThroughputInMBPerSec" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2836 2888]))                  
+                :type "int")
+                nil [2817 2889])
+            ("DECLARE_FLAG_DOUBLE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_master_CapacityUnitCompensationRatio" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2910 2957]))                  
+                :type "int")
+                nil [2890 2958])
+            ("DECLARE_FLAG_INT64" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_worker_SplitPartitionSizeInMB" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2978 3018]))                  
+                :type "int")
+                nil [2959 3019])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_storage_MaxMemfileSizeInMB" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3039 3076]))                  
+                :type "int")
+                nil [3020 3077])
+            ("DEFINE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_SplitMergeTest_FileCount" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3096 3131]))                  
+                :type "int")
+                nil [3078 3196])
+            ("DEFINE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_SplitMergeTest_RowCount" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3215 3249]))                  
+                :type "int")
+                nil [3197 3290])
+            ("DEFINE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_SplitMergeTest_PartNum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3309 3342]))                  
+                :type "int")
+                nil [3291 3380])
+            ("DEFINE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_SplitMergeTest_MaxVersion" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3399 3435]))                  
+                :type "int")
+                nil [3381 3473])
+            ("DEFINE_FLAG_BOOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_SplitMergeTest_CellWithSpecVersion" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3491 3536])
+                    ("" variable (:type ("true" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3541 3546]))                  
+                :type "int")
+                nil [3474 3547])
+            ("DEFINE_FLAG_STRING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("single_table_name" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3567 3585]))                  
+                :type "int")
+                nil [3548 3627])
+            ("DEFINE_FLAG_STRING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("table_group_name" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3647 3664]))                  
+                :type "int")
+                nil [3628 3705])
+            ("DEFINE_FLAG_STRING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("lg_name" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3725 3733]))                  
+                :type "int")
+                nil [3706 3751])
+            ("unnamed" type
+               (:members 
+                  ( ("sLogger" variable
+                       (:pointer 1
+                        :default-value "logging::GetLogger(\"/apsara/sqlonline/testing/unittest/client/sqlonline_client_split_merge_smoketest\")"
+                        :type ("logging::Logger" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3765 3895])
+                    ("testDBName" variable
+                       (:constant-flag t
+                        :default-value "STRING_FLAG(sqlstorage_DefaultDBName)"
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3897 3961])
+                    ("standardDBName" variable
+                       (:constant-flag t
+                        :default-value "STRING_FLAG(sqlstorage_DefaultDBName) + \"_1\""
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3962 4037])
+                    ("Mode" type
+                       (:members 
+                          ( ("NORMAL" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4055 4062])
+                            ("FailInjection" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4067 4082]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [4039 4083])
+                    ("InternalTableVersion" type
+                       (:members 
+                          ( ("TABLE_2_0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4117 4127])
+                            ("TABLE_3_0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4132 4143]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [4085 4144])
+                    ("InterCapacityUnit" type
+                       (:members 
+                          ( ("InterCapacityUnit" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("read" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4195 4208])
+                                    ("write" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4209 4223]))                                  
+                                :type ("InterCapacityUnit" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [4177 4263])
+                            ("InterCapacityUnit" function
+                               (:constructor-flag t
+                                :type ("InterCapacityUnit" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [4269 4291])
+                            ("mRead" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4297 4311])
+                            ("mWrite" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4316 4331]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [4146 4334])
+                    ("NamedSQLVariant" type
+                       (:members 
+                          ( ("mName" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4365 4378])
+                            ("mValue" variable (:type ("SQLVariant" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4383 4401]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [4336 4404])
+                    ("PK" type
+                       (:typedef ("vector" type
+                             (:template-specifier 
+                                ( ("NamedSQLVariant" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [4406 4441]))                  
+                :type "namespace")
+                nil [3753 4444])
+            ("PartitionSplitMergeTest" type
+               (:superclasses 
+                  ( ("UnitTestFixtureBase" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [4551 4558])
+                    ("Setup" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4563 4576])
+                    ("CleanUp" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4581 4596])
+                    ("TestSplitPartitionWithSplitPoint" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4838 4878])
+                    ("_TestSplitPartitionWithSplitPoint" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("notifier" variable
+                               (:pointer 1
+                                :type ("Notifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4922 4941]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4883 4942])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestSplitPartitionWithSplitPoint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4969 5002]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4947 5006])
+                    ("TestSplitPartitionWithoutSplitPoint" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5225 5268])
+                    ("_TestSplitPartitionWithoutSplitPoint" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("notifier" variable
+                               (:pointer 1
+                                :type ("Notifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5315 5334]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5273 5335])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestSplitPartitionWithoutSplitPoint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5362 5398]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5340 5402])
+                    ("TestSplitPartitionRepeatedly" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5529 5565])
+                    ("_TestSplitPartitionRepeatedly" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("notifier" variable
+                               (:pointer 1
+                                :type ("Notifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5605 5624]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5570 5625])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestSplitPartitionRepeatedly" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5652 5681]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5630 5685])
+                    ("TestSplitMultiPartitionsSameTime" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5776 5816])
+                    ("_TestSplitMultiPartitionsSameTime" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("notifier" variable
+                               (:pointer 1
+                                :type ("Notifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5860 5879]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5821 5880])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestSplitMultiPartitionsSameTime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5907 5940]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5885 5944])
+                    ("TestSplitOrMergePartitionWhileSpliting" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [6043 6089])
+                    ("_TestSplitOrMergePartitionWhileSpliting" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("notifier" variable
+                               (:pointer 1
+                                :type ("Notifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6139 6158]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6094 6159])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestSplitOrMergePartitionWhileSpliting" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6186 6225]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6164 6229])
+                    ("TestBatchModifyWhenPartitionSplit" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [6310 6351])
+                    ("_TestBatchModifyWhenPartitionSplit" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("notifier" variable
+                               (:pointer 1
+                                :type ("Notifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6396 6415]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6356 6416])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestBatchModifyWhenPartitionSplit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6443 6477]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6421 6481])
+                    ("TestMergePartition" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [6750 6776])
+                    ("_TestMergePartition" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("notifier" variable
+                               (:pointer 1
+                                :type ("Notifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6806 6825]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6781 6826])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestMergePartition" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6853 6872]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6831 6876])
+                    ("TestMergePartitionRepeately" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [6882 6917])
+                    ("_TestMergePartitionRepeately" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("notifier" variable
+                               (:pointer 1
+                                :type ("Notifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6956 6975]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6922 6976])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestMergePartitionRepeately" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7003 7031]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6981 7035])
+                    ("TestMergePartition_MultiThread" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [7041 7079])
+                    ("_TestMergePartition_MultiThread" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("notifier" variable
+                               (:pointer 1
+                                :type ("Notifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7121 7140]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7084 7141])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestMergePartition_MultiThread" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7168 7199]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [7146 7203])
+                    ("TestSplitOrMergePartitionWhileMerging" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [7209 7254])
+                    ("_TestSplitOrMergePartitionWhileMerging" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("notifier" variable
+                               (:pointer 1
+                                :type ("Notifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7303 7322]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7259 7323])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestSplitOrMergePartitionWhileMerging" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7350 7388]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [7328 7392])
+                    ("TestBatchModifyWhenPartitionMerge" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [7398 7439])
+                    ("_TestBatchModifyWhenPartitionMerge" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("notifier" variable
+                               (:pointer 1
+                                :type ("Notifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7484 7503]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7444 7504])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestBatchModifyWhenPartitionMerge" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7531 7565]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [7509 7569])
+                    ("TestMultiThreadRandomMergeSplit" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [7575 7614])
+                    ("_TestMultiThreadRandomMergeSplit" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("notifier" variable
+                               (:pointer 1
+                                :type ("Notifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7657 7676]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7619 7677])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestMultiThreadRandomMergeSplit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7704 7736]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [7682 7740])
+                    ("TestRandomMergeSplitPartitionWithVerifyStorageSize" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [7811 7869])
+                    ("_TestRandomMergeSplitPartitionWithVerifyStorageSize" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("notifier" variable
+                               (:pointer 1
+                                :type ("Notifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7931 7950]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7874 7951])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestRandomMergeSplitPartitionWithVerifyStorageSize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7978 8029]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [7956 8033])
+                    ("TestRandomMergeSplitPartitionWithVerifyCU" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [8138 8187])
+                    ("_TestRandomMergeSplitPartitionWithVerifyCU" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("notifier" variable
+                               (:pointer 1
+                                :type ("Notifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8240 8259]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8192 8260])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestRandomMergeSplitPartitionWithVerifyCU" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8287 8329]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [8265 8333])
+                    ("TestRandomMergeSplitPartitionWith3_0_Table" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [8339 8389])
+                    ("_TestRandomMergeSplitPartitionWith3_0_Table" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("notifier" variable
+                               (:pointer 1
+                                :type ("Notifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8443 8462]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8394 8463])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestRandomMergeSplitPartitionWith3_0_Table" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8490 8533]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [8468 8537])
+                    ("TestFailInjectionWhenRequireOrLink" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [8672 8714])
+                    ("_TestFailInjectionWhenRequireOrLink" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("notifier" variable
+                               (:pointer 1
+                                :type ("Notifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8760 8779]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8719 8780])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestFailInjectionWhenRequireOrLink" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8807 8842]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [8785 8846])
+                    ("TestFailInjectionNotifyMasterSplitMerge" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [8974 9021])
+                    ("_TestFailInjectionNotifyMasterSplitMerge" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("notifier" variable
+                               (:pointer 1
+                                :type ("Notifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9072 9091]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9026 9092])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestFailInjectionNotifyMasterSplitMerge" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9119 9159]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [9097 9163])
+                    ("TestAddTableWhileSplitingAndMerging" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [9169 9212])
+                    ("_TestAddTableWhileSplitingAndMerging" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("notifier" variable
+                               (:pointer 1
+                                :type ("Notifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9259 9278]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9217 9279])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestAddTableWhileSplitingAndMerging" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9306 9342]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [9284 9346])
+                    ("TestSplitAndMergeWhileAutoSplit" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [9352 9391])
+                    ("_TestSplitAndMergeWhileAutoSplit" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("notifier" variable
+                               (:pointer 1
+                                :type ("Notifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9434 9453]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9396 9454])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestSplitAndMergeWhileAutoSplit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9481 9513]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [9459 9517])
+                    ("TestFailInjectionPangu" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [9585 9615])
+                    ("_TestFailInjectionPangu" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("notifier" variable
+                               (:pointer 1
+                                :type ("Notifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9649 9668]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9620 9669])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestFailInjectionPangu" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9696 9719]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [9674 9723])
+                    ("private" label nil (reparse-symbol classsubparts) [9725 9733])
+                    ("ConstructSingleTables" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ranges" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("Range" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9765 9793]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9738 9794])
+                    ("ConstructTableGroups" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ranges" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("Range" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9826 9854]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9800 9855])
+                    ("ConstructSubTableInTableGroup" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("subTableName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9896 9923]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9861 9924])
+                    ("GetPartitionIDOfTestSingleTable" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("partRangeBegin" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("SQLVariant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9969 10002]))                          
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9930 10003])
+                    ("GetPartitionIDOfTestTableGroup" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("partRangeBegin" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("SQLVariant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10047 10080]))                          
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10009 10081])
+                    ("SplitPartitionOfTestDB" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("partID" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10128 10149])
+                            ("splitPoint" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("SQLVariant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10163 10192])
+                            ("newLeftPartID" variable
+                               (:pointer 1
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10206 10228])
+                            ("newRightPartID" variable
+                               (:pointer 1
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10241 10264]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10087 10265])
+                    ("SplitPartitionOfTestDB" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("partID" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10312 10333])
+                            ("newLeftPartID" variable
+                               (:pointer 1
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10347 10369])
+                            ("newRightPartID" variable
+                               (:pointer 1
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10382 10405]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10271 10406])
+                    ("SplitPartitionFunc" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("partID" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10452 10473])
+                            ("range" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Range" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10486 10505])
+                            ("isOKToFail" variable (:type "bool") (reparse-symbol arg-sub-list) [10518 10534])
+                            ("checkNewPartition" variable (:type "bool") (reparse-symbol arg-sub-list) [10547 10570]))                          
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10412 10571])
+                    ("MergePartitionOfTestDB" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("leftPartID" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10618 10643])
+                            ("rightPartID" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10656 10682])
+                            ("newPartID" variable
+                               (:pointer 1
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10695 10713]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10577 10714])
+                    ("MergePartitionFunc" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("leftPartID" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10760 10785])
+                            ("rightPartID" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10798 10824])
+                            ("leftRange" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Range" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10837 10860])
+                            ("rightRange" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Range" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10873 10897])
+                            ("isOKToFail" variable (:type "bool") (reparse-symbol arg-sub-list) [10910 10926])
+                            ("checkNewPartition" variable (:type "bool") (reparse-symbol arg-sub-list) [10939 10962]))                          
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10720 10963])
+                    ("WaitPartitionSplitOrMergeDone" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dbName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11017 11038])
+                            ("partID" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11052 11073]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [10969 11074])
+                    ("CheckTable" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("tableName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11109 11133])
+                            ("ranges" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("Range" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11147 11175]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11080 11176])
+                    ("CheckTableGroup" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("tableGroupName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11216 11245])
+                            ("ranges" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("Range" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11259 11287]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11182 11288])
+                    ("VerifyPartitionSchemeOfTestDB" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("storeName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11342 11366])
+                            ("ranges" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("Range" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11380 11408]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11294 11409])
+                    ("WriteAndSyncTable" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("tableName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11438 11462])
+                            ("sync" variable
+                               (:default-value "true"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [11463 11479]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11415 11481])
+                    ("WriteAndSyncTableThread" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("tableName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11528 11552])
+                            ("sync" variable (:type "bool") (reparse-symbol arg-sub-list) [11565 11575])
+                            ("stop" variable
+                               (:pointer 1
+                                :typemodifiers ("volatile")
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [11588 11608]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [11487 11609])
+                    ("WriteAndSyncTableGroup" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("tableGroupName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11643 11672])
+                            ("sync" variable
+                               (:default-value "true"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [11673 11689]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11615 11691])
+                    ("WriteAndSyncTableGroupThread" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("tableGroupName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11743 11772])
+                            ("sync" variable (:type "bool") (reparse-symbol arg-sub-list) [11785 11795])
+                            ("stop" variable
+                               (:pointer 1
+                                :typemodifiers ("volatile")
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [11808 11828]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [11697 11829])
+                    ("ReadAndVerifyTable" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("tableName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11859 11883]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11835 11884])
+                    ("ReadAndVerifyTableGroup" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("tableGroupName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11923 11952]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11894 11953])
+                    ("ReadAndVerifyDataStore" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("standardDataStorePtr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("IDataStorePtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12000 12042])
+                            ("testDataStorePtr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("IDataStorePtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12056 12094])
+                            ("storeName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12107 12131])
+                            ("pagingKeyCount" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12145 12167]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11959 12168])
+                    ("VerifyKeyQuery" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("standardDataStorePtr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("IDataStorePtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12207 12249])
+                            ("testDataStorePtr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("IDataStorePtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12263 12301])
+                            ("storeName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12315 12339]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12174 12340])
+                    ("VerifyRangeQuery" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("standardDataStorePtr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("IDataStorePtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12381 12423])
+                            ("testDataStorePtr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("IDataStorePtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12437 12475])
+                            ("storeName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12489 12513]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12346 12514])
+                    ("VerifyRangeQueryWithoutRetry" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("standardDataStorePtr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("IDataStorePtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12567 12609])
+                            ("testDataStorePtr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("IDataStorePtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12623 12661])
+                            ("storeName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12675 12699]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12520 12700])
+                    ("ReadAndVerifyTableV2" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("tableName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12732 12756]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12706 12757])
+                    ("VerifyReadRange" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("standardDataStorePtr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("IDataStorePtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12798 12840])
+                            ("testDataStorePtr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("IDataStorePtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12853 12891])
+                            ("storeName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12904 12928]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12764 12929])
+                    ("GenerateRandomSQLVariant" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("type" variable (:type ("VariantType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12984 13001])
+                            ("totalCount" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13015 13033]))                          
+                        :type ("SQLVariant" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12935 13034])
+                    ("GenerateRandomSQLVariant" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ranges" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("Range" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [13089 13117])
+                            ("totalCount" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13131 13149]))                          
+                        :type ("SQLVariant" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13040 13150])
+                    ("GenerateSplitPoint" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("range" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Range" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13180 13199])
+                            ("splitPoint" variable
+                               (:pointer 1
+                                :type ("SQLVariant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13200 13223]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [13156 13224])
+                    ("CreateTable" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("tableName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13247 13271])
+                            ("cu" variable (:type "int") (reparse-symbol arg-sub-list) [13272 13279])
+                            ("partCount" variable (:type "int") (reparse-symbol arg-sub-list) [13280 13294])
+                            ("version" variable (:type ("InternalTableVersion" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13295 13324]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [13230 13325])
+                    ("DeleteTableIfExist" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("tableName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13355 13379]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [13331 13380])
+                    ("BatchModifyFuncV3" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("tableName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13421 13445])
+                            ("mode" variable (:type ("Mode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13458 13468])
+                            ("stop" variable
+                               (:pointer 1
+                                :typemodifiers ("volatile")
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [13481 13501]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [13386 13502])
+                    ("_BatchModifyFuncV3" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("tableName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13545 13569])
+                            ("existRows" variable
+                               (:pointer 1
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("PK" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [13583 13605])
+                            ("mode" variable (:type ("Mode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13618 13628])
+                            ("notifier" variable
+                               (:pointer 1
+                                :type ("Notifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13641 13660])
+                            ("pool" variable
+                               (:pointer 1
+                                :type ("arpc::EasyThreadPool" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13674 13701]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [13508 13702])
+                    ("ReadAndVerifyTableV3" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("tableName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13734 13758]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [13708 13759])
+                    ("RangeReadData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dbPtr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("DataBasePtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13798 13823])
+                            ("tableName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13836 13860])
+                            ("rowsDataVec" variable
+                               (:pointer 1
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [13873 13901]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [13766 13902])
+                    ("BatchModifyFuncV2" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("tableName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13943 13967])
+                            ("mode" variable (:type ("Mode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13981 13991])
+                            ("stop" variable
+                               (:pointer 1
+                                :typemodifiers ("volatile")
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [14005 14025]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [13908 14026])
+                    ("_BatchModifyFuncV2" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("tableName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14069 14093])
+                            ("existRows" variable
+                               (:pointer 1
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("PK" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [14107 14129])
+                            ("mode" variable (:type ("Mode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14142 14152])
+                            ("notifier" variable
+                               (:pointer 1
+                                :type ("Notifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14165 14184])
+                            ("pool" variable
+                               (:pointer 1
+                                :type ("arpc::EasyThreadPool" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14198 14225]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [14032 14226])
+                    ("GetRawSize" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dbName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14251 14272])
+                            ("tableName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14273 14297]))                          
+                        :type ("int64_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [14232 14298])
+                    ("LoopRandomSplitOrMerge" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("tableName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14348 14372])
+                            ("loopTime" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14386 14403])
+                            ("isOKToFail" variable (:type "bool") (reparse-symbol arg-sub-list) [14416 14432])
+                            ("checkNewPartition" variable (:type "bool") (reparse-symbol arg-sub-list) [14445 14468]))                          
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [14304 14469])
+                    ("GetSequenceTestPartID" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("tableName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14511 14535])
+                            ("partIDs" variable
+                               (:pointer 1
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [14544 14568]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [14475 14569])
+                    ("GetPartitionRange" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dbName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14612 14633])
+                            ("partID" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14646 14667]))                          
+                        :type ("Range" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [14575 14668])
+                    ("CheckPartitionExist" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dbName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14712 14733])
+                            ("partID" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14746 14767])
+                            ("expectExist" variable (:type "bool") (reparse-symbol arg-sub-list) [14780 14797]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [14674 14798])
+                    ("GetPartitionCu" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dbName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14837 14858])
+                            ("partID" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14872 14893])
+                            ("partCU" variable
+                               (:pointer 1
+                                :type ("InterCapacityUnit" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14907 14933]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [14804 14934])
+                    ("CompareCU" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("expect" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InterCapacityUnit" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14955 14987])
+                            ("real" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InterCapacityUnit" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14988 15018]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [14940 15019])
+                    ("ManualCompact" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("partID" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15044 15065])
+                            ("tableName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15066 15090]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [15025 15091])
+                    ("HandleException" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("errorCode" variable (:type ("SQLErrorType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15118 15141])
+                            ("mode" variable (:type ("Mode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15142 15152]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [15097 15153])
+                    ("ChangeCanAutoSplit" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dbName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15196 15217])
+                            ("tableName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15231 15255])
+                            ("canAutoSplit" variable (:type "bool") (reparse-symbol arg-sub-list) [15269 15287]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [15159 15288])
+                    ("private" label nil (reparse-symbol classsubparts) [15290 15298])
+                    ("mStandardDB" variable (:type ("DataBasePtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15303 15327])
+                    ("mTestDB" variable (:type ("DataBasePtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15332 15352])
+                    ("mSingleTableName" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15357 15381])
+                    ("mTableGroupName" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15386 15409])
+                    ("mBeginTime" variable (:type ("UtcTime" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15414 15433])
+                    ("mSeed" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15438 15453])
+                    ("mServiceAddress" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15458 15481]))                  
+                :type "class")
+                nil [4465 15484])
+            ("APSARA_UNIT_TEST_FIXTURE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("PartitionSplitMergeTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15510 15534]))                  
+                :type "int")
+                nil [15485 15535])
+            ("unnamed" type
+               (:members 
+                  ( ("FinalNotifier" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [15572 15579])
+                            ("FinalNotifier" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("notifier" variable
+                                       (:pointer 1
+                                        :type ("Notifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15598 15617]))                                  
+                                :type ("FinalNotifier" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [15584 15652])
+                            ("FinalNotifier" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [15657 15714])
+                            ("private" label nil (reparse-symbol classsubparts) [15716 15724])
+                            ("mNotifier" variable
+                               (:pointer 1
+                                :type ("Notifier" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [15729 15749]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [15550 15752])
+                    ("kPartitionRangeSize" variable
+                       (:constant-flag t
+                        :default-value "1000"
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [15754 15791])
+                    ("KeyValue" type
+                       (:typedef ("map" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil)
+                                  ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [15793 15830])
+                    ("IOVec2String" function
+                       (:arguments 
+                          ( ("iovecs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("IOVec" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [15852 15880]))                          
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [15832 16086])
+                    ("Stream2Slice" function
+                       (:arguments 
+                          ( ("s" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("SqlZeroCopyOutputStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16106 16139]))                          
+                        :type ("Slice" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [16087 16331])
+                    ("PrimaryKeyToString" function
+                       (:arguments 
+                          ( ("keys" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("PK" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16359 16374]))                          
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [16333 16917])
+                    ("GetRandomString" function
+                       (:arguments 
+                          ( ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16942 16951]))                          
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [16919 17255])
+                    ("GetPK" function
+                       (:arguments 
+                          ( ("part" variable (:type "int") (reparse-symbol arg-sub-list) [17319 17328]))                          
+                        :type ("PK" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [17310 17739])
+                    ("GetValue" function (:type ("string" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [17741 17795])
+                    ("SetPK" function
+                       (:arguments 
+                          ( ("pk" variable
+                               (:pointer 1
+                                :type ("PrimaryKey" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17808 17823])
+                            ("keys" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("PK" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17824 17839]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [17797 18114]))                  
+                :type "namespace")
+                nil [15537 18117])
+            ("Setup" function
+               (:parent "PartitionSplitMergeTest"
+                :type "void")
+                nil [18119 19653])
+            ("CleanUp" function
+               (:parent "PartitionSplitMergeTest"
+                :type "void")
+                nil [19655 20352])
+            ("TestSplitPartitionWithSplitPoint" function
+               (:parent "PartitionSplitMergeTest"
+                :type "void")
+                nil [20354 20716])
+            ("_TestSplitPartitionWithSplitPoint" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("notifier" variable
+                       (:pointer 1
+                        :type ("Notifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20782 20801]))                  
+                :type "void")
+                nil [20718 26679])
+            ("TestSplitPartitionWithoutSplitPoint" function
+               (:parent "PartitionSplitMergeTest"
+                :type "void")
+                nil [26681 27049])
+            ("_TestSplitPartitionWithoutSplitPoint" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("notifier" variable
+                       (:pointer 1
+                        :type ("Notifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27118 27137]))                  
+                :type "void")
+                nil [27051 30727])
+            ("TestSplitPartitionRepeatedly" function
+               (:parent "PartitionSplitMergeTest"
+                :type "void")
+                nil [30729 31083])
+            ("_TestSplitPartitionRepeatedly" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("notifier" variable
+                       (:pointer 1
+                        :type ("Notifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31145 31164]))                  
+                :type "void")
+                nil [31085 35724])
+            ("_BatchModifyFuncV2" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35784 35808])
+                    ("existRows" variable
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("PK" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35817 35839])
+                    ("mode" variable (:type ("Mode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35848 35858])
+                    ("notifier" variable
+                       (:pointer 1
+                        :type ("Notifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35867 35886])
+                    ("pool" variable
+                       (:pointer 1
+                        :type ("arpc::EasyThreadPool" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35896 35923]))                  
+                :type "void")
+                nil [35726 39593])
+            ("BatchModifyFuncV2" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39642 39666])
+                    ("mode" variable (:type ("Mode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39667 39677])
+                    ("stop" variable
+                       (:pointer 1
+                        :typemodifiers ("volatile")
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [39678 39698]))                  
+                :type "int")
+                nil [39595 40151])
+            ("_TestBatchModifyWhenPartitionSplit" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("notifier" variable
+                       (:pointer 1
+                        :type ("Notifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40218 40237]))                  
+                :type "void")
+                nil [40153 41385])
+            ("TestBatchModifyWhenPartitionSplit" function
+               (:parent "PartitionSplitMergeTest"
+                :type "void")
+                nil [41387 41704])
+            ("TestSplitMultiPartitionsSameTime" function
+               (:parent "PartitionSplitMergeTest"
+                :type "void")
+                nil [41706 42068])
+            ("_TestSplitMultiPartitionsSameTime" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("notifier" variable
+                       (:pointer 1
+                        :type ("Notifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42134 42153]))                  
+                :type "void")
+                nil [42070 44761])
+            ("_TestSplitOrMergePartitionWhileSpliting" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("notifier" variable
+                       (:pointer 1
+                        :type ("Notifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [44833 44852]))                  
+                :type "void")
+                nil [44763 46440])
+            ("TestSplitOrMergePartitionWhileSpliting" function
+               (:parent "PartitionSplitMergeTest"
+                :type "void")
+                nil [46442 46816])
+            ("_TestMergePartition" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("notifier" variable
+                       (:pointer 1
+                        :type ("Notifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46868 46887]))                  
+                :type "void")
+                nil [46818 54048])
+            ("TestMergePartition" function
+               (:parent "PartitionSplitMergeTest"
+                :type "void")
+                nil [54050 54384])
+            ("_TestMergePartitionRepeately" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("notifier" variable
+                       (:pointer 1
+                        :type ("Notifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [54445 54464]))                  
+                :type "void")
+                nil [54386 57657])
+            ("TestMergePartitionRepeately" function
+               (:parent "PartitionSplitMergeTest"
+                :type "void")
+                nil [57659 58011])
+            ("_TestMergePartition_MultiThread" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("notifier" variable
+                       (:pointer 1
+                        :type ("Notifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [58075 58094]))                  
+                :type "void")
+                nil [58013 61713])
+            ("TestMergePartition_MultiThread" function
+               (:parent "PartitionSplitMergeTest"
+                :type "void")
+                nil [61715 62073])
+            ("_TestSplitOrMergePartitionWhileMerging" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("notifier" variable
+                       (:pointer 1
+                        :type ("Notifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [62144 62163]))                  
+                :type "void")
+                nil [62075 64035])
+            ("TestSplitOrMergePartitionWhileMerging" function
+               (:parent "PartitionSplitMergeTest"
+                :type "void")
+                nil [64037 64409])
+            ("_TestBatchModifyWhenPartitionMerge" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("notifier" variable
+                       (:pointer 1
+                        :type ("Notifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [64476 64495]))                  
+                :type "void")
+                nil [64411 65919])
+            ("TestBatchModifyWhenPartitionMerge" function
+               (:parent "PartitionSplitMergeTest"
+                :type "void")
+                nil [65921 66285])
+            ("LoopRandomSplitOrMerge" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [66352 66376])
+                    ("loopTime" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [66377 66394])
+                    ("isOKToFail" variable (:type "bool") (reparse-symbol arg-sub-list) [66403 66419])
+                    ("checkNewPartition" variable (:type "bool") (reparse-symbol arg-sub-list) [66420 66443]))                  
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [66287 69055])
+            ("_TestMultiThreadRandomMergeSplit" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("notifier" variable
+                       (:pointer 1
+                        :type ("Notifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69120 69139]))                  
+                :type "void")
+                nil [69057 70408])
+            ("TestMultiThreadRandomMergeSplit" function
+               (:parent "PartitionSplitMergeTest"
+                :type "void")
+                nil [70410 70770])
+            ("_TestRandomMergeSplitPartitionWithVerifyStorageSize" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("notifier" variable
+                       (:pointer 1
+                        :type ("Notifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [70854 70873]))                  
+                :type "void")
+                nil [70772 72439])
+            ("TestRandomMergeSplitPartitionWithVerifyStorageSize" function
+               (:parent "PartitionSplitMergeTest"
+                :type "void")
+                nil [72441 72839])
+            ("_TestRandomMergeSplitPartitionWithVerifyCU" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("notifier" variable
+                       (:pointer 1
+                        :type ("Notifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [72914 72933]))                  
+                :type "void")
+                nil [72841 76531])
+            ("TestRandomMergeSplitPartitionWithVerifyCU" function
+               (:parent "PartitionSplitMergeTest"
+                :type "void")
+                nil [76533 76913])
+            ("TestRandomMergeSplitPartitionWith3_0_Table" function
+               (:parent "PartitionSplitMergeTest"
+                :type "void")
+                nil [76915 77297])
+            ("_TestRandomMergeSplitPartitionWith3_0_Table" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("notifier" variable
+                       (:pointer 1
+                        :type ("Notifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [77373 77392]))                  
+                :type "void")
+                nil [77299 79451])
+            ("_TestFailInjectionWhenRequireOrLink" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("notifier" variable
+                       (:pointer 1
+                        :type ("Notifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [79519 79538]))                  
+                :type "void")
+                nil [79453 82606])
+            ("TestFailInjectionWhenRequireOrLink" function
+               (:parent "PartitionSplitMergeTest"
+                :type "void")
+                nil [82608 82974])
+            ("_TestFailInjectionNotifyMasterSplitMerge" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("notifier" variable
+                       (:pointer 1
+                        :type ("Notifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [83047 83066]))                  
+                :type "void")
+                nil [82976 86943])
+            ("TestFailInjectionNotifyMasterSplitMerge" function
+               (:parent "PartitionSplitMergeTest"
+                :type "void")
+                nil [86945 87321])
+            ("TestFailInjectionPangu" function
+               (:parent "PartitionSplitMergeTest"
+                :type "void")
+                nil [87323 87665])
+            ("_TestFailInjectionPangu" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("notifier" variable
+                       (:pointer 1
+                        :type ("Notifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [87721 87740]))                  
+                :type "void")
+                nil [87667 92160])
+            ("_TestAddTableWhileSplitingAndMerging" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("notifier" variable
+                       (:pointer 1
+                        :type ("Notifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [92229 92248]))                  
+                :type "void")
+                nil [92162 94570])
+            ("TestAddTableWhileSplitingAndMerging" function
+               (:parent "PartitionSplitMergeTest"
+                :type "void")
+                nil [94572 94940])
+            ("TestSplitAndMergeWhileAutoSplit" function
+               (:parent "PartitionSplitMergeTest"
+                :type "void")
+                nil [94942 95302])
+            ("_TestSplitAndMergeWhileAutoSplit" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("notifier" variable
+                       (:pointer 1
+                        :type ("Notifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [95367 95386]))                  
+                :type "void")
+                nil [95304 97986])
+            ("DeleteTableIfExist" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [98037 98061]))                  
+                :type "void")
+                nil [97988 98272])
+            ("CreateTable" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [98316 98340])
+                    ("cu" variable (:type "int") (reparse-symbol arg-sub-list) [98341 98348])
+                    ("partCount" variable (:type "int") (reparse-symbol arg-sub-list) [98349 98363])
+                    ("version" variable (:type ("InternalTableVersion" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [98364 98393]))                  
+                :type "void")
+                nil [98274 100432])
+            ("ConstructSingleTables" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("ranges" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Range" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [100486 100514]))                  
+                :type "void")
+                nil [100434 102543])
+            ("ConstructTableGroups" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("ranges" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Range" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [102596 102624]))                  
+                :type "void")
+                nil [102545 107407])
+            ("ConstructSubTableInTableGroup" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("subTableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [107469 107496]))                  
+                :type "void")
+                nil [107409 109276])
+            ("GetPartitionIDOfTestSingleTable" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("partRangeBegin" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SQLVariant" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [109342 109375]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [109278 109835])
+            ("GetPartitionIDOfTestTableGroup" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("partRangeBegin" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SQLVariant" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [109900 109933]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [109837 110415])
+            ("SplitPartitionOfTestDB" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("partID" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [110479 110500])
+                    ("newLeftPartID" variable
+                       (:pointer 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [110501 110523])
+                    ("newRightPartID" variable
+                       (:pointer 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [110524 110547]))                  
+                :type "void")
+                nil [110417 111079])
+            ("SplitPartitionOfTestDB" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("partID" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [111143 111164])
+                    ("splitPoint" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SQLVariant" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [111165 111194])
+                    ("newLeftPartID" variable
+                       (:pointer 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [111204 111226])
+                    ("newRightPartID" variable
+                       (:pointer 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [111227 111250]))                  
+                :type "void")
+                nil [111081 111924])
+            ("MergePartitionOfTestDB" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("leftPartID" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [111988 112013])
+                    ("rightPartID" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [112022 112048])
+                    ("newPartID" variable
+                       (:pointer 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [112057 112075]))                  
+                :type "void")
+                nil [111926 112662])
+            ("SplitPartitionFunc" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("partID" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [112725 112746])
+                    ("range" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Range" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [112755 112774])
+                    ("isOKToFail" variable (:type "bool") (reparse-symbol arg-sub-list) [112783 112799])
+                    ("checkNewPartition" variable (:type "bool") (reparse-symbol arg-sub-list) [112808 112831]))                  
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [112664 115330])
+            ("MergePartitionFunc" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("leftPartID" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [115393 115418])
+                    ("rightPartID" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [115427 115453])
+                    ("leftRange" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Range" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [115462 115485])
+                    ("rightRange" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Range" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [115494 115518])
+                    ("isOKToFail" variable (:type "bool") (reparse-symbol arg-sub-list) [115527 115543])
+                    ("checkNewPartition" variable (:type "bool") (reparse-symbol arg-sub-list) [115552 115575]))                  
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [115332 117808])
+            ("WaitPartitionSplitOrMergeDone" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("dbName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [117879 117900])
+                    ("partID" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [117910 117931]))                  
+                :type "bool")
+                nil [117810 118719])
+            ("CheckTable" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [118771 118795])
+                    ("ranges" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Range" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [118805 118833]))                  
+                :type "void")
+                nil [118721 119480])
+            ("CheckTableGroup" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("tableGroupName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [119528 119557])
+                    ("ranges" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Range" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [119558 119586]))                  
+                :type "void")
+                nil [119482 120318])
+            ("VerifyPartitionSchemeOfTestDB" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("storeName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [120380 120404])
+                    ("ranges" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Range" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [120405 120433]))                  
+                :type "void")
+                nil [120320 121702])
+            ("WriteAndSyncTable" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [121752 121776])
+                    ("sync" variable (:type "bool") (reparse-symbol arg-sub-list) [121777 121787]))                  
+                :type "void")
+                nil [121704 125341])
+            ("WriteAndSyncTableThread" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [125396 125420])
+                    ("sync" variable (:type "bool") (reparse-symbol arg-sub-list) [125421 125431])
+                    ("stop" variable
+                       (:pointer 1
+                        :typemodifiers ("volatile")
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [125432 125452]))                  
+                :type "int")
+                nil [125343 125559])
+            ("WriteAndSyncTableGroup" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("tableGroupName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [125614 125643])
+                    ("sync" variable (:type "bool") (reparse-symbol arg-sub-list) [125644 125654]))                  
+                :type "void")
+                nil [125561 125842])
+            ("WriteAndSyncTableGroupThread" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("tableGroupName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [125902 125931])
+                    ("sync" variable (:type "bool") (reparse-symbol arg-sub-list) [125932 125942])
+                    ("stop" variable
+                       (:pointer 1
+                        :typemodifiers ("volatile")
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [125943 125963]))                  
+                :type "int")
+                nil [125844 126080])
+            ("GenerateRandomSQLVariant" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("type" variable (:type ("VariantType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [126143 126160])
+                    ("totalCount" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [126161 126179]))                  
+                :type ("SQLVariant" type (:type "class") nil nil))
+                nil [126082 126834])
+            ("GenerateRandomSQLVariant" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("ranges" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Range" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [126897 126925])
+                    ("totalCount" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [126926 126944]))                  
+                :type ("SQLVariant" type (:type "class") nil nil))
+                nil [126836 127634])
+            ("GenerateSplitPoint" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("range" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Range" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [127685 127704])
+                    ("splitPoint" variable
+                       (:pointer 1
+                        :type ("SQLVariant" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [127705 127728]))                  
+                :type "bool")
+                nil [127636 129811])
+            ("ReadAndVerifyTableV2" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [129864 129888]))                  
+                :type "void")
+                nil [129813 130648])
+            ("VerifyReadRange" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("standardDataStorePtr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("IDataStorePtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [130705 130747])
+                    ("testDataStorePtr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("IDataStorePtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [130756 130794])
+                    ("storeName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [130803 130827]))                  
+                :type "void")
+                nil [130650 134327])
+            ("RangeReadData" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("dbPtr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("DataBasePtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [134382 134407])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [134416 134440])
+                    ("rowsDataVec" variable
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [134449 134477]))                  
+                :type "void")
+                nil [134329 136288])
+            ("ReadAndVerifyTableV3" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [136341 136365]))                  
+                :type "void")
+                nil [136290 139681])
+            ("_BatchModifyFuncV3" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [139741 139765])
+                    ("existRows" variable
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("PK" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [139775 139797])
+                    ("mode" variable (:type ("Mode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [139806 139816])
+                    ("notifier" variable
+                       (:pointer 1
+                        :type ("Notifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [139825 139844])
+                    ("pool" variable
+                       (:pointer 1
+                        :type ("arpc::EasyThreadPool" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [139854 139881]))                  
+                :type "void")
+                nil [139683 145110])
+            ("BatchModifyFuncV3" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [145168 145192])
+                    ("mode" variable (:type ("Mode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [145201 145211])
+                    ("stop" variable
+                       (:pointer 1
+                        :typemodifiers ("volatile")
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [145220 145240]))                  
+                :type "int")
+                nil [145112 145693])
+            ("ReadAndVerifyTable" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [145744 145768]))                  
+                :type "void")
+                nil [145695 146574])
+            ("ReadAndVerifyTableGroup" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("tableGroupName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [146630 146659]))                  
+                :type "void")
+                nil [146576 146842])
+            ("ReadAndVerifyDataStore" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("standardDataStorePtr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("IDataStorePtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [146897 146939])
+                    ("testDataStorePtr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("IDataStorePtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [146988 147026])
+                    ("storeName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [147075 147099])
+                    ("pagingKeyCount" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [147100 147122]))                  
+                :type "void")
+                nil [146844 147491])
+            ("VerifyKeyQuery" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("standardDataStorePtr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("IDataStorePtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [147538 147580])
+                    ("testDataStorePtr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("IDataStorePtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [147621 147659])
+                    ("storeName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [147700 147724]))                  
+                :type "void")
+                nil [147493 148778])
+            ("VerifyRangeQuery" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("standardDataStorePtr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("IDataStorePtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [148827 148869])
+                    ("testDataStorePtr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("IDataStorePtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [148912 148950])
+                    ("storeName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [148993 149017]))                  
+                :type "void")
+                nil [148780 149566])
+            ("VerifyRangeQueryWithoutRetry" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("standardDataStorePtr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("IDataStorePtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [149627 149669])
+                    ("testDataStorePtr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("IDataStorePtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [149724 149762])
+                    ("storeName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [149817 149841]))                  
+                :type "void")
+                nil [149568 152373])
+            ("GetRawSize" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("dbName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [152428 152449])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [152459 152483]))                  
+                :type ("int64_t" type (:type "class") nil nil))
+                nil [152375 152589])
+            ("GetSequenceTestPartID" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [152652 152676])
+                    ("partIDs" variable
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [152685 152709]))                  
+                :type "void")
+                nil [152591 154222])
+            ("GetPartitionRange" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("dbName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [154282 154303])
+                    ("partID" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [154312 154333]))                  
+                :type ("Range" type (:type "class") nil nil))
+                nil [154224 154474])
+            ("CheckPartitionExist" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("dbName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [154535 154556])
+                    ("partID" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [154565 154586])
+                    ("expectExist" variable (:type "bool") (reparse-symbol arg-sub-list) [154595 154612]))                  
+                :type "void")
+                nil [154476 155313])
+            ("GetPartitionCu" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("dbName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [155369 155390])
+                    ("partID" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [155400 155421])
+                    ("partCU" variable
+                       (:pointer 1
+                        :type ("InterCapacityUnit" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [155431 155457]))                  
+                :type "void")
+                nil [155315 155862])
+            ("CompareCU" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("expect" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("InterCapacityUnit" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [155904 155936])
+                    ("real" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("InterCapacityUnit" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [155937 155967]))                  
+                :type "void")
+                nil [155864 156294])
+            ("ManualCompact" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("partID" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [156349 156370])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [156380 156404]))                  
+                :type "void")
+                nil [156296 157401])
+            ("ChangeCanAutoSplit" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("dbName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [157461 157482])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [157483 157507])
+                    ("canAutoSplit" variable (:type "bool") (reparse-symbol arg-sub-list) [157508 157526]))                  
+                :type "void")
+                nil [157403 157652])
+            ("HandleException" function
+               (:parent "PartitionSplitMergeTest"
+                :arguments 
+                  ( ("errorCode" variable (:type ("SQLErrorType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [157700 157723])
+                    ("mode" variable (:type ("Mode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [157724 157734]))                  
+                :type "bool")
+                nil [157654 158705]))          
+      :file "sqlonline_split_merge_unittest.cpp"
+      :pointmax 158706
+      :fsize 158705
+      :lastmodtime '(21954 59484 922036 306000)
+      :unmatched-syntax '((number 9720 . 9721) (number 9514 . 9515) (number 9343 . 9344) (number 9160 . 9161) (number 8843 . 8844) (number 8534 . 8535) (number 8330 . 8331) (number 8030 . 8031) (number 7737 . 7738) (number 7566 . 7567) (number 7389 . 7390) (number 7200 . 7201) (number 7032 . 7033) (number 6873 . 6874) (number 6478 . 6479) (number 6226 . 6227) (number 5941 . 5942) (number 5682 . 5683) (number 5399 . 5400) (number 5003 . 5004) (punctuation 4444 . 4445) (string 3738 . 3749) (string 3734 . 3736) (string 3669 . 3703) (string 3665 . 3667) (string 3590 . 3625) (string 3586 . 3588) (string 3537 . 3539) (number 3464 . 3471) (string 3436 . 3462) (number 3377 . 3378) (string 3343 . 3375) (number 3285 . 3288) (string 3250 . 3283) (number 3192 . 3194) (string 3132 . 3190) (semantic-list 1934 . 1989) (symbol 1917 . 1934))))
+  :file "!apsarapangu!disk6!jingwen.hjw!work!trunk!sqlonline!testing!unittest!client!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

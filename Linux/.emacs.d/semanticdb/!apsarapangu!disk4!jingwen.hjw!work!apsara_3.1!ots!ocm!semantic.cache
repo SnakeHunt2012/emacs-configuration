@@ -1,0 +1,325 @@
+;; Object ocm/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ocm/"
+  :tables
+  (list
+    (semanticdb-table "ocm_worker_inspector.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [47 56])
+            ("time" include nil nil [57 68])
+            ("socket" include nil nil [69 82])
+            ("datetime" include nil nil [83 98])
+            ("threading" include nil nil [99 115])
+            ("traceback" include nil nil [116 132])
+            ("ocm_common" include nil nil [133 150])
+            ("ocm_config" include nil nil [151 175])
+            ("ocm_db_session" include nil nil [176 204])
+            ("ocm_ots_client" include nil nil [205 233])
+            ("tables.db_lock" include nil nil [234 262])
+            ("tables.cluster_info" include nil nil [263 296])
+            ("tables.cluster_domain" include nil nil [297 332])
+            ("tables.cluster_status" include nil nil [333 368])
+            ("protobuf.ots_protocol_pb2" include nil nil [369 414])
+            ("WorkerInspector" type
+               (:members 
+                  ( ("'''
+    Inspect sqlworker status every interval.
+    '''" code nil (reparse-symbol indented_block_body) [443 499])
+                    ("inspector_lock" variable nil (reparse-symbol indented_block_body) [509 549])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [583 632])
+                            ("self" variable nil (reparse-symbol indented_block_body) [641 698])
+                            ("self" code nil (reparse-symbol indented_block_body) [707 825])
+                            ("self" variable nil (reparse-symbol indented_block_body) [834 877])
+                            ("self" variable nil (reparse-symbol indented_block_body) [886 920])
+                            ("self" variable nil (reparse-symbol indented_block_body) [929 976]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [568 572]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [555 977])
+                    ("collect_worker_status" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1008 1012]))                          )
+                        (reparse-symbol indented_block_body) [982 2900])
+                    ("_query_worker_status" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2930 2934])
+                            ("cluster_name" variable nil (reparse-symbol function_parameters) [2936 2948]))                          )
+                        (reparse-symbol indented_block_body) [2905 4527]))                  
+                :type "class")
+                nil [416 4527]))          
+      :file "ocm_worker_inspector.py"
+      :pointmax 4527
+      :fsize 4526
+      :lastmodtime '(21931 29853 205094 445000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ocm_op_base.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "ocm_op_base.py"
+      :pointmax 7383
+      :fsize 7382
+      :lastmodtime '(21934 14351 789036 56000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ocm_op_handler.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "ocm_op_handler.py"
+      :pointmax 68284
+      :fsize 68283
+      :lastmodtime '(21934 11367 338036 11000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ocm_error.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("OCM_OK" variable nil nil [47 60])
+            ("OCM_INVALID_PARAMETER" variable nil nil [61 103])
+            ("OCM_EXCEED_LIMIT" variable nil nil [104 136])
+            ("OCM_AUTH_FAILED" variable nil nil [137 167])
+            ("OCM_VALIDATION_FAILED" variable nil nil [168 210])
+            ("OCM_INVALID_STATUS" variable nil nil [211 247])
+            ("OCM_INVALID_MIGRATION" variable nil nil [248 290])
+            ("OCM_NOT_FOUND" variable nil nil [291 317])
+            ("OCM_QUOTA_EXHAUSTED" variable nil nil [318 356])
+            ("OCM_INVALID_METHOD" variable nil nil [357 393])
+            ("OCM_CONFLICT_STATUS" variable nil nil [394 432])
+            ("OCM_ALREADY_EXIST" variable nil nil [433 467])
+            ("OCM_CONFLICT_DEPENDENCY" variable nil nil [468 514])
+            ("OCM_SERVER_ERROR" variable nil nil [515 547])
+            ("OCMError" type
+               (:superclasses ("Exception")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [617 639]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [593 597])
+                            ("message" variable nil (reparse-symbol function_parameters) [599 606]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [580 640])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [656 660]))                          )
+                        (reparse-symbol indented_block_body) [644 696]))                  
+                :type "class")
+                nil [549 696])
+            ("OCMParameterError" type
+               (:superclasses ("OCMError")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("OCMError" code nil (reparse-symbol indented_block_body) [773 805]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [749 753])
+                            ("message" variable nil (reparse-symbol function_parameters) [755 762]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [736 806]))                  
+                :type "class")
+                nil [697 806])
+            ("OCMAuthFailedError" type
+               (:superclasses ("OCMError")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("OCMError" code nil (reparse-symbol indented_block_body) [884 916]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [860 864])
+                            ("message" variable nil (reparse-symbol function_parameters) [866 873]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [847 917]))                  
+                :type "class")
+                nil [807 917])
+            ("OCMInvalidMethodError" type
+               (:superclasses ("OCMError")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("OCMError" code nil (reparse-symbol indented_block_body) [998 1030]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [974 978])
+                            ("message" variable nil (reparse-symbol function_parameters) [980 987]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [961 1031]))                  
+                :type "class")
+                nil [918 1031])
+            ("OCMExceedLimitError" type
+               (:superclasses ("OCMError")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("OCMError" code nil (reparse-symbol indented_block_body) [1110 1142]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1086 1090])
+                            ("message" variable nil (reparse-symbol function_parameters) [1092 1099]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1073 1143]))                  
+                :type "class")
+                nil [1032 1143])
+            ("OCMNotFoundError" type
+               (:superclasses ("OCMError")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("OCMError" code nil (reparse-symbol indented_block_body) [1219 1251]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1195 1199])
+                            ("message" variable nil (reparse-symbol function_parameters) [1201 1208]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1182 1252]))                  
+                :type "class")
+                nil [1144 1252])
+            ("OTSValidationError" type
+               (:superclasses ("OCMError")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("OCMError" code nil (reparse-symbol indented_block_body) [1330 1362]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1306 1310])
+                            ("message" variable nil (reparse-symbol function_parameters) [1312 1319]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1293 1364]))                  
+                :type "class")
+                nil [1253 1364]))          
+      :file "ocm_error.py"
+      :pointmax 1364
+      :fsize 1363
+      :lastmodtime '(21931 22828 138094 410000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ocm_ots_client.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("hashlib" include nil nil [47 61])
+            ("hmac" include nil nil [62 73])
+            ("base64" include nil nil [74 87])
+            ("time" include nil nil [88 99])
+            ("json" include nil nil [100 111])
+            ("logging" include nil nil [112 126])
+            ("traceback" include nil nil [127 143])
+            ("exceptions" include nil nil [144 161])
+            ("ocm_common" include nil nil [162 179])
+            ("ocm_error" include nil nil [181 204])
+            ("ocm_config" include nil nil [205 229])
+            ("protobuf.ots_protocol_pb2" include nil nil [230 275])
+            ("ClusterResourceUsage" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [337 357])
+                            ("self" variable nil (reparse-symbol indented_block_body) [366 388])
+                            ("self" variable nil (reparse-symbol indented_block_body) [397 420])
+                            ("self" variable nil (reparse-symbol indented_block_body) [429 460])
+                            ("self" variable nil (reparse-symbol indented_block_body) [469 506]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [322 326]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [309 507])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [524 528]))                          )
+                        (reparse-symbol indented_block_body) [512 885]))                  
+                :type "class")
+                nil [277 885])
+            ("OTSClient" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [980 1029])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1038 1064])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1073 1102])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1111 1141])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1150 1183]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [921 925])
+                            ("address" variable nil (reparse-symbol function_parameters) [927 934])
+                            ("accessid" variable nil (reparse-symbol function_parameters) [936 944])
+                            ("accesskey" variable nil (reparse-symbol function_parameters) [946 955])
+                            ("instancename" variable nil (reparse-symbol function_parameters) [957 969]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [908 1184])
+                    ("delete_instance" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1209 1213]))                          )
+                        (reparse-symbol indented_block_body) [1189 1503])
+                    ("disable_replication" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1532 1536])
+                            ("cluster_name" variable nil (reparse-symbol function_parameters) [1538 1550]))                          )
+                        (reparse-symbol indented_block_body) [1508 1892])
+                    ("check_cluster" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1915 1919])
+                            ("cluster_name" variable nil (reparse-symbol function_parameters) [1921 1933]))                          )
+                        (reparse-symbol indented_block_body) [1897 2409])
+                    ("get_cluster_resource_usage" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2445 2449])
+                            ("cluster_name" variable nil (reparse-symbol function_parameters) [2451 2463]))                          )
+                        (reparse-symbol indented_block_body) [2414 3302])
+                    ("_make_request_header" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3332 3336])
+                            ("uri" variable nil (reparse-symbol function_parameters) [3338 3341])
+                            ("body" variable nil (reparse-symbol function_parameters) [3343 3347]))                          )
+                        (reparse-symbol indented_block_body) [3307 3825])
+                    ("_make_request_signature" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3858 3862])
+                            ("uri" variable nil (reparse-symbol function_parameters) [3864 3867])
+                            ("headers" variable nil (reparse-symbol function_parameters) [3869 3876]))                          )
+                        (reparse-symbol indented_block_body) [3830 4314])
+                    ("_send_request" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4337 4341])
+                            ("request_uri" variable nil (reparse-symbol function_parameters) [4343 4354])
+                            ("request_header" variable nil (reparse-symbol function_parameters) [4356 4370])
+                            ("request_body" variable nil (reparse-symbol function_parameters) [4372 4384]))                          )
+                        (reparse-symbol indented_block_body) [4319 5176]))                  
+                :type "class")
+                nil [886 5176])
+            ("new_ots_client" function (:arguments 
+              ( ("endpoint" variable nil (reparse-symbol function_parameters) [5196 5204])
+                ("instance_name" variable nil (reparse-symbol function_parameters) [5206 5219]))              ) nil [5177 5325]))          
+      :file "ocm_ots_client.py"
+      :pointmax 5326
+      :fsize 5325
+      :lastmodtime '(21931 22828 136067 280000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ocm_common.py"
+      :file "ocm_common.py"
+      :fsize 7900
+      :lastmodtime '(21931 22828 138094 410000))
+    (semanticdb-table "ocm_config.py"
+      :file "ocm_config.py"
+      :fsize 2300
+      :lastmodtime '(21931 22828 137038 564000))
+    (semanticdb-table "ocm_db_session.py"
+      :file "ocm_db_session.py"
+      :fsize 490
+      :lastmodtime '(21931 22828 138094 410000)))
+  :file "!apsarapangu!disk4!jingwen.hjw!work!apsara_3.1!ots!ocm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

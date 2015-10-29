@@ -1,0 +1,26 @@
+;; Object popup-el/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "popup-el/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("EMACS23" variable (:default-value ("emacs23")) nil [29 45])
+            ("ELPA_DIR" variable (:default-value (".cask/$(shell $(EMACS) -Q --batch --eval '(princ emacs-version)')/elpa")) nil [46 131])
+            (".PHONY" function (:arguments ("test" "test-nw" "test-emacs23" "test-emacs23-nw" "travis-ci")) nil [132 192])
+            ("test" function nil nil [193 251])
+            ("test-nw" function nil nil [252 317])
+            ("test-emacs23" function (:arguments ("tests/ert.el")) nil [318 401])
+            ("test-emacs23-nw" function (:arguments ("tests/ert.el")) nil [402 492])
+            ("travis-ci" function (:arguments ("elpa")) nil [493 563])
+            ("elpa" function (:arguments ("$(ELPA_DIR)")) nil [564 582])
+            ("$(ELPA_DIR)" function (:arguments ("Cask")) nil [582 627]))          
+      :file "Makefile"
+      :pointmax 627
+      :fsize 626
+      :lastmodtime '(21954 64846 0 0)
+      :unmatched-syntax '((shell-command 618 . 626) (bol 617 . 617) (symbol 24 . 28) (punctuation 22 . 23) (punctuation 21 . 22) (symbol 16 . 20) (bol 16 . 16) (symbol 10 . 15) (punctuation 8 . 9) (punctuation 7 . 8) (symbol 1 . 6) (bol 1 . 1))))
+  :file "!home!admin!jingwen.hjw!src!popup-el!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

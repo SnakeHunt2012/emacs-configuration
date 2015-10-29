@@ -1,0 +1,1270 @@
+;; Object commit_log/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "commit_log/"
+  :tables
+  (list
+    (semanticdb-table "sqlonline_commitlog_format.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("APSARA_SQLONLINE_COMMITLOG_FORMAT_H" variable (:constant-flag t) nil [417 452])
+            ("sqlonline/core/sqlonline_version.h" include nil nil [454 499])
+            ("sqlonline/common/sqlonline_types.h" include nil nil [500 545])
+            ("sqlonline/common/sqlonline_serializer.h" include nil nil [546 596])
+            ("sqlonline/common/sqlonline_compressor.h" include nil nil [597 647])
+            ("sqlonline/common/sqlonline_status.h" include nil nil [648 694])
+            ("sqlonline/common/sqlonline_task_scheduler.h" include nil nil [695 749])
+            ("sqlonline/common/sqlonline_cell.h" include nil nil [750 794])
+            ("sqlonline/common/slice.h" include nil nil [795 830])
+            ("sqlonline/common/public_error.h" include nil nil [831 873])
+            ("sqlonline/common/sqlonline_trace.h" include nil nil [874 919])
+            ("apsara/common/time_stamp.h" include nil nil [920 957])
+            ("tr1/functional" include (:system-flag t) nil [958 983])
+            ("tr1/tuple" include (:system-flag t) nil [984 1004])
+            ("tr1/unordered_map" include (:system-flag t) nil [1005 1033])
+            ("deque" include (:system-flag t) nil [1034 1050])
+            ("string" include (:system-flag t) nil [1051 1068])
+            ("stdint.h" include (:system-flag t) nil [1069 1088])
+            ("apsara" type
+               (:members 
+                  ( ("sqlonline" type
+                       (:members 
+                          ( ("Txn" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1132 1142])
+                            ("ISqlStoragePartition" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1143 1170])
+                            ("CommitLogKeyPrefixVecMap" type
+                               (:typedef ("std::tr1::unordered_map" type
+                                     (:template-specifier 
+                                        ( ("std::string" type nil nil nil)
+                                          ("std::vector" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1172 1332])
+                            ("CommitLogCellKeyCompare" variable (:type "int") (reparse-symbol namespacesubparts) [1485 1509])
+                            ("CommitLogCellFilterOptions" type
+                               (:members 
+                                  ( ("mKeyPrefixVecMap" variable (:type ("CommitLogKeyPrefixVecMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1551 1593])
+                                    ("mKeyPrefixVecMapByID" variable (:type ("CommitLogKeyPrefixVecMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1598 1644])
+                                    ("mCompareKey" variable (:type ("CommitLogCellKeyCompare" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1649 1685]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1511 1688])
+                            ("LogPoint" type
+                               (:members 
+                                  ( ("mLogFileNumber" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1712 1736])
+                                    ("mOffset" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1787 1804])
+                                    ("LogPoint" function
+                                       (:constructor-flag t
+                                        :type ("LogPoint" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [1854 1899])
+                                    ("LogPoint" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("logFileNumber" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1914 1937])
+                                            ("offset" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1938 1954]))                                          
+                                        :type ("LogPoint" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [1905 2015])
+                                    ("LogPoint" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("lp" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::pair" type
+                                                     (:template-specifier 
+                                                        ( ("uint64_t" type nil nil nil)
+                                                          ("uint64_t" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [2039 2079]))                                          
+                                        :type ("LogPoint" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [2030 2146])
+                                    ("kInvalidLogPoint" variable
+                                       (:typemodifiers ("static")
+                                        :constant-flag t
+                                        :type ("LogPoint" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2152 2191])
+                                    ("kMinLogPoint" variable
+                                       (:typemodifiers ("static")
+                                        :constant-flag t
+                                        :type ("LogPoint" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2196 2231])
+                                    ("kMaxLogPoint" variable
+                                       (:typemodifiers ("static")
+                                        :constant-flag t
+                                        :type ("LogPoint" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2236 2271]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1690 2274])
+                            ("CompareLogPoint" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("lp0" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LogPoint" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2303 2323])
+                                    ("lp1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LogPoint" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2324 2344]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [2276 2620])
+                            ("==" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("lp0" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LogPoint" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2646 2666])
+                                    ("lp1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LogPoint" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2667 2687]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [2622 2734])
+                            ("!=" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("lp0" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LogPoint" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2760 2780])
+                                    ("lp1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LogPoint" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2781 2801]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [2736 2848])
+                            ("PrintLogPoint" function
+                               (:prototype-flag t
+                                :typemodifiers ("extern")
+                                :arguments 
+                                  ( ("lp" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LogPoint" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2883 2902]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2850 2903])
+                            ("CommitLogCell" type
+                               (:members 
+                                  ( ("KeyType" type
+                                       (:members 
+                                          ( ("KT_NORMAL" variable
+                                               (:constant-flag t
+                                                :default-value (2971 2972)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2959 2972])
+                                            ("KT_DELETE" variable
+                                               (:constant-flag t
+                                                :default-value (2994 2995)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2982 2995]))                                          
+                                        :type "enum")
+                                        (reparse-symbol classsubparts) [2932 3003])
+                                    ("OpType" type
+                                       (:members 
+                                          ( ("OT_NORMAL" variable
+                                               (:constant-flag t
+                                                :default-value (3060 3061)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3048 3061])
+                                            ("OT_DELETE_ONE_VERSION" variable
+                                               (:constant-flag t
+                                                :default-value (3095 3096)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3071 3096])
+                                            ("OT_DELETE_ALL_VERSION" variable
+                                               (:constant-flag t
+                                                :default-value (3130 3131)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3106 3131])
+                                            ("OT_DELETE_ROW" variable
+                                               (:constant-flag t
+                                                :default-value (3157 3158)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3141 3158]))                                          
+                                        :type "enum")
+                                        (reparse-symbol classsubparts) [3022 3165])
+                                    ("Extended" type
+                                       (:members 
+                                          ( ("mOpType" variable (:type ("OpType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3214 3229])
+                                            ("mPrimaryKey" variable (:type ("Slice" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3238 3256])
+                                            ("mColumnName" variable (:type ("Slice" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3265 3283])
+                                            ("mVersion" variable (:type ("Version" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3307 3324])
+                                            ("mValue" variable (:type ("Slice" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3333 3346]))                                          
+                                        :type "struct")
+                                        (reparse-symbol classsubparts) [3184 3353])
+                                    ("mLocalityGroupID" variable (:type ("Slice" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3359 3382])
+                                    ("mKeyType" variable (:type ("KeyType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3387 3404])
+                                    ("mKey" variable (:type ("Slice" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3409 3420])
+                                    ("mValue" variable (:type ("Slice" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3425 3438])
+                                    ("mEx" variable (:type ("Extended" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3443 3456])
+                                    ("CommitLogCell" function
+                                       (:constructor-flag t
+                                        :type ("CommitLogCell" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [3463 3503]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [2905 3506])
+                            ("InplaceRowWithStoreName" type
+                               (:superclasses 
+                                  ( ("InplaceRow" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("mStoreName" variable (:type ("Slice" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3625 3642])
+                                    ("public" label nil (reparse-symbol classsubparts) [3644 3651])
+                                    ("InplaceRowWithStoreName" function
+                                       (:constructor-flag t
+                                        :type ("InplaceRowWithStoreName" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3656 3688])
+                                    ("HasStoreName" function (:type "bool") (reparse-symbol classsubparts) [3693 3766])
+                                    ("MutableStoreName" function
+                                       (:pointer 1
+                                        :type ("Slice" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3771 3836])
+                                    ("GetStoreName" function
+                                       (:constant-flag t
+                                        :type ("Slice" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3841 3913]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [3569 3916])
+                            ("SerializeCommitLogCell" function
+                               (:typemodifiers ("static" "inline")
+                                :arguments 
+                                  ( ("cell" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("CommitLogCell" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4359 4385])
+                                    ("out" variable
+                                       (:pointer 1
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4386 4403]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [4312 4598])
+                            ("DeserializeCommitLogCell" function
+                               (:typemodifiers ("static" "inline")
+                                :arguments 
+                                  ( ("in" variable
+                                       (:reference 1
+                                        :type ("Slice" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4768 4778])
+                                    ("cell" variable
+                                       (:pointer 1
+                                        :type ("CommitLogCell" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4779 4799]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [4719 5062])
+                            ("CommitLogFileHeader" type
+                               (:members 
+                                  ( ("kIdentifier" variable
+                                       (:typemodifiers ("static")
+                                        :constant-flag t
+                                        :type ("uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5097 5131])
+                                    ("kInvalidVersion" variable
+                                       (:typemodifiers ("static")
+                                        :constant-flag t
+                                        :type ("uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5136 5173])
+                                    ("kCurrentVersion" variable
+                                       (:typemodifiers ("static")
+                                        :constant-flag t
+                                        :type ("uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5178 5215])
+                                    ("mIdentifier" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5221 5242])
+                                    ("mVersion" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5247 5264])
+                                    ("CommitLogFileHeader" function
+                                       (:constructor-flag t
+                                        :type ("CommitLogFileHeader" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [5270 5367])
+                                    ("Serialize" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("out" variable
+                                               (:pointer 1
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5499 5516]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [5476 5517])
+                                    ("Deserialize" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :type ("Slice" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5655 5664]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [5638 5665]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [5064 5668])
+                            ("CommitLogFileDescriptor" type
+                               (:members 
+                                  ( ("mLogFileNumber" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5762 5786])
+                                    ("mEstimatedSize" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5791 5815])
+                                    ("mIsLinkFile" variable (:type "bool") (reparse-symbol classsubparts) [5855 5872])
+                                    ("mVersion" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5877 5894])
+                                    ("CommitLogFileDescriptor" function
+                                       (:constructor-flag t
+                                        :type ("CommitLogFileDescriptor" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [5900 6080])
+                                    ("CommitLogFileDescriptor" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("fileNumber" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6123 6143])
+                                            ("estimatedSize" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6157 6180])
+                                            ("version" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6193 6209]))                                          
+                                        :type ("CommitLogFileDescriptor" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [6086 6355]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [5725 6358])
+                            ("GenerateCommitLogFileName" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("fileNumber" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6459 6479]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [6421 6480])
+                            ("ParseCommitLogFileName" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("fileName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Slice" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6742 6764])
+                                    ("fileNumber" variable
+                                       (:pointer 1
+                                        :type ("uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6782 6803]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [6705 6804])
+                            ("ParseCommitLogFilePath" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("filePath" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6949 6977]))                                  
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [6917 6978])
+                            ("CommitLogEvent" type
+                               (:members 
+                                  ( ("CE_GROUP_BEFORE" variable
+                                       (:constant-flag t
+                                        :default-value (7102 7103)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [7084 7103])
+                                    ("CE_PERSIST_LOG" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [7109 7124])
+                                    ("CE_COMMIT_DONE" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [7129 7144]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [7058 7147])
+                            ("CommitLogCallbackList" type
+                               (:template 
+                                  ( ("CommitLogEvent" type nil nil nil)
+                                    ("int" type nil nil nil)
+                                    ("CallbackType" type (:type "class") nil nil)
+                                    ("CallbackArg" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [7290 7297])
+                                    ("CallbackFunction" variable (:type "int") (reparse-symbol classsubparts) [7353 7370])
+                                    ("RegisterCallback" function
+                                       (:arguments 
+                                          ( ("type" variable (:type ("CallbackType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7411 7429])
+                                            ("cb" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("CallbackFunction" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7442 7469]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [7376 7929])
+                                    ("Execute" function
+                                       (:arguments 
+                                          ( ("arg" variable (:type ("CallbackArg" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7948 7964]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [7935 9074])
+                                    ("private" label nil (reparse-symbol classsubparts) [9076 9084])
+                                    ("mCallbacks" variable
+                                       (:dereference 1
+                                        :type ("CallbackFunction" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [9089 9135])
+                                    ("msLogger" variable
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("apsara::logging::Logger" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [9140 9181]))                                  )
+                                (reparse-symbol namespacesubparts) [7149 9184])
+                            ("CommitLogCallbackList::msLogger" variable
+                               (:pointer 1
+                                :default-value "apsara::logging::GetLogger(\"/apsara/sqlonline/CommitLogCallbackList\")"
+                                :type ("apsara::logging::Logger" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [9185 9492])
+                            ("GroupBeforeCallbackType" type
+                               (:members 
+                                  ( ("GBCT_STATISTICS" variable
+                                       (:constant-flag t
+                                        :default-value (9627 9628)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [9609 9628])
+                                    ("GBCT_COUNT" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [9692 9703]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [9574 9706])
+                            ("CommitLogWorkItem" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [9708 9732])
+                            ("CommitContext" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [9733 9753])
+                            ("CommitLogWorkItemPtr" type
+                               (:typedef ("std::tr1::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("CommitLogWorkItem" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [9754 9823])
+                            ("CommitLogWorkItemCreator" variable (:type "int") (reparse-symbol namespacesubparts) [9905 9930])
+                            ("GroupBeforeCallbackList" type
+                               (:typedef ("CommitLogCallbackList" type
+                                     (:template-specifier 
+                                        ( ("CE_GROUP_BEFORE" type nil nil nil)
+                                          ("GBCT_COUNT" type nil nil nil)
+                                          ("GroupBeforeCallbackType" type nil nil nil)
+                                          ("std::tr1::tuple" type
+                                             (:reference 1
+                                              :constant-flag t)
+                                              nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [10371 10609])
+                            ("CommitDoneCallbackType" type
+                               (:members 
+                                  ( ("CDCT_REPLICATION_ASYNC" variable
+                                       (:constant-flag t
+                                        :default-value (10748 10749)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [10723 10749])
+                                    ("CDCT_RESPONSE" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [10755 10769])
+                                    ("CDCT_SPLIT_MERGE" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [10774 10791])
+                                    ("CDCT_COUNT" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [10854 10865]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [10689 10868])
+                            ("WorkItemCommitDoneCallbackList" type
+                               (:typedef ("CommitLogCallbackList" type
+                                     (:template-specifier 
+                                        ( ("CE_COMMIT_DONE" type nil nil nil)
+                                          ("CDCT_COUNT" type nil nil nil)
+                                          ("CommitDoneCallbackType" type nil nil nil)
+                                          ("std::tr1::tuple" type
+                                             (:reference 1
+                                              :constant-flag t)
+                                              nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [10870 11057])
+                            ("PersistentLogDoneCallbackType" type
+                               (:members 
+                                  ( ("PLCT_AFTER_PERSIST_LOG" variable
+                                       (:constant-flag t
+                                        :default-value (11125 11126)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [11100 11126])
+                                    ("PLCT_COUNT" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [11132 11143]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [11059 11146])
+                            ("CommitContext" type
+                               (:members 
+                                  ( ("mTxn" variable (:type ("std::tr1::shared_ptr" type
+                                         (:template-specifier 
+                                            ( ("Txn" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [11221 11252])
+                                    ("mTraceLine" variable (:type ("tracer::TraceLineHolder" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11257 11292])
+                                    ("mArrivalTime" variable (:type ("common::timing::UtcTime" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11402 11439])
+                                    ("mTimeout" variable (:type ("common::timing::Interval" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11444 11478])
+                                    ("mCommitDoneCallbackList" variable (:type ("WorkItemCommitDoneCallbackList" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11560 11615]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [11194 11618])
+                            ("PersistentLogDoneCallbackParam" type
+                               (:members 
+                                  ( ("mWorkItemList" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("std::deque" type
+                                             (:template-specifier 
+                                                ( ("CommitLogWorkItemPtr" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [11664 11718])
+                                    ("mLogSegments" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("std::deque" type
+                                             (:template-specifier 
+                                                ( ("Slice" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [11723 11761])
+                                    ("mTimestamp" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11766 11786])
+                                    ("mLogPoint" variable (:type ("LogPoint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11791 11810])
+                                    ("mStatus" variable (:type ("Status" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11815 11830])
+                                    ("mVersion" variable (:type ("Version" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11835 11852])
+                                    ("mCanCompactMemFile" variable (:type "bool") (reparse-symbol classsubparts) [11857 11881]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [11620 11884])
+                            ("PersistentLogDoneCallbackList" type
+                               (:typedef ("CommitLogCallbackList" type
+                                     (:template-specifier 
+                                        ( ("CE_PERSIST_LOG" type nil nil nil)
+                                          ("PLCT_COUNT" type nil nil nil)
+                                          ("PersistentLogDoneCallbackType" type nil nil nil)
+                                          ("PersistentLogDoneCallbackParam" type
+                                             (:reference 1
+                                              :constant-flag t)
+                                              nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [11887 12062])
+                            ("CommitLogWorkItem" type
+                               (:superclasses 
+                                  ( ("ITask::WorkItem" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("mSerializedTxn" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12123 12150])
+                                    ("mNeedCompress" variable (:type "bool") (reparse-symbol classsubparts) [12155 12174])
+                                    ("mContext" variable (:type ("CommitContext" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12179 12202])
+                                    ("mEnqueueTime" variable (:type ("common::timing::UtcTime" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12228 12265])
+                                    ("mScratch0" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12271 12293])
+                                    ("mScratch1" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12298 12320])
+                                    ("CommitLogWorkItem" function
+                                       (:constructor-flag t
+                                        :type ("CommitLogWorkItem" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [12326 12388]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [12064 12391]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1109 12395]))                  
+                :type "namespace")
+                nil [1090 12427]))          
+      :file "sqlonline_commitlog_format.h"
+      :pointmax 12463
+      :fsize 12462
+      :lastmodtime '(21973 28402 395035 864000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("APSARA_SQLONLINE_COMMITLOG_FORMAT_H")
+          )
+)
+    (semanticdb-table "sqlonline_commitlog_callbacks.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("APSARA_SQLONLINE_COMMITLOG_CALLBACKS_H" variable (:constant-flag t) nil [421 459])
+            ("sqlonline/coreimpl/commit_log/sqlonline_commitlog_format.h" include nil nil [461 530])
+            ("sqlonline/common/sqlonline_task_scheduler.h" include nil nil [531 585])
+            ("sqlonline/common/sqlonline_semaphore.h" include nil nil [586 635])
+            ("sqlonline/common/sqlonline_status.h" include nil nil [636 682])
+            ("sqlonline/common/sqlonline_trace.h" include nil nil [683 728])
+            ("sqlonline/include/sqlstorage_partition.h" include nil nil [729 780])
+            ("sqlonline/core/lock_manager.h" include nil nil [781 821])
+            ("apsara/kuafu3_rpc_request.h" include nil nil [822 860])
+            ("apsara/common/lock.h" include nil nil [861 892])
+            ("apsara/common/time_stamp.h" include nil nil [893 930])
+            ("tr1/functional" include (:system-flag t) nil [931 956])
+            ("apsara" type
+               (:members 
+                  ( ("sqlonline" type
+                       (:members 
+                          ( ("CULogger" variable (:type "int") (reparse-symbol namespacesubparts) [1061 1070])
+                            ("IReplicationAgent" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1072 1096])
+                            ("LogPoint" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1097 1112])
+                            ("Status" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1113 1126])
+                            ("SetTraceInfoIntoResponse" function
+                               (:template 
+                                  ( ("RequestT" type (:type "class") nil nil)
+                                    ("ResponseT" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("reqInfo" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::tr1::tuple" type
+                                             (:template-specifier 
+                                                ( ("google::protobuf::RpcController" type (:pointer 1) nil nil)
+                                                  ("RequestT" type
+                                                     (:pointer 1
+                                                      :constant-flag t)
+                                                      nil nil)
+                                                  ("ResponseT" type (:pointer 1) nil nil)
+                                                  ("google::protobuf::Closure" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1314 1472])
+                                    ("traceLine" variable
+                                       (:pointer 1
+                                        :type ("tracer::TraceLine" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1477 1506]))                                  )
+                                (reparse-symbol namespacesubparts) [1230 2362])
+                            ("SetTraceInfoIntoResponse" function
+                               (:template 
+                                  ( ("RequestT" type (:type "class") nil nil)
+                                    ("ResponseT" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("reqInfo" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::tr1::tuple" type
+                                             (:template-specifier 
+                                                ( ("google::protobuf::RpcController" type (:pointer 1) nil nil)
+                                                  ("RequestT" type
+                                                     (:pointer 1
+                                                      :constant-flag t)
+                                                      nil nil)
+                                                  ("ResponseT" type (:pointer 1) nil nil)
+                                                  ("google::protobuf::Closure" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [2452 2612]))                                  )
+                                (reparse-symbol namespacesubparts) [2364 2682])
+                            ("NullCommitDoneCallback" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("arg" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::tr1::tuple" type
+                                             (:template-specifier 
+                                                ( ("LogPoint" type
+                                                     (:reference 1
+                                                      :constant-flag t)
+                                                      nil nil)
+                                                  ("Status" type
+                                                     (:reference 1
+                                                      :constant-flag t)
+                                                      nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [2838 2897]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2801 2898])
+                            ("WaitCommitDone" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("sem" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("SemaphorePtr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3298 3322])
+                                    ("arg" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::tr1::tuple" type
+                                             (:template-specifier 
+                                                ( ("LogPoint" type
+                                                     (:reference 1
+                                                      :constant-flag t)
+                                                      nil nil)
+                                                  ("Status" type
+                                                     (:reference 1
+                                                      :constant-flag t)
+                                                      nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3332 3391])
+                                    ("dstLP" variable
+                                       (:pointer 1
+                                        :type ("LogPoint" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3400 3416])
+                                    ("dstStatus" variable
+                                       (:pointer 1
+                                        :type ("Status" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3426 3444]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3269 3445])
+                            ("ReplyUpdateStorageSizePBV2" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("reqInfo" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::tr1::tuple" type
+                                             (:template-specifier 
+                                                ( ("google::protobuf::RpcController" type (:pointer 1) nil nil)
+                                                  ("SQLUpdateStorageSizeRequestPBV2" type
+                                                     (:pointer 1
+                                                      :constant-flag t)
+                                                      nil nil)
+                                                  ("SQLUpdateStorageSizeResponsePBV2" type (:pointer 1) nil nil)
+                                                  ("google::protobuf::Closure" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3753 3947])
+                                    ("sqlPart" variable (:type ("ISqlStoragePartitionPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3952 3984])
+                                    ("arg" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::tr1::tuple" type
+                                             (:template-specifier 
+                                                ( ("LogPoint" type
+                                                     (:reference 1
+                                                      :constant-flag t)
+                                                      nil nil)
+                                                  ("Status" type
+                                                     (:reference 1
+                                                      :constant-flag t)
+                                                      nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3989 4048]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3716 4049])
+                            ("ReplyBatchWrite" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("writes" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("WriteContext" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4077 4117])
+                                    ("partPtr" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ISqlStoragePartitionPtr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4122 4161])
+                                    ("traceLine" variable
+                                       (:pointer 1
+                                        :type ("tracer::TraceLine" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4166 4195])
+                                    ("arg" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::tr1::tuple" type
+                                             (:template-specifier 
+                                                ( ("LogPoint" type
+                                                     (:reference 1
+                                                      :constant-flag t)
+                                                      nil nil)
+                                                  ("Status" type
+                                                     (:reference 1
+                                                      :constant-flag t)
+                                                      nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4200 4259]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [4051 4260])
+                            ("ReplyModifyRequestPB" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("reqInfo" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::tr1::tuple" type
+                                             (:template-specifier 
+                                                ( ("google::protobuf::RpcController" type (:pointer 1) nil nil)
+                                                  ("SQLModifyRequestPB" type
+                                                     (:pointer 1
+                                                      :constant-flag t)
+                                                      nil nil)
+                                                  ("SQLModifyResponsePB" type (:pointer 1) nil nil)
+                                                  ("google::protobuf::Closure" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4644 4812])
+                                    ("sqlPart" variable (:type ("ISqlStoragePartitionPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4817 4849])
+                                    ("timestamp" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4854 4873])
+                                    ("arg" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::tr1::tuple" type
+                                             (:template-specifier 
+                                                ( ("LogPoint" type
+                                                     (:reference 1
+                                                      :constant-flag t)
+                                                      nil nil)
+                                                  ("Status" type
+                                                     (:reference 1
+                                                      :constant-flag t)
+                                                      nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4878 4937]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [4613 4938])
+                            ("ReplyModifyRequestPBV2" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("reqInfo" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::tr1::tuple" type
+                                             (:template-specifier 
+                                                ( ("google::protobuf::RpcController" type (:pointer 1) nil nil)
+                                                  ("SQLModifyRequestPBV2" type
+                                                     (:pointer 1
+                                                      :constant-flag t)
+                                                      nil nil)
+                                                  ("SQLModifyResponsePBV2" type (:pointer 1) nil nil)
+                                                  ("google::protobuf::Closure" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4995 5167])
+                                    ("sqlPart" variable (:type ("ISqlStoragePartitionPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5172 5204])
+                                    ("start" variable (:type ("apsara::common::timing::UtcTime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5209 5247])
+                                    ("bytes" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5252 5266])
+                                    ("costCU" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5271 5286])
+                                    ("advancePay" variable
+                                       (:constant-flag t
+                                        :type ("int32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5291 5316])
+                                    ("culogger" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("CULogger" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5321 5346])
+                                    ("arg" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::tr1::tuple" type
+                                             (:template-specifier 
+                                                ( ("LogPoint" type
+                                                     (:reference 1
+                                                      :constant-flag t)
+                                                      nil nil)
+                                                  ("Status" type
+                                                     (:reference 1
+                                                      :constant-flag t)
+                                                      nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5351 5410]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [4962 5411])
+                            ("ReplyModifyRequestPBV3" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("reqInfo" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::tr1::tuple" type
+                                             (:template-specifier 
+                                                ( ("google::protobuf::RpcController" type (:pointer 1) nil nil)
+                                                  ("SQLModifyRequestPBV3" type
+                                                     (:pointer 1
+                                                      :constant-flag t)
+                                                      nil nil)
+                                                  ("SQLModifyResponsePBV3" type (:pointer 1) nil nil)
+                                                  ("google::protobuf::Closure" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5446 5618])
+                                    ("sqlPart" variable (:type ("ISqlStoragePartitionPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5623 5655])
+                                    ("start" variable (:type ("apsara::common::timing::UtcTime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5660 5698])
+                                    ("arg" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::tr1::tuple" type
+                                             (:template-specifier 
+                                                ( ("LogPoint" type
+                                                     (:reference 1
+                                                      :constant-flag t)
+                                                      nil nil)
+                                                  ("Status" type
+                                                     (:reference 1
+                                                      :constant-flag t)
+                                                      nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5703 5762]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [5413 5763])
+                            ("ReplyBatchModifyRequestPB" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("reqInfo" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::tr1::tuple" type
+                                             (:template-specifier 
+                                                ( ("google::protobuf::RpcController" type (:pointer 1) nil nil)
+                                                  ("SQLBatchModifyRequestPB" type
+                                                     (:pointer 1
+                                                      :constant-flag t)
+                                                      nil nil)
+                                                  ("SQLBatchModifyResponsePB" type (:pointer 1) nil nil)
+                                                  ("google::protobuf::Closure" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [6151 6329])
+                                    ("sqlPart" variable (:type ("ISqlStoragePartitionPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6334 6366])
+                                    ("timestamp" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6371 6390])
+                                    ("rowCount" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6395 6413])
+                                    ("arg" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::tr1::tuple" type
+                                             (:template-specifier 
+                                                ( ("LogPoint" type
+                                                     (:reference 1
+                                                      :constant-flag t)
+                                                      nil nil)
+                                                  ("Status" type
+                                                     (:reference 1
+                                                      :constant-flag t)
+                                                      nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [6418 6477]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [6115 6478])
+                            ("ResponseBatchModifyV2" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("sqlPart" variable (:type ("ISqlStoragePartitionPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6516 6548])
+                                    ("advancePay" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6557 6576])
+                                    ("status" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Status" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6585 6606])
+                                    ("culogger" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("CULogger" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6615 6640])
+                                    ("rows" variable
+                                       (:reference 1
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("SQLModifyResponsePBV2" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [6649 6685])
+                                    ("pRsp" variable
+                                       (:pointer 1
+                                        :type ("SQLBatchModifyResponsePBV2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6694 6727]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [6480 6728])
+                            ("ReplyBatchModifyRequestPBV2" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("reqInfo" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::tr1::tuple" type
+                                             (:template-specifier 
+                                                ( ("google::protobuf::RpcController" type (:pointer 1) nil nil)
+                                                  ("SQLBatchModifyRequestPBV2" type
+                                                     (:pointer 1
+                                                      :constant-flag t)
+                                                      nil nil)
+                                                  ("SQLBatchModifyResponsePBV2" type (:pointer 1) nil nil)
+                                                  ("google::protobuf::Closure" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [6767 6949])
+                                    ("sqlPart" variable (:type ("ISqlStoragePartitionPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6954 6986])
+                                    ("start" variable (:type ("apsara::common::timing::UtcTime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6991 7029])
+                                    ("advancePay" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7034 7053])
+                                    ("rowResponses" variable
+                                       (:pointer 1
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("SQLModifyResponsePBV2" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [7058 7102])
+                                    ("culogger" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("CULogger" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7107 7132])
+                                    ("arg" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::tr1::tuple" type
+                                             (:template-specifier 
+                                                ( ("LogPoint" type
+                                                     (:reference 1
+                                                      :constant-flag t)
+                                                      nil nil)
+                                                  ("Status" type
+                                                     (:reference 1
+                                                      :constant-flag t)
+                                                      nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [7137 7196]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [6729 7197])
+                            ("ReplyBatchModifyRequestPBV3" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("reqInfo" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::tr1::tuple" type
+                                             (:template-specifier 
+                                                ( ("google::protobuf::RpcController" type (:pointer 1) nil nil)
+                                                  ("SQLBatchModifyRequestPBV3" type
+                                                     (:pointer 1
+                                                      :constant-flag t)
+                                                      nil nil)
+                                                  ("SQLBatchModifyResponsePBV3" type (:pointer 1) nil nil)
+                                                  ("google::protobuf::Closure" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [7236 7418])
+                                    ("sqlPart" variable (:type ("ISqlStoragePartitionPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7423 7455])
+                                    ("start" variable (:type ("apsara::common::timing::UtcTime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7460 7498])
+                                    ("rowResponses" variable
+                                       (:pointer 1
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("SQLModifyResponsePBV3" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [7503 7547])
+                                    ("arg" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::tr1::tuple" type
+                                             (:template-specifier 
+                                                ( ("LogPoint" type
+                                                     (:reference 1
+                                                      :constant-flag t)
+                                                      nil nil)
+                                                  ("Status" type
+                                                     (:reference 1
+                                                      :constant-flag t)
+                                                      nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [7552 7611]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [7198 7612])
+                            ("ReplyCommitRequestPB" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("reqInfo" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::tr1::tuple" type
+                                             (:template-specifier 
+                                                ( ("google::protobuf::RpcController" type (:pointer 1) nil nil)
+                                                  ("SQLTxnCommitRequestPB" type
+                                                     (:pointer 1
+                                                      :constant-flag t)
+                                                      nil nil)
+                                                  ("SQLTxnCommitResponsePB" type (:pointer 1) nil nil)
+                                                  ("google::protobuf::Closure" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [8021 8195])
+                                    ("txn" variable (:type ("TxnPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8200 8211])
+                                    ("timestamp" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8216 8235])
+                                    ("arg" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::tr1::tuple" type
+                                             (:template-specifier 
+                                                ( ("LogPoint" type
+                                                     (:reference 1
+                                                      :constant-flag t)
+                                                      nil nil)
+                                                  ("Status" type
+                                                     (:reference 1
+                                                      :constant-flag t)
+                                                      nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [8240 8299]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [7990 8300])
+                            ("UpdateTabletsStorageSize" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("partition" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8472 8494])
+                                    ("partPtr" variable
+                                       (:pointer 1
+                                        :type ("ISqlStoragePartition" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8503 8533])
+                                    ("arg" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::tr1::tuple" type
+                                             (:template-specifier 
+                                                ( ("std::deque" type (:pointer 1) nil nil)
+                                                  ("CommitLogWorkItemCreator" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [8553 8650]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [8433 8651])
+                            ("ReplicateAsync" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("sqlPart" variable
+                                       (:pointer 1
+                                        :type ("ISqlStoragePartition" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9171 9201])
+                                    ("arg" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::tr1::tuple" type
+                                             (:template-specifier 
+                                                ( ("std::deque" type
+                                                     (:reference 1
+                                                      :constant-flag t)
+                                                      nil nil)
+                                                  ("LogPoint" type
+                                                     (:reference 1
+                                                      :constant-flag t)
+                                                      nil nil)
+                                                  ("uint64_t" type nil nil nil)
+                                                  ("Status" type
+                                                     (:reference 1
+                                                      :constant-flag t)
+                                                      nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [9210 9318]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [9142 9319])
+                            ("AfterPersistentLogCallback" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("sqlPart" variable
+                                       (:pointer 1
+                                        :type ("ISqlStoragePartition" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9358 9388])
+                                    ("param" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("PersistentLogDoneCallbackParam" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9393 9437]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [9321 9438])
+                            ("ReplyReplicateRequestPB" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("reqInfo" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::tr1::tuple" type
+                                             (:template-specifier 
+                                                ( ("google::protobuf::RpcController" type (:pointer 1) nil nil)
+                                                  ("SQLReplicateRequestPB" type
+                                                     (:pointer 1
+                                                      :constant-flag t)
+                                                      nil nil)
+                                                  ("SQLReplicateResponsePB" type (:pointer 1) nil nil)
+                                                  ("google::protobuf::Closure" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [10127 10301])
+                                    ("sourcePartID" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10306 10338])
+                                    ("sessionID" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10343 10372])
+                                    ("ackSequenceNumber" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10377 10403])
+                                    ("sqlPart" variable (:type ("ISqlStoragePartitionPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10408 10440])
+                                    ("timestamp" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10445 10464])
+                                    ("rowCount" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10469 10486])
+                                    ("arg" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::tr1::tuple" type
+                                             (:template-specifier 
+                                                ( ("LogPoint" type
+                                                     (:reference 1
+                                                      :constant-flag t)
+                                                      nil nil)
+                                                  ("Status" type
+                                                     (:reference 1
+                                                      :constant-flag t)
+                                                      nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [10491 10550]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [10093 10551]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [977 10554]))                  
+                :type "namespace")
+                nil [958 10586]))          
+      :file "sqlonline_commitlog_callbacks.h"
+      :pointmax 10623
+      :fsize 10622
+      :lastmodtime '(21973 28402 395035 864000)
+      :unmatched-syntax '((punctuation 1059 . 1060) (semantic-list 1032 . 1059) (VOID 1027 . 1031) (punctuation 1026 . 1027) (symbol 1018 . 1026) (punctuation 1017 . 1018) (punctuation 1016 . 1017) (symbol 1013 . 1016) (punctuation 1012 . 1013) (punctuation 1011 . 1012) (symbol 1008 . 1011) (TYPEDEF 1000 . 1007))
+      :lexical-table 
+        '(("APSARA_SQLONLINE_COMMITLOG_CALLBACKS_H")
+          )
+))
+  :file "!apsarapangu!disk7!jingwen.hjw!work!trunk_me!sqlonline!coreimpl!commit_log!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

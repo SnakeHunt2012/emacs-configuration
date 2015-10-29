@@ -1,0 +1,338 @@
+;; Object ts_export_channel/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ts_export_channel/"
+  :tables
+  (list
+    (semanticdb-table "export_e2e_failover_test.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("sys" include nil nil [25 35])
+            ("random" include nil nil [36 49])
+            ("export_e2e_case_base" include nil nil [51 85])
+            ("export_e2e_config" include nil nil [86 117])
+            ("export_e2e_util" include nil nil [118 147])
+            ("ExportE2EFailoverTest" type
+               (:superclasses ("ExportCaseBase")
+                :members 
+                  ( ("'''
+    主hbase failover用例
+    master
+    region server
+    hdfs
+    zk
+    '''" code nil (reparse-symbol indented_block_body) [240 318])
+                    ("test_export_e2e_failover_hbase_master" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [412 416]))                          )
+                        (reparse-symbol indented_block_body) [370 762])
+                    ("test_export_e2e_failover_hbase_random_rs" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [867 871]))                          )
+                        (reparse-symbol indented_block_body) [822 1220])
+                    ("test_export_e2e_failover_hbase_root_rs" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1325 1329]))                          )
+                        (reparse-symbol indented_block_body) [1282 1737])
+                    ("test_export_e2e_failover_hbase_meta_rs" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1842 1846]))                          )
+                        (reparse-symbol indented_block_body) [1799 2254])
+                    ("test_export_e2e_failover_hbase_rs_sequence" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2384 2388]))                          )
+                        (reparse-symbol indented_block_body) [2337 2958])
+                    ("test_export_e2e_failover_hbase_hdfs" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3054 3058]))                          )
+                        (reparse-symbol indented_block_body) [3014 3409])
+                    ("test_export_e2e_failover_hbase_zk" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3504 3508]))                          )
+                        (reparse-symbol indented_block_body) [3466 3857])
+                    ("'''
+    hbase proxy failover测试用例
+    1.master
+    2.region server
+    3.zk
+    '''" code nil (reparse-symbol indented_block_body) [3862 3944])
+                    ("test_export_e2e_failover_hbase_proxy_master" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4047 4051]))                          )
+                        (reparse-symbol indented_block_body) [3999 4395])
+                    ("test_export_e2e_failover_hbase_proxy_random_rs" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4451 4455]))                          )
+                        (reparse-symbol indented_block_body) [4400 4802])
+                    ("test_export_e2e_failover_hbase_proxy_rs_sequence" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4943 4947]))                          )
+                        (reparse-symbol indented_block_body) [4890 5511])
+                    ("test_export_e2e_failover_hbase_proxy_zk" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5560 5564]))                          )
+                        (reparse-symbol indented_block_body) [5516 5911])
+                    ("'''
+    Ots failover 测试用例
+    1 Ots Server
+    2 Replication Server
+    3 Sqlonline Worker
+    4 Sqlonline Master
+    5 Apsara
+    6 Pangu
+    '''" code nil (reparse-symbol indented_block_body) [5917 6063])
+                    ("'''
+    Ots Server
+    '''" code nil (reparse-symbol indented_block_body) [6068 6094])
+                    ("test_export_e2e_failover_ots_server_kill9" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6145 6149]))                          )
+                        (reparse-symbol indented_block_body) [6099 6640])
+                    ("test_export_e2e_failover_ots_server_restart" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6693 6697]))                          )
+                        (reparse-symbol indented_block_body) [6645 7074])
+                    ("'''
+    Ots Replication Server
+    '''" code nil (reparse-symbol indented_block_body) [7079 7117])
+                    ("test_export_e2e_failover_replicate_server_kill9" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7174 7178]))                          )
+                        (reparse-symbol indented_block_body) [7122 7653])
+                    ("test_export_e2e_failover_replicate_server_restart" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7712 7716]))                          )
+                        (reparse-symbol indented_block_body) [7658 8105])
+                    ("'''
+    Sqlonline Worker
+    '''" code nil (reparse-symbol indented_block_body) [8114 8146])
+                    ("test_export_e2e_failover_sqlworker_kill9" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8196 8200]))                          )
+                        (reparse-symbol indented_block_body) [8151 8578])
+                    ("test_export_e2e_failover_sqlworker_all" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8626 8630]))                          )
+                        (reparse-symbol indented_block_body) [8583 9006])
+                    ("test_export_e2e_failover_sqlworker_kill15" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9057 9061]))                          )
+                        (reparse-symbol indented_block_body) [9011 9440])
+                    ("test_export_e2e_failover_sqlworker_netdown" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9492 9496]))                          )
+                        (reparse-symbol indented_block_body) [9445 9960])
+                    ("'''
+    Sqlonline Master
+    '''" code nil (reparse-symbol indented_block_body) [9965 9997])
+                    ("test_export_e2e_failover_sqlmaster_kill9" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10047 10051]))                          )
+                        (reparse-symbol indented_block_body) [10002 10422])
+                    ("test_export_e2e_failover_sqlmaster_kill15" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10473 10477]))                          )
+                        (reparse-symbol indented_block_body) [10427 10850])
+                    ("test_export_e2e_failover_sqlmaster_netdown" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10902 10906]))                          )
+                        (reparse-symbol indented_block_body) [10855 11365])
+                    ("'''
+    Apsara
+    '''" code nil (reparse-symbol indented_block_body) [11374 11396])
+                    ("test_export_e2e_failover_sqlworker_shutdownapsara" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11455 11459]))                          )
+                        (reparse-symbol indented_block_body) [11401 11848])
+                    ("'''
+    Pangu
+    '''" code nil (reparse-symbol indented_block_body) [11857 11878])
+                    ("test_export_e2e_failover_pangu_chunkerserver_kill9" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11938 11942]))                          )
+                        (reparse-symbol indented_block_body) [11883 12329])
+                    ("test_export_e2e_failover_pangu_chunkerserver_kill15" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12392 12396]))                          )
+                        (reparse-symbol indented_block_body) [12336 12785])
+                    ("test_export_e2e_failover_pangu_master_kill9" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12842 12846]))                          )
+                        (reparse-symbol indented_block_body) [12794 13219])
+                    ("test_export_e2e_failover_pangu_master_kill15" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13278 13282]))                          )
+                        (reparse-symbol indented_block_body) [13229 13657])
+                    ("'''
+    RTS failover测试用例
+    '''" code nil (reparse-symbol indented_block_body) [13662 13694])
+                    ("test_export_e2e_failover_rts" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13752 13756]))                          )
+                        (reparse-symbol indented_block_body) [13719 14085])
+                    ("'''
+    Ots基本组合failover测试用例
+    '''" code nil (reparse-symbol indented_block_body) [14094 14129])
+                    ("test_export_e2e_failover_ots_server_kill9_multiple" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14189 14193]))                          )
+                        (reparse-symbol indented_block_body) [14134 14874])
+                    ("test_export_e2e_failover_ots_server_restart_multiple" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14944 14948]))                          )
+                        (reparse-symbol indented_block_body) [14887 15487])
+                    ("test_export_e2e_failover_replicate_server_kill9_multiple" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15561 15565]))                          )
+                        (reparse-symbol indented_block_body) [15500 16195])
+                    ("test_export_e2e_failover_replicate_server_restart_multiple" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16271 16275]))                          )
+                        (reparse-symbol indented_block_body) [16208 16795])
+                    ("test_export_e2e_failover_sqlworker_kill9_multiple" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16862 16866]))                          )
+                        (reparse-symbol indented_block_body) [16808 17398])
+                    ("test_export_e2e_failover_sqlworker_kill15_multiple" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17466 17470]))                          )
+                        (reparse-symbol indented_block_body) [17411 18003])
+                    ("test_export_e2e_failover_sqlworker_netdown_multiple" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18072 18076]))                          )
+                        (reparse-symbol indented_block_body) [18016 18699])
+                    ("test_export_e2e_failover_sqlmaster_kill9_multiple" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18766 18770]))                          )
+                        (reparse-symbol indented_block_body) [18712 19237])
+                    ("test_export_e2e_failover_sqlmaster_kill15_multiple" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19297 19301]))                          )
+                        (reparse-symbol indented_block_body) [19242 19766])
+                    ("test_export_e2e_failover_sqlmaster_netdown_multiple" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19835 19839]))                          )
+                        (reparse-symbol indented_block_body) [19779 20389])
+                    ("test_export_e2e_failover_ots_server_and_replacate_server" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20459 20463]))                          )
+                        (reparse-symbol indented_block_body) [20398 21007])
+                    ("test_export_e2e_failover_sqlmaster_and_sqlworker" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21073 21077]))                          )
+                        (reparse-symbol indented_block_body) [21020 21710])
+                    ("test_export_e2e_failover_sqlworker_and_pangu" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21764 21768]))                          )
+                        (reparse-symbol indented_block_body) [21715 22447])
+                    ("test_export_e2e_failover_sqlmaster_and_pangu" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22505 22509]))                          )
+                        (reparse-symbol indented_block_body) [22456 23188])
+                    ("'''
+    HBase基本组合failover测试用例
+    '''" code nil (reparse-symbol indented_block_body) [23201 23238])
+                    ("test_export_e2e_failover_hbase_master_rs" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23335 23339]))                          )
+                        (reparse-symbol indented_block_body) [23290 23912])
+                    ("test_export_e2e_failover_hbase_proxy_master_rs" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [24020 24024]))                          )
+                        (reparse-symbol indented_block_body) [23969 24585])
+                    ("test_export_e2e_failover_hbase_all_rs" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [24680 24684]))                          )
+                        (reparse-symbol indented_block_body) [24638 25112])
+                    ("test_export_e2e_failover_hbase_proxy_all_rs" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25218 25222]))                          )
+                        (reparse-symbol indented_block_body) [25170 25646])
+                    ("test_export_e2e_failover_hbase_splitmerge_combine" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25823 25827]))                          )
+                        (reparse-symbol indented_block_body) [25769 26227])
+                    ("test_export_e2e_failover_hbase_hdfs2" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26307 26311]))                          )
+                        (reparse-symbol indented_block_body) [26266 27565])
+                    ("test_export_e2e_failover_hbase_random" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27636 27640]))                          )
+                        (reparse-symbol indented_block_body) [27594 27984])
+                    ("test_export_e2e_failover_hbase_proxy_random" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28066 28070]))                          )
+                        (reparse-symbol indented_block_body) [28018 28424])
+                    ("test_export_e2e_failover_hbase_both_random" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28569 28573]))                          )
+                        (reparse-symbol indented_block_body) [28522 29016])
+                    ("'''
+    ots和hbase组合failover测试用例
+    '''" code nil (reparse-symbol indented_block_body) [29022 29061])
+                    ("test_export_e2e_failover_all_together" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [29108 29112]))                          )
+                        (reparse-symbol indented_block_body) [29066 29759]))                  
+                :type "class")
+                nil [190 29759]))          
+      :file "export_e2e_failover_test.py"
+      :pointmax 29774
+      :fsize 34139
+      :lastmodtime '(21996 4573 69035 347000)
+      :unmatched-syntax nil))
+  :file "!apsarapangu!disk6!jingwen.hjw!work!ts_export_channel!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

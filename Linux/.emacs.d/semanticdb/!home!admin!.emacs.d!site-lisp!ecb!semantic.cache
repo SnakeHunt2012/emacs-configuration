@@ -1,0 +1,16 @@
+;; Object ecb/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ecb/"
+  :tables
+  (list
+    (semanticdb-table "ecb.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "ecb.el"
+      :pointmax 84243
+      :fsize 84242
+      :lastmodtime '(21871 57248 0 0)
+      :unmatched-syntax nil))
+  :file "!home!admin!.emacs.d!site-lisp!ecb!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

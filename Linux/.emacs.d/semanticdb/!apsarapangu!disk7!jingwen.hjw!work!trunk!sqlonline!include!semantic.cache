@@ -1,0 +1,374 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables
+  (list
+    (semanticdb-table "mock_storage.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("APSARA_SQLONLINE_MOCK_STORAGE_H" variable (:constant-flag t) nil [49 80])
+            ("sqlonline/worker/sqlstorage_worker.h" include nil nil [82 129])
+            ("sqlonline/master/sqlstorage_master.h" include nil nil [130 177])
+            ("sqlonline/master/master_service_impl.h" include nil nil [178 227])
+            ("tr1/functional" include (:system-flag t) nil [228 253])
+            ("apsara" type
+               (:members 
+                  ( ("sqlonline" type
+                       (:members 
+                          ( ("WorkerServiceCreator" variable (:type "int") (reparse-symbol namespacesubparts) [1235 1256])
+                            ("MockWorkerService" type
+                               (:members 
+                                  ( ("mReadService" variable (:type ("WorkerServiceCreator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1289 1323])
+                                    ("mWriteService" variable (:type ("WorkerServiceCreator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1328 1363])
+                                    ("mDataChannelService" variable (:type ("WorkerServiceCreator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1368 1409])
+                                    ("mDefaultService" variable (:type ("WorkerServiceCreator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1414 1451]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1258 1454])
+                            ("MockStorageWorker" type
+                               (:superclasses 
+                                  ( ("SqlStorageWorker" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1508 1515])
+                                    ("MockStorageWorker" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :type ("MockStorageWorker" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1520 1540])
+                                    ("MockStorageWorker" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("mockService" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("MockWorkerService" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1563 1600]))                                          
+                                        :type ("MockStorageWorker" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1545 1601])
+                                    ("MockStorageWorker" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1607 1628])
+                                    ("GetAddress" function
+                                       (:constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1634 1708])
+                                    ("Init" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1714 1726])
+                                    ("private" label nil (reparse-symbol classsubparts) [1728 1736])
+                                    ("RegisterService" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("desc" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1771 1790])
+                                            ("numThread" variable (:type "int") (reparse-symbol arg-sub-list) [1791 1805])
+                                            ("queueSize" variable (:type "int") (reparse-symbol arg-sub-list) [1806 1820])
+                                            ("service" variable
+                                               (:pointer 1
+                                                :type ("RPCService" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1821 1841]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1741 1842])
+                                    ("private" label nil (reparse-symbol classsubparts) [1844 1852])
+                                    ("mAddress" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1857 1878])
+                                    ("mMockService" variable (:type ("MockWorkerService" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1883 1914])
+                                    ("mWriteService" variable
+                                       (:pointer 1
+                                        :type ("RPCService" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1919 1945])
+                                    ("mReadService" variable
+                                       (:pointer 1
+                                        :type ("RPCService" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1950 1975])
+                                    ("mDataChannelService" variable
+                                       (:pointer 1
+                                        :type ("RPCService" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1980 2012])
+                                    ("mDefaultService" variable
+                                       (:pointer 1
+                                        :type ("RPCService" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2017 2045]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1456 2048])
+                            ("MasterServiceCreator" variable (:type "int") (reparse-symbol namespacesubparts) [2149 2170])
+                            ("MockMasterService" type
+                               (:members 
+                                  ( ("mAppService" variable (:type ("MasterServiceCreator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2203 2236])
+                                    ("mSystemService" variable (:type ("MasterServiceCreator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2241 2277])
+                                    ("mOptimizerService" variable (:type ("MasterServiceCreator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2282 2321])
+                                    ("mDefaultService" variable (:type ("MasterServiceCreator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2326 2363]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [2172 2366])
+                            ("MockStorage" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [2368 2386])
+                            ("MockStorageMaster" type
+                               (:superclasses 
+                                  ( ("SqlStorageMaster" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("MockStorage" friend nil (reparse-symbol classsubparts) [2444 2468])
+                                    ("public" label nil (reparse-symbol classsubparts) [2471 2478])
+                                    ("MockStorageMaster" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :type ("MockStorageMaster" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2483 2503])
+                                    ("MockStorageMaster" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("mockService" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("MockMasterService" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2526 2563]))                                          
+                                        :type ("MockStorageMaster" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2508 2564])
+                                    ("MockStorageMaster" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2570 2591])
+                                    ("GetMasterService" function
+                                       (:pointer 1
+                                        :type ("SqlStorageMasterService" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2597 2689])
+                                    ("GetAddress" function
+                                       (:constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2695 2769])
+                                    ("GetGeoEngine" function (:type ("geoengine::GeoEnginePtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2775 2856])
+                                    ("GetOcmAddress" function (:type ("OcmAddress" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2862 2928])
+                                    ("GetMockOcmClient" function
+                                       (:pointer 1
+                                        :type ("IOcmClient" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2934 3003])
+                                    ("GetMockAdminClient" function
+                                       (:pointer 1
+                                        :type ("geoengine::IRemoteAdminClient" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3013 3105])
+                                    ("Init" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3111 3123])
+                                    ("private" label nil (reparse-symbol classsubparts) [3125 3133])
+                                    ("RegisterService" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("desc" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3168 3187])
+                                            ("numThread" variable (:type "int") (reparse-symbol arg-sub-list) [3188 3202])
+                                            ("queueSize" variable (:type "int") (reparse-symbol arg-sub-list) [3203 3217])
+                                            ("service" variable
+                                               (:pointer 1
+                                                :type ("RPCService" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3218 3238]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3138 3239])
+                                    ("WorkerStopped" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3245 3266])
+                                    ("WorkerStarted" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3271 3292])
+                                    ("private" label nil (reparse-symbol classsubparts) [3293 3301])
+                                    ("mAddress" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3306 3327])
+                                    ("mMockService" variable (:type ("MockMasterService" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3332 3363])
+                                    ("mAppService" variable
+                                       (:pointer 1
+                                        :type ("RPCService" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3368 3392])
+                                    ("mDefaultService" variable
+                                       (:pointer 1
+                                        :type ("RPCService" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3397 3425])
+                                    ("mOptimizerService" variable
+                                       (:pointer 1
+                                        :type ("RPCService" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3430 3460])
+                                    ("mSystemService" variable
+                                       (:pointer 1
+                                        :type ("RPCService" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3465 3492])
+                                    ("mFailover" variable
+                                       (:typemodifiers ("static")
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [3498 3520])
+                                    ("mOcmAddress" variable (:type ("OcmAddress" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3525 3548])
+                                    ("mGeoEnginePtr" variable (:type ("geoengine::GeoEnginePtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3553 3591])
+                                    ("mOcmClient" variable
+                                       (:pointer 1
+                                        :type ("IOcmClient" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3596 3619])
+                                    ("mAdminClient" variable
+                                       (:pointer 1
+                                        :type ("geoengine::IRemoteAdminClient" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3624 3668]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [2388 3671])
+                            ("MockStorage" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [3758 3765])
+                                    ("Setup" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3770 3790])
+                                    ("Setup" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("mockMasterService" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("MockMasterService" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3822 3865])
+                                            ("mockWorkerService" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("MockWorkerService" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3874 3917]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3795 3918])
+                                    ("Reset" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3924 3944])
+                                    ("Reset" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("mockMasterService" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("MockMasterService" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3976 4019])
+                                            ("mockWorkerService" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("MockWorkerService" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4028 4071]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3949 4072])
+                                    ("CrashWorker" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4078 4104])
+                                    ("RecoverWorker" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4109 4137])
+                                    ("CrashMaster" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4143 4169])
+                                    ("RecoverMaster" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4174 4202])
+                                    ("CleanUp" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4208 4230])
+                                    ("Worker" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("MockStorageWorker" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4236 4306])
+                                    ("Master" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("MockStorageMaster" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4312 4382])
+                                    ("private" label nil (reparse-symbol classsubparts) [4384 4392])
+                                    ("CreateNewMockMaster" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4397 4431])
+                                    ("CreateNewMockWorker" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4436 4470])
+                                    ("private" label nil (reparse-symbol classsubparts) [4472 4480])
+                                    ("mWorkerServiceCreator" variable
+                                       (:typemodifiers ("static")
+                                        :type ("MockWorkerService" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4485 4532])
+                                    ("mWorker" variable
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("MockStorageWorker" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4537 4571])
+                                    ("mMasterServiceCreator" variable
+                                       (:typemodifiers ("static")
+                                        :type ("MockMasterService" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4576 4623])
+                                    ("mMaster" variable
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("MockStorageMaster" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4628 4662])
+                                    ("mMasterServiceBroker" variable
+                                       (:typemodifiers ("static")
+                                        :type ("std::auto_ptr" type
+                                             (:template-specifier 
+                                                ( ("ISqlStorageMasterServiceBroker" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [4667 4741])
+                                    ("mMasterFailover" variable
+                                       (:typemodifiers ("static")
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [4746 4774]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [3738 4777]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1138 4780]))                  
+                :type "namespace")
+                nil [1119 4805]))          
+      :file "mock_storage.h"
+      :pointmax 4868
+      :fsize 4867
+      :lastmodtime '(21987 9688 40038 195000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("APSARA_SQLONLINE_MOCK_STORAGE_H")
+          )
+)
+    (semanticdb-table "sqlstorage_helper.h"
+      :major-mode 'c-mode
+      :tags nil
+      :file "sqlstorage_helper.h"
+      :pointmax 2829
+      :fsize 2828
+      :lastmodtime '(21980 4867 474035 629000)
+      :unmatched-syntax nil))
+  :file "!apsarapangu!disk7!jingwen.hjw!work!trunk!sqlonline!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

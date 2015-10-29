@@ -1,0 +1,52 @@
+;; Object base/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "base/"
+  :tables
+  (list
+    (semanticdb-table "AsyncLogging.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("muduo/base/AsyncLogging.h" include (:system-flag t) nil [1 37])
+            ("muduo/base/LogFile.h" include (:system-flag t) nil [38 69])
+            ("muduo/base/Timestamp.h" include (:system-flag t) nil [70 103])
+            ("stdio.h" include (:system-flag t) nil [105 123])
+            ("muduo" using (:type ("muduo" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [125 147])
+            ("AsyncLogging" function
+               (:constructor-flag t
+                :parent "AsyncLogging"
+                :arguments 
+                  ( ("basename" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [176 199])
+                    ("rollSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [227 243])
+                    ("flushInterval" variable (:type "int") (reparse-symbol arg-sub-list) [271 289]))                  
+                :type ("AsyncLogging" type (:type "class") nil nil))
+                nil [149 668])
+            ("append" function
+               (:parent "AsyncLogging"
+                :arguments 
+                  ( ("logline" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [696 716])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [717 725]))                  
+                :type "void")
+                nil [670 1158])
+            ("threadFunc" function
+               (:parent "AsyncLogging"
+                :type "void")
+                nil [1160 3206]))          
+      :file "AsyncLogging.cc"
+      :pointmax 3208
+      :fsize 3207
+      :lastmodtime '(21945 54437 367036 212000)
+      :unmatched-syntax nil))
+  :file "!apsarapangu!disk5!jingwen.hjw!learn!muduo!muduo!base!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

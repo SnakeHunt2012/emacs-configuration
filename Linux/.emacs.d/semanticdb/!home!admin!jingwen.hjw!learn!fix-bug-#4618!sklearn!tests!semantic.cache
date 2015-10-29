@@ -1,0 +1,55 @@
+;; Object tests/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tests/"
+  :tables
+  (list
+    (semanticdb-table "test_common.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+General tests for all estimators in sklearn.
+\"\"\"" code nil nil [1 53])
+            ("__future__" include nil nil [189 226])
+            ("os" include nil nil [228 237])
+            ("warnings" include nil nil [238 253])
+            ("sys" include nil nil [254 264])
+            ("pkgutil" include nil nil [265 279])
+            ("sklearn.externals.six" include nil nil [281 318])
+            ("sklearn.externals.six.moves" include nil nil [319 362])
+            ("sklearn.utils.testing" include nil nil [363 433])
+            ("sklearn.utils.testing" include nil nil [434 482])
+            ("sklearn.utils.testing" include nil nil [483 531])
+            ("sklearn.utils.testing" include nil nil [532 575])
+            ("sklearn.utils.testing" include nil nil [576 618])
+            ("sklearn.utils.testing" include nil nil [619 668])
+            ("sklearn" include nil nil [670 684])
+            ("sklearn.preprocessing" include nil nil [685 733])
+            ("sklearn.datasets" include nil nil [734 782])
+            ("sklearn.cluster.bicluster" include nil nil [783 835])
+            ("sklearn.cross_validation" include nil nil [837 890])
+            ("sklearn.linear_model.base" include nil nil [891 950])
+            ("" code nil nil [994 2187])
+            ("test_all_estimator_no_base_class" function nil nil [2190 2518])
+            ("test_all_estimators" function nil nil [2520 3001])
+            ("test_non_meta_estimators" function nil nil [3003 4438])
+            ("test_transformers" function nil nil [4440 5393])
+            ("test_clustering" function nil nil [5395 6024])
+            ("test_classifiers" function nil nil [6026 7373])
+            ("test_regressors" function nil nil [7375 8250])
+            ("test_configure" function nil nil [8252 9234])
+            ("test_class_weight_classifiers" function nil nil [9236 9981])
+            ("test_class_weight_auto_classifiers" function nil nil [9983 11831])
+            ("test_class_weight_auto_linear_classifiers" function nil nil [11833 12694])
+            ("test_import_all_consistency" function (:decorators 
+              ( ("ignore_warnings" function (:type "decorator") nil nil))              ) nil [12696 13459])
+            ("test_root_import_all_completeness" function nil nil [13461 13841])
+            ("test_non_transformer_estimators_n_iter" function nil nil [13843 15335])
+            ("test_transformer_n_iter" function nil nil [15337 15885]))          
+      :file "test_common.py"
+      :pointmax 15885
+      :fsize 15884
+      :lastmodtime '(21811 4727 0 0)
+      :unmatched-syntax nil))
+  :file "!home!admin!jingwen.hjw!learn!fix-bug-#4618!sklearn!tests!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,1395 @@
+;; Object common/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "common/"
+  :tables
+  (list
+    (semanticdb-table "sqlonline_db_help.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("sqlonline_db_help.h" include nil nil [1 31])
+            ("client_remote_master.h" include nil nil [32 65])
+            ("sqlonline/client/client_database.h" include nil nil [66 111])
+            ("sqlonline/core/sqlonline_const_variables.h" include nil nil [112 165])
+            ("sqlonline/protocol/sqlonline_cj.h" include nil nil [166 210])
+            ("apsara/kuafu.h" include nil nil [211 236])
+            ("apsara/cangjie.h" include nil nil [237 264])
+            ("apsara/common/foreach.h" include nil nil [265 299])
+            ("apsara/common/flag.h" include nil nil [300 331])
+            ("apsara/common/safeguard.h" include nil nil [332 368])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [370 390])
+            ("apsara" using (:type ("apsara" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [391 414])
+            ("apsara::cangjie" using (:type ("apsara::cangjie" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [415 447])
+            ("apsara::kuafu" using (:type ("apsara::kuafu" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [448 478])
+            ("apsara::security" using (:type ("apsara::security" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [479 512])
+            ("apsara::sqlonline" using (:type ("apsara::sqlonline" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [513 547])
+            ("DEFINE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_timeout" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [567 585]))                  
+                :type "int")
+                nil [549 635])
+            ("DECLARE_FLAG_STRING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("service_name" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [663 676]))                  
+                :type "int")
+                nil [643 677])
+            ("DECLARE_FLAG_STRING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlstorage_DefaultDBName" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [698 723]))                  
+                :type "int")
+                nil [678 724])
+            ("DECLARE_FLAG_STRING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlstorage_DefaultServiceName" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [745 775]))                  
+                :type "int")
+                nil [725 776])
+            ("PartitionLoadOK" function
+               (:methodconst-flag t
+                :parent "DataBaseHelp"
+                :arguments 
+                  ( ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [814 838]))                  
+                :type "void")
+                nil [779 1080])
+            ("CheckPartitionLoadOK" function
+               (:methodconst-flag t
+                :parent "DataBaseHelp"
+                :arguments 
+                  ( ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1122 1146]))                  
+                :type "bool")
+                nil [1082 1796])
+            ("PartitionLoadOK" function
+               (:parent "DataBaseHelp"
+                :type "void")
+                nil [1798 2773])
+            ("CheckPartitionLoadOK" function
+               (:parent "DataBaseHelp"
+                :type "bool")
+                nil [2775 5425])
+            ("PartitionReloadOK" function
+               (:parent "DataBaseHelp"
+                :type "void")
+                nil [5427 6006])
+            ("GetTableID" function
+               (:parent "DataBaseHelp"
+                :arguments 
+                  ( ("dbName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6040 6061])
+                    ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6062 6081]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [6008 6280])
+            ("IsTableGroupExist" function
+               (:parent "DataBaseHelp"
+                :arguments 
+                  ( ("tableGroupName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6319 6348]))                  
+                :type "bool")
+                nil [6282 6555])
+            ("CleanEnv" function
+               (:parent "DataBaseHelp"
+                :type "void")
+                nil [6557 6875])
+            ("IsTableExist" function
+               (:parent "DataBaseHelp"
+                :arguments 
+                  ( ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6909 6933]))                  
+                :type "bool")
+                nil [6877 7142])
+            ("IsViewExist" function
+               (:parent "DataBaseHelp"
+                :arguments 
+                  ( ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7175 7199])
+                    ("viewName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7200 7223]))                  
+                :type "bool")
+                nil [7144 7431])
+            ("CreateTable" function
+               (:parent "DataBaseHelp"
+                :arguments 
+                  ( ("tableName" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7464 7482])
+                    ("pk" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("ColumnDescriptor" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7483 7512])
+                    ("pageColumns" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("ColumnDescriptor" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7522 7560])
+                    ("lgs" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("LocalityGroupDescriptor" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7560 7597])
+                    ("explicitColumns" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("pair" type (:template-specifier 
+                                    ( ("string" type nil nil nil)
+                                      ("ColumnDescriptor" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7607 7664])
+                    ("partCount" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7665 7683]))                  
+                :type "void")
+                nil [7433 8034])
+            ("TryDeleteTableGroup" function
+               (:parent "DataBaseHelp"
+                :arguments 
+                  ( ("DBPtr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("apsara::sqlonline::DataBasePtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8075 8119])
+                    ("tableGroupName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8120 8154]))                  
+                :type "void")
+                nil [8036 8586])
+            ("TryDeleteTable" function
+               (:parent "DataBaseHelp"
+                :arguments 
+                  ( ("DBPtr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("apsara::sqlonline::DataBasePtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8622 8666])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8667 8696]))                  
+                :type "void")
+                nil [8588 9088])
+            ("TryDeleteView" function
+               (:parent "DataBaseHelp"
+                :arguments 
+                  ( ("DBPtr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("apsara::sqlonline::DataBasePtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9123 9167])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9168 9197])
+                    ("viewName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9198 9226]))                  
+                :type "void")
+                nil [9090 9619])
+            ("TryCreateTableGroup" function
+               (:parent "DataBaseHelp"
+                :arguments 
+                  ( ("DBPtr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("apsara::sqlonline::DataBasePtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9660 9704])
+                    ("tableGroupName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9705 9739])
+                    ("ps" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("apsara::sqlonline::PartitionScheme" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9740 9785]))                  
+                :type "void")
+                nil [9621 10121])
+            ("TryCreateTable" function
+               (:parent "DataBaseHelp"
+                :arguments 
+                  ( ("DBPtr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("apsara::sqlonline::DataBasePtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10157 10201])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10202 10231])
+                    ("td" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("apsara::sqlonline::TableDescriptor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10232 10277])
+                    ("ps" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("apsara::sqlonline::PartitionScheme" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10278 10323]))                  
+                :type "void")
+                nil [10123 10637])
+            ("TryCreateTable" function
+               (:parent "DataBaseHelp"
+                :arguments 
+                  ( ("DBPtr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("apsara::sqlonline::DataBasePtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10673 10717])
+                    ("tableGroupName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10718 10752])
+                    ("td" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("apsara::sqlonline::TableDescriptor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10753 10798]))                  
+                :type "void")
+                nil [10639 11127])
+            ("TryCreateTable" function
+               (:parent "DataBaseHelp"
+                :arguments 
+                  ( ("DBPtr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("apsara::sqlonline::DataBasePtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11163 11207])
+                    ("td" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("apsara::sqlonline::TableDescriptor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11208 11253])
+                    ("ps" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("apsara::sqlonline::PartitionScheme" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11254 11299]))                  
+                :type "void")
+                nil [11129 11616])
+            ("TryCreateTable" function
+               (:parent "DataBaseHelp"
+                :arguments 
+                  ( ("DBPtr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("apsara::sqlonline::DataBasePtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11652 11696])
+                    ("td" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("apsara::sqlonline::TableDescriptor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11697 11742])
+                    ("cu" variable
+                       (:constant-flag t
+                        :type ("apsara::sqlonline::CapacityUnitSetting" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11743 11791])
+                    ("ps" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("apsara::sqlonline::PartitionScheme" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11792 11837]))                  
+                :type "void")
+                nil [11618 12158])
+            ("TryCreateTableV3" function
+               (:parent "DataBaseHelp"
+                :arguments 
+                  ( ("DBPtr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("apsara::sqlonline::DataBasePtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12196 12240])
+                    ("td" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("apsara::sqlonline::TableDescriptor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12241 12286])
+                    ("cu" variable
+                       (:constant-flag t
+                        :type ("apsara::sqlonline::CapacityUnitSetting" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12287 12335])
+                    ("ps" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("apsara::sqlonline::PartitionScheme" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12336 12381]))                  
+                :type "void")
+                nil [12160 12704])
+            ("TryCreateView" function
+               (:parent "DataBaseHelp"
+                :arguments 
+                  ( ("DBPtr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("apsara::sqlonline::DataBasePtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12739 12783])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12784 12813])
+                    ("viewName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12814 12842])
+                    ("vd" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("apsara::sqlonline::ViewDescriptor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12843 12887]))                  
+                :type "void")
+                nil [12706 13205])
+            ("GetSqlMasterIP" function
+               (:parent "DataBaseHelp"
+                :type ("string" type (:type "class") nil nil))
+                nil [13207 13899])
+            ("KillSqlMaster" function
+               (:parent "DataBaseHelp"
+                :type "void")
+                nil [13901 14070])
+            ("GentleKillSqlMaster" function
+               (:parent "DataBaseHelp"
+                :type "void")
+                nil [14072 14253])
+            ("KillAllSqlWorkers" function
+               (:parent "DataBaseHelp"
+                :type "void")
+                nil [14255 14508])
+            ("RemoteKillProcess" function
+               (:parent "DataBaseHelp"
+                :arguments 
+                  ( ("machineIP" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14547 14571])
+                    ("processName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14572 14598]))                  
+                :type "void")
+                nil [14510 15530])
+            ("RemoteGentleKillProcess" function
+               (:parent "DataBaseHelp"
+                :arguments 
+                  ( ("machineIP" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15575 15604])
+                    ("processName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15605 15636]))                  
+                :type "void")
+                nil [15532 16682])
+            ("KillLocalProcess" function
+               (:parent "DataBaseHelp"
+                :arguments 
+                  ( ("processName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16720 16746]))                  
+                :type "void")
+                nil [16684 17542])
+            ("GetSqlWorkerIP" function
+               (:parent "DataBaseHelp"
+                :arguments 
+                  ( ("workerIP" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17578 17603]))                  
+                :type "void")
+                nil [17544 18196])
+            ("GetPID" function
+               (:parent "DataBaseHelp"
+                :arguments 
+                  ( ("machineIP" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18226 18250])
+                    ("processName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18251 18277]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [18198 18631])
+            ("GetLocalPID" function
+               (:parent "DataBaseHelp"
+                :arguments 
+                  ( ("processName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18666 18692]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [18633 19019])
+            ("CheckSqlMasterReady" function
+               (:parent "DataBaseHelp"
+                :type "bool")
+                nil [19021 20081])
+            ("CheckTableMeta" function
+               (:parent "DataBaseHelp"
+                :arguments 
+                  ( ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20117 20141])
+                    ("expectPK" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("ColumnDescriptor" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20142 20183])
+                    ("expectPageColumns" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("ColumnDescriptor" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20193 20243])
+                    ("expectLgs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("LocalityGroupDescriptor" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20244 20293])
+                    ("expectExpCols" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("pair" type (:template-specifier 
+                                    ( ("string" type nil nil nil)
+                                      ("ColumnDescriptor" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20303 20364])
+                    ("errorMsg" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20365 20382]))                  
+                :type "bool")
+                nil [20083 26981])
+            ("CheckViewMeta" function
+               (:parent "DataBaseHelp"
+                :arguments 
+                  ( ("viewName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27015 27038])
+                    ("sourceTableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27039 27069])
+                    ("expectPK" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("ColumnDescriptor" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [27070 27111])
+                    ("expectPageKey" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("ColumnDescriptor" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [27121 27167])
+                    ("expectAttrs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("ColumnDescriptor" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [27168 27212])
+                    ("errorMsg" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27213 27230]))                  
+                :type "bool")
+                nil [26982 31411]))          
+      :file "sqlonline_db_help.cpp"
+      :pointmax 31412
+      :fsize 31411
+      :lastmodtime '(21836 20987 684068 880000)
+      :unmatched-syntax '((number 626 . 633) (punctuation 624 . 625) (number 621 . 623) (string 586 . 619)))
+    (semanticdb-table "sqlonline_db_help.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("APSARA_SQLONLINE_DB_HELP_H" variable (:constant-flag t) nil [44 70])
+            ("sqlonline_console_lib.h" include nil nil [71 105])
+            ("apsara/failover/common_failover_lib.h" include nil nil [106 154])
+            ("sqlonline/client/client_database.h" include nil nil [155 200])
+            ("fstream" include (:system-flag t) nil [201 219])
+            ("iostream" include (:system-flag t) nil [220 239])
+            ("DECLARE_FLAG_STRING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlstorage_DefaultDBName" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [261 286]))                  
+                :type "int")
+                nil [241 287])
+            ("DECLARE_FLAG_STRING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlstorage_DefaultServiceName" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [308 338]))                  
+                :type "int")
+                nil [288 339])
+            ("DataBaseHelp" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [362 369])
+                    ("DataBaseHelp" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("dbName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "STRING_FLAG(sqlstorage_DefaultDBName)"
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [383 443]))                          
+                        :type ("DataBaseHelp" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [370 1032])
+                    ("CleanEnv" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1037 1053])
+                    ("GetTableID" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dbName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1081 1107])
+                            ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1108 1132]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1058 1133])
+                    ("RemoteKillProcess" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("machineIP" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1161 1190])
+                            ("processName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1191 1222]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1138 1223])
+                    ("RemoteGentleKillProcess" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("machineIP" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1257 1286])
+                            ("processName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1287 1318]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1228 1319])
+                    ("KillLocalProcess" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("processName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1346 1372]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1324 1373])
+                    ("GetSqlWorkerIP" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("workerIP" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1398 1433]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1378 1434])
+                    ("KillSqlMaster" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1439 1460])
+                    ("GentleKillSqlMaster" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1465 1492])
+                    ("KillAllSqlWorkers" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1497 1522])
+                    ("IsTableGroupExist" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("tableGroupName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1551 1585]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1528 1586])
+                    ("IsTableExist" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("tableName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1609 1638]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1591 1639])
+                    ("IsViewExist" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("tableName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1661 1690])
+                            ("viewName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1691 1719]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1644 1720])
+                    ("CreateTable" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("tableName" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1742 1765])
+                            ("pk" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("apsara::sqlonline::ColumnDescriptor" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1766 1819])
+                            ("pageColumns" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("apsara::sqlonline::ColumnDescriptor" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1820 1882])
+                            ("lgs" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("apsara::sqlonline::LocalityGroupDescriptor" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1883 1944])
+                            ("explicitColumns" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::pair" type (:template-specifier 
+                                            ( ("std::string" type nil nil nil)
+                                              ("apsara::sqlonline::ColumnDescriptor" type nil nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1945 2036])
+                            ("partCont" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2037 2054]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1725 2055])
+                    ("TryCreateTableGroup" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("DBPtr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("apsara::sqlonline::DataBasePtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2085 2129])
+                            ("tableGroupName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2130 2164])
+                            ("ps" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("apsara::sqlonline::PartitionScheme" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2165 2210]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2060 2211])
+                    ("TryCreateTable" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("DBPtr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("apsara::sqlonline::DataBasePtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2236 2280])
+                            ("tableName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2281 2310])
+                            ("td" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("apsara::sqlonline::TableDescriptor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2311 2356])
+                            ("ps" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("apsara::sqlonline::PartitionScheme" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2357 2402]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2216 2403])
+                    ("TryCreateTable" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("DBPtr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("apsara::sqlonline::DataBasePtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2428 2472])
+                            ("tableName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2473 2502])
+                            ("td" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("apsara::sqlonline::TableDescriptor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2503 2548]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2408 2549])
+                    ("TryCreateTable" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("DBPtr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("apsara::sqlonline::DataBasePtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2574 2618])
+                            ("td" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("apsara::sqlonline::TableDescriptor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2619 2664])
+                            ("ps" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("apsara::sqlonline::PartitionScheme" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2665 2710]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2554 2711])
+                    ("TryCreateTable" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("DBPtr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("apsara::sqlonline::DataBasePtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2736 2780])
+                            ("td" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("apsara::sqlonline::TableDescriptor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2781 2826])
+                            ("cu" variable
+                               (:constant-flag t
+                                :type ("apsara::sqlonline::CapacityUnitSetting" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2827 2875])
+                            ("ps" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("apsara::sqlonline::PartitionScheme" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2876 2921]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2716 2922])
+                    ("TryCreateTableV3" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("DBPtr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("apsara::sqlonline::DataBasePtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2949 2993])
+                            ("td" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("apsara::sqlonline::TableDescriptor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2994 3039])
+                            ("cu" variable
+                               (:constant-flag t
+                                :type ("apsara::sqlonline::CapacityUnitSetting" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3040 3088])
+                            ("ps" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("apsara::sqlonline::PartitionScheme" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3089 3134]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2927 3135])
+                    ("TryCreateView" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("DBPtr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("apsara::sqlonline::DataBasePtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3159 3203])
+                            ("tableName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3204 3233])
+                            ("viewName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3234 3262])
+                            ("vd" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("apsara::sqlonline::ViewDescriptor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3263 3307]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3140 3308])
+                    ("TryDeleteTableGroup" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("DBPtr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("apsara::sqlonline::DataBasePtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3338 3382])
+                            ("tableGroupName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3383 3417]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3313 3418])
+                    ("TryDeleteTable" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("DBPtr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("apsara::sqlonline::DataBasePtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3443 3487])
+                            ("tableName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3488 3517]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3423 3518])
+                    ("TryDeleteView" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("DBPtr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("apsara::sqlonline::DataBasePtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3542 3586])
+                            ("tableName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3587 3616])
+                            ("viewName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3617 3645]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3523 3646])
+                    ("CheckTableMeta" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("tableName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3671 3700])
+                            ("expectPK" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("apsara::sqlonline::ColumnDescriptor" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3701 3766])
+                            ("expectPageColumns" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("apsara::sqlonline::ColumnDescriptor" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3767 3841])
+                            ("expectLgs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("apsara::sqlonline::LocalityGroupDescriptor" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3842 3915])
+                            ("expectExpCols" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::pair" type (:template-specifier 
+                                            ( ("std::string" type nil nil nil)
+                                              ("apsara::sqlonline::ColumnDescriptor" type nil nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3916 4011])
+                            ("errorMsg" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4012 4034]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3651 4035])
+                    ("CheckViewMeta" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("viewName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4059 4087])
+                            ("sourceTableName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4088 4123])
+                            ("pk" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("apsara::sqlonline::ColumnDescriptor" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4124 4183])
+                            ("pageKey" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("apsara::sqlonline::ColumnDescriptor" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4184 4248])
+                            ("attrs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("apsara::sqlonline::ColumnDescriptor" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4249 4311])
+                            ("errorMsg" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4312 4334]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4040 4335])
+                    ("CheckSqlMasterReady" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4340 4367])
+                    ("PartitionLoadOK" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("tableName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4398 4427]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4377 4434])
+                    ("CheckPartitionLoadOK" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("tableName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4465 4494]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4439 4501])
+                    ("PartitionLoadOK" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4729 4752])
+                    ("PartitionReloadOK" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4757 4782])
+                    ("GetSqlMasterIP" function
+                       (:prototype-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4787 4816])
+                    ("GetPID" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("machineIP" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4840 4869])
+                            ("processName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4870 4896]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4821 4897])
+                    ("GetLocalPID" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("processName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4926 4952]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4902 4953])
+                    ("FillString" function
+                       (:arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4981 5004])
+                            ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5005 5016]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4958 5248])
+                    ("private" label nil (reparse-symbol classsubparts) [5249 5257])
+                    ("CheckPartitionLoadOK" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5262 5290])
+                    ("private" label nil (reparse-symbol classsubparts) [5291 5299])
+                    ("mDB" variable (:type ("apsara::sqlonline::DataBasePtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5304 5339])
+                    ("mTableDesc" variable (:type ("apsara::sqlonline::TableDescriptor" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5344 5390])
+                    ("mConsole" variable (:type ("apsara::sqlonline::SqlOnlineConsolePtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5395 5443])
+                    ("mRemoteMaster" variable (:type ("apsara::sqlonline::RemoteMasterPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5448 5497])
+                    ("mMasterAddr" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5502 5526])
+                    ("mDbName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5531 5551])
+                    ("mLogger" variable
+                       (:pointer 1
+                        :type ("apsara::logging::Logger" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5556 5589]))                  
+                :type "class")
+                nil [341 5592]))          
+      :file "sqlonline_db_help.h"
+      :pointmax 5600
+      :fsize 5599
+      :lastmodtime '(21836 21018 430049 586000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("APSARA_SQLONLINE_DB_HELP_H")
+          )
+)
+    (semanticdb-table "mail_schema.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("APSARA_MAIL_SCHEMA_H" variable (:constant-flag t) nil [38 58])
+            ("string" include (:system-flag t) nil [60 77])
+            ("gPartitionSchemeJson" variable
+               (:constant-flag t
+                :default-value "\"\\
+{\\
+    \\\"PartitionCount\\\" : 16, \\
+    \\\"BeginKey\\\" : \\\"aaaaaaaa\\\", \\
+    \\\"EndKey\\\" : \\\"zzzzzzzz\\\" \\
+}\""
+                :type ("std::string" type (:type "class") nil nil))
+                nil [79 227])
+            ("gMailTableScheme" variable
+               (:constant-flag t
+                :default-value "\"\\
+{\\
+    \\\"Name\\\" : \\\"mail_table\\\", \\
+    \\\"PKColumn\\\" : \\
+    [\\
+        {\\\"Name\\\" : \\\"mboxId\\\", \\\"Type\\\" : \\\"string\\\", \\\"Nullable\\\" : false }, \\
+        {\\\"Name\\\" : \\\"foldId\\\", \\\"Type\\\" : \\\"string\\\", \\\"Nullable\\\" : false }, \\
+        {\\\"Name\\\" : \\\"mailId\\\", \\\"Type\\\" : \\\"string\\\", \\\"Nullable\\\" : false } \\
+    ],\\
+    \\\"PageColumns\\\" : \\
+    [\\
+        {\\\"Name\\\" : \\\"mboxId\\\", \\\"Type\\\" : \\\"string\\\", \\\"Nullable\\\" : false },  \\
+        {\\\"Name\\\" : \\\"foldId\\\", \\\"Type\\\" : \\\"string\\\", \\\"Nullable\\\" : false } \\
+    ],\\
+    \\\"ExplicitColumns\\\" : \\
+    [\\
+        [\\\"DefaultLG\\\", {\\\"Name\\\" : \\\"subject\\\" , \\\"Type\\\" : \\\"string\\\", \\\"Nullable\\\" : false }],\\
+        [\\\"DefaultLG\\\", {\\\"Name\\\" : \\\"from\\\"    , \\\"Type\\\" : \\\"string\\\", \\\"Nullable\\\" : false }],\\
+        [\\\"DefaultLG\\\", {\\\"Name\\\" : \\\"to\\\"      , \\\"Type\\\" : \\\"string\\\", \\\"Nullable\\\" : false }],\\
+        [\\\"DefaultLG\\\", {\\\"Name\\\" : \\\"date\\\"    , \\\"Type\\\" : \\\"string\\\", \\\"Nullable\\\" : false }],\\
+        [\\\"DefaultLG\\\", {\\\"Name\\\" : \\\"read\\\"    , \\\"Type\\\" : \\\"bool\\\"  , \\\"Nullable\\\" : false }],\\
+        [\\\"DefaultLG\\\", {\\\"Name\\\" : \\\"mailSize\\\", \\\"Type\\\" : \\\"int\\\"   , \\\"Nullable\\\" : false }]\\
+    ],\\
+    \\\"LocalityGroups\\\" : \\
+    [\\
+        {\\
+            \\\"Name\\\" : \\\"DefaultLG\\\", \\
+            \\\"BlockSize\\\" : 20480, \\
+            \\\"EnableBlockCache\\\" : true,\\
+            \\\"BloomFilterType\\\": \\\"ROW\\\"\\
+        }\\
+    ]\\
+}\""
+                :type ("std::string" type (:type "class") nil nil))
+                nil [229 1647])
+            ("gSubReadViewScheme" variable
+               (:constant-flag t
+                :default-value "\"\\
+{\\
+    \\\"Name\\\" : \\\"sub_read_view\\\", \\
+    \\\"SourceTableName\\\" : \\\"mail_table\\\", \\
+    \\\"PrimaryKey\\\" : \\
+    [\\
+        {\\\"Name\\\" : \\\"mboxId\\\"  , \\\"Type\\\" : \\\"string\\\", \\\"Nullable\\\" : false }, \\
+        {\\\"Name\\\" : \\\"foldId\\\"  , \\\"Type\\\" : \\\"string\\\", \\\"Nullable\\\" : false }, \\
+        {\\\"Name\\\" : \\\"read\\\"    , \\\"Type\\\" : \\\"bool\\\"  , \\\"Nullable\\\" : false }, \\
+        {\\\"Name\\\" : \\\"subject\\\" , \\\"Type\\\" : \\\"string\\\", \\\"Nullable\\\" : false }, \\
+        {\\\"Name\\\" : \\\"mailId\\\"  , \\\"Type\\\" : \\\"string\\\", \\\"Nullable\\\" : false }  \\
+    ],\\
+    \\\"PagingKey\\\"  : \\
+    [\\
+        {\\\"Name\\\" : \\\"mboxId\\\"  , \\\"Type\\\" : \\\"string\\\", \\\"Nullable\\\" : false}, \\
+        {\\\"Name\\\" : \\\"foldId\\\"  , \\\"Type\\\" : \\\"string\\\", \\\"Nullable\\\" : false}, \\
+        {\\\"Name\\\" : \\\"read\\\"    , \\\"Type\\\" : \\\"bool\\\"  , \\\"Nullable\\\" : false}  \\
+    ],\\
+    \\\"Attributes\\\"  : \\
+    [\\
+        {\\\"Name\\\" : \\\"from\\\"    , \\\"Type\\\" : \\\"string\\\", \\\"Nullable\\\" : false}, \\
+        {\\\"Name\\\" : \\\"to\\\"      , \\\"Type\\\" : \\\"string\\\", \\\"Nullable\\\" : false}, \\
+        {\\\"Name\\\" : \\\"date\\\"    , \\\"Type\\\" : \\\"string\\\", \\\"Nullable\\\" : false}, \\
+        {\\\"Name\\\" : \\\"mailSize\\\", \\\"Type\\\" : \\\"int\\\"   , \\\"Nullable\\\" : false}  \\
+    ]\\
+}\""
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1648 2879])
+            ("gNoAttrViewScheme" variable
+               (:constant-flag t
+                :default-value "\"\\
+{\\
+    \\\"Name\\\" : \\\"no_attr_view\\\", \\
+    \\\"SourceTableName\\\" : \\\"mail_table\\\", \\
+    \\\"PrimaryKey\\\" : \\
+    [\\
+        {\\\"Name\\\" : \\\"mboxId\\\"  , \\\"Type\\\" : \\\"string\\\", \\\"Nullable\\\" : false }, \\
+        {\\\"Name\\\" : \\\"foldId\\\", \\\"Type\\\" : \\\"string\\\", \\\"Nullable\\\" : false }, \\
+        {\\\"Name\\\" : \\\"read\\\"    , \\\"Type\\\" : \\\"bool\\\"  , \\\"Nullable\\\" : false }, \\
+        {\\\"Name\\\" : \\\"subject\\\" , \\\"Type\\\" : \\\"string\\\", \\\"Nullable\\\" : false }, \\
+        {\\\"Name\\\" : \\\"mailId\\\"  , \\\"Type\\\" : \\\"string\\\", \\\"Nullable\\\" : false } \\
+    ],\\
+    \\\"PagingKey\\\"  : \\
+    [\\
+        {\\\"Name\\\" : \\\"mboxId\\\"  , \\\"Type\\\" : \\\"string\\\", \\\"Nullable\\\" : false}, \\
+        {\\\"Name\\\" : \\\"foldId\\\"  , \\\"Type\\\" : \\\"string\\\", \\\"Nullable\\\" : false}, \\
+        {\\\"Name\\\" : \\\"read\\\"    , \\\"Type\\\" : \\\"bool\\\"  , \\\"Nullable\\\" : false} \\
+    ],\\
+    \\\"Attributes\\\"  : \\
+    [\\
+    ]\\
+}\""
+                :type ("std::string" type (:type "class") nil nil))
+                nil [2880 3777])
+            ("gStaffTableScheme" variable
+               (:constant-flag t
+                :default-value "\"\\
+{\\
+    \\\"Name\\\" : \\\"staff_table\\\", \\
+    \\\"PKColumn\\\" : \\
+    [\\
+        {\\\"Name\\\" : \\\"Name\\\", \\\"Type\\\" : \\\"string\\\", \\\"Nullable\\\" : false },\\
+        {\\\"Name\\\" : \\\"Id\\\"  , \\\"Type\\\" : \\\"string\\\", \\\"Nullable\\\" : false } \\
+    ],\\
+    \\\"PageColumns\\\" : \\
+    [\\
+        {\\\"Name\\\" : \\\"Name\\\", \\\"Type\\\" : \\\"string\\\", \\\"Nullable\\\" : false } \\
+    ],\\
+    \\\"ExplicitColumns\\\" : \\
+    [\\
+        [\\\"staff-lg\\\", {\\\"Name\\\" : \\\"Salary\\\"    , \\\"Type\\\" : \\\"double\\\", \\\"Nullable\\\" : false }],\\
+        [\\\"staff-lg\\\", {\\\"Name\\\" : \\\"IsSingle\\\"      , \\\"Type\\\" : \\\"bool\\\", \\\"Nullable\\\" : true }],\\
+        [\\\"staff-lg\\\", {\\\"Name\\\" : \\\"Age\\\"    , \\\"Type\\\" : \\\"int\\\", \\\"Nullable\\\" : true }]\\
+    ],\\
+    \\\"LocalityGroups\\\" : \\
+    [\\
+        {\\
+            \\\"Name\\\" : \\\"staff-lg\\\", \\
+            \\\"BlockSize\\\" : 2048, \\
+            \\\"EnableBlockCache\\\" : true,\\
+            \\\"BloomFilterType\\\": \\\"DISABLE\\\"\\
+        }\\
+    ]\\
+}\""
+                :type ("std::string" type (:type "class") nil nil))
+                nil [3779 4731])
+            ("gPersonTableScheme" variable
+               (:constant-flag t
+                :default-value "\"\\
+{\\
+    \\\"Name\\\" : \\\"person_table\\\", \\
+    \\\"PKColumn\\\" : \\
+    [\\
+        {\\\"Name\\\" : \\\"Id\\\", \\\"Type\\\" : \\\"string\\\", \\\"Nullable\\\" : false } \\
+    ],\\
+    \\\"PageColumns\\\" : \\
+    [\\
+    ],\\
+    \\\"ExplicitColumns\\\" : \\
+    [\\
+        [\\\"person-lg\\\", {\\\"Name\\\" : \\\"Name\\\" , \\\"Type\\\" : \\\"string\\\", \\\"Nullable\\\" : false }], \\
+        [\\\"person-lg\\\", {\\\"Name\\\" : \\\"Race\\\"    , \\\"Type\\\" : \\\"string\\\", \\\"Nullable\\\" : true }], \\
+        [\\\"person-lg\\\", {\\\"Name\\\" : \\\"IsSingle\\\" , \\\"Type\\\" : \\\"bool\\\", \\\"Nullable\\\" : true }], \\
+        [\\\"person-lg\\\", {\\\"Name\\\" : \\\"Age\\\"    , \\\"Type\\\" : \\\"int\\\", \\\"Nullable\\\" : false }], \\
+        [\\\"person-lg\\\", {\\\"Name\\\" : \\\"Gender\\\"    , \\\"Type\\\" : \\\"string\\\", \\\"Nullable\\\" : false }]\\
+    ],\\
+    \\\"LocalityGroups\\\" : \\
+    [\\
+        {\\
+            \\\"Name\\\" : \\\"person-lg\\\", \\
+            \\\"BlockSize\\\" : 2048, \\
+            \\\"EnableBlockCache\\\" : true,\\
+            \\\"BloomFilterType\\\": \\\"DISABLE\\\"\\
+        }\\
+    ]\\
+}\""
+                :type ("std::string" type (:type "class") nil nil))
+                nil [4733 5727]))          
+      :file "mail_schema.h"
+      :pointmax 5735
+      :fsize 5734
+      :lastmodtime '(21790 20445 425036 234000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("APSARA_MAIL_SCHEMA_H")
+          )
+))
+  :file "!apsarapangu!disk1!jingwen.hjw!work!apsara!sqlonline!testing!functiontest!common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

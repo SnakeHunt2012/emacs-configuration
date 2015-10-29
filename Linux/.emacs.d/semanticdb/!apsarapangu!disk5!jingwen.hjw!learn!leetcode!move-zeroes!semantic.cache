@@ -1,0 +1,27 @@
+;; Object move-zeroes/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "move-zeroes/"
+  :tables
+  (list
+    (semanticdb-table "solution.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("moveZeroes" function
+               (:arguments 
+                  ( ("nums" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [37 47])
+                    ("numsSize" variable (:type "int") (reparse-symbol arg-sub-list) [48 61]))                  
+                :type "void")
+                nil [21 259]))          
+      :file "solution.c"
+      :pointmax 260
+      :fsize 259
+      :lastmodtime '(22038 34673 126036 113000)
+      :unmatched-syntax nil)
+)
+  :file "!apsarapangu!disk5!jingwen.hjw!learn!leetcode!move-zeroes!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

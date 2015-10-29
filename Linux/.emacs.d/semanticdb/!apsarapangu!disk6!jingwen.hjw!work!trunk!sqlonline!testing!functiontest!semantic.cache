@@ -1,0 +1,402 @@
+;; Object functiontest/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "functiontest/"
+  :tables
+  (list
+    (semanticdb-table "sqlonline_geo_ocm_client_functiontest.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("sqlonline/coreimpl/replication/geoengine/sqlonline_geo_meta_manager.h" include nil nil [1 81])
+            ("sqlonline/common/public_error.h" include nil nil [82 124])
+            ("sqlonline/common/common.h" include nil nil [125 161])
+            ("apsara/common/unittest.h" include nil nil [162 197])
+            ("apsara/common/time_stamp.h" include nil nil [198 235])
+            ("apsara/common/flag.h" include nil nil [236 267])
+            ("ctime" include (:system-flag t) nil [268 284])
+            ("apsara" using (:type ("apsara" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [286 309])
+            ("apsara::sqlonline" using (:type ("apsara::sqlonline" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [310 344])
+            ("apsara::sqlonline::ocm" using (:type ("apsara::sqlonline::ocm" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [345 384])
+            ("apsara::common::timing" using (:type ("apsara::common::timing" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [385 424])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [425 445])
+            ("DEFINE_FLAG_STRING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_Ocm_Address" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [517 539]))                  
+                :type "int")
+                nil [498 578])
+            ("sLogger" variable
+               (:pointer 1
+                :default-value "logging::GetLogger(
+    \"/apsara/sqlonline/testing/functiontest/sqlonline_geo_ocm_client_functiontest\")"
+                :type ("logging::Logger" type (:type "class") nil nil))
+                nil [580 711])
+            ("SqlonlineOcmClientFunctionTest" type
+               (:superclasses 
+                  ( ("apsara::UnitTestFixtureBase" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [821 828])
+                    ("TestGetInstanceInfo" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [833 860])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestGetInstanceInfo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [887 907]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [865 911])
+                    ("TestGetInstanceLocation" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [917 948])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestGetInstanceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [975 999]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [953 1003])
+                    ("TestGetInstanceMetering" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1009 1040])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestGetInstanceMetering" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1067 1091]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1045 1095])
+                    ("TestGetReplicationInfo" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1101 1131])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestGetReplicationInfo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1158 1181]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1136 1185])
+                    ("TestGetAllReplicationInfo" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1191 1224])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestGetAllReplicationInfo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1251 1277]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1229 1281])
+                    ("TestInsertReplicationInfo" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1287 1320])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestInsertReplicationInfo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1347 1373]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1325 1377])
+                    ("TestDeleteReplicationInfo" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1492 1525])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestDeleteReplicationInfo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1552 1578]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1530 1582])
+                    ("TestCreateInstance" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1588 1614])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestCreateInstance" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1641 1660]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1619 1664])
+                    ("TestPreDeleteInstance" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1670 1699])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestPreDeleteInstance" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1726 1748]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1704 1752])
+                    ("TestDeleteInstance" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1758 1784])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestDeleteInstance" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1811 1830]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1789 1834])
+                    ("Setup" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1859 2971])
+                    ("CleanUp" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2996 3328])
+                    ("private" label nil (reparse-symbol classsubparts) [3330 3338])
+                    ("InitInstanceInfo" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instInfo" variable
+                               (:pointer 1
+                                :type ("InstanceInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3397 3420])
+                            ("instanceName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3429 3461])
+                            ("instanceId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3470 3500]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3375 3501])
+                    ("InitInstanceInfoPublic" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instInfo" variable
+                               (:pointer 1
+                                :type ("InstanceInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3565 3588])
+                            ("instanceName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3597 3629])
+                            ("instanceId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3638 3668]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3537 3669])
+                    ("InitReplicationInfo" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("repliationInfo" variable
+                               (:pointer 1
+                                :type ("ReplicationInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3740 3772])
+                            ("instanceName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3781 3813])
+                            ("instanceId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3822 3852])
+                            ("replicationId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3861 3894]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3706 3895])
+                    ("InitReplicationInfoSecondary" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("repliationInfo" variable
+                               (:pointer 1
+                                :type ("ReplicationInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3977 4009])
+                            ("instanceName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4018 4050])
+                            ("instanceId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4059 4089])
+                            ("replicationId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4098 4131]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3934 4132])
+                    ("private" label nil (reparse-symbol classsubparts) [4134 4142])
+                    ("mOcmClient" variable
+                       (:pointer 1
+                        :type ("IOcmClient" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4147 4170])
+                    ("mOcmAddr" variable (:type ("OcmAddress" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4175 4195])
+                    ("mInstanceName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4201 4227])
+                    ("mInstanceId" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4232 4256])
+                    ("mReplicationId" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4261 4288])
+                    ("mIsUseMockRemoteOcm" variable (:type "bool") (reparse-symbol classsubparts) [4294 4319]))                  
+                :type "class")
+                nil [713 4322])
+            ("APSARA_UNIT_TEST_FIXTURE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SqlonlineOcmClientFunctionTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4348 4379]))                  
+                :type "int")
+                nil [4323 4380])
+            ("TestGetInstanceInfo" function
+               (:parent "SqlonlineOcmClientFunctionTest"
+                :type "void")
+                nil [4383 5269])
+            ("TestGetInstanceLocation" function
+               (:parent "SqlonlineOcmClientFunctionTest"
+                :type "void")
+                nil [5271 6178])
+            ("TestGetInstanceMetering" function
+               (:parent "SqlonlineOcmClientFunctionTest"
+                :type "void")
+                nil [6180 8740])
+            ("TestGetReplicationInfo" function
+               (:parent "SqlonlineOcmClientFunctionTest"
+                :type "void")
+                nil [8742 10598])
+            ("TestGetAllReplicationInfo" function
+               (:parent "SqlonlineOcmClientFunctionTest"
+                :type "void")
+                nil [10600 12055])
+            ("TestInsertReplicationInfo" function
+               (:parent "SqlonlineOcmClientFunctionTest"
+                :type "void")
+                nil [12057 13439])
+            ("TestDeleteReplicationInfo" function
+               (:parent "SqlonlineOcmClientFunctionTest"
+                :type "void")
+                nil [15323 16636])
+            ("TestCreateInstance" function
+               (:parent "SqlonlineOcmClientFunctionTest"
+                :type "void")
+                nil [16638 19660])
+            ("TestPreDeleteInstance" function
+               (:parent "SqlonlineOcmClientFunctionTest"
+                :type "void")
+                nil [19662 21700])
+            ("TestDeleteInstance" function
+               (:parent "SqlonlineOcmClientFunctionTest"
+                :type "void")
+                nil [21702 23371])
+            ("InitInstanceInfo" function
+               (:parent "SqlonlineOcmClientFunctionTest"
+                :arguments 
+                  ( ("instInfo" variable
+                       (:pointer 1
+                        :type ("InstanceInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23427 23450])
+                    ("instanceName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23455 23487])
+                    ("instanceId" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23492 23522]))                  
+                :type "void")
+                nil [23373 24847])
+            ("InitInstanceInfoPublic" function
+               (:parent "SqlonlineOcmClientFunctionTest"
+                :arguments 
+                  ( ("instInfo" variable
+                       (:pointer 1
+                        :type ("InstanceInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24909 24932])
+                    ("instanceName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24937 24969])
+                    ("instanceId" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24974 25004]))                  
+                :type "void")
+                nil [24849 26327])
+            ("InitReplicationInfo" function
+               (:parent "SqlonlineOcmClientFunctionTest"
+                :arguments 
+                  ( ("repliationInfo" variable
+                       (:pointer 1
+                        :type ("ReplicationInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26391 26423])
+                    ("instanceName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26428 26460])
+                    ("instanceId" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26465 26495])
+                    ("replicationId" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26500 26533]))                  
+                :type "void")
+                nil [26329 27234])
+            ("InitReplicationInfoSecondary" function
+               (:parent "SqlonlineOcmClientFunctionTest"
+                :arguments 
+                  ( ("repliationInfo" variable
+                       (:pointer 1
+                        :type ("ReplicationInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27307 27339])
+                    ("instanceName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27344 27376])
+                    ("instanceId" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27381 27411])
+                    ("replicationId" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27416 27449]))                  
+                :type "void")
+                nil [27236 28151]))          
+      :file "sqlonline_geo_ocm_client_functiontest.cpp"
+      :pointmax 28152
+      :fsize 28151
+      :lastmodtime '(21956 5966 368036 303000)
+      :unmatched-syntax '((number 1831 . 1832) (number 1749 . 1750) (number 1661 . 1662) (number 1579 . 1580) (number 1374 . 1375) (number 1278 . 1279) (number 1182 . 1183) (number 1092 . 1093) (number 1000 . 1001) (number 908 . 909) (string 555 . 576) (string 540 . 553))))
+  :file "!apsarapangu!disk6!jingwen.hjw!work!trunk!sqlonline!testing!functiontest!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,1765 @@
+;; Object youchao2/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "youchao2/"
+  :tables
+  (list
+    (semanticdb-table "file_access.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("APSARA_YOUCHAO2_FILE_ACCESS_H" variable (:constant-flag t) nil [47 76])
+            ("list" include (:system-flag t) nil [78 93])
+            ("map" include (:system-flag t) nil [94 108])
+            ("string" include (:system-flag t) nil [109 126])
+            ("apsara/pangu.h" include nil nil [127 152])
+            ("youchao2.h" include nil nil [153 174])
+            ("raw_string.h" include nil nil [175 198])
+            ("apsara/common/flag.h" include nil nil [199 230])
+            ("DECLARE_FLAG_INT64" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("youchao_storage_LRUReaderPoolCapacity" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [251 289]))                  
+                :type "int")
+                nil [232 290])
+            ("apsara" type
+               (:members 
+                  ( ("youchao2" type
+                       (:members 
+                          ( ("MemPool" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [333 347])
+                            ("FileReader" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [348 365])
+                            ("FileAppender" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [366 385])
+                            ("LogFileReader" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [386 406])
+                            ("LogFileAppender" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [407 429])
+                            ("DirScanner" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [430 447])
+                            ("RawString" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [448 464])
+                            ("FileSystemWrapper" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [762 769])
+                                    ("FileSystemWrapper" function
+                                       (:destructor-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [774 805])
+                                    ("CreateFile" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [834 858])
+                                            ("hint" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("PanguHint" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [859 881]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [811 886])
+                                    ("CreateLogFile" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [917 941])
+                                            ("hint" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("PanguHint" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [942 964]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [891 969])
+                                    ("DeleteFile" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [997 1021]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [974 1026])
+                                    ("RenameFile" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("sourcePath" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1054 1084])
+                                            ("targetPath" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1085 1115]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1031 1120])
+                                    ("GetFileMeta" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1149 1173])
+                                            ("meta" variable
+                                               (:reference 1
+                                                :type ("pangu::FileMeta" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1174 1196]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1125 1201])
+                                    ("Open4Read" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("" variable
+                                               (:pointer 1
+                                                :type ("FileReader" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1229 1241])
+                                            ("" variable (:type ("reader" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1242 1249])
+                                            ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1250 1274]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1207 1279])
+                                    ("Open4Append" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("" variable
+                                               (:pointer 1
+                                                :type ("FileAppender" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1308 1322])
+                                            ("" variable (:type ("appender" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1323 1332])
+                                            ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1333 1357]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1284 1362])
+                                    ("OpenLog4Read" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("" variable
+                                               (:pointer 1
+                                                :type ("LogFileReader" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1392 1407])
+                                            ("" variable (:type ("reader" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1408 1415])
+                                            ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1416 1440]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1367 1445])
+                                    ("OpenLog4Append" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("" variable
+                                               (:pointer 1
+                                                :type ("LogFileAppender" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1477 1494])
+                                            ("" variable (:type ("appender" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1495 1504])
+                                            ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1505 1529])
+                                            ("priority" variable
+                                               (:constant-flag t
+                                                :type ("uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1530 1554]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1450 1559])
+                                    ("CreateDirScanner" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("" variable
+                                               (:pointer 1
+                                                :type ("DirScanner" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1593 1605])
+                                            ("" variable (:type ("scanner" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1606 1614])
+                                            ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1615 1639]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1564 1644])
+                                    ("GetInstance" function
+                                       (:prototype-flag t
+                                        :pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("FileSystemWrapper" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1650 1690]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [736 1693])
+                            ("DirScanner" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1714 1721])
+                                    ("DirScanner" function
+                                       (:destructor-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1726 1750])
+                                    ("Free" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1755 1779])
+                                    ("Next" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("path" variable
+                                               (:reference 1
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1802 1820]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1785 1825]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1695 1828])
+                            ("FileReader" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1849 1856])
+                                    ("FileReader" function
+                                       (:destructor-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1861 1885])
+                                    ("Seek" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("pos" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1907 1919])
+                                            ("where" variable (:type ("pangu::SeekWhereFlag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1920 1947]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1890 1952])
+                                    ("Tell" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type ("uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2127 2155])
+                                    ("Read" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("buffer" variable
+                                               (:reference 1
+                                                :type ("RawString" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2178 2196])
+                                            ("bytes" variable
+                                               (:reference 1
+                                                :type ("uint64_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2197 2213]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [2161 2218])
+                                    ("Free" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2223 2247]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1830 2250])
+                            ("FileAppender" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [2273 2280])
+                                    ("FileAppender" function
+                                       (:destructor-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2285 2311])
+                                    ("Append" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("buffer" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("RawString" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2335 2359]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [2316 2364])
+                                    ("Commit" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [2465 2490])
+                                    ("Truncate" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [2570 2597])
+                                    ("Tell" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type ("uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2999 3027])
+                                    ("Free" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3113 3137])
+                                    ("GetFileName" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3205 3256]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [2252 3259])
+                            ("LogFileReader" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [3283 3290])
+                                    ("LogFileReader" function
+                                       (:destructor-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3295 3322])
+                                    ("ReadLogRaw" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("buffer" variable
+                                               (:reference 1
+                                                :type ("RawString" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3350 3368])
+                                            ("offset" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3369 3385])
+                                            ("bytes" variable
+                                               (:reference 1
+                                                :type ("uint64_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3386 3402]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [3327 3407])
+                                    ("ReadLog" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("buffer" variable
+                                               (:reference 1
+                                                :type ("RawString" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3432 3450])
+                                            ("bytes" variable
+                                               (:reference 1
+                                                :type ("uint64_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3451 3467]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [3412 3472])
+                                    ("GetNextLogSize" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("logSize" variable
+                                               (:reference 1
+                                                :type ("int32_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3504 3521]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [3477 3526])
+                                    ("Free" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3531 3555]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [3261 3558])
+                            ("LogFileAppender" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [3585 3592])
+                                    ("LogFileAppender" function
+                                       (:destructor-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3597 3626])
+                                    ("FlushLog" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("buffer" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("RawString" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3753 3777])
+                                            ("offset" variable
+                                               (:reference 1
+                                                :type ("uint64_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3778 3795]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [3732 3800])
+                                    ("BatchFlushLog" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("bufferVec" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("RawString" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [3831 3871])
+                                            ("offsetVec" variable
+                                               (:reference 1
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("uint64_t" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [3872 3905]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [3805 3910])
+                                    ("Free" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3916 3940]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [3561 3943])
+                            ("FileSystemWrapperImpl" type
+                               (:superclasses 
+                                  ( ("FileSystemWrapper" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [4001 4008])
+                                    ("FileSystemWrapperImpl" function
+                                       (:constructor-flag t
+                                        :type ("FileSystemWrapperImpl" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4013 4039])
+                                    ("CreateFile" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4074 4098])
+                                            ("hint" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("PanguHint" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4099 4121]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [4059 4122])
+                                    ("CreateLogFile" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4160 4184])
+                                            ("hint" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("PanguHint" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4185 4207]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [4142 4208])
+                                    ("DeleteFile" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4243 4267]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [4228 4268])
+                                    ("RenameFile" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("sourcePath" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4303 4333])
+                                            ("targetPath" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4334 4364]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [4288 4365])
+                                    ("GetFileMeta" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4401 4425])
+                                            ("meta" variable
+                                               (:reference 1
+                                                :type ("pangu::FileMeta" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4426 4448]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [4385 4449])
+                                    ("Open4Read" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:pointer 1
+                                                :type ("FileReader" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4483 4495])
+                                            ("" variable (:type ("reader" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4496 4503])
+                                            ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4504 4528]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [4469 4529])
+                                    ("Open4Append" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:pointer 1
+                                                :type ("FileAppender" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4565 4579])
+                                            ("" variable (:type ("appender" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4580 4589])
+                                            ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4590 4614]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [4549 4615])
+                                    ("OpenLog4Read" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:pointer 1
+                                                :type ("LogFileReader" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4652 4667])
+                                            ("" variable (:type ("reader" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4668 4675])
+                                            ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4676 4700]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [4635 4701])
+                                    ("OpenLog4Append" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:pointer 1
+                                                :type ("LogFileAppender" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4740 4757])
+                                            ("" variable (:type ("appender" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4758 4767])
+                                            ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4768 4792])
+                                            ("priority" variable
+                                               (:constant-flag t
+                                                :type ("uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4793 4817]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [4721 4818])
+                                    ("CreateDirScanner" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:pointer 1
+                                                :type ("DirScanner" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4859 4871])
+                                            ("" variable (:type ("scanner" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4872 4880])
+                                            ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4881 4905]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [4838 4906])
+                                    ("private" label nil (reparse-symbol classsubparts) [4908 4916])
+                                    ("FileSystemWrapperImpl" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("FileSystemWrapperImpl" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4943 4972]))                                          
+                                        :type ("FileSystemWrapperImpl" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4921 4975])
+                                    ("=" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("FileSystemWrapperImpl" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4995 5024]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4980 5027]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [3945 5030])
+                            ("FileReaderImpl" type
+                               (:superclasses 
+                                  ( ("FileReader" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [5074 5081])
+                                    ("FileReaderImpl" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5101 5125])
+                                            ("fin" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("pangu::FileInputStreamPtr" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5126 5163]))                                          
+                                        :type ("FileReaderImpl" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5086 5164])
+                                    ("Seek" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("pos" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5193 5205])
+                                            ("where" variable (:type ("pangu::SeekWhereFlag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5206 5233]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [5184 5234])
+                                    ("Tell" function
+                                       (:prototype-flag t
+                                        :type ("uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5254 5270])
+                                    ("Read" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("buffer" variable
+                                               (:reference 1
+                                                :type ("RawString" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5299 5317])
+                                            ("bytes" variable
+                                               (:reference 1
+                                                :type ("uint64_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5318 5334]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [5290 5335])
+                                    ("Free" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [5355 5367])
+                                    ("private" label nil (reparse-symbol classsubparts) [5369 5377])
+                                    ("mPath" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5382 5400])
+                                    ("mFin" variable (:type ("pangu::FileInputStreamPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5405 5436]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [5032 5439])
+                            ("PrefetchFileReader" type
+                               (:superclasses 
+                                  ( ("FileReader" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [5487 5494])
+                                    ("" type
+                                       (:members 
+                                          ( ("FLAG_OWN_READER" variable
+                                               (:constant-flag t
+                                                :default-value (5524 5527)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [5506 5527]))                                          
+                                        :type "enum")
+                                        (reparse-symbol classsubparts) [5499 5530])
+                                    ("Create" function
+                                       (:prototype-flag t
+                                        :pointer 1
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("in" variable
+                                               (:pointer 1
+                                                :type ("FileReader" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5578 5593])
+                                            ("bufferSize" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5594 5614])
+                                            ("flags" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5627 5642])
+                                            ("mp" variable
+                                               (:pointer 1
+                                                :type ("MemPool" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5643 5655]))                                          
+                                        :type ("PrefetchFileReader" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5544 5656])
+                                    ("Seek" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("pos" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5686 5698])
+                                            ("where" variable (:type ("pangu::SeekWhereFlag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5699 5726]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [5677 5727])
+                                    ("Tell" function
+                                       (:prototype-flag t
+                                        :type ("uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5747 5763])
+                                    ("Read" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("buffer" variable
+                                               (:reference 1
+                                                :type ("RawString" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5792 5810])
+                                            ("bytes" variable
+                                               (:reference 1
+                                                :type ("uint64_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5811 5827]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [5783 5828])
+                                    ("Free" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [5848 5860])
+                                    ("GetFileReader" function
+                                       (:prototype-flag t
+                                        :pointer 1
+                                        :type ("FileReader" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5865 5893])
+                                    ("private" label nil (reparse-symbol classsubparts) [5895 5903])
+                                    ("PrefetchFileReader" function
+                                       (:constructor-flag t
+                                        :type ("PrefetchFileReader" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5908 5931])
+                                    ("PrefetchFileReader" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("PrefetchFileReader" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5955 5981]))                                          
+                                        :type ("PrefetchFileReader" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5936 5984])
+                                    ("=" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("PrefetchFileReader" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6004 6030]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [5989 6033])
+                                    ("private" label nil (reparse-symbol classsubparts) [6035 6043])
+                                    ("mFileReader" variable
+                                       (:pointer 1
+                                        :type ("FileReader" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6048 6072])
+                                    ("mFlags" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6077 6093])
+                                    ("mBuffer" variable (:type ("RawString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6204 6222])
+                                    ("mBufferSize" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6227 6248])
+                                    ("mBufferFrom" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6253 6274])
+                                    ("mBufferTo" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6279 6298])
+                                    ("mMemPool" variable
+                                       (:pointer 1
+                                        :type ("MemPool" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6304 6322]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [5441 6325])
+                            ("FileAppenderImpl" type
+                               (:superclasses 
+                                  ( ("FileAppender" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [6373 6380])
+                                    ("FileAppenderImpl" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6402 6426])
+                                            ("fout" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("pangu::FileOutputStreamPtr" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6427 6466])
+                                            ("startPos" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6467 6485]))                                          
+                                        :type ("FileAppenderImpl" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6385 6486])
+                                    ("Append" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("buffer" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("RawString" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6517 6541]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [6506 6542])
+                                    ("Commit" function
+                                       (:prototype-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [6562 6575])
+                                    ("Truncate" function
+                                       (:prototype-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [6595 6610])
+                                    ("Tell" function
+                                       (:prototype-flag t
+                                        :type ("uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6630 6646])
+                                    ("Free" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [6666 6678])
+                                    ("GetFileName" function
+                                       (:prototype-flag t
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6698 6737])
+                                    ("private" label nil (reparse-symbol classsubparts) [6739 6747])
+                                    ("mPath" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6752 6770])
+                                    ("mFout" variable (:type ("pangu::FileOutputStreamPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6775 6808])
+                                    ("mPos" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6813 6827]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [6327 6830])
+                            ("LogFileReaderImpl" type
+                               (:superclasses 
+                                  ( ("LogFileReader" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [6880 6887])
+                                    ("LogFileReaderImpl" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6910 6934])
+                                            ("fin" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("pangu::LogFileInputStreamPtr" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6935 6975]))                                          
+                                        :type ("LogFileReaderImpl" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6892 6976])
+                                    ("ReadLogRaw" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("buffer" variable
+                                               (:reference 1
+                                                :type ("RawString" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7011 7029])
+                                            ("offset" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7030 7046])
+                                            ("bytes" variable
+                                               (:reference 1
+                                                :type ("uint64_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7047 7063]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [6996 7064])
+                                    ("ReadLog" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("buffer" variable
+                                               (:reference 1
+                                                :type ("RawString" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7096 7114])
+                                            ("bytes" variable
+                                               (:reference 1
+                                                :type ("uint64_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7115 7131]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [7084 7132])
+                                    ("GetNextLogSize" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("logSize" variable
+                                               (:reference 1
+                                                :type ("int32_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7171 7188]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [7152 7189])
+                                    ("Free" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [7209 7221])
+                                    ("private" label nil (reparse-symbol classsubparts) [7223 7231])
+                                    ("mPath" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7236 7254])
+                                    ("mFin" variable (:type ("pangu::LogFileInputStreamPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7259 7293]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [6832 7296])
+                            ("LogFileAppenderImpl" type
+                               (:superclasses 
+                                  ( ("LogFileAppender" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [7350 7357])
+                                    ("LogFileAppenderImpl" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7382 7406])
+                                            ("fout" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("pangu::LogFileOutputStreamPtr" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7407 7449]))                                          
+                                        :type ("LogFileAppenderImpl" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7362 7450])
+                                    ("FlushLog" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("buffer" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("RawString" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7483 7507])
+                                            ("offset" variable
+                                               (:reference 1
+                                                :type ("uint64_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7508 7525]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [7470 7526])
+                                    ("BatchFlushLog" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("bufferVec" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("RawString" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [7564 7604])
+                                            ("offsetVec" variable
+                                               (:reference 1
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("uint64_t" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [7605 7638]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [7546 7639])
+                                    ("Free" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [7659 7671])
+                                    ("private" label nil (reparse-symbol classsubparts) [7673 7681])
+                                    ("mPath" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7686 7704])
+                                    ("mFout" variable (:type ("pangu::LogFileOutputStreamPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7709 7745]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [7298 7748])
+                            ("FileReaderPool" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [8003 8010])
+                                    ("FileReaderPool" function
+                                       (:destructor-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8015 8043])
+                                    ("Open4Read" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("" variable
+                                               (:pointer 1
+                                                :type ("FileReader" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8071 8083])
+                                            ("" variable (:type ("reader" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8084 8091])
+                                            ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8092 8116]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [8049 8121])
+                                    ("OpenLog4Read" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("" variable
+                                               (:pointer 1
+                                                :type ("LogFileReader" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8151 8166])
+                                            ("" variable (:type ("reader" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8167 8174])
+                                            ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8175 8199]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [8126 8204])
+                                    ("Release" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("reader" variable
+                                               (:pointer 1
+                                                :type ("FileReader" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8230 8249])
+                                            ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8250 8274]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8209 8279])
+                                    ("ReleaseLog" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("reader" variable
+                                               (:pointer 1
+                                                :type ("LogFileReader" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8308 8330])
+                                            ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8331 8355]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8284 8360]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [7980 8363])
+                            ("PanguReaderPool" type
+                               (:superclasses 
+                                  ( ("FileReaderPool" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [8469 8476])
+                                    ("PanguReaderPool" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("fs" variable
+                                               (:pointer 1
+                                                :type ("FileSystemWrapper" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8497 8519]))                                          
+                                        :type ("PanguReaderPool" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8481 8520])
+                                    ("Open4Read" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:pointer 1
+                                                :type ("FileReader" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8555 8567])
+                                            ("" variable (:type ("reader" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8568 8575])
+                                            ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8576 8600]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [8541 8601])
+                                    ("OpenLog4Read" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:pointer 1
+                                                :type ("LogFileReader" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8638 8653])
+                                            ("" variable (:type ("reader" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8654 8661])
+                                            ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8662 8686]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [8621 8687])
+                                    ("Release" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("reader" variable
+                                               (:pointer 1
+                                                :type ("FileReader" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8720 8739])
+                                            ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8740 8764]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8707 8765])
+                                    ("ReleaseLog" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("reader" variable
+                                               (:pointer 1
+                                                :type ("LogFileReader" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8801 8823])
+                                            ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8824 8848]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8785 8849])
+                                    ("private" label nil (reparse-symbol classsubparts) [8851 8859])
+                                    ("mFileSystem" variable
+                                       (:pointer 1
+                                        :type ("FileSystemWrapper" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8864 8895]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [8422 8898])
+                            ("LRUReaderPool" type
+                               (:superclasses 
+                                  ( ("FileReaderPool" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [9469 9476])
+                                    ("LRUReaderPool" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("upstream" variable
+                                               (:pointer 1
+                                                :type ("FileReaderPool" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9495 9520])
+                                            ("mCapacity" variable
+                                               (:default-value "INT64_FLAG(youchao_storage_LRUReaderPoolCapacity)"
+                                                :type ("uint64_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9521 9591]))                                          
+                                        :type ("LRUReaderPool" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [9481 9593])
+                                    ("LRUReaderPool" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [9598 9623])
+                                    ("Open4Read" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:pointer 1
+                                                :type ("FileReader" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9643 9655])
+                                            ("" variable (:type ("reader" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9656 9663])
+                                            ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9664 9688]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [9629 9689])
+                                    ("OpenLog4Read" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:pointer 1
+                                                :type ("LogFileReader" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9711 9726])
+                                            ("" variable (:type ("reader" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9727 9734])
+                                            ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9735 9759]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [9694 9760])
+                                    ("Release" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("reader" variable
+                                               (:pointer 1
+                                                :type ("FileReader" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9778 9797])
+                                            ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9798 9822]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [9765 9823])
+                                    ("ReleaseLog" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("reader" variable
+                                               (:pointer 1
+                                                :type ("LogFileReader" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9844 9866])
+                                            ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9867 9891]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [9828 9892])
+                                    ("private" label nil (reparse-symbol classsubparts) [9894 9902])
+                                    ("PoolEntryKind" type
+                                       (:members 
+                                          ( ("NORMAL_READER" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [9940 9954])
+                                            ("LOG_READER" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [9963 9979]))                                          
+                                        :type "enum")
+                                        (reparse-symbol classsubparts) [9907 9980])
+                                    ("PoolEntry" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol classsubparts) [9985 10002])
+                                    ("PoolListType" type
+                                       (:typedef ("std::list" type
+                                             (:template-specifier 
+                                                ( ("PoolEntry" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [10007 10050])
+                                    ("PoolMapType" type
+                                       (:typedef ("std::multimap" type
+                                             (:template-specifier 
+                                                ( ("std::string" type nil nil nil)
+                                                  ("PoolEntry" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [10055 10114])
+                                    ("PoolEntry" type
+                                       (:members 
+                                          ( ("path" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10151 10168])
+                                            ("kind" variable (:type ("PoolEntryKind" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10177 10196])
+                                            ("reader" variable
+                                               (:pointer 1
+                                                :type ("FileReader" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [10252 10271])
+                                            ("logReader" variable
+                                               (:pointer 1
+                                                :type ("LogFileReader" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [10280 10305])
+                                            ("listIter" variable (:type ("PoolListType::iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10315 10347])
+                                            ("mapIter" variable (:type ("PoolMapType::iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10356 10386]))                                          
+                                        :type "struct")
+                                        (reparse-symbol classsubparts) [10120 10393])
+                                    ("Push" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("e" variable
+                                               (:pointer 1
+                                                :type ("PoolEntry" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [10409 10422]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [10399 10423])
+                                    ("Pop" function
+                                       (:prototype-flag t
+                                        :pointer 1
+                                        :arguments 
+                                          ( ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [10443 10467])
+                                            ("kind" variable (:type ("PoolEntryKind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10468 10487]))                                          
+                                        :type ("PoolEntry" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [10428 10488])
+                                    ("DropLessRecentUsedReaders" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [10493 10526])
+                                    ("FreePoolEntry" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("e" variable
+                                               (:pointer 1
+                                                :type ("PoolEntry" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [10550 10563]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [10531 10564])
+                                    ("mPoolList" variable (:type ("PoolListType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10570 10593])
+                                    ("mPoolMap" variable (:type ("PoolMapType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10598 10619])
+                                    ("mUpStream" variable
+                                       (:pointer 1
+                                        :type ("FileReaderPool" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [10624 10650])
+                                    ("mMutex" variable (:type ("Mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10655 10668])
+                                    ("mCapacity" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10673 10692]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [9424 10695])
+                            ("SimpleReaderPool" type
+                               (:superclasses 
+                                  ( ("FileReaderPool" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [10838 10845])
+                                    ("SimpleReaderPool" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("readerPool" variable
+                                               (:pointer 1
+                                                :type ("FileReaderPool" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [10867 10894]))                                          
+                                        :type ("SimpleReaderPool" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [10850 10895])
+                                    ("SimpleReaderPool" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [10900 10920])
+                                    ("Open4Read" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:pointer 1
+                                                :type ("FileReader" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [10958 10970])
+                                            ("" variable (:type ("reader" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10971 10978])
+                                            ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [10979 11003]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [10944 11004])
+                                    ("OpenLog4Read" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:pointer 1
+                                                :type ("LogFileReader" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [11045 11060])
+                                            ("" variable (:type ("reader" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11061 11068])
+                                            ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [11069 11093]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [11028 11094])
+                                    ("Release" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("reader" variable
+                                               (:pointer 1
+                                                :type ("FileReader" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [11131 11150])
+                                            ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [11151 11175]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [11118 11176])
+                                    ("ReleaseLog" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("reader" variable
+                                               (:pointer 1
+                                                :type ("LogFileReader" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [11216 11238])
+                                            ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [11239 11263]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [11200 11264])
+                                    ("private" label nil (reparse-symbol classsubparts) [11265 11273])
+                                    ("ReaderEntry" type
+                                       (:members 
+                                          ( ("ReaderEntry" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("_fileReader" variable
+                                                       (:pointer 1
+                                                        :default-value "NULL"
+                                                        :type ("FileReader" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [11323 11353])
+                                                    ("_logFileReader" variable
+                                                       (:pointer 1
+                                                        :default-value "NULL"
+                                                        :type ("LogFileReader" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [11355 11391]))                                                  
+                                                :type ("ReaderEntry" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [11311 11467])
+                                            ("ReaderEntry" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("entry" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("ReaderEntry" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [11488 11513]))                                                  
+                                                :type ("ReaderEntry" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [11476 11598])
+                                            ("fileReader" variable
+                                               (:pointer 1
+                                                :type ("FileReader" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [11607 11630])
+                                            ("logFileReader" variable
+                                               (:pointer 1
+                                                :type ("LogFileReader" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [11639 11668]))                                          
+                                        :type "struct")
+                                        (reparse-symbol classsubparts) [11278 11675])
+                                    ("FileReaderListType" type
+                                       (:typedef ("std::list" type
+                                             (:template-specifier 
+                                                ( ("ReaderEntry" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [11680 11730])
+                                    ("mFileReaderMap" variable (:type ("std::map" type
+                                         (:template-specifier 
+                                            ( ("std::string" type nil nil nil)
+                                              ("FileReaderListType" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [11735 11792])
+                                    ("mUpStream" variable
+                                       (:pointer 1
+                                        :type ("FileReaderPool" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [11797 11823]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [10789 11826])
+                            ("BufferChain" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [11828 11846])
+                            ("FileAccessHelper" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [11872 11879])
+                                    ("BatchAppend" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("out" variable
+                                               (:pointer 1
+                                                :type ("FileAppender" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [11907 11925])
+                                            ("buf" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("BufferChain" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [11926 11949]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [11884 11950])
+                                    ("BatchDelete" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("fs" variable
+                                               (:pointer 1
+                                                :type ("FileSystemWrapper" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [11978 12000])
+                                            ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("std::string" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [12001 12038])
+                                            ("ignoreErrors" variable (:type "bool") (reparse-symbol arg-sub-list) [12051 12069]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [11955 12070])
+                                    ("IsFileExist" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("fs" variable
+                                               (:pointer 1
+                                                :type ("FileSystemWrapper" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [12210 12232])
+                                            ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [12233 12257]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [12187 12258])
+                                    ("ReleaseLogFileLock" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("fileName" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [12293 12321]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [12263 12322])
+                                    ("ListDirectory" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("dir" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [12352 12375])
+                                            ("entryVec" variable
+                                               (:reference 1
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("std::string" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [12376 12411]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [12327 12412])
+                                    ("PrefixListDirectory" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("fs" variable
+                                               (:pointer 1
+                                                :type ("FileSystemWrapper" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [12448 12470])
+                                            ("dir" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [12471 12494])
+                                            ("prefix" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [12495 12521])
+                                            ("paths" variable
+                                               (:reference 1
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("std::string" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [12522 12554])
+                                            ("fullPath" variable
+                                               (:default-value "true"
+                                                :type "bool")
+                                                (reparse-symbol arg-sub-list) [12555 12575]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [12417 12577])
+                                    ("GetRealFileLength" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("fs" variable
+                                               (:pointer 1
+                                                :type ("FileSystemWrapper" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [12950 12972])
+                                            ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [12973 12997])
+                                            ("" variable
+                                               (:pointer 1
+                                                :type ("FileAppender" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [13010 13024])
+                                            ("" variable (:type ("out" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13025 13029])
+                                            ("length" variable
+                                               (:reference 1
+                                                :type ("uint64_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [13030 13047]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [12921 13048])
+                                    ("CopyFile" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("fs" variable
+                                               (:pointer 1
+                                                :type ("FileSystemWrapper" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [13073 13094])
+                                            ("panguHint" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("PanguHint" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [13095 13122])
+                                            ("srcFile" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [13123 13150])
+                                            ("destFile" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [13151 13179])
+                                            ("deleteIfExist" variable
+                                               (:default-value "false"
+                                                :type "bool")
+                                                (reparse-symbol arg-sub-list) [13180 13206]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [13053 13208])
+                                    ("private" label nil (reparse-symbol classsubparts) [13209 13217])
+                                    ("FileAccessHelper" function
+                                       (:constructor-flag t
+                                        :type ("FileAccessHelper" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [13222 13243]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [11847 13246])
+                            ("PanguDirScanner" type
+                               (:superclasses 
+                                  ( ("DirScanner" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [13292 13299])
+                                    ("PanguDirScanner" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("root" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [13320 13344])
+                                            ("maxRet" variable (:type "int") (reparse-symbol arg-sub-list) [13345 13356]))                                          
+                                        :type ("PanguDirScanner" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [13304 13357])
+                                    ("Free" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [13362 13374])
+                                    ("Next" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("path" variable
+                                               (:reference 1
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [13389 13407]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [13380 13408])
+                                    ("private" label nil (reparse-symbol classsubparts) [13410 13418])
+                                    ("ScannerStatus" type
+                                       (:members 
+                                          ( ("SCANNER_SCANNING" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [13456 13473])
+                                            ("SCANNER_TERMINATED" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [13482 13501])
+                                            ("SCANNER_CORRUPTED" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [13510 13533]))                                          
+                                        :type "enum")
+                                        (reparse-symbol classsubparts) [13423 13534])
+                                    ("mRoot" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13540 13558])
+                                    ("mMaxRet" variable (:type "int") (reparse-symbol classsubparts) [13563 13575])
+                                    ("mPaths" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("std::string" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [13581 13613])
+                                    ("mCurPos" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13618 13633])
+                                    ("mHaveMoreEntry" variable (:type "bool") (reparse-symbol classsubparts) [13638 13658])
+                                    ("mStatus" variable (:type ("ScannerStatus" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13663 13685]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [13248 13688]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [311 13691]))                  
+                :type "namespace")
+                nil [292 13715]))          
+      :file "file_access.h"
+      :pointmax 13777
+      :fsize 13776
+      :lastmodtime '(21968 27926 644036 139000)
+      :unmatched-syntax '((punctuation 13023 . 13024) (punctuation 11059 . 11060) (punctuation 10969 . 10970) (punctuation 9725 . 9726) (punctuation 9654 . 9655) (punctuation 8652 . 8653) (punctuation 8566 . 8567) (punctuation 8165 . 8166) (punctuation 8082 . 8083) (punctuation 4870 . 4871) (punctuation 4756 . 4757) (punctuation 4666 . 4667) (punctuation 4578 . 4579) (punctuation 4494 . 4495) (punctuation 1604 . 1605) (punctuation 1493 . 1494) (punctuation 1406 . 1407) (punctuation 1321 . 1322) (punctuation 1240 . 1241))
+      :lexical-table 
+        '(("APSARA_YOUCHAO2_FILE_ACCESS_H")
+          )
+)
+    (semanticdb-table "raw_string.h"
+      :file "raw_string.h"
+      :fsize 3988
+      :lastmodtime '(21968 27926 651036 208000)))
+  :file "!apsarapangu!disk6!jingwen.hjw!work!trunk!sqlonline!youchao_storage!youchao2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

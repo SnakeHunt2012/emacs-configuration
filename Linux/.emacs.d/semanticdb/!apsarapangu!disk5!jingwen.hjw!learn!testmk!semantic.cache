@@ -1,0 +1,29 @@
+;; Object testmk/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "testmk/"
+  :tables
+  (list
+    (semanticdb-table "hello.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("main" function (:type "int") nil [21 82]))          
+      :file "hello.c"
+      :pointmax 83
+      :fsize 82
+      :lastmodtime '(22047 6239 906036 222000)
+      :unmatched-syntax nil)
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("AUTOMAKE_OPTIONS" variable (:default-value ("foreign")) nil [1 26])
+            ("bin_PROGRAMS" variable (:default-value ("hello")) nil [26 45])
+            ("hello_SOURCES" variable (:default-value ("hello.c")) nil [45 67]))          
+      :file "Makefile.am"
+      :pointmax 67
+      :fsize 66
+      :lastmodtime '(22047 7277 219036 114000)
+      :unmatched-syntax '((symbol 26 . 38) (bol 26 . 26) (symbol 26 . 33) (bol 26 . 26) (symbol 18 . 22) (punctuation 17 . 18) (symbol 1 . 17) (bol 1 . 1))))
+  :file "!apsarapangu!disk5!jingwen.hjw!learn!testmk!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,882 @@
+;; Object lib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lib/"
+  :tables
+  (list
+    (semanticdb-table "export_e2e_dist.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("time" include nil nil [55 66])
+            ("uuid" include nil nil [67 78])
+            ("atest.log" include nil nil [80 103])
+            ("export_e2e_util" include nil nil [104 142])
+            ("case_auto" include nil nil [143 167])
+            ("ExportDistribution" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [229 253]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [214 218]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [201 254])
+                    ("'''
+    machine_list, [], 用于分发测试任务的机器列表
+    types, [], 压力类型，[1,9]，int。例如:[1,2,3,4,5]
+    start/end/number_of_version/thread_per_machine/run_time都是int类型
+    返回结果文件列表(二维，第一维是机器，第二维是stress类型)，用于wait4_gen_stress_complete()函数进行等待
+    '''" code nil (reparse-symbol indented_block_body) [259 491])
+                    ("generate_stress" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [516 520])
+                            ("machine_list" variable nil (reparse-symbol function_parameters) [522 534])
+                            ("stress_types" variable nil (reparse-symbol function_parameters) [536 548])
+                            ("table_name" variable nil (reparse-symbol function_parameters) [550 560])
+                            ("write2_inst" variable nil (reparse-symbol function_parameters) [562 573])
+                            ("start" variable nil (reparse-symbol function_parameters) [575 580])
+                            ("end" variable nil (reparse-symbol function_parameters) [586 589])
+                            ("CF" variable nil (reparse-symbol function_parameters) [623 625])
+                            ("number_of_version" variable nil (reparse-symbol function_parameters) [634 651])
+                            ("thread_per_machine" variable nil (reparse-symbol function_parameters) [657 675])
+                            ("run_time" variable nil (reparse-symbol function_parameters) [682 690])
+                            ("column_value_len" variable nil (reparse-symbol function_parameters) [723 739])
+                            ("number_of_columns" variable nil (reparse-symbol function_parameters) [746 763]))                          )
+                        (reparse-symbol indented_block_body) [496 9276])
+                    ("generate_stress_multiple_table" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9385 9389])
+                            ("machine_list" variable nil (reparse-symbol function_parameters) [9391 9403])
+                            ("stress_types" variable nil (reparse-symbol function_parameters) [9405 9417])
+                            ("table_name" variable nil (reparse-symbol function_parameters) [9419 9429])
+                            ("number_of_tables" variable nil (reparse-symbol function_parameters) [9431 9447])
+                            ("write2_inst" variable nil (reparse-symbol function_parameters) [9449 9460])
+                            ("start" variable nil (reparse-symbol function_parameters) [9500 9505])
+                            ("end" variable nil (reparse-symbol function_parameters) [9511 9514])
+                            ("CF" variable nil (reparse-symbol function_parameters) [9524 9526])
+                            ("number_of_version" variable nil (reparse-symbol function_parameters) [9535 9552])
+                            ("thread_per_machine" variable nil (reparse-symbol function_parameters) [9596 9614])
+                            ("run_time" variable nil (reparse-symbol function_parameters) [9621 9629])
+                            ("column_value_len" variable nil (reparse-symbol function_parameters) [9638 9654]))                          )
+                        (reparse-symbol indented_block_body) [9350 18616])
+                    ("verify_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18637 18641])
+                            ("machine_list" variable nil (reparse-symbol function_parameters) [18643 18655])
+                            ("table_name" variable nil (reparse-symbol function_parameters) [18657 18667])
+                            ("inst_hbase" variable nil (reparse-symbol function_parameters) [18669 18679])
+                            ("inst_ots" variable nil (reparse-symbol function_parameters) [18681 18689])
+                            ("start" variable nil (reparse-symbol function_parameters) [18691 18696])
+                            ("end" variable nil (reparse-symbol function_parameters) [18702 18705])
+                            ("CF" variable nil (reparse-symbol function_parameters) [18735 18737])
+                            ("number_of_versions" variable nil (reparse-symbol function_parameters) [18746 18764])
+                            ("thread_per_machine" variable nil (reparse-symbol function_parameters) [18770 18788]))                          )
+                        (reparse-symbol indented_block_body) [18621 20199])
+                    ("verify_data_multiple_table" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20296 20300])
+                            ("machine_list" variable nil (reparse-symbol function_parameters) [20302 20314])
+                            ("table_name" variable nil (reparse-symbol function_parameters) [20316 20326])
+                            ("number_of_table" variable nil (reparse-symbol function_parameters) [20328 20343])
+                            ("inst_hbase" variable nil (reparse-symbol function_parameters) [20345 20355])
+                            ("inst_ots" variable nil (reparse-symbol function_parameters) [20357 20365])
+                            ("start" variable nil (reparse-symbol function_parameters) [20402 20407])
+                            ("end" variable nil (reparse-symbol function_parameters) [20413 20416])
+                            ("CF" variable nil (reparse-symbol function_parameters) [20426 20428])
+                            ("number_of_versions" variable nil (reparse-symbol function_parameters) [20437 20455])
+                            ("thread_per_machine" variable nil (reparse-symbol function_parameters) [20461 20479]))                          )
+                        (reparse-symbol indented_block_body) [20265 22182])
+                    ("wait4_gen_stress_complete_and_check" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22302 22306])
+                            ("machine_list" variable nil (reparse-symbol function_parameters) [22308 22320])
+                            ("result_files" variable nil (reparse-symbol function_parameters) [22322 22334])
+                            ("time_out" variable nil (reparse-symbol function_parameters) [22336 22344]))                          )
+                        (reparse-symbol indented_block_body) [22262 23021])
+                    ("wait4_verify_complete_and_check" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23062 23066])
+                            ("machine_list" variable nil (reparse-symbol function_parameters) [23068 23080])
+                            ("result_files" variable nil (reparse-symbol function_parameters) [23082 23094])
+                            ("time_out" variable nil (reparse-symbol function_parameters) [23096 23104]))                          )
+                        (reparse-symbol indented_block_body) [23026 23787])
+                    ("_get_result_file_count" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23858 23862])
+                            ("result_files" variable nil (reparse-symbol function_parameters) [23864 23876]))                          )
+                        (reparse-symbol indented_block_body) [23831 24003])
+                    ("_wait4_result_files_exists" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [24110 24114])
+                            ("machine_list" variable nil (reparse-symbol function_parameters) [24116 24128])
+                            ("result_file_list" variable nil (reparse-symbol function_parameters) [24130 24146])
+                            ("time_out" variable nil (reparse-symbol function_parameters) [24148 24156]))                          )
+                        (reparse-symbol indented_block_body) [24079 25965])
+                    ("_check_result_files" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26055 26059])
+                            ("machine_list" variable nil (reparse-symbol function_parameters) [26061 26073])
+                            ("result_file_list" variable nil (reparse-symbol function_parameters) [26075 26091]))                          )
+                        (reparse-symbol indented_block_body) [26031 27276]))                  
+                :type "class")
+                nil [169 27276]))          
+      :file "export_e2e_dist.py"
+      :pointmax 27276
+      :fsize 28669
+      :lastmodtime '(21830 61509 719036 309000)
+      :unmatched-syntax nil)
+    (semanticdb-table "export_e2e_config.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("case_plan" variable nil nil [124 168])
+            ("case_path_root" variable nil nil [169 222])
+            ("case_dir_name" variable nil nil [223 258])
+            ("case_path_full" code nil nil [259 312])
+            ("tool_path" variable nil nil [313 346])
+            ("g_test_machine_list" variable nil nil [400 505])
+            ("get_test_machine" function (:arguments 
+              ( ("number_of_machine" variable nil (reparse-symbol function_parameters) [651 668]))              ) nil [630 750])
+            ("g_cfg_ots" variable nil nil [758 772])
+            ("g_cfg_hbase_primary" variable nil nil [773 797])
+            ("g_cfg_hbase_proxy" variable nil nil [798 820])
+            ("g_cfg_rts" variable nil nil [821 835])
+            ("g_instance_ots" variable nil nil [844 863])
+            ("g_instance_hbase_primary" variable nil nil [864 893])
+            ("g_instance_hbase_proxy" variable nil nil [894 921])
+            ("g_instance_rts" variable nil nil [922 941])
+            ("HBaseConfig" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [994 1034])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1043 1064])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1073 1093])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1103 1115])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1124 1143])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1152 1178])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1188 1210]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [979 983]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [966 1211]))                  
+                :type "class")
+                nil [943 1211])
+            ("OtsConfig" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [1261 1295])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1304 1316])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1325 1346])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1373 1394])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1427 1451])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1487 1511])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1532 1639])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1649 1667])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1676 1697])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1706 1725])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1734 1754]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1246 1250]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1233 1755]))                  
+                :type "class")
+                nil [1212 1755])
+            ("RtsConfig" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [1805 1826])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1835 1853])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1862 1917])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1926 1964]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1790 1794]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1777 1965]))                  
+                :type "class")
+                nil [1756 1965])
+            ("ots1" variable nil nil [1981 1999])
+            ("ots1" variable nil nil [2000 2026])
+            ("ots1" variable nil nil [2027 2060])
+            ("ots1" variable nil nil [2061 2095])
+            ("ots1" variable nil nil [2096 2139])
+            ("ots1" variable nil nil [2140 2185])
+            ("ots1" variable nil nil [2187 2208])
+            ("ots1" variable nil nil [2209 2230])
+            ("ots1" variable nil nil [2231 2271])
+            ("ots1" variable nil nil [2273 2328])
+            ("hbase1" variable nil nil [2368 2390])
+            ("hbase1" variable nil nil [2391 2419])
+            ("hbase1" variable nil nil [2452 2480])
+            ("hbase1" variable nil nil [2481 2532])
+            ("hbase1" variable nil nil [2533 2663])
+            ("hbase1" variable nil nil [2664 2722])
+            ("hbase_proxy1" variable nil nil [2778 2806])
+            ("hbase_proxy1" variable nil nil [2807 2840])
+            ("hbase_proxy1" variable nil nil [2841 2881])
+            ("hbase_proxy1" variable nil nil [2882 2937])
+            ("hbase_proxy1" variable nil nil [2938 3076])
+            ("hbase_proxy1" variable nil nil [3077 3141])
+            ("rts1" variable nil nil [3184 3202])
+            ("rts1" variable nil nil [3203 3227])
+            ("rts1" variable nil nil [3228 3246])
+            ("g_cfg_ots" code nil nil [3306 3328])
+            ("g_cfg_hbase_primary" code nil nil [3329 3363])
+            ("g_cfg_hbase_proxy" code nil nil [3364 3402])
+            ("g_cfg_rts" code nil nil [3403 3425]))          
+      :file "export_e2e_config.py"
+      :pointmax 3427
+      :fsize 3836
+      :lastmodtime '(21830 61509 720036 408000)
+      :unmatched-syntax nil)
+    (semanticdb-table "export_e2e_util.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("time" include nil nil [24 35])
+            ("os" include nil nil [36 45])
+            ("json" include nil nil [46 57])
+            ("random" include nil nil [58 71])
+            ("uuid" include nil nil [72 83])
+            ("api_operation_wrapper" include nil nil [85 132])
+            ("atest.log" include nil nil [133 156])
+            ("case_auto" include nil nil [157 181])
+            ("export_e2e_config" include nil nil [182 221])
+            ("ExportUtil" type
+               (:superclasses ("HbaseOrOTSAPI")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("HbaseOrOTSAPI" code nil (reparse-symbol indented_block_body) [288 316])
+                            ("self" variable nil (reparse-symbol indented_block_body) [325 387]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [273 277]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [260 388])
+                    ("timestamp2str" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [492 496])
+                            ("timestamp" variable nil (reparse-symbol function_parameters) [498 507]))                          )
+                        (reparse-symbol indented_block_body) [474 680])
+                    ("get_random_bool" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [747 751])
+                            ("true_percent" variable nil (reparse-symbol function_parameters) [753 765]))                          )
+                        (reparse-symbol indented_block_body) [727 902])
+                    ("delete_file" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [949 953])
+                            ("file_name" variable nil (reparse-symbol function_parameters) [955 964]))                          )
+                        (reparse-symbol indented_block_body) [933 1136])
+                    ("delete_file_on_host" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1192 1196])
+                            ("file_name" variable nil (reparse-symbol function_parameters) [1198 1207])
+                            ("host_name" variable nil (reparse-symbol function_parameters) [1209 1218]))                          )
+                        (reparse-symbol indented_block_body) [1168 1414])
+                    ("file_exists" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1463 1467])
+                            ("file_name" variable nil (reparse-symbol function_parameters) [1469 1478]))                          )
+                        (reparse-symbol indented_block_body) [1447 1671])
+                    ("file_exists_on_host" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1749 1753])
+                            ("file_name" variable nil (reparse-symbol function_parameters) [1755 1764])
+                            ("host_name" variable nil (reparse-symbol function_parameters) [1766 1775]))                          )
+                        (reparse-symbol indented_block_body) [1725 2078])
+                    ("cat_result_file_on_host" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2150 2154])
+                            ("file_name" variable nil (reparse-symbol function_parameters) [2156 2165])
+                            ("host_name" variable nil (reparse-symbol function_parameters) [2167 2176]))                          )
+                        (reparse-symbol indented_block_body) [2122 2411])
+                    ("wait4_write_data_complete" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2446 2450])
+                            ("result_file_name" variable nil (reparse-symbol function_parameters) [2452 2468])
+                            ("time_out" variable nil (reparse-symbol function_parameters) [2470 2478]))                          )
+                        (reparse-symbol indented_block_body) [2416 3289])
+                    ("verify_data_and_wait" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3386 3390])
+                            ("table_name" variable nil (reparse-symbol function_parameters) [3392 3402])
+                            ("hbase_instance" variable nil (reparse-symbol function_parameters) [3404 3418])
+                            ("ots_instance" variable nil (reparse-symbol function_parameters) [3420 3432])
+                            ("time_out" variable nil (reparse-symbol function_parameters) [3434 3442])
+                            ("row_key_begin" variable nil (reparse-symbol function_parameters) [3449 3462])
+                            ("row_key_end" variable nil (reparse-symbol function_parameters) [3468 3479])
+                            ("thread" variable nil (reparse-symbol function_parameters) [3491 3497])
+                            ("CF" variable nil (reparse-symbol function_parameters) [3504 3506]))                          )
+                        (reparse-symbol indented_block_body) [3361 4458])
+                    ("write_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4478 4482])
+                            ("store" variable nil (reparse-symbol function_parameters) [4484 4489])
+                            ("table_name" variable nil (reparse-symbol function_parameters) [4491 4501])
+                            ("str_type" variable nil (reparse-symbol function_parameters) [4503 4511])
+                            ("row_key_begin" variable nil (reparse-symbol function_parameters) [4513 4526])
+                            ("row_key_end" variable nil (reparse-symbol function_parameters) [4532 4543])
+                            ("stress_thread" variable nil (reparse-symbol function_parameters) [4572 4585])
+                            ("cell_version_count" variable nil (reparse-symbol function_parameters) [4592 4610])
+                            ("cf_name" variable nil (reparse-symbol function_parameters) [4616 4623])
+                            ("row_key_size" variable nil (reparse-symbol function_parameters) [4630 4642])
+                            ("column_value_size" variable nil (reparse-symbol function_parameters) [4649 4666]))                          )
+                        (reparse-symbol indented_block_body) [4463 9610])
+                    ("get_pid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9667 9671])
+                            ("process_name" variable nil (reparse-symbol function_parameters) [9673 9685])
+                            ("target_ip" variable nil (reparse-symbol function_parameters) [9687 9696])
+                            ("through_ip" variable nil (reparse-symbol function_parameters) [9698 9708]))                          )
+                        (reparse-symbol indented_block_body) [9655 9922])
+                    ("kill_process_by_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9977 9981])
+                            ("process_name" variable nil (reparse-symbol function_parameters) [9983 9995])
+                            ("target_ip" variable nil (reparse-symbol function_parameters) [9997 10006])
+                            ("method" variable nil (reparse-symbol function_parameters) [10008 10014])
+                            ("through_ip" variable nil (reparse-symbol function_parameters) [10016 10026]))                          )
+                        (reparse-symbol indented_block_body) [9952 10285])
+                    ("ots_insert" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10324 10328])
+                            ("table_name" variable nil (reparse-symbol function_parameters) [10330 10340])
+                            ("row_key" variable nil (reparse-symbol function_parameters) [10342 10349])
+                            ("cell" variable nil (reparse-symbol function_parameters) [10351 10355])
+                            ("cf_name" variable nil (reparse-symbol function_parameters) [10357 10364])
+                            ("primary_key" variable nil (reparse-symbol function_parameters) [10371 10382]))                          )
+                        (reparse-symbol indented_block_body) [10309 11252])
+                    ("hbase_insert" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11295 11299])
+                            ("table_name" variable nil (reparse-symbol function_parameters) [11301 11311])
+                            ("row_key" variable nil (reparse-symbol function_parameters) [11313 11320])
+                            ("cell" variable nil (reparse-symbol function_parameters) [11322 11326])
+                            ("cf_name" variable nil (reparse-symbol function_parameters) [11328 11335])
+                            ("primary_key" variable nil (reparse-symbol function_parameters) [11342 11353]))                          )
+                        (reparse-symbol indented_block_body) [11278 12231])
+                    ("ots_delete_version" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12279 12283])
+                            ("table_name" variable nil (reparse-symbol function_parameters) [12285 12295])
+                            ("row_key" variable nil (reparse-symbol function_parameters) [12297 12304])
+                            ("col_name" variable nil (reparse-symbol function_parameters) [12306 12314])
+                            ("version" variable nil (reparse-symbol function_parameters) [12316 12323])
+                            ("cf_name" variable nil (reparse-symbol function_parameters) [12325 12332])
+                            ("primary_key" variable nil (reparse-symbol function_parameters) [12339 12350]))                          )
+                        (reparse-symbol indented_block_body) [12256 13089])
+                    ("ots_delete_column" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13141 13145])
+                            ("table_name" variable nil (reparse-symbol function_parameters) [13147 13157])
+                            ("row_key" variable nil (reparse-symbol function_parameters) [13159 13166])
+                            ("col_name" variable nil (reparse-symbol function_parameters) [13168 13176])
+                            ("cf_name" variable nil (reparse-symbol function_parameters) [13178 13185])
+                            ("primary_key" variable nil (reparse-symbol function_parameters) [13192 13203]))                          )
+                        (reparse-symbol indented_block_body) [13119 13916])
+                    ("ots_delete_row" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13962 13966])
+                            ("table_name" variable nil (reparse-symbol function_parameters) [13968 13978])
+                            ("row_key" variable nil (reparse-symbol function_parameters) [13980 13987])
+                            ("cf_name" variable nil (reparse-symbol function_parameters) [13989 13996])
+                            ("primary_key" variable nil (reparse-symbol function_parameters) [14003 14014]))                          )
+                        (reparse-symbol indented_block_body) [13943 14653])
+                    ("hbase_delete_version" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14701 14705])
+                            ("table_name" variable nil (reparse-symbol function_parameters) [14707 14717])
+                            ("row_key" variable nil (reparse-symbol function_parameters) [14719 14726])
+                            ("col_name" variable nil (reparse-symbol function_parameters) [14728 14736])
+                            ("version" variable nil (reparse-symbol function_parameters) [14738 14745])
+                            ("cf_name" variable nil (reparse-symbol function_parameters) [14747 14754])
+                            ("primary_key" variable nil (reparse-symbol function_parameters) [14761 14772]))                          )
+                        (reparse-symbol indented_block_body) [14676 15515])
+                    ("hbase_delete_column" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15571 15575])
+                            ("table_name" variable nil (reparse-symbol function_parameters) [15577 15587])
+                            ("row_key" variable nil (reparse-symbol function_parameters) [15589 15596])
+                            ("col_name" variable nil (reparse-symbol function_parameters) [15598 15606])
+                            ("cf_name" variable nil (reparse-symbol function_parameters) [15608 15615])
+                            ("primary_key" variable nil (reparse-symbol function_parameters) [15622 15633]))                          )
+                        (reparse-symbol indented_block_body) [15547 16350])
+                    ("hbase_delete_row" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16400 16404])
+                            ("table_name" variable nil (reparse-symbol function_parameters) [16406 16416])
+                            ("row_key" variable nil (reparse-symbol function_parameters) [16418 16425])
+                            ("cf_name" variable nil (reparse-symbol function_parameters) [16427 16434])
+                            ("primary_key" variable nil (reparse-symbol function_parameters) [16441 16452]))                          )
+                        (reparse-symbol indented_block_body) [16379 17132])
+                    ("verify_row" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17162 17166])
+                            ("table_name" variable nil (reparse-symbol function_parameters) [17168 17178])
+                            ("row_key" variable nil (reparse-symbol function_parameters) [17180 17187])
+                            ("cf_name" variable nil (reparse-symbol function_parameters) [17189 17196])
+                            ("primary_key" variable nil (reparse-symbol function_parameters) [17203 17214]))                          )
+                        (reparse-symbol indented_block_body) [17147 17992])
+                    ("verify_table" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18024 18028])
+                            ("table_name" variable nil (reparse-symbol function_parameters) [18030 18040])
+                            ("cf_name" variable nil (reparse-symbol function_parameters) [18042 18049])
+                            ("primary_key" variable nil (reparse-symbol function_parameters) [18056 18067]))                          )
+                        (reparse-symbol indented_block_body) [18007 18695])
+                    ("exec_sqls_in_file" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18744 18748])
+                            ("table_name" variable nil (reparse-symbol function_parameters) [18750 18760])
+                            ("sql_file" variable nil (reparse-symbol function_parameters) [18762 18770])
+                            ("cf_name" variable nil (reparse-symbol function_parameters) [18772 18779])
+                            ("primary_key" variable nil (reparse-symbol function_parameters) [18786 18797]))                          )
+                        (reparse-symbol indented_block_body) [18722 19423]))                  
+                :type "class")
+                nil [223 19423])
+            ("g_util" variable nil nil [19434 19455]))          
+      :file "export_e2e_util.py"
+      :pointmax 19457
+      :fsize 20182
+      :lastmodtime '(21830 61509 721036 166000)
+      :unmatched-syntax nil)
+    (semanticdb-table "export_e2e_case_base.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("time" include nil nil [25 36])
+            ("unittest" include nil nil [37 52])
+            ("atest.log" include nil nil [53 76])
+            ("datax_e2e_case_base" include nil nil [77 121])
+            ("export_e2e_dist" include nil nil [122 168])
+            ("export_e2e_config" include nil nil [169 200])
+            ("export_e2e_util" include nil nil [201 239])
+            ("export_e2e_hbase_helper" include nil nil [241 271])
+            ("export_e2e_ots_helper" include nil nil [272 300])
+            ("export_e2e_rts_helper" include nil nil [301 329])
+            ("ExportCaseBase" type
+               (:superclasses ("DataxE2ECase")
+                :members 
+                  ( ("get_table_name_from_case_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [406 410])
+                            ("case_name" variable nil (reparse-symbol function_parameters) [412 421]))                          )
+                        (reparse-symbol indented_block_body) [372 460])
+                    ("get_table_name_from_case_name_with_index" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [540 544])
+                            ("case_name" variable nil (reparse-symbol function_parameters) [546 555])
+                            ("index" variable nil (reparse-symbol function_parameters) [557 562]))                          )
+                        (reparse-symbol indented_block_body) [495 615])
+                    ("prepare_table" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [638 642])
+                            ("case_name" variable nil (reparse-symbol function_parameters) [644 653])
+                            ("start" variable nil (reparse-symbol function_parameters) [655 660])
+                            ("end" variable nil (reparse-symbol function_parameters) [666 669])
+                            ("max_versions" variable nil (reparse-symbol function_parameters) [680 692])
+                            ("CF" variable nil (reparse-symbol function_parameters) [698 700])
+                            ("number_of_partitions" variable nil (reparse-symbol function_parameters) [709 729])
+                            ("ttl" variable nil (reparse-symbol function_parameters) [735 738]))                          )
+                        (reparse-symbol indented_block_body) [620 2383])
+                    ("start_write_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2556 2560])
+                            ("stress_types" variable nil (reparse-symbol function_parameters) [2562 2574])
+                            ("hbase_start" variable nil (reparse-symbol function_parameters) [2586 2597])
+                            ("hbase_end" variable nil (reparse-symbol function_parameters) [2603 2612])
+                            ("ots_start" variable nil (reparse-symbol function_parameters) [2647 2656])
+                            ("ots_end" variable nil (reparse-symbol function_parameters) [2666 2673])
+                            ("number_of_versions" variable nil (reparse-symbol function_parameters) [2709 2727])
+                            ("number_of_machines" variable nil (reparse-symbol function_parameters) [2733 2751])
+                            ("number_of_thread" variable nil (reparse-symbol function_parameters) [2782 2798])
+                            ("column_value_length" variable nil (reparse-symbol function_parameters) [2805 2824])
+                            ("number_of_columns" variable nil (reparse-symbol function_parameters) [2831 2848])
+                            ("write2hbase" variable nil (reparse-symbol function_parameters) [2879 2890])
+                            ("write2ots" variable nil (reparse-symbol function_parameters) [2899 2908])
+                            ("run_time" variable nil (reparse-symbol function_parameters) [2917 2925]))                          )
+                        (reparse-symbol indented_block_body) [2535 3980])
+                    ("prepare_table_and_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4170 4174])
+                            ("case_name" variable nil (reparse-symbol function_parameters) [4176 4185])
+                            ("stress_types" variable nil (reparse-symbol function_parameters) [4187 4199])
+                            ("hbase_start" variable nil (reparse-symbol function_parameters) [4213 4224])
+                            ("hbase_end" variable nil (reparse-symbol function_parameters) [4230 4239])
+                            ("ots_start" variable nil (reparse-symbol function_parameters) [4250 4259])
+                            ("ots_end" variable nil (reparse-symbol function_parameters) [4301 4308])
+                            ("number_of_versions" variable nil (reparse-symbol function_parameters) [4319 4337])
+                            ("CF" variable nil (reparse-symbol function_parameters) [4343 4345])
+                            ("number_of_machines" variable nil (reparse-symbol function_parameters) [4354 4372])
+                            ("number_of_thread" variable nil (reparse-symbol function_parameters) [4378 4394])
+                            ("number_of_partitions" variable nil (reparse-symbol function_parameters) [4432 4452])
+                            ("ttl" variable nil (reparse-symbol function_parameters) [4458 4461])
+                            ("column_value_length" variable nil (reparse-symbol function_parameters) [4468 4487])
+                            ("number_of_columns" variable nil (reparse-symbol function_parameters) [4494 4511]))                          )
+                        (reparse-symbol indented_block_body) [4143 4845])
+                    ("wait4_write_complete" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4889 4893])
+                            ("wait4hbase" variable nil (reparse-symbol function_parameters) [4895 4905])
+                            ("wait4ots" variable nil (reparse-symbol function_parameters) [4914 4922]))                          )
+                        (reparse-symbol indented_block_body) [4864 5167])
+                    ("wait4_replication_complete" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5225 5229])
+                            ("wait4hbase" variable nil (reparse-symbol function_parameters) [5231 5241])
+                            ("wait4ots" variable nil (reparse-symbol function_parameters) [5250 5258]))                          )
+                        (reparse-symbol indented_block_body) [5194 5453])
+                    ("wait4_replication_complete_by_ts" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5495 5499])
+                            ("ts" variable nil (reparse-symbol function_parameters) [5501 5503])
+                            ("wait4hbase" variable nil (reparse-symbol function_parameters) [5505 5515])
+                            ("wait4ots" variable nil (reparse-symbol function_parameters) [5524 5532]))                          )
+                        (reparse-symbol indented_block_body) [5458 5747])
+                    ("verify_and_wait" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6141 6145]))                          )
+                        (reparse-symbol indented_block_body) [6121 7202])
+                    ("wait_and_verify" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7269 7273])
+                            ("number_of_thread" variable nil (reparse-symbol function_parameters) [7275 7291])
+                            ("time_out" variable nil (reparse-symbol function_parameters) [7298 7306]))                          )
+                        (reparse-symbol indented_block_body) [7249 7486])
+                    ("verify_n_and_wait" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7544 7548])
+                            ("number_of_version" variable nil (reparse-symbol function_parameters) [7550 7567]))                          )
+                        (reparse-symbol indented_block_body) [7522 7884])
+                    ("wait_and_verify_n" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7957 7961])
+                            ("number_of_thread" variable nil (reparse-symbol function_parameters) [7963 7979])
+                            ("time_out" variable nil (reparse-symbol function_parameters) [7986 7994])
+                            ("number_of_version" variable nil (reparse-symbol function_parameters) [8003 8020]))                          )
+                        (reparse-symbol indented_block_body) [7935 8224]))                  
+                :type "class")
+                nil [331 8224]))          
+      :file "export_e2e_case_base.py"
+      :pointmax 8225
+      :fsize 8908
+      :lastmodtime '(21830 61509 720036 408000)
+      :unmatched-syntax '((INDENT_BLOCK 6853 . 7202) (NEWLINE 6852 . 6853) (COLON 6851 . 6852) (TRY 6198 . 6201) (AS 6847 . 6849)))
+    (semanticdb-table "datax_e2e_case_base.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("unittest" include nil nil [25 40])
+            ("time" include nil nil [41 52])
+            ("atest.log" include nil nil [53 76])
+            ("case_auto" include nil nil [77 101])
+            ("datax_e2e_case_config" include nil nil [102 130])
+            ("datax_control" include nil nil [131 172])
+            ("api_operation_wrapper" include nil nil [173 220])
+            ("cmd_wrapper" include nil nil [221 259])
+            ("failover_cmd" include nil nil [260 293])
+            ("multiprocessing" include nil nil [294 329])
+            ("random" include nil nil [330 343])
+            ("DataxE2ECase" type
+               (:superclasses ("unittest.TestCase")
+                :members 
+                  ( ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [399 403]))                          )
+                        (reparse-symbol indented_block_body) [389 580])
+                    ("tearDown" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [598 602]))                          )
+                        (reparse-symbol indented_block_body) [585 648])
+                    ("mix_opertion" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [670 674])
+                            ("case_name" variable nil (reparse-symbol function_parameters) [676 685])
+                            ("hbase_operation" variable nil (reparse-symbol function_parameters) [687 702])
+                            ("ots_operation" variable nil (reparse-symbol function_parameters) [704 717])
+                            ("datax_opertion" variable nil (reparse-symbol function_parameters) [719 733])
+                            ("table_cnt" variable nil (reparse-symbol function_parameters) [740 749]))                          )
+                        (reparse-symbol indented_block_body) [653 1568])
+                    ("datax_opertion" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1592 1596])
+                            ("case_name" variable nil (reparse-symbol function_parameters) [1598 1607])
+                            ("datax_opertion" variable nil (reparse-symbol function_parameters) [1609 1623])
+                            ("table_cnt" variable nil (reparse-symbol function_parameters) [1625 1634]))                          )
+                        (reparse-symbol indented_block_body) [1573 1657])
+                    ("ots_operation" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1680 1684])
+                            ("case_name" variable nil (reparse-symbol function_parameters) [1686 1695])
+                            ("ots_operation" variable nil (reparse-symbol function_parameters) [1697 1710])
+                            ("table_cnt" variable nil (reparse-symbol function_parameters) [1712 1721]))                          )
+                        (reparse-symbol indented_block_body) [1662 2883])
+                    ("hbase_operation" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2908 2912])
+                            ("case_name" variable nil (reparse-symbol function_parameters) [2914 2923])
+                            ("hbase_operation" variable nil (reparse-symbol function_parameters) [2925 2940])
+                            ("table_cnt" variable nil (reparse-symbol function_parameters) [2942 2951]))                          )
+                        (reparse-symbol indented_block_body) [2888 4085])
+                    ("split_then_merge" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4111 4115])
+                            ("store" variable nil (reparse-symbol function_parameters) [4117 4122])
+                            ("case_name" variable nil (reparse-symbol function_parameters) [4124 4133])
+                            ("table_cnt" variable nil (reparse-symbol function_parameters) [4135 4144]))                          )
+                        (reparse-symbol indented_block_body) [4090 4366])
+                    ("shutdown_rebalane" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4394 4398])
+                            ("role" variable nil (reparse-symbol function_parameters) [4400 4404]))                          )
+                        (reparse-symbol indented_block_body) [4372 4584])
+                    ("restart_ots_server" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4612 4616]))                          )
+                        (reparse-symbol indented_block_body) [4589 4783])
+                    ("netdown_role" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4805 4809])
+                            ("role" variable nil (reparse-symbol function_parameters) [4811 4815]))                          )
+                        (reparse-symbol indented_block_body) [4788 4963])
+                    ("hbase_failover" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4987 4991])
+                            ("role" variable nil (reparse-symbol function_parameters) [4993 4997])
+                            ("method" variable nil (reparse-symbol function_parameters) [4999 5005])
+                            ("all" variable nil (reparse-symbol function_parameters) [5007 5010])
+                            ("table_name" variable nil (reparse-symbol function_parameters) [5017 5027]))                          )
+                        (reparse-symbol indented_block_body) [4968 5856])
+                    ("failover_role" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5879 5883])
+                            ("role" variable nil (reparse-symbol function_parameters) [5885 5889])
+                            ("machine_cnt" variable nil (reparse-symbol function_parameters) [5891 5902])
+                            ("method" variable nil (reparse-symbol function_parameters) [5904 5910])
+                            ("all" variable nil (reparse-symbol function_parameters) [5912 5915]))                          )
+                        (reparse-symbol indented_block_body) [5861 6662])
+                    ("failover_datax" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6690 6694]))                          )
+                        (reparse-symbol indented_block_body) [6671 6737])
+                    ("start_datax" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6766 6770])
+                            ("case_name" variable nil (reparse-symbol function_parameters) [6772 6781])
+                            ("row_key_type" variable nil (reparse-symbol function_parameters) [6783 6795])
+                            ("cf_name" variable nil (reparse-symbol function_parameters) [6797 6804])
+                            ("column_cnt" variable nil (reparse-symbol function_parameters) [6806 6816])
+                            ("channel" variable nil (reparse-symbol function_parameters) [6818 6825])
+                            ("table_index" variable nil (reparse-symbol function_parameters) [6830 6841])
+                            ("column_name" variable nil (reparse-symbol function_parameters) [6848 6859]))                          )
+                        (reparse-symbol indented_block_body) [6750 7160])
+                    ("join_datax" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7180 7184]))                          )
+                        (reparse-symbol indented_block_body) [7165 7580])
+                    ("create_table" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7602 7606])
+                            ("store" variable nil (reparse-symbol function_parameters) [7608 7613])
+                            ("case_name" variable nil (reparse-symbol function_parameters) [7615 7624])
+                            ("ttl" variable nil (reparse-symbol function_parameters) [7626 7629])
+                            ("version" variable nil (reparse-symbol function_parameters) [7634 7641])
+                            ("row_cnt" variable nil (reparse-symbol function_parameters) [7647 7654])
+                            ("ranges" variable nil (reparse-symbol function_parameters) [7662 7668])
+                            ("table_index" variable nil (reparse-symbol function_parameters) [7673 7684])
+                            ("cf_name" variable nil (reparse-symbol function_parameters) [7693 7700]))                          )
+                        (reparse-symbol indented_block_body) [7585 7990])
+                    ("verify_row" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8010 8014])
+                            ("case_name" variable nil (reparse-symbol function_parameters) [8016 8025])
+                            ("row_key" variable nil (reparse-symbol function_parameters) [8027 8034])
+                            ("cf_name" variable nil (reparse-symbol function_parameters) [8036 8043]))                          )
+                        (reparse-symbol indented_block_body) [7995 8209])
+                    ("load_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8232 8236])
+                            ("store" variable nil (reparse-symbol function_parameters) [8238 8243])
+                            ("case_name" variable nil (reparse-symbol function_parameters) [8245 8254])
+                            ("str_type" variable nil (reparse-symbol function_parameters) [8256 8264])
+                            ("row_key_begin" variable nil (reparse-symbol function_parameters) [8266 8279])
+                            ("row_key_end" variable nil (reparse-symbol function_parameters) [8285 8296])
+                            ("stress_thread" variable nil (reparse-symbol function_parameters) [8306 8319])
+                            ("cell_version_count" variable nil (reparse-symbol function_parameters) [8326 8344])
+                            ("cf_name" variable nil (reparse-symbol function_parameters) [8350 8357]))                          )
+                        (reparse-symbol indented_block_body) [8218 8636])
+                    ("dist_load_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8660 8664])
+                            ("store" variable nil (reparse-symbol function_parameters) [8666 8671])
+                            ("table_cnt" variable nil (reparse-symbol function_parameters) [8673 8682])
+                            ("case_name" variable nil (reparse-symbol function_parameters) [8684 8693])
+                            ("str_type" variable nil (reparse-symbol function_parameters) [8695 8703])
+                            ("row_begin" variable nil (reparse-symbol function_parameters) [8705 8714])
+                            ("row_end" variable nil (reparse-symbol function_parameters) [8716 8723])
+                            ("stress_thread" variable nil (reparse-symbol function_parameters) [8725 8738])
+                            ("cf_name" variable nil (reparse-symbol function_parameters) [8745 8752]))                          )
+                        (reparse-symbol indented_block_body) [8641 9007])
+                    ("join_load_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9039 9043])
+                            ("result_flag" variable nil (reparse-symbol function_parameters) [9045 9056]))                          )
+                        (reparse-symbol indented_block_body) [9020 9919])
+                    ("join_dist_load_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9952 9956])
+                            ("result" variable nil (reparse-symbol function_parameters) [9958 9964]))                          )
+                        (reparse-symbol indented_block_body) [9928 10931])
+                    ("split_merge_opertion" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10961 10965])
+                            ("store" variable nil (reparse-symbol function_parameters) [10967 10972])
+                            ("opertion" variable nil (reparse-symbol function_parameters) [10974 10982])
+                            ("case_name" variable nil (reparse-symbol function_parameters) [10984 10993])
+                            ("table_cnt" variable nil (reparse-symbol function_parameters) [10995 11004]))                          )
+                        (reparse-symbol indented_block_body) [10936 11265])
+                    ("change_table" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11291 11295])
+                            ("store" variable nil (reparse-symbol function_parameters) [11297 11302])
+                            ("case_name" variable nil (reparse-symbol function_parameters) [11304 11313])
+                            ("attribut_name" variable nil (reparse-symbol function_parameters) [11315 11328])
+                            ("value" variable nil (reparse-symbol function_parameters) [11330 11335]))                          )
+                        (reparse-symbol indented_block_body) [11274 11544])
+                    ("verify" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11560 11564])
+                            ("case_name" variable nil (reparse-symbol function_parameters) [11566 11575])
+                            ("row_key_begin" variable nil (reparse-symbol function_parameters) [11577 11590])
+                            ("row_key_end" variable nil (reparse-symbol function_parameters) [11596 11607])
+                            ("stress_thread" variable nil (reparse-symbol function_parameters) [11617 11630])
+                            ("cf_name" variable nil (reparse-symbol function_parameters) [11637 11644]))                          )
+                        (reparse-symbol indented_block_body) [11549 12786])
+                    ("dist_verify" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12807 12811])
+                            ("table_cnt" variable nil (reparse-symbol function_parameters) [12813 12822])
+                            ("case_name" variable nil (reparse-symbol function_parameters) [12824 12833])
+                            ("row_begin" variable nil (reparse-symbol function_parameters) [12835 12844])
+                            ("row_end" variable nil (reparse-symbol function_parameters) [12850 12857])
+                            ("thread_num" variable nil (reparse-symbol function_parameters) [12869 12879])
+                            ("cf_name" variable nil (reparse-symbol function_parameters) [12886 12893]))                          )
+                        (reparse-symbol indented_block_body) [12791 14113]))                  
+                :type "class")
+                nil [345 14113]))          
+      :file "datax_e2e_case_base.py"
+      :pointmax 14124
+      :fsize 14143
+      :lastmodtime '(21830 61509 721036 166000)
+      :unmatched-syntax nil)
+    (semanticdb-table "api_operation_wrapper.py"
+      :file "api_operation_wrapper.py"
+      :fsize 21775
+      :lastmodtime '(21830 61509 718036 329000))
+    (semanticdb-table "case_auto.py"
+      :file "case_auto.py"
+      :fsize 11222
+      :lastmodtime '(21830 61509 720036 408000))
+    (semanticdb-table "datax_e2e_case_config.py"
+      :file "datax_e2e_case_config.py"
+      :fsize 1708
+      :lastmodtime '(21830 61509 721036 166000))
+    (semanticdb-table "datax_control.py"
+      :file "datax_control.py"
+      :fsize 6913
+      :lastmodtime '(21830 61509 719036 309000))
+    (semanticdb-table "cmd_wrapper.py"
+      :file "cmd_wrapper.py"
+      :fsize 11328
+      :lastmodtime '(21830 61509 720036 408000))
+    (semanticdb-table "failover_cmd.py"
+      :file "failover_cmd.py"
+      :fsize 9542
+      :lastmodtime '(21830 61509 719036 309000))
+    (semanticdb-table "export_e2e_hbase_helper.py"
+      :file "export_e2e_hbase_helper.py"
+      :fsize 28127
+      :lastmodtime '(21830 61509 721036 166000))
+    (semanticdb-table "export_e2e_ots_helper.py"
+      :file "export_e2e_ots_helper.py"
+      :fsize 39485
+      :lastmodtime '(21830 61509 719036 309000))
+    (semanticdb-table "export_e2e_rts_helper.py"
+      :file "export_e2e_rts_helper.py"
+      :fsize 2008
+      :lastmodtime '(21830 61509 720036 408000)))
+  :file "!apsarapangu!disk1!jingwen.hjw!work!ts_export_channel!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

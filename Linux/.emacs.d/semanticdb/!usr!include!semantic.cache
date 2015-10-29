@@ -1,0 +1,109 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables
+  (list
+    (semanticdb-table "features.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_FEATURES_H" variable (:constant-flag t) nil [951 962])
+            ("__KERNEL_STRICT_NAMES" variable (:constant-flag t) nil [5001 5022])
+            ("__USE_ANSI" variable (:constant-flag t) nil [5071 5081])
+            ("__GNUC_PREREQ" variable (:constant-flag t) nil [5405 5418])
+            ("_ISOC99_SOURCE" variable (:constant-flag t) nil [5981 5995])
+            ("_POSIX_SOURCE" variable (:constant-flag t) nil [6030 6043])
+            ("_POSIX_C_SOURCE" variable (:constant-flag t) nil [6080 6095])
+            ("_XOPEN_SOURCE" variable (:constant-flag t) nil [6136 6149])
+            ("_XOPEN_SOURCE_EXTENDED" variable (:constant-flag t) nil [6195 6217])
+            ("_LARGEFILE64_SOURCE" variable (:constant-flag t) nil [6258 6277])
+            ("_BSD_SOURCE" variable (:constant-flag t) nil [6310 6321])
+            ("_SVID_SOURCE" variable (:constant-flag t) nil [6355 6367])
+            ("_ATFILE_SOURCE" variable (:constant-flag t) nil [6403 6417])
+            ("__USE_POSIX" variable (:constant-flag t) nil [7836 7847])
+            ("__USE_POSIX2" variable (:constant-flag t) nil [7944 7956])
+            ("__USE_XOPEN" variable (:constant-flag t) nil [8216 8227])
+            ("__USE_XOPEN_EXTENDED" variable (:constant-flag t) nil [8272 8292])
+            ("__USE_UNIX98" variable (:constant-flag t) nil [8305 8317])
+            ("_LARGEFILE_SOURCE" variable (:constant-flag t) nil [8357 8374])
+            ("__USE_XOPEN2K" variable (:constant-flag t) nil [8421 8434])
+            ("__USE_ISOC99" variable (:constant-flag t) nil [8471 8483])
+            ("__USE_LARGEFILE" variable (:constant-flag t) nil [8628 8643])
+            ("__USE_LARGEFILE64" variable (:constant-flag t) nil [8690 8707])
+            ("__USE_MISC" variable (:constant-flag t) nil [8871 8881])
+            ("__USE_BSD" variable (:constant-flag t) nil [8920 8929])
+            ("__USE_SVID" variable (:constant-flag t) nil [8969 8979])
+            ("__USE_ATFILE" variable (:constant-flag t) nil [9021 9033])
+            ("__USE_GNU" variable (:constant-flag t) nil [9072 9081])
+            ("__USE_FORTIFY_LEVEL" variable (:constant-flag t) nil [9716 9735])
+            ("__STDC_IEC_559__" variable (:constant-flag t) nil [9825 9841])
+            ("__STDC_IEC_559_COMPLEX__" variable (:constant-flag t) nil [9853 9877])
+            ("__STDC_ISO_10646__" variable (:constant-flag t) nil [9968 9986])
+            ("__GNU_LIBRARY__" variable (:constant-flag t) nil [10428 10443])
+            ("__GLIBC__" variable (:constant-flag t) nil [10587 10596])
+            ("__GLIBC_MINOR__" variable (:constant-flag t) nil [10607 10622])
+            ("__GLIBC_PREREQ" variable (:constant-flag t) nil [10634 10648])
+            ("sys/cdefs.h" include (:system-flag t) nil [11169 11193])
+            ("gnu/stubs.h" include (:system-flag t) nil [11983 12005]))          
+      :file "features.h"
+      :pointmax 12033
+      :fsize 12032
+      :lastmodtime '(21704 40898 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__USE_XOPEN" . ((number "1" 8228 . 8229)))
+          ("__USE_XOPEN_EXTENDED" . ((number "1" 8293 . 8294)))
+          ("__USE_BSD" . ((number "1" 8930 . 8931)))
+          ("__STDC_IEC_559__" . ((number "1" 9843 . 9844)))
+          ("_ISOC99_SOURCE" . ((number "1" 5996 . 5997)))
+          ("__USE_ATFILE" . ((number "1" 9034 . 9035)))
+          ("_LARGEFILE64_SOURCE" . ((number "1" 6278 . 6279)))
+          ("__USE_LARGEFILE64" . ((number "1" 8708 . 8709)))
+          ("__KERNEL_STRICT_NAMES")
+          ("_POSIX_SOURCE" . ((number "1" 6044 . 6045)))
+          ("_BSD_SOURCE" . ((number "1" 6322 . 6323)))
+          ("__USE_XOPEN2K" . ((number "1" 8435 . 8436)))
+          ("__GLIBC__" . ((number "2" 10597 . 10598)))
+          ("_XOPEN_SOURCE_EXTENDED" . ((number "1" 6218 . 6219)))
+          ("__STDC_IEC_559_COMPLEX__" . ((number "1" 9878 . 9879)))
+          ("_XOPEN_SOURCE" . ((number "600" 6150 . 6153)))
+          ("_ATFILE_SOURCE" . ((number "1" 6418 . 6419)))
+          ("__USE_FORTIFY_LEVEL" . ((number "0" 9736 . 9737)))
+          ("_FEATURES_H" . ((number "1" 963 . 964)))
+          ("__USE_ANSI" . ((number "1" 5082 . 5083)))
+          ("__USE_MISC" . ((number "1" 8882 . 8883)))
+          ("__STDC_ISO_10646__" . ((number "200009L" 9988 . 9995)))
+          ("__GNU_LIBRARY__" . ((number "6" 10444 . 10445)))
+          ("__GLIBC_MINOR__" . ((number "5" 10623 . 10624)))
+          ("__GLIBC_PREREQ" (spp-arg-list ("maj" "min") 10648 . 10658) . ((semantic-list "((__GLIBC__ << 16) + __GLIBC_MINOR__ >= ((maj) << 16) + (min))" 10662 . 10724)))
+          ("__GNUC_PREREQ" (spp-arg-list ("maj" "min") 5418 . 5428) . ((semantic-list "((__GNUC__ << 16) + __GNUC_MINOR__ >= ((maj) << 16) + (min))" 5432 . 5492)))
+          ("__USE_POSIX2" . ((number "1" 7957 . 7958)))
+          ("__USE_ISOC99" . ((number "1" 8485 . 8486)))
+          ("__USE_GNU" . ((number "1" 9082 . 9083)))
+          ("_POSIX_C_SOURCE" . ((number "200112L" 6096 . 6103)))
+          ("__USE_LARGEFILE" . ((number "1" 8644 . 8645)))
+          ("__USE_UNIX98" . ((number "1" 8318 . 8319)))
+          ("__USE_SVID" . ((number "1" 8980 . 8981)))
+          ("_SVID_SOURCE" . ((number "1" 6368 . 6369)))
+          ("__USE_POSIX" . ((number "1" 7848 . 7849)))
+          ("_LARGEFILE_SOURCE" . ((number "1" 8375 . 8376)))
+          )
+)
+    (semanticdb-table "getopt.h"
+      :file "getopt.h"
+      :fsize 6125
+      :lastmodtime '(21704 40922 0 0))
+    (semanticdb-table "signal.h"
+      :file "signal.h"
+      :fsize 13312
+      :lastmodtime '(21704 40913 0 0))
+    (semanticdb-table "pthread.h"
+      :file "pthread.h"
+      :fsize 39565
+      :lastmodtime '(21704 40931 0 0))
+    (semanticdb-table "stdint.h"
+      :file "stdint.h"
+      :fsize 8536
+      :lastmodtime '(21704 40914 0 0)))
+  :file "!usr!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

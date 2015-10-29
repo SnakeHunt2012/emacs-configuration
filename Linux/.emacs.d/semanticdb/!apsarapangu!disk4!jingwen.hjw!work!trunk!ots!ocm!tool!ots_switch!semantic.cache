@@ -1,0 +1,16 @@
+;; Object ots_switch/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ots_switch/"
+  :tables
+  (list
+    (semanticdb-table "OTS_config.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "OTS_config.json"
+      :pointmax 227
+      :fsize 226
+      :lastmodtime '(21951 3163 346037 230000)
+      :unmatched-syntax nil))
+  :file "!apsarapangu!disk4!jingwen.hjw!work!trunk!ots!ocm!tool!ots_switch!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

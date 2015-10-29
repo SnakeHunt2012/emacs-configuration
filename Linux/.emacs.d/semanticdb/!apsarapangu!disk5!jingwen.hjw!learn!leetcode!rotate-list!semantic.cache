@@ -1,0 +1,46 @@
+;; Object rotate-list/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "rotate-list/"
+  :tables
+  (list
+    (semanticdb-table "solution.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("ListNode" type
+               (:members 
+                  ( ("val" variable (:type "int") (reparse-symbol classsubparts) [182 190])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("ListNode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [195 217]))                  
+                :type "struct")
+                nil [160 220])
+            ("rotateRight" function
+               (:pointer 1
+                :arguments 
+                  ( ("head" variable
+                       (:pointer 1
+                        :type ("ListNode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [251 273])
+                    ("k" variable (:type "int") (reparse-symbol arg-sub-list) [274 280]))                  
+                :type ("ListNode" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [222 725]))          
+      :file "solution.c"
+      :pointmax 726
+      :fsize 725
+      :lastmodtime '(22064 27002 931036 296000)
+      :unmatched-syntax nil))
+  :file "!apsarapangu!disk5!jingwen.hjw!learn!leetcode!rotate-list!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

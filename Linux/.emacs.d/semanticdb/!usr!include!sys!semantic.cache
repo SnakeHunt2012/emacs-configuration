@@ -1,0 +1,128 @@
+;; Object sys/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sys/"
+  :tables
+  (list
+    (semanticdb-table "cdefs.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_SYS_CDEFS_H" variable (:constant-flag t) nil [913 925])
+            ("features.h" include (:system-flag t) nil [1002 1024])
+            ("__THROW" variable (:constant-flag t) nil [2047 2054])
+            ("__NTH" variable (:constant-flag t) nil [2066 2071])
+            ("__P" variable (:constant-flag t) nil [2462 2465])
+            ("__PMT" variable (:constant-flag t) nil [2485 2490])
+            ("__CONCAT" variable (:constant-flag t) nil [2616 2624])
+            ("__STRING" variable (:constant-flag t) nil [2645 2653])
+            ("__ptr_t" variable (:constant-flag t) nil [2739 2746])
+            ("__long_double_t" variable (:constant-flag t) nil [2762 2777])
+            ("__BEGIN_DECLS" variable (:constant-flag t) nil [2890 2903])
+            ("__END_DECLS" variable (:constant-flag t) nil [2926 2937])
+            ("__BEGIN_NAMESPACE_STD" variable (:constant-flag t) nil [3815 3836])
+            ("__END_NAMESPACE_STD" variable (:constant-flag t) nil [3846 3865])
+            ("__USING_NAMESPACE_STD" variable (:constant-flag t) nil [3875 3896])
+            ("__BEGIN_NAMESPACE_C99" variable (:constant-flag t) nil [3912 3933])
+            ("__END_NAMESPACE_C99" variable (:constant-flag t) nil [3943 3962])
+            ("__USING_NAMESPACE_C99" variable (:constant-flag t) nil [3972 3993])
+            ("__bounded" variable (:constant-flag t) nil [4084 4093])
+            ("__unbounded" variable (:constant-flag t) nil [4117 4128])
+            ("__ptrvalue" variable (:constant-flag t) nil [4152 4162])
+            ("__bos" variable (:constant-flag t) nil [4218 4223])
+            ("__bos0" variable (:constant-flag t) nil [4290 4296])
+            ("__warndecl" variable (:constant-flag t) nil [4341 4351])
+            ("__flexarr" variable (:constant-flag t) nil [4558 4567])
+            ("__REDIRECT" variable (:constant-flag t) nil [5303 5313])
+            ("__REDIRECT_NTH" variable (:constant-flag t) nil [5404 5418])
+            ("__ASMNAME" variable (:constant-flag t) nil [5618 5627])
+            ("__ASMNAME2" variable (:constant-flag t) nil [5687 5697])
+            ("__attribute_malloc__" variable (:constant-flag t) nil [6470 6490])
+            ("__attribute_pure__" variable (:constant-flag t) nil [6821 6839])
+            ("__attribute_used__" variable (:constant-flag t) nil [7231 7249])
+            ("__attribute_noinline__" variable (:constant-flag t) nil [7288 7310])
+            ("__attribute_deprecated__" variable (:constant-flag t) nil [7486 7510])
+            ("__attribute_format_arg__" variable (:constant-flag t) nil [8054 8078])
+            ("__attribute_format_strfmon__" variable (:constant-flag t) nil [8466 8494])
+            ("__nonnull" variable (:constant-flag t) nil [8722 8731])
+            ("__attribute_warn_unused_result__" variable (:constant-flag t) nil [9077 9109])
+            ("__always_inline" variable (:constant-flag t) nil [9335 9350])
+            ("__restrict_arr" variable (:constant-flag t) nil [10028 10042])
+            ("bits/wordsize.h" include (:system-flag t) nil [10297 10323])
+            ("__LDBL_REDIR1" variable (:constant-flag t) nil [11058 11071])
+            ("__LDBL_REDIR" variable (:constant-flag t) nil [11112 11124])
+            ("__LDBL_REDIR1_NTH" variable (:constant-flag t) nil [11158 11175])
+            ("__LDBL_REDIR_NTH" variable (:constant-flag t) nil [11224 11240])
+            ("__LDBL_REDIR_DECL" variable (:constant-flag t) nil [11282 11299]))          
+      :file "cdefs.h"
+      :pointmax 11340
+      :fsize 11339
+      :lastmodtime '(21704 40924 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__ptrvalue")
+          ("__ASMNAME" (spp-arg-list ("cname") 5627 . 5634) . ((symbol "__ASMNAME2" 5636 . 5646) (semantic-list "(__USER_LABEL_PREFIX__, cname)" 5647 . 5677)))
+          ("__LDBL_REDIR_DECL" (spp-arg-list ("name") 11299 . 11305))
+          ("__warndecl" (spp-arg-list ("name" "msg") 4351 . 4362) . 
+              ((EXTERN "extern" 4363 . 4369) (VOID "void" 4370 . 4374) (symbol "name" 4375 . 4379) (semantic-list "(void)" 4380 . 4386)))
+          ("__flexarr" . ((semantic-list "[0]" 4568 . 4571)))
+          ("__nonnull" (spp-arg-list ("params") 8731 . 8739))
+          ("__LDBL_REDIR_NTH" (spp-arg-list ("name" "proto") 11240 . 11253) . 
+              ((symbol "name" 11254 . 11258) (symbol "proto" 11259 . 11264) (symbol "__THROW" 11265 . 11272)))
+          ("__NTH" (spp-arg-list ("fct") 2071 . 2076) . ((symbol "fct" 2077 . 2080)))
+          ("__long_double_t" . ((LONG "long" 2779 . 2783) (DOUBLE "double" 2784 . 2790)))
+          ("__REDIRECT" (spp-arg-list ("name" "proto" "alias") 5313 . 5333) . 
+              ((symbol "name" 5334 . 5338) (symbol "proto" 5339 . 5344) (symbol "__asm__" 5345 . 5352) (semantic-list "(__ASMNAME (#alias))" 5353 . 5373)))
+          ("__END_DECLS" . ((close-paren "}" 2938 . 2939)))
+          ("__bos0" (spp-arg-list ("ptr") 4296 . 4301) . ((symbol "__builtin_object_size" 4302 . 4323) (semantic-list "(ptr, 0)" 4324 . 4332)))
+          ("__attribute_pure__")
+          ("__LDBL_REDIR1_NTH" (spp-arg-list ("name" "proto" "alias") 11175 . 11195) . 
+              ((symbol "name" 11196 . 11200) (symbol "proto" 11201 . 11206) (symbol "__THROW" 11207 . 11214)))
+          ("__STRING" (spp-arg-list ("x") 2653 . 2656) . ((punctuation "#" 2657 . 2658) (symbol "x" 2658 . 2659)))
+          ("__attribute_noinline__")
+          ("__bos" (spp-arg-list ("ptr") 4223 . 4228) . ((symbol "__builtin_object_size" 4229 . 4250) (semantic-list "(ptr, __USE_FORTIFY_LEVEL > 1)" 4251 . 4281)))
+          ("__attribute_warn_unused_result__")
+          ("__LDBL_REDIR1" (spp-arg-list ("name" "proto" "alias") 11071 . 11091) . ((symbol "name" 11092 . 11096) (symbol "proto" 11097 . 11102)))
+          ("_SYS_CDEFS_H" . ((number "1" 926 . 927)))
+          ("__ptr_t" . ((VOID "void" 2747 . 2751) (punctuation "*" 2752 . 2753)))
+          ("__attribute_used__" . ((symbol "__attribute__" 7250 . 7263) (semantic-list "((__unused__))" 7264 . 7278)))
+          ("__THROW")
+          ("__CONCAT" (spp-arg-list ("x" "y") 2624 . 2629) . ((spp-symbol-merge ((symbol "x" 2630 . 2631) (symbol "y" 2635 . 2636)) 2630 . 2636)))
+          ("__BEGIN_DECLS" . 
+              ((EXTERN "extern" 2904 . 2910) (string "\"C\"" 2911 . 2914) (open-paren "{" 2915 . 2916)))
+          ("__USING_NAMESPACE_C99" (spp-arg-list ("name") 3993 . 3999))
+          ("__unbounded")
+          ("__always_inline" . ((symbol "__inline" 9351 . 9359)))
+          ("__BEGIN_NAMESPACE_C99")
+          ("__END_NAMESPACE_C99")
+          ("__bounded")
+          ("__attribute_deprecated__")
+          ("__attribute_format_strfmon__" (spp-arg-list ("a" "b") 8494 . 8499))
+          ("__P" (spp-arg-list ("args") 2465 . 2471) . ((symbol "args" 2472 . 2476)))
+          ("__PMT" (spp-arg-list ("args") 2490 . 2496) . ((symbol "args" 2497 . 2501)))
+          ("__USING_NAMESPACE_STD" (spp-arg-list ("name") 3896 . 3902))
+          ("__ASMNAME2" (spp-arg-list ("prefix" "cname") 5697 . 5712) . 
+              ((symbol "__STRING" 5713 . 5721) (semantic-list "(prefix)" 5722 . 5730) (symbol "cname" 5731 . 5736)))
+          ("__attribute_malloc__")
+          ("__attribute_format_arg__" (spp-arg-list ("x") 8078 . 8081))
+          ("__restrict_arr")
+          ("__BEGIN_NAMESPACE_STD")
+          ("__END_NAMESPACE_STD")
+          ("__REDIRECT_NTH" (spp-arg-list ("name" "proto" "alias") 5418 . 5438) . 
+              ((symbol "name" 5446 . 5450) (symbol "proto" 5451 . 5456) (symbol "__THROW" 5457 . 5464) (symbol "__asm__" 5465 . 5472) (semantic-list "(__ASMNAME (#alias))" 5473 . 5493)))
+          ("__LDBL_REDIR" (spp-arg-list ("name" "proto") 11124 . 11137) . ((symbol "name" 11138 . 11142) (symbol "proto" 11143 . 11148)))
+          )
+)
+    (semanticdb-table "time.h"
+      :file "time.h"
+      :fsize 6828
+      :lastmodtime '(21704 40920 0 0))
+    (semanticdb-table "wait.h"
+      :file "wait.h"
+      :fsize 6620
+      :lastmodtime '(21704 40922 0 0))
+    (semanticdb-table "stat.h"
+      :file "stat.h"
+      :fsize 16068
+      :lastmodtime '(21704 40922 0 0)))
+  :file "!usr!include!sys!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

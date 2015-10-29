@@ -1,0 +1,84 @@
+;; Object replication/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "replication/"
+  :tables
+  (list
+    (semanticdb-table "sqlonline_replication_detail_state_mock_store.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("sqlonline_replication_detail_state_store.h" include nil nil [366 419])
+            ("apsara" type
+               (:members 
+                  ( ("sqlonline" type
+                       (:members 
+                          ( ("ReplicationDetailStateMockStore" type
+                               (:superclasses 
+                                  ( ("IReplicationDetailStateStore" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [541 548])
+                                    ("ReplicationDetailStateMockStore" function
+                                       (:constructor-flag t
+                                        :type ("ReplicationDetailStateMockStore" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [553 598])
+                                    ("Read" function
+                                       (:typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("addr" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [648 672])
+                                            ("state" variable
+                                               (:pointer 1
+                                                :type ("ReplicationDetailState" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [686 716]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [617 1057])
+                                    ("Write" function
+                                       (:typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("addr" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1108 1132])
+                                            ("state" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ReplicationDetailState" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1146 1182]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1076 1254])
+                                    ("private" label nil (reparse-symbol classsubparts) [1256 1264])
+                                    ("mLock" variable (:type ("apsara::PTMutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1269 1291])
+                                    ("mStateMap" variable (:type ("std::map" type
+                                         (:template-specifier 
+                                            ( ("std::string" type nil nil nil)
+                                              ("ReplicationDetailState" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [1296 1352]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [463 1355])
+                            ("NewReplicationDetailStateMockStore" function
+                               (:pointer 1
+                                :type ("IReplicationDetailStateStore" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1357 1477]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [440 1480]))                  
+                :type "namespace")
+                nil [421 1512]))          
+      :file "sqlonline_replication_detail_state_mock_store.cpp"
+      :pointmax 1540
+      :fsize 1539
+      :lastmodtime '(21964 53229 58055 737000)
+      :unmatched-syntax nil)
+    (semanticdb-table "sqlonline_replication_detail_state_store.h"
+      :file "sqlonline_replication_detail_state_store.h"
+      :fsize 1706
+      :lastmodtime '(21954 59484 830036 348000)))
+  :file "!apsarapangu!disk6!jingwen.hjw!work!trunk!build!debug64!sqlonline!coreimpl!replication!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

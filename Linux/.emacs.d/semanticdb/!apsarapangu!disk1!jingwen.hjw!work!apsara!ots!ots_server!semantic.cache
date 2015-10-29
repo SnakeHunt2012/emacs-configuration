@@ -1,0 +1,61 @@
+;; Object ots_server/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ots_server/"
+  :tables
+  (list
+    (semanticdb-table "SConscript"
+      :major-mode 'python-mode
+      :tags 
+        '( ("Import" code nil nil [25 38])
+            ("env" variable nil nil [39 54])
+            ("env" code nil nil [98 137])
+            ("env" code nil nil [139 184])
+            ("env" code nil nil [185 217])
+            ("env" code nil nil [218 254])
+            ("env" code nil nil [255 296])
+            ("env" code nil nil [297 337])
+            ("env" code nil nil [338 394])
+            ("env" code nil nil [395 454])
+            ("env" code nil nil [455 519])
+            ("env" code nil nil [520 567])
+            ("env" code nil nil [568 610])
+            ("env" code nil nil [611 646])
+            ("env" code nil nil [647 705])
+            ("env" code nil nil [706 750])
+            ("env" code nil nil [751 800])
+            ("env" code nil nil [801 862])
+            ("env" code nil nil [864 908])
+            ("env" code nil nil [909 962])
+            ("handlers_cpp" variable nil nil [964 1012])
+            ("pb_handlers_cpp" variable nil nil [1013 1067])
+            ("ots2_handlers_cpp" variable nil nil [1068 1129])
+            ("ots3_handlers_cpp" variable nil nil [1130 1191])
+            ("instance_manage_handlers_cpp" variable nil nil [1192 1265])
+            ("handlers_obj" variable nil nil [1266 1305])
+            ("pb_handlers_obj" variable nil nil [1306 1351])
+            ("ots2_handlers_obj" variable nil nil [1352 1401])
+            ("ots3_handlers_obj" variable nil nil [1402 1451])
+            ("instance_manage_handlers_obj" variable nil nil [1452 1523])
+            ("cppfiles" variable nil nil [1524 1552])
+            ("cppfiles" code nil nil [1553 1597])
+            ("cppfiles" code nil nil [1598 1649])
+            ("objfiles" variable nil nil [1650 1681])
+            ("env" code nil nil [1683 1846])
+            ("env" code nil nil [1847 2046])
+            ("env" code nil nil [2049 2735])
+            ("env" code nil nil [2737 2936])
+            ("env" code nil nil [2938 3743])
+            ("env" code nil nil [3745 3764])
+            ("env" code nil nil [3765 3782])
+            ("env" code nil nil [3783 3804])
+            ("env" code nil nil [3805 3833])
+            ("env" code nil nil [3834 3865])
+            ("env" code nil nil [3866 3890]))          
+      :file "SConscript"
+      :pointmax 3914
+      :fsize 3913
+      :lastmodtime '(21790 20467 483036 263000)
+      :unmatched-syntax nil))
+  :file "!apsarapangu!disk1!jingwen.hjw!work!apsara!ots!ots_server!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

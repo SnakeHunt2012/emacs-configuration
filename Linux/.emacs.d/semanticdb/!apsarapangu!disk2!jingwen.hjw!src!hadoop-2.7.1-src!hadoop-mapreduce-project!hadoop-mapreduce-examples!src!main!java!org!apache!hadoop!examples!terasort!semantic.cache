@@ -1,0 +1,46 @@
+;; Object terasort/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "terasort/"
+  :tables
+  (list
+    (semanticdb-table "job_history_summary.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("re" include nil nil [810 819])
+            ("sys" include nil nil [820 830])
+            ("pat" variable nil nil [832 888])
+            ("counterPat" variable nil nil [889 950])
+            ("parse" function (:arguments 
+              ( ("tail" variable nil (reparse-symbol function_parameters) [962 966]))              ) nil [952 1053])
+            ("mapStartTime" variable nil nil [1054 1071])
+            ("mapEndTime" variable nil nil [1072 1087])
+            ("reduceStartTime" variable nil nil [1088 1108])
+            ("reduceShuffleTime" variable nil nil [1109 1131])
+            ("reduceSortTime" variable nil nil [1132 1151])
+            ("reduceEndTime" variable nil nil [1152 1170])
+            ("reduceBytes" variable nil nil [1171 1187])
+            ("for" code nil nil [1189 2178])
+            ("runningMaps" variable nil nil [2179 2195])
+            ("shufflingReduces" variable nil nil [2196 2217])
+            ("sortingReduces" variable nil nil [2218 2237])
+            ("runningReduces" variable nil nil [2238 2257])
+            ("startTime" variable nil nil [2258 2364])
+            ("endTime" variable nil nil [2365 2463])
+            ("reduces" variable nil nil [2465 2493])
+            ("reduces" code nil nil [2494 2508])
+            ("print" code nil nil [2510 2571])
+            ("for" code nil nil [2572 2688])
+            ("print" code nil nil [2689 2694])
+            ("for" code nil nil [2696 2827])
+            ("for" code nil nil [2828 2938])
+            ("for" code nil nil [2938 3263])
+            ("print" code nil nil [3264 3302])
+            ("for" code nil nil [3303 3445]))          
+      :file "job_history_summary.py"
+      :pointmax 3445
+      :fsize 3444
+      :lastmodtime '(21904 57295 0 0)
+      :unmatched-syntax nil))
+  :file "!apsarapangu!disk2!jingwen.hjw!src!hadoop-2.7.1-src!hadoop-mapreduce-project!hadoop-mapreduce-examples!src!main!java!org!apache!hadoop!examples!terasort!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

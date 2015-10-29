@@ -1,0 +1,1529 @@
+;; Object common/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "common/"
+  :tables
+  (list
+    (semanticdb-table "public_error.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("APSARA_SQLONLINE_ONLINE_ERROR_H" variable (:constant-flag t) nil [49 80])
+            ("string" include (:system-flag t) nil [191 208])
+            ("apsara/common/exception.h" include (:system-flag t) nil [209 245])
+            ("apsara" type
+               (:members 
+                  ( ("sqlonline" type
+                       (:members 
+                          ( ("SQLErrorType" type
+                               (:typedef ("int")
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [289 314])
+                            ("SQL_OK" variable
+                               (:constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [316 366])
+                            ("SQL_ERROR" variable
+                               (:constant-flag t
+                                :default-value "-1"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [454 505])
+                            ("SQL_TIMEOUT_ERROR" variable
+                               (:constant-flag t
+                                :default-value "-2"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [1848 1899])
+                            ("SQL_DATA_OUT_OF_RANGE" variable
+                               (:constant-flag t
+                                :default-value "-3"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [2195 2246])
+                            ("SQL_PRIMARYKEY_INVALID" variable
+                               (:constant-flag t
+                                :default-value "-4"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [2351 2402])
+                            ("SQL_PARAMETER_INVALID" variable
+                               (:constant-flag t
+                                :default-value "-5"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [2488 2539])
+                            ("SQL_PARTITION_KEY_INVALID" variable
+                               (:constant-flag t
+                                :default-value "-6"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [2690 2741])
+                            ("SQL_EMPTY_TABLEGROUP" variable
+                               (:constant-flag t
+                                :default-value "-7"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [2944 2982])
+                            ("SQL_DATABASE_NOT_EXIST" variable
+                               (:constant-flag t
+                                :default-value "-1001"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [3258 3312])
+                            ("SQL_OBJECT_NOT_EXIST" variable
+                               (:constant-flag t
+                                :default-value "-1002"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [3458 3512])
+                            ("SQL_OBJECT_ALREADY_EXIST" variable
+                               (:constant-flag t
+                                :default-value "-1003"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [3664 3718])
+                            ("SQL_INVALID_OBJECT_SCHEMA" variable
+                               (:constant-flag t
+                                :default-value "-1004"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [3868 3922])
+                            ("SQL_PARTITION_NOT_FOUND" variable
+                               (:constant-flag t
+                                :default-value "-1005"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [4068 4122])
+                            ("SQL_INVALID_META_PARAMETER" variable
+                               (:constant-flag t
+                                :default-value "-1007"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [4270 4324])
+                            ("SQL_TOO_OFTEN_CAPACITY_UNIT_ADJUSTMENT" variable
+                               (:constant-flag t
+                                :default-value "-1008"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [4495 4552])
+                            ("SQL_PRIMARYKEY_ALREADY_EXIST" variable
+                               (:constant-flag t
+                                :default-value "-2001"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [4854 4908])
+                            ("SQL_PRIMARYKEY_NOT_EXIST" variable
+                               (:constant-flag t
+                                :default-value "-2002"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [5070 5124])
+                            ("SQL_TXN_SESSION_NOT_EXIST" variable
+                               (:constant-flag t
+                                :default-value "-2003"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [5641 5695])
+                            ("SQL_TXN_LOCK_KEY_FAIL" variable
+                               (:constant-flag t
+                                :default-value "-2004"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [5955 6009])
+                            ("SQL_PARTITION_NOT_READY" variable
+                               (:constant-flag t
+                                :default-value "-2005"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [6328 6382])
+                            ("SQL_VIEW_INCOMPLETE_PK" variable
+                               (:constant-flag t
+                                :default-value "-2006"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [6816 6869])
+                            ("SQL_INVALID_PK" variable
+                               (:constant-flag t
+                                :default-value "-2007"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [7177 7230])
+                            ("SQL_LG_NOT_EXIST" variable
+                               (:constant-flag t
+                                :default-value "-2008"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [7396 7449])
+                            ("SQL_INVLAID_LG_QUALIFIER" variable
+                               (:constant-flag t
+                                :default-value "-2009"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [7671 7724])
+                            ("SQL_LG_QUALIFIER_REQUIRED" variable
+                               (:constant-flag t
+                                :default-value "-2010"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [7957 8010])
+                            ("SQL_TXN_SESSION_BUSY" variable
+                               (:constant-flag t
+                                :default-value "-2011"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [8179 8232])
+                            ("SQL_COMMIT_LOG_FAIL" variable
+                               (:constant-flag t
+                                :default-value "-2013"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [8386 8439])
+                            ("SQL_COMMIT_MEMORY_FAIL" variable
+                               (:constant-flag t
+                                :default-value "-2014"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [8668 8721])
+                            ("SQL_NULL_VIEW_PK" variable
+                               (:constant-flag t
+                                :default-value "-2015"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [8869 8922])
+                            ("SQL_INVALID_COLUMN_NAME" variable
+                               (:constant-flag t
+                                :default-value "-2016"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [9108 9161])
+                            ("SQL_DELETE_ROW_PARA_ERROR" variable
+                               (:constant-flag t
+                                :default-value "-2017"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [9255 9308])
+                            ("SQL_COLUMN_TYPE_MISMATCH" variable
+                               (:constant-flag t
+                                :default-value "-2018"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [9407 9460])
+                            ("SQL_TXN_INVALID_SCOPE" variable
+                               (:constant-flag t
+                                :default-value "-2019"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [9570 9623])
+                            ("SQL_PARTITION_SELF_PROTECTION" variable
+                               (:constant-flag t
+                                :default-value "-2020"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [9738 9791])
+                            ("SQL_OUT_OF_TRANSACTION_LIMIT" variable
+                               (:constant-flag t
+                                :default-value "-2021"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [9915 9968])
+                            ("SQL_BAD_SESSION_STATUS" variable
+                               (:constant-flag t
+                                :default-value "-2022"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [10156 10209])
+                            ("SQL_OUT_OF_CELL_COUNT_LIMIT" variable
+                               (:constant-flag t
+                                :default-value "-2030"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [10332 10385])
+                            ("SQL_OUT_OF_ROW_SIZE_LIMIT" variable
+                               (:constant-flag t
+                                :default-value "-2031"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [10495 10548])
+                            ("SQL_OUT_OF_CELL_VALUE_SIZE_LIMIT" variable
+                               (:constant-flag t
+                                :default-value "-2032"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [10659 10712])
+                            ("SQL_OUT_OF_CELL_NAME_SIZE_LIMIT" variable
+                               (:constant-flag t
+                                :default-value "-2033"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [10827 10880])
+                            ("SQL_NOT_ENOUGH_CAPACITY_UNIT" variable
+                               (:constant-flag t
+                                :default-value "-2034"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [10947 10994])
+                            ("SQL_TABLE_NOT_READY" variable
+                               (:constant-flag t
+                                :default-value "-2035"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [11267 11317])
+                            ("SQL_TOO_MANY_CAPACITY_UNIT_ON_ONE_PARTITION" variable
+                               (:constant-flag t
+                                :default-value "-2036"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [11746 11808])
+                            ("SQL_NOT_ENOUGH_BLOCK_MANAGER_SPACE" variable
+                               (:constant-flag t
+                                :default-value "-2037"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [11875 11928])
+                            ("SQL_ASYNC_READ_CONTROLLER_BUSY" variable
+                               (:constant-flag t
+                                :default-value "-2038"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [11998 12046])
+                            ("SQL_MODIFY_CONDITION_CHECK_FAIL" variable
+                               (:constant-flag t
+                                :default-value "-2040"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [12164 12217])
+                            ("SQL_NOT_REPLICATABLE" variable
+                               (:constant-flag t
+                                :default-value "-2041"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [12303 12342])
+                            ("SQL_PERMISSION_DENIED_FOR_SPLIT" variable
+                               (:constant-flag t
+                                :default-value "-2042"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [12497 12547])
+                            ("SQL_PERMISSION_DENIED_FOR_MERGE" variable
+                               (:constant-flag t
+                                :default-value "-2043"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [12698 12748])
+                            ("SQL_PERMISSION_DENIED_FOR_UNLOAD" variable
+                               (:constant-flag t
+                                :default-value "-2044"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [12902 12953])
+                            ("SQL_SERVER_BUSY" variable
+                               (:constant-flag t
+                                :default-value "-3001"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [13014 13067])
+                            ("SQL_SERVER_NOT_AVAILABLE" variable
+                               (:constant-flag t
+                                :default-value "-3002"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [14530 14582])
+                            ("SqlStorageException" type
+                               (:superclasses 
+                                  ( ("ExceptionBase" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [14635 14642])
+                                    ("mErrorCode" variable (:type "int") (reparse-symbol classsubparts) [14647 14662])
+                                    ("public" label nil (reparse-symbol classsubparts) [14663 14670])
+                                    ("SqlStorageException" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("strMsg" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [14695 14721])
+                                            ("errorCode" variable (:type "int") (reparse-symbol arg-sub-list) [14722 14736]))                                          
+                                        :type ("SqlStorageException" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [14675 14815])
+                                    ("SqlStorageException" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [14821 14853])
+                                    ("GetClassName" function
+                                       (:methodconst-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [14874 14956])
+                                    ("Clone" function
+                                       (:methodconst-flag t
+                                        :type ("std::tr1::shared_ptr" type
+                                             (:template-specifier 
+                                                ( ("ExceptionBase" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [14977 15122])
+                                    ("GetErrorCode" function
+                                       (:methodconst-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [15128 15175])
+                                    ("InitWithoutStackTrace" function
+                                       (:arguments 
+                                          ( ("file" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [15208 15225])
+                                            ("function" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [15226 15247])
+                                            ("line" variable (:type "int") (reparse-symbol arg-sub-list) [15248 15257]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [15181 15343]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [14584 15346]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [266 15349]))                  
+                :type "namespace")
+                nil [247 15381]))          
+      :file "public_error.h"
+      :pointmax 15417
+      :fsize 15416
+      :lastmodtime '(21790 20442 236036 254000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("APSARA_SQLONLINE_ONLINE_ERROR_H")
+          )
+)
+    (semanticdb-table "table_meta.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("APSARA_SQLONLINE_TABLE_META_H" variable (:constant-flag t) nil [47 76])
+            ("column_meta.h" include nil nil [78 102])
+            ("locality_group_meta.h" include nil nil [103 135])
+            ("sqlonline/core/tablet_meta.h" include nil nil [136 175])
+            ("sqlonline/common/replication_state.h" include nil nil [176 223])
+            ("sqlonline/common/common.h" include nil nil [224 260])
+            ("sqlonline/common/public_error.h" include nil nil [261 303])
+            ("sqlonline/common/sqlonline_macro.h" include nil nil [304 349])
+            ("sqlonline/protocol/sqlmaster.pb.h" include nil nil [350 394])
+            ("apsara/pangu.h" include nil nil [395 420])
+            ("apsara/common/uuid.h" include nil nil [421 452])
+            ("apsara/common/time_stamp.h" include nil nil [453 490])
+            ("apsara/common/string_tools.h" include nil nil [491 530])
+            ("sqlonline/core/sqlonline_version.h" include nil nil [531 576])
+            ("string" include (:system-flag t) nil [577 594])
+            ("deque" include (:system-flag t) nil [595 611])
+            ("TestMetaCompatibility" type
+               (:prototype t
+                :type "class")
+                nil [613 641])
+            ("apsara" type
+               (:members 
+                  ( ("sqlonline" type
+                       (:members 
+                          ( ("StringComparatorRowBased" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [685 716])
+                            ("TableType" type
+                               (:members 
+                                  ( ("TT_TABLE" variable
+                                       (:constant-flag t
+                                        :default-value (750 751)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [739 751])
+                                    ("TT_VIEW" variable
+                                       (:constant-flag t
+                                        :default-value (767 768)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [757 768])
+                                    ("TT_TABLE_GROUP" variable
+                                       (:constant-flag t
+                                        :default-value (791 792)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [774 792]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [718 795])
+                            ("TableVersion" type
+                               (:members 
+                                  ( ("TABLE_VERSION_1_0" variable
+                                       (:constant-flag t
+                                        :default-value (841 842)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [821 842])
+                                    ("TABLE_VERSION_2_0" variable
+                                       (:constant-flag t
+                                        :default-value (868 869)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [848 869])
+                                    ("TABLE_VERSION_3_0" variable
+                                       (:constant-flag t
+                                        :default-value (895 896)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [875 896]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [797 899])
+                            ("AbstractTableMeta" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [901 925])
+                            ("AbstractTableMetaPtr" type
+                               (:typedef ("std::tr1::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("AbstractTableMeta" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [927 996])
+                            ("ConstAbstractTableMetaPtr" type
+                               (:typedef ("std::tr1::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("AbstractTableMeta" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [997 1077])
+                            ("TabletStoreMeta" type
+                               (:typedef ("AbstractTableMeta" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1079 1121])
+                            ("TabletStoreMetaPtr" type
+                               (:typedef ("std::tr1::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("TabletStoreMeta" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1122 1187])
+                            ("KeyPrefixSet" type
+                               (:typedef ("std::set" type
+                                     (:template-specifier 
+                                        ( ("std::string" type nil nil nil)
+                                          ("StringComparatorRowBased" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1189 1258])
+                            ("CapacityControl" type
+                               (:superclasses 
+                                  ( ("Jsonizable" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1304 1311])
+                                    ("CapacityControl" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :type ("CapacityControl" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1316 1334])
+                                    ("Jsonize" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("json" variable
+                                               (:reference 1
+                                                :type ("JsonWrapper" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1353 1371]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1340 1372])
+                                    ("mReadCapacity" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1378 1400])
+                                    ("mWriteCapacity" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1405 1428])
+                                    ("mLastIncrease" variable (:type ("apsara::common::timing::UtcTime" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1433 1479])
+                                    ("mDecreaseTime" variable (:type ("std::deque" type
+                                         (:template-specifier 
+                                            ( ("apsara::common::timing::UtcTime" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [1484 1542])
+                                    ("UpdateCapacity" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("read" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1681 1694])
+                                            ("write" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1695 1709])
+                                            ("maxDecCount" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1710 1730]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1661 1731])
+                                    ("IsValid" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [1818 1839])
+                                    ("FilterOutOutOfDate" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1901 1927])
+                                    ("private" label nil (reparse-symbol classsubparts) [1928 1936])
+                                    ("FilterOutOutOfDate" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("now" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("apsara::common::timing::UtcTime" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1965 2008]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1941 2009]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1260 2012])
+                            ("AbstractTableMeta" type
+                               (:superclasses 
+                                  ( ("Jsonizable" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [2060 2067])
+                                    ("AbstractTableMeta" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :type ("AbstractTableMeta" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2072 2092])
+                                    ("AbstractTableMeta" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("tableName" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2115 2144]))                                          
+                                        :type ("AbstractTableMeta" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2097 2145])
+                                    ("AbstractTableMeta" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2151 2180])
+                                    ("SetID" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("ID" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2197 2219]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2186 2220])
+                                    ("GetID" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2225 2258])
+                                    ("SetName" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("name" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2277 2301]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2264 2302])
+                                    ("GetName" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2307 2342])
+                                    ("SetSourceTableID" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("ID" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2370 2392]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2348 2393])
+                                    ("GetSourceTableID" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2398 2442])
+                                    ("SetSourceTableName" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("strName" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2472 2499]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2448 2500])
+                                    ("GetSourceTableName" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2505 2551])
+                                    ("AddPKColumn" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("columnMeta" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ColumnMeta" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2574 2603]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2557 2604])
+                                    ("GetPKColumns" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("ColumnMeta" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [2609 2661])
+                                    ("GetPKColumns" function
+                                       (:prototype-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("ColumnMeta" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [2719 2759])
+                                    ("ClearPKColumns" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2764 2786])
+                                    ("AddLocalityGroupMeta" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("localityGroupMeta" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("LocalityGroupMeta" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2822 2865]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2796 2866])
+                                    ("SetSystemLocalityGroup" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("localityGroupMeta" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("LocalityGroupMeta" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2899 2942]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2871 2943])
+                                    ("GetLocalityGroupMetas" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("LocalityGroupMeta" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [2948 3016])
+                                    ("RemoveLocalityGroupMeta" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("strLocalityGroupName" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3156 3196]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3119 3197])
+                                    ("FillLocalityGroupsID" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3242 3270])
+                                    ("ClearLocalityGroupMetas" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3275 3306])
+                                    ("SetAllBloomFilterType" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("type" variable (:type ("SQLBloomFilterType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3338 3362]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3311 3363])
+                                    ("ResetBloomFilterTypeWithLgName" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("strLocalityGroupName" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3404 3444])
+                                            ("type" variable (:type ("SQLBloomFilterType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3445 3469]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3368 3470])
+                                    ("ResetBlockCache" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("strLocalityGroupName" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3496 3536])
+                                            ("flag" variable (:type "bool") (reparse-symbol arg-sub-list) [3537 3547]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3475 3548])
+                                    ("ResetBlockSize" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("strLocalityGroupName" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3573 3613])
+                                            ("bs" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3614 3625]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3553 3626])
+                                    ("AddPageColumn" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("pageColumn" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ColumnMeta" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3651 3680]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3632 3681])
+                                    ("GetPageColumns" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("ColumnMeta" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [3686 3740])
+                                    ("ClearPageColumns" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3745 3769])
+                                    ("AddTabletMeta" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("tabletMeta" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("TabletMeta" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3794 3823]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3775 3824])
+                                    ("GetTabletMetas" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("TabletMeta" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [3829 3883])
+                                    ("ClearTabletMetas" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3888 3912])
+                                    ("SetRedoLogState" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("isUsingLog" variable (:type "bool") (reparse-symbol arg-sub-list) [3939 3955]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3918 3956])
+                                    ("GetRedoLogState" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [3961 3990])
+                                    ("GetTableType" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :type ("TableType" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3996 4027])
+                                    ("SetTableType" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("tableType" variable (:type ("TableType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4050 4070]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4032 4071])
+                                    ("GetPKNames" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [4077 4129])
+                                    ("GetPKTypes" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("VariantType" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [4134 4186])
+                                    ("FillColumnsID" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4300 4329])
+                                    ("GetTableMetaVersion" function
+                                       (:methodconst-flag t
+                                        :type ("int64_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4335 4407])
+                                    ("GetTabletMetaByPartID" function
+                                       (:prototype-flag t
+                                        :constant-flag t
+                                        :arguments 
+                                          ( ("partID" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4453 4479]))                                          
+                                        :type ("TabletMeta" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4413 4480])
+                                    ("CheckMetaAndFillDefaultValue" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4486 4530])
+                                    ("CheckLocalityGroupMeta" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4536 4572])
+                                    ("CheckPrimaryKeyMeta" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4577 4610])
+                                    ("CheckPageColumnMeta" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4615 4648])
+                                    ("ToMetaString" function
+                                       (:prototype-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4654 4681])
+                                    ("Jsonize" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("json" variable
+                                               (:reference 1
+                                                :type ("JsonWrapper" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4699 4717]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4686 4718])
+                                    ("Clone" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :type ("AbstractTableMetaPtr" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4724 4767])
+                                    ("GetKeyPrefixSet" function
+                                       (:methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("userLgsKeyPrefix" variable
+                                               (:reference 1
+                                                :type ("KeyPrefixSet" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4802 4833])
+                                            ("sysLgKeyPrefix" variable
+                                               (:reference 1
+                                                :type ("KeyPrefixSet" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4834 4863]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4773 4961])
+                                    ("GetRevision" function
+                                       (:methodconst-flag t
+                                        :type ("int64_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4967 5032])
+                                    ("WithSystemColumn" function
+                                       (:methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [5038 5109])
+                                    ("GetTableVersion" function
+                                       (:methodconst-flag t
+                                        :type ("TableVersion" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5137 5246])
+                                    ("SetTableVersion" function
+                                       (:arguments 
+                                          ( ("version" variable (:type ("TableVersion" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5273 5294]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [5252 5361])
+                                    ("GetCapacityControl" function
+                                       (:methodconst-flag t
+                                        :constant-flag t
+                                        :type ("CapacityControl" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5367 5461])
+                                    ("GetCapacityControl" function (:type ("CapacityControl" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5466 5548])
+                                    ("SetCapacityControl" function
+                                       (:arguments 
+                                          ( ("capacityControl" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("CapacityControl" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5577 5616]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [5553 5672])
+                                    ("SetReplicationState" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("replicationState" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ReplicationState" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5703 5744]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [5678 5745])
+                                    ("GetReplicationState" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :constant-flag t
+                                        :type ("ReplicationState" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5750 5802])
+                                    ("SetCuCompensationRatio" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [5836 5845]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [5808 5846])
+                                    ("GetCuCompensationRatio" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :type "double")
+                                        (reparse-symbol classsubparts) [5851 5889])
+                                    ("SetCanAutoSplit" function
+                                       (:arguments 
+                                          ( ("canAutoSplit" variable (:type "bool") (reparse-symbol arg-sub-list) [5916 5934]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [5895 5984])
+                                    ("GetCanAutoSplit" function
+                                       (:methodconst-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [5990 6060])
+                                    ("SetTimeToLive" function
+                                       (:arguments 
+                                          ( ("ttl" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6085 6097]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [6066 6387])
+                                    ("GetTimeToLive" function
+                                       (:methodconst-flag t
+                                        :type ("int64_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6393 6463])
+                                    ("SetMaxDataVersions" function
+                                       (:arguments 
+                                          ( ("maxDataVersions" variable (:type ("MaxNumVersions" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6493 6524]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [6469 6848])
+                                    ("GetMaxDataVersions" function
+                                       (:methodconst-flag t
+                                        :type ("MaxNumVersions" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6854 6940])
+                                    ("SetLegacyDataVersion" function
+                                       (:arguments 
+                                          ( ("legacyDataVersion" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6972 6998]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [6946 7058])
+                                    ("GetLegacyDataVersion" function
+                                       (:methodconst-flag t
+                                        :type ("int64_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7064 7147])
+                                    ("SetBlockType" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("bt" variable (:type ("StoreBlockType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7171 7189]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [7153 7190])
+                                    ("GetBlockType" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :type ("StoreBlockType" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7196 7232])
+                                    ("IsRootTable" function
+                                       (:methodconst-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [7238 7341])
+                                    ("Update" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("req" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("SQLUpdateTableRequestPB" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7359 7394])
+                                            ("numPart" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7395 7411]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [7347 7412])
+                                    ("GetUpdateResult" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("pRsp" variable
+                                               (:pointer 1
+                                                :type ("SQLUpdateTableResponsePB" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7438 7469]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [7417 7470])
+                                    ("protected" label nil (reparse-symbol classsubparts) [7472 7482])
+                                    ("ContainSystemColumn" function
+                                       (:methodconst-flag t
+                                        :arguments 
+                                          ( ("columnMetas" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("ColumnMeta" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [7512 7555]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [7487 7850])
+                                    ("private" label nil (reparse-symbol classsubparts) [7852 7860])
+                                    ("JsonizeV9" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("json" variable
+                                               (:reference 1
+                                                :type ("JsonWrapper" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7943 7961]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [7928 7962])
+                                    ("JsonizeV10" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("json" variable
+                                               (:reference 1
+                                                :type ("JsonWrapper" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8048 8066]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8032 8067])
+                                    ("JsonizeV11" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("json" variable
+                                               (:reference 1
+                                                :type ("JsonWrapper" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8153 8171]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8137 8172])
+                                    ("JsonizeV12" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("json" variable
+                                               (:reference 1
+                                                :type ("JsonWrapper" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8258 8276]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8242 8277])
+                                    ("JsonizeV13" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("json" variable
+                                               (:reference 1
+                                                :type ("JsonWrapper" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8363 8381]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8347 8382])
+                                    ("JsonizeV14" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("json" variable
+                                               (:reference 1
+                                                :type ("JsonWrapper" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8403 8421]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8387 8422])
+                                    ("JsonizeV15" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("json" variable
+                                               (:reference 1
+                                                :type ("JsonWrapper" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8448 8466]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8432 8467])
+                                    ("JsonizeV16" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("json" variable
+                                               (:reference 1
+                                                :type ("JsonWrapper" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8488 8506]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8472 8507])
+                                    ("protected" label nil (reparse-symbol classsubparts) [8509 8519])
+                                    ("skCurrentVersion" variable
+                                       (:typemodifiers ("static")
+                                        :constant-flag t
+                                        :default-value "16"
+                                        :type ("int64_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8657 8700])
+                                    ("sDefaultMaxDataVersions" variable
+                                       (:typemodifiers ("static")
+                                        :constant-flag t
+                                        :default-value "3"
+                                        :type ("int64_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8705 8754])
+                                    ("mVersion" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8760 8777])
+                                    ("mID" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8783 8799])
+                                    ("mName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8804 8822])
+                                    ("mSourceTableID" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8827 8854])
+                                    ("mSourceTableName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8962 8991])
+                                    ("mRedoLogFlag" variable (:type "bool") (reparse-symbol classsubparts) [8996 9014])
+                                    ("mPKColumns" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("ColumnMeta" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [9080 9115])
+                                    ("mLocalityGroups" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("LocalityGroupMeta" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [9120 9167])
+                                    ("mPageColumns" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("ColumnMeta" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [9172 9209])
+                                    ("mTabletMetas" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("TabletMeta" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [9214 9251])
+                                    ("mTableType" variable (:type ("TableType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9257 9278])
+                                    ("mRevision" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9392 9410])
+                                    ("mTableVersion" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9613 9635])
+                                    ("mCapacityControl" variable (:type ("CapacityControl" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9718 9751])
+                                    ("mCuCompensationRatio" variable (:type "double") (reparse-symbol classsubparts) [9756 9784])
+                                    ("mReplicationState" variable (:type ("ReplicationState" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9872 9907])
+                                    ("mCanAutoSplit" variable (:type "bool") (reparse-symbol classsubparts) [10037 10056])
+                                    ("mTimeToLive" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10238 10258])
+                                    ("mMaxDataVersions" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10321 10346])
+                                    ("mLegacyDataVersion" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10472 10499])
+                                    ("mStoreBlockType" variable (:type ("StoreBlockType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10505 10536])
+                                    ("MetaRevisionEditor" friend nil (reparse-symbol classsubparts) [10542 10574])
+                                    ("TestMetaCompatibility" variable (:type "int") (reparse-symbol classsubparts) [10594 10616]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [2014 10619])
+                            ("TableMeta" type
+                               (:superclasses 
+                                  ( ("AbstractTableMeta" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [10666 10673])
+                                    ("TableMeta" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :type ("TableMeta" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [10678 10690])
+                                    ("RemoveLocalityGroupMeta" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("strLocalityGroupName" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [10737 10777]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [10700 10778])
+                                    ("AddDefinedColumn" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("columnMeta" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ColumnMeta" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [10810 10839]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [10788 10840])
+                                    ("GetDefinedColumns" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("ColumnMeta" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [10845 10902])
+                                    ("ClearDefinedColumns" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [10907 10934])
+                                    ("FillColumnsID" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [10975 11004])
+                                    ("CheckMetaAndFillDefaultValue" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [11013 11049])
+                                    ("CheckDefinedColumnMeta" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [11054 11090])
+                                    ("CheckCanAddDefinedColumn" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :arguments 
+                                          ( ("defColumnMeta" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ColumnMeta" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [11125 11157]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [11095 11164])
+                                    ("Jsonize" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("json" variable
+                                               (:reference 1
+                                                :type ("JsonWrapper" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [11182 11200]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [11169 11201])
+                                    ("Clone" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :type ("AbstractTableMetaPtr" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [11207 11250])
+                                    ("CheckPKDefinedColumnExists" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :throws ("SqlStorageException")
+                                        :constant-flag t
+                                        :arguments 
+                                          ( ("cmColumnMeta" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ColumnMeta" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [11494 11525]))                                          
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [11448 11560])
+                                    ("WithSystemColumn" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [11566 11604])
+                                    ("GetKeyPrefixSet" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("userLgsKeyPrefix" variable
+                                               (:reference 1
+                                                :type ("KeyPrefixSet" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [11639 11670])
+                                            ("sysLgKeyPrefix" variable
+                                               (:reference 1
+                                                :type ("KeyPrefixSet" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [11671 11700]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [11610 11707])
+                                    ("private" label nil (reparse-symbol classsubparts) [11709 11717])
+                                    ("CheckSingleDefinedColumn" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :arguments 
+                                          ( ("defColumnMeta" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ColumnMeta" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [11972 12004]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [11942 12011])
+                                    ("private" label nil (reparse-symbol classsubparts) [12013 12021])
+                                    ("mDefinedColumns" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("ColumnMeta" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [12026 12066]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [10621 12069])
+                            ("TableMetaPtr" type
+                               (:typedef ("std::tr1::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("TableMeta" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [12071 12124])
+                            ("ConstTableMetaPtr" type
+                               (:typedef ("std::tr1::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("TableMeta" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [12125 12189])
+                            ("ViewMeta" type
+                               (:superclasses 
+                                  ( ("AbstractTableMeta" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [12235 12242])
+                                    ("ViewMeta" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :type ("ViewMeta" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [12247 12258])
+                                    ("RemoveLocalityGroupMeta" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("strLocalityGroupName" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [12305 12345]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [12268 12346])
+                                    ("AddAttributeColumn" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("attrColumn" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ColumnMeta" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [12380 12409]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [12356 12410])
+                                    ("GetAttributeColumns" function
+                                       (:prototype-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("ColumnMeta" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [12474 12521])
+                                    ("RemoveAttributeColumn" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("strColumnName" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [12553 12586]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [12526 12587])
+                                    ("GetAttributeColumns" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("ColumnMeta" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [12592 12651])
+                                    ("ClearAttributeColumns" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [12656 12685])
+                                    ("FillColumnsID" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [12691 12720])
+                                    ("CheckMetaAndFillDefaultValue" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [12726 12762])
+                                    ("CheckAttributeColumnMeta" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [12767 12805])
+                                    ("CheckCanAddAttributeColumn" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :arguments 
+                                          ( ("attrColumnMeta" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ColumnMeta" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [12842 12875]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [12810 12882])
+                                    ("Jsonize" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("json" variable
+                                               (:reference 1
+                                                :type ("JsonWrapper" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [12900 12918]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [12887 12919])
+                                    ("Clone" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :type ("AbstractTableMetaPtr" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [12929 12972])
+                                    ("WithSystemColumn" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [12978 13016])
+                                    ("GetKeyPrefixSet" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("userLgsKeyPrefix" variable
+                                               (:reference 1
+                                                :type ("KeyPrefixSet" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [13051 13082])
+                                            ("sysLgKeyPrefix" variable
+                                               (:reference 1
+                                                :type ("KeyPrefixSet" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [13083 13112]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [13022 13119])
+                                    ("private" label nil (reparse-symbol classsubparts) [13121 13129])
+                                    ("CheckSingleAttributeColumn" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :arguments 
+                                          ( ("attrColumnMeta" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ColumnMeta" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [13393 13426]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [13361 13433])
+                                    ("private" label nil (reparse-symbol classsubparts) [13435 13443])
+                                    ("mAttributeColumns" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("ColumnMeta" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [13448 13490]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [12191 13493])
+                            ("ViewMetaPtr" type
+                               (:typedef ("std::tr1::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("ViewMeta" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [13495 13546])
+                            ("ConstViewMetaPtr" type
+                               (:typedef ("std::tr1::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("ViewMeta" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [13547 13609]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [662 13612])
+                    ("ToString" function
+                       (:type ("std::string" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("t" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sqlonline::TableVersion" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13680 13713]))                          
+                        :typemodifiers ("static" "inline"))
+                        (reparse-symbol namespacesubparts) [13634 14010]))                  
+                :type "namespace")
+                nil [643 14013]))          
+      :file "table_meta.h"
+      :pointmax 14078
+      :fsize 14077
+      :lastmodtime '(21790 20442 230036 160000)
+      :unmatched-syntax '((punctuation 10593 . 10594) (punctuation 10592 . 10593) (CLASS 10586 . 10591) (FRIEND 10579 . 10585))
+      :lexical-table 
+        '(("APSARA_SQLONLINE_TABLE_META_H")
+          )
+)
+    (semanticdb-table "replication_state.h"
+      :file "replication_state.h"
+      :fsize 2096
+      :lastmodtime '(21790 20442 233036 81000))
+    (semanticdb-table "common.h"
+      :file "common.h"
+      :fsize 23316
+      :lastmodtime '(21790 20442 236036 254000))
+    (semanticdb-table "sqlonline_macro.h"
+      :file "sqlonline_macro.h"
+      :fsize 13746
+      :lastmodtime '(21790 20442 229036 336000)))
+  :file "!apsarapangu!disk1!jingwen.hjw!work!apsara!sqlonline!common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

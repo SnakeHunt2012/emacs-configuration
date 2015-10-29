@@ -1,0 +1,29 @@
+;; Object shennong_online_config/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "shennong_online_config/"
+  :tables
+  (list
+    (semanticdb-table "check_counter.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("simplejson" include nil nil [1 26])
+            ("f" variable nil nil [28 65])
+            ("src" variable nil nil [66 82])
+            ("f" code nil nil [83 92])
+            ("rrd_list" variable nil nil [94 126])
+            ("rrd_list" code nil nil [127 142])
+            ("rrd_dict" variable nil nil [143 154])
+            ("for" code nil nil [155 198])
+            ("category_dict" variable nil nil [199 215])
+            ("category_list" variable nil nil [216 232])
+            ("for" code nil nil [233 373])
+            ("for" code nil nil [374 518])
+            ("for" code nil nil [519 659]))          
+      :file "check_counter.py"
+      :pointmax 659
+      :fsize 658
+      :lastmodtime '(21987 54801 331036 668000)
+      :unmatched-syntax nil))
+  :file "!apsarapangu!disk6!jingwen.hjw!work!trunk!sqlonline!config!shennong_online_config!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

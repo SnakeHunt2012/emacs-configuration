@@ -1,0 +1,66 @@
+;; Object cedet-1.1/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cedet-1.1/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("CEDET_HOME" variable (:default-value ("\"$(CURDIR)\"")) nil [1205 1228])
+            ("CEDET_ELISP_PACKAGES" variable (:default-value ("common" "speedbar" "eieio" "semantic" "srecode" "ede" "cogre" "contrib")) nil [1263 1357])
+            ("CEDET_PACKAGES" variable (:default-value ("$(CEDET_ELISP_PACKAGES)" "tests")) nil [1358 1407])
+            ("EMACSFLAGS" variable (:default-value ("-batch" "--no-site-file")) nil [1443 1476])
+            ("FIND" variable (:default-value ("find")) nil [1585 1595])
+            ("PREFIX" variable (:default-value ("/usr/local")) nil [1625 1643])
+            ("INFO_DIR" variable (:default-value ("$(PREFIX)/share/info")) nil [1644 1674])
+            ("INSTALL_INFO" variable (:default-value ("ginstall-info")) nil [1675 1702])
+            ("CEDET_VERSION" variable (:default-value ("$(shell grep \"defconst cedet-version\" common/cedet.el | cut -d \" \" -f 3)")) nil [1765 1852])
+            ("CEDET_FILES" variable (:default-value ("Makefile" "INSTALL" "cedet-build.el" "cedet-update-version.el" "NEWS" "PRERELEASE_CHECKLIST" "USING_CEDET_FROM_BZR")) nil [1853 1968])
+            ("DIST_ROOT" variable (:default-value ("cedet-$(CEDET_VERSION)")) nil [1968 2001])
+            ("DIST_DIR" variable (:default-value ("$(CEDET_HOME)/$(DIST_ROOT)")) nil [2001 2037])
+            ("DIST_FILE" variable (:default-value ("$(DIST_DIR).tar.gz")) nil [2037 2066])
+            ("__BUILD_AUTOLOADS" variable (:default-value ("$(patsubst %,%-autoloads,$(CEDET_ELISP_PACKAGES))")) nil [2067 2135])
+            ("__CLEAN_AUTOLOADS" variable (:default-value ("$(patsubst %,clean-%,$(__BUILD_AUTOLOADS))")) nil [2135 2196])
+            ("__DOMAKE" variable (:default-value ("$(MAKE)" "$(MFLAGS)" "EMACS=\"$(EMACS)\"" "EMACSFLAGS=\"$(EMACSFLAGS)\"" "SHELL=\"$(SHELL)\"")) nil [2196 2284])
+            ("all" function (:arguments ("clean-autoloads" "packages")) nil [2298 2328])
+            ("bootstrap" function (:arguments ("clean-all" "packages")) nil [2329 2359])
+            ("packages" function (:arguments ("$(CEDET_PACKAGES)")) nil [2360 2388])
+            (".PHONY" function (:arguments ("$(CEDET_PACKAGES)")) nil [2389 2415])
+            ("$(CEDET_PACKAGES)" function nil nil [2415 2470])
+            (".PHONY" function (:arguments ("ebuild")) nil [2471 2486])
+            ("ebuild" function nil nil [2486 2562])
+            ("autoloads" function (:arguments ("$(__BUILD_AUTOLOADS)")) nil [2577 2609])
+            (".PHONY" function (:arguments ("$(__BUILD_AUTOLOADS)")) nil [2610 2639])
+            ("$(__BUILD_AUTOLOADS)" function nil nil [2639 2736])
+            ("recompile" function (:arguments ("autoloads")) nil [2737 2881])
+            ("clean-autoloads" function (:arguments ("$(__CLEAN_AUTOLOADS)")) nil [2897 2935])
+            (".PHONY" function (:arguments ("$(__CLEAN_AUTOLOADS)")) nil [2936 2965])
+            ("$(__CLEAN_AUTOLOADS)" function nil nil [2965 3097])
+            (".PHONY" function (:arguments ("clean-grammars")) nil [3098 3121])
+            ("clean-grammars" function nil nil [3121 3251])
+            (".PHONY" function (:arguments ("clean-info")) nil [3252 3271])
+            ("clean-info" function nil nil [3271 3358])
+            (".PHONY" function (:arguments ("clean-elc")) nil [3359 3377])
+            ("clean-elc" function nil nil [3377 3461])
+            (".PHONY" function (:arguments ("clean")) nil [3462 3476])
+            ("clean" function nil nil [3476 3579])
+            ("clean-all" function (:arguments ("clean" "clean-elc" "clean-info" "clean-grammars" "clean-autoloads")) nil [3580 3649])
+            (".PHONY" function (:arguments ("utest" "itest")) nil [3713 3733])
+            ("utest" function nil nil [3733 3806])
+            ("itest" function nil nil [3807 3977])
+            ("INFO_FILES" variable (:default-value ("$(shell $(FIND) $(CEDET_HOME) -type f -name '*.info')")) nil [4056 4121])
+            (".PHONY" function (:arguments ("install-info")) nil [4122 4143])
+            ("install-info" function nil nil [4143 4274])
+            ("INSTALLED_INFO_FILES" variable (:default-value ("$(shell find . -name *.info | sed -e 's|.*/\\(.*\\.info$$\\)|$(INFO_DIR)/\\1|')")) nil [4300 4397])
+            (".PHONY" function (:arguments ("uninstall-info")) nil [4398 4421])
+            ("uninstall-info" function nil nil [4421 4562])
+            ("dist" function nil nil [4594 4864])
+            ("testvar" function nil nil [4865 4908]))          
+      :file "Makefile"
+      :pointmax 4930
+      :fsize 4929
+      :lastmodtime '(20362 59688 0 0)
+      :unmatched-syntax '((symbol 1437 . 1442) (punctuation 1436 . 1437) (punctuation 1435 . 1436) (symbol 1430 . 1435) (bol 1430 . 1430))))
+  :file "!home!admin!jingwen.hjw!src!cedet-1.1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

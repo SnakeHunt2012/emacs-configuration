@@ -1,0 +1,16 @@
+;; Object core/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "core/"
+  :tables
+  (list
+    (semanticdb-table "tablet_meta.h"
+      :major-mode 'c-mode
+      :tags nil
+      :file "tablet_meta.h"
+      :pointmax 1034
+      :fsize 1033
+      :lastmodtime '(21954 59453 321040 384000)
+      :unmatched-syntax nil))
+  :file "!apsarapangu!disk6!jingwen.hjw!work!trunk!sqlonline!core!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

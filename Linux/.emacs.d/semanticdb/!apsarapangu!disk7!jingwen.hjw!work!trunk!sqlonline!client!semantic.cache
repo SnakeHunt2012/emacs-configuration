@@ -1,0 +1,1046 @@
+;; Object client/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "client/"
+  :tables
+  (list
+    (semanticdb-table "data_store_imp.cpp"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "data_store_imp.cpp"
+      :pointmax 70886
+      :fsize 70885
+      :lastmodtime '(21980 4867 403036 165000)
+      :unmatched-syntax nil)
+    (semanticdb-table "client_database.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("stack" include (:system-flag t) nil [1 17])
+            ("communication.h" include nil nil [18 44])
+            ("client_database.h" include nil nil [45 73])
+            ("client_meta_cache.h" include nil nil [74 104])
+            ("client_data_store.h" include nil nil [105 135])
+            ("client_util.h" include nil nil [136 160])
+            ("stateless_data_store.h" include nil nil [161 194])
+            ("multiget_executor.h" include nil nil [195 225])
+            ("multiput_executor.h" include nil nil [226 256])
+            ("apsara/common/foreach.h" include nil nil [257 291])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [293 313])
+            ("std::tr1" using (:type ("std::tr1" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [314 339])
+            ("apsara::logging" using (:type ("apsara::logging" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [340 372])
+            ("apsara::common::timing" using (:type ("apsara::common::timing" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [373 412])
+            ("DECLARE_FLAG_STRING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_client_DefaultStoreBlockTypeForLegacy" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [434 482]))                  
+                :type "int")
+                nil [414 483])
+            ("DECLARE_FLAG_STRING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_client_DefaultStoreBlockTypeForPublic" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [504 552]))                  
+                :type "int")
+                nil [484 553])
+            ("DECLARE_FLAG_STRING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_client_DefaultStoreBlockTypeForInternal" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [574 624]))                  
+                :type "int")
+                nil [554 625])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlstorage_client_DescribeTableTimeout" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [645 684]))                  
+                :type "int")
+                nil [626 685])
+            ("sLogger" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "GetLogger(\"/apsara/sqlonline/database\")"
+                :type ("Logger" type (:type "class") nil nil))
+                nil [687 752])
+            ("apsara" type
+               (:members 
+                  ( ("sqlonline" type
+                       (:members 
+                          ( ("Database" function
+                               (:constructor-flag t
+                                :parent "Database"
+                                :arguments 
+                                  ( ("dbName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [815 841])
+                                    ("masterAddr" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [854 884])
+                                    ("credential" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [897 927])
+                                    ("securityToken" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [940 973])
+                                    ("sessionGenerator" variable
+                                       (:pointer 1
+                                        :type ("ISessionGenerator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [986 1022]))                                  
+                                :type ("Database" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [796 1245])
+                            ("CreateTable" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("tableDesc" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TableDescriptor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1274 1307])
+                                    ("scheme" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("PartitionScheme" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1308 1338])
+                                    ("timeout" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [1339 1357]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1247 2113])
+                            ("CreateTable" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("tableDesc" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TableDescriptor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2142 2175])
+                                    ("capacityUnitSetting" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("CapacityUnitSetting" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2176 2223])
+                                    ("scheme" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("PartitionScheme" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2224 2254])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [2255 2267]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2115 3222])
+                            ("CreateTableV3" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("tableDesc" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TableDescriptor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3266 3299])
+                                    ("capacityUnitSetting" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("CapacityUnitSetting" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3312 3359])
+                                    ("scheme" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("PartitionScheme" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3372 3402])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [3415 3427]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3224 4386])
+                            ("CreateTable" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("tableDesc" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TableDescriptor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4425 4458])
+                                    ("capacityUnitSetting" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("CapacityUnitSetting" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4467 4514])
+                                    ("scheme" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("PartitionScheme" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4523 4553])
+                                    ("instanceId" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4562 4592])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [4601 4613]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [4389 5574])
+                            ("CreateTableV3" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("tableDesc" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TableDescriptor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5614 5647])
+                                    ("capacityUnitSetting" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("CapacityUnitSetting" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5656 5703])
+                                    ("scheme" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("PartitionScheme" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5712 5742])
+                                    ("instanceId" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5751 5781])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [5790 5802]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [5576 6767])
+                            ("CreateTableByGroup" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("groupName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6803 6832])
+                                    ("tableDesc" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TableDescriptor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6833 6866])
+                                    ("timeout" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [6867 6885]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [6769 7845])
+                            ("DeleteTable" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("tableName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7874 7903])
+                                    ("timeout" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [7904 7922]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [7847 8224])
+                            ("DeleteTable" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("tableName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8267 8296])
+                                    ("instanceId" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8310 8340])
+                                    ("timeout" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [8354 8372]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [8226 8680])
+                            ("ListTables" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("tables" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [8708 8741])
+                                    ("timeout" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [8742 8760]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [8682 8893])
+                            ("ListTablesByGroup" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("tableGroupName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8928 8962])
+                                    ("tables" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [8963 8996])
+                                    ("timeout" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [8997 9015]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [8895 9207])
+                            ("ListTablesByPrefix" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("prefix" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9243 9269])
+                                    ("tables" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [9277 9310])
+                                    ("timeout" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [9311 9329]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [9209 9477])
+                            ("ListTableGroupsByPrefix" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("prefix" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9518 9544])
+                                    ("tables" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [9552 9585])
+                                    ("timeout" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [9586 9604]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [9479 9757])
+                            ("GetEntitiesStatisticsByPrefix" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("prefix" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9804 9830])
+                                    ("uResTGCnt" variable
+                                       (:reference 1
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9830 9850])
+                                    ("uResTblCnt" variable
+                                       (:reference 1
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9851 9872])
+                                    ("uResViewCnt" variable
+                                       (:reference 1
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9873 9895])
+                                    ("timeout" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [9896 9914]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [9759 10093])
+                            ("GetTableDescriptor" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("tableName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10140 10169])
+                                    ("fromCache" variable (:type "bool") (reparse-symbol arg-sub-list) [10170 10185])
+                                    ("timeout" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [10186 10204]))                                  
+                                :type ("TableDescriptor" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [10095 11350])
+                            ("DescribeTable" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("tableName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11386 11410])
+                                    ("tableDescriptor" variable
+                                       (:pointer 1
+                                        :type ("TableDescriptor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11415 11448])
+                                    ("cuDetails" variable
+                                       (:pointer 1
+                                        :type ("CapacityUnitDetails" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11453 11484])
+                                    ("streamDetails" variable
+                                       (:pointer 1
+                                        :type ("StreamDetails" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11489 11518])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [11523 11535]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [11352 13336])
+                            ("UpdateTableCapacity" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("tableName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13388 13412])
+                                    ("readCapacityUnit" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13413 13438])
+                                    ("writeCapacityUnit" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13439 13465])
+                                    ("maxDecreaseTimeIn24Hour" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13466 13498])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [13499 13511]))                                  
+                                :type ("CapacityUnitDetails" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [13338 13714])
+                            ("UpdateTable" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("tableName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13748 13777])
+                                    ("cuSetting" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("CapacityUnitSetting" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13782 13819])
+                                    ("maxDecreaseTimeIn24Hour" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13824 13856])
+                                    ("tableOpDesc" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TableOptionsDescriptor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13861 13903])
+                                    ("streamSpec" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("StreamSpecification" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13908 13946])
+                                    ("cuDetails" variable
+                                       (:pointer 1
+                                        :type ("CapacityUnitDetails" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13951 13982])
+                                    ("tableOpResult" variable
+                                       (:pointer 1
+                                        :type ("TableOptionsDescriptor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13987 14025])
+                                    ("streamDetails" variable
+                                       (:pointer 1
+                                        :type ("StreamDetails" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14030 14059])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [14064 14076]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [13716 14330])
+                            ("DisableTablesReplication" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("tablesName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [14381 14424])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [14433 14445]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [14332 15504])
+                            ("CheckReplicationState" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [15543 15555]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [15506 16831])
+                            ("DisableTablesAccess" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("tablesName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [16873 16916])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [16921 16933]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [16833 17322])
+                            ("ListStream" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("prefix" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17355 17376])
+                                    ("tableName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17381 17405])
+                                    ("streams" variable
+                                       (:pointer 1
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [17410 17434])
+                                    ("timeout" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17439 17455]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [17324 17628])
+                            ("DescribeStream" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("streamID" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17665 17688])
+                                    ("inclusiveStartShardID" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17693 17729])
+                                    ("shardLimit" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17734 17753])
+                                    ("streamDetails" variable
+                                       (:pointer 1
+                                        :type ("StreamDetails" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17758 17787])
+                                    ("shards" variable
+                                       (:pointer 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("ShardInfo" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [17792 17823])
+                                    ("nextShardID" variable
+                                       (:pointer 1
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17828 17853])
+                                    ("timeout" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17858 17874]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [17630 18109])
+                            ("GetTableGroupName" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("tableName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18151 18180])
+                                    ("timeout" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [18181 18199]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [18111 18729])
+                            ("CreateView" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("desc" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ViewDescriptor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18757 18784])
+                                    ("timeout" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [18785 18803]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [18731 19244])
+                            ("DeleteView" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("viewName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19272 19300])
+                                    ("timeout" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [19301 19319]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [19246 19615])
+                            ("ListViewsByTable" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("tableName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19649 19678])
+                                    ("views" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [19679 19711])
+                                    ("timeout" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [19712 19730]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [19617 19878])
+                            ("GetPartitions" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("tableName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19948 19977])
+                                    ("parts" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("PartitionDescriptor" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [20017 20057])
+                                    ("timeout" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [20058 20076]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [19919 20759])
+                            ("GetViewDescriptor" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("viewName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [20804 20832])
+                                    ("fromCache" variable (:type "bool") (reparse-symbol arg-sub-list) [20833 20848])
+                                    ("timeout" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [20849 20867]))                                  
+                                :type ("ViewDescriptor" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [20761 22031])
+                            ("CreateTableGroup" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("groupName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [22065 22094])
+                                    ("scheme" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("PartitionScheme" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [22095 22125])
+                                    ("timeout" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [22126 22144]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [22033 22967])
+                            ("DeleteTableGroup" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("tableGroupName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [23001 23035])
+                                    ("timeout" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [23036 23054]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [22969 23414])
+                            ("ListTableGroups" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("tableGroups" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [23447 23485])
+                                    ("timeout" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [23486 23504]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [23416 23647])
+                            ("AddLocalityGroup" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("tableName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [23681 23710])
+                                    ("lgDesc" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LocalityGroupDescriptor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [23711 23749])
+                                    ("timeout" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [23750 23768]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [23649 24208])
+                            ("RemoveLocalityGroup" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("tableName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [24245 24269])
+                                    ("lgName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [24270 24291])
+                                    ("timeout" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [24292 24310]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [24210 24453])
+                            ("AddAttributeColumn" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("viewName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [24489 24512])
+                                    ("columnName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [24513 24538])
+                                    ("timeout" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [24539 24557]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [24455 24665])
+                            ("DeleteAttributeColumn" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("viewName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [24704 24727])
+                                    ("columnName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [24728 24753])
+                                    ("timeout" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [24754 24772]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [24667 24880])
+                            ("DefineExplicitColumn" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("tableName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [24923 24947])
+                                    ("localityGroupName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [24952 24984])
+                                    ("columnDesc" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ColumnDescriptor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [24989 25024])
+                                    ("timeout" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [25029 25047]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [24882 25523])
+                            ("ResetBloomFilterType" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("tableName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [25566 25590])
+                                    ("localityGroupName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [25595 25627])
+                                    ("type" variable (:type ("SQLBloomFilterType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25632 25656])
+                                    ("timeout" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [25661 25679]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [25525 26024])
+                            ("Connect" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("tableName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [26058 26087])
+                                    ("appFlag" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ConnectAppFlag" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [26088 26118])
+                                    ("timeout" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [26119 26137]))                                  
+                                :type ("IDataStorePtr" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [26026 26845])
+                            ("ConnectStateless" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("tableName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [26897 26926])
+                                    ("timeout" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [26927 26945]))                                  
+                                :type ("IStatelessDataStorePtr" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [26847 27435])
+                            ("TryToGetMeta" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("itemName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [27486 27514])
+                                    ("timeout" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [27515 27533]))                                  
+                                :type ("ConstAbstractTableMetaPtr" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [27437 28341])
+                            ("GetMultiGetExecutor" function
+                               (:parent "Database"
+                                :type ("MultiGetExecutorPtr" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [28343 28516])
+                            ("GetMultiPutExecutor" function
+                               (:parent "Database"
+                                :type ("MultiPutExecutorPtr" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [28518 28691])
+                            ("EnableInstanceReplication" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("primaryInstanceId" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [28739 28771])
+                                    ("secondaryInstanceName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [28776 28812])
+                                    ("secondaryRegionName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [28817 28851])
+                                    ("secondaryClusterName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [28856 28891])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [28896 28908]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [28693 29344])
+                            ("EnableInstanceReplication" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("primaryInstanceId" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [29392 29424])
+                                    ("secondaryInstanceName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [29429 29465])
+                                    ("secondaryRegionName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [29470 29504])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [29509 29521]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [29346 29878])
+                            ("DisableInstanceReplication" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("primaryInstanceId" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [29927 29959])
+                                    ("secondaryInstanceName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [29964 30000])
+                                    ("secondaryRegionName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [30005 30039])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [30044 30056]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [29880 30414])
+                            ("GetInstanceReplicationStatus" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("primaryInstanceId" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [30465 30497])
+                                    ("secondaryInstanceName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [30502 30538])
+                                    ("secondaryRegionName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [30543 30577])
+                                    ("tableReplicationStatusInfos" variable
+                                       (:pointer 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("TableGeoReplicationStatus" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [30582 30650])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [30655 30667]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [30416 31064])
+                            ("GetInstanceReplicationStatus" function
+                               (:parent "Database"
+                                :arguments 
+                                  ( ("primaryInstanceId" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [31115 31147])
+                                    ("tableReplicationStatusInfos" variable
+                                       (:pointer 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("TableGeoReplicationStatus" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [31152 31220])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [31225 31237]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [31066 31477]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [773 31480]))                  
+                :type "namespace")
+                nil [754 31512]))          
+      :file "client_database.cpp"
+      :pointmax 31540
+      :fsize 31539
+      :lastmodtime '(21980 4867 472069 924000)
+      :unmatched-syntax nil)
+    (semanticdb-table "client_database.h"
+      :file "client_database.h"
+      :fsize 85650
+      :lastmodtime '(21980 4867 472069 924000))
+    (semanticdb-table "client_meta_cache.h"
+      :file "client_meta_cache.h"
+      :fsize 14636
+      :lastmodtime '(21980 4867 472069 924000))
+    (semanticdb-table "client_data_store.h"
+      :file "client_data_store.h"
+      :fsize 46827
+      :lastmodtime '(21980 4881 636073 127000))
+    (semanticdb-table "client_util.h"
+      :file "client_util.h"
+      :fsize 10508
+      :lastmodtime '(21980 4867 403036 165000))
+    (semanticdb-table "stateless_data_store.h"
+      :file "stateless_data_store.h"
+      :fsize 47907
+      :lastmodtime '(21980 4867 402077 747000))
+    (semanticdb-table "multiget_executor.h"
+      :file "multiget_executor.h"
+      :fsize 4036
+      :lastmodtime '(21980 4867 472069 924000))
+    (semanticdb-table "multiput_executor.h"
+      :file "multiput_executor.h"
+      :fsize 4247
+      :lastmodtime '(21980 4867 403036 165000)))
+  :file "!apsarapangu!disk7!jingwen.hjw!work!trunk!sqlonline!client!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

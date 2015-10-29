@@ -1,0 +1,16 @@
+;; Object mock/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mock/"
+  :tables
+  (list
+    (semanticdb-table "SConscript"
+      :major-mode 'python-mode
+      :tags nil
+      :file "SConscript"
+      :pointmax 99
+      :fsize 98
+      :lastmodtime '(21954 59470 126060 504000)
+      :unmatched-syntax nil))
+  :file "!apsarapangu!disk6!jingwen.hjw!work!trunk!sqlonline!mock!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

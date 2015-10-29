@@ -1,0 +1,16 @@
+;; Object unittest/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "unittest/"
+  :tables
+  (list
+    (semanticdb-table "SConscript"
+      :major-mode 'python-mode
+      :tags nil
+      :file "SConscript"
+      :pointmax 5498
+      :fsize 5497
+      :lastmodtime '(21951 3141 506036 155000)
+      :unmatched-syntax nil))
+  :file "!apsarapangu!disk4!jingwen.hjw!work!trunk!sqlonline!client!unittest!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

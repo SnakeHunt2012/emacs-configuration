@@ -1,0 +1,39 @@
+;; Object admin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "admin/"
+  :tables
+  (list
+    (semanticdb-table ".emacs"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("hold-line-scroll-up" function (:user-visible-flag t) nil [362 588])
+            ("hold-line-scroll-down" function (:user-visible-flag t) nil [589 820])
+            ("global-set-key" code nil nil [846 895])
+            ("global-set-key" code nil nil [896 947])
+            ("global-set-key" code nil nil [948 1004])
+            ("global-set-key" code nil nil [1005 1061])
+            ("setq" code nil nil [1075 1103])
+            ("setq" code nil nil [1114 1134])
+            ("setq" code nil nil [1145 1177])
+            ("setq" code nil nil [1184 1211])
+            ("setq" code nil nil [1212 1276])
+            ("setq" code nil nil [1277 1300])
+            ("desktop-save-mode" code nil nil [1313 1334])
+            ("add-to-list" code nil nil [1347 1402])
+            ("session" include nil nil [1403 1421])
+            ("add-hook" code nil nil [1422 1469])
+            ("add-to-list" code nil nil [1478 1529])
+            ("ess-site" include nil nil [1530 1549])
+            ("add-to-list" code nil nil [1561 1615])
+            ("xcscope" include nil nil [1616 1634])
+            ("add-to-list" code nil nil [1643 1694])
+            ("ecb" include nil nil [1695 1709]))          
+      :file ".emacs"
+      :pointmax 1713
+      :fsize 2519
+      :lastmodtime '(21943 14866 0 0)
+      :unmatched-syntax nil)
+)
+  :file "!home!admin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

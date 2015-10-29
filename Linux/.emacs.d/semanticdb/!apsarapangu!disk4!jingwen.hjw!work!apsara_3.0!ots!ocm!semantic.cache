@@ -1,0 +1,95 @@
+;; Object ocm/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ocm/"
+  :tables
+  (list
+    (semanticdb-table "ocm_cluster_monitor.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [47 56])
+            ("time" include nil nil [57 68])
+            ("socket" include nil nil [69 82])
+            ("datetime" include nil nil [83 98])
+            ("threading" include nil nil [99 115])
+            ("traceback" include nil nil [116 132])
+            ("ocm_common" include nil nil [133 150])
+            ("ocm_config" include nil nil [151 175])
+            ("ocm_db_session" include nil nil [176 204])
+            ("ocm_ots_client" include nil nil [205 233])
+            ("tables.db_lock" include nil nil [234 262])
+            ("tables.instance_info" include nil nil [263 297])
+            ("tables.cluster_info" include nil nil [298 331])
+            ("tables.cluster_domain" include nil nil [332 367])
+            ("tables.cluster_status" include nil nil [368 403])
+            ("tables.cluster_ha_info" include nil nil [404 440])
+            ("ClusterMonitor" type
+               (:members 
+                  ( ("'''
+    Check cluster status every interval.
+    '''" code nil (reparse-symbol indented_block_body) [468 520])
+                    ("monitor_lock" variable nil (reparse-symbol indented_block_body) [530 567])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [601 650])
+                            ("self" variable nil (reparse-symbol indented_block_body) [659 716])
+                            ("self" code nil (reparse-symbol indented_block_body) [725 843])
+                            ("self" variable nil (reparse-symbol indented_block_body) [852 895])
+                            ("self" variable nil (reparse-symbol indented_block_body) [904 938])
+                            ("self" variable nil (reparse-symbol indented_block_body) [947 994]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [586 590]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [573 996])
+                    ("check_cluster_status" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1026 1030]))                          )
+                        (reparse-symbol indented_block_body) [1001 2478])
+                    ("_need_to_switch" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2503 2507])
+                            ("primary_cluster" variable nil (reparse-symbol function_parameters) [2509 2524])
+                            ("secondary_cluster" variable nil (reparse-symbol function_parameters) [2526 2543]))                          )
+                        (reparse-symbol indented_block_body) [2483 6326])
+                    ("_do_switch" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6346 6350])
+                            ("primary_cluster" variable nil (reparse-symbol function_parameters) [6352 6367])
+                            ("secondary_cluster" variable nil (reparse-symbol function_parameters) [6369 6386]))                          )
+                        (reparse-symbol indented_block_body) [6331 6881])
+                    ("switch_cluster" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6905 6909])
+                            ("primary_cluster" variable nil (reparse-symbol function_parameters) [6911 6926])
+                            ("secondary_cluster" variable nil (reparse-symbol function_parameters) [6928 6945]))                          )
+                        (reparse-symbol indented_block_body) [6886 9319]))                  
+                :type "class")
+                nil [442 9319]))          
+      :file "ocm_cluster_monitor.py"
+      :pointmax 9319
+      :fsize 9318
+      :lastmodtime '(21897 4071 881037 969000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ocm_common.py"
+      :file "ocm_common.py"
+      :fsize 7900
+      :lastmodtime '(21887 53977 65036 223000))
+    (semanticdb-table "ocm_config.py"
+      :file "ocm_config.py"
+      :fsize 2360
+      :lastmodtime '(21931 21827 612036 253000))
+    (semanticdb-table "ocm_db_session.py"
+      :file "ocm_db_session.py"
+      :fsize 490
+      :lastmodtime '(21897 4071 881037 969000))
+    (semanticdb-table "ocm_ots_client.py"
+      :file "ocm_ots_client.py"
+      :fsize 3822
+      :lastmodtime '(21931 19705 116035 932000)))
+  :file "!apsarapangu!disk4!jingwen.hjw!work!apsara_3.0!ots!ocm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

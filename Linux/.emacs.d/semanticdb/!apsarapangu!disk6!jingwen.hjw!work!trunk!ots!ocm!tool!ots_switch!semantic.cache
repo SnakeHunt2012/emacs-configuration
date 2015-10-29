@@ -1,0 +1,245 @@
+;; Object ots_switch/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ots_switch/"
+  :tables
+  (list
+    (semanticdb-table "OTS_common.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [47 56])
+            ("json" include nil nil [57 68])
+            ("time" include nil nil [69 80])
+            ("datetime" include nil nil [81 96])
+            ("hmac" include nil nil [97 108])
+            ("zlib" include nil nil [109 120])
+            ("base64" include nil nil [121 134])
+            ("hashlib" include nil nil [135 149])
+            ("httplib" include nil nil [150 164])
+            ("exceptions" include nil nil [165 182])
+            ("struct" include nil nil [183 211])
+            ("fcntl" include nil nil [183 211])
+            ("socket" include nil nil [183 211])
+            ("logging" include nil nil [213 227])
+            ("logging.handlers" include nil nil [228 251])
+            ("OCM_OK" variable nil nil [254 267])
+            ("OCM_INVALID_PARAMETER" variable nil nil [268 310])
+            ("OCM_EXCEED_LIMIT" variable nil nil [311 343])
+            ("OCM_AUTH_FAILED" variable nil nil [344 374])
+            ("OCM_INVALID_STATUS" variable nil nil [375 411])
+            ("OCM_INVALID_MIGRATION" variable nil nil [412 454])
+            ("OCM_NOT_FOUND" variable nil nil [455 481])
+            ("OCM_QUOTA_EXHAUSTED" variable nil nil [482 520])
+            ("OCM_INVALID_METHOD" variable nil nil [521 557])
+            ("OCM_CONFLICT_STATUS" variable nil nil [558 596])
+            ("OCM_ALREADY_EXIST" variable nil nil [597 631])
+            ("OCM_CONFLICT_DEPENDENCY" variable nil nil [632 678])
+            ("OCM_SERVER_ERROR" variable nil nil [679 711])
+            ("OCM_INVALID_RESPONSE" variable nil nil [712 752])
+            ("g_ots_logger" variable nil nil [754 773])
+            ("get_ots_logger" function nil nil [775 1579])
+            ("log_success" function (:arguments 
+              ( ("msg" variable nil (reparse-symbol function_parameters) [1596 1599]))              ) nil [1580 1785])
+            ("log_error" function (:arguments 
+              ( ("msg" variable nil (reparse-symbol function_parameters) [1800 1803])
+                ("error" variable nil (reparse-symbol function_parameters) [1805 1810]))              ) nil [1786 2322])
+            ("OCMException" type
+               (:superclasses ("Exception")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [2419 2441])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2450 2478])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2487 2515]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2372 2376])
+                            ("code" variable nil (reparse-symbol function_parameters) [2378 2382])
+                            ("message" variable nil (reparse-symbol function_parameters) [2384 2391])
+                            ("request_id" variable nil (reparse-symbol function_parameters) [2393 2403]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2359 2516])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2533 2537]))                          )
+                        (reparse-symbol indented_block_body) [2521 2751])
+                    ("get_error_code" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2775 2779]))                          )
+                        (reparse-symbol indented_block_body) [2756 2813])
+                    ("get_error_message" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2840 2844]))                          )
+                        (reparse-symbol indented_block_body) [2818 2881])
+                    ("get_request_id" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2905 2909]))                          )
+                        (reparse-symbol indented_block_body) [2886 2943]))                  
+                :type "class")
+                nil [2323 2943])
+            ("OCMClient" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" code nil (reparse-symbol indented_block_body) [3045 3086])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3095 3122])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3131 3295])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3304 3384]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2984 2988])
+                            ("host" variable nil (reparse-symbol function_parameters) [2990 2994])
+                            ("port" variable nil (reparse-symbol function_parameters) [2996 3000])
+                            ("accessid" variable nil (reparse-symbol function_parameters) [3002 3010])
+                            ("accesskey" variable nil (reparse-symbol function_parameters) [3012 3021])
+                            ("timeout" variable nil (reparse-symbol function_parameters) [3023 3030]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2971 3385])
+                    ("__del__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3402 3406]))                          )
+                        (reparse-symbol indented_block_body) [3390 3446])
+                    ("switch_cluster" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3470 3474])
+                            ("primary_cluster" variable nil (reparse-symbol function_parameters) [3476 3491])
+                            ("secondary_cluster" variable nil (reparse-symbol function_parameters) [3493 3510]))                          )
+                        (reparse-symbol indented_block_body) [3451 3978])
+                    ("pre_check_cluster" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4005 4009])
+                            ("cluster_name" variable nil (reparse-symbol function_parameters) [4011 4023]))                          )
+                        (reparse-symbol indented_block_body) [3983 4284])
+                    ("post_check_cluster" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4312 4316])
+                            ("primary_cluster" variable nil (reparse-symbol function_parameters) [4318 4333])
+                            ("secondary_cluster" variable nil (reparse-symbol function_parameters) [4335 4352]))                          )
+                        (reparse-symbol indented_block_body) [4289 4823])
+                    ("stop_cluster" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4845 4849])
+                            ("cluster_name" variable nil (reparse-symbol function_parameters) [4851 4863]))                          )
+                        (reparse-symbol indented_block_body) [4828 5120])
+                    ("_build_instance_parameter" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5155 5159])
+                            ("instance_name" variable nil (reparse-symbol function_parameters) [5161 5174])
+                            ("user_id" variable nil (reparse-symbol function_parameters) [5183 5190])
+                            ("instance_id" variable nil (reparse-symbol function_parameters) [5199 5210]))                          )
+                        (reparse-symbol indented_block_body) [5125 5918])
+                    ("_is_string" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5938 5942])
+                            ("param" variable nil (reparse-symbol function_parameters) [5944 5949]))                          )
+                        (reparse-symbol indented_block_body) [5923 6055])
+                    ("_handle_request" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6080 6084])
+                            ("uri" variable nil (reparse-symbol function_parameters) [6086 6089])
+                            ("body" variable nil (reparse-symbol function_parameters) [6091 6095]))                          )
+                        (reparse-symbol indented_block_body) [6060 7251])
+                    ("_send_request" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7274 7278])
+                            ("req_method" variable nil (reparse-symbol function_parameters) [7280 7290])
+                            ("req_uri" variable nil (reparse-symbol function_parameters) [7292 7299])
+                            ("req_header" variable nil (reparse-symbol function_parameters) [7301 7311])
+                            ("req_body" variable nil (reparse-symbol function_parameters) [7313 7321]))                          )
+                        (reparse-symbol indented_block_body) [7256 7921])
+                    ("_load_json" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7941 7945])
+                            ("content" variable nil (reparse-symbol function_parameters) [7947 7954]))                          )
+                        (reparse-symbol indented_block_body) [7926 8096])
+                    ("_del_header_option" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8124 8128])
+                            ("header" variable nil (reparse-symbol function_parameters) [8130 8136])
+                            ("key" variable nil (reparse-symbol function_parameters) [8138 8141]))                          )
+                        (reparse-symbol indented_block_body) [8101 8218])
+                    ("_utc_rfc822_strftime" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8248 8252]))                          )
+                        (reparse-symbol indented_block_body) [8223 8401])
+                    ("_make_signature" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8426 8430])
+                            ("accesskey" variable nil (reparse-symbol function_parameters) [8432 8441])
+                            ("context" variable nil (reparse-symbol function_parameters) [8443 8450]))                          )
+                        (reparse-symbol indented_block_body) [8406 8538])
+                    ("_make_md5sum" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8560 8564])
+                            ("context" variable nil (reparse-symbol function_parameters) [8566 8573]))                          )
+                        (reparse-symbol indented_block_body) [8543 8639])
+                    ("_sort_join_dict" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8664 8668])
+                            ("dict" variable nil (reparse-symbol function_parameters) [8670 8674]))                          )
+                        (reparse-symbol indented_block_body) [8644 8892]))                  
+                :type "class")
+                nil [2945 8892]))          
+      :file "OTS_common.py"
+      :pointmax 8892
+      :fsize 8891
+      :lastmodtime '(22019 37054 159074 125000)
+      :unmatched-syntax nil)
+    (semanticdb-table "OTS_stop.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "OTS_stop.py"
+      :pointmax 1511
+      :fsize 1510
+      :lastmodtime '(21987 54826 946036 161000)
+      :unmatched-syntax nil)
+    (semanticdb-table "OTS_check.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("sys" include nil nil [50 60])
+            ("json" include nil nil [61 72])
+            ("argparse" include nil nil [73 88])
+            ("OTS_common" include nil nil [89 134])
+            ("OTS_common" include nil nil [135 181])
+            ("if" code nil nil [183 1524]))          
+      :file "OTS_check.py"
+      :pointmax 1524
+      :fsize 1523
+      :lastmodtime '(21987 54826 947035 990000)
+      :unmatched-syntax nil)
+    (semanticdb-table "OTS_switch.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("sys" include nil nil [50 60])
+            ("time" include nil nil [61 72])
+            ("json" include nil nil [73 84])
+            ("argparse" include nil nil [85 100])
+            ("OTS_common" include nil nil [101 146])
+            ("OTS_common" include nil nil [147 193])
+            ("if" code nil nil [195 2461]))          
+      :file "OTS_switch.py"
+      :pointmax 2461
+      :fsize 2460
+      :lastmodtime '(22019 37054 159074 125000)
+      :unmatched-syntax nil))
+  :file "!apsarapangu!disk6!jingwen.hjw!work!trunk!ots!ocm!tool!ots_switch!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

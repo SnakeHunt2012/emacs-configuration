@@ -1,0 +1,16 @@
+;; Object target/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "target/"
+  :tables
+  (list
+    (semanticdb-table "table_pri1444296484304_1444296497453.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "table_pri1444296484304_1444296497453.json"
+      :pointmax 10890
+      :fsize 10889
+      :lastmodtime '(22038 14129 482105 898000)
+      :unmatched-syntax nil))
+  :file "!apsarapangu!disk6!jingwen.hjw!work!ts_ots!ts_replication_commercialize!target!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

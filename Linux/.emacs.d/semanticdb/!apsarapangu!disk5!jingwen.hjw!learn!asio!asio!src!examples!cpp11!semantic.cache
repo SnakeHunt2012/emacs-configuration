@@ -1,0 +1,50 @@
+;; Object cpp11/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cpp11/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("AUTOMAKE_OPTIONS" variable (:default-value ("subdir-objects")) nil [1 35])
+            ("noinst_LIBRARIES" variable (:default-value ("libasio.a")) nil [60 89])
+            ("libasio_a_SOURCES" variable (:default-value ("../../asio.cpp")) nil [89 124])
+            ("libasio_a_SOURCES" variable (:default-value ("../../asio_ssl.cpp")) nil [140 180])
+            ("LDADD" variable (:default-value ("libasio.a")) nil [186 204])
+            ("noinst_PROGRAMS" variable (:default-value ("allocation/server" "buffers/reference_counted" "chat/chat_client" "chat/chat_server" "echo/async_tcp_echo_server" "echo/async_udp_echo_server" "echo/blocking_tcp_echo_client" "echo/blocking_tcp_echo_server" "echo/blocking_udp_echo_client" "echo/blocking_udp_echo_server" "executors/actor" "executors/bank_account_1" "executors/bank_account_2" "executors/fork_join" "executors/pipeline" "executors/priority_scheduler" "futures/daytime_client" "http/server/http_server" "iostreams/http_client")) nil [211 741])
+            ("noinst_PROGRAMS" variable (:default-value ("spawn/echo_server" "spawn/parallel_grep")) nil [766 831])
+            ("noinst_HEADERS" variable (:default-value ("chat/chat_message.hpp")) nil [838 880])
+            ("AM_CXXFLAGS" variable (:default-value ("-I$(srcdir)/../../../include")) nil [881 924])
+            ("allocation_server_SOURCES" variable (:default-value ("allocation/server.cpp")) nil [925 975])
+            ("buffers_reference_counted_SOURCES" variable (:default-value ("buffers/reference_counted.cpp")) nil [975 1041])
+            ("chat_chat_client_SOURCES" variable (:default-value ("chat/chat_client.cpp")) nil [1041 1089])
+            ("chat_chat_server_SOURCES" variable (:default-value ("chat/chat_server.cpp")) nil [1089 1137])
+            ("echo_async_tcp_echo_server_SOURCES" variable (:default-value ("echo/async_tcp_echo_server.cpp")) nil [1137 1205])
+            ("echo_async_udp_echo_server_SOURCES" variable (:default-value ("echo/async_udp_echo_server.cpp")) nil [1205 1273])
+            ("echo_blocking_tcp_echo_client_SOURCES" variable (:default-value ("echo/blocking_tcp_echo_client.cpp")) nil [1273 1347])
+            ("echo_blocking_tcp_echo_server_SOURCES" variable (:default-value ("echo/blocking_tcp_echo_server.cpp")) nil [1347 1421])
+            ("echo_blocking_udp_echo_client_SOURCES" variable (:default-value ("echo/blocking_udp_echo_client.cpp")) nil [1421 1495])
+            ("echo_blocking_udp_echo_server_SOURCES" variable (:default-value ("echo/blocking_udp_echo_server.cpp")) nil [1495 1569])
+            ("executors_actor_SOURCES" variable (:default-value ("executors/actor.cpp")) nil [1569 1615])
+            ("executors_bank_account_1_SOURCES" variable (:default-value ("executors/bank_account_1.cpp")) nil [1615 1679])
+            ("executors_bank_account_2_SOURCES" variable (:default-value ("executors/bank_account_2.cpp")) nil [1679 1743])
+            ("executors_fork_join_SOURCES" variable (:default-value ("executors/fork_join.cpp")) nil [1743 1797])
+            ("executors_pipeline_SOURCES" variable (:default-value ("executors/pipeline.cpp")) nil [1797 1849])
+            ("executors_priority_scheduler_SOURCES" variable (:default-value ("executors/priority_scheduler.cpp")) nil [1849 1921])
+            ("futures_daytime_client_SOURCES" variable (:default-value ("futures/daytime_client.cpp")) nil [1921 1981])
+            ("http_server_http_server_SOURCES" variable (:default-value ("http/server/connection.cpp" "http/server/connection_manager.cpp" "http/server/main.cpp" "http/server/mime_types.cpp" "http/server/reply.cpp" "http/server/request_handler.cpp" "http/server/request_parser.cpp" "http/server/server.cpp")) nil [1981 2257])
+            ("iostreams_http_client_SOURCES" variable (:default-value ("iostreams/http_client.cpp")) nil [2257 2315])
+            ("spawn_echo_server_SOURCES" variable (:default-value ("spawn/echo_server.cpp")) nil [2340 2390])
+            ("spawn_echo_server_LDADD" variable (:default-value ("$(LDADD)" "-lboost_coroutine" "-lboost_context" "-lboost_system")) nil [2390 2474])
+            ("spawn_parallel_grep_SOURCES" variable (:default-value ("spawn/parallel_grep.cpp")) nil [2474 2528])
+            ("spawn_parallel_grep_LDADD" variable (:default-value ("$(LDADD)" "-lboost_coroutine" "-lboost_context" "-lboost_system")) nil [2528 2614])
+            ("EXTRA_DIST" variable (:default-value ("handler_tracking/custom_tracking.hpp" "http/server/connection.hpp" "http/server/connection_manager.hpp" "http/server/header.hpp" "http/server/mime_types.hpp" "http/server/reply.hpp" "http/server/request.hpp" "http/server/request_handler.hpp" "http/server/request_parser.hpp" "http/server/server.hpp")) nil [2621 2945])
+            ("MAINTAINERCLEANFILES" variable (:default-value ("$(srcdir)/Makefile.in")) nil [2946 2994]))          
+      :file "Makefile.am"
+      :pointmax 2994
+      :fsize 2993
+      :lastmodtime '(21945 55675 84066 328000)
+      :unmatched-syntax nil))
+  :file "!apsarapangu!disk5!jingwen.hjw!learn!asio!asio!src!examples!cpp11!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

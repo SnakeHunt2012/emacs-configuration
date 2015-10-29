@@ -1,0 +1,65 @@
+;; Object examples/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "examples/"
+  :tables
+  (list
+    (semanticdb-table "Grep.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("org.apache.hadoop.examples" package nil nil [808 843])
+            ("java.util.Random" include nil nil [845 869])
+            ("org.apache.hadoop.conf.Configuration" include nil nil [871 915])
+            ("org.apache.hadoop.conf.Configured" include nil nil [916 957])
+            ("org.apache.hadoop.fs.FileSystem" include nil nil [958 997])
+            ("org.apache.hadoop.fs.Path" include nil nil [998 1031])
+            ("org.apache.hadoop.io.LongWritable" include nil nil [1032 1073])
+            ("org.apache.hadoop.io.Text" include nil nil [1074 1107])
+            ("org.apache.hadoop.mapreduce.*" include nil nil [1108 1145])
+            ("org.apache.hadoop.mapreduce.lib.input.FileInputFormat" include nil nil [1146 1207])
+            ("org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFormat" include nil nil [1208 1277])
+            ("org.apache.hadoop.mapreduce.lib.map.InverseMapper" include nil nil [1278 1335])
+            ("org.apache.hadoop.mapreduce.lib.map.RegexMapper" include nil nil [1336 1391])
+            ("org.apache.hadoop.mapreduce.lib.output.FileOutputFormat" include nil nil [1392 1455])
+            ("org.apache.hadoop.mapreduce.lib.output.SequenceFileOutputFormat" include nil nil [1456 1527])
+            ("org.apache.hadoop.mapreduce.lib.reduce.LongSumReducer" include nil nil [1528 1589])
+            ("org.apache.hadoop.util.Tool" include nil nil [1590 1625])
+            ("org.apache.hadoop.util.ToolRunner" include nil nil [1626 1667])
+            ("Grep" type
+               (:typemodifiers ("public")
+                :interfaces ("Tool")
+                :superclasses "Configured"
+                :members 
+                  ( ("Grep" function
+                       (:constructor-flag t
+                        :typemodifiers ("private"))
+                        (reparse-symbol class_member_declaration) [1791 1808])
+                    ("run" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [1870 1883]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1855 3669])
+                    ("main" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [3697 3710]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3673 3825]))                  
+                :type "class")
+                nil [1734 3828]))          
+      :file "Grep.java"
+      :pointmax 3829
+      :fsize 3828
+      :lastmodtime '(21904 57295 0 0)
+      :unmatched-syntax nil))
+  :file "!apsarapangu!disk2!jingwen.hjw!src!hadoop-2.7.1-src!hadoop-mapreduce-project!hadoop-mapreduce-examples!src!main!java!org!apache!hadoop!examples!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

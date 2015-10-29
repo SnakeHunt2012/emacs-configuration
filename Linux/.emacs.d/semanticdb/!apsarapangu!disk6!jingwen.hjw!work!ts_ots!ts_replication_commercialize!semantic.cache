@@ -1,0 +1,532 @@
+;; Object ts_replication_commercialize/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ts_replication_commercialize/"
+  :tables
+  (list
+    (semanticdb-table "replication_cache_test.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("replication_case_base" include nil nil [45 111])
+            ("CacheTest" type
+               (:superclasses ("ReplicationTestBase")
+                :members 
+                  ( ("test_ots_server_cache" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [182 186]))                          )
+                        (reparse-symbol indented_block_body) [156 549])
+                    ("test_ocm_server_cache" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [580 584]))                          )
+                        (reparse-symbol indented_block_body) [554 896]))                  
+                :type "class")
+                nil [113 896]))          
+      :file "replication_cache_test.py"
+      :pointmax 897
+      :fsize 1288
+      :lastmodtime '(22018 5083 104040 590000)
+      :unmatched-syntax nil)
+    (semanticdb-table "replication_failover_test.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("time" include nil nil [45 67])
+            ("random" include nil nil [68 93])
+            ("ocm_wrapper" include nil nil [94 119])
+            ("replication_case_base" include nil nil [120 186])
+            ("case_auto" include nil nil [187 210])
+            ("case_auto" include nil nil [211 235])
+            ("python_public_sdk.error" include nil nil [236 303])
+            ("FailoverTest" type
+               (:superclasses ("ReplicationTestBase")
+                :members 
+                  ( ("'''对主master进行failover的时候需要考虑两种情况, master发生迁移和没有迁移两种'''" code nil (reparse-symbol indented_block_body) [351 405])
+                    ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [420 424]))                          )
+                        (reparse-symbol indented_block_body) [410 552])
+                    ("tearDown" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [570 574]))                          )
+                        (reparse-symbol indented_block_body) [557 683])
+                    ("test_check_env" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [711 715]))                          )
+                        (reparse-symbol indented_block_body) [692 808])
+                    ("test_recover_env" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [838 842]))                          )
+                        (reparse-symbol indented_block_body) [817 937])
+                    ("_test_basic_failover" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [971 975]))                          )
+                        (reparse-symbol indented_block_body) [946 7101])
+                    ("_test_failover_before_ERDR" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7137 7141])
+                            ("failover_item" variable nil (reparse-symbol function_parameters) [7143 7156]))                          )
+                        (reparse-symbol indented_block_body) [7106 11725])
+                    ("test_failover_before_ERDR" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11799 11803]))                          )
+                        (reparse-symbol indented_block_body) [11769 12585])
+                    ("_test_failover_before_CTDT" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12625 12629])
+                            ("failover_item" variable nil (reparse-symbol function_parameters) [12631 12644]))                          )
+                        (reparse-symbol indented_block_body) [12594 18373])
+                    ("test_failover_before_CTDT" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18447 18451]))                          )
+                        (reparse-symbol indented_block_body) [18417 19226])
+                    ("_test_failover_after_ER" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19267 19271])
+                            ("failover_item" variable nil (reparse-symbol function_parameters) [19273 19286]))                          )
+                        (reparse-symbol indented_block_body) [19239 22554])
+                    ("test_failover_after_ER" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22586 22590]))                          )
+                        (reparse-symbol indented_block_body) [22559 23783])
+                    ("_test_failover_after_CTDT" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23826 23830])
+                            ("failover_item" variable nil (reparse-symbol function_parameters) [23832 23845]))                          )
+                        (reparse-symbol indented_block_body) [23796 28000])
+                    ("test_failover_after_CTDT" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28038 28042]))                          )
+                        (reparse-symbol indented_block_body) [28009 28912])
+                    ("test_failover_backlog" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28947 28951]))                          )
+                        (reparse-symbol indented_block_body) [28921 33609])
+                    ("test_failover_new_op_while_replay" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [34328 34332]))                          )
+                        (reparse-symbol indented_block_body) [34290 42967])
+                    ("test_failover_replay" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [43677 43681]))                          )
+                        (reparse-symbol indented_block_body) [43652 45607])
+                    ("test_failover_random" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [45641 45645]))                          )
+                        (reparse-symbol indented_block_body) [45616 50333]))                  
+                :type "class")
+                nil [306 50333]))          
+      :file "replication_failover_test.py"
+      :pointmax 50337
+      :fsize 54780
+      :lastmodtime '(22038 2192 676098 526000)
+      :unmatched-syntax '((INDENT_BLOCK 17992 . 18124) (NEWLINE 17991 . 17992) (COLON 17990 . 17991) (AS 17986 . 17988) (EXCEPT 17969 . 17975) (INDENT_BLOCK 17829 . 17961) (NEWLINE 17828 . 17829) (COLON 17827 . 17828) (AS 17823 . 17825) (EXCEPT 17801 . 17807) (INDENT_BLOCK 17660 . 17793) (NEWLINE 17659 . 17660) (COLON 17654 . 17655) (AS 17650 . 17652) (EXCEPT 17627 . 17633) (INDENT_BLOCK 17510 . 17619) (NEWLINE 17509 . 17510) (COLON 17508 . 17509) (AS 17504 . 17506) (INDENT_BLOCK 17187 . 17319) (NEWLINE 17186 . 17187) (COLON 17185 . 17186) (AS 17181 . 17183) (EXCEPT 17164 . 17170) (INDENT_BLOCK 17024 . 17156) (NEWLINE 17023 . 17024) (COLON 17022 . 17023) (AS 17018 . 17020) (EXCEPT 16996 . 17002) (INDENT_BLOCK 16855 . 16988) (NEWLINE 16854 . 16855) (COLON 16849 . 16850) (AS 16845 . 16847) (EXCEPT 16822 . 16828) (INDENT_BLOCK 16677 . 16814) (NEWLINE 16676 . 16677) (COLON 16675 . 16676) (TRY 16511 . 16514) (AS 16671 . 16673) (INDENT_BLOCK 15402 . 15493) (NEWLINE 15401 . 15402) (COLON 15400 . 15401) (AS 15396 . 15398) (EXCEPT 15379 . 15385) (INDENT_BLOCK 15239 . 15371) (NEWLINE 15238 . 15239) (COLON 15237 . 15238) (AS 15233 . 15235) (EXCEPT 15213 . 15219) (INDENT_BLOCK 15048 . 15205) (NEWLINE 15047 . 15048) (COLON 15046 . 15047) (TRY 14876 . 14879) (AS 15042 . 15044) (INDENT_BLOCK 14686 . 14777) (NEWLINE 14685 . 14686) (COLON 14684 . 14685) (AS 14680 . 14682) (EXCEPT 14663 . 14669) (INDENT_BLOCK 14523 . 14655) (NEWLINE 14522 . 14523) (COLON 14521 . 14522) (AS 14517 . 14519) (EXCEPT 14497 . 14503) (INDENT_BLOCK 14350 . 14489) (NEWLINE 14349 . 14350) (COLON 14348 . 14349) (TRY 14163 . 14166) (AS 14344 . 14346) (INDENT_BLOCK 10688 . 10789) (NEWLINE 10687 . 10688) (COLON 10686 . 10687) (AS 10682 . 10684) (INDENT_BLOCK 10388 . 10487) (NEWLINE 10387 . 10388) (COLON 10386 . 10387) (TRY 10212 . 10215) (AS 10382 . 10384) (INDENT_BLOCK 8678 . 8779) (NEWLINE 8677 . 8678) (COLON 8676 . 8677) (TRY 8499 . 8502) (AS 8672 . 8674) (INDENT_BLOCK 8311 . 8410) (NEWLINE 8310 . 8311) (COLON 8309 . 8310) (TRY 8136 . 8139) (AS 8305 . 8307) (INDENT_BLOCK 1458 . 1511) (NEWLINE 1457 . 1458) (COLON 1456 . 1457) (AS 1452 . 1454) (INDENT_BLOCK 1286 . 1339) (NEWLINE 1285 . 1286) (COLON 1284 . 1285) (TRY 1177 . 1180) (AS 1280 . 1282)))
+    (semanticdb-table "replication_split_merge_test.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("time" include nil nil [46 57])
+            ("random" include nil nil [58 71])
+            ("atest.log" include nil nil [72 95])
+            ("replication_case_base" include nil nil [96 149])
+            ("multiprocessing" include nil nil [150 185])
+            ("cmd_wrapper" include nil nil [186 224])
+            ("ocm_wrapper" include nil nil [225 262])
+            ("ReplicationSplitMergeTest" type
+               (:superclasses ("ReplicationTestBase")
+                :members 
+                  ( ("test_split_merge" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [351 355]))                          )
+                        (reparse-symbol indented_block_body) [330 3810])
+                    ("test_split_merge_continuous" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3851 3855]))                          )
+                        (reparse-symbol indented_block_body) [3819 7540])
+                    ("test_move_partition" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7573 7577]))                          )
+                        (reparse-symbol indented_block_body) [7549 10872])
+                    ("test_rebalance" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10904 10908]))                          )
+                        (reparse-symbol indented_block_body) [10885 13545])
+                    ("test_random_split_merge_move" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13591 13595]))                          )
+                        (reparse-symbol indented_block_body) [13558 17290])
+                    ("_random_split_merge_move_hadler" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17331 17335])
+                            ("instance_id" variable nil (reparse-symbol function_parameters) [17337 17348])
+                            ("table_name" variable nil (reparse-symbol function_parameters) [17350 17360])
+                            ("split_type" variable nil (reparse-symbol function_parameters) [17362 17372])
+                            ("max_number_of_action" variable nil (reparse-symbol function_parameters) [17383 17403]))                          )
+                        (reparse-symbol indented_block_body) [17295 18087]))                  
+                :type "class")
+                nil [265 18087]))          
+      :file "replication_split_merge_test.py"
+      :pointmax 18087
+      :fsize 18950
+      :lastmodtime '(22037 55328 802036 69000)
+      :unmatched-syntax nil)
+    (semanticdb-table "replication_negative_test.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "replication_negative_test.py"
+      :pointmax 12475
+      :fsize 15580
+      :lastmodtime '(22019 35467 58046 769000)
+      :unmatched-syntax nil)
+    (semanticdb-table "replication_basic_test.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("time" include nil nil [46 57])
+            ("random" include nil nil [58 71])
+            ("json" include nil nil [72 83])
+            ("case_auto" include nil nil [84 107])
+            ("replication_case_base" include nil nil [108 161])
+            ("atest.log" include nil nil [162 185])
+            ("replication_config" include nil nil [186 211])
+            ("multiprocessing" include nil nil [212 247])
+            ("ocm_wrapper" include nil nil [248 285])
+            ("cmd_wrapper" include nil nil [286 324])
+            ("ReplicationBasicTest" type
+               (:superclasses ("ReplicationTestBase")
+                :members 
+                  ( ("test_basic_ERDR" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [405 409]))                          )
+                        (reparse-symbol indented_block_body) [385 2494])
+                    ("test_basic_ERCT" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2527 2531]))                          )
+                        (reparse-symbol indented_block_body) [2507 4987])
+                    ("test_basic_DTER_no_history_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5036 5040]))                          )
+                        (reparse-symbol indented_block_body) [5000 7601])
+                    ("test_basic_CTERDR_without_base_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7650 7654]))                          )
+                        (reparse-symbol indented_block_body) [7610 9536])
+                    ("test_basic_CT_in_basecopy" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9575 9579]))                          )
+                        (reparse-symbol indented_block_body) [9545 11907])
+                    ("test_basic_DR_in_basecopy" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11946 11950]))                          )
+                        (reparse-symbol indented_block_body) [11916 13485])
+                    ("test_basic_DR_after_CT" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13525 13529]))                          )
+                        (reparse-symbol indented_block_body) [13498 15629])
+                    ("test_basic_DR_after_DT" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15661 15665]))                          )
+                        (reparse-symbol indented_block_body) [15634 17800])
+                    ("test_basic_DT_in_basecopy" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17839 17843]))                          )
+                        (reparse-symbol indented_block_body) [17809 20058])
+                    ("test_basic_specific_secondary_primary_cluster" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20117 20121]))                          )
+                        (reparse-symbol indented_block_body) [20067 21997])
+                    ("test_basic_specific_secondary_common_cluster" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22059 22063]))                          )
+                        (reparse-symbol indented_block_body) [22010 24122])
+                    ("test_basic_RepeatedERDR_to_same_target_with_base_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [24189 24193]))                          )
+                        (reparse-symbol indented_block_body) [24131 27012])
+                    ("test_basic_RepeatedERDR_to_diff_target_with_base_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27083 27087]))                          )
+                        (reparse-symbol indented_block_body) [27025 29955])
+                    ("test_basic_CTERDR_with_continuous_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [30011 30015]))                          )
+                        (reparse-symbol indented_block_body) [29968 32860])
+                    ("test_basic_CTERDR_verify_base_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [32912 32916]))                          )
+                        (reparse-symbol indented_block_body) [32873 35333])
+                    ("test_basic_RepeatedERDR_same_target_verify_continuous_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [35409 35413]))                          )
+                        (reparse-symbol indented_block_body) [35346 39609])
+                    ("test_basic_RepeatedERDR_diff_target_verify_continuous_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [39681 39685]))                          )
+                        (reparse-symbol indented_block_body) [39618 44054])
+                    ("test_basic_ERRepeatedCTDT_not_wait" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [44106 44110]))                          )
+                        (reparse-symbol indented_block_body) [44067 47371])
+                    ("test_basic_ERRepeatedCTDT_wait" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [47411 47415]))                          )
+                        (reparse-symbol indented_block_body) [47376 54140])
+                    ("test_basic_ERConcurrentDTDR" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [54186 54190]))                          )
+                        (reparse-symbol indented_block_body) [54154 57299])
+                    ("test_basic_concurrent_ERCT" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [57335 57339]))                          )
+                        (reparse-symbol indented_block_body) [57304 58732])
+                    ("test_basic_multi_instance" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [58775 58779]))                          )
+                        (reparse-symbol indented_block_body) [58745 61062])
+                    ("test_basic_repeat_DR_ER" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [61107 61111]))                          )
+                        (reparse-symbol indented_block_body) [61079 63859])
+                    ("test_basic_concurrent_ERDR" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [63895 63899]))                          )
+                        (reparse-symbol indented_block_body) [63864 72041])
+                    ("test_basic_GR_with_no_table" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [72116 72120]))                          )
+                        (reparse-symbol indented_block_body) [72084 74178])
+                    ("test_basic_GR_with_no_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [74222 74226]))                          )
+                        (reparse-symbol indented_block_body) [74191 79252])
+                    ("test_basic_GR_with_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [79293 79297]))                          )
+                        (reparse-symbol indented_block_body) [79265 85469])
+                    ("test_basic_grs_ERCT_without_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [85552 85556]))                          )
+                        (reparse-symbol indented_block_body) [85515 87490])
+                    ("test_basic_grs_ERCT_with_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [87537 87541]))                          )
+                        (reparse-symbol indented_block_body) [87503 90762])
+                    ("test_basic_grs_CTER_with_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [90801 90805]))                          )
+                        (reparse-symbol indented_block_body) [90767 94255])
+                    ("test_basic_grs_CTER_without_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [94297 94301]))                          )
+                        (reparse-symbol indented_block_body) [94260 96807])
+                    ("test_basic_grs_repeated_ERCTDRDT" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [96857 96861]))                          )
+                        (reparse-symbol indented_block_body) [96820 100463])
+                    ("test_basic_grs_repeated_CTERDRDT" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [100505 100509]))                          )
+                        (reparse-symbol indented_block_body) [100468 103835])
+                    ("test_basic_grs_ERCT_repeated_DTCT" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [103878 103882]))                          )
+                        (reparse-symbol indented_block_body) [103840 107677])
+                    ("test_basic_grs_CTER_repeated_DTCT" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [107720 107724]))                          )
+                        (reparse-symbol indented_block_body) [107682 111739])
+                    ("test_basic_interreplicate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [111784 111788]))                          )
+                        (reparse-symbol indented_block_body) [111754 111962])
+                    ("test_basic_clusterid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [112000 112004]))                          )
+                        (reparse-symbol indented_block_body) [111975 112098])
+                    ("test_basic_admin_eir" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [112132 112136]))                          )
+                        (reparse-symbol indented_block_body) [112107 113494])
+                    ("test_basic_admin_dir" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [113524 113528]))                          )
+                        (reparse-symbol indented_block_body) [113499 115340])
+                    ("test_basic_admin_girs_without_table" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [115385 115389]))                          )
+                        (reparse-symbol indented_block_body) [115345 117984])
+                    ("test_basic_admin_girs_with_table" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [118026 118030]))                          )
+                        (reparse-symbol indented_block_body) [117989 121863])
+                    ("test_basic_console_eir" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [121895 121899]))                          )
+                        (reparse-symbol indented_block_body) [121868 123803])
+                    ("test_basic_console_dir" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [123835 123839]))                          )
+                        (reparse-symbol indented_block_body) [123808 125771])
+                    ("test_basic_console_ct" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [125802 125806]))                          )
+                        (reparse-symbol indented_block_body) [125776 128748])
+                    ("test_basic_console_ct" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [128779 128783]))                          )
+                        (reparse-symbol indented_block_body) [128753 131726])
+                    ("test_basic_console_ctwfm" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [131760 131764]))                          )
+                        (reparse-symbol indented_block_body) [131731 135270])
+                    ("test_basic_console_dt" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [135301 135305]))                          )
+                        (reparse-symbol indented_block_body) [135275 138069])
+                    ("test_basic_console_grs" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [138101 138105]))                          )
+                        (reparse-symbol indented_block_body) [138074 139697])
+                    ("test_basic_console_girs" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [139730 139734]))                          )
+                        (reparse-symbol indented_block_body) [139702 141816]))                  
+                :type "class")
+                nil [327 141816]))          
+      :file "replication_basic_test.py"
+      :pointmax 141816
+      :fsize 152673
+      :lastmodtime '(22040 48791 520036 365000)
+      :unmatched-syntax '((INDENT_BLOCK 138044 . 138069) (NEWLINE 138043 . 138044) (COLON 138042 . 138043) (AS 138038 . 138040) (INDENT_BLOCK 137802 . 137827) (NEWLINE 137801 . 137802) (COLON 137800 . 137801) (TRY 137610 . 137613) (AS 137796 . 137798) (INDENT_BLOCK 121838 . 121863) (NEWLINE 121837 . 121838) (COLON 121836 . 121837) (AS 121832 . 121834) (INDENT_BLOCK 121596 . 121621) (NEWLINE 121595 . 121596) (COLON 121594 . 121595) (TRY 121404 . 121407) (AS 121590 . 121592) (INDENT_BLOCK 117959 . 117984) (NEWLINE 117958 . 117959) (COLON 117957 . 117958) (AS 117953 . 117955) (INDENT_BLOCK 117717 . 117742) (NEWLINE 117716 . 117717) (COLON 117715 . 117716) (TRY 117525 . 117528) (AS 117711 . 117713)))
+    (semanticdb-table "replication_stress_test.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("time" include nil nil [46 57])
+            ("random" include nil nil [58 71])
+            ("traceback" include nil nil [72 88])
+            ("multiprocessing" include nil nil [89 124])
+            ("ocm_wrapper" include nil nil [125 150])
+            ("replication_case_base" include nil nil [151 204])
+            ("case_auto" include nil nil [205 228])
+            ("case_auto" include nil nil [229 253])
+            ("python_public_sdk.error" include nil nil [254 305])
+            ("'''
+    Replication Stress Case
+'''" code nil nil [308 343])
+            ("StressTest" type
+               (:superclasses ("ReplicationTestBase")
+                :members 
+                  ( ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [402 406]))                          )
+                        (reparse-symbol indented_block_body) [392 565])
+                    ("tearDown" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [583 587]))                          )
+                        (reparse-symbol indented_block_body) [570 730])
+                    ("test_check_env" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [758 762]))                          )
+                        (reparse-symbol indented_block_body) [739 887])
+                    ("test_recover_env" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [917 921]))                          )
+                        (reparse-symbol indented_block_body) [896 1058])
+                    ("test_stress_concurrent_ERDR" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1096 1100]))                          )
+                        (reparse-symbol indented_block_body) [1064 7479])
+                    ("test_stress_interreplicate_concurrent_ER" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7541 7545]))                          )
+                        (reparse-symbol indented_block_body) [7496 7908])
+                    ("test_stress_repeated_ERDR_after_CT" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7960 7964]))                          )
+                        (reparse-symbol indented_block_body) [7921 8477]))                  
+                :type "class")
+                nil [344 8477]))          
+      :file "replication_stress_test.py"
+      :pointmax 41365
+      :fsize 43758
+      :lastmodtime '(22040 48838 447070 954000)
+      :unmatched-syntax nil))
+  :file "!apsarapangu!disk6!jingwen.hjw!work!ts_ots!ts_replication_commercialize!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

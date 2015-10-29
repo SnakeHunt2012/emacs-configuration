@@ -1,0 +1,409 @@
+;; Object common/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "common/"
+  :tables
+  (list
+    (semanticdb-table "public_error.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("APSARA_SQLONLINE_ONLINE_ERROR_H" variable (:constant-flag t) nil [49 80])
+            ("string" include (:system-flag t) nil [191 208])
+            ("apsara/common/exception.h" include (:system-flag t) nil [209 245])
+            ("apsara" type
+               (:members 
+                  ( ("sqlonline" type
+                       (:members 
+                          ( ("SQLErrorType" type
+                               (:typedef ("int")
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [289 314])
+                            ("SQL_OK" variable
+                               (:constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [316 366])
+                            ("SQL_ERROR" variable
+                               (:constant-flag t
+                                :default-value "-1"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [454 505])
+                            ("SQL_TIMEOUT_ERROR" variable
+                               (:constant-flag t
+                                :default-value "-2"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [1848 1899])
+                            ("SQL_DATA_OUT_OF_RANGE" variable
+                               (:constant-flag t
+                                :default-value "-3"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [2195 2246])
+                            ("SQL_PRIMARYKEY_INVALID" variable
+                               (:constant-flag t
+                                :default-value "-4"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [2351 2402])
+                            ("SQL_PARAMETER_INVALID" variable
+                               (:constant-flag t
+                                :default-value "-5"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [2488 2539])
+                            ("SQL_PARTITION_KEY_INVALID" variable
+                               (:constant-flag t
+                                :default-value "-6"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [2690 2741])
+                            ("SQL_EMPTY_TABLEGROUP" variable
+                               (:constant-flag t
+                                :default-value "-7"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [2944 2982])
+                            ("SQL_DATA_CORRUPTION" variable
+                               (:constant-flag t
+                                :default-value "-8"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [3014 3049])
+                            ("SQL_DATABASE_NOT_EXIST" variable
+                               (:constant-flag t
+                                :default-value "-1001"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [3325 3379])
+                            ("SQL_OBJECT_NOT_EXIST" variable
+                               (:constant-flag t
+                                :default-value "-1002"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [3525 3579])
+                            ("SQL_OBJECT_ALREADY_EXIST" variable
+                               (:constant-flag t
+                                :default-value "-1003"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [3731 3785])
+                            ("SQL_INVALID_OBJECT_SCHEMA" variable
+                               (:constant-flag t
+                                :default-value "-1004"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [3935 3989])
+                            ("SQL_PARTITION_NOT_FOUND" variable
+                               (:constant-flag t
+                                :default-value "-1005"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [4135 4189])
+                            ("SQL_INVALID_META_PARAMETER" variable
+                               (:constant-flag t
+                                :default-value "-1007"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [4337 4391])
+                            ("SQL_TOO_OFTEN_CAPACITY_UNIT_ADJUSTMENT" variable
+                               (:constant-flag t
+                                :default-value "-1008"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [4562 4619])
+                            ("SQL_STREAM_NOT_EXIST" variable
+                               (:constant-flag t
+                                :default-value "-1009"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [4795 4834])
+                            ("SQL_STREAM_ALREADY_EXIST" variable
+                               (:constant-flag t
+                                :default-value "-1010"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [4975 5018])
+                            ("SQL_PRIMARYKEY_ALREADY_EXIST" variable
+                               (:constant-flag t
+                                :default-value "-2001"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [5320 5374])
+                            ("SQL_PRIMARYKEY_NOT_EXIST" variable
+                               (:constant-flag t
+                                :default-value "-2002"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [5536 5590])
+                            ("SQL_TXN_SESSION_NOT_EXIST" variable
+                               (:constant-flag t
+                                :default-value "-2003"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [6107 6161])
+                            ("SQL_TXN_LOCK_KEY_FAIL" variable
+                               (:constant-flag t
+                                :default-value "-2004"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [6421 6475])
+                            ("SQL_PARTITION_NOT_READY" variable
+                               (:constant-flag t
+                                :default-value "-2005"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [6794 6848])
+                            ("SQL_VIEW_INCOMPLETE_PK" variable
+                               (:constant-flag t
+                                :default-value "-2006"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [7282 7335])
+                            ("SQL_INVALID_PK" variable
+                               (:constant-flag t
+                                :default-value "-2007"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [7643 7696])
+                            ("SQL_LG_NOT_EXIST" variable
+                               (:constant-flag t
+                                :default-value "-2008"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [7862 7915])
+                            ("SQL_INVLAID_LG_QUALIFIER" variable
+                               (:constant-flag t
+                                :default-value "-2009"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [8137 8190])
+                            ("SQL_LG_QUALIFIER_REQUIRED" variable
+                               (:constant-flag t
+                                :default-value "-2010"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [8423 8476])
+                            ("SQL_TXN_SESSION_BUSY" variable
+                               (:constant-flag t
+                                :default-value "-2011"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [8645 8698])
+                            ("SQL_COMMIT_LOG_FAIL" variable
+                               (:constant-flag t
+                                :default-value "-2013"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [8852 8905])
+                            ("SQL_COMMIT_MEMORY_FAIL" variable
+                               (:constant-flag t
+                                :default-value "-2014"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [9134 9187])
+                            ("SQL_NULL_VIEW_PK" variable
+                               (:constant-flag t
+                                :default-value "-2015"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [9335 9388])
+                            ("SQL_INVALID_COLUMN_NAME" variable
+                               (:constant-flag t
+                                :default-value "-2016"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [9574 9627])
+                            ("SQL_DELETE_ROW_PARA_ERROR" variable
+                               (:constant-flag t
+                                :default-value "-2017"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [9721 9774])
+                            ("SQL_COLUMN_TYPE_MISMATCH" variable
+                               (:constant-flag t
+                                :default-value "-2018"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [9873 9926])
+                            ("SQL_TXN_INVALID_SCOPE" variable
+                               (:constant-flag t
+                                :default-value "-2019"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [10036 10089])
+                            ("SQL_PARTITION_SELF_PROTECTION" variable
+                               (:constant-flag t
+                                :default-value "-2020"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [10204 10257])
+                            ("SQL_OUT_OF_TRANSACTION_LIMIT" variable
+                               (:constant-flag t
+                                :default-value "-2021"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [10381 10434])
+                            ("SQL_BAD_SESSION_STATUS" variable
+                               (:constant-flag t
+                                :default-value "-2022"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [10622 10675])
+                            ("SQL_OUT_OF_CELL_COUNT_LIMIT" variable
+                               (:constant-flag t
+                                :default-value "-2030"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [10798 10851])
+                            ("SQL_OUT_OF_ROW_SIZE_LIMIT" variable
+                               (:constant-flag t
+                                :default-value "-2031"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [10961 11014])
+                            ("SQL_OUT_OF_CELL_VALUE_SIZE_LIMIT" variable
+                               (:constant-flag t
+                                :default-value "-2032"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [11125 11178])
+                            ("SQL_OUT_OF_CELL_NAME_SIZE_LIMIT" variable
+                               (:constant-flag t
+                                :default-value "-2033"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [11293 11346])
+                            ("SQL_NOT_ENOUGH_CAPACITY_UNIT" variable
+                               (:constant-flag t
+                                :default-value "-2034"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [11413 11460])
+                            ("SQL_TABLE_NOT_READY" variable
+                               (:constant-flag t
+                                :default-value "-2035"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [11733 11783])
+                            ("SQL_TOO_MANY_CAPACITY_UNIT_ON_ONE_PARTITION" variable
+                               (:constant-flag t
+                                :default-value "-2036"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [12212 12274])
+                            ("SQL_NOT_ENOUGH_BLOCK_MANAGER_SPACE" variable
+                               (:constant-flag t
+                                :default-value "-2037"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [12341 12394])
+                            ("SQL_ASYNC_READ_CONTROLLER_BUSY" variable
+                               (:constant-flag t
+                                :default-value "-2038"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [12464 12512])
+                            ("SQL_MODIFY_CONDITION_CHECK_FAIL" variable
+                               (:constant-flag t
+                                :default-value "-2040"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [12630 12683])
+                            ("SQL_NOT_REPLICATABLE" variable
+                               (:constant-flag t
+                                :default-value "-2041"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [12769 12808])
+                            ("SQL_PERMISSION_DENIED_FOR_SPLIT" variable
+                               (:constant-flag t
+                                :default-value "-2042"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [12963 13013])
+                            ("SQL_PERMISSION_DENIED_FOR_MERGE" variable
+                               (:constant-flag t
+                                :default-value "-2043"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [13164 13214])
+                            ("SQL_PERMISSION_DENIED_FOR_UNLOAD" variable
+                               (:constant-flag t
+                                :default-value "-2044"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [13368 13419])
+                            ("SQL_STREAM_DATA_EXPIRED" variable
+                               (:constant-flag t
+                                :default-value "-2045"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [13608 13650])
+                            ("SQL_SERVER_BUSY" variable
+                               (:constant-flag t
+                                :default-value "-3001"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [13711 13764])
+                            ("SQL_SERVER_NOT_AVAILABLE" variable
+                               (:constant-flag t
+                                :default-value "-3002"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [15227 15279])
+                            ("SQL_REPLICATION_OPERATION_CONFLICT" variable
+                               (:constant-flag t
+                                :default-value "-4001"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [15297 15359])
+                            ("SQL_INSTANCE_NOT_EXIST" variable
+                               (:constant-flag t
+                                :default-value "-4002"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [15360 15422])
+                            ("SQL_OUTOF_REPLICATION_QUOTA_LIMIT" variable
+                               (:constant-flag t
+                                :default-value "-4003"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [15423 15485])
+                            ("SQL_INSTANCE_ALREADY_EXIST" variable
+                               (:constant-flag t
+                                :default-value "-4004"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [15486 15548])
+                            ("SQL_REGION_UNAVAILABLE" variable
+                               (:constant-flag t
+                                :default-value "-4005"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [15549 15611])
+                            ("SQL_REPLICATION_OPERTION_EXHAUSETED" variable
+                               (:constant-flag t
+                                :default-value "-4006"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [15612 15674])
+                            ("SQL_CLUSTER_NOT_EXIST" variable
+                               (:constant-flag t
+                                :default-value "-4007"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [15675 15737])
+                            ("SQL_REPLICATION_RELATIONSHIP_NOT_EXIST" variable
+                               (:constant-flag t
+                                :default-value "-4008"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [15738 15800])
+                            ("SQL_REPLICATION_RELATIONSHIP_ALREADY_EXIST" variable
+                               (:constant-flag t
+                                :default-value "-4009"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [15801 15863])
+                            ("SqlStorageException" type
+                               (:superclasses 
+                                  ( ("ExceptionBase" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [15917 15924])
+                                    ("mErrorCode" variable (:type "int") (reparse-symbol classsubparts) [15929 15944])
+                                    ("public" label nil (reparse-symbol classsubparts) [15945 15952])
+                                    ("SqlStorageException" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("strMsg" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [15977 16003])
+                                            ("errorCode" variable (:type "int") (reparse-symbol arg-sub-list) [16004 16018]))                                          
+                                        :type ("SqlStorageException" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [15957 16097])
+                                    ("SqlStorageException" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [16103 16135])
+                                    ("GetClassName" function (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16156 16238])
+                                    ("Clone" function (:type ("std::tr1::shared_ptr" type
+                                         (:template-specifier 
+                                            ( ("ExceptionBase" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [16259 16404])
+                                    ("GetErrorCode" function (:type "int") (reparse-symbol classsubparts) [16410 16457])
+                                    ("InitWithoutStackTrace" function
+                                       (:arguments 
+                                          ( ("file" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [16490 16507])
+                                            ("function" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [16508 16529])
+                                            ("line" variable (:type "int") (reparse-symbol arg-sub-list) [16530 16539]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [16463 16625]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [15866 16628]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [266 16631]))                  
+                :type "namespace")
+                nil [247 16663]))          
+      :file "public_error.h"
+      :pointmax 16699
+      :fsize 16698
+      :lastmodtime '(21980 4869 460067 397000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("APSARA_SQLONLINE_ONLINE_ERROR_H")
+          )
+))
+  :file "!apsarapangu!disk7!jingwen.hjw!work!trunk!sqlonline!common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,274 @@
+;; Object cscope/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cscope/"
+  :tables
+  (list
+    (semanticdb-table "xcscope.el"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("easymenu" include nil nil [24062 24081])
+            ("cscope" customgroup (:user-visible-flag t) nil [24084 24700])
+            ("cscope-do-not-update-database" variable (:user-visible-flag t) nil [24703 24973])
+            ("cscope-database-regexps" variable (:user-visible-flag t) nil [24976 30610])
+            ("cscope-name-line-width" variable
+               (:user-visible-flag t
+                :default-value -30)
+                nil [30611 30823])
+            ("cscope-truncate-lines" variable
+               (:user-visible-flag t
+                :default-value truncate-lines)
+                nil [30826 31109])
+            ("cscope-display-times" variable
+               (:user-visible-flag t
+                :default-value t)
+                nil [31112 31320])
+            ("cscope-program" variable
+               (:user-visible-flag t
+                :default-value "cscope")
+                nil [31323 31442])
+            ("cscope-index-file" variable
+               (:user-visible-flag t
+                :default-value "cscope.files")
+                nil [31445 31566])
+            ("cscope-database-file" variable
+               (:user-visible-flag t
+                :default-value "cscope.out")
+                nil [31569 31690])
+            ("cscope-edit-single-match" variable
+               (:user-visible-flag t
+                :default-value t)
+                nil [31693 31838])
+            ("cscope-display-cscope-buffer" variable
+               (:user-visible-flag t
+                :default-value t)
+                nil [31841 31994])
+            ("cscope-stop-at-first-match-dir" variable (:user-visible-flag t) nil [31997 32418])
+            ("cscope-use-relative-paths" variable
+               (:user-visible-flag t
+                :default-value t)
+                nil [32421 33016])
+            ("cscope-index-recursively" variable
+               (:user-visible-flag t
+                :default-value t)
+                nil [33019 33370])
+            ("cscope-no-mouse-prompts" variable (:user-visible-flag t) nil [33373 33600])
+            ("cscope-suppress-empty-matches" variable
+               (:user-visible-flag t
+                :default-value t)
+                nil [33603 33685])
+            ("cscope-indexing-script" variable
+               (:user-visible-flag t
+                :default-value "cscope-indexer")
+                nil [33688 33825])
+            ("cscope-symbol-chars" variable
+               (:user-visible-flag t
+                :default-value "A-Za-z0-9_")
+                nil [33828 34017])
+            ("cscope-filename-chars" variable
+               (:user-visible-flag t
+                :default-value "-.,/A-Za-z0-9_~!@#$%&+=\\\\")
+                nil [34020 34228])
+            ("cscope-allow-arrow-overlays" variable
+               (:user-visible-flag t
+                :default-value t)
+                nil [34231 34731])
+            ("cscope-overlay-arrow-string" variable
+               (:user-visible-flag t
+                :default-value "=>")
+                nil [34734 34874])
+            ("cscope-close-window-after-select" variable (:user-visible-flag t) nil [34877 35052])
+            ("cscope-minor-mode-hooks" variable nil nil [35055 35150])
+            ("cscope-separator-line" variable
+               (:constant-flag t
+                :default-value "-------------------------------------------------------------------------------
+")
+                nil [35153 35343])
+            ("cscope-use-face" variable
+               (:user-visible-flag t
+                :default-value t)
+                nil [35386 35514])
+            ("cscope-file-face" variable
+               (:default-value (quote ((((class color) (background dark)) (:foreground "yellow")) (((class color) (background light)) (:foreground "blue")) (t (:bold t))))
+                :type "face")
+                nil [35517 35775])
+            ("cscope-function-face" variable
+               (:default-value (quote ((((class color) (background dark)) (:foreground "cyan")) (((class color) (background light)) (:foreground "magenta")) (t (:bold t))))
+                :type "face")
+                nil [35778 36045])
+            ("cscope-line-number-face" variable
+               (:default-value (quote ((((class color) (background dark)) (:foreground "red")) (((class color) (background light)) (:foreground "red")) (t (:bold t))))
+                :type "face")
+                nil [36048 36311])
+            ("cscope-line-face" variable
+               (:default-value (quote ((((class color) (background dark)) (:foreground "green")) (((class color) (background light)) (:foreground "black")) (t (:bold nil))))
+                :type "face")
+                nil [36314 36581])
+            ("cscope-mouse-face" variable
+               (:default-value (quote ((((class color) (background dark)) (:foreground "white" :background "blue")) (((class color) (background light)) (:foreground "white" :background "blue")) (t (:bold nil))))
+                :type "face")
+                nil [36584 36889])
+            ("cscope-running-in-xemacs" variable
+               (:constant-flag t
+                :default-value (string-match "XEmacs\\|Lucid" emacs-version))
+                nil [37107 37188])
+            ("cscope-list-entry-keymap" variable nil nil [37190 37298])
+            ("if" code nil nil [37299 40357])
+            ("cscope-list-entry-hook" variable (:user-visible-flag t) nil [40360 40447])
+            ("cscope-list-entry-mode" function nil nil [40450 40887])
+            ("cscope-output-buffer-name" variable (:default-value "*cscope*") nil [40970 41057])
+            ("cscope-info-buffer-name" variable (:default-value "*cscope-info*") nil [41060 41155])
+            ("cscope-process" variable nil nil [41158 41217])
+            ("make-variable-buffer-local" code nil nil [41218 41262])
+            ("cscope-process-output" variable nil nil [41265 41355])
+            ("make-variable-buffer-local" code nil nil [41356 41407])
+            ("cscope-command-args" variable nil nil [41410 41514])
+            ("make-variable-buffer-local" code nil nil [41515 41564])
+            ("cscope-start-directory" variable nil nil [41567 41753])
+            ("make-variable-buffer-local" code nil nil [41754 41806])
+            ("cscope-search-list" variable nil nil [41809 42130])
+            ("make-variable-buffer-local" code nil nil [42131 42179])
+            ("cscope-searched-dirs" variable nil nil [42182 42270])
+            ("make-variable-buffer-local" code nil nil [42271 42321])
+            ("cscope-filter-func" variable nil nil [42324 42441])
+            ("make-variable-buffer-local" code nil nil [42442 42490])
+            ("cscope-sentinel-func" variable nil nil [42493 42614])
+            ("make-variable-buffer-local" code nil nil [42615 42663])
+            ("cscope-last-file" variable nil nil [42666 42762])
+            ("make-variable-buffer-local" code nil nil [42763 42809])
+            ("cscope-start-time" variable nil nil [42812 42881])
+            ("make-variable-buffer-local" code nil nil [42882 42929])
+            ("cscope-first-match" variable nil nil [42932 43008])
+            ("make-variable-buffer-local" code nil nil [43009 43057])
+            ("cscope-first-match-point" variable nil nil [43060 43137])
+            ("make-variable-buffer-local" code nil nil [43138 43192])
+            ("cscope-item-start" variable nil nil [43195 43303])
+            ("make-variable-buffer-local" code nil nil [43304 43353])
+            ("cscope-output-start" variable nil nil [43356 43446])
+            ("make-variable-buffer-local" code nil nil [43447 43496])
+            ("cscope-matched-multiple" variable nil nil [43499 43582])
+            ("make-variable-buffer-local" code nil nil [43583 43636])
+            ("cscope-stop-at-first-match-dir-meta" variable nil nil [43639 43692])
+            ("make-variable-buffer-local" code nil nil [43693 43758])
+            ("cscope-symbol" variable nil nil [43761 43821])
+            ("cscope-adjust" variable (:default-value t) nil [43824 44027])
+            ("cscope-adjust-range" variable (:default-value 1000) nil [44030 44171])
+            ("cscope-marker" variable nil nil [44174 44248])
+            ("cscope-marker-window" variable nil nil [44251 44440])
+            ("cscope-marker-ring-length" variable (:default-value 16) nil [44443 44518])
+            ("cscope-marker-ring" variable (:default-value (make-ring cscope-marker-ring-length)) nil [44521 44657])
+            ("cscope-initial-directory" variable nil nil [44660 44790])
+            ("cscope:map" variable nil nil [44874 44920])
+            ("if" code nil nil [44921 46889])
+            ("easy-menu-define" code nil nil [46958 50266])
+            ("cscope-common-text-plist" variable (:default-value (let (plist) (setq plist (plist-put plist (quote mouse-face) (quote cscope-mouse-face))) plist)) nil [50465 50656])
+            ("cscope-insert-with-text-properties" function (:arguments ("text" "filename" "line-number")) nil [50659 51372])
+            ("if" code nil nil [51375 52066])
+            ("cscope-show-entry-internal" function (:arguments ("file" "line-number" "save-mark-p" "window" "arrow-p")) nil [52069 55157])
+            ("cscope-select-entry-other-window" function (:user-visible-flag t) nil [55383 55910])
+            ("cscope-select-entry-one-window" function (:user-visible-flag t) nil [55913 56447])
+            ("cscope-select-entry-specified-window" function
+               (:user-visible-flag t
+                :arguments ("window"))
+                nil [56450 56843])
+            ("cscope-mouse-select-entry-other-window" function
+               (:user-visible-flag t
+                :arguments ("event"))
+                nil [56846 57558])
+            ("cscope-show-entry-other-window" function (:user-visible-flag t) nil [57561 57885])
+            ("cscope-buffer-search" function (:arguments ("do-symbol" "do-next")) nil [57888 59335])
+            ("cscope-display-buffer" function (:user-visible-flag t) nil [59338 59579])
+            ("cscope-display-buffer-toggle" function (:user-visible-flag t) nil [59582 59932])
+            ("cscope-next-symbol" function (:user-visible-flag t) nil [59935 60061])
+            ("cscope-next-file" function (:user-visible-flag t) nil [60064 60188])
+            ("cscope-prev-symbol" function (:user-visible-flag t) nil [60191 60323])
+            ("cscope-prev-file" function (:user-visible-flag t) nil [60326 60456])
+            ("cscope-pop-mark" function (:user-visible-flag t) nil [60459 61825])
+            ("cscope-set-initial-directory" function
+               (:user-visible-flag t
+                :arguments ("cs-id"))
+                nil [61828 62212])
+            ("cscope-unset-initial-directory" function (:user-visible-flag t) nil [62215 62425])
+            ("cscope-help" function nil nil [62428 62632])
+            ("cscope-bury-buffer" function (:user-visible-flag t) nil [62635 62948])
+            ("cscope-quit" function nil nil [62951 63057])
+            ("cscope-canonicalize-directory" function (:arguments ("dir")) nil [63140 63331])
+            ("cscope-search-directory-hierarchy" function (:arguments ("directory")) nil [63334 64208])
+            ("cscope-find-info" function (:arguments ("top-directory")) nil [64211 65697])
+            ("cscope-make-entry-line" function (:arguments ("func-name" "line-number" "line")) nil [65700 66424])
+            ("cscope-process-filter" function (:arguments ("process" "output")) nil [66427 69713])
+            ("cscope-process-sentinel" function (:arguments ("process" "event")) nil [69716 72485])
+            ("cscope-search-one-database" function nil nil [72488 76040])
+            ("cscope-call" function (:arguments ("msg" "args" "directory" "filter-func" "sentinel-func")) nil [76043 78544])
+            ("cscope-unix-index-process-buffer-name" variable (:default-value "*cscope-indexing-buffer*") nil [78628 78776])
+            ("cscope-unix-index-process-buffer" variable nil nil [78779 78887])
+            ("cscope-unix-index-process" variable nil nil [78890 78962])
+            ("cscope-unix-index-files-sentinel" function (:arguments ("process" "event")) nil [78965 79404])
+            ("cscope-unix-index-files-internal" function (:arguments ("top-directory" "header-text" "args")) nil [79407 80599])
+            ("cscope-index-files" function
+               (:user-visible-flag t
+                :arguments ("top-directory"))
+                nil [80602 81106])
+            ("cscope-create-list-of-files-to-index" function
+               (:user-visible-flag t
+                :arguments ("top-directory"))
+                nil [81109 81539])
+            ("cscope-edit-list-of-files-to-index" function (:user-visible-flag t) nil [81542 82241])
+            ("cscope-tell-user-about-directory" function (:user-visible-flag t) nil [82325 83176])
+            ("cscope-dired-directory" function (:user-visible-flag t) nil [83179 84383])
+            ("cscope-extract-symbol-at-cursor" function (:arguments ("extract-filename")) nil [84467 84961])
+            ("cscope-prompt-for-symbol" function (:arguments ("prompt" "extract-filename")) nil [84964 85525])
+            ("cscope-find-this-symbol" function
+               (:user-visible-flag t
+                :arguments ("symbol"))
+                nil [85528 85907])
+            ("cscope-find-global-definition" function
+               (:user-visible-flag t
+                :arguments ("symbol"))
+                nil [85910 86320])
+            ("cscope-find-global-definition-no-prompting" function (:user-visible-flag t) nil [86323 86732])
+            ("cscope-find-called-functions" function
+               (:user-visible-flag t
+                :arguments ("symbol"))
+                nil [86735 87171])
+            ("cscope-find-functions-calling-this-function" function
+               (:user-visible-flag t
+                :arguments ("symbol"))
+                nil [87174 87613])
+            ("cscope-find-this-text-string" function
+               (:user-visible-flag t
+                :arguments ("symbol"))
+                nil [87616 88013])
+            ("cscope-find-egrep-pattern" function
+               (:user-visible-flag t
+                :arguments ("symbol"))
+                nil [88016 88451])
+            ("cscope-find-this-file" function
+               (:user-visible-flag t
+                :arguments ("symbol"))
+                nil [88454 88850])
+            ("cscope-find-files-including-file" function
+               (:user-visible-flag t
+                :arguments ("symbol"))
+                nil [88853 89313])
+            ("cscope-find-assignments-to-this-symbol" function
+               (:user-visible-flag t
+                :arguments ("symbol"))
+                nil [89316 89759])
+            ("cscope-minor-mode" variable nil nil [89844 89879])
+            ("make-variable-buffer-local" code nil nil [89880 89927])
+            ("put" code nil nil [89928 89971])
+            ("cscope-minor-mode" function (:arguments ("arg")) nil [89974 90236])
+            ("cscope:hook" function nil nil [90239 90305])
+            ("or" code nil nil [90308 90465])
+            ("add-hook" code nil nil [90467 90513])
+            ("add-hook" code nil nil [90514 90562])
+            ("add-hook" code nil nil [90563 90613])
+            ("xcscope" package nil nil [90615 90633]))          
+      :file "xcscope.el"
+      :pointmax 90634
+      :fsize 90633
+      :lastmodtime '(21869 1807 0 0)
+      :unmatched-syntax nil))
+  :file "!home!admin!.emacs.d!site-lisp!cscope!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,162 @@
+;; Object ycsb/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ycsb/"
+  :tables
+  (list
+    (semanticdb-table "zipfian_generator.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("APSARA_SQLONLINE_PERFTEST_GENERATORS_H" variable (:constant-flag t) nil [900 938])
+            ("string" include (:system-flag t) nil [940 957])
+            ("stdint.h" include (:system-flag t) nil [958 977])
+            ("apsara" type
+               (:members 
+                  ( ("DefaultRandom" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1000 1020])
+                    ("sqlonline" type
+                       (:members 
+                          ( ("perftest" type
+                               (:members 
+                                  ( ("ZipfianGenerator" type
+                                       (:members 
+                                          ( ("private" label nil (reparse-symbol classsubparts) [2791 2799])
+                                            ("items" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2844 2858])
+                                            ("base" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2909 2922])
+                                            ("zipfianconstant" variable (:type "double") (reparse-symbol classsubparts) [2980 3003])
+                                            ("alpha" variable (:type "double") (reparse-symbol classsubparts) [3085 3125])
+                                            ("zetan" variable (:type "double") (reparse-symbol classsubparts) [3085 3125])
+                                            ("eta" variable (:type "double") (reparse-symbol classsubparts) [3085 3125])
+                                            ("theta" variable (:type "double") (reparse-symbol classsubparts) [3085 3125])
+                                            ("zeta2theta" variable (:type "double") (reparse-symbol classsubparts) [3085 3125])
+                                            ("countforzeta" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3211 3232])
+                                            ("allowitemcountdecrease" variable (:type "bool") (reparse-symbol classsubparts) [4290 4318])
+                                            ("public" label nil (reparse-symbol classsubparts) [4559 4566])
+                                            ("ZIPFIAN_CONSTANT" variable
+                                               (:typemodifiers ("static")
+                                                :constant-flag t
+                                                :default-value "0.80"
+                                                :type "double")
+                                                (reparse-symbol classsubparts) [4571 4615])
+                                            ("ZipfianGenerator" function
+                                               (:prototype-flag t
+                                                :constructor-flag t
+                                                :arguments 
+                                                  ( ("_items" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4638 4653]))                                                  
+                                                :type ("ZipfianGenerator" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [4621 4654])
+                                            ("ZipfianGenerator" function
+                                               (:prototype-flag t
+                                                :constructor-flag t
+                                                :arguments 
+                                                  ( ("_min" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4895 4908])
+                                                    ("_max" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4909 4922]))                                                  
+                                                :type ("ZipfianGenerator" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [4878 4923])
+                                            ("ZipfianGenerator" function
+                                               (:prototype-flag t
+                                                :constructor-flag t
+                                                :arguments 
+                                                  ( ("min" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5584 5596])
+                                                    ("max" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5597 5609])
+                                                    ("_zipfianconstant" variable (:type "double") (reparse-symbol arg-sub-list) [5610 5634]))                                                  
+                                                :type ("ZipfianGenerator" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [5567 5635])
+                                            ("ZipfianGenerator" function
+                                               (:prototype-flag t
+                                                :constructor-flag t
+                                                :arguments 
+                                                  ( ("min" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6077 6089])
+                                                    ("max" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6090 6102])
+                                                    ("_zipfianconstant" variable (:type "double") (reparse-symbol arg-sub-list) [6103 6127])
+                                                    ("_zetan" variable (:type "double") (reparse-symbol arg-sub-list) [6128 6142]))                                                  
+                                                :type ("ZipfianGenerator" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [6060 6143])
+                                            ("ZipfianGenerator" function
+                                               (:destructor-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [6149 6179])
+                                            ("init" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("min" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6195 6207])
+                                                    ("max" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6208 6220])
+                                                    ("_zipfianconstant" variable (:type "double") (reparse-symbol arg-sub-list) [6221 6245])
+                                                    ("_zetan" variable (:type "double") (reparse-symbol arg-sub-list) [6246 6260]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [6185 6261])
+                                            ("zeta" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("n" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6720 6730])
+                                                    ("theta" variable (:type "double") (reparse-symbol arg-sub-list) [6731 6744]))                                                  
+                                                :type "double")
+                                                (reparse-symbol classsubparts) [6708 6745])
+                                            ("zetastatic" function
+                                               (:prototype-flag t
+                                                :typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("n" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7117 7127])
+                                                    ("theta" variable (:type "double") (reparse-symbol arg-sub-list) [7128 7141]))                                                  
+                                                :type "double")
+                                                (reparse-symbol classsubparts) [7092 7142])
+                                            ("zeta" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("st" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7727 7738])
+                                                    ("n" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7739 7749])
+                                                    ("theta" variable (:type "double") (reparse-symbol arg-sub-list) [7750 7763])
+                                                    ("initialsum" variable (:type "double") (reparse-symbol arg-sub-list) [7764 7782]))                                                  
+                                                :type "double")
+                                                (reparse-symbol classsubparts) [7715 7783])
+                                            ("zetastatic" function
+                                               (:prototype-flag t
+                                                :typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("st" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8373 8384])
+                                                    ("n" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8385 8395])
+                                                    ("theta" variable (:type "double") (reparse-symbol arg-sub-list) [8396 8409])
+                                                    ("initialsum" variable (:type "double") (reparse-symbol arg-sub-list) [8410 8428]))                                                  
+                                                :type "double")
+                                                (reparse-symbol classsubparts) [8348 8429])
+                                            ("nextLong" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("rng" variable
+                                                       (:pointer 1
+                                                        :type ("DefaultRandom" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [8723 8742])
+                                                    ("itemcount" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8743 8761]))                                                  
+                                                :type ("int64_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [8706 8762])
+                                            ("nextLong" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("rng" variable
+                                                       (:pointer 1
+                                                        :type ("DefaultRandom" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [9174 9193]))                                                  
+                                                :type ("int64_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [9157 9194]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [2765 9197]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1046 9200]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1022 9225]))                  
+                :type "namespace")
+                nil [979 9251]))          
+      :file "zipfian_generator.h"
+      :pointmax 9280
+      :fsize 9279
+      :lastmodtime '(21973 28403 509036 101000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("APSARA_SQLONLINE_PERFTEST_GENERATORS_H")
+          )
+))
+  :file "!apsarapangu!disk7!jingwen.hjw!work!trunk_me!sqlonline!testing!perf_test!ycsb!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,57 @@
+;; Object ts_export_channel/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ts_export_channel/"
+  :tables
+  (list
+    (semanticdb-table "export_e2e_perf_test.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("sys" include nil nil [25 35])
+            ("random" include nil nil [36 49])
+            ("export_e2e_case_base" include nil nil [51 85])
+            ("export_e2e_config" include nil nil [86 117])
+            ("export_e2e_util" include nil nil [118 147])
+            ("export_e2e_dist" include nil nil [148 194])
+            ("ExportE2EPerfTest" type
+               (:superclasses ("ExportCaseBase")
+                :members 
+                  ( ("test_perf_HO_test1" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [317 321]))                          )
+                        (reparse-symbol indented_block_body) [294 952])
+                    ("test_perf_HO_test2" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [980 984]))                          )
+                        (reparse-symbol indented_block_body) [957 1617])
+                    ("test_perf_OH_test1" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1664 1668]))                          )
+                        (reparse-symbol indented_block_body) [1641 2299])
+                    ("test_perf_OH_test2" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2327 2331]))                          )
+                        (reparse-symbol indented_block_body) [2304 2964])
+                    ("test_perf_both_test1" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2994 2998]))                          )
+                        (reparse-symbol indented_block_body) [2969 3511])
+                    ("test_perf_both_test2" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3541 3545]))                          )
+                        (reparse-symbol indented_block_body) [3516 4060]))                  
+                :type "class")
+                nil [197 4060]))          
+      :file "export_e2e_perf_test.py"
+      :pointmax 4063
+      :fsize 4232
+      :lastmodtime '(21830 61509 842038 462000)
+      :unmatched-syntax nil))
+  :file "!apsarapangu!disk1!jingwen.hjw!work!ts_export_channel!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,55 @@
+;; Object script/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "script/"
+  :tables
+  (list
+    (semanticdb-table "train.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("module_io" include nil nil [1 17])
+            ("random" include nil nil [18 31])
+            ("numpy" include nil nil [32 50])
+            ("sklearn.ensemble" include nil nil [51 102])
+            ("sklearn.metrics" include nil nil [103 140])
+            ("sklearn.metrics" include nil nil [141 182])
+            ("if" code nil nil [184 8937]))          
+      :file "train.py"
+      :pointmax 8938
+      :fsize 8937
+      :lastmodtime '(21895 51711 73039 676000)
+      :unmatched-syntax nil)
+    (semanticdb-table "module_io.py"
+      :file "module_io.py"
+      :fsize 1257
+      :lastmodtime '(21895 51711 73039 676000))
+    (semanticdb-table "develop.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("module_io" include nil nil [1 17])
+            ("gc" include nil nil [18 27])
+            ("time" include nil nil [28 39])
+            ("random" include nil nil [40 53])
+            ("numpy" include nil nil [54 72])
+            ("sklearn.ensemble" include nil nil [73 124])
+            ("sklearn.metrics" include nil nil [162 199])
+            ("sklearn.metrics" include nil nil [200 241])
+            ("get_records" function nil nil [243 473])
+            ("clean_records" function (:arguments 
+              ( ("records" variable nil (reparse-symbol function_parameters) [492 499]))              ) nil [474 853])
+            ("shuffle_records" function (:arguments 
+              ( ("records" variable nil (reparse-symbol function_parameters) [874 881]))              ) nil [854 976])
+            ("split_records" function (:arguments 
+              ( ("records" variable nil (reparse-symbol function_parameters) [995 1002]))              ) nil [977 1249])
+            ("separate_records" function (:arguments 
+              ( ("records" variable nil (reparse-symbol function_parameters) [1271 1278]))              ) nil [1250 1690])
+            ("convert_targets" function (:arguments 
+              ( ("targets" variable nil (reparse-symbol function_parameters) [1711 1718]))              ) nil [1691 1881])
+            ("if" code nil nil [1887 8983]))          
+      :file "develop.py"
+      :pointmax 9123
+      :fsize 9122
+      :lastmodtime '(21895 51711 73039 676000)
+      :unmatched-syntax nil))
+  :file "!apsarapangu!disk5!jingwen.hjw!learn!kdd-cup!kdd-cup-2014!script!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

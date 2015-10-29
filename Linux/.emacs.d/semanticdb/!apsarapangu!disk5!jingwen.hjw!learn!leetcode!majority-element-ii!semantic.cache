@@ -1,0 +1,16 @@
+;; Object majority-element-ii/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "majority-element-ii/"
+  :tables
+  (list
+    (semanticdb-table "solution.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "solution.py"
+      :pointmax 1359
+      :fsize 1358
+      :lastmodtime '(21923 43835 934036 621000)
+      :unmatched-syntax nil))
+  :file "!apsarapangu!disk5!jingwen.hjw!learn!leetcode!majority-element-ii!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

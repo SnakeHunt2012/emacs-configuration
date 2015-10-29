@@ -1,0 +1,1186 @@
+;; Object master/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "master/"
+  :tables
+  (list
+    (semanticdb-table "master_systable.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("communication.h" include nil nil [1 27])
+            ("meta_transformer.h" include nil nil [28 57])
+            ("master_systable.h" include nil nil [58 86])
+            ("replication_state_manager.h" include nil nil [87 125])
+            ("master_meta_revision_editor.h" include nil nil [126 166])
+            ("compatible_tablet_interfaces.h" include nil nil [167 208])
+            ("sqlonline/include/dumb_txn.h" include nil nil [209 248])
+            ("sqlonline/core/sqlonline_const_variables.h" include nil nil [249 302])
+            ("sqlonline/core/sqlonline_tablet_column_iterator.h" include nil nil [303 363])
+            ("sqlonline/common/public_error.h" include nil nil [364 406])
+            ("sqlonline/common/sqlonline_macro.h" include nil nil [407 452])
+            ("sqlonline/common/sqlonline_immutable_attributes.h" include nil nil [453 513])
+            ("sqlonline/include/sqlstorage_profiling.h" include nil nil [514 565])
+            ("apsara/common/uuid.h" include nil nil [566 597])
+            ("apsara/fuxi.h" include nil nil [598 622])
+            ("climits" include (:system-flag t) nil [623 641])
+            ("algorithm" include (:system-flag t) nil [642 662])
+            ("cstdlib" include (:system-flag t) nil [663 681])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [683 703])
+            ("apsara::logging" using (:type ("apsara::logging" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [704 736])
+            ("apsara::fuxi" using (:type ("apsara::fuxi" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [737 766])
+            ("apsara" using (:type ("apsara" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [767 790])
+            ("kuafu" using (:type ("kuafu" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [791 813])
+            ("apsara::json" using (:type ("apsara::json" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [814 843])
+            ("apsara::pangu" using (:type ("apsara::pangu" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [844 874])
+            ("apsara::sqlonline" using (:type ("apsara::sqlonline" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [875 909])
+            ("apsara::sqlonline::master" using (:type ("apsara::sqlonline::master" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [910 952])
+            ("apsara::common::timing" using (:type ("apsara::common::timing" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [953 992])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_storage_PrefetchBlockCount4OnlineRequest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1013 1064]))                  
+                :type "int")
+                nil [994 1065])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_storage_ReadPriority4OnlineRequest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1085 1130]))                  
+                :type "int")
+                nil [1066 1131])
+            ("DECLARE_FLAG_BOOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_storage_EnableBackupReadForNormalFile" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1150 1198]))                  
+                :type "int")
+                nil [1132 1199])
+            ("SqlMasterSysTableManager" function
+               (:constructor-flag t
+                :parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("pSysTableTablet" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ITablet::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1252 1288]))                  
+                :type ("SqlMasterSysTableManager" type (:type "class") nil nil))
+                nil [1201 1704])
+            ("SqlMasterSysTableManager" function
+               (:destructor-flag t
+                :parent "SqlMasterSysTableManager"
+                :type "void")
+                nil [1706 1947])
+            ("Init" function
+               (:parent "SqlMasterSysTableManager"
+                :type "void")
+                nil [1949 2224])
+            ("LoadSystemTable" function
+               (:parent "SqlMasterSysTableManager"
+                :type "void")
+                nil [2226 4957])
+            ("OnCreateTableInStorage" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("txn" variable (:type ("TxnPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5014 5025])
+                    ("strDBName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5026 5050])
+                    ("pTableMeta" variable
+                       (:constant-flag t
+                        :type ("AbstractTableMetaPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5051 5089]))                  
+                :type "void")
+                nil [4960 7738])
+            ("OnCreateTableInMemory" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("strDBName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7793 7817])
+                    ("pTableMeta" variable
+                       (:constant-flag t
+                        :type ("AbstractTableMetaPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7818 7856]))                  
+                :type "void")
+                nil [7740 10570])
+            ("OnDropTableInStorage" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("txn" variable (:type ("TxnPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10624 10635])
+                    ("strDBName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10636 10660])
+                    ("strTableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10661 10688])
+                    ("ttTableType" variable (:type ("TableType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10689 10711]))                  
+                :type "void")
+                nil [10572 14461])
+            ("OnDropTableInMemory" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("strDBName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14514 14538])
+                    ("strTableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14539 14566]))                  
+                :type "void")
+                nil [14463 18903])
+            ("OnCreateDatabase" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("strDBName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18953 18977]))                  
+                :type "void")
+                nil [18905 19738])
+            ("OnDropDatabaseInStorage" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("txn" variable (:type ("TxnPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19795 19806])
+                    ("strDBName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19807 19831])
+                    ("vResRootTableID" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19832 19864]))                  
+                :type "void")
+                nil [19740 23462])
+            ("OnDropDatabaseInMemory" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("strDBName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23518 23542])
+                    ("vRootTableID" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [23543 23578]))                  
+                :type "void")
+                nil [23464 26403])
+            ("CheckMetaValidityInHierarchyWithoutLock" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("pTableMeta" variable
+                       (:constant-flag t
+                        :type ("AbstractTableMetaPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26476 26514])
+                    ("strRootTableID" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26515 26538]))                  
+                :type "void")
+                nil [26405 29462])
+            ("LoadTableMetaToMemoryWithoutLock" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("vPKs" variable
+                       (:constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("SQLVariant" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [29528 29558])
+                    ("columnCollection" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ColumnCollection" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29559 29600]))                  
+                :type "void")
+                nil [29464 35714])
+            ("CheckTableMetaHierarchy" function
+               (:parent "SqlMasterSysTableManager"
+                :type "void")
+                nil [35716 39894])
+            ("GetObjListByPrefix" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("strDBName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39946 39975])
+                    ("strPrefix" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39976 40005])
+                    ("type" variable (:type ("TableType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40005 40020])
+                    ("vRes" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [40020 40051]))                  
+                :type "void")
+                nil [39896 41436])
+            ("GetTableMetaHierarchyWithoutLock" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("vRes" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("AbstractTableMetaPtr" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [41502 41537])
+                    ("strTableID" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41538 41563]))                  
+                :type "void")
+                nil [41438 43254])
+            ("OnGetTableMetaHierarchy" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("vRes" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("AbstractTableMetaPtr" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [43311 43346])
+                    ("strTableID" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43347 43372]))                  
+                :type "void")
+                nil [43256 43792])
+            ("OnGetTableMetaHierarchy" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("vRes" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("AbstractTableMetaPtr" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [43850 43885])
+                    ("strDBName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43886 43910])
+                    ("strTableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43911 43938]))                  
+                :type "void")
+                nil [43795 44594])
+            ("OnGetTableMeta" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("strDBName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [44658 44682])
+                    ("strTableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [44683 44710]))                  
+                :type ("AbstractTableMetaPtr" type (:type "class") nil nil))
+                nil [44596 46349])
+            ("OnGetTableMeta" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("strTableID" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46413 46438]))                  
+                :type ("AbstractTableMetaPtr" type (:type "class") nil nil))
+                nil [46351 48022])
+            ("OnGetAllTableMetas" function
+               (:parent "SqlMasterSysTableManager"
+                :type ("map" type
+                     (:template-specifier 
+                        ( ("string" type nil nil nil)
+                          ("map" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [48024 48202])
+            ("OnGetDBNameByTableID" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("strTableID" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48258 48283]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [48204 48909])
+            ("OnGetTableNameList" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("vRes" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [48961 48982])
+                    ("strDBName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48983 49007]))                  
+                :type "void")
+                nil [48911 50036])
+            ("OnGetTableNameListByPrefix" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("vRes" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [50096 50117])
+                    ("strDBName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50118 50142])
+                    ("strPrefix" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50143 50167]))                  
+                :type "void")
+                nil [50038 50689])
+            ("OnGetTableNameListByTableGroup" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("vRes" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [50753 50774])
+                    ("strDBName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50775 50799])
+                    ("strTableGroupName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50800 50832]))                  
+                :type "void")
+                nil [50691 52535])
+            ("OnGetTableGroupNameList" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("vRes" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [52592 52613])
+                    ("strDBName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [52614 52638]))                  
+                :type "void")
+                nil [52537 53691])
+            ("OnGetTableGroupNameListByPrefix" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("vRes" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [53756 53777])
+                    ("strDBName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53778 53802])
+                    ("strPrefix" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53803 53827]))                  
+                :type "void")
+                nil [53693 54371])
+            ("OnGetViewNameList" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("vRes" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [54422 54443])
+                    ("strDBName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [54444 54468])
+                    ("strSourceTableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [54469 54502]))                  
+                :type "void")
+                nil [54373 55958])
+            ("OnGetEntitiesStatisticsByPrefix" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("uResTGCnt" variable
+                       (:reference 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [56023 56043])
+                    ("uResTblCnt" variable
+                       (:reference 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [56044 56065])
+                    ("uResViewCnt" variable
+                       (:reference 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [56066 56088])
+                    ("strDBName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [56089 56113])
+                    ("strPrefix" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [56114 56138]))                  
+                :type "void")
+                nil [55960 57842])
+            ("OnAddLocalityGroup" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("txnEnv" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("AutoCommitTxnEnvironment" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [57901 57940])
+                    ("strDBName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [57945 57969])
+                    ("strTableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [57975 58002])
+                    ("lgMeta" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("LocalityGroupMeta" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [58008 58040]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [57844 61518])
+            ("OnRemoveLocalityGroup" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("txnEnv" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("AutoCommitTxnEnvironment" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61580 61619])
+                    ("strDBName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61624 61648])
+                    ("strTableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61654 61681])
+                    ("strLocalityGroupName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61687 61722]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [61520 68264])
+            ("OnDefineExplicitColumn" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("txnEnv" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("AutoCommitTxnEnvironment" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [68327 68366])
+                    ("strDBName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [68371 68395])
+                    ("strTableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [68401 68428])
+                    ("cmColumnMeta" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ColumnMeta" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [68434 68465]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [68266 72273])
+            ("OnAddAttributeColumn" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("txnEnv" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("AutoCommitTxnEnvironment" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [72334 72373])
+                    ("strDBName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [72378 72402])
+                    ("strTableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [72408 72435])
+                    ("cmColumnMeta" variable
+                       (:reference 1
+                        :type ("ColumnMeta" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [72441 72466]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [72275 77263])
+            ("OnRemoveAttributeColumn" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("txnEnv" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("AutoCommitTxnEnvironment" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [77327 77366])
+                    ("strDBName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [77371 77395])
+                    ("strTableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [77400 77427])
+                    ("strColumnName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [77432 77460]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [77265 81486])
+            ("OnUpdateTable" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("txnEnv" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("AutoCommitTxnEnvironment" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [81543 81582])
+                    ("tableID" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [81591 81613])
+                    ("numPart" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [81622 81638])
+                    ("req" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SQLUpdateTableRequestPB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [81647 81682])
+                    ("pRsp" variable
+                       (:pointer 1
+                        :type ("SQLUpdateTableResponsePB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [81691 81722]))                  
+                :type "void")
+                nil [81489 83847])
+            ("OnUpdateTableCapacity" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("txnEnv" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("AutoCommitTxnEnvironment" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [83918 83957])
+                    ("tableID" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [83962 83984])
+                    ("read" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [83989 84002])
+                    ("write" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [84007 84021])
+                    ("maxDecCount" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [84026 84046]))                  
+                :type ("CapacityControl" type (:type "class") nil nil))
+                nil [83849 86029])
+            ("OnSetCuCompensationRatio" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("txnEnv" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("AutoCommitTxnEnvironment" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [86092 86131])
+                    ("tableID" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [86136 86158])
+                    ("compensation" variable (:type "double") (reparse-symbol arg-sub-list) [86163 86183]))                  
+                :type "void")
+                nil [86031 88111])
+            ("OnSetTableCanAutoSplit" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("txnEnv" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("AutoCommitTxnEnvironment" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [88172 88211])
+                    ("tableID" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [88217 88239])
+                    ("canAutoSplit" variable (:type "bool") (reparse-symbol arg-sub-list) [88244 88262]))                  
+                :type "void")
+                nil [88113 90863])
+            ("OnUpdateTableForAdmin" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("txnEnv" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("AutoCommitTxnEnvironment" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [90923 90962])
+                    ("tableID" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [90967 90989])
+                    ("options" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("InternalTableOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [90994 91030]))                  
+                :type "void")
+                nil [90865 93990])
+            ("OnResetBloomFilterType" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("txnEnv" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("AutoCommitTxnEnvironment" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [94054 94093])
+                    ("strDBName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [94098 94122])
+                    ("strTableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [94127 94154])
+                    ("strLocalityGroupName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [94159 94194])
+                    ("type" variable (:type ("SQLBloomFilterType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [94199 94223]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [93993 97410])
+            ("GetAllTablesMeteringInfo" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("allTablesMetering" variable
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("TableMetering" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [97468 97509]))                  
+                :type "void")
+                nil [97412 98918])
+            ("GetAllOTSV2TablesMeteringInfo" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("allTablesMetering" variable
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("TableMetering" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [98981 99022]))                  
+                :type "void")
+                nil [98920 99421])
+            ("GetUsageStats" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("usageStats" variable
+                       (:pointer 1
+                        :type ("UsageStats" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [99468 99491]))                  
+                :type "void")
+                nil [99423 99998])
+            ("OnChangeLGSchema" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("txnEnv" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("AutoCommitTxnEnvironment" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [100112 100151])
+                    ("dbName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [100156 100182])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [100187 100216])
+                    ("lgName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [100222 100248])
+                    ("key" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [100253 100276])
+                    ("value" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [100282 100307]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [100057 103305])
+            ("OnSetReplicationState" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("txnEnv" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("AutoCommitTxnEnvironment" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [103367 103406])
+                    ("strDBName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [103411 103435])
+                    ("strRootTableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [103440 103471])
+                    ("state" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ReplicationState" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [103476 103506]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [103307 106258])
+            ("DatabaseExists" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("strDBName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [106306 106330]))                  
+                :type "bool")
+                nil [106260 106898])
+            ("GetRootTableID" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("strDBName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [106948 106972])
+                    ("strTableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [106973 107000]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [106900 107553])
+            ("GetRootTableID" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("strTableID" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [107603 107628]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [107555 107985])
+            ("GetRootTableIDWithoutLock" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("strTableID" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [108046 108071]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [107987 109237])
+            ("GetSourceTableID" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("strDBName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [109289 109313])
+                    ("strTableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [109314 109341]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [109239 110281])
+            ("GetSourceTableID" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("strTableID" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [110333 110358]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [110283 111124])
+            ("GetTableID" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("strDBName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [111170 111194])
+                    ("strTableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [111195 111222]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [111126 111701])
+            ("GetTableType" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("strDBName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [111752 111776])
+                    ("strTableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [111777 111804]))                  
+                :type ("TableType" type (:type "class") nil nil))
+                nil [111703 112735])
+            ("GetTableType" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("strTableID" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [112786 112811]))                  
+                :type ("TableType" type (:type "class") nil nil))
+                nil [112737 112908])
+            ("GetTableTypeWithoutLock" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("strTableID" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [112970 112995]))                  
+                :type ("TableType" type (:type "class") nil nil))
+                nil [112910 113707])
+            ("IsRootTable" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("strTableID" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [113753 113778]))                  
+                :type "bool")
+                nil [113710 114391])
+            ("IsRootTable" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("strDBName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [114436 114460])
+                    ("strTableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [114461 114488]))                  
+                :type "bool")
+                nil [114393 115220])
+            ("GetTableChildSize" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("strDBName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [115273 115297])
+                    ("strTableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [115298 115325]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [115222 115680])
+            ("GetTableChildSize" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("strTableID" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [115733 115758]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [115682 115860])
+            ("GetTableChildSizeWithoutLock" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("strTableID" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [115924 115949]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [115862 116500])
+            ("GetRootTableIDsExceptEmptyTableGroup" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("vRes" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [116571 116592]))                  
+                :type "void")
+                nil [116503 117124])
+            ("GetTableIDByDBTableNameWithoutLock" function
+               (:parent "SqlMasterSysTableManager"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("strDBName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [117201 117225])
+                    ("strTableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [117226 117253]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [117126 117673])
+            ("GetTableMetaIteratorByDBTableNameWithoutLock" function
+               (:parent "SqlMasterSysTableManager"
+                :arguments 
+                  ( ("strDBName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [117796 117820])
+                    ("strTableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [117821 117848]))                  
+                :type ("const_iterator" type (:type "class") nil nil))
+                nil [117710 118832])
+            ("GetMapLock" function
+               (:parent "SqlMasterSysTableManager"
+                :type ("ReadWriteLock" type (:type "class") nil nil))
+                nil [118834 119003])
+            ("ItemExists" function
+               (:parent "SqlOnlineTableTreeNode"
+                :arguments 
+                  ( ("strItem" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [119124 119146]))                  
+                :type "bool")
+                nil [119084 119270])
+            ("InsertItem" function
+               (:parent "SqlOnlineTableTreeNode"
+                :arguments 
+                  ( ("strItem" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [119312 119334])
+                    ("pNode" variable
+                       (:constant-flag t
+                        :type ("SqlOnlineTableTreeNodePtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [119335 119373]))                  
+                :type "void")
+                nil [119272 119416])
+            ("DeleteItem" function
+               (:parent "SqlOnlineTableTreeNode"
+                :arguments 
+                  ( ("strItem" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [119458 119480]))                  
+                :type "void")
+                nil [119418 119521])
+            ("GetItem" function
+               (:parent "SqlOnlineTableTreeNode"
+                :arguments 
+                  ( ("strItem" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [119581 119603]))                  
+                :type ("SqlOnlineTableTreeNodePtr" type (:type "class") nil nil))
+                nil [119523 119865])
+            ("GetNodeMapSize" function
+               (:parent "SqlOnlineTableTreeNode"
+                :type ("size_t" type (:type "class") nil nil))
+                nil [119867 119952])
+            ("GetNodeMap" function
+               (:parent "SqlOnlineTableTreeNode"
+                :constant-flag t
+                :type ("SqlOnlineTableTreeNodeMap" type (:type "class") nil nil))
+                nil [119954 120054])
+            ("GetTableMetaPtr" function
+               (:parent "SqlOnlineTableTreeNode"
+                :constant-flag t
+                :type ("AbstractTableMetaPtr" type (:type "class") nil nil))
+                nil [120056 120160])
+            ("SetTableMetaPtr" function
+               (:parent "SqlOnlineTableTreeNode"
+                :arguments 
+                  ( ("pTableMeta" variable (:type ("AbstractTableMetaPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [120207 120239]))                  
+                :type "void")
+                nil [120162 120275]))          
+      :file "master_systable.cpp"
+      :pointmax 120276
+      :fsize 120275
+      :lastmodtime '(21968 27926 890067 125000)
+      :unmatched-syntax '((punctuation 117709 . 117710) (punctuation 117708 . 117709) (punctuation 117707 . 117708) (symbol 117687 . 117707) (punctuation 117685 . 117686) (symbol 117679 . 117685) (punctuation 117678 . 117679) (symbol 117675 . 117678)))
+    (semanticdb-table "master_systable.h"
+      :file "master_systable.h"
+      :fsize 15174
+      :lastmodtime '(21968 27926 896036 190000))
+    (semanticdb-table "replication_state_manager.h"
+      :file "replication_state_manager.h"
+      :fsize 415
+      :lastmodtime '(21968 27926 896036 190000))
+    (semanticdb-table "compatible_tablet_interfaces.h"
+      :file "compatible_tablet_interfaces.h"
+      :fsize 1436
+      :lastmodtime '(21968 27926 897036 245000)))
+  :file "!apsarapangu!disk6!jingwen.hjw!work!trunk!build!debug64!sqlonline!master!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

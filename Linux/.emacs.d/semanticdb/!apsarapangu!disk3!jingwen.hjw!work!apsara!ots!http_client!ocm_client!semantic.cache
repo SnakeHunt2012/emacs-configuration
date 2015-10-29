@@ -1,0 +1,1305 @@
+;; Object ocm_client/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ocm_client/"
+  :tables
+  (list
+    (semanticdb-table "ots_remote_ocm.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("OTS_REMOTE_OCM_H" variable (:constant-flag t) nil [34 50])
+            ("ocm_exception.h" include nil nil [52 78])
+            ("ots_api_constant.h" include nil nil [79 108])
+            ("sqlonline/core/capacity_unit.h" include nil nil [109 150])
+            ("apsara/common/flag.h" include nil nil [151 182])
+            ("apsara/common/jsonizable.h" include nil nil [183 220])
+            ("apsara/common/time_stamp.h" include nil nil [221 258])
+            ("map" include (:system-flag t) nil [259 273])
+            ("set" include (:system-flag t) nil [274 288])
+            ("string" include (:system-flag t) nil [289 306])
+            ("tr1/memory" include (:system-flag t) nil [307 328])
+            ("vector" include (:system-flag t) nil [329 346])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_ots_InstanceMetaOperationQPSLimit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [367 411]))                  
+                :type "int")
+                nil [348 412])
+            ("DECLARE_FLAG_BOOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_ots_EnableAutoSplitForTable" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [431 469]))                  
+                :type "int")
+                nil [413 470])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_ots3_DefaultPartitionCount" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [490 527]))                  
+                :type "int")
+                nil [471 528])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_ots3_MaxPKColumnCountOfTable" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [548 587]))                  
+                :type "int")
+                nil [529 588])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_ots3_StringTypeValueOfPKMaxLength" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [608 652]))                  
+                :type "int")
+                nil [589 653])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_ots3_BinaryTypeValueOfPKMaxLength" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [673 717]))                  
+                :type "int")
+                nil [654 718])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_ots3_StringTypeValueOfColumnMaxLength" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [738 786]))                  
+                :type "int")
+                nil [719 787])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_ots3_BinaryTypeValueOfColumnMaxLength" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [807 855]))                  
+                :type "int")
+                nil [788 856])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_ots3_BatchGetRowLimit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [876 908]))                  
+                :type "int")
+                nil [857 909])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_ots3_BatchWriteRowLimit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [929 963]))                  
+                :type "int")
+                nil [910 964])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_ots3_BatchWriteDataSizeLimit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [984 1023]))                  
+                :type "int")
+                nil [965 1024])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_ots3_GetRangeRowLimit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1044 1076]))                  
+                :type "int")
+                nil [1025 1077])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_ots3_GetRangeDataSizeLimit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1097 1134]))                  
+                :type "int")
+                nil [1078 1135])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_ots3_MinReadCapacityUnit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1155 1190]))                  
+                :type "int")
+                nil [1136 1191])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_ots3_MinWriteCapacityUnit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1211 1247]))                  
+                :type "int")
+                nil [1192 1248])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_ots3_MaxColumnNumToReadOrWrite" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1268 1309]))                  
+                :type "int")
+                nil [1249 1310])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_ots3_PutRowDataSizeLimit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1330 1365]))                  
+                :type "int")
+                nil [1311 1366])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_ots3_UpdateRowDataSizeLimit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1386 1424]))                  
+                :type "int")
+                nil [1367 1425])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_ots3_MaxFilterCount" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1445 1475]))                  
+                :type "int")
+                nil [1426 1476])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("ots_server_PostDataMaxSize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1496 1523]))                  
+                :type "int")
+                nil [1477 1524])
+            ("apsara" type
+               (:members 
+                  ( ("sqlonline" type
+                       (:members 
+                          ( ("ots" type
+                               (:members 
+                                  ( ("INSTANCE_RUNNING" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type "int")
+                                        (reparse-symbol namespacesubparts) [1611 1642])
+                                    ("INSTANCE_DISABLED" variable
+                                       (:constant-flag t
+                                        :default-value "2"
+                                        :type "int")
+                                        (reparse-symbol namespacesubparts) [1643 1675])
+                                    ("INSTANCE_DELETING" variable
+                                       (:constant-flag t
+                                        :default-value "3"
+                                        :type "int")
+                                        (reparse-symbol namespacesubparts) [1676 1708])
+                                    ("InstanceMeta" type
+                                       (:superclasses 
+                                          ( ("apsara::Jsonizable" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [1758 1765])
+                                            ("InstanceMeta" function
+                                               (:constructor-flag t
+                                                :type ("InstanceMeta" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1770 1801])
+                                            ("InstanceMeta" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("instanceName" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1820 1852])
+                                                    ("instanceId" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1853 1883])
+                                                    ("version" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1884 1901]))                                                  
+                                                :type ("InstanceMeta" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1807 1986])
+                                            ("InstanceMeta" function
+                                               (:destructor-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1992 2010])
+                                            ("Jsonize" function
+                                               (:arguments 
+                                                  ( ("json" variable
+                                                       (:reference 1
+                                                        :type ("apsara::Jsonizable::JsonWrapper" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2029 2067]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [2016 2288])
+                                            ("mInstanceName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2294 2320])
+                                            ("mRawInstanceName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2325 2354])
+                                            ("mInstanceId" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2359 2383])
+                                            ("mVersion" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2388 2406]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [1710 2409])
+                                    ("InstanceQuota" type
+                                       (:superclasses 
+                                          ( ("apsara::Jsonizable" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [2460 2467])
+                                            ("InstanceQuota" function
+                                               (:constructor-flag t
+                                                :type ("InstanceQuota" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2472 3166])
+                                            ("Jsonize" function
+                                               (:arguments 
+                                                  ( ("json" variable
+                                                       (:reference 1
+                                                        :type ("apsara::Jsonizable::JsonWrapper" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3185 3223]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [3172 5750])
+                                            ("mEntityQuota" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5756 5777])
+                                            ("mTablePartitions" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5783 5808])
+                                            ("mPrimaryKeyColumnCount" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5814 5845])
+                                            ("mPrimaryKeyStringValueSize" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5850 5885])
+                                            ("mPrimaryKeyBinaryValueSize" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5890 5925])
+                                            ("mColumnStringValueSize" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5930 5961])
+                                            ("mColumnBinaryValueSize" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5966 5997])
+                                            ("mPutRowColumnCount" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6002 6029])
+                                            ("mPutRowDataSize" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6034 6058])
+                                            ("mUpdateRowColumnCount" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6063 6093])
+                                            ("mUpdateRowDataSize" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6098 6125])
+                                            ("mBatchGetRowRowCount" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6130 6159])
+                                            ("mBatchWriteRowRowCount" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6164 6195])
+                                            ("mBatchWriteRowDataSize" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6200 6231])
+                                            ("mGetRangeRowCount" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6236 6262])
+                                            ("mGetRangeDataSize" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6267 6293])
+                                            ("mQueryFilterCount" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6298 6324])
+                                            ("mHttpRequestBodySize" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6329 6358])
+                                            ("mAutoSplitDefault" variable (:type "bool") (reparse-symbol classsubparts) [6363 6386])
+                                            ("mSkipCellSizeCheck" variable (:type "bool") (reparse-symbol classsubparts) [6391 6415])
+                                            ("mQPSLimit" variable (:type ("std::map" type
+                                                 (:template-specifier 
+                                                    ( ("std::string" type nil nil nil)
+                                                      ("int" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [6420 6457])
+                                            ("mConcurrencyLimit" variable (:type ("std::map" type
+                                                 (:template-specifier 
+                                                    ( ("std::string" type nil nil nil)
+                                                      ("int" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [6462 6507])
+                                            ("mAccessIDPermission" variable (:type ("std::map" type
+                                                 (:template-specifier 
+                                                    ( ("std::string" type nil nil nil)
+                                                      ("int" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [6512 6559])
+                                            ("mAuthorizedIPs" variable (:type ("std::set" type
+                                                 (:template-specifier 
+                                                    ( ("std::string" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [6564 6601]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [2411 6604])
+                                    ("InstanceInfo" type
+                                       (:superclasses 
+                                          ( ("apsara::Jsonizable" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [6655 6662])
+                                            ("InstanceInfo" function
+                                               (:constructor-flag t
+                                                :type ("InstanceInfo" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [6667 7133])
+                                            ("InstanceInfo" function
+                                               (:destructor-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [7143 7160])
+                                            ("Jsonize" function
+                                               (:arguments 
+                                                  ( ("json" variable
+                                                       (:reference 1
+                                                        :type ("apsara::Jsonizable::JsonWrapper" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7179 7217]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [7166 9026])
+                                            ("mInstanceName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9032 9058])
+                                            ("mRawInstanceName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9063 9092])
+                                            ("mInstanceId" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9097 9121])
+                                            ("mUserId" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9126 9146])
+                                            ("mClusterName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9151 9176])
+                                            ("mModelType" variable (:type ("OTSModelType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9181 9205])
+                                            ("mQuota" variable (:type ("InstanceQuota" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9210 9231])
+                                            ("mReadCapacity" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9236 9258])
+                                            ("mWriteCapacity" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9263 9286])
+                                            ("mStatus" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9291 9307])
+                                            ("mVersion" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9312 9330])
+                                            ("mInstanceMetaQos" variable (:type ("std::tr1::shared_ptr" type
+                                                 (:template-specifier 
+                                                    ( ("apsara::sqlonline::worker::CapacityUnit" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [9335 9414])
+                                            ("mLastUpdateTime" variable (:type ("apsara::common::timing::MonotonicTime" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9419 9473]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [6606 9476])
+                                    ("UserQuota" type
+                                       (:superclasses 
+                                          ( ("apsara::Jsonizable" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [9524 9531])
+                                            ("UserQuota" function
+                                               (:constructor-flag t
+                                                :type ("UserQuota" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [9536 9570])
+                                            ("UserQuota" function
+                                               (:destructor-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [9575 9590])
+                                            ("Jsonize" function
+                                               (:arguments 
+                                                  ( ("json" variable
+                                                       (:reference 1
+                                                        :type ("apsara::Jsonizable::JsonWrapper" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [9609 9647]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [9596 9716])
+                                            ("mInstanceQuota" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9722 9746]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [9478 9749])
+                                    ("UserInfo" type
+                                       (:superclasses 
+                                          ( ("apsara::Jsonizable" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [9796 9803])
+                                            ("UserType" type
+                                               (:members 
+                                                  ( ("UT_ADMIN" variable
+                                                       (:constant-flag t
+                                                        :type "int")
+                                                        (reparse-symbol enumsubparts) [9833 9842])
+                                                    ("UT_NORMAL" variable
+                                                       (:constant-flag t
+                                                        :type "int")
+                                                        (reparse-symbol enumsubparts) [9851 9866]))                                                  
+                                                :type "enum")
+                                                (reparse-symbol classsubparts) [9809 9867])
+                                            ("UserInfo" function
+                                               (:constructor-flag t
+                                                :type ("UserInfo" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [9873 9928])
+                                            ("UserInfo" function
+                                               (:destructor-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [9933 9947])
+                                            ("Jsonize" function
+                                               (:arguments 
+                                                  ( ("json" variable
+                                                       (:reference 1
+                                                        :type ("apsara::Jsonizable::JsonWrapper" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [9966 10004]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [9953 11116])
+                                            ("mUserId" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11122 11142])
+                                            ("mLegacyInstance" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11147 11175])
+                                            ("mUserType" variable (:type ("UserType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11180 11199])
+                                            ("mQuota" variable (:type ("UserQuota" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11204 11221])
+                                            ("mInstanceCount" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11226 11249]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [9751 11252])
+                                    ("RemoteOCM" type
+                                       (:members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [11272 11279])
+                                            ("GetInstanceInfo" function
+                                               (:pure-virtual-flag t
+                                                :prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :arguments 
+                                                  ( ("instName" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [11429 11457])
+                                                    ("instInfo" variable
+                                                       (:pointer 1
+                                                        :type ("InstanceInfo" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [11474 11497]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [11383 11502])
+                                            ("ListInstanceInfo" function
+                                               (:pure-virtual-flag t
+                                                :prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :arguments 
+                                                  ( ("instMap" variable
+                                                       (:pointer 1
+                                                        :type ("std::map" type
+                                                             (:template-specifier 
+                                                                ( ("std::string" type nil nil nil)
+                                                                  ("InstanceMeta" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [11612 11657]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [11565 11662])
+                                            ("MultiGetInstanceInfo" function
+                                               (:pure-virtual-flag t
+                                                :prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :arguments 
+                                                  ( ("nameList" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::vector" type
+                                                             (:template-specifier 
+                                                                ( ("std::string" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [11772 11813])
+                                                    ("instList" variable
+                                                       (:pointer 1
+                                                        :type ("std::vector" type
+                                                             (:template-specifier 
+                                                                ( ("InstanceInfo" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [11830 11866])
+                                                    ("notExistList" variable
+                                                       (:pointer 1
+                                                        :type ("std::vector" type
+                                                             (:template-specifier 
+                                                                ( ("std::string" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [11883 11922]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [11721 11927])
+                                            ("GetUserInfo" function
+                                               (:pure-virtual-flag t
+                                                :prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :arguments 
+                                                  ( ("userId" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [12070 12096])
+                                                    ("userInfo" variable
+                                                       (:pointer 1
+                                                        :type ("UserInfo" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [12113 12132]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [12028 12137])
+                                            ("MultiGetUserInfo" function
+                                               (:pure-virtual-flag t
+                                                :prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :arguments 
+                                                  ( ("userIdList" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::vector" type
+                                                             (:template-specifier 
+                                                                ( ("std::string" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [12244 12287])
+                                                    ("userList" variable
+                                                       (:pointer 1
+                                                        :type ("std::vector" type
+                                                             (:template-specifier 
+                                                                ( ("UserInfo" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [12304 12336])
+                                                    ("notExistList" variable
+                                                       (:pointer 1
+                                                        :type ("std::vector" type
+                                                             (:template-specifier 
+                                                                ( ("std::string" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [12353 12392]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [12197 12397])
+                                            ("PreDeleteInstance" function
+                                               (:pure-virtual-flag t
+                                                :prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :arguments 
+                                                  ( ("instanceID" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [12533 12563]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [12502 12568])
+                                            ("DeleteInstance" function
+                                               (:pure-virtual-flag t
+                                                :prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :arguments 
+                                                  ( ("instanceID" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [12701 12731]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [12673 12736])
+                                            ("RemoteOCM" function
+                                               (:destructor-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [12742 12765]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [11254 12768])
+                                    ("RemoteOCMPtr" type
+                                       (:typedef ("std::tr1::shared_ptr" type
+                                             (:template-specifier 
+                                                ( ("RemoteOCM" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol namespacesubparts) [12769 12822]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1567 12825]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1545 12851]))                  
+                :type "namespace")
+                nil [1526 12883]))          
+      :file "ots_remote_ocm.h"
+      :pointmax 12919
+      :fsize 12918
+      :lastmodtime '(21867 54517 365037 447000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("OTS_REMOTE_OCM_H")
+          )
+)
+    (semanticdb-table "ots_remote_ocm_impl.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("OTS_REMOTE_OCM_IMPL_H" variable (:constant-flag t) nil [39 60])
+            ("ots_remote_ocm.h" include nil nil [62 89])
+            ("ehttp/ehttp.h" include nil nil [90 114])
+            ("apsara" type
+               (:members 
+                  ( ("sqlonline" type
+                       (:members 
+                          ( ("ots" type
+                               (:members 
+                                  ( ("OCMError" type
+                                       (:superclasses 
+                                          ( ("apsara::Jsonizable" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [219 226])
+                                            ("OCMError" function
+                                               (:constructor-flag t
+                                                :type ("OCMError" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [233 246])
+                                            ("OCMError" function
+                                               (:destructor-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [251 265])
+                                            ("Jsonize" function
+                                               (:arguments 
+                                                  ( ("json" variable
+                                                       (:reference 1
+                                                        :type ("apsara::Jsonizable::JsonWrapper" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [288 326]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [275 485])
+                                            ("mErrorCode" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [495 518])
+                                            ("mErrorMessage" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [523 549])
+                                            ("mRequestID" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [554 577]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [174 580])
+                                    ("GetInstanceRequest" type
+                                       (:superclasses 
+                                          ( ("apsara::Jsonizable" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [637 644])
+                                            ("GetInstanceRequest" function
+                                               (:constructor-flag t
+                                                :type ("GetInstanceRequest" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [649 672])
+                                            ("GetInstanceRequest" function
+                                               (:destructor-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [677 701])
+                                            ("Jsonize" function
+                                               (:arguments 
+                                                  ( ("json" variable
+                                                       (:reference 1
+                                                        :type ("apsara::Jsonizable::JsonWrapper" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [720 758]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [707 823])
+                                            ("mInstanceName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [829 855]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [582 858])
+                                    ("GetInstanceResponse" type
+                                       (:superclasses 
+                                          ( ("apsara::Jsonizable" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [915 922])
+                                            ("GetInstanceResponse" function
+                                               (:constructor-flag t
+                                                :type ("GetInstanceResponse" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [927 951])
+                                            ("GetInstanceResponse" function
+                                               (:destructor-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [956 981])
+                                            ("Jsonize" function
+                                               (:arguments 
+                                                  ( ("json" variable
+                                                       (:reference 1
+                                                        :type ("apsara::Jsonizable::JsonWrapper" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1000 1038]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [987 1150])
+                                            ("mRequestId" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1156 1179])
+                                            ("mInstanceInfo" variable (:type ("InstanceInfo" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1184 1211]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [860 1214])
+                                    ("ListInstanceRequest" type
+                                       (:superclasses 
+                                          ( ("apsara::Jsonizable" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [1272 1279])
+                                            ("ListInstanceRequest" function
+                                               (:constructor-flag t
+                                                :type ("ListInstanceRequest" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1284 1308])
+                                            ("ListInstanceRequest" function
+                                               (:destructor-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1313 1338])
+                                            ("Jsonize" function
+                                               (:arguments 
+                                                  ( ("json" variable
+                                                       (:reference 1
+                                                        :type ("apsara::Jsonizable::JsonWrapper" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1357 1395]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1344 1546])
+                                            ("mPageNum" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1552 1570])
+                                            ("mPageSize" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1575 1594])
+                                            ("mClusterName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1599 1624]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [1216 1627])
+                                    ("ListInstanceResponse" type
+                                       (:superclasses 
+                                          ( ("apsara::Jsonizable" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [1687 1694])
+                                            ("ListInstanceResponse" function
+                                               (:constructor-flag t
+                                                :type ("ListInstanceResponse" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1699 1724])
+                                            ("ListInstanceResponse" function
+                                               (:destructor-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1729 1755])
+                                            ("Jsonize" function
+                                               (:arguments 
+                                                  ( ("json" variable
+                                                       (:reference 1
+                                                        :type ("apsara::Jsonizable::JsonWrapper" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1774 1812]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1761 1920])
+                                            ("mRequestId" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1926 1949])
+                                            ("mMetaList" variable (:type ("std::vector" type
+                                                 (:template-specifier 
+                                                    ( ("InstanceMeta" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [1954 1990]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [1630 1993])
+                                    ("InstanceItem" type
+                                       (:superclasses 
+                                          ( ("apsara::Jsonizable" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [2044 2051])
+                                            ("InstanceItem" function
+                                               (:constructor-flag t
+                                                :type ("InstanceItem" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2056 2073])
+                                            ("InstanceItem" function
+                                               (:destructor-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [2078 2096])
+                                            ("Jsonize" function
+                                               (:arguments 
+                                                  ( ("json" variable
+                                                       (:reference 1
+                                                        :type ("apsara::Jsonizable::JsonWrapper" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2115 2153]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [2102 2218])
+                                            ("mInstanceName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2224 2250]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [1995 2253])
+                                    ("MultiGetInstanceRequest" type
+                                       (:superclasses 
+                                          ( ("apsara::Jsonizable" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [2315 2322])
+                                            ("MultiGetInstanceRequest" function
+                                               (:constructor-flag t
+                                                :type ("MultiGetInstanceRequest" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2327 2355])
+                                            ("MultiGetInstanceRequest" function
+                                               (:destructor-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [2360 2389])
+                                            ("Jsonize" function
+                                               (:arguments 
+                                                  ( ("json" variable
+                                                       (:reference 1
+                                                        :type ("apsara::Jsonizable::JsonWrapper" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2408 2446]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [2395 2595])
+                                            ("mItemConditions" variable (:type ("std::vector" type
+                                                 (:template-specifier 
+                                                    ( ("InstanceItem" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [2601 2643])
+                                            ("mClusterName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2648 2673]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [2255 2676])
+                                    ("NotFoundInstanceName" type
+                                       (:superclasses 
+                                          ( ("apsara::Jsonizable" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [2734 2741])
+                                            ("NotFoundInstanceName" function
+                                               (:constructor-flag t
+                                                :type ("NotFoundInstanceName" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2746 2771])
+                                            ("NotFoundInstanceName" function
+                                               (:destructor-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [2776 2802])
+                                            ("Jsonize" function
+                                               (:arguments 
+                                                  ( ("json" variable
+                                                       (:reference 1
+                                                        :type ("apsara::Jsonizable::JsonWrapper" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2821 2859]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [2808 2924])
+                                            ("mInstanceName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2930 2956]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [2678 2959])
+                                    ("MultiGetInstanceResponse" type
+                                       (:superclasses 
+                                          ( ("apsara::Jsonizable" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [3022 3029])
+                                            ("MultiGetInstanceResponse" function
+                                               (:constructor-flag t
+                                                :type ("MultiGetInstanceResponse" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [3034 3063])
+                                            ("MultiGetInstanceResponse" function
+                                               (:destructor-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [3068 3098])
+                                            ("Jsonize" function
+                                               (:arguments 
+                                                  ( ("json" variable
+                                                       (:reference 1
+                                                        :type ("apsara::Jsonizable::JsonWrapper" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3117 3155]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [3104 3316])
+                                            ("mRequestId" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3322 3345])
+                                            ("mInfoList" variable (:type ("std::vector" type
+                                                 (:template-specifier 
+                                                    ( ("InstanceInfo" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [3350 3386])
+                                            ("mNotFoundList" variable (:type ("std::vector" type
+                                                 (:template-specifier 
+                                                    ( ("NotFoundInstanceName" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [3391 3439]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [2961 3442])
+                                    ("GetUserRequest" type
+                                       (:superclasses 
+                                          ( ("apsara::Jsonizable" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [3495 3502])
+                                            ("GetUserRequest" function
+                                               (:constructor-flag t
+                                                :type ("GetUserRequest" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [3507 3526])
+                                            ("GetUserRequest" function
+                                               (:destructor-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [3531 3551])
+                                            ("Jsonize" function
+                                               (:arguments 
+                                                  ( ("json" variable
+                                                       (:reference 1
+                                                        :type ("apsara::Jsonizable::JsonWrapper" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3570 3608]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [3557 3661])
+                                            ("mUserId" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3667 3687]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [3444 3690])
+                                    ("GetUserResponse" type
+                                       (:superclasses 
+                                          ( ("apsara::Jsonizable" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [3744 3751])
+                                            ("GetUserResponse" function
+                                               (:constructor-flag t
+                                                :type ("GetUserResponse" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [3756 3776])
+                                            ("GetUserResponse" function
+                                               (:destructor-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [3781 3802])
+                                            ("Jsonize" function
+                                               (:arguments 
+                                                  ( ("json" variable
+                                                       (:reference 1
+                                                        :type ("apsara::Jsonizable::JsonWrapper" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3821 3859]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [3808 3963])
+                                            ("mRequestId" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3969 3992])
+                                            ("mUserInfo" variable (:type ("UserInfo" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3997 4016]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [3692 4019])
+                                    ("UserItem" type
+                                       (:superclasses 
+                                          ( ("apsara::Jsonizable" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [4066 4073])
+                                            ("UserItem" function
+                                               (:constructor-flag t
+                                                :type ("UserItem" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [4078 4091])
+                                            ("UserItem" function
+                                               (:destructor-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [4096 4110])
+                                            ("Jsonize" function
+                                               (:arguments 
+                                                  ( ("json" variable
+                                                       (:reference 1
+                                                        :type ("apsara::Jsonizable::JsonWrapper" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4129 4167]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [4116 4220])
+                                            ("mUserId" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4226 4246]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [4021 4249])
+                                    ("MultiGetUserRequest" type
+                                       (:superclasses 
+                                          ( ("apsara::Jsonizable" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [4307 4314])
+                                            ("MultiGetUserRequest" function
+                                               (:constructor-flag t
+                                                :type ("MultiGetUserRequest" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [4319 4343])
+                                            ("MultiGetUserRequest" function
+                                               (:destructor-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [4348 4373])
+                                            ("Jsonize" function
+                                               (:arguments 
+                                                  ( ("json" variable
+                                                       (:reference 1
+                                                        :type ("apsara::Jsonizable::JsonWrapper" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4392 4430]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [4379 4524])
+                                            ("mItemConditions" variable (:type ("std::vector" type
+                                                 (:template-specifier 
+                                                    ( ("UserItem" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [4530 4568]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [4251 4571])
+                                    ("NotFoundUserId" type
+                                       (:superclasses 
+                                          ( ("apsara::Jsonizable" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [4623 4630])
+                                            ("NotFoundUserId" function
+                                               (:constructor-flag t
+                                                :type ("NotFoundUserId" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [4635 4654])
+                                            ("NotFoundUserId" function
+                                               (:destructor-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [4659 4679])
+                                            ("Jsonize" function
+                                               (:arguments 
+                                                  ( ("json" variable
+                                                       (:reference 1
+                                                        :type ("apsara::Jsonizable::JsonWrapper" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4698 4736]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [4685 4789])
+                                            ("mUserId" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4795 4815]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [4573 4818])
+                                    ("MultiGetUserResponse" type
+                                       (:superclasses 
+                                          ( ("apsara::Jsonizable" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [4877 4884])
+                                            ("MultiGetUserResponse" function
+                                               (:constructor-flag t
+                                                :type ("MultiGetUserResponse" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [4889 4914])
+                                            ("MultiGetUserResponse" function
+                                               (:destructor-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [4919 4945])
+                                            ("Jsonize" function
+                                               (:arguments 
+                                                  ( ("json" variable
+                                                       (:reference 1
+                                                        :type ("apsara::Jsonizable::JsonWrapper" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4964 5002]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [4951 5159])
+                                            ("mRequestId" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5165 5188])
+                                            ("mInfoList" variable (:type ("std::vector" type
+                                                 (:template-specifier 
+                                                    ( ("UserInfo" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [5193 5225])
+                                            ("mNotFoundList" variable (:type ("std::vector" type
+                                                 (:template-specifier 
+                                                    ( ("NotFoundUserId" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [5230 5272]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [4820 5275])
+                                    ("PreDeleteInstanceRequest" type
+                                       (:superclasses 
+                                          ( ("apsara::Jsonizable" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [5338 5345])
+                                            ("PreDeleteInstanceRequest" function
+                                               (:constructor-flag t
+                                                :type ("PreDeleteInstanceRequest" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [5350 5379])
+                                            ("PreDeleteInstanceRequest" function
+                                               (:destructor-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [5384 5414])
+                                            ("Jsonize" function
+                                               (:arguments 
+                                                  ( ("json" variable
+                                                       (:reference 1
+                                                        :type ("apsara::Jsonizable::JsonWrapper" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5433 5471]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [5420 5532])
+                                            ("mInstanceID" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5538 5562]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [5277 5565])
+                                    ("DeleteInstanceRequest" type
+                                       (:superclasses 
+                                          ( ("apsara::Jsonizable" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [5625 5632])
+                                            ("DeleteInstanceRequest" function
+                                               (:constructor-flag t
+                                                :type ("DeleteInstanceRequest" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [5637 5663])
+                                            ("DeleteInstanceRequest" function
+                                               (:destructor-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [5668 5695])
+                                            ("Jsonize" function
+                                               (:arguments 
+                                                  ( ("json" variable
+                                                       (:reference 1
+                                                        :type ("apsara::Jsonizable::JsonWrapper" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5714 5752]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [5701 5813])
+                                            ("mInstanceID" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5819 5843]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [5567 5846])
+                                    ("RemoteOCMImpl" type
+                                       (:superclasses 
+                                          ( ("RemoteOCM" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [5889 5896])
+                                            ("RemoteOCMImpl" function
+                                               (:prototype-flag t
+                                                :constructor-flag t
+                                                :type ("RemoteOCMImpl" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [5905 5921])
+                                            ("RemoteOCMImpl" function
+                                               (:prototype-flag t
+                                                :destructor-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [5927 5952])
+                                            ("GetInstanceInfo" function
+                                               (:prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :arguments 
+                                                  ( ("instName" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6023 6051])
+                                                    ("instInfo" variable
+                                                       (:pointer 1
+                                                        :type ("InstanceInfo" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6068 6091]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [5977 6092])
+                                            ("ListInstanceInfo" function
+                                               (:prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :arguments 
+                                                  ( ("instMap" variable
+                                                       (:pointer 1
+                                                        :type ("std::map" type
+                                                             (:template-specifier 
+                                                                ( ("std::string" type nil nil nil)
+                                                                  ("InstanceMeta" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [6168 6213]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [6121 6214])
+                                            ("MultiGetInstanceInfo" function
+                                               (:prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :arguments 
+                                                  ( ("nameList" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::vector" type
+                                                             (:template-specifier 
+                                                                ( ("std::string" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [6290 6331])
+                                                    ("instList" variable
+                                                       (:pointer 1
+                                                        :type ("std::vector" type
+                                                             (:template-specifier 
+                                                                ( ("InstanceInfo" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [6348 6384])
+                                                    ("notExistList" variable
+                                                       (:pointer 1
+                                                        :type ("std::vector" type
+                                                             (:template-specifier 
+                                                                ( ("std::string" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [6401 6440]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [6239 6441])
+                                            ("GetUserInfo" function
+                                               (:prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :arguments 
+                                                  ( ("userId" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6508 6534])
+                                                    ("userInfo" variable
+                                                       (:pointer 1
+                                                        :type ("UserInfo" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6551 6570]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [6466 6571])
+                                            ("MultiGetUserInfo" function
+                                               (:prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :arguments 
+                                                  ( ("userIdList" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::vector" type
+                                                             (:template-specifier 
+                                                                ( ("std::string" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [6643 6686])
+                                                    ("userList" variable
+                                                       (:pointer 1
+                                                        :type ("std::vector" type
+                                                             (:template-specifier 
+                                                                ( ("UserInfo" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [6703 6735])
+                                                    ("notExistList" variable
+                                                       (:pointer 1
+                                                        :type ("std::vector" type
+                                                             (:template-specifier 
+                                                                ( ("std::string" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [6752 6791]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [6596 6792])
+                                            ("PreDeleteInstance" function
+                                               (:prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :arguments 
+                                                  ( ("instanceID" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6848 6878]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [6817 6879])
+                                            ("DeleteInstance" function
+                                               (:prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :arguments 
+                                                  ( ("instanceID" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6932 6962]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [6904 6963])
+                                            ("private" label nil (reparse-symbol classsubparts) [6965 6973])
+                                            ("ParseEndpoint" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("endpoint" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6997 7025]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [6978 7026])
+                                            ("CompleteRequest" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("requestURI" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7070 7100])
+                                                    ("responseBody" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7117 7149])
+                                                    ("request" variable
+                                                       (:pointer 1
+                                                        :type ("ehttp::MemHttpRequest" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7166 7197]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [7032 7198])
+                                            ("HandleErrorResponse" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("status" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7246 7261])
+                                                    ("response" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7278 7306]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [7204 7307])
+                                            ("SendRequestEx" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("controller" variable
+                                                       (:reference 1
+                                                        :type ("ehttp::HttpController" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7353 7387])
+                                                    ("request" variable
+                                                       (:reference 1
+                                                        :type ("ehttp::MemHttpRequest" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7404 7435])
+                                                    ("response" variable
+                                                       (:reference 1
+                                                        :type ("ehttp::MemHttpResponse" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7452 7485]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [7317 7486])
+                                            ("private" label nil (reparse-symbol classsubparts) [7488 7496])
+                                            ("mPort" variable (:type "int") (reparse-symbol classsubparts) [7501 7511])
+                                            ("mHostName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7516 7538])
+                                            ("mAccessId" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7543 7565])
+                                            ("mAccessKey" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7570 7593])
+                                            ("mClusterName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7598 7623])
+                                            ("mHttpIO" variable
+                                               (:pointer 1
+                                                :type ("ehttp::EasyHttpIO" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [7632 7659]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [5848 7662]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [157 7665]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [135 7691]))                  
+                :type "namespace")
+                nil [116 7723]))          
+      :file "ots_remote_ocm_impl.h"
+      :pointmax 7759
+      :fsize 7758
+      :lastmodtime '(21867 54517 365037 447000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("OTS_REMOTE_OCM_IMPL_H")
+          )
+)
+    (semanticdb-table "ocm_exception.h"
+      :file "ocm_exception.h"
+      :fsize 2028
+      :lastmodtime '(21867 54517 365037 447000)))
+  :file "!apsarapangu!disk3!jingwen.hjw!work!apsara!ots!http_client!ocm_client!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

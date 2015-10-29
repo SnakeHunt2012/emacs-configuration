@@ -1,0 +1,260 @@
+;; Object mock/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mock/"
+  :tables
+  (list
+    (semanticdb-table "ots_remote_ocm_mock_impl.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("OTS_REMOTE_OCM_MOCK_IMPL_H" variable (:constant-flag t) nil [44 70])
+            ("apsara/common/lock.h" include nil nil [72 103])
+            ("ots_remote_ocm.h" include nil nil [104 131])
+            ("ots_remote_ocm_factory.h" include nil nil [132 167])
+            ("string" include (:system-flag t) nil [169 186])
+            ("map" include (:system-flag t) nil [187 201])
+            ("apsara" type
+               (:members 
+                  ( ("sqlonline" type
+                       (:members 
+                          ( ("ots" type
+                               (:members 
+                                  ( ("MockRemoteOCMImpl" type
+                                       (:superclasses 
+                                          ( ("IRemoteOCM" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [307 314])
+                                            ("MockRemoteOCMImpl" function
+                                               (:constructor-flag t
+                                                :type ("MockRemoteOCMImpl" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [319 380])
+                                            ("MockRemoteOCMImpl" function
+                                               (:destructor-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [386 426])
+                                            ("GetInstanceInfo" function
+                                               (:typemodifiers ("virtual")
+                                                :arguments 
+                                                  ( ("instName" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [480 508])
+                                                    ("instInfo" variable
+                                                       (:pointer 1
+                                                        :type ("InstanceInfo" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [509 532]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [451 816])
+                                            ("ListInstanceInfo" function
+                                               (:typemodifiers ("virtual")
+                                                :arguments 
+                                                  ( ("instMap" variable
+                                                       (:pointer 1
+                                                        :type ("std::map" type
+                                                             (:template-specifier 
+                                                                ( ("std::string" type nil nil nil)
+                                                                  ("InstanceMeta" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [871 916]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [841 1343])
+                                            ("MultiGetInstanceInfo" function
+                                               (:typemodifiers ("virtual")
+                                                :arguments 
+                                                  ( ("nameList" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::vector" type
+                                                             (:template-specifier 
+                                                                ( ("std::string" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [1402 1443])
+                                                    ("instList" variable
+                                                       (:pointer 1
+                                                        :type ("std::vector" type
+                                                             (:template-specifier 
+                                                                ( ("InstanceInfo" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [1460 1496])
+                                                    ("notExistList" variable
+                                                       (:pointer 1
+                                                        :type ("std::vector" type
+                                                             (:template-specifier 
+                                                                ( ("std::string" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [1497 1536]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1368 1982])
+                                            ("GetUserInfo" function
+                                               (:typemodifiers ("virtual")
+                                                :arguments 
+                                                  ( ("userId" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2032 2058])
+                                                    ("userInfo" variable
+                                                       (:pointer 1
+                                                        :type ("UserInfo" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2059 2078]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [2007 2348])
+                                            ("MultiGetUserInfo" function
+                                               (:typemodifiers ("virtual")
+                                                :arguments 
+                                                  ( ("userIdList" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::vector" type
+                                                             (:template-specifier 
+                                                                ( ("std::string" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [2403 2446])
+                                                    ("userList" variable
+                                                       (:pointer 1
+                                                        :type ("std::vector" type
+                                                             (:template-specifier 
+                                                                ( ("UserInfo" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [2463 2495])
+                                                    ("notExistList" variable
+                                                       (:pointer 1
+                                                        :type ("std::vector" type
+                                                             (:template-specifier 
+                                                                ( ("std::string" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [2496 2535]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [2373 2975])
+                                            ("PreDeleteInstance" function
+                                               (:typemodifiers ("virtual")
+                                                :arguments 
+                                                  ( ("instanceID" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3031 3061]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [3000 3761])
+                                            ("DeleteInstance" function
+                                               (:typemodifiers ("virtual")
+                                                :arguments 
+                                                  ( ("instanceID" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3814 3844]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [3786 4305])
+                                            ("AddInstance" function
+                                               (:arguments 
+                                                  ( ("instance" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("InstanceInfo" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4328 4357]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [4311 4467])
+                                            ("AddUser" function
+                                               (:arguments 
+                                                  ( ("user" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("UserInfo" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4486 4507]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [4473 4599])
+                                            ("EnableFailInjection" function
+                                               (:arguments 
+                                                  ( ("exp" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("apsara::sqlonline::ocm::OCMException" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4630 4678]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [4605 4796])
+                                            ("DisableFailInjection" function (:type "void") (reparse-symbol classsubparts) [4802 4922])
+                                            ("private" label nil (reparse-symbol classsubparts) [4924 4932])
+                                            ("FailInjection" function (:type "void") (reparse-symbol classsubparts) [4937 5045])
+                                            ("private" label nil (reparse-symbol classsubparts) [5047 5055])
+                                            ("mMutex" variable (:type ("apsara::PTMutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5060 5083])
+                                            ("mEnableFailInjection" variable (:type "bool") (reparse-symbol classsubparts) [5088 5114])
+                                            ("mException" variable (:type ("apsara::sqlonline::ocm::OCMException" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5119 5167])
+                                            ("mInstances" variable (:type ("std::map" type
+                                                 (:template-specifier 
+                                                    ( ("std::string" type nil nil nil)
+                                                      ("InstanceInfo" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [5173 5220])
+                                            ("mUsers" variable (:type ("std::map" type
+                                                 (:template-specifier 
+                                                    ( ("std::string" type nil nil nil)
+                                                      ("UserInfo" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [5225 5264]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [261 5267])
+                                    ("MockRemoteOCMPtr" type
+                                       (:typedef ("std::tr1::shared_ptr" type
+                                             (:template-specifier 
+                                                ( ("MockRemoteOCMImpl" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol namespacesubparts) [5268 5333])
+                                    ("MockRemoteOCMFactory" type
+                                       (:superclasses 
+                                          ( ("IRemoteOCMFactory" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [5391 5398])
+                                            ("MockRemoteOCMFactory" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("ocm" variable (:type ("RemoteOCMPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5424 5441]))                                                  
+                                                :type ("MockRemoteOCMFactory" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [5403 5468])
+                                            ("MockRemoteOCMFactory" function
+                                               (:destructor-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [5478 5512])
+                                            ("CreateRemoteOCMPtr" function
+                                               (:typemodifiers ("virtual")
+                                                :type ("RemoteOCMPtr" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [5537 5611])
+                                            ("private" label nil (reparse-symbol classsubparts) [5613 5621])
+                                            ("mOCM" variable (:type ("RemoteOCMPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5626 5644]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [5335 5647]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [244 5650]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [222 5676]))                  
+                :type "namespace")
+                nil [203 5708]))          
+      :file "ots_remote_ocm_mock_impl.h"
+      :pointmax 5745
+      :fsize 5744
+      :lastmodtime '(21941 43420 686036 254000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("OTS_REMOTE_OCM_MOCK_IMPL_H")
+          )
+))
+  :file "!apsarapangu!disk4!jingwen.hjw!work!2.2!ots!ots_server!mock!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

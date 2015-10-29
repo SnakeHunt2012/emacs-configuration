@@ -1,0 +1,345 @@
+;; Object lockfree/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lockfree/"
+  :tables
+  (list
+    (semanticdb-table "queue.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_LOCKFREE_FIFO_HPP_INCLUDED" variable (:constant-flag t) nil [407 439])
+            ("boost/assert.hpp" include (:system-flag t) nil [441 468])
+            ("boost/static_assert.hpp" include (:system-flag t) nil [549 583])
+            ("boost/type_traits/has_trivial_assign.hpp" include (:system-flag t) nil [584 635])
+            ("boost/type_traits/has_trivial_destructor.hpp" include (:system-flag t) nil [636 691])
+            ("boost/lockfree/detail/atomic.hpp" include (:system-flag t) nil [693 736])
+            ("boost/lockfree/detail/copy_payload.hpp" include (:system-flag t) nil [737 786])
+            ("boost/lockfree/detail/freelist.hpp" include (:system-flag t) nil [787 832])
+            ("boost/lockfree/detail/parameter.hpp" include (:system-flag t) nil [833 879])
+            ("boost/lockfree/detail/tagged_ptr.hpp" include (:system-flag t) nil [880 927])
+            ("boost" type
+               (:members 
+                  ( ("lockfree" type
+                       (:members 
+                          ( ("detail" type
+                               (:members 
+                                  ( ("queue_signature" type
+                                       (:typedef ("parameter::parameters" type
+                                             (:template-specifier 
+                                                ( ("boost::parameter::optional" type nil nil nil)
+                                                  ("boost::parameter::optional" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol namespacesubparts) [1128 1321]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1106 1324])
+                            ("queue" type
+                               (:members 
+                                  ( ("private" label nil (reparse-symbol classsubparts) [3162 3170])
+                                    ("bound_args" type
+                                       (:typedef ("detail::queue_signature::bind::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3422 3498])
+                                    ("detail::extract_capacity::has_capacity" variable (:type "int") (reparse-symbol classsubparts) [3537 3588])
+                                    ("detail::extract_fixed_sized::value" variable (:type "int") (reparse-symbol classsubparts) [3745 3792])
+                                    ("compile_time_sized" variable
+                                       (:typemodifiers ("static")
+                                        :constant-flag t
+                                        :default-value "has_capacity"
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [3864 3916])
+                                    ("node" variable (:type ("BOOST_LOCKFREE_CACHELINE_ALIGNMENT" type
+                                         (:prototype t
+                                          :type "struct")
+                                          nil nil)) (reparse-symbol classsubparts) [3922 4776])
+                                    ("node_allocator" type
+                                       (:typedef ("detail::extract_allocator::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4782 4864])
+                                    ("pool_t" type
+                                       (:typedef ("detail::select_freelist::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4869 4988])
+                                    ("tagged_node_handle" type
+                                       (:typedef ("pool_t::tagged_node_handle" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4993 5056])
+                                    ("handle_type" type
+                                       (:typedef ("detail::select_tagged_handle::handle_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5061 5150])
+                                    ("initialize" function
+                                       (:arguments 
+                                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5172 5177]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [5156 5438])
+                                    ("implementation_defined" type
+                                       (:members 
+                                          ( ("allocator" type
+                                               (:typedef ("node_allocator" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5488 5521])
+                                            ("size_type" type
+                                               (:typedef ("std::size_t" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5530 5560]))                                          
+                                        :type "struct")
+                                        (reparse-symbol classsubparts) [5444 5567])
+                                    ("public" label nil (reparse-symbol classsubparts) [5749 5756])
+                                    ("value_type" type
+                                       (:typedef ("T" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5761 5782])
+                                    ("allocator" type
+                                       (:typedef ("implementation_defined::allocator" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5787 5848])
+                                    ("size_type" type
+                                       (:typedef ("implementation_defined::size_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5853 5914])
+                                    ("is_lock_free" function
+                                       (:arguments 
+                                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6486 6491]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [6467 6593])
+                                    ("queue" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6639 6644]))                                          
+                                        :type ("queue" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6633 6838])
+                                    ("queue" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:typemodifiers ("typename")
+                                                :type ("node_allocator" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6885 6909])
+                                            ("" variable (:type ("rebind" type
+                                                 (:template-specifier 
+                                                    ( ("U" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol arg-sub-list) [6919 6929])
+                                            ("alloc" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("other" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6930 6950]))                                          
+                                        :type ("queue" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6879 7140])
+                                    ("queue" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("alloc" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("allocator" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7161 7185]))                                          
+                                        :type ("queue" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7155 7368])
+                                    ("queue" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("n" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7469 7481]))                                          
+                                        :type ("queue" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7463 7673])
+                                    ("queue" function
+                                       (:template 
+                                          ( ("U" type (:type "class") nil nil))                                          
+                                        :type ("queue" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("n" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7711 7723])
+                                            ("" variable
+                                               (:typemodifiers ("typename")
+                                                :type ("node_allocator" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7724 7748])
+                                            ("" variable (:type ("rebind" type
+                                                 (:template-specifier 
+                                                    ( ("U" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol arg-sub-list) [7758 7768])
+                                            ("alloc" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("other" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7769 7789]))                                          
+                                        :constructor-flag t)
+                                        (reparse-symbol classsubparts) [7679 7977])
+                                    ("reserve" function
+                                       (:arguments 
+                                          ( ("n" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8065 8077]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8052 8129])
+                                    ("reserve_unsafe" function
+                                       (:arguments 
+                                          ( ("n" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8221 8233]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8201 8286])
+                                    ("queue" function
+                                       (:destructor-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8363 8368]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8356 8523])
+                                    ("empty" function
+                                       (:arguments 
+                                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8816 8821]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [8805 8912])
+                                    ("push" function
+                                       (:arguments 
+                                          ( ("t" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9330 9342]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [9320 9388])
+                                    ("bounded_push" function
+                                       (:arguments 
+                                          ( ("t" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9759 9771]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [9741 9816])
+                                    ("private" label nil (reparse-symbol classsubparts) [9819 9827])
+                                    ("do_push" function
+                                       (:template 
+                                          ( ("bool" type nil nil nil))                                          
+                                        :type "bool"
+                                        :arguments 
+                                          ( ("t" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9903 9915]))                                          )
+                                        (reparse-symbol classsubparts) [9862 11231])
+                                    ("public" label nil (reparse-symbol classsubparts) [11240 11247])
+                                    ("unsynchronized_push" function
+                                       (:arguments 
+                                          ( ("t" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [11713 11725]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [11688 12484])
+                                    ("pop" function
+                                       (:arguments 
+                                          ( ("ret" variable
+                                               (:reference 1
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [12757 12765]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [12747 12805])
+                                    ("pop" function
+                                       (:template 
+                                          ( ("U" type (:type "class") nil nil))                                          
+                                        :type "bool"
+                                        :arguments 
+                                          ( ("ret" variable
+                                               (:reference 1
+                                                :type ("U" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [13194 13202]))                                          )
+                                        (reparse-symbol classsubparts) [13158 14879])
+                                    ("unsynchronized_pop" function
+                                       (:arguments 
+                                          ( ("ret" variable
+                                               (:reference 1
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [15179 15187]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [15154 15242])
+                                    ("unsynchronized_pop" function
+                                       (:template 
+                                          ( ("U" type (:type "class") nil nil))                                          
+                                        :type "bool"
+                                        :arguments 
+                                          ( ("ret" variable
+                                               (:reference 1
+                                                :type ("U" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [15658 15666]))                                          )
+                                        (reparse-symbol classsubparts) [15607 17013])
+                                    ("consume_one" function
+                                       (:template 
+                                          ( ("Functor" type (:type "class") nil nil))                                          
+                                        :type "bool"
+                                        :arguments 
+                                          ( ("f" variable
+                                               (:reference 1
+                                                :type ("Functor" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [17357 17369]))                                          )
+                                        (reparse-symbol classsubparts) [17308 17507])
+                                    ("consume_one" function
+                                       (:template 
+                                          ( ("Functor" type (:type "class") nil nil))                                          
+                                        :type "bool"
+                                        :arguments 
+                                          ( ("f" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Functor" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [17630 17648]))                                          )
+                                        (reparse-symbol classsubparts) [17581 17786])
+                                    ("consume_all" function
+                                       (:template 
+                                          ( ("Functor" type (:type "class") nil nil))                                          
+                                        :type ("size_t" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("f" variable
+                                               (:reference 1
+                                                :type ("Functor" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [18149 18161]))                                          )
+                                        (reparse-symbol classsubparts) [18098 18301])
+                                    ("consume_all" function
+                                       (:template 
+                                          ( ("Functor" type (:type "class") nil nil))                                          
+                                        :type ("size_t" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("f" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Functor" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [18426 18444]))                                          )
+                                        (reparse-symbol classsubparts) [18375 18584])
+                                    ("private" label nil (reparse-symbol classsubparts) [18586 18594])
+                                    ("head_" variable (:type ("atomic" type
+                                         (:template-specifier 
+                                            ( ("tagged_node_handle" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [18629 18662])
+                                    ("padding1" variable
+                                       (:dereference 1
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [18764 18792])
+                                    ("tail_" variable (:type ("atomic" type
+                                         (:template-specifier 
+                                            ( ("tagged_node_handle" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [18797 18830])
+                                    ("padding2" variable
+                                       (:dereference 1
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [18835 18863])
+                                    ("pool" variable (:type ("pool_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18869 18881]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [3076 18891]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1085 18894]))                  
+                :type "namespace")
+                nil [1064 18921]))          
+      :file "queue.hpp"
+      :pointmax 19042
+      :fsize 19041
+      :lastmodtime '(21968 27897 886036 475000)
+      :unmatched-syntax '((punctuation 18758 . 18759) (semantic-list 18738 . 18758) (SIZEOF 18732 . 18738) (punctuation 18730 . 18731) (symbol 18699 . 18729) (punctuation 18697 . 18698) (symbol 18684 . 18696) (INT 18680 . 18683) (CONST 18674 . 18679) (STATIC 18667 . 18673) (punctuation 7768 . 7769) (punctuation 7767 . 7768) (TEMPLATE 7749 . 7757) (punctuation 7748 . 7749) (punctuation 7747 . 7748) (EXPLICIT 7454 . 7462) (EXPLICIT 7146 . 7154) (punctuation 6929 . 6930) (punctuation 6928 . 6929) (TEMPLATE 6910 . 6918) (punctuation 6909 . 6910) (punctuation 6908 . 6909) (EXPLICIT 6870 . 6878) (punctuation 6864 . 6865) (symbol 6863 . 6864) (TYPENAME 6854 . 6862) (punctuation 6853 . 6854) (TEMPLATE 6844 . 6852) (punctuation 5739 . 5740) (DELETE 5733 . 5739) (punctuation 5731 . 5732) (semantic-list 5714 . 5730) (punctuation 5713 . 5714) (OPERATOR 5705 . 5713) (punctuation 5703 . 5704) (symbol 5698 . 5703) (CONST 5692 . 5697) (punctuation 5686 . 5687) (DELETE 5680 . 5686) (punctuation 5678 . 5679) (semantic-list 5662 . 5672) (symbol 5657 . 5662) (punctuation 5670 . 5671) (punctuation 5651 . 5652) (DELETE 5645 . 5651) (punctuation 5643 . 5644) (semantic-list 5627 . 5642) (symbol 5622 . 5627) (punctuation 3858 . 3859) (semantic-list 3829 . 3858) (punctuation 3828 . 3829) (punctuation 3826 . 3827) (symbol 3815 . 3825) (BOOL 3810 . 3814) (CONST 3804 . 3809) (STATIC 3797 . 3803) (punctuation 3743 . 3744) (symbol 3731 . 3742) (BOOL 3726 . 3730) (CONST 3720 . 3725) (STATIC 3713 . 3719) (punctuation 3674 . 3675) (number 3673 . 3674) (punctuation 3671 . 3672) (symbol 3662 . 3670) (punctuation 3661 . 3662) (punctuation 3660 . 3661) (punctuation 3659 . 3660) (symbol 3649 . 3659) (punctuation 3648 . 3649) (symbol 3632 . 3648) (punctuation 3631 . 3632) (punctuation 3630 . 3631) (symbol 3624 . 3630) (punctuation 3622 . 3623) (symbol 3613 . 3621) (symbol 3606 . 3612) (CONST 3600 . 3605) (STATIC 3593 . 3599) (punctuation 3535 . 3536) (symbol 3522 . 3534) (BOOL 3517 . 3521) (CONST 3511 . 3516) (STATIC 3504 . 3510) (punctuation 3027 . 3028) (symbol 3022 . 3027) (punctuation 3021 . 3022) (punctuation 3020 . 3021) (symbol 3011 . 3020) (punctuation 3010 . 3011) (punctuation 3009 . 3010) (symbol 3004 . 3009) (punctuation 3002 . 3003) (symbol 2999 . 3001) (CLASS 2993 . 2998) (punctuation 2981 . 2982) (symbol 2976 . 2981) (punctuation 2975 . 2976) (punctuation 2974 . 2975) (symbol 2965 . 2974) (punctuation 2964 . 2965) (punctuation 2963 . 2964) (symbol 2958 . 2963) (punctuation 2956 . 2957) (symbol 2953 . 2955) (CLASS 2947 . 2952) (punctuation 2935 . 2936) (symbol 2930 . 2935) (punctuation 2929 . 2930) (punctuation 2928 . 2929) (symbol 2919 . 2928) (punctuation 2918 . 2919) (punctuation 2917 . 2918) (symbol 2912 . 2917) (punctuation 2910 . 2911) (symbol 2907 . 2909) (CLASS 2901 . 2906) (punctuation 2889 . 2890) (symbol 2888 . 2889) (TYPENAME 2879 . 2887) (punctuation 2878 . 2879) (TEMPLATE 2869 . 2877))
+      :lexical-table 
+        '(("BOOST_LOCKFREE_FIFO_HPP_INCLUDED")
+          )
+))
+  :file "!apsarapangu!disk6!jingwen.hjw!work!trunk!sqlonline!external!boost!include!boost!lockfree!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

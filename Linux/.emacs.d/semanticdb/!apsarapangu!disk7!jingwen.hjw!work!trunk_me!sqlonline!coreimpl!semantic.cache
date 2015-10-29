@@ -1,0 +1,1889 @@
+;; Object coreimpl/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "coreimpl/"
+  :tables
+  (list
+    (semanticdb-table "sqlstorage_partition.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("sqlstorage_partition.h" include nil nil [1 34])
+            ("index_monitor.h" include nil nil [35 61])
+            ("locality_group_meta.h" include nil nil [62 94])
+            ("pangu_store_mapper.h" include nil nil [95 126])
+            ("communication.h" include nil nil [127 153])
+            ("sqlonline/include/sqlstorage_profiling.h" include nil nil [154 205])
+            ("sqlonline/core/session_manager.h" include nil nil [206 249])
+            ("sqlonline/core/lock_manager.h" include nil nil [250 290])
+            ("sqlonline/coreimpl/master_tablet.h" include nil nil [291 336])
+            ("sqlonline/coreimpl/unlimited_tablet.h" include nil nil [337 385])
+            ("sqlonline/coreimpl/view_tablet.h" include nil nil [386 429])
+            ("sqlonline/coreimpl/measurable_tablet.h" include nil nil [430 479])
+            ("sqlonline/coreimpl/measurable_tablet_v2.h" include nil nil [480 532])
+            ("sqlonline/coreimpl/hbase_tablet.h" include nil nil [533 577])
+            ("sqlonline/coreimpl/index_monitor.h" include nil nil [578 623])
+            ("sqlonline/coreimpl/commit_log/sqlonline_commitlog_callbacks.h" include nil nil [624 696])
+            ("sqlonline/coreimpl/sqlonline_static_variables.h" include nil nil [697 755])
+            ("sqlonline/coreimpl/storage_tablet.h" include nil nil [756 802])
+            ("sqlonline/core/range_splitter.h" include nil nil [803 845])
+            ("sqlonline/core/sqlonline_const_variables.h" include nil nil [846 899])
+            ("sqlonline/core/internal_error.h" include nil nil [900 942])
+            ("sqlonline_exception.h" include nil nil [943 975])
+            ("sqlonline/common/nuwa_store_mapper.h" include nil nil [976 1023])
+            ("sqlonline/common/maybe.h" include nil nil [1024 1059])
+            ("sqlonline/common/sqlonline_thread_pool.h" include nil nil [1060 1111])
+            ("sqlonline/common/time_tools.h" include nil nil [1112 1152])
+            ("sqlonline/protocol/sqlmaster.pb.h" include nil nil [1153 1197])
+            ("apsara/kuafu/channele_pool.h" include nil nil [1198 1237])
+            ("apsara/kuafu.h" include nil nil [1238 1263])
+            ("apsara/common/foreach.h" include nil nil [1264 1298])
+            ("sqlonline/common/sqlonline_logging.h" include nil nil [1299 1346])
+            ("apsara/common/lock.h" include nil nil [1347 1378])
+            ("apsara/common/os.h" include nil nil [1379 1408])
+            ("apsara/common/string_tools.h" include nil nil [1409 1448])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1450 1470])
+            ("std::tr1" using (:type ("std::tr1" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1471 1496])
+            ("apsara::base" using (:type ("apsara::base" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1497 1526])
+            ("apsara::youchao" using (:type ("apsara::youchao" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1527 1559])
+            ("apsara::kuafu" using (:type ("apsara::kuafu" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1560 1590])
+            ("apsara::kuafu3" using (:type ("apsara::kuafu3" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1591 1622])
+            ("apsara::common::timing" using (:type ("apsara::common::timing" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1623 1662])
+            ("boost" using (:type ("boost" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1663 1685])
+            ("DECLARE_FLAG_BOOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlengine_SingleMachineMode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1705 1733]))                  
+                :type "int")
+                nil [1687 1734])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("kuafu3_ChannelQueueSize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1754 1778]))                  
+                :type "int")
+                nil [1735 1779])
+            ("DECLARE_FLAG_INT64" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlstorage_ReplayMaxLatency" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1799 1827]))                  
+                :type "int")
+                nil [1780 1828])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlstorage_RedoLogMinCopy" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1848 1874]))                  
+                :type "int")
+                nil [1829 1875])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlstorage_RedoLogMaxCopy" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1895 1921]))                  
+                :type "int")
+                nil [1876 1922])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_worker_RestoreTime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1942 1971]))                  
+                :type "int")
+                nil [1923 1972])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_ReplicationMaxMemoryUsageInMB" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1992 2032]))                  
+                :type "int")
+                nil [1973 2033])
+            ("DECLARE_FLAG_INT64" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_ReplicationMaxAreaSizeInBytes" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2053 2093]))                  
+                :type "int")
+                nil [2034 2094])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlstorage_LogFileMaxSize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2114 2140]))                  
+                :type "int")
+                nil [2095 2141])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlstorage_CommitLogMaxLogEntrySize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2161 2197]))                  
+                :type "int")
+                nil [2142 2198])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_CommitLogMaxReplayAreaSize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2218 2255]))                  
+                :type "int")
+                nil [2199 2256])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlstorage_WorkerTransactionExpirationTime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2276 2319]))                  
+                :type "int")
+                nil [2257 2320])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_ReplicationMaxRequestSizeInKB" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2340 2380]))                  
+                :type "int")
+                nil [2321 2381])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_commitlog_MaxOnGoingEntryCount" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2401 2442]))                  
+                :type "int")
+                nil [2382 2443])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_commitlog_MaxSegmentCountOfSingleEntry" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2463 2512]))                  
+                :type "int")
+                nil [2444 2513])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_worker_MaxConcurrency4PointQueryPerPart" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2533 2583]))                  
+                :type "int")
+                nil [2514 2584])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_worker_MaxConcurrency4RangeQueryPerPart" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2604 2654]))                  
+                :type "int")
+                nil [2585 2655])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_worker_MaxConcurrency4ModifyPerPart" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2675 2721]))                  
+                :type "int")
+                nil [2656 2722])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_worker_MaxConcurrency4BatchModifyPerPart" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2742 2793]))                  
+                :type "int")
+                nil [2723 2794])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_worker_MaxConcurrency4StartTxnPerPart" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2814 2862]))                  
+                :type "int")
+                nil [2795 2863])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_worker_MaxConcurrency4CommitTxnPerPart" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2883 2932]))                  
+                :type "int")
+                nil [2864 2933])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_worker_MaxNetOutThroughput4PartitionInBytes" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2953 3007]))                  
+                :type "int")
+                nil [2934 3008])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_worker_MaxNetInThroughput4PartitionInBytes" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3028 3081]))                  
+                :type "int")
+                nil [3009 3082])
+            ("kPartitionSplitEvent" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"PartitionSplit\""
+                :type ("string" type (:type "class") nil nil))
+                nil [3084 3144])
+            ("kPartitionMergeEvent" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"PartitionMerge\""
+                :type ("string" type (:type "class") nil nil))
+                nil [3145 3205])
+            ("apsara" type
+               (:members 
+                  ( ("sqlonline" type
+                       (:members 
+                          ( ("unnamed" type
+                               (:members 
+                                  ( ("sLogger" variable
+                                       (:pointer 1
+                                        :default-value "logging::GetLogger(\"/apsara/sqlonline/sqlstorage_partition\")"
+                                        :type ("logging::Logger" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [3262 3350])
+                                    ("UpdateCapacity" function
+                                       (:arguments 
+                                          ( ("read" variable
+                                               (:pointer 1
+                                                :type ("Maybe" type
+                                                     (:template-specifier 
+                                                        ( ("worker::CapacityUnit" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [3377 3411])
+                                            ("write" variable
+                                               (:pointer 1
+                                                :type ("Maybe" type
+                                                     (:template-specifier 
+                                                        ( ("worker::CapacityUnit" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [3416 3451])
+                                            ("meta" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("PartitionMeta" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3456 3482]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [3352 4627]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [3249 4630])
+                            ("SqlStoragePartition::INDEX_USER_LOCALITYGROUP_NAME" variable
+                               (:constant-flag t
+                                :default-value "\"USER_LOCALITYGROUP\""
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4656 4743])
+                            ("SqlStoragePartition::INDEX_NAMING_PREFIX" variable
+                               (:constant-flag t
+                                :default-value "\"index.\""
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4744 4809])
+                            ("SqlStoragePartition" function
+                               (:constructor-flag t
+                                :parent "SqlStoragePartition"
+                                :arguments 
+                                  ( ("meta" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("PartitionMeta" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4852 4878]))                                  
+                                :type ("SqlStoragePartition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4811 5302])
+                            ("LogInitEvent" function
+                               (:parent "SqlStoragePartition"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [5304 5936])
+                            ("unnamed" type
+                               (:members 
+                                  ( ("GetTableVersion" function
+                                       (:arguments 
+                                          ( ("partMeta" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("PartitionMeta" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5980 6010]))                                          
+                                        :type ("TableVersion" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [5951 6352])
+                                    ("GetPKColumns" function
+                                       (:constant-flag t
+                                        :arguments 
+                                          ( ("partMeta" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("PartitionMeta" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6398 6428]))                                          
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("ColumnMeta" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [6354 7235]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [5938 7238])
+                            ("InitFlowController" function
+                               (:parent "SqlStoragePartition"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [7253 7918])
+                            ("Init" function
+                               (:parent "SqlStoragePartition"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [7919 9162])
+                            ("InitFileSystem" function
+                               (:parent "SqlStoragePartition"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [9164 9835])
+                            ("AfterLogReplay" function
+                               (:parent "SqlStoragePartition"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [9837 11321])
+                            ("Reload" function
+                               (:parent "SqlStoragePartition"
+                                :arguments 
+                                  ( ("meta" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("PartitionMeta" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11590 11616]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [11557 11979])
+                            ("unnamed" type
+                               (:members 
+                                  ( ("_SetIndexMonitor" function
+                                       (:arguments 
+                                          ( ("tablet" variable
+                                               (:pointer 1
+                                                :type ("ITablet" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [12015 12031])
+                                            ("im" variable
+                                               (:pointer 1
+                                                :type ("IndexMonitor" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [12032 12049]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [11993 12216])
+                                    ("_ResetIndexMonitor" function
+                                       (:arguments 
+                                          ( ("tablet" variable
+                                               (:pointer 1
+                                                :type ("ITablet" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [12242 12258]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [12218 12425])
+                                    ("_DecideLockFree" function
+                                       (:arguments 
+                                          ( ("table2Index" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("map" type
+                                                     (:template-specifier 
+                                                        ( ("string" type nil nil nil)
+                                                          ("vector" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [12448 12496]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [12427 12641]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [11981 12644])
+                            ("ReloadHelper" function
+                               (:parent "SqlStoragePartition"
+                                :arguments 
+                                  ( ("meta" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("PartitionMeta" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12696 12722]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [12657 17759])
+                            ("ReloadTable" function
+                               (:parent "SqlStoragePartition"
+                                :arguments 
+                                  ( ("tabletMetaPtr" variable (:type ("TabletStoreMetaPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17799 17832])
+                                    ("lgInfo" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LgPathInfo" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17833 17858]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [17761 21265])
+                            ("ReloadIndex" function
+                               (:parent "SqlStoragePartition"
+                                :arguments 
+                                  ( ("sourceTableMetaPtr" variable (:type ("TabletStoreMetaPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21347 21385])
+                                    ("indexMetaPtrs" variable (:type ("vector" type
+                                         (:template-specifier 
+                                            ( ("ViewMetaPtr" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [21424 21458])
+                                    ("lgInfo" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LgPathInfo" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [21497 21522]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [21309 23863])
+                            ("RebuildReplicationAgent" function
+                               (:parent "SqlStoragePartition"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [23865 29384])
+                            ("ManualCompact" function
+                               (:parent "SqlStoragePartition"
+                                :arguments 
+                                  ( ("tableID" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [29426 29453]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [29386 29561])
+                            ("GetManualCompactionState" function
+                               (:parent "SqlStoragePartition"
+                                :arguments 
+                                  ( ("tableID" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [29643 29665]))                                  
+                                :type ("map" type
+                                     (:template-specifier 
+                                        ( ("string" type nil nil nil)
+                                          ("CompactionState" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [29563 29772])
+                            ("HasOldVersionStoreFile" function
+                               (:parent "SqlStoragePartition"
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [29774 30145])
+                            ("HasOldVersionLogFile" function
+                               (:parent "SqlStoragePartition"
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [30147 30253])
+                            ("Split" function
+                               (:parent "SqlStoragePartition"
+                                :arguments 
+                                  ( ("leftPartID" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [30292 30322])
+                                    ("rightPartID" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [30327 30358])
+                                    ("splitPoint" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("SQLVariant" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [30363 30392]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [30255 36700])
+                            ("SplitCommitLog" function
+                               (:parent "SqlStoragePartition"
+                                :arguments 
+                                  ( ("leftPartID" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [36748 36778])
+                                    ("rightPartID" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [36783 36814])
+                                    ("leftFileSystem" variable
+                                       (:pointer 1
+                                        :type ("IFileSystem" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [36819 36847])
+                                    ("rightFileSystem" variable
+                                       (:pointer 1
+                                        :type ("IFileSystem" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [36852 36881]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [36702 37758])
+                            ("SplitReplication" function
+                               (:parent "SqlStoragePartition"
+                                :arguments 
+                                  ( ("leftPartID" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [37808 37838])
+                                    ("rightPartID" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [37843 37874]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [37760 38650])
+                            ("MergeReplication" function
+                               (:parent "SqlStoragePartition"
+                                :arguments 
+                                  ( ("newPartID" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [38700 38729]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [38652 39195])
+                            ("SplitStores" function
+                               (:parent "SqlStoragePartition"
+                                :arguments 
+                                  ( ("leftPartID" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [39240 39270])
+                                    ("rightPartID" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [39275 39306])
+                                    ("leftFileSystem" variable
+                                       (:pointer 1
+                                        :type ("IFileSystem" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [39311 39339])
+                                    ("rightFileSystem" variable
+                                       (:pointer 1
+                                        :type ("IFileSystem" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [39344 39373])
+                                    ("storeMap" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::tr1::unordered_map" type
+                                             (:template-specifier 
+                                                ( ("std::string" type nil nil nil)
+                                                  ("IStore" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [39378 39440]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [39197 41059])
+                            ("ComputeSplitPoint" function
+                               (:parent "SqlStoragePartition"
+                                :arguments 
+                                  ( ("splitPoint" variable
+                                       (:pointer 1
+                                        :type ("SQLVariant" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [41105 41128]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [41061 42086])
+                            ("ComputeSplitPoints" function
+                               (:parent "SqlStoragePartition"
+                                :arguments 
+                                  ( ("splitPointCount" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42133 42156])
+                                    ("splitPoints" variable
+                                       (:pointer 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("SQLVariant" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [42157 42194]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [42088 44031])
+                            ("Merge" function
+                               (:parent "SqlStoragePartition"
+                                :arguments 
+                                  ( ("newPartID" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [44070 44099])
+                                    ("maxReplicateAreaSizeInByte" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44104 44139])
+                                    ("maxReplicateWaitTimeInMsec" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44144 44179])
+                                    ("newRange" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Range" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [44184 44206])
+                                    ("newFileSystem" variable
+                                       (:pointer 1
+                                        :type ("std::auto_ptr" type
+                                             (:template-specifier 
+                                                ( ("IFileSystem" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [44211 44253]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [44033 48881])
+                            ("WaitReplicationDone4Merge" function
+                               (:parent "SqlStoragePartition"
+                                :arguments 
+                                  ( ("maxReplicationAreaSizeInByte" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48935 48972])
+                                    ("maxReplicationWaitTimeInMsec" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48973 49010]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [48883 51575])
+                            ("IsReplicationDone" function
+                               (:parent "SqlStoragePartition"
+                                :constant-flag t
+                                :arguments 
+                                  ( ("timeout" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Interval" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [51627 51651]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [51577 51902])
+                            ("MergeStores" function
+                               (:parent "SqlStoragePartition"
+                                :arguments 
+                                  ( ("newPartID" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [51947 51976])
+                                    ("newFileSystem" variable
+                                       (:pointer 1
+                                        :type ("IFileSystem" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [51981 52008])
+                                    ("storeMap" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::tr1::unordered_map" type
+                                             (:template-specifier 
+                                                ( ("std::string" type nil nil nil)
+                                                  ("IStore" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [52013 52075]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [51904 53037])
+                            ("ToNormalStatus" function
+                               (:parent "SqlStoragePartition"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [53039 56050])
+                            ("BuildTableIndexMapping" function
+                               (:parent "SqlStoragePartition"
+                                :arguments 
+                                  ( ("table2Index" variable
+                                       (:reference 1
+                                        :type ("map" type
+                                             (:template-specifier 
+                                                ( ("string" type nil nil nil)
+                                                  ("vector" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [56101 56143])
+                                    ("tabletMetas" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("TabletStoreMetaPtr" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [56167 56213]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [56052 56647])
+                            ("GetRoot2Childs" function
+                               (:parent "SqlStoragePartition"
+                                :arguments 
+                                  ( ("root2childs" variable
+                                       (:reference 1
+                                        :type ("map" type
+                                             (:template-specifier 
+                                                ( ("string" type nil nil nil)
+                                                  ("vector" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [56690 56732]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [56649 57327])
+                            ("BuildTxnScope" function
+                               (:parent "SqlStoragePartition"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [57329 59789])
+                            ("BuildStorageTabletOptionsForIndex" function
+                               (:parent "SqlStoragePartition"
+                                :arguments 
+                                  ( ("sourceTableMetaPtr" variable (:type ("TabletStoreMetaPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59851 59889])
+                                    ("indexMetas" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("ViewMetaPtr" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [59950 59993])
+                                    ("storageTabletOptions" variable
+                                       (:reference 1
+                                        :type ("StorageTabletOptions" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [60054 60097]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [59791 65031])
+                            ("Unload" function
+                               (:parent "SqlStoragePartition"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [65034 67234])
+                            ("SqlStoragePartition" function
+                               (:destructor-flag t
+                                :parent "SqlStoragePartition"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [67236 67520])
+                            ("IsRedoEnabled" function
+                               (:parent "SqlStoragePartition"
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [67521 68263])
+                            ("InitLogManager" function
+                               (:parent "SqlStoragePartition"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [68264 71773])
+                            ("GetTabletByTableID" function
+                               (:parent "SqlStoragePartition"
+                                :arguments 
+                                  ( ("id" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [71828 71845]))                                  
+                                :type ("ITablet::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [71775 72459])
+                            ("SetServicePermission" function
+                               (:parent "SqlStoragePartition"
+                                :arguments 
+                                  ( ("permission" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [72508 72527]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [72461 74356])
+                            ("GetServicePermission" function
+                               (:parent "SqlStoragePartition"
+                                :type ("int32_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [74358 75053])
+                            ("GetPartitionStatus" function
+                               (:parent "SqlStoragePartition"
+                                :type ("PartitionStatusType" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [75055 75192])
+                            ("ChangeStatusAndReducePermission" function
+                               (:parent "SqlStoragePartition"
+                                :arguments 
+                                  ( ("newStatus" variable (:type ("PartitionStatusType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75257 75287])
+                                    ("permission2Reduce" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75292 75318])
+                                    ("needBackupPermission" variable (:type "bool") (reparse-symbol arg-sub-list) [75323 75349]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [75194 76627])
+                            ("GetYouchaoDataState" function
+                               (:parent "SqlStoragePartition"
+                                :type ("YouchaoDataState" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [76629 78574])
+                            ("unnamed" type
+                               (:members 
+                                  ( ("_GetRawSize" function
+                                       (:arguments 
+                                          ( ("tablet" variable
+                                               (:pointer 1
+                                                :type ("ITablet" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [78608 78624]))                                          
+                                        :type ("int64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [78588 78840]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [78576 78842])
+                            ("GetTableMeteringInfo" function
+                               (:parent "SqlStoragePartition"
+                                :arguments 
+                                  ( ("table2Info" variable
+                                       (:reference 1
+                                        :type ("std::map" type
+                                             (:template-specifier 
+                                                ( ("string" type nil nil nil)
+                                                  ("TableMeteringInfo" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [78910 78958]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [78863 81300])
+                            ("SaveYouchaoDataStateInpartitionInfo" function
+                               (:parent "SqlStoragePartition"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [81302 81425])
+                            ("CheckMemFileDump" function
+                               (:parent "SqlStoragePartition"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [81427 81840])
+                            ("GetAllStorageTablets" function
+                               (:parent "SqlStoragePartition"
+                                :arguments 
+                                  ( ("storageTablets" variable
+                                       (:reference 1
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("StorageTabletPtr" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [81889 81930]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [81842 82519])
+                            ("GetStoreMap" function
+                               (:parent "SqlStoragePartition"
+                                :arguments 
+                                  ( ("storeMap" variable
+                                       (:pointer 1
+                                        :type ("unordered_map" type
+                                             (:template-specifier 
+                                                ( ("string" type nil nil nil)
+                                                  ("IStore" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [82559 82600]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [82521 83098])
+                            ("Sync" function
+                               (:parent "SqlStoragePartition"
+                                :arguments 
+                                  ( ("isWaitForDone" variable (:type "bool") (reparse-symbol arg-sub-list) [83131 83150]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [83100 84390])
+                            ("GetMemoryStat" function
+                               (:parent "SqlStoragePartition"
+                                :type ("PartitionMemStatPtr" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [84392 85555])
+                            ("GetBlockLoadStat" function
+                               (:parent "SqlStoragePartition"
+                                :type ("BlockLoadStat" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [85557 86095])
+                            ("TryCompactMemFile" function
+                               (:parent "SqlStoragePartition"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [86097 86344])
+                            ("ScopedSnapshot" function
+                               (:constructor-flag t
+                                :parent "ScopedSnapshot"
+                                :arguments 
+                                  ( ("logManager" variable
+                                       (:pointer 1
+                                        :type ("LogManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [86377 86400])
+                                    ("sqlPart" variable
+                                       (:pointer 1
+                                        :type ("ISqlStoragePartition" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [86401 86431]))                                  
+                                :type ("ScopedSnapshot" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [86346 86870])
+                            ("ScopedSnapshot" function
+                               (:destructor-flag t
+                                :parent "ScopedSnapshot"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [86872 86954])
+                            ("GetFilesetSnapshot" function
+                               (:parent "SqlStoragePartition"
+                                :arguments 
+                                  ( ("maxWaitTime" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [87049 87069])
+                                    ("metaInfos" variable
+                                       (:pointer 1
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("pair" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [87078 87122]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [86995 87591])
+                            ("GetFilesetSnapshotPB" function
+                               (:parent "SqlStoragePartition"
+                                :arguments 
+                                  ( ("maxWaitTime" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [87649 87669])
+                                    ("metaInfos" variable
+                                       (:pointer 1
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("pair" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [87678 87724]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [87593 88195])
+                            ("GetReplayPoint" function
+                               (:parent "SqlStoragePartition"
+                                :type ("LogPoint" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [88197 88721])
+                            ("CollectReplayPoints" function
+                               (:parent "SqlStoragePartition"
+                                :arguments 
+                                  ( ("rpMap" variable
+                                       (:pointer 1
+                                        :type ("std::tr1::unordered_map" type
+                                             (:template-specifier 
+                                                ( ("std::string" type nil nil nil)
+                                                  ("LogPoint" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [88782 88836]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [88723 89071])
+                            ("SetLogPoint" function
+                               (:parent "SqlStoragePartition"
+                                :arguments 
+                                  ( ("lp" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LogPoint" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [89111 89130]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [89073 89235])
+                            ("SetStorageLogPointWithoutLock" function
+                               (:parent "SqlStoragePartition"
+                                :arguments 
+                                  ( ("lp" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LogPoint" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [89294 89313]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [89238 89892])
+                            ("GetReplicationPoint" function
+                               (:parent "SqlStoragePartition"
+                                :type ("LogPoint" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [89894 90101])
+                            ("unnamed" type
+                               (:members 
+                                  ( ("LogPointOffsetToFileOffset" function
+                                       (:arguments 
+                                          ( ("offset" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [90151 90167]))                                          
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [90115 90213]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [90103 90215])
+                            ("GetUnreplicatedDataSize" function
+                               (:parent "SqlStoragePartition"
+                                :type ("int64_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [90230 91186])
+                            ("ReplicateAsync" function
+                               (:parent "SqlStoragePartition"
+                                :arguments 
+                                  ( ("panguEnties" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("deque" type
+                                             (:template-specifier 
+                                                ( ("Slice" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [91238 91270])
+                                    ("lp" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LogPoint" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [91280 91299])
+                                    ("timeStamp" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [91309 91328]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [91188 92233])
+                            ("EnsureReplicationOrder" function
+                               (:parent "SqlStoragePartition"
+                                :arguments 
+                                  ( ("sourcePartID" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [92296 92323])
+                                    ("sessionID" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [92332 92356])
+                                    ("range" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Range" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [92365 92384])
+                                    ("sequenceNumber" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [92393 92416]))                                  
+                                :type ("int64_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [92235 92532])
+                            ("ResetYouchaoMetric" function
+                               (:parent "SqlStoragePartition"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [92534 92843])
+                            ("LogAndResetPartitionMetric" function
+                               (:parent "SqlStoragePartition"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [92845 93838])
+                            ("GetLogPoint" function
+                               (:parent "SqlStoragePartition"
+                                :type ("LogPoint" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [93840 94041])
+                            ("AllowLockFree" function
+                               (:parent "SqlStoragePartition"
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [94043 94121])
+                            ("GetReplicationDetailState" function
+                               (:parent "SqlStoragePartition"
+                                :constant-flag t
+                                :type ("ReplicationDetailState" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [94123 94460])
+                            ("GetCapacityUnitInfo" function
+                               (:parent "SqlStoragePartition"
+                                :type ("CapacityUnitInfo" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [94462 95051])
+                            ("PartitionMetric::mHostName" variable
+                               (:constant-flag t
+                                :default-value "apsara::Os::GetHostName()"
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [95125 95198])
+                            ("UpdateReqTotalCountMetric" function
+                               (:parent "PartitionMetric"
+                                :arguments 
+                                  ( ("method" variable (:type ("SingleRowMethodType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [95248 95275]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [95200 95426])
+                            ("UpdateLatencyMetric" function
+                               (:parent "PartitionMetric"
+                                :arguments 
+                                  ( ("method" variable (:type ("SingleRowMethodType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [95469 95496])
+                                    ("latency" variable
+                                       (:constant-flag t
+                                        :type ("int64_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [95497 95519]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [95427 95689])
+                            ("UpdateReqTotalCountMetric" function
+                               (:parent "PartitionMetric"
+                                :arguments 
+                                  ( ("method" variable (:type ("MultiRowMethodType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [95739 95765]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [95691 95914])
+                            ("UpdateLatencyMetric" function
+                               (:parent "PartitionMetric"
+                                :arguments 
+                                  ( ("method" variable (:type ("MultiRowMethodType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [95958 95984])
+                                    ("latency" variable
+                                       (:constant-flag t
+                                        :type ("int64_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [95985 96007])
+                                    ("rows" variable
+                                       (:constant-flag t
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [96008 96028]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [95916 96379])
+                            ("UpdateReqTotalCountMetric" function
+                               (:parent "PartitionMetric"
+                                :arguments 
+                                  ( ("method" variable (:type ("DataChannelMethodType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [96429 96458]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [96381 96621])
+                            ("UpdateStatistics" function
+                               (:parent "PartitionMetric"
+                                :arguments 
+                                  ( ("method" variable (:type ("DataChannelMethodType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [96662 96691])
+                                    ("cell" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [96692 96706])
+                                    ("row" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [96707 96720])
+                                    ("file" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [96721 96735])
+                                    ("datasize" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [96736 96754]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [96623 96937])
+                            ("UpdateLatencyMetric" function
+                               (:parent "PartitionMetric"
+                                :arguments 
+                                  ( ("method" variable (:type ("DataChannelMethodType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [96981 97010])
+                                    ("latency" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [97011 97028]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [96939 97197])
+                            ("GetMetric" function
+                               (:parent "PartitionMetric"
+                                :arguments 
+                                  ( ("method" variable (:type ("SingleRowMethodType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [97249 97276]))                                  
+                                :type ("SingleRowRequestMetric" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [97199 97420])
+                            ("GetMetric" function
+                               (:parent "PartitionMetric"
+                                :arguments 
+                                  ( ("method" variable (:type ("MultiRowMethodType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [97471 97497]))                                  
+                                :type ("MultiRowRequestMetric" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [97422 97639])
+                            ("GetMetric" function
+                               (:parent "PartitionMetric"
+                                :arguments 
+                                  ( ("method" variable (:type ("DataChannelMethodType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [97693 97722]))                                  
+                                :type ("DataChannelRequestMetric" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [97641 97868])
+                            ("FlushAndResetPartitionMetric" function
+                               (:parent "PartitionMetric"
+                                :arguments 
+                                  ( ("partitionID" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [97921 97945]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [97870 101420])
+                            ("GetSingleRowRequestType" function
+                               (:parent "PartitionMetric"
+                                :arguments 
+                                  ( ("method" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [101475 101491]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [101422 101822])
+                            ("GetMultiRowRequestType" function
+                               (:parent "PartitionMetric"
+                                :arguments 
+                                  ( ("method" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [101877 101893]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [101825 102469])
+                            ("GetDataChannelRequestType" function
+                               (:parent "PartitionMetric"
+                                :arguments 
+                                  ( ("method" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [102526 102542]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [102471 102746]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [3226 102749]))                  
+                :type "namespace")
+                nil [3207 102751]))          
+      :file "sqlstorage_partition.cpp"
+      :pointmax 102752
+      :fsize 102751
+      :lastmodtime '(21973 39798 675040 403000)
+      :unmatched-syntax nil)
+    (semanticdb-table "index_monitor.h"
+      :file "index_monitor.h"
+      :fsize 12740
+      :lastmodtime '(21973 28402 404036 165000))
+    (semanticdb-table "master_tablet.h"
+      :file "master_tablet.h"
+      :fsize 3112
+      :lastmodtime '(21973 39798 677036 216000))
+    (semanticdb-table "unlimited_tablet.h"
+      :file "unlimited_tablet.h"
+      :fsize 3736
+      :lastmodtime '(21973 39798 676037 291000))
+    (semanticdb-table "view_tablet.h"
+      :file "view_tablet.h"
+      :fsize 3536
+      :lastmodtime '(21973 39798 675040 403000))
+    (semanticdb-table "measurable_tablet.h"
+      :file "measurable_tablet.h"
+      :fsize 7221
+      :lastmodtime '(21973 39798 676037 291000))
+    (semanticdb-table "measurable_tablet_v2.h"
+      :file "measurable_tablet_v2.h"
+      :fsize 4005
+      :lastmodtime '(21973 39798 676037 291000))
+    (semanticdb-table "hbase_tablet.h"
+      :file "hbase_tablet.h"
+      :fsize 3120
+      :lastmodtime '(21973 39798 676037 291000))
+    (semanticdb-table "sqlonline_static_variables.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("APSARA_SQLONLINE_WORKER_STATIC_VARIABLES_H" variable (:constant-flag t) nil [425 467])
+            ("sqlonline/common/top_k.h" include nil nil [469 504])
+            ("apsara/common/os.h" include nil nil [505 534])
+            ("cell.h" include nil nil [535 552])
+            ("arpc" type
+               (:members 
+                  ( ("EasyThreadPool" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [571 592]))                  
+                :type "namespace")
+                nil [554 594])
+            ("apsara" type
+               (:members 
+                  ( ("nuwa" type
+                       (:members 
+                          ( ("NuwaClient" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [633 650]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [616 652])
+                    ("youchao" type
+                       (:members 
+                          ( ("RefCountedBlockCache" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [675 702])
+                            ("IBlockManager" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [703 723]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [654 726])
+                    ("sqlonline" type
+                       (:members 
+                          ( ("deprecated" type
+                               (:members 
+                                  ( ("ITaskScheduler" type
+                                       (:prototype t
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [774 795]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [751 797])
+                            ("IReplicationDetailStateStore" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [799 834])
+                            ("ITaskScheduler" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [835 856])
+                            ("IThreadPool" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [857 875])
+                            ("SQLFlowCenter" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [876 896])
+                            ("CompactionManager" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [897 921])
+                            ("BloomFilterBlockManager" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [922 952])
+                            ("IAsyncReadController" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [953 980])
+                            ("IScheduler" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [982 999])
+                            ("IResourceController" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1000 1026])
+                            ("SQLWorkerStaticVariables" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1061 1068])
+                                    ("Init" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1194 1213])
+                                    ("InitForMock" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1347 1373])
+                                    ("Nuwa" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("nuwa::NuwaClient" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1507 1578])
+                                    ("MaintenanceTaskScheduler" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("ITaskScheduler" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1712 1815])
+                                    ("CommitLogTaskScheduler" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("ITaskScheduler" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1949 2048])
+                                    ("GetAsyncProviderThreadPool" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("IThreadPool" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2286 2387])
+                                    ("ReplicationTaskScheduler" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("deprecated::ITaskScheduler" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2521 2636])
+                                    ("ReplicationDetailStateStore" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("IReplicationDetailStateStore" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2770 2893])
+                                    ("ReplicationDetailStateStoreTaskScheduler" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("ITaskScheduler" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3027 3162])
+                                    ("GetFlowCenter" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("SQLFlowCenter" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3296 3373])
+                                    ("GetCompactionManager" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("CompactionManager" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3507 3602])
+                                    ("DumpScheduler" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("ITaskScheduler" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3736 3817])
+                                    ("GetAsyncReadController" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("IAsyncReadController" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3951 4053])
+                                    ("GetBlockCache" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("youchao::RefCountedBlockCache" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4187 4290])
+                                    ("GetCachedBlockManager" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("youchao::IBlockManager" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4424 4526])
+                                    ("GetDirectBlockManager" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("youchao::IBlockManager" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4660 4762])
+                                    ("GetBloomFilterBlockManager" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("BloomFilterBlockManager" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4896 5009])
+                                    ("HostName" function
+                                       (:typemodifiers ("static")
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5143 5217])
+                                    ("GetCellComparator" function
+                                       (:typemodifiers ("static")
+                                        :type ("youchao::CellComparatorPtr" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5351 5449])
+                                    ("GetReverseCellComparator" function
+                                       (:typemodifiers ("static")
+                                        :type ("youchao::CellComparatorPtr" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5583 5695])
+                                    ("GetCellComparatorV1" function
+                                       (:typemodifiers ("static")
+                                        :type ("youchao::CellComparatorPtr" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5829 5931])
+                                    ("GetReverseCellComparatorV1" function
+                                       (:typemodifiers ("static")
+                                        :type ("youchao::CellComparatorPtr" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6065 6181])
+                                    ("GetSnappyBlockCompressor" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("IBlockCompressor" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6315 6417])
+                                    ("GetLZ4BlockCompressor" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("IBlockCompressor" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6551 6647])
+                                    ("GetClusterID" function
+                                       (:typemodifiers ("static")
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6653 6732])
+                                    ("GetEasyThreadPool" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("arpc::EasyThreadPool" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6738 6843])
+                                    ("GetTopK" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("apsara::sqlonline::TopK" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6849 6924])
+                                    ("GetRequestScheduler" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("IScheduler" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6930 7016])
+                                    ("GetNetOutFlowController" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("IResourceController" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7022 7125])
+                                    ("GetNetInFlowController" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("IResourceController" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7130 7231])
+                                    ("private" label nil (reparse-symbol classsubparts) [7232 7240])
+                                    ("InitBasic" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [7245 7269])
+                                    ("private" label nil (reparse-symbol classsubparts) [7270 7278])
+                                    ("mNuwaClient" variable
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("nuwa::NuwaClient" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7283 7320])
+                                    ("mMaintenanceTaskScheduler" variable
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("ITaskScheduler" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7325 7374])
+                                    ("mCommitLogTaskScheduler" variable
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("ITaskScheduler" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7379 7426])
+                                    ("mAsyncProviderThreadPool" variable
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("IThreadPool" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7431 7476])
+                                    ("mReplicationTaskScheduler" variable
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("deprecated::ITaskScheduler" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7481 7542])
+                                    ("mReplicationDetailStateStore" variable
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("IReplicationDetailStateStore" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7547 7613])
+                                    ("mReplicationDetailStateStoreTaskScheduler" variable
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("ITaskScheduler" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7618 7683])
+                                    ("mFlowCenter" variable
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("SQLFlowCenter" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7688 7722])
+                                    ("mCompactionManager" variable
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("CompactionManager" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7727 7772])
+                                    ("mDumpScheduler" variable
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("ITaskScheduler" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7777 7815])
+                                    ("mAsyncReadController" variable
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("IAsyncReadController" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7820 7870])
+                                    ("mRefCountedBlockCache" variable
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("youchao::RefCountedBlockCache" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7875 7935])
+                                    ("mCachedBlockManager" variable
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("youchao::IBlockManager" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7940 7991])
+                                    ("mDirectBlockManager" variable
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("youchao::IBlockManager" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7996 8047])
+                                    ("mBloomFilterBlockManager" variable
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("BloomFilterBlockManager" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8052 8109])
+                                    ("mHostName" variable
+                                       (:typemodifiers ("static")
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8114 8143])
+                                    ("mCellComparator" variable
+                                       (:typemodifiers ("static")
+                                        :type ("youchao::CellComparatorPtr" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8148 8198])
+                                    ("mReverseCellComparator" variable
+                                       (:typemodifiers ("static")
+                                        :type ("youchao::CellComparatorPtr" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8203 8260])
+                                    ("mCellComparatorV1" variable
+                                       (:typemodifiers ("static")
+                                        :type ("youchao::CellComparatorPtr" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8265 8317])
+                                    ("mReverseCellComparatorV1" variable
+                                       (:typemodifiers ("static")
+                                        :type ("youchao::CellComparatorPtr" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8322 8381])
+                                    ("mSnappyBlockCompressor" variable
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("apsara::sqlonline::IBlockCompressor" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8386 8453])
+                                    ("mLZ4BlockCompressor" variable
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("apsara::sqlonline::IBlockCompressor" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8458 8522])
+                                    ("mClusterID" variable
+                                       (:typemodifiers ("static")
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8527 8557])
+                                    ("mPipelineCommitLogThreadPool" variable
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("arpc::EasyThreadPool" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8562 8620])
+                                    ("mRequestScheduler" variable
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("IScheduler" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8625 8662])
+                                    ("mNetOutFlowController" variable
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("IResourceController" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8667 8717])
+                                    ("mNetInFlowController" variable
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("IResourceController" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8722 8771])
+                                    ("mTopK" variable
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("apsara::sqlonline::TopK" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8776 8814]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1028 8817]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [728 8820]))                  
+                :type "namespace")
+                nil [596 8852]))          
+      :file "sqlonline_static_variables.h"
+      :pointmax 8935
+      :fsize 8934
+      :lastmodtime '(21973 28402 398056 674000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("APSARA_SQLONLINE_WORKER_STATIC_VARIABLES_H")
+          )
+)
+    (semanticdb-table "storage_tablet.h"
+      :file "storage_tablet.h"
+      :fsize 17389
+      :lastmodtime '(21973 39798 675040 403000))
+    (semanticdb-table "sqlonline_exception.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("APSARA_SQLONLINE_EXCEPTION_H" variable (:constant-flag t) nil [411 439])
+            ("sqlonline/common/public_error.h" include nil nil [441 483])
+            ("apsara" type
+               (:members 
+                  ( ("sqlonline" type
+                       (:members 
+                          ( ("ReplicationException" type
+                               (:superclasses 
+                                  ( ("SqlStorageException" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [585 592])
+                                    ("ReplicationException" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("msg" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [631 654])
+                                            ("errorCode" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [668 686])
+                                            ("sourcePartitionID" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [699 736])
+                                            ("partitionID" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [749 780])
+                                            ("sessionID" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [793 822])
+                                            ("ackSequenceNumber" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [835 861]))                                          
+                                        :type ("ReplicationException" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [597 1086])
+                                    ("ReplicationException" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1092 1135])
+                                    ("ReplicationException" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ReplicationException" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1175 1209]))                                          
+                                        :type ("ReplicationException" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1141 1456])
+                                    ("=" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ReplicationException" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1508 1542]))                                          
+                                        :type ("ReplicationException" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1462 1887])
+                                    ("GetClassName" function (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1908 1991])
+                                    ("Clone" function (:type ("std::tr1::shared_ptr" type
+                                         (:template-specifier 
+                                            ( ("ExceptionBase" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [2012 2175])
+                                    ("public" label nil (reparse-symbol classsubparts) [2177 2184])
+                                    ("mSourcePartitionID" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2189 2220])
+                                    ("mPartitonID" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2264 2288])
+                                    ("mSessionID" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2338 2361])
+                                    ("mAckSequenceNumber" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2366 2393]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [527 2396]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [504 2399]))                  
+                :type "namespace")
+                nil [485 2431]))          
+      :file "sqlonline_exception.h"
+      :pointmax 2467
+      :fsize 2466
+      :lastmodtime '(21973 28402 394140 311000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("APSARA_SQLONLINE_EXCEPTION_H")
+          )
+)
+    (semanticdb-table "sqlonline_static_variables.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("sqlonline/coreimpl/sqlonline_static_variables.h" include nil nil [366 424])
+            ("sqlonline/coreimpl/replication/sqlonline_replication_detail_state_store.h" include nil nil [425 509])
+            ("sqlonline/storage/compaction_manager.h" include nil nil [510 559])
+            ("sqlonline/storage/async_read_controller.h" include nil nil [560 612])
+            ("sqlonline/storage/sqlonline_bloom_filter_block_manager.h" include nil nil [613 680])
+            ("sqlonline/youchao_storage/refcounted_block_cache.h" include nil nil [681 742])
+            ("sqlonline/youchao_storage/block_manager.h" include nil nil [743 795])
+            ("sqlonline/common/sqlonline_task_scheduler.h" include nil nil [796 850])
+            ("sqlonline/common/sqlonline_uthread.h" include nil nil [851 898])
+            ("sqlonline/common/sqlonline_flow_center.h" include nil nil [899 950])
+            ("sqlonline/common/sqlonline_thread_pool.h" include nil nil [951 1002])
+            ("sqlonline/common/sqlonline_throttle.h" include nil nil [1003 1051])
+            ("sqlonline/core/core.h" include nil nil [1052 1084])
+            ("apsara/nuwa.h" include nil nil [1086 1110])
+            ("apsara/common/flag.h" include nil nil [1111 1142])
+            ("apsara/common/uuid.h" include nil nil [1143 1174])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_WorkerMaintenanceNumThread" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1195 1232]))                  
+                :type "int")
+                nil [1176 1233])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_CommitLogMaxTaskQueueSize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1253 1289]))                  
+                :type "int")
+                nil [1234 1290])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_CommitLogNumThread" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1310 1339]))                  
+                :type "int")
+                nil [1291 1340])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_ReplicationMaxNumTask" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1360 1392]))                  
+                :type "int")
+                nil [1341 1393])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_ReplicationMaxTaskQueueSize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1413 1451]))                  
+                :type "int")
+                nil [1394 1452])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_ReplicationNumThread" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1472 1503]))                  
+                :type "int")
+                nil [1453 1504])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_storage_CompactionNumThread" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1524 1562]))                  
+                :type "int")
+                nil [1505 1563])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_storage_DumpNumThread" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1583 1615]))                  
+                :type "int")
+                nil [1564 1616])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_storage_CachedBlockMemoryCapacityInMB" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1636 1684]))                  
+                :type "int")
+                nil [1617 1685])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_storage_TemporaryBlockMemoryCapacityInMB" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1705 1756]))                  
+                :type "int")
+                nil [1686 1757])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_storage_CachedBloomFilterMemoryCapacityInMB" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1777 1831]))                  
+                :type "int")
+                nil [1758 1832])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_storage_BlockCacheNumShard" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1852 1889]))                  
+                :type "int")
+                nil [1833 1890])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_storage_BlockCacheNumElements" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1910 1950]))                  
+                :type "int")
+                nil [1891 1951])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_ReplicationNuwaDetailStoreNumThread" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1971 2017]))                  
+                :type "int")
+                nil [1952 2018])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_worker_AsyncProviderThreadPoolSize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2038 2083]))                  
+                :type "int")
+                nil [2019 2084])
+            ("apsara" type
+               (:members 
+                  ( ("sqlonline" type
+                       (:members 
+                          ( ("SQLWorkerStaticVariables::mNuwaClient" variable
+                               (:pointer 1
+                                :default-value "NULL"
+                                :type ("nuwa::NuwaClient" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2128 2191])
+                            ("SQLWorkerStaticVariables::mMaintenanceTaskScheduler" variable
+                               (:pointer 1
+                                :default-value "NULL"
+                                :type ("ITaskScheduler" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2192 2267])
+                            ("SQLWorkerStaticVariables::mCommitLogTaskScheduler" variable
+                               (:pointer 1
+                                :default-value "NULL"
+                                :type ("ITaskScheduler" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2268 2341])
+                            ("SQLWorkerStaticVariables::mAsyncProviderThreadPool" variable
+                               (:pointer 1
+                                :default-value "NULL"
+                                :type ("IThreadPool" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2342 2413])
+                            ("SQLWorkerStaticVariables::mReplicationTaskScheduler" variable
+                               (:pointer 1
+                                :default-value "NULL"
+                                :type ("deprecated::ITaskScheduler" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2414 2501])
+                            ("SQLWorkerStaticVariables::mReplicationDetailStateStore" variable
+                               (:pointer 1
+                                :default-value "NULL"
+                                :type ("IReplicationDetailStateStore" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2502 2594])
+                            ("SQLWorkerStaticVariables::mReplicationDetailStateStoreTaskScheduler" variable
+                               (:pointer 1
+                                :default-value "NULL"
+                                :type ("ITaskScheduler" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2595 2686])
+                            ("SQLWorkerStaticVariables::mFlowCenter" variable
+                               (:pointer 1
+                                :default-value "NULL"
+                                :type ("SQLFlowCenter" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2688 2748])
+                            ("SQLWorkerStaticVariables::mCompactionManager" variable
+                               (:pointer 1
+                                :default-value "NULL"
+                                :type ("CompactionManager" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2749 2820])
+                            ("SQLWorkerStaticVariables::mDumpScheduler" variable
+                               (:pointer 1
+                                :default-value "NULL"
+                                :type ("ITaskScheduler" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2821 2885])
+                            ("SQLWorkerStaticVariables::mAsyncReadController" variable
+                               (:pointer 1
+                                :default-value "NULL"
+                                :type ("IAsyncReadController" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2887 2963])
+                            ("SQLWorkerStaticVariables::mHostName" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [2965 3008])
+                            ("SQLWorkerStaticVariables::mRefCountedBlockCache" variable
+                               (:pointer 1
+                                :default-value "NULL"
+                                :type ("youchao::RefCountedBlockCache" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3009 3095])
+                            ("SQLWorkerStaticVariables::mCachedBlockManager" variable
+                               (:pointer 1
+                                :default-value "NULL"
+                                :type ("youchao::IBlockManager" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3096 3173])
+                            ("SQLWorkerStaticVariables::mDirectBlockManager" variable
+                               (:pointer 1
+                                :default-value "NULL"
+                                :type ("youchao::IBlockManager" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3174 3251])
+                            ("SQLWorkerStaticVariables::mBloomFilterBlockManager" variable
+                               (:pointer 1
+                                :default-value "NULL"
+                                :type ("BloomFilterBlockManager" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3253 3336])
+                            ("SQLWorkerStaticVariables::mCellComparator" variable (:type ("youchao::CellComparatorPtr" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [3338 3407])
+                            ("SQLWorkerStaticVariables::mReverseCellComparator" variable (:type ("youchao::CellComparatorPtr" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [3408 3484])
+                            ("SQLWorkerStaticVariables::mCellComparatorV1" variable (:type ("youchao::CellComparatorPtr" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [3485 3556])
+                            ("SQLWorkerStaticVariables::mReverseCellComparatorV1" variable (:type ("youchao::CellComparatorPtr" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [3557 3635])
+                            ("SQLWorkerStaticVariables::mSnappyBlockCompressor" variable
+                               (:pointer 1
+                                :default-value "NULL"
+                                :type ("apsara::sqlonline::IBlockCompressor" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3637 3730])
+                            ("SQLWorkerStaticVariables::mLZ4BlockCompressor" variable
+                               (:pointer 1
+                                :default-value "NULL"
+                                :type ("apsara::sqlonline::IBlockCompressor" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3731 3821])
+                            ("SQLWorkerStaticVariables::mClusterID" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [3822 3866])
+                            ("SQLWorkerStaticVariables::mPipelineCommitLogThreadPool" variable
+                               (:pointer 1
+                                :default-value "NULL"
+                                :type ("arpc::EasyThreadPool" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3867 3951])
+                            ("SQLWorkerStaticVariables::mRequestScheduler" variable
+                               (:pointer 1
+                                :default-value "NULL"
+                                :type ("apsara::sqlonline::IScheduler" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3952 4034])
+                            ("SQLWorkerStaticVariables::mNetOutFlowController" variable
+                               (:pointer 1
+                                :default-value "NULL"
+                                :type ("apsara::sqlonline::IResourceController" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4035 4130])
+                            ("SQLWorkerStaticVariables::mNetInFlowController" variable
+                               (:pointer 1
+                                :default-value "NULL"
+                                :type ("apsara::sqlonline::IResourceController" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4131 4225])
+                            ("SQLWorkerStaticVariables::mTopK" variable
+                               (:pointer 1
+                                :default-value "NULL"
+                                :type ("apsara::sqlonline::TopK" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4226 4290])
+                            ("Init" function
+                               (:parent "SQLWorkerStaticVariables"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [4292 4489])
+                            ("InitForMock" function
+                               (:parent "SQLWorkerStaticVariables"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [4491 4668])
+                            ("InitBasic" function
+                               (:parent "SQLWorkerStaticVariables"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [4670 8191]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2105 8194]))                  
+                :type "namespace")
+                nil [2086 8226]))          
+      :file "sqlonline_static_variables.cpp"
+      :pointmax 8254
+      :fsize 8253
+      :lastmodtime '(21973 28402 394140 311000)
+      :unmatched-syntax nil))
+  :file "!apsarapangu!disk7!jingwen.hjw!work!trunk_me!sqlonline!coreimpl!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

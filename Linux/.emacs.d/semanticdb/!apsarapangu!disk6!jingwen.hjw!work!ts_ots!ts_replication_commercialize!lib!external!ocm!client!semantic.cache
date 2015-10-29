@@ -1,0 +1,16 @@
+;; Object client/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "client/"
+  :tables
+  (list
+    (semanticdb-table "ocm_client.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "ocm_client.py"
+      :pointmax 36242
+      :fsize 36241
+      :lastmodtime '(22018 5082 944035 986000)
+      :unmatched-syntax nil))
+  :file "!apsarapangu!disk6!jingwen.hjw!work!ts_ots!ts_replication_commercialize!lib!external!ocm!client!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

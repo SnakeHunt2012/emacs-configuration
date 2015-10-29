@@ -1,0 +1,38 @@
+;; Object ess-15.03-1/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ess-15.03-1/"
+  :tables
+  (list
+    (semanticdb-table "Makeconf"
+      :major-mode 'makefile-mode
+      :tags 
+        '( ("DESTDIR" variable (:default-value ("/home/admin/.emacs.d")) nil [799 828])
+            ("PREFIX" variable (:default-value ("$(DESTDIR)")) nil [828 846])
+            ("EMACS" variable (:default-value ("emacs")) nil [865 877])
+            ("SITELISP" variable (:default-value ("$(PREFIX)/site-lisp")) nil [877 906])
+            ("LISPDIR" variable (:default-value ("$(SITELISP)/ess")) nil [906 930])
+            ("INFODIR" variable (:default-value ("$(PREFIX)/info")) nil [930 953])
+            ("ETCDIR" variable (:default-value ("$(PREFIX)/etc/ess")) nil [953 979])
+            ("EMACSBATCH" variable (:default-value ("$(EMACS)" "-batch" "-no-site-file" "-no-init-file")) nil [1957 2014])
+            ("SHELL" variable (:default-value ("/bin/sh")) nil [2617 2633])
+            ("MAKEINFO" variable (:default-value ("LC_ALL=C" "LANG=en" "makeinfo")) nil [2634 2671])
+            ("MAKEHTML" variable (:default-value ("$(MAKEINFO)" "--html" "--no-split" "--css-include=atouchofstyle.css" "-o")) nil [2746 2822])
+            ("MAKETXT" variable (:default-value ("$(MAKEINFO)" "--no-validate" "--plaintext" "--no-split" "-o" "-")) nil [2956 3021])
+            ("INSTALLDIR" variable (:default-value ("mkdir" "-p")) nil [3022 3044])
+            ("INSTALL" variable (:default-value ("cp" "-p")) nil [3070 3086])
+            ("UNINSTALL" variable (:default-value ("rm" "-f")) nil [3106 3124])
+            ("DOCDIR" variable (:default-value ("$(PREFIX)/share/doc/ess")) nil [3125 3156])
+            ("ESSVERSION" variable (:default-value ("$(shell cat ./VERSION 2> /dev/null || cat ../VERSION)")) nil [3745 3810])
+            ("ESSDIR" variable (:default-value ("ess-$(ESSVERSION)")) nil [4319 4344])
+            ("GNUTAR" variable (:default-value ("tar")) nil [4344 4355])
+            ("SVN_URL" variable (:default-value ("https://svn.r-project.org/ESS")) nil [4355 4395])
+            ("UPLOAD_DIR" variable (:default-value ("/u/maechler/emacs/ess-WWW/downloads/ess")) nil [4395 4448])
+            ("ESS_HOMEPAGE" variable (:default-value ("/u/maechler/emacs/ESS-web")) nil [4448 4489]))          
+      :file "Makeconf"
+      :pointmax 4544
+      :fsize 4543
+      :lastmodtime '(21840 11420 0 0)
+      :unmatched-syntax '((symbol 4539 . 4543) (symbol 4535 . 4538) (symbol 4532 . 4534) (symbol 4529 . 4531) (symbol 4523 . 4528) (symbol 4518 . 4522) (symbol 4513 . 4517) (symbol 4509 . 4512) (symbol 4505 . 4508) (symbol 4501 . 4504) (punctuation 4499 . 4500) (symbol 4490 . 4499) (bol 4490 . 4490))))
+  :file "!home!admin!jingwen.hjw!src!ess-15.03-1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

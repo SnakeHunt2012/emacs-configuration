@@ -1,0 +1,16 @@
+;; Object unittest/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "unittest/"
+  :tables
+  (list
+    (semanticdb-table "base62_num_unittest.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "base62_num_unittest.py"
+      :pointmax 2894
+      :fsize 2893
+      :lastmodtime '(21987 54826 954036 350000)
+      :unmatched-syntax nil))
+  :file "!apsarapangu!disk6!jingwen.hjw!work!trunk!ots!ocm!unittest!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

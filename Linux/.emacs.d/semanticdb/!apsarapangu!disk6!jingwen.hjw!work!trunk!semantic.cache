@@ -1,0 +1,45 @@
+;; Object trunk/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "trunk/"
+  :tables
+  (list
+    (semanticdb-table "SConscript"
+      :major-mode 'python-mode
+      :tags 
+        '( ("__future__" include nil nil [26 63])
+            ("os" include nil nil [64 73])
+            ("glob" include nil nil [74 85])
+            ("Import" code nil nil [86 99])
+            ("env" variable nil nil [101 118])
+            ("env" variable nil nil [119 140])
+            ("env" code nil nil [141 178])
+            ("_Format" function (:arguments 
+              ( ("result" variable nil (reparse-symbol function_parameters) [192 198])
+                ("d" variable nil (reparse-symbol function_parameters) [200 201])
+                ("indent" variable nil (reparse-symbol function_parameters) [203 209]))              ) nil [180 997])
+            ("PackBuildInfo" function (:arguments 
+              ( ("env" variable nil (reparse-symbol function_parameters) [1017 1020]))              ) nil [999 2049])
+            ("PackBuildInfo" code nil nil [2050 2068])
+            ("env" variable nil nil [2086 2115])
+            ("env" code nil nil [2117 2178])
+            ("if" code nil nil [2179 2440])
+            ("env" variable nil nil [2473 2512])
+            ("subdirs" variable nil nil [2514 2555])
+            ("exceptions" variable nil nil [2556 2586])
+            ("for" code nil nil [2587 2739]))          
+      :file "SConscript"
+      :pointmax 2740
+      :fsize 2739
+      :lastmodtime '(21954 59437 241035 910000)
+      :unmatched-syntax nil)
+    (semanticdb-table "SConstruct"
+      :major-mode 'python-mode
+      :tags nil
+      :file "SConstruct"
+      :pointmax 57487
+      :fsize 57486
+      :lastmodtime '(21954 59437 242036 307000)
+      :unmatched-syntax nil))
+  :file "!apsarapangu!disk6!jingwen.hjw!work!trunk!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

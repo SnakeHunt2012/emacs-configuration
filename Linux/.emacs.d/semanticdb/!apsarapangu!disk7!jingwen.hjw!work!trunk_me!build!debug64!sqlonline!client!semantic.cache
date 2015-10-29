@@ -1,0 +1,1447 @@
+;; Object client/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "client/"
+  :tables
+  (list
+    (semanticdb-table "client_remote_master.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("sqlonline/common/sqlonline_macro.h" include nil nil [1 46])
+            ("client_remote_master.h" include nil nil [47 80])
+            ("sqlonline/core/sqlonline_const_variables.h" include nil nil [81 134])
+            ("communication.h" include nil nil [135 161])
+            ("sqlmaster.pb.h" include nil nil [162 187])
+            ("client_task_master.h" include nil nil [188 219])
+            ("client_util.h" include nil nil [220 244])
+            ("sqlonline/core/sqlonline_master_schedule_algorithm.h" include nil nil [245 308])
+            ("sqlonline_cj.h" include nil nil [309 334])
+            ("apsara/common/foreach.h" include nil nil [335 369])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [371 391])
+            ("std::tr1" using (:type ("std::tr1" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [392 417])
+            ("apsara" using (:type ("apsara" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [418 441])
+            ("apsara::sqlonline" using (:type ("apsara::sqlonline" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [442 476])
+            ("sLogger" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "logging::GetLogger(\"/apsara/sqlonline/remote_master\")"
+                :type ("logging::Logger" type (:type "class") nil nil))
+                nil [478 566])
+            ("apsara" type
+               (:members 
+                  ( ("sqlonline" type
+                       (:members 
+                          ( ("RemoteMaster" function
+                               (:constructor-flag t
+                                :parent "RemoteMaster"
+                                :arguments 
+                                  ( ("addr" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [637 656]))                                  
+                                :type ("RemoteMaster" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [610 700])
+                            ("RemoteMaster" function
+                               (:constructor-flag t
+                                :parent "RemoteMaster"
+                                :arguments 
+                                  ( ("addr" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [729 748])
+                                    ("retryCount" variable (:type "int") (reparse-symbol arg-sub-list) [749 764]))                                  
+                                :type ("RemoteMaster" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [702 817])
+                            ("CreateTableGroup" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("dbName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [855 881])
+                                    ("meta" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("AbstractTableMeta" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [882 912])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [913 925])
+                                    ("fullMeta" variable (:type "bool") (reparse-symbol arg-sub-list) [926 940]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [819 1375])
+                            ("CreateTable" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("dbName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1408 1434])
+                                    ("meta" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TableMeta" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1435 1457])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [1458 1470])
+                                    ("fullMeta" variable (:type "bool") (reparse-symbol arg-sub-list) [1471 1485]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1377 2091])
+                            ("CreateTable" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("dbName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2124 2150])
+                                    ("meta" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TableMeta" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2151 2173])
+                                    ("instanceId" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2174 2204])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [2209 2221])
+                                    ("fullMeta" variable (:type "bool") (reparse-symbol arg-sub-list) [2222 2236]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2093 2879])
+                            ("CreateView" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("dbName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2911 2937])
+                                    ("meta" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ViewMeta" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2938 2959])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [2960 2972])
+                                    ("fullMeta" variable (:type "bool") (reparse-symbol arg-sub-list) [2973 2987]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2881 3415])
+                            ("DropTable" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("dbName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3446 3472])
+                                    ("tableName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3473 3502])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [3503 3515]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3417 3867])
+                            ("DropTable" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("dbName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3898 3924])
+                                    ("tableName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3925 3954])
+                                    ("instanceId" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3955 3985])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [3990 4002]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3869 4392])
+                            ("DropView" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("dbName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4422 4448])
+                                    ("viewName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4449 4477])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [4478 4490]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [4394 4840])
+                            ("DropTableGroup" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("dbName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4876 4902])
+                                    ("tableGroupName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4903 4937])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [4938 4950]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [4842 5313])
+                            ("GetTableNames" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("dbName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5368 5394])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [5395 5407]))                                  
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [5315 6012])
+                            ("GetTableNamesByPrefix" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("dbName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6075 6101])
+                                    ("prefix" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6101 6127])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [6128 6140]))                                  
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [6014 6824])
+                            ("GetTableGroupNamesByPrefix" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("dbName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6892 6918])
+                                    ("prefix" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6918 6944])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [6945 6957]))                                  
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [6826 7690])
+                            ("GetEntitiesStatisticsByPrefix" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("dbName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7750 7776])
+                                    ("prefix" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7785 7811])
+                                    ("uResTGCnt" variable
+                                       (:reference 1
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7820 7840])
+                                    ("uResTblCnt" variable
+                                       (:reference 1
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7849 7870])
+                                    ("uResViewCnt" variable
+                                       (:reference 1
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7879 7901])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [7910 7922]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [7692 8627])
+                            ("GetTableGroupNames" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("dbName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8687 8713])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [8714 8726]))                                  
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [8629 9380])
+                            ("GetTableNamesByGroup" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("dbName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9442 9468])
+                                    ("groupName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9469 9498])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [9499 9511]))                                  
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [9382 10234])
+                            ("GetViewNamesByTable" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("dbName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10295 10321])
+                                    ("tableName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10322 10346])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [10347 10359]))                                  
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [10236 11011])
+                            ("GetTableMetaByTableID" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("dbName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11070 11096])
+                                    ("tableID" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11097 11124])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [11125 11137]))                                  
+                                :type ("AbstractTableMetaPtr" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [11013 12230])
+                            ("GetTableMeta" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("dbName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12282 12308])
+                                    ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12309 12333])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [12334 12346]))                                  
+                                :type ("AbstractTableMetaPtr" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [12234 13785])
+                            ("GetTableMetaHierarchy" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("dbName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13852 13878])
+                                    ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13879 13903])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [13904 13916]))                                  
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("AbstractTableMetaPtr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [13787 15489])
+                            ("GetPartitionMeta" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("partID" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15536 15562])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [15563 15575]))                                  
+                                :type ("PartitionMeta" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [15491 16070])
+                            ("GetPartLocation" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("partID" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16114 16140])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [16141 16153])
+                                    ("format" variable (:type ("AddressFormat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16154 16175]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [16072 16700])
+                            ("GetAllPartLocations" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [16787 16799]))                                  
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::pair" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [16702 17595])
+                            ("GetPartLocationsByTable" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("tableID" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17686 17713])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [17714 17726]))                                  
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::pair" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [17597 18513])
+                            ("CreateDatabase" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("dbName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18550 18576])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [18577 18589]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [18516 18895])
+                            ("ListDatabase" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [18949 18961]))                                  
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [18897 19411])
+                            ("DropDatabase" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("dbName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19445 19471])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [19472 19484]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [19413 19780])
+                            ("AddLocalityGroup" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("dbName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19818 19839])
+                                    ("tableName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19840 19864])
+                                    ("lgMeta" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LocalityGroupMeta" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19865 19897])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [19898 19910]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [19782 20353])
+                            ("RemoveLocalityGroup" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("dbName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [20394 20415])
+                                    ("tableName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [20416 20440])
+                                    ("lgName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [20441 20462])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [20463 20475]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [20355 20885])
+                            ("DefineExplicitColumn" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("dbName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [20927 20948])
+                                    ("tableName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [20949 20973])
+                                    ("columnMeta" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ColumnMeta" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [20974 21003])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [21004 21016]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [20887 21471])
+                            ("ResetBloomFilterType" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("dbName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [21513 21534])
+                                    ("tableName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [21535 21559])
+                                    ("lgName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [21560 21581])
+                                    ("type" variable (:type ("SQLBloomFilterType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21582 21606])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [21607 21619]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [21473 22082])
+                            ("SyncMasterTable" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("strTableID" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [22119 22149])
+                                    ("strPartID" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [22150 22179])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [22180 22192]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [22084 22629])
+                            ("GetReloadPartitionState" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("partToReload" variable
+                                       (:pointer 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [22674 22713])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [22714 22726]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [22631 23297])
+                            ("DisablePartition" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("strPartID" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [23335 23364])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [23365 23377]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [23299 23690])
+                            ("EnablePartition" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("strPartID" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [23727 23756])
+                                    ("strPreferedWorker" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [23757 23794])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [23795 23807]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [23692 24114])
+                            ("GetDisabledPartitionsList" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [24171 24183]))                                  
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [24116 24680])
+                            ("GetPartitionsDetailInfo" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("ids" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [24725 24761])
+                                    ("infos" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("PBPartitionDetailInfo" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [24769 24811])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [24812 24824]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [24682 25436])
+                            ("MovePartitions" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("parts" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("pair" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [25472 25515])
+                                    ("rejectedPartitions" variable
+                                       (:reference 1
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [25523 25558])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [25559 25571]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [25438 26280])
+                            ("UpdateTableCapacity" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("dbName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [26336 26357])
+                                    ("tableName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [26358 26382])
+                                    ("readCapacity" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26383 26404])
+                                    ("writeCapacity" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26405 26427])
+                                    ("maxDecreaseTimeIn24Hour" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26428 26460])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [26461 26473]))                                  
+                                :type ("CapacityUnitDetails" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [26282 27705])
+                            ("UpdateTable" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("dbName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [27743 27769])
+                                    ("tableName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [27775 27804])
+                                    ("cuSetting" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("CapacityUnitSetting" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [27809 27846])
+                                    ("maxDecreaseTimeIn24Hour" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27851 27883])
+                                    ("tableOpDesc" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TableOptionsDescriptor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [27888 27930])
+                                    ("streamSpec" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("StreamSpecification" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [27935 27973])
+                                    ("cuDetails" variable
+                                       (:pointer 1
+                                        :type ("CapacityUnitDetails" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [27978 28009])
+                                    ("tableOpResult" variable
+                                       (:pointer 1
+                                        :type ("TableOptionsDescriptor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [28014 28052])
+                                    ("streamDetails" variable
+                                       (:pointer 1
+                                        :type ("StreamDetails" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [28057 28086])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [28091 28103]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [27707 32253])
+                            ("ListStream" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("dbName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [32290 32311])
+                                    ("prefix" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [32316 32337])
+                                    ("tableName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [32342 32366])
+                                    ("streams" variable
+                                       (:pointer 1
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [32371 32395])
+                                    ("timeout" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32400 32416]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [32255 32980])
+                            ("DescribeStream" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("dbName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [33021 33042])
+                                    ("streamID" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [33047 33070])
+                                    ("inclusiveStartShardID" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [33075 33111])
+                                    ("shardLimit" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33116 33135])
+                                    ("streamDetails" variable
+                                       (:pointer 1
+                                        :type ("StreamDetails" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [33140 33169])
+                                    ("shards" variable
+                                       (:pointer 1
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("ShardInfo" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [33174 33200])
+                                    ("nextShardID" variable
+                                       (:pointer 1
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [33205 33225])
+                                    ("timeout" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33230 33246]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [32982 34678])
+                            ("UpdateTableForAdmin" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("dbName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [34728 34754])
+                                    ("tableName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [34764 34793])
+                                    ("options" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("InternalTableOptions" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [34802 34838])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [34847 34859]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [34680 35264])
+                            ("ThrowExceptionIfNeeded" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("tasks" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("TaskPtr" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [35308 35336]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [35266 36052])
+                            ("SendTaskToMaster" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("taskPtr" variable
+                                       (:reference 1
+                                        :type ("TaskPtr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [36090 36107])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [36108 36120]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [36054 36307])
+                            ("ChangeTableSchema" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("options" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("TableSchemaOption" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [36346 36392])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [36393 36405]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [36309 36801])
+                            ("GetWorkerStatus" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("content" variable
+                                       (:pointer 1
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [36838 36854])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [36855 36867]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [36803 37175])
+                            ("GetPartitionScheduleStatus" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("content" variable
+                                       (:pointer 1
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [37223 37239])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [37240 37252]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [37177 37616])
+                            ("GetRebalancePlan" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("content" variable
+                                       (:pointer 1
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [37654 37670])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [37671 37683]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [37618 37996])
+                            ("GetMoveWorkersPlan" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("workers" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [38036 38066])
+                                    ("content" variable
+                                       (:pointer 1
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [38067 38083])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [38084 38096]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [37998 38559])
+                            ("CheckPartitionLoadStatus" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("content" variable
+                                       (:pointer 1
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [38605 38621])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [38622 38634]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [38561 38988])
+                            ("GetPartitionActionHistory" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("partitionID" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [39035 39061])
+                                    ("content" variable
+                                       (:pointer 1
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [39062 39078])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [39079 39091]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [38990 39491])
+                            ("GetWorkerActionHistory" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("worker" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [39535 39556])
+                                    ("content" variable
+                                       (:pointer 1
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [39557 39573])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [39574 39586]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [39493 39960])
+                            ("GetAllPartitionsCapacity" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("partitionsCapacity" variable
+                                       (:pointer 1
+                                        :type ("unordered_map" type
+                                             (:template-specifier 
+                                                ( ("string" type nil nil nil)
+                                                  ("SchedulePartitionInfoV2" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [40013 40080])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [40081 40093]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [39962 40884])
+                            ("GetReplicationState" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("dbName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [40925 40951])
+                                    ("tableName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [40952 40981])
+                                    ("state" variable
+                                       (:pointer 1
+                                        :type ("ReplicationState" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [40989 41013])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [41014 41026]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [40886 41512])
+                            ("SetReplicationState" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("dbName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [41553 41579])
+                                    ("rootTableName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [41580 41613])
+                                    ("state" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ReplicationState" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [41614 41644])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [41645 41657]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [41514 42082])
+                            ("DisableTablesReplication" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("dbName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [42137 42158])
+                                    ("tables" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [42167 42206])
+                                    ("influencedPartitions" variable
+                                       (:pointer 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [42215 42262])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [42271 42283]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [42084 42983])
+                            ("GetMasterPartitionStatus" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [43044 43056]))                                  
+                                :type ("PartitionStatusType" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [42985 43476])
+                            ("SetMasterServicePermission" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("permission" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43524 43543])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [43544 43556]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [43478 43932])
+                            ("GetMasterServicePermission" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [43983 43995]))                                  
+                                :type ("int32_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [43934 44401])
+                            ("AddWorkersToWhitelist" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("workers" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [44444 44474])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [44475 44487]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [44403 44927])
+                            ("RemoveWorkersFromWhitelist" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("workers" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [44975 45005])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [45006 45018]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [44929 45483])
+                            ("GetScheduleWhitelist" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("workers" variable
+                                       (:pointer 1
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [45525 45549])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [45550 45562]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [45485 46031])
+                            ("AddWorkersToBlacklist" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("workers" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [46074 46104])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [46105 46117]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [46033 46557])
+                            ("RemoveWorkersFromBlacklist" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("workers" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [46605 46635])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [46636 46648]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [46559 47113])
+                            ("GetScheduleBlacklist" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("workers" variable
+                                       (:pointer 1
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [47155 47179])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [47180 47192]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [47115 47661])
+                            ("AddWorkersToGuardhouse" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("workers" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [47705 47735])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [47736 47748]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [47663 48193])
+                            ("RemoveWorkersFromGuardhouse" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("workers" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [48242 48272])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [48273 48285]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [48195 48755])
+                            ("GetScheduleGuardhouse" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("workers" variable
+                                       (:pointer 1
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [48798 48822])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [48823 48835]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [48757 49309])
+                            ("SetCuCompensationRatio" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("dbName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [49362 49383])
+                                    ("tableName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [49393 49417])
+                                    ("compensation" variable (:type "double") (reparse-symbol arg-sub-list) [49427 49447])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [49457 49469]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [49311 49889])
+                            ("SetTableCanAutoSplit" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("dbName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [49940 49961])
+                                    ("tableName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [49971 49995])
+                                    ("canAutoSplit" variable (:type "bool") (reparse-symbol arg-sub-list) [50005 50023])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [50033 50045]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [49891 50458])
+                            ("GetPartitionFamily" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("partitionID" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [50507 50538])
+                                    ("direction" variable (:type ("HistoryDirection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50547 50574])
+                                    ("depth" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50583 50597])
+                                    ("ancestors" variable
+                                       (:pointer 1
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("PartitionHistory" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [50606 50642])
+                                    ("descendants" variable
+                                       (:pointer 1
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("PartitionHistory" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [50651 50689])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [50698 50710]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [50460 51355])
+                            ("GetPartitionLinkMap" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("rootTableID" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [51405 51436])
+                                    ("source2Target" variable
+                                       (:pointer 1
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [51445 51467])
+                                    ("target2Source" variable
+                                       (:pointer 1
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [51476 51498])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [51507 51519]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [51357 52035])
+                            ("AddReloadPartition" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("partitions" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [52084 52117])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [52126 52138]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [52037 52566])
+                            ("GetResourceUsage" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("usage" variable
+                                       (:pointer 1
+                                        :type ("ResourceUsage" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [52613 52634])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [52643 52655]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [52568 53225])
+                            ("EnableInstanceReplication" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("primaryInstanceId" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [53277 53309])
+                                    ("secondaryInstanceName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [53314 53350])
+                                    ("secondaryRegionName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [53355 53389])
+                                    ("secondaryClusterName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [53394 53429])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [53434 53446]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [53227 54161])
+                            ("EnableInstanceReplication" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("primaryInstanceId" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [54213 54245])
+                                    ("secondaryInstanceName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [54250 54286])
+                                    ("secondaryRegionName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [54291 54325])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [54330 54342]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [54163 54998])
+                            ("DisableInstanceReplication" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("primaryInstanceId" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [55051 55083])
+                                    ("secondaryInstanceName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [55088 55124])
+                                    ("secondaryRegionName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [55129 55163])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [55168 55180]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [55000 55842])
+                            ("GetInstanceReplicationStatus" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("primaryInstanceId" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [55897 55929])
+                                    ("secondaryInstanceName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [55934 55970])
+                                    ("secondaryRegionName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [55975 56009])
+                                    ("databaseName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [56014 56041])
+                                    ("tableReplicationStatusInfos" variable
+                                       (:pointer 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("TableGeoReplicationStatus" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [56046 56114])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [56119 56131]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [55844 57815])
+                            ("GetInstanceReplicationStatus" function
+                               (:parent "RemoteMaster"
+                                :arguments 
+                                  ( ("primaryInstanceId" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [57870 57902])
+                                    ("databaseName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [57907 57934])
+                                    ("tableReplicationStatusInfos" variable
+                                       (:pointer 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("TableGeoReplicationStatus" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [57939 58007])
+                                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [58012 58024]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [57817 59590]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [587 59594]))                  
+                :type "namespace")
+                nil [568 59626]))          
+      :file "client_remote_master.cpp"
+      :pointmax 59654
+      :fsize 59653
+      :lastmodtime '(21973 28727 586035 956000)
+      :unmatched-syntax nil)
+    (semanticdb-table "client_remote_master.h"
+      :file "client_remote_master.h"
+      :fsize 18875
+      :lastmodtime '(21973 28727 585036 627000))
+    (semanticdb-table "client_task_master.h"
+      :file "client_task_master.h"
+      :fsize 14518
+      :lastmodtime '(21973 28403 351036 99000))
+    (semanticdb-table "client_util.h"
+      :file "client_util.h"
+      :fsize 10508
+      :lastmodtime '(21973 28403 351036 99000)))
+  :file "!apsarapangu!disk7!jingwen.hjw!work!trunk_me!build!debug64!sqlonline!client!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,1303 @@
+;; Object replication/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "replication/"
+  :tables
+  (list
+    (semanticdb-table "sqlonline_replication_unittest.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("sqlonline/mock/sqlonline/mock_admin_client.h" include nil nil [1 56])
+            ("sqlonline/include/mock_storage.h" include nil nil [57 100])
+            ("sqlonline/client/client_data_store.h" include nil nil [101 148])
+            ("sqlonline/client/client_database.h" include nil nil [149 194])
+            ("sqlonline/client/unittest/client_test_util.h" include nil nil [195 250])
+            ("sqlonline/common/sqlonline_logging.h" include nil nil [251 298])
+            ("sqlonline/common/time_tools.h" include nil nil [299 339])
+            ("apsara/common/random.h" include nil nil [340 373])
+            ("apsara/common/unittest.h" include nil nil [375 410])
+            ("vector" include (:system-flag t) nil [412 429])
+            ("DECLARE_FLAG_STRING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlstorage_DefaultDBName" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [451 476]))                  
+                :type "int")
+                nil [431 477])
+            ("DECLARE_FLAG_STRING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlstorage_MasterAddr_UT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [498 523]))                  
+                :type "int")
+                nil [478 524])
+            ("DECLARE_FLAG_STRING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlstorage_master_RegionName" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [545 574]))                  
+                :type "int")
+                nil [525 575])
+            ("DECLARE_FLAG_STRING" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlstorage_DefaultDBName" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [596 621]))                  
+                :type "int")
+                nil [576 622])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlstorage_master_MaxReplcationNumPerInstance" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [642 688]))                  
+                :type "int")
+                nil [623 689])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_FailInjectionProbability" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [709 744]))                  
+                :type "int")
+                nil [690 745])
+            ("DECLARE_FLAG_BOOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_LogFileReadFailInjection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [764 799]))                  
+                :type "int")
+                nil [746 800])
+            ("DECLARE_FLAG_BOOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_LogFileWriteFailInjection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [819 855]))                  
+                :type "int")
+                nil [801 856])
+            ("DECLARE_FLAG_BOOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlonline_PanguFileSystemFailInjection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [875 914]))                  
+                :type "int")
+                nil [857 915])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [917 937])
+            ("apsara" using (:type ("apsara" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [938 961])
+            ("apsara::sqlonline" using (:type ("apsara::sqlonline" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [962 996])
+            ("apsara::common::timing" using (:type ("apsara::common::timing" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [997 1036])
+            ("apsara::sqlonline::ocm" using (:type ("apsara::sqlonline::ocm" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1037 1076])
+            ("apsara::sqlonline::geoengine" using (:type ("apsara::sqlonline::geoengine" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1077 1122])
+            ("apsara::sqlonline::replication" using (:type ("apsara::sqlonline::replication" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1123 1170])
+            ("sLogger" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "apsara::logging::GetLogger(\"/apsara/sqlonline/replication/ut\")"
+                :type ("apsara::logging::Logger" type (:type "class") nil nil))
+                nil [1172 1277])
+            ("ParseTableId" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1299 1318]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [1279 1319])
+            ("ParseTableName" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1342 1361]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [1320 1362])
+            ("ParseInstanceName" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1388 1407]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [1363 1408])
+            ("ReplicationUnittest" type
+               (:superclasses 
+                  ( ("apsara::UnitTestFixtureBase" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("ReplicationSimulator" friend nil (reparse-symbol classsubparts) [1499 1532])
+                    ("public" label nil (reparse-symbol classsubparts) [1539 1546])
+                    ("Setup" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1599 1612])
+                    ("CleanUp" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1617 1632])
+                    ("SetupCase" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1682 1699])
+                    ("CleanUpCase" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1704 1723])
+                    ("TestSimpleErDr" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1742 1764])
+                    ("_TestSimpleErDr" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("notifier" variable
+                               (:reference 1
+                                :type ("Notifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1790 1809]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1769 1810])
+                    ("TestSimpleErDrFunc" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1815 1841])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestSimpleErDr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1869 1884]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1847 1888])
+                    ("TestRepeatedErDr" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1906 1930])
+                    ("_TestRepeatedErDr" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("notifier" variable
+                               (:reference 1
+                                :type ("Notifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1958 1977]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1935 1978])
+                    ("TestRepeatedErDrFunc" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1983 2011])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestRepeatedErDr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2039 2056]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2017 2060])
+                    ("TestCtEr" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2070 2086])
+                    ("_TestCtEr" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("notifier" variable
+                               (:reference 1
+                                :type ("Notifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2106 2125]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2091 2126])
+                    ("TestCtErFunc" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2131 2151])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestCtEr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2179 2188]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2157 2192])
+                    ("TestErCt" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2210 2226])
+                    ("_TestErCt" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("notifier" variable
+                               (:reference 1
+                                :type ("Notifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2246 2265]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2231 2266])
+                    ("TestErCtFunc" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2271 2291])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestErCt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2319 2328]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2297 2332])
+                    ("TestErDt" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2350 2366])
+                    ("_TestErDt" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("notifier" variable
+                               (:reference 1
+                                :type ("Notifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2386 2405]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2371 2406])
+                    ("TestErDtFunc" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2411 2431])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestErDt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2459 2468]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2437 2472])
+                    ("TestDuplicatedReplicationSource" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2490 2529])
+                    ("_TestDuplicatedReplicationSource" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("notifier" variable
+                               (:reference 1
+                                :type ("Notifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2572 2591]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2534 2592])
+                    ("TestDuplicatedReplicationSourceFunc" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2597 2640])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestDuplicatedReplicationSource" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2668 2700]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2646 2704])
+                    ("TestErCtDt" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2722 2740])
+                    ("_TestErCtDt" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("notifier" variable
+                               (:reference 1
+                                :type ("Notifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2762 2781]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2745 2782])
+                    ("TestErCtDtFunc" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2787 2809])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestErCtDt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2837 2848]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2815 2852])
+                    ("TestErCtDtDr" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2870 2890])
+                    ("_TestErCtDtDr" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("notifier" variable
+                               (:reference 1
+                                :type ("Notifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2914 2933]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2895 2934])
+                    ("TestErCtDtDrFunc" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2939 2963])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestErCtDtDr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2991 3004]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2969 3008])
+                    ("TestRandomOp" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3026 3046])
+                    ("_TestRandomOp" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("notifier" variable
+                               (:reference 1
+                                :type ("Notifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3070 3089]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3051 3090])
+                    ("TestRandomOpFunc" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3095 3119])
+                    ("APSARA_UNIT_TEST_CASE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TestRandomOp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3147 3160]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3125 3164])
+                    ("private" label nil (reparse-symbol classsubparts) [3170 3178])
+                    ("GetOcmClient" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3184 3204])
+                    ("GetAdminClient" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3209 3231])
+                    ("CheckInstance" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instanceName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3255 3282])
+                            ("primary" variable (:type "bool") (reparse-symbol arg-sub-list) [3283 3296]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3236 3297])
+                    ("CheckInstanceReplication" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("primaryInstance" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3332 3362])
+                            ("secondaryInstance" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3363 3395]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3302 3396])
+                    ("CheckInstanceReplication" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("primaryInstance" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3431 3461])
+                            ("secondaryInstanceVec" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3462 3505]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3401 3506])
+                    ("CheckInstanceReplicationNotExist" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("primaryInstance" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3549 3579])
+                            ("secondaryInstance" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3580 3612]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3511 3613])
+                    ("CheckTable" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("primaryInstance" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3634 3664])
+                            ("secondaryInstance" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3665 3697]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3618 3698])
+                    ("CheckTableReplication" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("primaryInstance" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3730 3760])
+                            ("secondaryTable" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3761 3790]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3703 3791])
+                    ("CheckTableWithRetry" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("primaryInstance" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3821 3851])
+                            ("secondaryInstance" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3852 3884]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3796 3885])
+                    ("InitInstanceInfo" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instanceInfo" variable
+                               (:reference 1
+                                :type ("InstanceInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3912 3939])
+                            ("instanceName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3940 3967])
+                            ("instanceId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3968 3993]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3890 3994])
+                    ("EnableReplication" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("primaryInstance" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4050 4080])
+                            ("secondaryInstance" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4081 4113]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4027 4114])
+                    ("DisableReplication" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("primaryInstance" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4143 4173])
+                            ("secondaryInstance" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4174 4206]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4119 4207])
+                    ("CreateInstance" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instanceName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4260 4287]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4240 4288])
+                    ("DeleteInstance" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instanceId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4313 4338]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4293 4339])
+                    ("CreateTable" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instanceName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4381 4408])
+                            ("tableName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4409 4433]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4364 4434])
+                    ("DeleteTable" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instanceName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4456 4483])
+                            ("tableName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4484 4508]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4439 4509])
+                    ("ListTable" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instanceName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4529 4556])
+                            ("tableList" variable
+                               (:pointer 1
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4557 4583]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4514 4584])
+                    ("WaitTable" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instanceName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4604 4631])
+                            ("tableName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4632 4656]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4589 4657])
+                    ("WaitInstanceDeleted" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instanceName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4687 4714]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4662 4715])
+                    ("private" label nil (reparse-symbol classsubparts) [4721 4729])
+                    ("mPrimaryInstance" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4739 4763])
+                    ("mSecondaryInstance" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4768 4794])
+                    ("mOcmClient" variable
+                       (:pointer 1
+                        :type ("IOcmClient" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4799 4822])
+                    ("mAdminClient" variable
+                       (:pointer 1
+                        :type ("MockAdminClient" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4867 4897])
+                    ("mPrimaryOcmAddr" variable (:type ("OcmAddress" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4907 4934])
+                    ("mSecondaryOcmAddr" variable (:type ("OcmAddress" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4939 4968])
+                    ("mPrimaryRegion" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4973 4995])
+                    ("mSecondaryRegion" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5000 5024])
+                    ("mDB" variable (:type ("DataBasePtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5029 5045]))                  
+                :type "class")
+                nil [1410 5048])
+            ("APSARA_UNIT_TEST_FIXTURE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("ReplicationUnittest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5075 5095]))                  
+                :type "int")
+                nil [5050 5096])
+            ("SimulatorLogicError" type
+               (:superclasses 
+                  ( ("SqlStorageException" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [5148 5155])
+                    ("SimulatorLogicError" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("strMsg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5189 5210])
+                            ("errorCode" variable (:type "int") (reparse-symbol arg-sub-list) [5211 5225]))                          
+                        :type ("SimulatorLogicError" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5169 5270]))                  
+                :type "class")
+                nil [5098 5273])
+            ("ReplicationSimulator" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [5304 5311])
+                    ("ReplicationSimulator" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("unittestPtr" variable
+                               (:pointer 1
+                                :type ("ReplicationUnittest" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5342 5375])
+                            ("instanceSpaceSize" variable (:type "int") (reparse-symbol arg-sub-list) [5376 5398])
+                            ("tableSpaceSize" variable (:type "int") (reparse-symbol arg-sub-list) [5399 5418]))                          
+                        :type ("ReplicationSimulator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5321 5419])
+                    ("ReplicationSimulator" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("unittestPtr" variable
+                               (:pointer 1
+                                :type ("ReplicationUnittest" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5445 5478])
+                            ("instanceSpaceSize" variable (:type "int") (reparse-symbol arg-sub-list) [5479 5501])
+                            ("tableSpaceSize" variable (:type "int") (reparse-symbol arg-sub-list) [5502 5521])
+                            ("seed" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5522 5540]))                          
+                        :type ("ReplicationSimulator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5424 5541])
+                    ("ReplicationSimulator" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5546 5570])
+                    ("CreateInstance" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instanceName" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5596 5616]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5576 5617])
+                    ("RandomEnableReplication" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5622 5653])
+                    ("RandomDisableReplication" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5658 5690])
+                    ("RandomCreateTable" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5695 5720])
+                    ("RandomDeleteTable" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5725 5750])
+                    ("MakeInstanceName" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("primary" variable (:type "bool") (reparse-symbol arg-sub-list) [5779 5792]))                          
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5755 5793])
+                    ("MakeTableName" function
+                       (:prototype-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5798 5821])
+                    ("GetSecondaryInstanceVec" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("primaryInstance" variable
+                               (:reference 1
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5865 5889]))                          
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [5826 5890])
+                    ("private" label nil (reparse-symbol classsubparts) [5896 5904])
+                    ("mUnittestPtr" variable
+                       (:pointer 1
+                        :type ("ReplicationUnittest" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5914 5948])
+                    ("mInstanceSpaceSize" variable (:type "int") (reparse-symbol classsubparts) [5967 5990])
+                    ("mTableSpaceSize" variable (:type "int") (reparse-symbol classsubparts) [5995 6015])
+                    ("mRandom" variable (:type ("DefaultRandom" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6025 6047])
+                    ("mPrimaryTableMap" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil)
+                              ("vector" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [6052 6098])
+                    ("mReplicationMap" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil)
+                              ("string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [6143 6179]))                  
+                :type "class")
+                nil [5275 6233])
+            ("ReplicationSimulator" function
+               (:constructor-flag t
+                :parent "ReplicationSimulator"
+                :arguments 
+                  ( ("unittestPtr" variable
+                       (:pointer 1
+                        :type ("ReplicationUnittest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6278 6311])
+                    ("instanceSpaceSize" variable (:type "int") (reparse-symbol arg-sub-list) [6312 6334])
+                    ("tableSpaceSize" variable (:type "int") (reparse-symbol arg-sub-list) [6335 6354]))                  
+                :type ("ReplicationSimulator" type (:type "class") nil nil))
+                nil [6235 6645])
+            ("ReplicationSimulator" function
+               (:constructor-flag t
+                :parent "ReplicationSimulator"
+                :arguments 
+                  ( ("unittestPtr" variable
+                       (:pointer 1
+                        :type ("ReplicationUnittest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6690 6723])
+                    ("instanceSpaceSize" variable (:type "int") (reparse-symbol arg-sub-list) [6724 6746])
+                    ("tableSpaceSize" variable (:type "int") (reparse-symbol arg-sub-list) [6747 6766])
+                    ("seed" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6767 6785]))                  
+                :type ("ReplicationSimulator" type (:type "class") nil nil))
+                nil [6647 7026])
+            ("ReplicationSimulator" function
+               (:destructor-flag t
+                :parent "ReplicationSimulator"
+                :type "void")
+                nil [7028 7077])
+            ("GetSecondaryInstanceVec" function
+               (:parent "ReplicationSimulator"
+                :arguments 
+                  ( ("primaryInstance" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7140 7164]))                  
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("string" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [7079 7744])
+            ("CreateInstance" function
+               (:parent "ReplicationSimulator"
+                :arguments 
+                  ( ("instanceName" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7788 7808]))                  
+                :type "void")
+                nil [7746 8346])
+            ("RandomEnableReplication" function
+               (:parent "ReplicationSimulator"
+                :type "void")
+                nil [8348 12948])
+            ("RandomDisableReplication" function
+               (:parent "ReplicationSimulator"
+                :type "void")
+                nil [12950 15196])
+            ("RandomCreateTable" function
+               (:parent "ReplicationSimulator"
+                :type "void")
+                nil [15198 16794])
+            ("RandomDeleteTable" function
+               (:parent "ReplicationSimulator"
+                :type "void")
+                nil [16796 18381])
+            ("MakeInstanceName" function
+               (:parent "ReplicationSimulator"
+                :arguments 
+                  ( ("primary" variable (:type "bool") (reparse-symbol arg-sub-list) [18429 18442]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [18383 18640])
+            ("MakeTableName" function
+               (:parent "ReplicationSimulator"
+                :type ("string" type (:type "class") nil nil))
+                nil [18642 18757])
+            ("Setup" function
+               (:parent "ReplicationUnittest"
+                :type "void")
+                nil [18759 19133])
+            ("CleanUp" function
+               (:parent "ReplicationUnittest"
+                :type "void")
+                nil [19135 19174])
+            ("SetupCase" function
+               (:parent "ReplicationUnittest"
+                :type "void")
+                nil [19176 20061])
+            ("CleanUpCase" function
+               (:parent "ReplicationUnittest"
+                :type "void")
+                nil [20063 20409])
+            ("InitInstanceInfo" function
+               (:parent "ReplicationUnittest"
+                :arguments 
+                  ( ("instanceInfo" variable
+                       (:reference 1
+                        :type ("InstanceInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20489 20516])
+                    ("instanceName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20525 20552])
+                    ("instanceId" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20561 20586]))                  
+                :type "void")
+                nil [20446 21995])
+            ("CheckInstance" function
+               (:parent "ReplicationUnittest"
+                :arguments 
+                  ( ("instanceName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22037 22064])
+                    ("primary" variable (:type "bool") (reparse-symbol arg-sub-list) [22065 22078]))                  
+                :type "void")
+                nil [21997 24302])
+            ("CheckInstanceReplication" function
+               (:parent "ReplicationUnittest"
+                :arguments 
+                  ( ("primaryInstance" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24355 24385])
+                    ("secondaryInstance" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24386 24418]))                  
+                :type "void")
+                nil [24304 27584])
+            ("CheckInstanceReplication" function
+               (:parent "ReplicationUnittest"
+                :arguments 
+                  ( ("primaryInstance" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27637 27667])
+                    ("secondaryInstanceVec" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [27668 27711]))                  
+                :type "void")
+                nil [27586 30211])
+            ("CheckInstanceReplicationNotExist" function
+               (:parent "ReplicationUnittest"
+                :arguments 
+                  ( ("primaryInstance" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30272 30302])
+                    ("secondaryInstance" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30303 30335]))                  
+                :type "void")
+                nil [30213 32108])
+            ("GetOcmClient" function
+               (:parent "ReplicationUnittest"
+                :type "void")
+                nil [32110 32323])
+            ("GetAdminClient" function
+               (:parent "ReplicationUnittest"
+                :type "void")
+                nil [32325 32502])
+            ("CreateInstance" function
+               (:parent "ReplicationUnittest"
+                :arguments 
+                  ( ("instanceName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32545 32572]))                  
+                :type "void")
+                nil [32504 32890])
+            ("DeleteInstance" function
+               (:parent "ReplicationUnittest"
+                :arguments 
+                  ( ("instanceId" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32933 32958]))                  
+                :type "void")
+                nil [32892 33023])
+            ("CreateTable" function
+               (:parent "ReplicationUnittest"
+                :arguments 
+                  ( ("instanceName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33063 33090])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33091 33115]))                  
+                :type "void")
+                nil [33025 34508])
+            ("DeleteTable" function
+               (:parent "ReplicationUnittest"
+                :arguments 
+                  ( ("instanceName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34548 34575])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34576 34600]))                  
+                :type "void")
+                nil [34510 34711])
+            ("ListTable" function
+               (:parent "ReplicationUnittest"
+                :arguments 
+                  ( ("instanceName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34749 34776])
+                    ("tableList" variable
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34777 34803]))                  
+                :type "void")
+                nil [34713 35128])
+            ("WaitTable" function
+               (:parent "ReplicationUnittest"
+                :arguments 
+                  ( ("instanceName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35166 35193])
+                    ("tableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35194 35218]))                  
+                :type "void")
+                nil [35130 36194])
+            ("WaitInstanceDeleted" function
+               (:parent "ReplicationUnittest"
+                :arguments 
+                  ( ("instanceName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36242 36269]))                  
+                :type "void")
+                nil [36196 36684])
+            ("CheckTable" function
+               (:parent "ReplicationUnittest"
+                :arguments 
+                  ( ("primaryInstance" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36723 36753])
+                    ("secondaryInstance" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36754 36786]))                  
+                :type "void")
+                nil [36686 38688])
+            ("CheckTableReplication" function
+               (:parent "ReplicationUnittest"
+                :arguments 
+                  ( ("primaryInstance" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38738 38768])
+                    ("secondaryTableName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38769 38824]))                  
+                :type "void")
+                nil [38690 39463])
+            ("CheckTableWithRetry" function
+               (:parent "ReplicationUnittest"
+                :arguments 
+                  ( ("primaryInstance" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39511 39541])
+                    ("secondaryInstance" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39542 39574]))                  
+                :type "void")
+                nil [39465 42661])
+            ("EnableReplication" function
+               (:parent "ReplicationUnittest"
+                :arguments 
+                  ( ("primaryInstance" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42707 42737])
+                    ("secondaryInstance" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42738 42770]))                  
+                :type "void")
+                nil [42663 43467])
+            ("DisableReplication" function
+               (:parent "ReplicationUnittest"
+                :arguments 
+                  ( ("primaryInstance" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43514 43544])
+                    ("secondaryInstance" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43545 43577]))                  
+                :type "void")
+                nil [43469 44267])
+            ("TestSimpleErDr" function
+               (:parent "ReplicationUnittest"
+                :type "void")
+                nil [44304 44650])
+            ("_TestSimpleErDr" function
+               (:parent "ReplicationUnittest"
+                :arguments 
+                  ( ("notifier" variable
+                       (:reference 1
+                        :type ("Notifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [44694 44713]))                  
+                :type "void")
+                nil [44652 44766])
+            ("TestSimpleErDrFunc" function
+               (:parent "ReplicationUnittest"
+                :type "void")
+                nil [44783 45318])
+            ("TestRepeatedErDr" function
+               (:parent "ReplicationUnittest"
+                :type "void")
+                nil [45320 45670])
+            ("_TestRepeatedErDr" function
+               (:parent "ReplicationUnittest"
+                :arguments 
+                  ( ("notifier" variable
+                       (:reference 1
+                        :type ("Notifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [45716 45735]))                  
+                :type "void")
+                nil [45672 45790])
+            ("TestRepeatedErDrFunc" function
+               (:parent "ReplicationUnittest"
+                :type "void")
+                nil [45792 46798])
+            ("TestCtEr" function
+               (:parent "ReplicationUnittest"
+                :type "void")
+                nil [46883 47213])
+            ("_TestCtEr" function
+               (:parent "ReplicationUnittest"
+                :arguments 
+                  ( ("notifier" variable
+                       (:reference 1
+                        :type ("Notifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [47251 47270]))                  
+                :type "void")
+                nil [47215 47317])
+            ("TestCtErFunc" function
+               (:parent "ReplicationUnittest"
+                :type "void")
+                nil [47319 47883])
+            ("TestErCt" function
+               (:parent "ReplicationUnittest"
+                :type "void")
+                nil [47978 48312])
+            ("_TestErCt" function
+               (:parent "ReplicationUnittest"
+                :arguments 
+                  ( ("notifier" variable
+                       (:reference 1
+                        :type ("Notifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48350 48369]))                  
+                :type "void")
+                nil [48314 48416])
+            ("TestErCtFunc" function
+               (:parent "ReplicationUnittest"
+                :type "void")
+                nil [48418 49225])
+            ("TestErDt" function
+               (:parent "ReplicationUnittest"
+                :type "void")
+                nil [49227 49561])
+            ("_TestErDt" function
+               (:parent "ReplicationUnittest"
+                :arguments 
+                  ( ("notifier" variable
+                       (:reference 1
+                        :type ("Notifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49599 49618]))                  
+                :type "void")
+                nil [49563 49665])
+            ("TestErDtFunc" function
+               (:parent "ReplicationUnittest"
+                :type "void")
+                nil [49667 50673])
+            ("TestDuplicatedReplicationSource" function
+               (:parent "ReplicationUnittest"
+                :type "void")
+                nil [50675 51055])
+            ("_TestDuplicatedReplicationSource" function
+               (:parent "ReplicationUnittest"
+                :arguments 
+                  ( ("notifier" variable
+                       (:reference 1
+                        :type ("Notifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51116 51135]))                  
+                :type "void")
+                nil [51057 51205])
+            ("TestDuplicatedReplicationSourceFunc" function
+               (:parent "ReplicationUnittest"
+                :type "void")
+                nil [51207 52202])
+            ("TestErCtDt" function
+               (:parent "ReplicationUnittest"
+                :type "void")
+                nil [52204 52538])
+            ("_TestErCtDt" function
+               (:parent "ReplicationUnittest"
+                :arguments 
+                  ( ("notifier" variable
+                       (:reference 1
+                        :type ("Notifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [52578 52597]))                  
+                :type "void")
+                nil [52540 52646])
+            ("TestErCtDtFunc" function
+               (:parent "ReplicationUnittest"
+                :type "void")
+                nil [52648 53426])
+            ("TestErCtDtDr" function
+               (:parent "ReplicationUnittest"
+                :type "void")
+                nil [53428 53766])
+            ("_TestErCtDtDr" function
+               (:parent "ReplicationUnittest"
+                :arguments 
+                  ( ("notifier" variable
+                       (:reference 1
+                        :type ("Notifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53808 53827]))                  
+                :type "void")
+                nil [53768 53878])
+            ("TestErCtDtDrFunc" function
+               (:parent "ReplicationUnittest"
+                :type "void")
+                nil [53880 54928])
+            ("TestRandomOp" function
+               (:parent "ReplicationUnittest"
+                :type "void")
+                nil [54930 55268])
+            ("_TestRandomOp" function
+               (:parent "ReplicationUnittest"
+                :arguments 
+                  ( ("notifier" variable
+                       (:reference 1
+                        :type ("Notifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [55310 55329]))                  
+                :type "void")
+                nil [55270 55380])
+            ("TestRandomOpFunc" function
+               (:parent "ReplicationUnittest"
+                :type "void")
+                nil [55382 56894])
+            ("ParseTableId" function
+               (:arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [56916 56935]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [56896 56972])
+            ("ParseTableName" function
+               (:arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [56996 57015]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [56974 57147])
+            ("ParseInstanceName" function
+               (:arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [57174 57193]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [57149 57311]))          
+      :file "sqlonline_replication_unittest.cpp"
+      :pointmax 57312
+      :fsize 57311
+      :lastmodtime '(21979 65341 243049 629000)
+      :unmatched-syntax nil))
+  :file "!apsarapangu!disk7!jingwen.hjw!work!trunk_me!sqlonline!testing!unittest!replication!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

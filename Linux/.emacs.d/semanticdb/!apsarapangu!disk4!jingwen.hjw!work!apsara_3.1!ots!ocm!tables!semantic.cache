@@ -1,0 +1,206 @@
+;; Object tables/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tables/"
+  :tables
+  (list
+    (semanticdb-table "instance_info.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "instance_info.py"
+      :pointmax 17548
+      :fsize 17547
+      :lastmodtime '(21933 65410 207036 74000)
+      :unmatched-syntax nil)
+    (semanticdb-table "cluster_info.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("sys" include nil nil [47 57])
+            ("sys" code nil nil [58 79])
+            ("datetime" include nil nil [80 95])
+            ("ocm_common" include nil nil [96 113])
+            ("ocm_error" include nil nil [114 137])
+            ("ocm_config" include nil nil [138 162])
+            ("ocm_globals" include nil nil [163 188])
+            ("ocm_op_check" include nil nil [189 215])
+            ("ocm_db_session" include nil nil [216 244])
+            ("sqlalchemy" include nil nil [245 300])
+            ("sqlalchemy.ext.declarative" include nil nil [302 357])
+            ("Base" variable nil nil [359 384])
+            ("ClusterInfo" type
+               (:superclasses ("Base")
+                :members 
+                  ( ("__tablename__" variable nil (reparse-symbol indented_block_body) [417 447])
+                    ("cluster_name" variable nil (reparse-symbol indented_block_body) [453 504])
+                    ("cluster_type" variable nil (reparse-symbol indented_block_body) [509 558])
+                    ("location_type" variable nil (reparse-symbol indented_block_body) [563 613])
+                    ("region" variable nil (reparse-symbol indented_block_body) [618 661])
+                    ("shennong_id" variable nil (reparse-symbol indented_block_body) [666 714])
+                    ("master_nuwa" variable nil (reparse-symbol indented_block_body) [719 768])
+                    ("replica_cluster" variable nil (reparse-symbol indented_block_body) [773 825])
+                    ("replica_addr" variable nil (reparse-symbol indented_block_body) [830 880])
+                    ("description" variable nil (reparse-symbol indented_block_body) [885 934])
+                    ("identifier" variable nil (reparse-symbol indented_block_body) [939 986])
+                    ("create_time" variable nil (reparse-symbol indented_block_body) [991 1037])
+                    ("timestamp" variable nil (reparse-symbol indented_block_body) [1042 1086])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [1144 1176])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1185 1231])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1240 1288])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1297 1331])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1340 1384])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1393 1437])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1446 1498])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1507 1553])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1562 1606])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1615 1657])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1666 1710])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1719 1759]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1105 1109])
+                            ("cluster_name" variable nil (reparse-symbol function_parameters) [1111 1123])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [1125 1133]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1092 1760])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1778 1782]))                          )
+                        (reparse-symbol indented_block_body) [1765 1851])
+                    ("detailed_info" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1874 1878]))                          )
+                        (reparse-symbol indented_block_body) [1856 2474])
+                    ("brief_info" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2494 2498]))                          )
+                        (reparse-symbol indented_block_body) [2479 2603])
+                    ("from_user_param" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("param" variable nil (reparse-symbol function_parameters) [2646 2651]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [2608 3154])
+                    ("from_insert_param" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("param" variable nil (reparse-symbol function_parameters) [3199 3204]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [3159 5557])
+                    ("from_update_param" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("param" variable nil (reparse-symbol function_parameters) [5602 5607]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [5562 7160]))                  
+                :type "class")
+                nil [387 7160])
+            ("ClusterInfoStub" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [7235 7263]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7203 7207])
+                            ("db_session" variable nil (reparse-symbol function_parameters) [7209 7219]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [7190 7264])
+                    ("gen_query_response" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7292 7296])
+                            ("cluster_info" variable nil (reparse-symbol function_parameters) [7298 7310]))                          )
+                        (reparse-symbol indented_block_body) [7269 7357])
+                    ("query" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7372 7376])
+                            ("cluster_name" variable nil (reparse-symbol function_parameters) [7378 7390]))                          )
+                        (reparse-symbol indented_block_body) [7362 7559])
+                    ("query_with_lock" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7584 7588])
+                            ("cluster_name" variable nil (reparse-symbol function_parameters) [7590 7602]))                          )
+                        (reparse-symbol indented_block_body) [7564 7789])
+                    ("insert" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7805 7809])
+                            ("cluster_info" variable nil (reparse-symbol function_parameters) [7811 7823]))                          )
+                        (reparse-symbol indented_block_body) [7794 8101])
+                    ("update" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8117 8121])
+                            ("cluster_info" variable nil (reparse-symbol function_parameters) [8123 8135]))                          )
+                        (reparse-symbol indented_block_body) [8106 8287])
+                    ("update_by_merge" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8312 8316])
+                            ("old_cluster" variable nil (reparse-symbol function_parameters) [8318 8329])
+                            ("cluster_info" variable nil (reparse-symbol function_parameters) [8331 8343]))                          )
+                        (reparse-symbol indented_block_body) [8292 9284])
+                    ("update_identifier" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9311 9315])
+                            ("cluster_info" variable nil (reparse-symbol function_parameters) [9317 9329]))                          )
+                        (reparse-symbol indented_block_body) [9289 9481])
+                    ("delete" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9497 9501])
+                            ("cluster_info" variable nil (reparse-symbol function_parameters) [9503 9515]))                          )
+                        (reparse-symbol indented_block_body) [9486 9595])
+                    ("query_all" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9614 9618]))                          )
+                        (reparse-symbol indented_block_body) [9600 9715])
+                    ("query_all_with_replica" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9751 9755]))                          )
+                        (reparse-symbol indented_block_body) [9724 9921])
+                    ("query_all_with_replica_by_cluster" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9968 9972])
+                            ("cluster_name" variable nil (reparse-symbol function_parameters) [9974 9986]))                          )
+                        (reparse-symbol indented_block_body) [9930 10228])
+                    ("_gen_identifier" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10253 10257]))                          )
+                        (reparse-symbol indented_block_body) [10233 10318]))                  
+                :type "class")
+                nil [7162 10318]))          
+      :file "cluster_info.py"
+      :pointmax 10319
+      :fsize 10318
+      :lastmodtime '(21934 14129 301037 773000)
+      :unmatched-syntax nil)
+    (semanticdb-table "cluster_domain.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "cluster_domain.py"
+      :pointmax 7931
+      :fsize 7930
+      :lastmodtime '(21931 22827 321035 823000)
+      :unmatched-syntax nil)
+    (semanticdb-table "db_lock.py"
+      :file "db_lock.py"
+      :fsize 3778
+      :lastmodtime '(21931 22827 322077 663000)))
+  :file "!apsarapangu!disk4!jingwen.hjw!work!apsara_3.1!ots!ocm!tables!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

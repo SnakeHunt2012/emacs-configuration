@@ -1,0 +1,44 @@
+;; Object scripts/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "scripts/"
+  :tables
+  (list
+    (semanticdb-table "develop_gb.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [47 56])
+            ("time" include nil nil [57 68])
+            ("json" include nil nil [69 80])
+            ("thread" include nil nil [81 94])
+            ("logging" include nil nil [95 109])
+            ("numpy" include nil nil [111 129])
+            ("pandas" include nil nil [130 149])
+            ("collections" include nil nil [151 186])
+            ("multiprocessing" include nil nil [187 222])
+            ("sklearn.metrics" include nil nil [224 265])
+            ("sklearn.metrics" include nil nil [266 302])
+            ("sklearn.metrics" include nil nil [303 345])
+            ("sklearn.ensemble" include nil nil [346 401])
+            ("sklearn.grid_search" include nil nil [402 447])
+            ("sklearn.cross_validation" include nil nil [448 507])
+            ("load_data" function (:arguments 
+              ( ("path" variable nil (reparse-symbol function_parameters) [523 527]))              ) nil [509 1014])
+            ("load_test_data" function nil nil [1015 1571])
+            ("load_train_data" function nil nil [1572 2606])
+            ("make_submission" function (:arguments 
+              ( ("classifier" variable nil (reparse-symbol function_parameters) [2627 2637])
+                ("parma_dict" variable nil (reparse-symbol function_parameters) [2639 2649])
+                ("filename" variable nil (reparse-symbol function_parameters) [2651 2659]))              ) nil [2607 3505])
+            ("train_validate_test" function (:arguments 
+              ( ("param_dict" variable nil (reparse-symbol function_parameters) [3534 3544]))              ) nil [3510 6246])
+            ("develop" function nil nil [6247 8272])
+            ("main" function nil nil [8273 8300])
+            ("if" code nil nil [8301 8340]))          
+      :file "develop_gb.py"
+      :pointmax 8340
+      :fsize 8339
+      :lastmodtime '(21908 59673 347037 403000)
+      :unmatched-syntax nil))
+  :file "!apsarapangu!disk5!jingwen.hjw!learn!kdd-cup!kdd-cup-2015!scripts!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

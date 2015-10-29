@@ -1,0 +1,1028 @@
+;; Object admin_request_handlers/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "admin_request_handlers/"
+  :tables
+  (list
+    (semanticdb-table "ots_admin_modify_healthy_status_handler.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ots_admin_modify_healthy_status_handler.h" include nil nil [1 53])
+            ("output_stream_utility.h" include nil nil [55 89])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [91 111])
+            ("std::tr1" using (:type ("std::tr1" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [112 137])
+            ("apsara" using (:type ("apsara" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [138 161])
+            ("apsara::logging" using (:type ("apsara::logging" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [162 194])
+            ("apsara::common::timing" using (:type ("apsara::common::timing" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [195 234])
+            ("apsara::sqlonline::ots::metric" using (:type ("apsara::sqlonline::ots::metric" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [235 282])
+            ("DECLARE_FLAG_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("ots_server_HealthyStatus" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [303 328]))                  
+                :type "int")
+                nil [284 329])
+            ("apsara" type
+               (:members 
+                  ( ("sqlonline" type
+                       (:members 
+                          ( ("ots" type
+                               (:members 
+                                  ( ("HandleRequest" function
+                                       (:parent "ModifyHealthyStatusAdminHandler"
+                                        :arguments 
+                                          ( ("body" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [441 460]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [389 512]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [372 515]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [350 541]))                  
+                :type "namespace")
+                nil [331 573]))          
+      :file "ots_admin_modify_healthy_status_handler.cpp"
+      :pointmax 602
+      :fsize 601
+      :lastmodtime '(21869 37096 644036 193000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ots_admin_modify_healthy_status_handler.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("OTS_ADMIN_MODIFY_HEALTHY_STATUS_HANDLER_H" variable (:constant-flag t) nil [59 100])
+            ("apsara/common/jsonizable.h" include nil nil [102 139])
+            ("ots_admin_request_handler_base.h" include nil nil [140 183])
+            ("ots_global_config.h" include nil nil [184 214])
+            ("ots_metric.pb.h" include nil nil [215 241])
+            ("ots_system_manager.h" include nil nil [242 273])
+            ("output_stream_utility.h" include nil nil [274 308])
+            ("string" include (:system-flag t) nil [310 327])
+            ("tr1/unordered_map" include (:system-flag t) nil [328 356])
+            ("apsara" type
+               (:members 
+                  ( ("sqlonline" type
+                       (:members 
+                          ( ("ots" type
+                               (:members 
+                                  ( ("ModifyHealthyStatusAdminHandler" type
+                                       (:superclasses 
+                                          ( ("AdminRequestHandlerBase" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [489 496])
+                                            ("ModifyHealthyStatusAdminHandler" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("request" variable
+                                                       (:pointer 1
+                                                        :type ("OTSRequest" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [533 553])
+                                                    ("response" variable
+                                                       (:pointer 1
+                                                        :type ("OTSResponse" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [554 576]))                                                  
+                                                :type ("ModifyHealthyStatusAdminHandler" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [501 637])
+                                            ("ModifyHealthyStatusAdminHandler" function
+                                               (:destructor-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [643 688])
+                                            ("HandleRequest" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("body" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [732 751]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [713 752]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [416 757]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [399 760]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [377 786]))                  
+                :type "namespace")
+                nil [358 818]))          
+      :file "ots_admin_modify_healthy_status_handler.h"
+      :pointmax 900
+      :fsize 899
+      :lastmodtime '(21869 36881 912038 630000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("OTS_ADMIN_MODIFY_HEALTHY_STATUS_HANDLER_H")
+          )
+)
+    (semanticdb-table "admin_request_dispatcher.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("admin_request_dispatcher.h" include nil nil [1 38])
+            ("ots_admin_handlers.h" include nil nil [40 71])
+            ("ots_exception.h" include nil nil [72 98])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [100 120])
+            ("std::tr1" using (:type ("std::tr1" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [121 146])
+            ("std::tr1::placeholders" using (:type ("std::tr1::placeholders" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [147 186])
+            ("fcgi" using (:type ("fcgi" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [187 208])
+            ("apsara" using (:type ("apsara" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [209 232])
+            ("apsara::logging" using (:type ("apsara::logging" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [233 265])
+            ("apsara::sqlonline" using (:type ("apsara::sqlonline" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [266 300])
+            ("apsara::sqlonline::ots" using (:type ("apsara::sqlonline::ots" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [301 340])
+            ("sLogger" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "GetLogger(\"/apsara/sqlonline/ots/ots_server\")"
+                :type ("Logger" type (:type "class") nil nil))
+                nil [342 413])
+            ("apsara" type
+               (:members 
+                  ( ("sqlonline" type
+                       (:members 
+                          ( ("ots" type
+                               (:members 
+                                  ( ("AdminRequestDispatcher" function
+                                       (:constructor-flag t
+                                        :parent "AdminRequestDispatcher"
+                                        :type ("AdminRequestDispatcher" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [473 1320])
+                                    ("DispatchRequest" function
+                                       (:parent "AdminRequestDispatcher"
+                                        :arguments 
+                                          ( ("request" variable
+                                               (:pointer 1
+                                                :type ("OTSRequest" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1385 1405])
+                                            ("response" variable
+                                               (:pointer 1
+                                                :type ("OTSResponse" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1406 1428]))                                          
+                                        :type ("IRequestHandlerPtr" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [1326 1932])
+                                    ("HandleMemoryStat" function
+                                       (:parent "AdminRequestDispatcher"
+                                        :arguments 
+                                          ( ("request" variable
+                                               (:pointer 1
+                                                :type ("OTSRequest" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1994 2014])
+                                            ("response" variable
+                                               (:pointer 1
+                                                :type ("OTSResponse" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2015 2037]))                                          
+                                        :type ("IRequestHandlerPtr" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [1934 2146])
+                                    ("HandleMemoryProfiler" function
+                                       (:parent "AdminRequestDispatcher"
+                                        :arguments 
+                                          ( ("request" variable
+                                               (:pointer 1
+                                                :type ("OTSRequest" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2212 2232])
+                                            ("response" variable
+                                               (:pointer 1
+                                                :type ("OTSResponse" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2233 2255]))                                          
+                                        :type ("IRequestHandlerPtr" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [2148 2368])
+                                    ("HandleGetMetric" function
+                                       (:parent "AdminRequestDispatcher"
+                                        :arguments 
+                                          ( ("request" variable
+                                               (:pointer 1
+                                                :type ("OTSRequest" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2429 2449])
+                                            ("response" variable
+                                               (:pointer 1
+                                                :type ("OTSResponse" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2450 2472]))                                          
+                                        :type ("IRequestHandlerPtr" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [2370 2580])
+                                    ("HandleGetMetricStat" function
+                                       (:parent "AdminRequestDispatcher"
+                                        :arguments 
+                                          ( ("request" variable
+                                               (:pointer 1
+                                                :type ("OTSRequest" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2645 2665])
+                                            ("response" variable
+                                               (:pointer 1
+                                                :type ("OTSResponse" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2666 2688]))                                          
+                                        :type ("IRequestHandlerPtr" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [2582 2800])
+                                    ("HandleModifyHealthyStatus" function
+                                       (:parent "AdminRequestDispatcher"
+                                        :arguments 
+                                          ( ("request" variable
+                                               (:pointer 1
+                                                :type ("OTSRequest" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2871 2891])
+                                            ("response" variable
+                                               (:pointer 1
+                                                :type ("OTSResponse" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2892 2914]))                                          
+                                        :type ("IRequestHandlerPtr" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [2802 3032]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [456 3035]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [434 3061]))                  
+                :type "namespace")
+                nil [415 3093]))          
+      :file "admin_request_dispatcher.cpp"
+      :pointmax 3122
+      :fsize 3121
+      :lastmodtime '(21869 36479 149050 275000)
+      :unmatched-syntax nil)
+    (semanticdb-table "admin_request_dispatcher.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("ADMIN_REQUEST_DISPATCHER_H" variable (:constant-flag t) nil [44 70])
+            ("ots_base_handler.h" include nil nil [72 101])
+            ("ots_base_request.h" include nil nil [102 131])
+            ("ots_base_response.h" include nil nil [132 162])
+            ("ots_slice_helper.h" include nil nil [163 192])
+            ("map" include (:system-flag t) nil [194 208])
+            ("tr1/memory" include (:system-flag t) nil [209 230])
+            ("tr1/functional" include (:system-flag t) nil [231 256])
+            ("vector" include (:system-flag t) nil [257 274])
+            ("apsara" type
+               (:members 
+                  ( ("sqlonline" type
+                       (:members 
+                          ( ("ots" type
+                               (:members 
+                                  ( ("AdminRequestDispatcher" type
+                                       (:members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [365 372])
+                                            ("AdminRequestDispatcher" function
+                                               (:prototype-flag t
+                                                :constructor-flag t
+                                                :type ("AdminRequestDispatcher" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [377 402])
+                                            ("DispatchRequest" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("request" variable
+                                                       (:pointer 1
+                                                        :type ("OTSRequest" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [443 463])
+                                                    ("response" variable
+                                                       (:pointer 1
+                                                        :type ("OTSResponse" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [464 486]))                                                  
+                                                :type ("IRequestHandlerPtr" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [408 487])
+                                            ("private" label nil (reparse-symbol classsubparts) [489 497])
+                                            ("HandleMemoryStat" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("request" variable
+                                                       (:pointer 1
+                                                        :type ("OTSRequest" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [538 558])
+                                                    ("response" variable
+                                                       (:pointer 1
+                                                        :type ("OTSResponse" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [559 581]))                                                  
+                                                :type ("IRequestHandlerPtr" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [502 582])
+                                            ("HandleMemoryProfiler" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("request" variable
+                                                       (:pointer 1
+                                                        :type ("OTSRequest" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [627 647])
+                                                    ("response" variable
+                                                       (:pointer 1
+                                                        :type ("OTSResponse" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [648 670]))                                                  
+                                                :type ("IRequestHandlerPtr" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [587 671])
+                                            ("HandleGetMetric" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("request" variable
+                                                       (:pointer 1
+                                                        :type ("OTSRequest" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [711 731])
+                                                    ("response" variable
+                                                       (:pointer 1
+                                                        :type ("OTSResponse" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [732 754]))                                                  
+                                                :type ("IRequestHandlerPtr" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [676 755])
+                                            ("HandleGetMetricStat" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("request" variable
+                                                       (:pointer 1
+                                                        :type ("OTSRequest" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [799 819])
+                                                    ("response" variable
+                                                       (:pointer 1
+                                                        :type ("OTSResponse" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [820 842]))                                                  
+                                                :type ("IRequestHandlerPtr" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [760 843])
+                                            ("HandleModifyHealthyStatus" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("request" variable
+                                                       (:pointer 1
+                                                        :type ("OTSRequest" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [893 913])
+                                                    ("response" variable
+                                                       (:pointer 1
+                                                        :type ("OTSResponse" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [914 936]))                                                  
+                                                :type ("IRequestHandlerPtr" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [848 937])
+                                            ("RequestHandlerFunc" variable (:type "int") (reparse-symbol classsubparts) [1018 1037])
+                                            ("RequestDispatchMap" type
+                                               (:typedef ("std::tr1::unordered_map" type
+                                                     (:template-specifier 
+                                                        ( ("apsara::sqlonline::Slice" type nil nil nil)
+                                                          ("RequestHandlerFunc" type nil nil nil)
+                                                          ("SliceHash" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1042 1150])
+                                            ("mDispatchTable" variable (:type ("RequestDispatchMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1156 1190]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [334 1193])
+                                    ("AdminRequestDispatcherPtr" type
+                                       (:typedef ("std::tr1::shared_ptr" type
+                                             (:template-specifier 
+                                                ( ("AdminRequestDispatcher" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol namespacesubparts) [1194 1273]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [317 1276]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [295 1302]))                  
+                :type "namespace")
+                nil [276 1334]))          
+      :file "admin_request_dispatcher.h"
+      :pointmax 1371
+      :fsize 1370
+      :lastmodtime '(21869 36203 598038 175000)
+      :unmatched-syntax '((punctuation 1016 . 1017) (semantic-list 989 . 1016) (symbol 970 . 988) (punctuation 969 . 970) (symbol 961 . 969) (punctuation 960 . 961) (punctuation 959 . 960) (symbol 956 . 959) (punctuation 955 . 956) (punctuation 954 . 955) (symbol 951 . 954) (TYPEDEF 943 . 950))
+      :lexical-table 
+        '(("ADMIN_REQUEST_DISPATCHER_H")
+          )
+)
+    (semanticdb-table "ots_admin_handlers.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("ots_admin_memory_stat_handler.h" include nil nil [1 43])
+            ("ots_admin_memory_profiler_handler.h" include nil nil [44 90])
+            ("ots_admin_get_metric_handler.h" include nil nil [91 132])
+            ("ots_admin_get_metric_stat_handler.h" include nil nil [133 179])
+            ("ots_admin_modify_healthy_status_handler.h" include nil nil [180 232]))          
+      :file "ots_admin_handlers.h"
+      :pointmax 233
+      :fsize 232
+      :lastmodtime '(21869 36150 70036 826000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ots_admin_get_metric_handler.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ots_admin_get_metric_handler.h" include nil nil [1 42])
+            ("output_stream_utility.h" include nil nil [44 78])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [80 100])
+            ("std::tr1" using (:type ("std::tr1" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [101 126])
+            ("apsara" using (:type ("apsara" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [127 150])
+            ("apsara::logging" using (:type ("apsara::logging" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [151 183])
+            ("apsara::common::timing" using (:type ("apsara::common::timing" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [184 223])
+            ("apsara::sqlonline::ots::metric" using (:type ("apsara::sqlonline::ots::metric" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [224 271])
+            ("sLogger" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "GetLogger(\"/apsara/sqlonline/ots/get_metric_handler\")"
+                :type ("Logger" type (:type "class") nil nil))
+                nil [273 352])
+            ("apsara" type
+               (:members 
+                  ( ("sqlonline" type
+                       (:members 
+                          ( ("ots" type
+                               (:members 
+                                  ( ("HandleRequest" function
+                                       (:parent "GetMetricAdminHandler"
+                                        :arguments 
+                                          ( ("body" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [454 473]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [412 2899])
+                                    ("ToSummaryLatency" function
+                                       (:parent "GetMetricAdminHandler"
+                                        :arguments 
+                                          ( ("latency" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("LatencyMetric" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2946 2975])
+                                            ("latencyPB" variable
+                                               (:pointer 1
+                                                :type ("Summary_Latency" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2976 3003]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [2901 3370])
+                                    ("ToCategory" function
+                                       (:parent "GetMetricAdminHandler"
+                                        :arguments 
+                                          ( ("tk" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("TopicKey" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3411 3430])
+                                            ("mu" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("MetricUnit" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3431 3452])
+                                            ("category" variable
+                                               (:pointer 1
+                                                :type ("Category" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3453 3472]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [3372 5369])
+                                    ("ToMessage" function
+                                       (:parent "GetMetricAdminHandler"
+                                        :arguments 
+                                          ( ("option" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("MetricAggregatorOption" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5418 5455])
+                                            ("clusterMetric" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("list" type
+                                                     (:template-specifier 
+                                                        ( ("MetricPointPtr" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [5464 5506])
+                                            ("instanceMetric" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("list" type
+                                                     (:template-specifier 
+                                                        ( ("MetricPointPtr" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [5515 5558])
+                                            ("instanceOpMetric" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("list" type
+                                                     (:template-specifier 
+                                                        ( ("MetricPointPtr" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [5567 5612])
+                                            ("instanceTableMetric" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("list" type
+                                                     (:template-specifier 
+                                                        ( ("MetricPointPtr" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [5621 5669])
+                                            ("instanceTableOpMetric" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("list" type
+                                                     (:template-specifier 
+                                                        ( ("MetricPointPtr" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [5678 5728])
+                                            ("message" variable
+                                               (:pointer 1
+                                                :type ("Message" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5737 5754]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [5371 10234]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [395 10238]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [373 10264]))                  
+                :type "namespace")
+                nil [354 10296]))          
+      :file "ots_admin_get_metric_handler.cpp"
+      :pointmax 10325
+      :fsize 10324
+      :lastmodtime '(21867 54513 159036 73000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ots_admin_request_handler_base.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("OTS_ADMIN_REQUEST_HANDLER_BASE" variable (:constant-flag t) nil [48 78])
+            ("ots_base_handler.h" include nil nil [80 109])
+            ("ots_base_request.h" include nil nil [110 139])
+            ("ots_base_response.h" include nil nil [140 170])
+            ("apsara" type
+               (:members 
+                  ( ("sqlonline" type
+                       (:members 
+                          ( ("ots" type
+                               (:members 
+                                  ( ("AdminRequestHandlerBase" type
+                                       (:superclasses 
+                                          ( ("IRequestHandler" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [287 294])
+                                            ("AdminRequestHandlerBase" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("request" variable
+                                                       (:pointer 1
+                                                        :type ("OTSRequest" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [323 343])
+                                                    ("response" variable
+                                                       (:pointer 1
+                                                        :type ("OTSResponse" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [344 366]))                                                  
+                                                :type ("AdminRequestHandlerBase" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [299 428])
+                                            ("AdminRequestHandlerBase" function
+                                               (:destructor-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [434 471])
+                                            ("Start" function
+                                               (:prototype-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [496 509])
+                                            ("DoAuthorize" function
+                                               (:prototype-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [538 557])
+                                            ("DoHandle" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("bufs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::vector" type
+                                                             (:template-specifier 
+                                                                ( ("void" type (:pointer 1) nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [600 631])
+                                                    ("lens" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::vector" type
+                                                             (:template-specifier 
+                                                                ( ("int" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [632 661]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [586 662])
+                                            ("Interrupt" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("error" variable (:type ("fcgi::FcgiError" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [702 724]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [687 725])
+                                            ("DoFinish" function
+                                               (:prototype-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [750 766])
+                                            ("protected" label nil (reparse-symbol classsubparts) [768 778])
+                                            ("SendErrorResult" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("status" variable (:type "int") (reparse-symbol arg-sub-list) [804 815])
+                                                    ("errorCode" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [816 845])
+                                                    ("errorMessage" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [846 878]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [783 879])
+                                            ("HandleRequest" function
+                                               (:pure-virtual-flag t
+                                                :prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :arguments 
+                                                  ( ("body" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [911 930]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [884 935])
+                                            ("protected" label nil (reparse-symbol classsubparts) [937 947])
+                                            ("mOTSRequest" variable
+                                               (:pointer 1
+                                                :type ("OTSRequest" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [952 976])
+                                            ("mOTSResponse" variable
+                                               (:pointer 1
+                                                :type ("OTSResponse" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [981 1007]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [230 1010])
+                                    ("sAdminRequestLogger" variable
+                                       (:pointer 1
+                                        :typemodifiers ("extern")
+                                        :type ("apsara::logging::Logger" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [1012 1064]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [213 1067]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [191 1093]))                  
+                :type "namespace")
+                nil [172 1125]))          
+      :file "ots_admin_request_handler_base.h"
+      :pointmax 1162
+      :fsize 1161
+      :lastmodtime '(21867 54513 160036 207000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("OTS_ADMIN_REQUEST_HANDLER_BASE")
+          )
+)
+    (semanticdb-table "ots_admin_request_handler_base.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ots_admin_request_handler_base.h" include nil nil [1 44])
+            ("ots_admin_api_protocol.h" include nil nil [46 81])
+            ("ots_error_code.h" include nil nil [82 109])
+            ("output_stream_utility.h" include nil nil [110 144])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [146 166])
+            ("apsara" using (:type ("apsara" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [167 190])
+            ("apsara::logging" using (:type ("apsara::logging" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [191 223])
+            ("fcgi" using (:type ("fcgi" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [224 245])
+            ("apsara" type
+               (:members 
+                  ( ("sqlonline" type
+                       (:members 
+                          ( ("ots" type
+                               (:members 
+                                  ( ("sAdminRequestLogger" variable
+                                       (:pointer 1
+                                        :default-value "GetLogger(\"/apsara/sqlonline/ots/admin_api\")"
+                                        :type ("Logger" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [305 380])
+                                    ("Start" function
+                                       (:parent "AdminRequestHandlerBase"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [382 576])
+                                    ("DoAuthorize" function
+                                       (:parent "AdminRequestHandlerBase"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [578 625])
+                                    ("DoHandle" function
+                                       (:parent "AdminRequestHandlerBase"
+                                        :arguments 
+                                          ( ("bufs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("vector" type
+                                                     (:template-specifier 
+                                                        ( ("void" type (:pointer 1) nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [666 692])
+                                            ("lens" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("vector" type
+                                                     (:template-specifier 
+                                                        ( ("int" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [693 717]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [627 1690])
+                                    ("SendErrorResult" function
+                                       (:parent "AdminRequestHandlerBase"
+                                        :arguments 
+                                          ( ("status" variable (:type "int") (reparse-symbol arg-sub-list) [1738 1749])
+                                            ("errorCode" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1750 1774])
+                                            ("errorMessage" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1775 1802]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [1692 2093])
+                                    ("Interrupt" function
+                                       (:parent "AdminRequestHandlerBase"
+                                        :arguments 
+                                          ( ("error" variable (:type ("FcgiError" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2135 2151]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [2095 2233])
+                                    ("DoFinish" function
+                                       (:parent "AdminRequestHandlerBase"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [2235 2435]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [288 2438]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [266 2464]))                  
+                :type "namespace")
+                nil [247 2496]))          
+      :file "ots_admin_request_handler_base.cpp"
+      :pointmax 2525
+      :fsize 2524
+      :lastmodtime '(21867 54513 159036 73000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ots_fcgi_admin_request_handler.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ots_fcgi_admin_request_handler.h" include nil nil [1 44])
+            ("admin_request_dispatcher.h" include nil nil [46 83])
+            ("ots_admin_api_protocol.h" include nil nil [84 119])
+            ("ots_http_constant.h" include nil nil [120 150])
+            ("ots_http_request.h" include nil nil [151 180])
+            ("ots_http_response.h" include nil nil [182 212])
+            ("output_stream_utility.h" include nil nil [214 248])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [250 270])
+            ("fcgi" using (:type ("fcgi" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [271 292])
+            ("apsara" using (:type ("apsara" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [293 316])
+            ("apsara::logging" using (:type ("apsara::logging" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [317 349])
+            ("apsara::shennong" using (:type ("apsara::shennong" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [350 383])
+            ("apsara::sqlonline::ots" using (:type ("apsara::sqlonline::ots" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [384 423])
+            ("sLogger" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "GetLogger(\"/apsara/sqlonline/ots/OTSFcgiAdminRequestHandler/logger\")"
+                :type ("Logger" type (:type "class") nil nil))
+                nil [425 519])
+            ("apsara" type
+               (:members 
+                  ( ("sqlonline" type
+                       (:members 
+                          ( ("ots" type
+                               (:members 
+                                  ( ("OTSFcgiAdminRequestHandler" function
+                                       (:constructor-flag t
+                                        :parent "OTSFcgiAdminRequestHandler"
+                                        :arguments 
+                                          ( ("requestDispatcher" variable
+                                               (:pointer 1
+                                                :type ("AdminRequestDispatcher" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [634 676])
+                                            ("request" variable
+                                               (:pointer 1
+                                                :type ("Request" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [677 694])
+                                            ("response" variable
+                                               (:pointer 1
+                                                :type ("Response" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [695 714]))                                          
+                                        :type ("OTSFcgiAdminRequestHandler" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [579 1362])
+                                    ("OTSFcgiAdminRequestHandler" function
+                                       (:destructor-flag t
+                                        :parent "OTSFcgiAdminRequestHandler"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [1364 1594])
+                                    ("OnReceiveData" function
+                                       (:parent "OTSFcgiAdminRequestHandler"
+                                        :arguments 
+                                          ( ("data" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [1643 1660])
+                                            ("size" variable (:type "int") (reparse-symbol arg-sub-list) [1661 1670]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [1596 1983])
+                                    ("Interrupt" function
+                                       (:parent "OTSFcgiAdminRequestHandler"
+                                        :arguments 
+                                          ( ("error" variable (:type ("FcgiError" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2028 2044]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [1985 2271])
+                                    ("HandlerNotFound" function
+                                       (:parent "OTSFcgiAdminRequestHandler"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [2273 2714]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [562 2717]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [540 2743]))                  
+                :type "namespace")
+                nil [521 2775]))          
+      :file "ots_fcgi_admin_request_handler.cpp"
+      :pointmax 2803
+      :fsize 2802
+      :lastmodtime '(21867 54513 159036 73000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ots_fcgi_admin_handler_factory.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ots_fcgi_admin_handler_factory.h" include nil nil [1 44])
+            ("ots_fcgi_admin_request_handler.h" include nil nil [45 88])
+            ("admin_request_dispatcher.h" include nil nil [89 126])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [128 148])
+            ("fcgi" using (:type ("fcgi" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [149 170])
+            ("apsara" using (:type ("apsara" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [171 194])
+            ("apsara::sqlonline::ots" using (:type ("apsara::sqlonline::ots" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [195 234])
+            ("apsara" type
+               (:members 
+                  ( ("sqlonline" type
+                       (:members 
+                          ( ("ots" type
+                               (:members 
+                                  ( ("FcgiAdminHandlerFactory" function
+                                       (:constructor-flag t
+                                        :parent "FcgiAdminHandlerFactory"
+                                        :type ("FcgiAdminHandlerFactory" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [294 409])
+                                    ("FcgiAdminHandlerFactory" function
+                                       (:destructor-flag t
+                                        :parent "FcgiAdminHandlerFactory"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [411 498])
+                                    ("CreateRequestHandler" function
+                                       (:pointer 1
+                                        :parent "FcgiAdminHandlerFactory"
+                                        :arguments 
+                                          ( ("request" variable
+                                               (:pointer 1
+                                                :type ("Request" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [568 585])
+                                            ("response" variable
+                                               (:pointer 1
+                                                :type ("Response" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [586 605]))                                          
+                                        :type ("fcgi::RequestHandler" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [500 698]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [277 701]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [255 727]))                  
+                :type "namespace")
+                nil [236 759]))          
+      :file "ots_fcgi_admin_handler_factory.cpp"
+      :pointmax 787
+      :fsize 786
+      :lastmodtime '(21867 54513 160036 207000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ots_fcgi_admin_handler_factory.h"
+      :file "ots_fcgi_admin_handler_factory.h"
+      :fsize 621
+      :lastmodtime '(21867 54513 158036 311000))
+    (semanticdb-table "ots_admin_memory_stat_handler.h"
+      :file "ots_admin_memory_stat_handler.h"
+      :fsize 2314
+      :lastmodtime '(21867 54513 158036 311000))
+    (semanticdb-table "ots_admin_memory_profiler_handler.h"
+      :file "ots_admin_memory_profiler_handler.h"
+      :fsize 2761
+      :lastmodtime '(21867 54513 159036 73000))
+    (semanticdb-table "ots_admin_get_metric_handler.h"
+      :file "ots_admin_get_metric_handler.h"
+      :fsize 1552
+      :lastmodtime '(21867 54513 160036 207000))
+    (semanticdb-table "ots_admin_get_metric_stat_handler.h"
+      :file "ots_admin_get_metric_stat_handler.h"
+      :fsize 1842
+      :lastmodtime '(21867 54513 159036 73000))
+    (semanticdb-table "ots_admin_api_protocol.h"
+      :file "ots_admin_api_protocol.h"
+      :fsize 759
+      :lastmodtime '(21867 54513 160036 207000))
+    (semanticdb-table "ots_fcgi_admin_request_handler.h"
+      :file "ots_fcgi_admin_request_handler.h"
+      :fsize 1086
+      :lastmodtime '(21867 54513 160036 207000)))
+  :file "!apsarapangu!disk3!jingwen.hjw!work!apsara!ots!ots_server!admin_request_handlers!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

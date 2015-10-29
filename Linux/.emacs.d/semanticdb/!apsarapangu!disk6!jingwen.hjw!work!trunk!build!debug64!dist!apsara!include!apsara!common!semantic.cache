@@ -1,0 +1,425 @@
+;; Object common/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "common/"
+  :tables
+  (list
+    (semanticdb-table "unittest.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("APSARA_UNITTEST_H" variable (:constant-flag t) nil [119 136])
+            ("APSARA_UNIT_TEST" variable (:constant-flag t) nil [146 162])
+            ("apsara/common/lock.h" include nil nil [166 197])
+            ("apsara/common/time_stamp.h" include nil nil [198 235])
+            ("apsara/common/string_tools.h" include nil nil [236 275])
+            ("apsara/common/foreach.h" include nil nil [276 310])
+            ("apsara/common/macros.h" include nil nil [311 344])
+            ("string" include (:system-flag t) nil [345 362])
+            ("vector" include (:system-flag t) nil [363 380])
+            ("stdexcept" include (:system-flag t) nil [381 401])
+            ("tr1/memory" include (:system-flag t) nil [402 423])
+            ("tr1/functional" include (:system-flag t) nil [424 449])
+            ("tr1/type_traits" include (:system-flag t) nil [450 476])
+            ("stdint.h" include (:system-flag t) nil [477 496])
+            ("apsara/common/timer.h" include nil nil [590 622])
+            ("apsara/common/random.h" include nil nil [623 656])
+            ("apsara/common/jsonizable.h" include nil nil [657 694])
+            ("apsara/common/logging.h" include nil nil [695 729])
+            ("apsara/common/flag.h" include nil nil [730 761])
+            ("apsara/common/safeguard.h" include nil nil [821 857])
+            ("APSARA_UNIT_TEST_FIXTURE" variable (:constant-flag t) nil [874 898])
+            ("APSARA_UNIT_TEST_CASE" variable (:constant-flag t) nil [1044 1065])
+            ("APSARA_UNIT_TEST_BROKEN_CASE" variable (:constant-flag t) nil [1420 1448])
+            ("APSARA_TEST_TRUE" variable (:constant-flag t) nil [1804 1820])
+            ("APSARA_TEST_TRUE_FATAL" variable (:constant-flag t) nil [1881 1903])
+            ("APSARA_TEST_TRUE_DESC" variable (:constant-flag t) nil [1963 1984])
+            ("APSARA_TEST_TRUE_DESC_FATAL" variable (:constant-flag t) nil [2053 2080])
+            ("__APSARA_TEST_TRUE_DESC_CORE" variable (:constant-flag t) nil [2148 2176])
+            ("APSARA_TEST_EQUAL" variable (:constant-flag t) nil [2385 2402])
+            ("APSARA_TEST_EQUAL_FATAL" variable (:constant-flag t) nil [2470 2493])
+            ("APSARA_TEST_EQUAL_DESC" variable (:constant-flag t) nil [2560 2582])
+            ("APSARA_TEST_EQUAL_DESC_FATAL" variable (:constant-flag t) nil [2658 2686])
+            ("__APSARA_TEST_EQUAL_DESC_CORE" variable (:constant-flag t) nil [3293 3322])
+            ("APSARA_TEST_NOT_EQUAL" variable (:constant-flag t) nil [3685 3706])
+            ("APSARA_TEST_NOT_EQUAL_FATAL" variable (:constant-flag t) nil [3778 3805])
+            ("APSARA_TEST_NOT_EQUAL_DESC" variable (:constant-flag t) nil [3876 3902])
+            ("APSARA_TEST_NOT_EQUAL_DESC_FATAL" variable (:constant-flag t) nil [3982 4014])
+            ("__APSARA_TEST_NOT_EQUAL_DESC_CORE" variable (:constant-flag t) nil [4093 4126])
+            ("APSARA_EXPECT_EXCEPTION" variable (:constant-flag t) nil [4490 4513])
+            ("apsara" type
+               (:members 
+                  ( ("ut_details" type
+                       (:members 
+                          ( ("UnitTestStatus" type
+                               (:members 
+                                  ( ("UTS_PASS" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5109 5118])
+                                    ("UTS_FAIL" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5123 5132])
+                                    ("UTS_UNSTABLE" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5137 5150])
+                                    ("UTS_NOT_AVAILABLE" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5155 5174]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [5083 5175])
+                            ("CaseType" type
+                               (:members 
+                                  ( ("NORMAL" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5197 5204])
+                                    ("BROKEN" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5209 5217]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [5177 5218])
+                            ("SetupCaseFunction" variable (:type "int") (reparse-symbol namespacesubparts) [5255 5273])
+                            ("CleanUpCaseFunction" variable (:type "int") (reparse-symbol namespacesubparts) [5309 5329])
+                            ("TestCaseFunction" variable (:type "int") (reparse-symbol namespacesubparts) [5365 5382])
+                            ("Case" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [5383 5394])
+                            ("CaseList" type
+                               (:typedef ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("Case" type (:pointer 1) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [5395 5431])
+                            ("CaseTracer" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [5432 5449])
+                            ("Result" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [5450 5463])
+                            ("TestResultPtr" type
+                               (:typedef ("std::tr1::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Result" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [5464 5515])
+                            ("ResultsInFixture" type
+                               (:typedef ("std::map" type
+                                     (:template-specifier 
+                                        ( ("string" type nil nil nil)
+                                          ("TestResultPtr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [5516 5573]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [5059 5576])
+                    ("UnitTestFixture" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [5627 5634])
+                            ("UnitTestFixture" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("UnitTestFixture" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5639 5657])
+                            ("UnitTestFixture" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [5662 5689])
+                            ("SetupFixture" function
+                               (:typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [5809 5849])
+                            ("Setup" function
+                               (:typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [5975 5998])
+                            ("CleanUpFixture" function
+                               (:typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [6117 6161])
+                            ("CleanUp" function
+                               (:typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [6286 6311])
+                            ("SetupCase" function
+                               (:typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [6367 6394])
+                            ("CleanUpCase" function
+                               (:typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [6448 6477])
+                            ("GetTestCases" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type ("ut_details::CaseList" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6507 6564])
+                            ("GetName" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6569 6605])
+                            ("SetName" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6631 6655]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6610 6656])
+                            ("GetCurrentTestResult" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type ("ut_details::TestResultPtr" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6661 6724])
+                            ("ResetTestResult" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("ano" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ut_details::TestResultPtr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6758 6795]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6729 6796])
+                            ("protected" label nil (reparse-symbol classsubparts) [6798 6808])
+                            ("AddCase" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("kase" variable
+                                       (:pointer 1
+                                        :type ("ut_details::Case" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6826 6849]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6813 6850])
+                            ("private" label nil (reparse-symbol classsubparts) [6852 6860])
+                            ("mName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6865 6883])
+                            ("mCurrentTestResult" variable (:type ("ut_details::TestResultPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6888 6933])
+                            ("mCaseList" variable (:type ("ut_details::CaseList" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6938 6969]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [5603 6972])
+                    ("UnitTestFixture" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [6974 6996])
+                    ("UnitTestFixturePtr" type
+                       (:typedef ("std::tr1::shared_ptr" type
+                             (:template-specifier 
+                                ( ("UnitTestFixture" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [6997 7062])
+                    ("UnitTestFixtureList" type
+                       (:typedef ("std::vector" type
+                             (:template-specifier 
+                                ( ("UnitTestFixturePtr" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [7063 7123])
+                    ("UnitTestFixtureBase" type
+                       (:template 
+                          ( ("FixtureClass" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [7208 7215])
+                            ("FixtureClassType" type
+                               (:typedef ("FixtureClass" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [7220 7258])
+                            ("public" label nil (reparse-symbol classsubparts) [7260 7267])
+                            ("UnitTestFixtureBase" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [7272 7309])
+                            ("protected" label nil (reparse-symbol classsubparts) [7311 7321])
+                            ("UnitTestFixtureBase" function
+                               (:constructor-flag t
+                                :type ("UnitTestFixtureBase" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7326 7354])
+                            ("public" label nil (reparse-symbol classsubparts) [7356 7363])
+                            ("RawCase" type
+                               (:members 
+                                  ( ("CaseFunction" variable (:type "int") (reparse-symbol classsubparts) [7495 7508])
+                                    ("RawCase" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("name" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7538 7562])
+                                            ("id" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7575 7586])
+                                            ("type" variable (:type ("ut_details::CaseType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7599 7625])
+                                            ("func" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("CaseFunction" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7638 7663]))                                          
+                                        :type ("RawCase" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [7517 7737])
+                                    ("mName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7747 7765])
+                                    ("mId" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7774 7786])
+                                    ("mType" variable (:type ("ut_details::CaseType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7795 7822])
+                                    ("mFunction" variable (:type ("CaseFunction" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7831 7854]))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [7392 7861])
+                            ("GetRawCases" function
+                               (:typemodifiers ("static")
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("RawCase" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [7867 7994])
+                            ("AddRawCase" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("caseName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8031 8059])
+                                    ("caseId" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8068 8083])
+                                    ("type" variable (:type ("ut_details::CaseType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8092 8118])
+                                    ("caseFunction" variable
+                                       (:typemodifiers ("typename")
+                                        :type ("RawCase::CaseFunction" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8127 8171]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7999 8276])
+                            ("DumpRawCasesToCaseList" function (:type "void") (reparse-symbol classsubparts) [8281 9025]))                          
+                        :superclasses 
+                          ( ("UnitTestFixture" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [7125 9028]))                  
+                :type "namespace")
+                nil [5040 9031])
+            ("apsara/common/detail/unittest_detail.h" include nil nil [9054 9103])
+            ("main" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [9151 9160])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9161 9174]))                  
+                :type "int")
+                nil [9142 9199])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [9209 9218])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9219 9232]))                  
+                :type "int")
+                nil [9200 9287]))          
+      :file "unittest.h"
+      :pointmax 9327
+      :fsize 9326
+      :lastmodtime '(21919 34626 0 0)
+      :unmatched-syntax '((punctuation 7481 . 7482) (semantic-list 7462 . 7481) (VOID 7457 . 7461) (punctuation 7456 . 7457) (symbol 7448 . 7456) (punctuation 7447 . 7448) (punctuation 7446 . 7447) (symbol 7443 . 7446) (punctuation 7442 . 7443) (punctuation 7441 . 7442) (symbol 7438 . 7441) (TYPENAME 7429 . 7437) (TYPEDEF 7421 . 7428) (punctuation 7481 . 7482) (semantic-list 7462 . 7481) (VOID 7457 . 7461) (punctuation 7456 . 7457) (symbol 7448 . 7456) (punctuation 7447 . 7448) (punctuation 7446 . 7447) (symbol 7443 . 7446) (punctuation 7442 . 7443) (punctuation 7441 . 7442) (symbol 7438 . 7441) (TYPENAME 7429 . 7437) (TYPEDEF 7421 . 7428) (punctuation 5363 . 5364) (semantic-list 5361 . 5363) (VOID 5357 . 5361) (punctuation 5356 . 5357) (symbol 5348 . 5356) (punctuation 5347 . 5348) (punctuation 5346 . 5347) (symbol 5343 . 5346) (punctuation 5342 . 5343) (punctuation 5341 . 5342) (symbol 5338 . 5341) (TYPEDEF 5330 . 5337) (punctuation 5307 . 5308) (semantic-list 5305 . 5307) (VOID 5301 . 5305) (punctuation 5300 . 5301) (symbol 5292 . 5300) (punctuation 5291 . 5292) (punctuation 5290 . 5291) (symbol 5287 . 5290) (punctuation 5286 . 5287) (punctuation 5285 . 5286) (symbol 5282 . 5285) (TYPEDEF 5274 . 5281) (punctuation 5253 . 5254) (semantic-list 5251 . 5253) (VOID 5247 . 5251) (punctuation 5246 . 5247) (symbol 5238 . 5246) (punctuation 5237 . 5238) (punctuation 5236 . 5237) (symbol 5233 . 5236) (punctuation 5232 . 5233) (punctuation 5231 . 5232) (symbol 5228 . 5231) (TYPEDEF 5220 . 5227) (punctuation 5363 . 5364) (semantic-list 5361 . 5363) (VOID 5357 . 5361) (punctuation 5356 . 5357) (symbol 5348 . 5356) (punctuation 5347 . 5348) (punctuation 5346 . 5347) (symbol 5343 . 5346) (punctuation 5342 . 5343) (punctuation 5341 . 5342) (symbol 5338 . 5341) (TYPEDEF 5330 . 5337) (punctuation 5307 . 5308) (semantic-list 5305 . 5307) (VOID 5301 . 5305) (punctuation 5300 . 5301) (symbol 5292 . 5300) (punctuation 5291 . 5292) (punctuation 5290 . 5291) (symbol 5287 . 5290) (punctuation 5286 . 5287) (punctuation 5285 . 5286) (symbol 5282 . 5285) (TYPEDEF 5274 . 5281) (punctuation 5253 . 5254) (semantic-list 5251 . 5253) (VOID 5247 . 5251) (punctuation 5246 . 5247) (symbol 5238 . 5246) (punctuation 5237 . 5238) (punctuation 5236 . 5237) (symbol 5233 . 5236) (punctuation 5232 . 5233) (punctuation 5231 . 5232) (symbol 5228 . 5231) (TYPEDEF 5220 . 5227))
+      :lexical-table 
+        '(("APSARA_UNITTEST_H")
+          ("APSARA_UNIT_TEST_CASE" (spp-arg-list ("TestCase" "CaseId") 1065 . 1083) . 
+              ((STRUCT "struct" 1090 . 1096) (spp-symbol-merge ((symbol "TestCase" 1097 . 1105) (symbol "NestedClass" 1107 . 1118)) 1097 . 1118) (semantic-list "{ \\
+        TestCase##NestedClass() \\
+        { \\
+            apsara::ut_details::CaseRegisterHelper<FixtureClassType>( \\
+                #TestCase, CaseId, apsara::ut_details::NORMAL, \\
+                &FixtureClassType::TestCase); \\
+        } \\
+    }" 1125 . 1377) (spp-symbol-merge ((spp-symbol-merge ((symbol "m" 1378 . 1379) (symbol "TestCase" 1381 . 1389)) 1378 . 1389) (symbol "NestedClassInstance" 1391 . 1410)) 1378 . 1410) (punctuation ";" 1410 . 1411)))
+          ("APSARA_UNIT_TEST_FIXTURE" (spp-arg-list ("FixtureClass") 898 . 912) . 
+              ((symbol "apsara" 919 . 925) (punctuation ":" 925 . 926) (punctuation ":" 926 . 927) (symbol "ut_details" 927 . 937) (punctuation ":" 937 . 938) (punctuation ":" 938 . 939) (symbol "FixtureRegisterHelper" 939 . 960) (punctuation "<" 960 . 961) (symbol "FixtureClass" 961 . 973) (punctuation ">" 973 . 974) (spp-symbol-merge ((spp-symbol-merge ((symbol "g" 985 . 986) (symbol "FixtureClass" 988 . 1000)) 985 . 1000) (symbol "RegisterHelper" 1002 . 1016)) 985 . 1016) (semantic-list "(#FixtureClass)" 1016 . 1031) (punctuation ";" 1031 . 1032)))
+          ("APSARA_TEST_EQUAL_FATAL" (spp-arg-list ("x" "y") 2493 . 2499) . ((symbol "__APSARA_TEST_EQUAL_DESC_CORE" 2506 . 2535) (semantic-list "(x, y, \"\", true)" 2535 . 2551)))
+          ("APSARA_TEST_NOT_EQUAL" (spp-arg-list ("x" "y") 3706 . 3712) . ((symbol "__APSARA_TEST_NOT_EQUAL_DESC_CORE" 3719 . 3752) (semantic-list "(x, y, \"\", false)" 3752 . 3769)))
+          ("APSARA_TEST_NOT_EQUAL_FATAL" (spp-arg-list ("x" "y") 3805 . 3811) . ((symbol "__APSARA_TEST_NOT_EQUAL_DESC_CORE" 3818 . 3851) (semantic-list "(x, y, \"\", true)" 3851 . 3867)))
+          ("APSARA_UNIT_TEST" . ((number "1" 163 . 164)))
+          ("APSARA_TEST_TRUE_DESC" (spp-arg-list ("x" "desc") 1984 . 1993) . ((symbol "__APSARA_TEST_TRUE_DESC_CORE" 2000 . 2028) (semantic-list "(x, desc, false)" 2028 . 2044)))
+          ("APSARA_TEST_EQUAL" (spp-arg-list ("x" "y") 2402 . 2408) . ((symbol "__APSARA_TEST_EQUAL_DESC_CORE" 2415 . 2444) (semantic-list "(x, y, \"\", false)" 2444 . 2461)))
+          ("APSARA_TEST_EQUAL_DESC" (spp-arg-list ("x" "y" "desc") 2582 . 2594) . ((symbol "__APSARA_TEST_EQUAL_DESC_CORE" 2601 . 2630) (semantic-list "(x, y, desc, false)" 2630 . 2649)))
+          ("APSARA_TEST_EQUAL_DESC_FATAL" (spp-arg-list ("x" "y" "desc") 2686 . 2698) . ((symbol "__APSARA_TEST_EQUAL_DESC_CORE" 2705 . 2734) (semantic-list "(x, y, desc, true)" 2734 . 2752)))
+          ("APSARA_TEST_NOT_EQUAL_DESC" (spp-arg-list ("x" "y" "desc") 3902 . 3914) . ((symbol "__APSARA_TEST_NOT_EQUAL_DESC_CORE" 3921 . 3954) (semantic-list "(x, y, desc, false)" 3954 . 3973)))
+          ("APSARA_UNIT_TEST_BROKEN_CASE" (spp-arg-list ("TestCase" "CaseId") 1448 . 1466) . 
+              ((STRUCT "struct" 1473 . 1479) (spp-symbol-merge ((symbol "TestCase" 1480 . 1488) (symbol "NestedClass" 1490 . 1501)) 1480 . 1501) (semantic-list "{ \\
+        TestCase##NestedClass() \\
+        { \\
+            apsara::ut_details::CaseRegisterHelper<FixtureClassType>( \\
+                #TestCase, CaseId, apsara::ut_details::BROKEN, \\
+                &FixtureClassType::TestCase); \\
+        } \\
+    }" 1508 . 1760) (spp-symbol-merge ((spp-symbol-merge ((symbol "m" 1761 . 1762) (symbol "TestCase" 1764 . 1772)) 1761 . 1772) (symbol "NestedClassInstance" 1774 . 1793)) 1761 . 1793) (punctuation ";" 1793 . 1794)))
+          ("APSARA_TEST_TRUE_DESC_FATAL" (spp-arg-list ("x" "desc") 2080 . 2089) . ((symbol "__APSARA_TEST_TRUE_DESC_CORE" 2096 . 2124) (semantic-list "(x, desc, true)" 2124 . 2139)))
+          ("APSARA_TEST_TRUE" (spp-arg-list ("x") 1820 . 1823) . ((symbol "__APSARA_TEST_TRUE_DESC_CORE" 1830 . 1858) (semantic-list "(x, \"\", false)" 1858 . 1872)))
+          ("APSARA_TEST_TRUE_FATAL" (spp-arg-list ("x") 1903 . 1906) . ((symbol "__APSARA_TEST_TRUE_DESC_CORE" 1913 . 1941) (semantic-list "(x, \"\", true)" 1941 . 1954)))
+          ("__APSARA_TEST_TRUE_DESC_CORE" (spp-arg-list ("x" "desc" "fatal") 2176 . 2192) . 
+              ((DO "do" 2199 . 2201) (semantic-list "{ \\
+        ::apsara::ut_details::AssertTrue( \\
+            this, __FILE__, __func__, __LINE__, fatal, ::apsara::ToString(desc), \\
+            (x), #x); \\
+    }" 2202 . 2362) (WHILE "while" 2363 . 2368) (semantic-list "(false)" 2368 . 2375)))
+          ("__APSARA_TEST_EQUAL_DESC_CORE" (spp-arg-list ("x" "y" "desc" "fatal") 3322 . 3341) . 
+              ((DO "do" 3348 . 3350) (semantic-list "{ \\
+        typedef typeof((x)) X_afa86da1; \\
+        typedef typeof((y)) Y_afa86da1; \\
+        ::apsara::ut_details::assert_equal::Base<X_afa86da1, Y_afa86da1> \\
+            aate_afa86da1( \\
+            this, __FILE__, __func__, __LINE__, fatal, ::apsara::ToString(desc), \\
+            true, (x), (y)); \\
+    }" 3351 . 3662) (WHILE "while" 3663 . 3668) (semantic-list "(false)" 3668 . 3675)))
+          ("__APSARA_TEST_NOT_EQUAL_DESC_CORE" (spp-arg-list ("x" "y" "desc" "fatal") 4126 . 4145) . 
+              ((DO "do" 4152 . 4154) (semantic-list "{ \\
+        typedef typeof((x)) X_afa86da1; \\
+        typedef typeof((y)) Y_afa86da1; \\
+        ::apsara::ut_details::assert_equal::Base<X_afa86da1, Y_afa86da1> \\
+            aate_afa86da1( \\
+            this, __FILE__, __func__, __LINE__, fatal, ::apsara::ToString(desc), \\
+            false, (x), (y)); \\
+    }" 4155 . 4467) (WHILE "while" 4468 . 4473) (semantic-list "(false)" 4473 . 4480)))
+          ("APSARA_EXPECT_EXCEPTION" (spp-arg-list ("x" "y") 4513 . 4519) . 
+              ((DO "do" 4526 . 4528) (semantic-list "{ \\
+        try { \\
+            try { \\
+                {x;} \\
+                ::apsara::ut_details::AssertExceptButNothing( \\
+                    this, __FILE__, __func__, __LINE__, #y); \\
+            } \\
+            catch (const ::std::tr1::remove_reference<y>::type&) { \\
+            } \\
+        } \\
+        catch (const ::apsara::ExceptionBase& e) { \\
+            ::apsara::ut_details::AssertExceptButUnexpect( \\
+                this, __FILE__, __func__, __LINE__, #y, e); \\
+        } \\
+    }" 4529 . 5025) (WHILE "while" 5026 . 5031) (semantic-list "(false)" 5031 . 5038)))
+          ("APSARA_TEST_NOT_EQUAL_DESC_FATAL" (spp-arg-list ("x" "y" "desc") 4014 . 4026) . ((symbol "__APSARA_TEST_NOT_EQUAL_DESC_CORE" 4033 . 4066) (semantic-list "(x, y, desc, true)" 4066 . 4084)))
+          )
+))
+  :file "!apsarapangu!disk6!jingwen.hjw!work!trunk!build!debug64!dist!apsara!include!apsara!common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
