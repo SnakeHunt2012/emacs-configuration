@@ -871,21 +871,6 @@ Bonus: do not use 3D modeline."
 (global-semantic-idle-scheduler-mode)
 (global-semanticdb-minor-mode)
 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(ecb-options-version "2.40")
- '(ecb-source-path (quote ("/apsarapangu/disk6/jingwen.hjw/work/trunk")))
- '(session-use-package t nil (session)))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
-
 ;; auto-compelte
 (add-to-list 'load-path "~/.emacs.d/site-lisp/pos-tip")
 (require 'pos-tip)
