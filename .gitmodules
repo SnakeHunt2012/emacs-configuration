@@ -4,3 +4,6 @@
 [submodule "Linux/.emacs.d/site-lisp/ecb"]
 	path = Linux/.emacs.d/site-lisp/ecb
 	url = git://github.com/ecb-home/ecb.git
+[submodule "Linux/.emacs.d/site-lisp/yasnippet"]
+	path = Linux/.emacs.d/site-lisp/yasnippet
+	url = git://github.com/joaotavora/yasnippet.git
