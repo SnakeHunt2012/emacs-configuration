@@ -1,5 +1,5 @@
-[submodule "Linux/.emacs.d/site-lisp/yassnippet"]
-	path = Linux/.emacs.d/site-lisp/yassnippet
+[submodule "Linux/.emacs.d/site-lisp/yasnippet"]
+	path = Linux/.emacs.d/site-lisp/yasnippet
 	url = git://github.com/capitaomorte/yasnippet
 [submodule "Linux/.emacs.d/site-lisp/cedet"]
 	path = Linux/.emacs.d/site-lisp/cedet
