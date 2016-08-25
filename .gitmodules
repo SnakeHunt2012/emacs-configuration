@@ -4,3 +4,6 @@
 [submodule "Linux/.emacs.d/site-lisp/cedet"]
 	path = Linux/.emacs.d/site-lisp/cedet
 	url = http://git.code.sf.net/p/cedet/git
+[submodule "Linux/.emacs.d/site-lisp/ecb"]
+	path = Linux/.emacs.d/site-lisp/ecb
+	url = git://github.com/ecb-home/ecb.git
