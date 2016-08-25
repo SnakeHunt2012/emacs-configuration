@@ -26,11 +26,14 @@
     (scroll-down 1)
     (line-move-to-column tmp)
     (forward-line -1)))
+
 ; define the key binding
 (global-set-key (kbd "M-n") 'hold-line-scroll-up)
 (global-set-key (kbd "M-p") 'hold-line-scroll-down)
 (global-set-key (kbd "ESC <down>") 'hold-line-scroll-up)
 (global-set-key (kbd "ESC <up>") 'hold-line-scroll-down)
+(global-set-key (kbd "C-x x") 'shell)
+(global-set-key (kbd "C-x y") 'rename-buffer)
 
 ;; 关闭文件自动备份
 (setq make-backup-files nil)
@@ -39,9 +42,9 @@
 ;; 禁用初始界面
 (setq inhibit-startup-message t)
 ;; 隐藏菜单栏、工具栏、滚动条
-(tool-bar-mode 0)
+;(tool-bar-mode 0)
 (menu-bar-mode 0)
-(scroll-bar-mode 0)
+;(scroll-bar-mode 0)
 ;; 缩进
 (setq indent-tabs-mode 0)
 (setq-default indent-tabs-mode  nil)
