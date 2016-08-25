@@ -885,3 +885,8 @@ Bonus: do not use 3D modeline."
 (ac-config-default)
 (setq ac-fuzzy-enable t)
 (setq ac-quick-help-prefer-pos-tip t)
+
+;; yasnippet
+(add-to-list 'load-path "~/.emacs.d/site-lisp/yasnippet")
+(require 'yasnippet)
+(yas-global-mode 1)
