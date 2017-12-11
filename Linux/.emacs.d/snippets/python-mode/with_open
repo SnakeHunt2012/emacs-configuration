@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: with_open
+# key: with_open
+# group : control structure
+# --
+with open(${1:file_name}, 'r') as fd:
+    for line in fd:
+        splited_line = line.strip().split("\t")
+            if len(splited_line) != ${2:col_num}:
+                continue
+            ${col_name} = splited_line
+
+            $0

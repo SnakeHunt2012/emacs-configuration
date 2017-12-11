@@ -892,4 +892,5 @@ Bonus: do not use 3D modeline."
 ;; yasnippet
 (add-to-list 'load-path "~/.emacs.d/site-lisp/yasnippet")
 (require 'yasnippet)
+(add-to-list 'yas-snippet-dirs "~/.emacs.d/snippets")
 (yas-global-mode 1)

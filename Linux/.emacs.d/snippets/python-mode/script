@@ -1,0 +1,23 @@
+# -*- mode: snippet -*-
+# name: script
+# key: script
+# --
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+from argparse import ArgumentParser
+
+def main():
+
+    parser = ArgumentParser()
+    parser.add_argument("${1:arg_name}", help = "")
+    parser.add_argument("file_list", nargs = '+', help = "file list")
+    args = parser.parse_args()
+
+    $1 = args.$1
+    file_list = args.file_list
+
+    $0
+
+if __name__ == '__main__':
+    main()
