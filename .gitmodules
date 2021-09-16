@@ -7,3 +7,6 @@
 [submodule "Linux/.emacs.d/site-lisp/yasnippet"]
 	path = Linux/.emacs.d/site-lisp/yasnippet
 	url = git://github.com/joaotavora/yasnippet.git
+[submodule "Linux/.emacs.d/site-lisp/popup-el"]
+	path = Linux/.emacs.d/site-lisp/popup-el
+	url = https://github.com/auto-complete/popup-el.git
