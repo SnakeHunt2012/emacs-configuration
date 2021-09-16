@@ -100,12 +100,13 @@
 
 ;; auto-compelte
 (add-to-list 'load-path "~/.emacs.d/site-lisp/auto-complete")
+(require 'auto-complete)
 (require 'auto-complete-config)
-(add-to-list 'ac-dictionary-directories "~/.emacs.d/site-lisp/auto-complete/ac-dict")
-(add-to-list 'ac-user-dictionary-files "~/.emacs.d/site-lisp/auto-complete/my-dict")
+;(add-to-list 'ac-dictionary-directories "~/.emacs.d/site-lisp/auto-complete/ac-dict")
+;(add-to-list 'ac-user-dictionary-files "~/.emacs.d/site-lisp/auto-complete/my-dict")
 (ac-config-default)
-(setq ac-fuzzy-enable t)
-(setq ac-quick-help-prefer-pos-tip t)
+;(setq ac-fuzzy-enable t)
+;(setq ac-quick-help-prefer-pos-tip t)
 
 ;; yasnippet
 (add-to-list 'load-path "~/.emacs.d/site-lisp/yasnippet")
