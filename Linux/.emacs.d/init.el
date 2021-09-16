@@ -94,6 +94,10 @@
 (add-to-list 'load-path "~/.emacs.d/site-lisp/popup-el")
 (require 'popup)
 
+;; fuzzy
+(add-to-list 'load-path "~/.emacs.d/site-lisp/fuzzy-el")
+(require 'fuzzy)
+
 ;; auto-compelte
 (add-to-list 'load-path "~/.emacs.d/site-lisp/auto-complete")
 (require 'auto-complete-config)

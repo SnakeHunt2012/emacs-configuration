@@ -10,3 +10,6 @@
 [submodule "Linux/.emacs.d/site-lisp/popup-el"]
 	path = Linux/.emacs.d/site-lisp/popup-el
 	url = https://github.com/auto-complete/popup-el.git
+[submodule "Linux/.emacs.d/site-lisp/fuzzy-el"]
+	path = Linux/.emacs.d/site-lisp/fuzzy-el
+	url = https://github.com/auto-complete/fuzzy-el.git
