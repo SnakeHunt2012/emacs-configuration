@@ -1,0 +1,6 @@
+.cask
+.session
+.emacs.desktop
+.emacs.desktop.lock
+ac-comphist.dat
+semanticdb
