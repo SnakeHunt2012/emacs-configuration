@@ -55,29 +55,42 @@
 ;; 打开ANSI彩色字符支持
 (ansi-color-for-comint-mode-on)
 
+;; cedet
+;(load-file "~/.emacs.d/site-lisp/cedet/cedet-devel-load.el")
+;(add-to-list 'semantic-default-submodes 'global-semanticdb-minor-mode t)
+;(add-to-list 'semantic-default-submodes 'global-semantic-mru-bookmark-mode t)
+;(add-to-list 'semantic-default-submodes 'global-cedet-m3-minor-mode t)
+;(add-to-list 'semantic-default-submodes 'global-semantic-highlight-func-mode t)
+;(add-to-list 'semantic-default-submodes 'global-semantic-stickyfunc-mode t)
+;(add-to-list 'semantic-default-submodes 'global-semantic-decoration-mode t)
+;(add-to-list 'semantic-default-submodes 'global-semantic-idle-local-symbol-highlight-mode t)
+;(add-to-list 'semantic-default-submodes 'global-semantic-idle-scheduler-mode t)
+;(add-to-list 'semantic-default-submodes 'global-semantic-idle-completions-mode t)
+;(add-to-list 'semantic-default-submodes 'global-semantic-idle-summary-mode t)
+;(add-to-list 'semantic-default-submodes 'global-semantic-show-unmatched-syntax-mode t)
+;(add-to-list 'semantic-default-submodes 'global-semantic-show-parser-state-mode t)
+;(add-to-list 'semantic-default-submodes 'global-semantic-highlight-edits-mode t)
+;(semantic-mode 1)
+
 ;; color-theme
 (add-to-list 'load-path "~/.emacs.d/site-lisp/color-theme")
 (require 'color-theme)
 
-;; Desktop
+;; desktop
 (desktop-save-mode 1)
 
-;; Session
+;; session
 (add-to-list 'load-path "~/.emacs.d/site-lisp/session")
 (require 'session)
 (add-hook 'after-init-hook 'session-initialize)
 
-;; ESS
+;; ess
 (add-to-list 'load-path "~/.emacs.d/site-lisp/ess")
 (require 'ess-site)
 
 ;; cscope
 (add-to-list 'load-path "~/.emacs.d/site-lisp/cscope")
 (require 'xcscope)
-
-;; cedet
-(require 'cedet)
-(require 'semantic)
 
 ;; ecb
 (add-to-list 'load-path "~/.emacs.d/site-lisp/ecb")
