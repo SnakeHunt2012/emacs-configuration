@@ -126,3 +126,14 @@
 (require 'yasnippet)
 (add-to-list 'yas-snippet-dirs "~/.emacs.d/snippets")
 (yas-global-mode 1)
+
+;; ido
+(require 'ido)
+
+;; smex
+(add-to-list 'load-path "~/.emacs.d/site-lisp/smex")
+(require 'smex)
+(smex-initialize)
+(global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "M-X") 'smex-major-mode-commands)
+(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command) ; this is the old M-x

@@ -19,3 +19,6 @@
 [submodule "Linux/.emacs.d/site-lisp/ess"]
 	path = Linux/.emacs.d/site-lisp/ess
 	url = https://github.com/emacs-ess/ESS.git
+[submodule "Linux/.emacs.d/site-lisp/smex"]
+	path = Linux/.emacs.d/site-lisp/smex
+	url = https://github.com/nonsequitur/smex.git
