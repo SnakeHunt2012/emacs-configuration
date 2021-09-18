@@ -16,3 +16,6 @@
 [submodule "Linux/.emacs.d/site-lisp/auto-complete"]
 	path = Linux/.emacs.d/site-lisp/auto-complete
 	url = https://github.com/auto-complete/auto-complete.git
+[submodule "Linux/.emacs.d/site-lisp/ess"]
+	path = Linux/.emacs.d/site-lisp/ess
+	url = https://github.com/emacs-ess/ESS.git

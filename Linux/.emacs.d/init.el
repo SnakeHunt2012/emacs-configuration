@@ -85,8 +85,8 @@
 (add-hook 'after-init-hook 'session-initialize)
 
 ;; ess
-(add-to-list 'load-path "~/.emacs.d/site-lisp/ess")
-(require 'ess-site)
+;(add-to-list 'load-path "~/.emacs.d/site-lisp/ess/lisp")
+;(require 'ess-site)
 
 ;; cscope
 (add-to-list 'load-path "~/.emacs.d/site-lisp/cscope")
