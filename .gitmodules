@@ -34,3 +34,12 @@
 [submodule "Linux/.emacs.d/site-lisp/ace-jump-mode"]
 	path = Linux/.emacs.d/site-lisp/ace-jump-mode
 	url = https://github.com/winterTTr/ace-jump-mode.git
+[submodule "Linux/.emacs.d/site-lisp/rich-minority"]
+	path = Linux/.emacs.d/site-lisp/rich-minority
+	url = https://github.com/Malabarba/rich-minority.git
+[submodule "Linux/.emacs.d/site-lisp/smart-mode-line"]
+	path = Linux/.emacs.d/site-lisp/smart-mode-line
+	url = https://github.com/Malabarba/smart-mode-line.git
+[submodule "Linux/.emacs.d/site-lisp/powerline"]
+	path = Linux/.emacs.d/site-lisp/powerline
+	url = https://github.com/milkypostman/powerline.git
