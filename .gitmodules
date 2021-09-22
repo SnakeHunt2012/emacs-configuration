@@ -43,3 +43,6 @@
 [submodule "Linux/.emacs.d/site-lisp/powerline"]
 	path = Linux/.emacs.d/site-lisp/powerline
 	url = https://github.com/milkypostman/powerline.git
+[submodule "Linux/.emacs.d/site-lisp/which-key"]
+	path = Linux/.emacs.d/site-lisp/which-key
+	url = https://github.com/justbur/emacs-which-key.git

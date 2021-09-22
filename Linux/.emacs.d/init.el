@@ -45,11 +45,11 @@
 ;(require 'xcscope)
 
 ;; ecb
-(add-to-list 'load-path "~/.emacs.d/site-lisp/ecb")
-(require 'ecb)
-(semantic-mode 1)
-(global-semantic-idle-scheduler-mode)
-(global-semanticdb-minor-mode)
+;(add-to-list 'load-path "~/.emacs.d/site-lisp/ecb")
+;(require 'ecb)
+;(semantic-mode 1)
+;(global-semantic-idle-scheduler-mode)
+;(global-semanticdb-minor-mode)
 
 ;; pos-tip
 (add-to-list 'load-path "~/.emacs.d/site-lisp/pos-tip")
@@ -115,10 +115,6 @@
 (global-set-key (kbd "C-r") 'phi-search-backward)
 
 ;; ace-jump-mode
-; "C-c SPC" ==> enter first character of a word, select the highlighted key to move to it.
-; "C-x SPC" ==> jump back (from ace-jump-mode)
-; "C-u C-c SPC" ==> enter a character for query, select the highlighted key to move to it.
-; "C-u C-u C-c SPC" ==> each non-empty line will be marked, select the highlighted key to move to it.
 (add-to-list 'load-path "~/.emacs.d/site-lisp/ace-jump-mode")
 (autoload
   'ace-jump-mode
@@ -135,6 +131,23 @@
 (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
 (define-key global-map (kbd "C-x SPC") 'ace-jump-mode-pop-mark)
 
+;; powerline
+(add-to-list 'load-path "~/.emacs.d/site-lisp/powerline")
+(require 'powerline)
+
+;; smart-mode-line
+(add-to-list 'load-path "~/.emacs.d/site-lisp/rich-minority")
+(add-to-list 'load-path "~/.emacs.d/site-lisp/smart-mode-line")
+(require 'rich-minority)
+(require 'smart-mode-line)
+(setq sml/no-confirm-load-theme t)
+(sml/setup)
+
+;; which-key
+(add-to-list 'load-path "~/.emacs.d/site-lisp/which-key")
+(require 'which-key)
+(which-key-mode)
+(which-key-setup-side-window-right-bottom)
 
 
 ;; Configure two extra types of scrolling
@@ -193,3 +206,71 @@
 ;; 打开ANSI彩色字符支持
 (ansi-color-for-comint-mode-on)
 
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   '("d053957aa11920c49b72426fd3cc2669250ab7183e31fbe730ed5978e92840d9" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" default))
+ '(session-use-package t nil (session))
+ '(sml/mode-width 'right)
+ '(sml/pos-id-separator
+   '(""
+     (:propertize " " face powerline-active1)
+     (:eval
+      (propertize " " 'display
+                  (funcall
+                   (intern
+                    (format "powerline-%s-%s"
+                            (powerline-current-separator)
+                            (car powerline-default-separator-dir)))
+                   'powerline-active1 'powerline-active2
+                   (window-mode-line-height))))
+     (:propertize " " face powerline-active2)))
+ '(sml/pos-minor-modes-separator
+   '(""
+     (:propertize " " face powerline-active1)
+     (:eval
+      (propertize " " 'display
+                  (funcall
+                   (intern
+                    (format "powerline-%s-%s"
+                            (powerline-current-separator)
+                            (cdr powerline-default-separator-dir)))
+                   'powerline-active1 nil
+                   (window-mode-line-height))))
+     (:propertize " " face sml/global)))
+ '(sml/pre-id-separator
+   '(""
+     (:propertize " " face sml/global)
+     (:eval
+      (propertize " " 'display
+                  (funcall
+                   (intern
+                    (format "powerline-%s-%s"
+                            (powerline-current-separator)
+                            (car powerline-default-separator-dir)))
+                   nil 'powerline-active1
+                   (window-mode-line-height))))
+     (:propertize " " face powerline-active1)))
+ '(sml/pre-minor-modes-separator
+   '(""
+     (:propertize " " face powerline-active2)
+     (:eval
+      (propertize " " 'display
+                  (funcall
+                   (intern
+                    (format "powerline-%s-%s"
+                            (powerline-current-separator)
+                            (cdr powerline-default-separator-dir)))
+                   'powerline-active2 'powerline-active1
+                   (window-mode-line-height))))
+     (:propertize " " face powerline-active1)))
+ '(sml/pre-modes-separator (propertize " " 'face 'sml/modes)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
