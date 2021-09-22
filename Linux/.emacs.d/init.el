@@ -1,4 +1,105 @@
 ; -*- coding: utf-8 -*-
+
+;; This is only needed once, near the top of the file
+(eval-when-compile
+  (add-to-list 'load-path "~/.emacs.d/site-lisp/use-package")
+  (require 'use-package))
+
+;; cedet
+;; 开启前make
+;(load-file "~/.emacs.d/site-lisp/cedet/cedet-devel-load.el")
+;(add-to-list 'semantic-default-submodes 'global-semanticdb-minor-mode t)
+;(add-to-list 'semantic-default-submodes 'global-semantic-mru-bookmark-mode t)
+;(add-to-list 'semantic-default-submodes 'global-cedet-m3-minor-mode t)
+;(add-to-list 'semantic-default-submodes 'global-semantic-highlight-func-mode t)
+;(add-to-list 'semantic-default-submodes 'global-semantic-stickyfunc-mode t)
+;(add-to-list 'semantic-default-submodes 'global-semantic-decoration-mode t)
+;(add-to-list 'semantic-default-submodes 'global-semantic-idle-local-symbol-highlight-mode t)
+;(add-to-list 'semantic-default-submodes 'global-semantic-idle-scheduler-mode t)
+;(add-to-list 'semantic-default-submodes 'global-semantic-idle-completions-mode t)
+;(add-to-list 'semantic-default-submodes 'global-semantic-idle-summary-mode t)
+;(add-to-list 'semantic-default-submodes 'global-semantic-show-unmatched-syntax-mode t)
+;(add-to-list 'semantic-default-submodes 'global-semantic-show-parser-state-mode t)
+;(add-to-list 'semantic-default-submodes 'global-semantic-highlight-edits-mode t)
+;(semantic-mode 1)
+
+;; color-theme
+(add-to-list 'load-path "~/.emacs.d/site-lisp/color-theme")
+(require 'color-theme)
+
+;; desktop
+(desktop-save-mode 1)
+
+;; session
+(add-to-list 'load-path "~/.emacs.d/site-lisp/session")
+(require 'session)
+(add-hook 'after-init-hook 'session-initialize)
+
+;; ess
+;; 开启前make, make前修改Makeconf
+;(add-to-list 'load-path "~/.emacs.d/site-lisp/ess/lisp")
+;(require 'ess-site)
+
+;; cscope
+;(add-to-list 'load-path "~/.emacs.d/site-lisp/cscope")
+;(require 'xcscope)
+
+;; ecb
+(add-to-list 'load-path "~/.emacs.d/site-lisp/ecb")
+(require 'ecb)
+(semantic-mode 1)
+(global-semantic-idle-scheduler-mode)
+(global-semanticdb-minor-mode)
+
+;; pos-tip
+(add-to-list 'load-path "~/.emacs.d/site-lisp/pos-tip")
+(require 'pos-tip)
+
+;; popup
+(add-to-list 'load-path "~/.emacs.d/site-lisp/popup-el")
+(require 'popup)
+
+;; fuzzy
+(add-to-list 'load-path "~/.emacs.d/site-lisp/fuzzy-el")
+(require 'fuzzy)
+
+;; auto-compelte
+(add-to-list 'load-path "~/.emacs.d/site-lisp/auto-complete")
+(require 'auto-complete)
+(require 'auto-complete-config)
+;(add-to-list 'ac-dictionary-directories "~/.emacs.d/site-lisp/auto-complete/ac-dict")
+;(add-to-list 'ac-user-dictionary-files "~/.emacs.d/site-lisp/auto-complete/my-dict")
+(ac-config-default)
+;(setq ac-fuzzy-enable t)
+;(setq ac-quick-help-prefer-pos-tip t)
+
+;; yasnippet
+(add-to-list 'load-path "~/.emacs.d/site-lisp/yasnippet")
+(require 'yasnippet)
+(add-to-list 'yas-snippet-dirs "~/.emacs.d/snippets")
+(yas-global-mode 1)
+
+;; ido
+(require 'ido)
+
+;; smex
+(add-to-list 'load-path "~/.emacs.d/site-lisp/smex")
+(require 'smex)
+(smex-initialize)
+(global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "M-X") 'smex-major-mode-commands)
+(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command) ; this is the old M-x
+
+;; async
+;; 开启前make，make前修改Makefile中的环境变量DESTDIR=$(HOME)/.emacs.d/site-lisp/async
+;(add-to-list 'load-path "~/.emacs.d/site-lisp/async")
+;(require 'async)
+
+;; helm
+;; 开启前make, make前修改Makefile中的环境变量STRAIGHT_DIR := $(HOME)/.emacs.d/site-lisp
+;(add-to-list 'load-path "~/.emacs.d/site-lisp/helm")
+;(use-package helm :config (require 'helm-config))
+
 ;; Configure two extra types of scrolling
 ; scroll functions: stick the text line
 ;(global-set-key (kbd "M-n")
@@ -55,85 +156,3 @@
 ;; 打开ANSI彩色字符支持
 (ansi-color-for-comint-mode-on)
 
-;; cedet
-;(load-file "~/.emacs.d/site-lisp/cedet/cedet-devel-load.el")
-;(add-to-list 'semantic-default-submodes 'global-semanticdb-minor-mode t)
-;(add-to-list 'semantic-default-submodes 'global-semantic-mru-bookmark-mode t)
-;(add-to-list 'semantic-default-submodes 'global-cedet-m3-minor-mode t)
-;(add-to-list 'semantic-default-submodes 'global-semantic-highlight-func-mode t)
-;(add-to-list 'semantic-default-submodes 'global-semantic-stickyfunc-mode t)
-;(add-to-list 'semantic-default-submodes 'global-semantic-decoration-mode t)
-;(add-to-list 'semantic-default-submodes 'global-semantic-idle-local-symbol-highlight-mode t)
-;(add-to-list 'semantic-default-submodes 'global-semantic-idle-scheduler-mode t)
-;(add-to-list 'semantic-default-submodes 'global-semantic-idle-completions-mode t)
-;(add-to-list 'semantic-default-submodes 'global-semantic-idle-summary-mode t)
-;(add-to-list 'semantic-default-submodes 'global-semantic-show-unmatched-syntax-mode t)
-;(add-to-list 'semantic-default-submodes 'global-semantic-show-parser-state-mode t)
-;(add-to-list 'semantic-default-submodes 'global-semantic-highlight-edits-mode t)
-;(semantic-mode 1)
-
-;; color-theme
-(add-to-list 'load-path "~/.emacs.d/site-lisp/color-theme")
-(require 'color-theme)
-
-;; desktop
-(desktop-save-mode 1)
-
-;; session
-(add-to-list 'load-path "~/.emacs.d/site-lisp/session")
-(require 'session)
-(add-hook 'after-init-hook 'session-initialize)
-
-;; ess
-;(add-to-list 'load-path "~/.emacs.d/site-lisp/ess/lisp")
-;(require 'ess-site)
-
-;; cscope
-(add-to-list 'load-path "~/.emacs.d/site-lisp/cscope")
-(require 'xcscope)
-
-;; ecb
-(add-to-list 'load-path "~/.emacs.d/site-lisp/ecb")
-(require 'ecb)
-(semantic-mode 1)
-(global-semantic-idle-scheduler-mode)
-(global-semanticdb-minor-mode)
-
-;; pos-tip
-(add-to-list 'load-path "~/.emacs.d/site-lisp/pos-tip")
-(require 'pos-tip)
-
-;; popup
-(add-to-list 'load-path "~/.emacs.d/site-lisp/popup-el")
-(require 'popup)
-
-;; fuzzy
-(add-to-list 'load-path "~/.emacs.d/site-lisp/fuzzy-el")
-(require 'fuzzy)
-
-;; auto-compelte
-(add-to-list 'load-path "~/.emacs.d/site-lisp/auto-complete")
-(require 'auto-complete)
-(require 'auto-complete-config)
-;(add-to-list 'ac-dictionary-directories "~/.emacs.d/site-lisp/auto-complete/ac-dict")
-;(add-to-list 'ac-user-dictionary-files "~/.emacs.d/site-lisp/auto-complete/my-dict")
-(ac-config-default)
-;(setq ac-fuzzy-enable t)
-;(setq ac-quick-help-prefer-pos-tip t)
-
-;; yasnippet
-(add-to-list 'load-path "~/.emacs.d/site-lisp/yasnippet")
-(require 'yasnippet)
-(add-to-list 'yas-snippet-dirs "~/.emacs.d/snippets")
-(yas-global-mode 1)
-
-;; ido
-(require 'ido)
-
-;; smex
-(add-to-list 'load-path "~/.emacs.d/site-lisp/smex")
-(require 'smex)
-(smex-initialize)
-(global-set-key (kbd "M-x") 'smex)
-(global-set-key (kbd "M-X") 'smex-major-mode-commands)
-(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command) ; this is the old M-x
