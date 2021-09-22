@@ -114,6 +114,28 @@
 (global-set-key (kbd "C-s") 'phi-search)
 (global-set-key (kbd "C-r") 'phi-search-backward)
 
+;; ace-jump-mode
+; "C-c SPC" ==> enter first character of a word, select the highlighted key to move to it.
+; "C-x SPC" ==> jump back (from ace-jump-mode)
+; "C-u C-c SPC" ==> enter a character for query, select the highlighted key to move to it.
+; "C-u C-u C-c SPC" ==> each non-empty line will be marked, select the highlighted key to move to it.
+(add-to-list 'load-path "~/.emacs.d/site-lisp/ace-jump-mode")
+(autoload
+  'ace-jump-mode
+  "ace-jump-mode"
+  "Emacs quick move minor mode"
+  t)
+(autoload
+  'ace-jump-mode-pop-mark
+  "ace-jump-mode"
+  "Ace jump back:-)"
+  t)
+(eval-after-load "ace-jump-mode"
+  '(ace-jump-mode-enable-mark-sync))
+(define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
+(define-key global-map (kbd "C-x SPC") 'ace-jump-mode-pop-mark)
+
+
 
 ;; Configure two extra types of scrolling
 ; scroll functions: stick the text line

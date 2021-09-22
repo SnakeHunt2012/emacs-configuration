@@ -31,3 +31,6 @@
 [submodule "Linux/.emacs.d/site-lisp/phi-search"]
 	path = Linux/.emacs.d/site-lisp/phi-search
 	url = https://github.com/zk-phi/phi-search.git
+[submodule "Linux/.emacs.d/site-lisp/ace-jump-mode"]
+	path = Linux/.emacs.d/site-lisp/ace-jump-mode
+	url = https://github.com/winterTTr/ace-jump-mode.git
