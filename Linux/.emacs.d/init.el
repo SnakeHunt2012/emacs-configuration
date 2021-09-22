@@ -100,6 +100,21 @@
 ;(add-to-list 'load-path "~/.emacs.d/site-lisp/helm")
 ;(use-package helm :config (require 'helm-config))
 
+;; multiple-cursors
+(add-to-list 'load-path "~/.emacs.d/site-lisp/multiple-cursors")
+(require 'multiple-cursors)
+(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
+
+;; phi-search
+;(add-to-list 'load-path "~/.emacs.d/site-lisp/phi-search")
+;(require 'phi-search)
+;(global-set-key (kbd "C-s") 'phi-search)
+;(global-set-key (kbd "C-r") 'phi-search-backward)
+
+
 ;; Configure two extra types of scrolling
 ; scroll functions: stick the text line
 ;(global-set-key (kbd "M-n")
