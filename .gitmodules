@@ -28,3 +28,6 @@
 [submodule "Linux/.emacs.d/site-lisp/use-package"]
 	path = Linux/.emacs.d/site-lisp/use-package
 	url = https://github.com/jwiegley/use-package.git
+[submodule "Linux/.emacs.d/site-lisp/phi-search"]
+	path = Linux/.emacs.d/site-lisp/phi-search
+	url = https://github.com/zk-phi/phi-search.git
