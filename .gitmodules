@@ -46,3 +46,6 @@
 [submodule "Linux/.emacs.d/site-lisp/which-key"]
 	path = Linux/.emacs.d/site-lisp/which-key
 	url = https://github.com/justbur/emacs-which-key.git
+[submodule "Linux/.emacs.d/site-lisp/key-chord"]
+	path = Linux/.emacs.d/site-lisp/key-chord
+	url = https://github.com/emacsorphanage/key-chord.git

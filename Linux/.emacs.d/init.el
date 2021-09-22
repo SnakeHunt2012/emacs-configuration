@@ -152,14 +152,10 @@
 (add-to-list 'load-path "~/.emacs.d/site-lisp/key-chord")
 (require 'key-chord)
 (key-chord-mode 1)
-(setq key-chord-two-keys-delay 0.001)
-(setq key-chord-one-key-delay 0.002)
+(setq key-chord-two-keys-delay 0.005)
+(setq key-chord-one-key-delay 0.006)
 (key-chord-define-global "jk"     'undo)
 (key-chord-define-global "df"     'set-mark-command)
-(key-chord-define-global "<>"     "<>\C-b")
-(key-chord-define-global "()"     "()\C-b")
-(key-chord-define-global "[]"     "[]\C-b")
-(key-chord-define-global "{}"     "{}\C-b")
 
 ;; Configure two extra types of scrolling
 ; scroll functions: stick the text line
