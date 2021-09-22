@@ -109,10 +109,10 @@
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 
 ;; phi-search
-;(add-to-list 'load-path "~/.emacs.d/site-lisp/phi-search")
-;(require 'phi-search)
-;(global-set-key (kbd "C-s") 'phi-search)
-;(global-set-key (kbd "C-r") 'phi-search-backward)
+(add-to-list 'load-path "~/.emacs.d/site-lisp/phi-search")
+(require 'phi-search)
+(global-set-key (kbd "C-s") 'phi-search)
+(global-set-key (kbd "C-r") 'phi-search-backward)
 
 
 ;; Configure two extra types of scrolling
