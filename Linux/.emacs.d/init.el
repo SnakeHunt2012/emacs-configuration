@@ -82,23 +82,50 @@
 ;; ido
 (require 'ido)
 
-;; smex
-(add-to-list 'load-path "~/.emacs.d/site-lisp/smex")
-(require 'smex)
-(smex-initialize)
-(global-set-key (kbd "M-x") 'smex)
-(global-set-key (kbd "M-X") 'smex-major-mode-commands)
-(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command) ; this is the old M-x
+;; smex (replaced by helm or ivy & swiper & counsel)
+;(add-to-list 'load-path "~/.emacs.d/site-lisp/smex")
+;(require 'smex)
+;(smex-initialize)
+;(global-set-key (kbd "M-x") 'smex)
+;(global-set-key (kbd "M-X") 'smex-major-mode-commands)
+;(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command) ; this is the old M-x
 
 ;; async
 ;; 开启前make，make前修改Makefile中的环境变量DESTDIR=$(HOME)/.emacs.d/site-lisp/async
 ;(add-to-list 'load-path "~/.emacs.d/site-lisp/async")
 ;(require 'async)
 
-;; helm
+;; helm (依赖async)
 ;; 开启前make, make前修改Makefile中的环境变量STRAIGHT_DIR := $(HOME)/.emacs.d/site-lisp
 ;(add-to-list 'load-path "~/.emacs.d/site-lisp/helm")
 ;(use-package helm :config (require 'helm-config))
+
+;; ivy & swiper & counsel (replacement of helm)
+(add-to-list 'load-path "~/.emacs.d/site-lisp/swiper")
+(require 'ivy)
+(require 'swiper)
+(require 'counsel)
+(ivy-mode)
+(setq ivy-use-virtual-buffers t)
+(setq enable-recursive-minibuffers t)
+(setq search-default-mode #'char-fold-to-regexp)
+(global-set-key (kbd "C-s") 'swiper)
+(global-set-key (kbd "C-r") 'swiper-backward)
+(global-set-key (kbd "C-c C-r") 'ivy-resume)
+(global-set-key (kbd "M-x") 'counsel-M-x)
+(global-set-key (kbd "C-x C-f") 'counsel-find-file)
+(global-set-key (kbd "C-h f") 'counsel-describe-function)
+(global-set-key (kbd "C-h v") 'counsel-describe-variable)
+(global-set-key (kbd "C-h o") 'counsel-describe-symbol)
+(global-set-key (kbd "C-h l") 'counsel-find-library)
+(global-set-key (kbd "C-h S") 'counsel-info-lookup-symbol)
+(global-set-key (kbd "C-h u") 'counsel-unicode-char)
+(global-set-key (kbd "C-c g") 'counsel-git)
+(global-set-key (kbd "C-c j") 'counsel-git-grep)
+(global-set-key (kbd "C-c k") 'counsel-ag)
+(global-set-key (kbd "C-x l") 'counsel-locate)
+(global-set-key (kbd "C-S-o") 'counsel-rhythmbox)
+(define-key minibuffer-local-map (kbd "C-r") 'counsel-minibuffer-history)
 
 ;; multiple-cursors
 (add-to-list 'load-path "~/.emacs.d/site-lisp/multiple-cursors")
@@ -108,11 +135,11 @@
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 
-;; phi-search
+;; phi-search (compatible with multiple-cursors rather than isearch)
 (add-to-list 'load-path "~/.emacs.d/site-lisp/phi-search")
 (require 'phi-search)
-(global-set-key (kbd "C-s") 'phi-search)
-(global-set-key (kbd "C-r") 'phi-search-backward)
+(global-set-key (kbd "C-c C-s") 'phi-search)
+(global-set-key (kbd "C-c C-r") 'phi-search-backward)
 
 ;; ace-jump-mode
 (add-to-list 'load-path "~/.emacs.d/site-lisp/ace-jump-mode")
@@ -159,6 +186,7 @@
 
 ;; expand-region
 (add-to-list 'load-path "~/.emacs.d/site-lisp/expand-region")
+;(require 'expand-region)
 (use-package expand-region
   :config (require 'expand-region)
   :bind ("C-=" . er/expand-region))

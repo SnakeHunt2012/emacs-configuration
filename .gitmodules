@@ -52,3 +52,6 @@
 [submodule "Linux/.emacs.d/site-lisp/expand-region"]
 	path = Linux/.emacs.d/site-lisp/expand-region
 	url = https://github.com/magnars/expand-region.el.git
+[submodule "Linux/.emacs.d/site-lisp/swiper"]
+	path = Linux/.emacs.d/site-lisp/swiper
+	url = https://github.com/abo-abo/swiper.git
