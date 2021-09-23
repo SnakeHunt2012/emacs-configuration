@@ -154,8 +154,15 @@
 (key-chord-mode 1)
 (setq key-chord-two-keys-delay 0.005)
 (setq key-chord-one-key-delay 0.006)
-(key-chord-define-global "jk"     'undo)
-(key-chord-define-global "df"     'set-mark-command)
+(key-chord-define-global "jk" 'undo)
+(key-chord-define-global "df" 'set-mark-command)
+
+;; expand-region
+(add-to-list 'load-path "~/.emacs.d/site-lisp/expand-region")
+(use-package expand-region
+  :config (require 'expand-region)
+  :bind ("C-=" . er/expand-region))
+
 
 ;; Configure two extra types of scrolling
 ; scroll functions: stick the text line

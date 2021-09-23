@@ -49,3 +49,6 @@
 [submodule "Linux/.emacs.d/site-lisp/key-chord"]
 	path = Linux/.emacs.d/site-lisp/key-chord
 	url = https://github.com/emacsorphanage/key-chord.git
+[submodule "Linux/.emacs.d/site-lisp/expand-region"]
+	path = Linux/.emacs.d/site-lisp/expand-region
+	url = https://github.com/magnars/expand-region.el.git
