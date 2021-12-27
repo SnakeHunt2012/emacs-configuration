@@ -1,5 +1,7 @@
 ; -*- coding: utf-8 -*-
 
+(setenv "LANG" "zh_CN.UTF-8")
+
 ;; This is only needed once, near the top of the file
 (eval-when-compile
   (add-to-list 'load-path "~/.emacs.d/site-lisp/use-package")
@@ -130,10 +132,11 @@
 ;; multiple-cursors
 (add-to-list 'load-path "~/.emacs.d/site-lisp/multiple-cursors")
 (require 'multiple-cursors)
-(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
+(global-set-key (kbd "C-S-c C-S-c") 'mc/mark-all-like-this)
+(global-set-key (kbd "C-S-c C-<") 'mc/edit-lines)
+(global-set-key (kbd "C-S-c C->") 'mc/mark-all-in-region)
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
-(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 
 ;; phi-search (compatible with multiple-cursors rather than isearch)
 (add-to-list 'load-path "~/.emacs.d/site-lisp/phi-search")
@@ -191,6 +194,52 @@
   :config (require 'expand-region)
   :bind ("C-=" . er/expand-region))
 
+;; avy
+(add-to-list 'load-path "~/.emacs.d/site-lisp/avy")
+(require 'avy)
+(avy-setup-default) ; C-' -> avy-isearch
+(global-set-key (kbd "C-c C-j") 'avy-resume)
+(global-set-key (kbd "C-:") 'avy-goto-char)
+(global-set-key (kbd "C-'") 'avy-goto-char-2)
+(global-set-key (kbd "M-g f") 'avy-goto-line)
+(global-set-key (kbd "M-g w") 'avy-goto-word-1)
+(global-set-key (kbd "M-g e") 'avy-goto-word-0)
+
+;; ace-window
+(add-to-list 'load-path "~/.emacs.d/site-lisp/ace-window")
+(require 'ace-window)
+
+;; hydra
+(add-to-list 'load-path "~/.emacs.d/site-lisp/hydra")
+(require 'hydra)
+
+;; using hydra & ace-window to define hydra-window
+(global-set-key (kbd "C-c w")
+                (defhydra hydra-window ()
+                  "window"
+                  ("h" windmove-left)
+                  ("j" windmove-down)
+                  ("k" windmove-up)
+                  ("l" windmove-right)
+                  ("v" (lambda ()
+                         (interactive)
+                         (split-window-right)
+                         (windmove-right))
+                   "vert")
+                  ("x" (lambda ()
+                         (interactive)
+                         (split-window-below)
+                         (windmove-down))
+                   "horz")
+                  ("t" transpos-frame "'")
+                  ("o" delete-other-windows "one" :color blue)
+                  ("a" ace-window "ace")
+                  ("s" acw-swap-window "swap")
+                  ("d" ace-delete-window "del")
+                  ("i" ace-maximiza-window "ace-one" :color blue)
+                  ("b" ido-switch-buffer "buf")
+                                        ;("m" headlong-bookmark-jump "bmk")
+                  ("q" nil "cancel")))
 
 ;; Configure two extra types of scrolling
 ; scroll functions: stick the text line
@@ -316,3 +365,5 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+

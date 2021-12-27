@@ -55,3 +55,12 @@
 [submodule "Linux/.emacs.d/site-lisp/swiper"]
 	path = Linux/.emacs.d/site-lisp/swiper
 	url = https://github.com/abo-abo/swiper.git
+[submodule "Linux/.emacs.d/site-lisp/ace-window"]
+	path = Linux/.emacs.d/site-lisp/ace-window
+	url = https://github.com/abo-abo/ace-window.git
+[submodule "Linux/.emacs.d/site-lisp/hydra"]
+	path = Linux/.emacs.d/site-lisp/hydra
+	url = https://github.com/abo-abo/hydra.git
+[submodule "Linux/.emacs.d/site-lisp/avy"]
+	path = Linux/.emacs.d/site-lisp/avy
+	url = https://github.com/abo-abo/avy.git
