@@ -241,6 +241,11 @@
                                         ;("m" headlong-bookmark-jump "bmk")
                   ("q" nil "cancel")))
 
+;; exec-path-from-shell
+(add-to-list 'load-path "~/.emacs.d/site-lisp/exec-path-from-shell")
+(require 'exec-path-from-shell)
+(exec-path-from-shell-initialize)
+
 ;; Configure two extra types of scrolling
 ; scroll functions: stick the text line
 ;(global-set-key (kbd "M-n")

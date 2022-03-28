@@ -64,3 +64,6 @@
 [submodule "Linux/.emacs.d/site-lisp/avy"]
 	path = Linux/.emacs.d/site-lisp/avy
 	url = https://github.com/abo-abo/avy.git
+[submodule "Linux/.emacs.d/site-lisp/exec-path-from-shell"]
+	path = Linux/.emacs.d/site-lisp/exec-path-from-shell
+	url = https://github.com/purcell/exec-path-from-shell.git
