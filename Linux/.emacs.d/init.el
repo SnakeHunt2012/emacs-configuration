@@ -252,7 +252,7 @@
 ; build and config procedure here ...
 (defvar vterm-root (expand-file-name "~/.emacs.d/site-lisp/vterm"))
 (defvar vterm-build-dir (expand-file-name "build" vterm-root))
-(defvar vterm-module-path (expand-file-name "vterm-module.so" vterm-build-dir))
+(defvar vterm-module-path (expand-file-name "vterm-module.so" vterm-root))
 
 ;; 检测模块不存在时自动CMake编译
 (unless (file-exists-p vterm-module-path)
