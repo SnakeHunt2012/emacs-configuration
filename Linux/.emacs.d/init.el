@@ -247,9 +247,26 @@
 (exec-path-from-shell-initialize)
 
 ;; vterm
+; 需要预先使用apt-get安装cmake和libtool等依赖 sudo apt-get update && sudo apt-get install -y build-essential cmake libtool libtool-bin autoconf automake pkg-config
 (add-to-list 'load-path "~/.emacs.d/site-lisp/vterm")
 ; build and config procedure here ...
-;(require 'vterm)
+(defvar vterm-root (expand-file-name "~/.emacs.d/site-lisp/vterm"))
+(defvar vterm-build-dir (expand-file-name "build" vterm-root))
+(defvar vterm-module-path (expand-file-name "vterm-module.so" vterm-build-dir))
+
+;; 检测模块不存在时自动CMake编译
+(unless (file-exists-p vterm-module-path)
+  (message "vterm-module.so missing, start CMake build...")
+  (make-directory vterm-build-dir t)
+  (let ((default-directory vterm-build-dir))
+    (call-process "cmake" nil "*vterm-compile-log*" t
+                  "-DUSE_SYSTEM_LIBVTERM=no"
+                  "..")
+    (call-process "make" nil "*vterm-compile-log*" t
+                  "-j" (number-to-string (num-processors)))))
+
+(setq vterm-always-compile-module nil)
+(require 'vterm)
 
 ;; Configure two extra types of scrolling
 ; scroll functions: stick the text line
