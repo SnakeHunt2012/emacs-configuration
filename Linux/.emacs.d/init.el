@@ -30,7 +30,7 @@
 (require 'color-theme)
 
 ;; desktop
-(desktop-save-mode 1)
+;(desktop-save-mode 2)
 
 ;; session
 (add-to-list 'load-path "~/.emacs.d/site-lisp/session")
@@ -245,6 +245,11 @@
 (add-to-list 'load-path "~/.emacs.d/site-lisp/exec-path-from-shell")
 (require 'exec-path-from-shell)
 (exec-path-from-shell-initialize)
+
+;; vterm
+(add-to-list 'load-path "~/.emacs.d/site-lisp/vterm")
+; build and config procedure here ...
+;(require 'vterm)
 
 ;; Configure two extra types of scrolling
 ; scroll functions: stick the text line

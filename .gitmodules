@@ -67,3 +67,6 @@
 [submodule "Linux/.emacs.d/site-lisp/exec-path-from-shell"]
 	path = Linux/.emacs.d/site-lisp/exec-path-from-shell
 	url = https://github.com/purcell/exec-path-from-shell.git
+[submodule "Linux/.emacs.d/site-lisp/vterm"]
+	path = Linux/.emacs.d/site-lisp/vterm
+	url = https://github.com/akermu/emacs-libvterm.git
